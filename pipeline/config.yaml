@@ -1,0 +1,26 @@
+# Cyber Threat Exposure Map Configuration
+project:
+  id: cyber-exposure-map
+  name: "Cyber Threat Exposure Map"
+  description: "Real-time CVE exploits and exposed infrastructure."
+
+openrouter:
+  model: "openrouter/free"
+  fallback_model: "openrouter/free"
+
+gdelt_query: "cyber attack vulnerability exploit CVE"
+include_forex: true
+
+sources:
+  - name: "GDELT"
+
+refresh:
+  interval_hours: 6
+  retry_attempts: 3
+
+scoring:
+  scale: "1-10"
+  thresholds:
+    high: 7
+    medium: 4
+    low: 0
