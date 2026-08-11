@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-08-06T06:09:51.201634+00:00",
+    "generated": "2026-08-11T03:21:10.840556+00:00",
     "mode": "live",
     "sources": [
       "gdelt_articles",
@@ -36,6 +36,16 @@
     "gdelt_articles": [],
     "cisa_kev": [
       {
+        "cveID": "CVE-2026-8037",
+        "vendorProject": "Progress",
+        "product": "LoadMaster",
+        "vulnerabilityName": "Progress LoadMaster Command Injection Vulnerability",
+        "dateAdded": "2026-08-07",
+        "shortDescription": "Progress LoadMaster contains a command injection vulnerability that allows an un-authenticated attacker to execute arbitrary commands on the LoadMaster appliance by exploiting unsanitized input in multiple command endpoints.",
+        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+        "source": "CISA-KEV"
+      },
+      {
         "cveID": "CVE-2026-63077",
         "vendorProject": "JetBrains",
         "product": "TeamCity",
@@ -61,7 +71,7 @@
         "product": "Tomcat",
         "vulnerabilityName": "Apache Tomcat Missing Encryption of Sensitive Data Vulnerability",
         "dateAdded": "2026-08-04",
-        "shortDescription": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor.",
+        "shortDescription": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor. This vulnerability can be chained with CVE‑2025‑24813.",
         "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
         "source": "CISA-KEV"
       },
@@ -1024,16 +1034,6 @@
         "shortDescription": "Microsoft Windows Common Log File System Driver contains an out-of-bounds read vulnerability that could allow a threat actor for privileges escalation",
         "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
         "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2020-9715",
-        "vendorProject": "Adobe",
-        "product": "Acrobat",
-        "vulnerabilityName": "Adobe Acrobat Use-After-Free Vulnerability",
-        "dateAdded": "2026-04-13",
-        "shortDescription": "Adobe Acrobat contains a use-after-free vulnerability that allows for code execution",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
       }
     ],
     "exchange_rates": [
@@ -1047,15 +1047,15 @@
       },
       {
         "currency": "AFN",
-        "rate": 65.74
+        "rate": 65.51
       },
       {
         "currency": "ALL",
-        "rate": 80.79
+        "rate": 80.66
       },
       {
         "currency": "AMD",
-        "rate": 366.28
+        "rate": 366.5
       },
       {
         "currency": "ANG",
@@ -1063,11 +1063,11 @@
       },
       {
         "currency": "AOA",
-        "rate": 923.72
+        "rate": 925.26
       },
       {
         "currency": "ARS",
-        "rate": 1496.31
+        "rate": 1498.09
       },
       {
         "currency": "AUD",
@@ -1091,7 +1091,7 @@
       },
       {
         "currency": "BDT",
-        "rate": 123.73
+        "rate": 123.59
       },
       {
         "currency": "BGN",
@@ -1103,7 +1103,7 @@
       },
       {
         "currency": "BIF",
-        "rate": 2989.71
+        "rate": 2991.46
       },
       {
         "currency": "BMD",
@@ -1115,12 +1115,12 @@
       },
       {
         "currency": "BOB",
-        "rate": 12.13
+        "rate": 11.96
       }
     ]
   },
   "entities": [],
   "events": [],
   "timeseries": [],
-  "llm_summary": "**INTELLIGENCE BRIEF**\n\n**Subject:** Real-time Monitoring Status: Project cyber-exposure-map\n\n**Analysis:**\nThe `cyber-exposure-map` is currently operating in live mode, integrating high-velocity data streams from GDELT news monitoring, CISA Known Exploited Vulnerabilities (KEV), and global exchange rate fluctuations. At present, there are no significant recent events or anomalies detected across these specific telemetry sources. The system is maintaining a baseline state, awaiting actionable indicators of compromise (IoCs) or geopolitical shifts that may impact cyber risk exposure."
+  "llm_summary": "Pending API key..."
 }
