@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-08-14T19:39:44.953391+00:00",
+    "generated": "2026-08-15T02:05:51.372905+00:00",
     "mode": "live",
     "sources": [
       "gdelt_articles",
@@ -33,35 +33,7 @@
     }
   ],
   "live_data": {
-    "gdelt_articles": [
-      {
-        "title": "Oligo Raises $60M to Extend Runtime Security to AI Agents",
-        "url": "https://www.govinfosecurity.com/oligo-raises-60m-to-extend-runtime-security-to-ai-agents-a-32556",
-        "domain": "govinfosecurity.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260814T010000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "This Week In Security : BugTraq , AI Hacks , And Being Dumb On Planes",
-        "url": "https://hackaday.com/2026/08/14/this-week-in-security-bugtraq-ai-hacks-and-being-dumb-on-planes/",
-        "domain": "hackaday.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260814T191500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Breach Roundup : Def Con Dolt Suspected in Delta Wi - Fi Hack",
-        "url": "https://www.govinfosecurity.com/breach-roundup-def-con-dolt-suspected-in-delta-wi-fi-hack-a-32554",
-        "domain": "govinfosecurity.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260814T010000Z",
-        "source": "GDELT"
-      }
-    ],
+    "gdelt_articles": [],
     "cisa_kev": [
       {
         "cveID": "CVE-2026-20349",
@@ -1075,15 +1047,15 @@
       },
       {
         "currency": "AFN",
-        "rate": 65.28
+        "rate": 65.23
       },
       {
         "currency": "ALL",
-        "rate": 80.62
+        "rate": 80.61
       },
       {
         "currency": "AMD",
-        "rate": 365.98
+        "rate": 366
       },
       {
         "currency": "ANG",
@@ -1091,15 +1063,15 @@
       },
       {
         "currency": "AOA",
-        "rate": 925.58
+        "rate": 929.12
       },
       {
         "currency": "ARS",
-        "rate": 1491.84
+        "rate": 1488.7
       },
       {
         "currency": "AUD",
-        "rate": 1.42
+        "rate": 1.41
       },
       {
         "currency": "AWG",
@@ -1111,7 +1083,7 @@
       },
       {
         "currency": "BAM",
-        "rate": 1.7
+        "rate": 1.69
       },
       {
         "currency": "BBD",
@@ -1119,11 +1091,11 @@
       },
       {
         "currency": "BDT",
-        "rate": 122.89
+        "rate": 122.81
       },
       {
         "currency": "BGN",
-        "rate": 1.7
+        "rate": 1.69
       },
       {
         "currency": "BHD",
@@ -1131,7 +1103,7 @@
       },
       {
         "currency": "BIF",
-        "rate": 2991.47
+        "rate": 2995.18
       },
       {
         "currency": "BMD",
@@ -1143,65 +1115,12 @@
       },
       {
         "currency": "BOB",
-        "rate": 11.78
+        "rate": 11.77
       }
     ]
   },
-  "entities": [
-    {
-      "id": 1,
-      "name": "Oligo Raises $60M to Extend Runtime Security to AI Agents",
-      "score": 5.0,
-      "category": "news",
-      "last_seen": "20260814T010000Z",
-      "source": "govinfosecurity.com"
-    },
-    {
-      "id": 2,
-      "name": "This Week In Security : BugTraq , AI Hacks , And Being Dumb ",
-      "score": 5.0,
-      "category": "news",
-      "last_seen": "20260814T191500Z",
-      "source": "hackaday.com"
-    },
-    {
-      "id": 3,
-      "name": "Breach Roundup : Def Con Dolt Suspected in Delta Wi - Fi Hac",
-      "score": 5.0,
-      "category": "news",
-      "last_seen": "20260814T010000Z",
-      "source": "govinfosecurity.com"
-    }
-  ],
-  "events": [
-    {
-      "title": "Oligo Raises $60M to Extend Runtime Security to AI Agents",
-      "url": "https://www.govinfosecurity.com/oligo-raises-60m-to-extend-runtime-security-to-ai-agents-a-32556",
-      "domain": "govinfosecurity.com",
-      "language": "English",
-      "tone": 0,
-      "seendate": "20260814T010000Z",
-      "source": "GDELT"
-    },
-    {
-      "title": "This Week In Security : BugTraq , AI Hacks , And Being Dumb On Planes",
-      "url": "https://hackaday.com/2026/08/14/this-week-in-security-bugtraq-ai-hacks-and-being-dumb-on-planes/",
-      "domain": "hackaday.com",
-      "language": "English",
-      "tone": 0,
-      "seendate": "20260814T191500Z",
-      "source": "GDELT"
-    },
-    {
-      "title": "Breach Roundup : Def Con Dolt Suspected in Delta Wi - Fi Hack",
-      "url": "https://www.govinfosecurity.com/breach-roundup-def-con-dolt-suspected-in-delta-wi-fi-hack-a-32554",
-      "domain": "govinfosecurity.com",
-      "language": "English",
-      "tone": 0,
-      "seendate": "20260814T010000Z",
-      "source": "GDELT"
-    }
-  ],
+  "entities": [],
+  "events": [],
   "timeseries": [],
   "llm_summary": "Pending API key..."
 }
