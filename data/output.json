@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-08-17T13:28:46.863074+00:00",
+    "generated": "2026-08-17T19:17:30.724339+00:00",
     "mode": "live",
     "sources": [
       "gdelt_articles",
@@ -33,18 +33,18 @@
     }
   ],
   "live_data": {
-    "gdelt_articles": [
-      {
-        "title": "Revealed : Cyber spies used malware from GitHub to hack EncroChat cryptophone network",
-        "url": "https://www.computerweekly.com/news/366649396/Revealed-Cyber-spies-used-malware-from-GitHub-to-hack-EncroChat-cryptophone-network",
-        "domain": "computerweekly.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260817T070000Z",
-        "source": "GDELT"
-      }
-    ],
+    "gdelt_articles": [],
     "cisa_kev": [
+      {
+        "cveID": "CVE-2025-62593",
+        "vendorProject": "Ray-Project",
+        "product": "Ray",
+        "vulnerabilityName": "Ray-Project Ray Code Injection Vulnerability",
+        "dateAdded": "2026-08-17",
+        "shortDescription": "Ray-Project Ray contains a code injection vulnerability that could allow remote code execution. Developers using Ray as a development tool may be exposed to this vulnerability exploitable through Firefox and Safari.",
+        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+        "source": "CISA-KEV"
+      },
       {
         "cveID": "CVE-2026-20349",
         "vendorProject": "Cisco",
@@ -1034,16 +1034,6 @@
         "shortDescription": "Microsoft SharePoint Server contains an improper input validation vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
         "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
         "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2012-1854",
-        "vendorProject": "Microsoft",
-        "product": "Visual Basic for Applications (VBA)",
-        "vulnerabilityName": "Microsoft Visual Basic for Applications Insecure Library Loading Vulnerability",
-        "dateAdded": "2026-04-13",
-        "shortDescription": "Microsoft Visual Basic for Applications (VBA) contains an insecure library loading vulnerability that could allow for remote code execution.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
       }
     ],
     "exchange_rates": [
@@ -1129,27 +1119,8 @@
       }
     ]
   },
-  "entities": [
-    {
-      "id": 1,
-      "name": "Revealed : Cyber spies used malware from GitHub to hack Encr",
-      "score": 5.0,
-      "category": "news",
-      "last_seen": "20260817T070000Z",
-      "source": "computerweekly.com"
-    }
-  ],
-  "events": [
-    {
-      "title": "Revealed : Cyber spies used malware from GitHub to hack EncroChat cryptophone network",
-      "url": "https://www.computerweekly.com/news/366649396/Revealed-Cyber-spies-used-malware-from-GitHub-to-hack-EncroChat-cryptophone-network",
-      "domain": "computerweekly.com",
-      "language": "English",
-      "tone": 0,
-      "seendate": "20260817T070000Z",
-      "source": "GDELT"
-    }
-  ],
+  "entities": [],
+  "events": [],
   "timeseries": [],
   "llm_summary": "Pending API key..."
 }
