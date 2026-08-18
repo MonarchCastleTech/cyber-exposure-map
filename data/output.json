@@ -1,12 +1,11 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-08-18T13:32:32.781689+00:00",
+    "generated": "2026-08-18T19:17:41.397518+00:00",
     "mode": "live",
     "sources": [
       "gdelt_articles",
       "cisa_kev",
-      "cyber_news",
       "exchange_rates"
     ],
     "version": "1.0.0"
@@ -36,6 +35,46 @@
   "live_data": {
     "gdelt_articles": [],
     "cisa_kev": [
+      {
+        "cveID": "CVE-2026-33824",
+        "vendorProject": "Microsoft",
+        "product": "Internet Key Exchange (IKE) Service Extensions",
+        "vulnerabilityName": "Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability",
+        "dateAdded": "2026-08-18",
+        "shortDescription": "Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution.",
+        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+        "source": "CISA-KEV"
+      },
+      {
+        "cveID": "CVE-2026-59310",
+        "vendorProject": "Broadcom",
+        "product": "VMware vCenter",
+        "vulnerabilityName": "Broadcom VMware vCenter Path Traversal Vulnerability",
+        "dateAdded": "2026-08-18",
+        "shortDescription": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
+        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+        "source": "CISA-KEV"
+      },
+      {
+        "cveID": "CVE-2026-55040",
+        "vendorProject": "Microsoft",
+        "product": "SharePoint",
+        "vulnerabilityName": "Microsoft SharePoint Weak Authentication Vulnerability",
+        "dateAdded": "2026-08-18",
+        "shortDescription": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network.",
+        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+        "source": "CISA-KEV"
+      },
+      {
+        "cveID": "CVE-2026-65400",
+        "vendorProject": "Apple",
+        "product": "macOS",
+        "vulnerabilityName": "Apple macOS Improper Authentication Vulnerability",
+        "dateAdded": "2026-08-18",
+        "shortDescription": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials.",
+        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+        "source": "CISA-KEV"
+      },
       {
         "cveID": "CVE-2025-62593",
         "vendorProject": "Ray-Project",
@@ -995,345 +1034,6 @@
         "shortDescription": "Quest KACE Systems Management Appliance (SMA) contains an improper authentication vulnerability that could allow attackers to impersonate legitimate users without valid credentials.",
         "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
         "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2024-27199",
-        "vendorProject": "JetBrains",
-        "product": "TeamCity",
-        "vulnerabilityName": "JetBrains TeamCity Relative Path Traversal Vulnerability",
-        "dateAdded": "2026-04-20",
-        "shortDescription": "JetBrains TeamCity contains a relative path traversal vulnerability that could allow limited admin actions to be performed.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-34197",
-        "vendorProject": "Apache",
-        "product": "ActiveMQ",
-        "vulnerabilityName": "Apache ActiveMQ Improper Input Validation Vulnerability",
-        "dateAdded": "2026-04-16",
-        "shortDescription": "Apache ActiveMQ contains an improper input validation vulnerability that allows for code injection.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2009-0238",
-        "vendorProject": "Microsoft",
-        "product": "Office",
-        "vulnerabilityName": "Microsoft Office Remote Code Execution",
-        "dateAdded": "2026-04-14",
-        "shortDescription": "Microsoft Office Excel contains a remote code execution vulnerability that could allow an attacker to take complete control of an affected system if a user opens a specially crafted Excel file that includes a malformed object.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-32201",
-        "vendorProject": "Microsoft",
-        "product": "SharePoint Server",
-        "vulnerabilityName": "Microsoft SharePoint Server Improper Input Validation Vulnerability",
-        "dateAdded": "2026-04-14",
-        "shortDescription": "Microsoft SharePoint Server contains an improper input validation vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      }
-    ],
-    "cyber_news": [
-      {
-        "title": "Update your Mac : Screen Share vulnerability gives attackers full control of your computer",
-        "url": "https://mashable.com/tech/apple-mac-macbook-screen-share-vulnerability",
-        "domain": "mashable.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260817T170000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "  채용 제안인 줄 알았는데 … 北 추정 해커 , 취약점 뚫어 방산업 맹공",
-        "url": "https://www.ddaily.co.kr:443/page/view/2026081411051563476",
-        "domain": "ddaily.co.kr",
-        "language": "Korean",
-        "tone": 0,
-        "seendate": "20260814T090000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "AI Makes Faster Vulnerability Patching a CISO Priority",
-        "url": "https://www.bankinfosecurity.com/ai-makes-faster-vulnerability-patching-ciso-priority-a-32557",
-        "domain": "bankinfosecurity.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260817T064500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "AI Peretas vs AI Pembela : OpenAI Luncurkan Model untuk Cari Zero - Day",
-        "url": "https://ototekno.harianjogja.com/r-1266984/ai-peretas-vs-ai-pembela-openai-luncurkan-model-untuk-cari-zero-day",
-        "domain": "ototekno.harianjogja.com",
-        "language": "Indonesian",
-        "tone": 0,
-        "seendate": "20260812T044500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "OpenAI Rilis GPT - 5 . 6 - Cyber , Model AI yang Berpikir seperti Hacker",
-        "url": "https://tekno.kompas.com/read/2026/08/11/18320007/openai-rilis-gpt-56-cyber-model-ai-yang-berpikir-seperti-hacker",
-        "domain": "tekno.kompas.com",
-        "language": "Indonesian",
-        "tone": 0,
-        "seendate": "20260812T011500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Cyberattaques : le plan de Lecornu suffira - t - il à colmater les brèches de l  État ? ",
-        "url": "https://www.ladepeche.fr/2026/08/16/cyberattaques-le-plan-de-lecornu-suffira-t-il-a-colmater-les-breches-de-letat-13511008.php",
-        "domain": "ladepeche.fr",
-        "language": "French",
-        "tone": 0,
-        "seendate": "20260816T133000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "AI Makes Faster Vulnerability Patching a CISO Priority",
-        "url": "https://www.govinfosecurity.com/ai-makes-faster-vulnerability-patching-ciso-priority-a-32557",
-        "domain": "govinfosecurity.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260817T091500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "SonicWall SMA1000 , 랜섬웨어까지 악용됐다",
-        "url": "https://www.wikitree.co.kr/articles/1151840",
-        "domain": "wikitree.co.kr",
-        "language": "Korean",
-        "tone": 0,
-        "seendate": "20260811T134500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "GPT - 5 . 6 Cyber Launch Could Be Bad News for Entry - Level Cybersecurity Jobs",
-        "url": "https://memeburn.com/gpt-5-6-cyber-launch-could-be-bad-news-for-entry-level-cybersecurity-jobs/",
-        "domain": "memeburn.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260813T034500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Onelogon attack defeats Microsoft Zerologon patch",
-        "url": "https://www.itnews.com.au/news/onelogon-attack-defeats-microsofts-zerologon-patch-628102",
-        "domain": "itnews.com.au",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260812T074500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Windows en la mira por nuevo fallo de seguridad global : Microsoft se retractó de denunciar a quien lo hizo público",
-        "url": "https://www.infobae.com/tecno/2026/08/13/windows-en-la-mira-por-nuevo-fallo-de-seguridad-global-microsoft-se-retracto-de-denunciar-a-quien-lo-hizo-publico/",
-        "domain": "infobae.com",
-        "language": "Spanish",
-        "tone": 0,
-        "seendate": "20260813T023000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Revealed : Cyber spies used malware from GitHub to hack EncroChat cryptophone network",
-        "url": "https://www.computerweekly.com/news/366649396/Revealed-Cyber-spies-used-malware-from-GitHub-to-hack-EncroChat-cryptophone-network",
-        "domain": "computerweekly.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260817T070000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "ArmourCode gets verified Claude access for cyber defence",
-        "url": "https://securitybrief.news/story/armourcode-gets-verified-claude-access-for-cyber-defence",
-        "domain": "securitybrief.news",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260814T190000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "INVESTIGAȚIE Atacul cibernetic care a blocat o lună piața imobiliară din România a fost anticipat de existența pe internet a mii de parole de notari , avocați , ingineri și funcționari publici",
-        "url": "https://hotnews.ro/investigatie-atacul-cibernetic-care-a-blocat-o-luna-piata-imobiliara-din-romania-a-fost-anticipat-de-existenta-pe-internet-a-mii-de-parole-de-notari-avocati-ingineri-si-functionari-publici-2326527",
-        "domain": "hotnews.ro",
-        "language": "Romanian",
-        "tone": 0,
-        "seendate": "20260818T061500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "A dangerous Zoom screen - sharing bug could have let hackers hijack other devices on a call",
-        "url": "https://www.techradar.com/pro/security/a-dangerous-zoom-screen-sharing-bug-could-have-let-hackers-hijack-other-devices-on-a-call",
-        "domain": "techradar.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260812T133000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Oligo Raises $60M to Extend Runtime Security to AI Agents",
-        "url": "https://www.govinfosecurity.com/oligo-raises-60m-to-extend-runtime-security-to-ai-agents-a-32556",
-        "domain": "govinfosecurity.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260814T010000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Вирус Inception что это история шпионской кампании APT",
-        "url": "https://ziv.ru/bezopasnost/19949-rossiyskiy-virus-inception-porazil-evropu.html",
-        "domain": "ziv.ru",
-        "language": "Russian",
-        "tone": 0,
-        "seendate": "20260814T010000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Alarmierende Geheimdienste - Warnung : Beginnt Wladimir Putin seinen Nato - Angriffskrieg schon in wenigen Wochen ? ",
-        "url": "https://www.news.de/politik/859887171/wladimir-putin-koennte-nato-krieg-im-herbst-2026-beginnen-us-geheimdienste-warnen-vor-russlands-angriff-gegen-den-westen/1/",
-        "domain": "news.de",
-        "language": "German",
-        "tone": 0,
-        "seendate": "20260813T073000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Invasor invisível : o que o ataque da OpenAI ensina sobre a nova era da cibersegurança ? ",
-        "url": "https://canaltech.com.br/colunas/invasor-invisivel-o-que-o-ataque-da-open-ai-ensina-sobre-a-nova-era-da-ciberseguranca/",
-        "domain": "canaltech.com.br",
-        "language": "Portuguese",
-        "tone": 0,
-        "seendate": "20260811T170000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Uber Freight enquête sur une fuite de données revendiquée par le groupe Helix",
-        "url": "https://www.fredzone.org/uber-freight-enquete-sur-une-fuite-de-donnees-revendiquee-par-le-groupe-helix/",
-        "domain": "fredzone.org",
-        "language": "French",
-        "tone": 0,
-        "seendate": "20260812T231500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "World - first autonomous  end - to - end  AI attack against Taiwan tied to Chinese hackers and the scariest part is that it was fully open source",
-        "url": "https://www.techradar.com/pro/security/world-first-autonomous-end-to-end-ai-attack-against-taiwan-tied-to-chinese-hackers-and-the-scariest-part-is-that-it-was-fully-open-source",
-        "domain": "techradar.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260813T220000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Microsoft mise tout sur une nouvelle stratégie de sécurité Window ... ",
-        "url": "https://www.zdnet.fr/actualites/microsoft-mise-tout-sur-une-nouvelle-strategie-de-securite-windows-basee-sur-lia-ce-que-cela-signifie-pour-vous-499756.htm",
-        "domain": "zdnet.fr",
-        "language": "French",
-        "tone": 0,
-        "seendate": "20260812T161500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Open - Source AI Agents Breach Taiwan Nuclear Agency in Four - Day Autonomous Strike",
-        "url": "https://www.techtimes.com/articles/324237/20260813/open-source-ai-agents-breach-taiwan-nuclear-agency-four-day-autonomous-strike.htm",
-        "domain": "techtimes.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260813T113000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "  Tiktok wouldnt open at all : Taiwan simulates an internet blackout , with an eye on China threat",
-        "url": "https://www.aol.co.uk/articles/tiktok-wouldn-t-open-taiwan-031754000.html",
-        "domain": "aol.co.uk",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260814T041500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "AI a spart sistemul de rezervări și a dat afară un client . Ce s - a întâmplat în Australia ? ",
-        "url": "https://indexstiri.ro/ai-a-spart-sistemul-de-rezervari-si-a-dat-afara-un-client-ce-s-a-intamplat-in-australia/",
-        "domain": "indexstiri.ro",
-        "language": "Romanian",
-        "tone": 0,
-        "seendate": "20260815T160000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "SPONSORED : The backup Microsoft never promised you",
-        "url": "https://www.theregister.com/security/2026/08/13/sponsored-the-backup-microsoft-never-promised-you/5284957",
-        "domain": "theregister.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260813T174500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "  Near - autonomou AI agents attack Taiwan nuclear safety agency",
-        "url": "https://www.theregister.com/security/2026/08/12/near-autonomous-ai-agents-attack-taiwans-nuclear-safety-agency/5287055",
-        "domain": "theregister.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260812T231500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "This Week In Security : BugTraq , AI Hacks , And Being Dumb On Planes",
-        "url": "https://hackaday.com/2026/08/14/this-week-in-security-bugtraq-ai-hacks-and-being-dumb-on-planes/",
-        "domain": "hackaday.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260814T191500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Russia Targeting Ukraine Using Internet - Connected Cameras",
-        "url": "https://www.bankinfosecurity.com/russia-targeting-ukraine-using-internet-connected-cameras-a-32566",
-        "domain": "bankinfosecurity.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260814T231500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "OpenAI Reaches $40B Revenue as Safety Leaders Exit and Models Break Containment",
-        "url": "https://www.techtimes.com/articles/324713/20260817/openai-reaches-40b-revenue-safety-leaders-exit-models-break-containment.htm",
-        "domain": "techtimes.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260817T200000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Breach Roundup : Def Con Dolt Suspected in Delta Wi - Fi Hack",
-        "url": "https://www.govinfosecurity.com/breach-roundup-def-con-dolt-suspected-in-delta-wi-fi-hack-a-32554",
-        "domain": "govinfosecurity.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260814T010000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Russia Targeting Ukraine Using Internet - Connected Cameras",
-        "url": "https://www.govinfosecurity.com/russia-targeting-ukraine-using-internet-connected-cameras-a-32566",
-        "domain": "govinfosecurity.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260814T193000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Microsoft August Patch Tuesday : 398 flaws , 3 zero - days , and one North Korea got to first",
-        "url": "https://itwire.com/business-it-news/security/microsofts-august-patch-tuesday-398-flaws-3-zero-days-and-one-north-korea-got-to-first",
-        "domain": "itwire.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260812T090000Z",
-        "source": "GDELT"
       }
     ],
     "exchange_rates": [
