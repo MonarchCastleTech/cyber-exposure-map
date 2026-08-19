@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-08-19T07:26:48.722625+00:00",
+    "generated": "2026-08-19T13:33:18.997411+00:00",
     "mode": "live",
     "sources": [
       "gdelt_articles",
@@ -33,17 +33,7 @@
     }
   ],
   "live_data": {
-    "gdelt_articles": [
-      {
-        "title": "Apple addresses multiple WebKit vulnerabilities",
-        "url": "https://www.computerweekly.com/news/366649440/Apple-addresses-multiple-WebKit-vulnerabilities",
-        "domain": "computerweekly.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260819T004500Z",
-        "source": "GDELT"
-      }
-    ],
+    "gdelt_articles": [],
     "cisa_kev": [
       {
         "cveID": "CVE-2026-33824",
@@ -1129,27 +1119,8 @@
       }
     ]
   },
-  "entities": [
-    {
-      "id": 1,
-      "name": "Apple addresses multiple WebKit vulnerabilities",
-      "score": 5.0,
-      "category": "news",
-      "last_seen": "20260819T004500Z",
-      "source": "computerweekly.com"
-    }
-  ],
-  "events": [
-    {
-      "title": "Apple addresses multiple WebKit vulnerabilities",
-      "url": "https://www.computerweekly.com/news/366649440/Apple-addresses-multiple-WebKit-vulnerabilities",
-      "domain": "computerweekly.com",
-      "language": "English",
-      "tone": 0,
-      "seendate": "20260819T004500Z",
-      "source": "GDELT"
-    }
-  ],
+  "entities": [],
+  "events": [],
   "timeseries": [],
   "llm_summary": "Pending API key..."
 }
