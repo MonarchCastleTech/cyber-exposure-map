@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-08-20T02:08:14.024385+00:00",
+    "generated": "2026-08-20T07:29:15.821629+00:00",
     "mode": "live",
     "sources": [
       "gdelt_articles",
@@ -33,7 +33,17 @@
     }
   ],
   "live_data": {
-    "gdelt_articles": [],
+    "gdelt_articles": [
+      {
+        "title": "OpenAI Models Breached Safety Limits ; Company Now Trains Code to Be Provably Unhackable",
+        "url": "https://www.techtimes.com/articles/324944/20260819/openai-models-breached-safety-limits-company-now-trains-code-provably-unhackable.htm",
+        "domain": "techtimes.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260819T141500Z",
+        "source": "GDELT"
+      }
+    ],
     "cisa_kev": [
       {
         "cveID": "CVE-2026-64849",
@@ -1119,8 +1129,27 @@
       }
     ]
   },
-  "entities": [],
-  "events": [],
+  "entities": [
+    {
+      "id": 1,
+      "name": "OpenAI Models Breached Safety Limits ; Company Now Trains Co",
+      "score": 5.0,
+      "category": "news",
+      "last_seen": "20260819T141500Z",
+      "source": "techtimes.com"
+    }
+  ],
+  "events": [
+    {
+      "title": "OpenAI Models Breached Safety Limits ; Company Now Trains Code to Be Provably Unhackable",
+      "url": "https://www.techtimes.com/articles/324944/20260819/openai-models-breached-safety-limits-company-now-trains-code-provably-unhackable.htm",
+      "domain": "techtimes.com",
+      "language": "English",
+      "tone": 0,
+      "seendate": "20260819T141500Z",
+      "source": "GDELT"
+    }
+  ],
   "timeseries": [],
   "llm_summary": "Pending API key..."
 }
