@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-08-20T19:20:30.958129+00:00",
+    "generated": "2026-08-21T02:14:01.335973+00:00",
     "mode": "live",
     "sources": [
       "gdelt_articles",
@@ -33,7 +33,17 @@
     }
   ],
   "live_data": {
-    "gdelt_articles": [],
+    "gdelt_articles": [
+      {
+        "title": "Breach Roundup : Grandoreiro Returns",
+        "url": "https://www.govinfosecurity.com/breach-roundup-grandoreiro-returns-a-32621",
+        "domain": "govinfosecurity.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260820T221500Z",
+        "source": "GDELT"
+      }
+    ],
     "cisa_kev": [
       {
         "cveID": "CVE-2026-72530",
@@ -1047,15 +1057,15 @@
       },
       {
         "currency": "AFN",
-        "rate": 65.25
+        "rate": 65.15
       },
       {
         "currency": "ALL",
-        "rate": 79.93
+        "rate": 79.42
       },
       {
         "currency": "AMD",
-        "rate": 364.58
+        "rate": 364.88
       },
       {
         "currency": "ANG",
@@ -1063,11 +1073,11 @@
       },
       {
         "currency": "AOA",
-        "rate": 923.56
+        "rate": 925.24
       },
       {
         "currency": "ARS",
-        "rate": 1497.53
+        "rate": 1497.29
       },
       {
         "currency": "AUD",
@@ -1083,7 +1093,7 @@
       },
       {
         "currency": "BAM",
-        "rate": 1.68
+        "rate": 1.67
       },
       {
         "currency": "BBD",
@@ -1091,11 +1101,11 @@
       },
       {
         "currency": "BDT",
-        "rate": 122.2
+        "rate": 122.21
       },
       {
         "currency": "BGN",
-        "rate": 1.68
+        "rate": 1.67
       },
       {
         "currency": "BHD",
@@ -1103,7 +1113,7 @@
       },
       {
         "currency": "BIF",
-        "rate": 2991
+        "rate": 2990.34
       },
       {
         "currency": "BMD",
@@ -1115,12 +1125,31 @@
       },
       {
         "currency": "BOB",
-        "rate": 11.56
+        "rate": 11.53
       }
     ]
   },
-  "entities": [],
-  "events": [],
+  "entities": [
+    {
+      "id": 1,
+      "name": "Breach Roundup : Grandoreiro Returns",
+      "score": 5.0,
+      "category": "news",
+      "last_seen": "20260820T221500Z",
+      "source": "govinfosecurity.com"
+    }
+  ],
+  "events": [
+    {
+      "title": "Breach Roundup : Grandoreiro Returns",
+      "url": "https://www.govinfosecurity.com/breach-roundup-grandoreiro-returns-a-32621",
+      "domain": "govinfosecurity.com",
+      "language": "English",
+      "tone": 0,
+      "seendate": "20260820T221500Z",
+      "source": "GDELT"
+    }
+  ],
   "timeseries": [],
   "llm_summary": "Pending API key..."
 }
