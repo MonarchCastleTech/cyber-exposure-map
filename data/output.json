@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-08-21T13:34:24.315079+00:00",
+    "generated": "2026-08-21T19:15:47.886074+00:00",
     "mode": "live",
     "sources": [
       "gdelt_articles",
@@ -35,6 +35,16 @@
   "live_data": {
     "gdelt_articles": [],
     "cisa_kev": [
+      {
+        "cveID": "CVE-2026-73570",
+        "vendorProject": "Synacor",
+        "product": "Zimbra Collaboration Suite (ZCS)",
+        "vulnerabilityName": "Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability",
+        "dateAdded": "2026-08-21",
+        "shortDescription": "Zimbra Collaboration Suite (ZCS) contains an OS command injection vulnerability which could allow an unauthenticated attacker to send specially crafted SMTP requests that may result in execution of arbitrary operating system commands as the Zimbra user.",
+        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+        "source": "CISA-KEV"
+      },
       {
         "cveID": "CVE-2026-72530",
         "vendorProject": "TrueConf",
@@ -1022,16 +1032,6 @@
         "vulnerabilityName": "Kentico Xperience Path Traversal Vulnerability",
         "dateAdded": "2026-04-20",
         "shortDescription": "Kentico Xperience contains a path traversal vulnerability that could allow an authenticated user's Staging Sync Server to upload arbitrary data to path relative locations.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2023-27351",
-        "vendorProject": "PaperCut",
-        "product": "NG/MF",
-        "vulnerabilityName": "PaperCut NG/MF Improper Authentication Vulnerability",
-        "dateAdded": "2026-04-20",
-        "shortDescription": "PaperCut NG/MF contains an improper authentication vulnerability that could allow remote attackers to bypass authentication on affected installations via the SecurityRequestFilter class.",
         "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
         "source": "CISA-KEV"
       }
