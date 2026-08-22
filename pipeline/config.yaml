@@ -1,14 +1,14 @@
-# Cyber Threat Exposure Map Configuration
+﻿# Cyber Threat Exposure Map Configuration
 project:
   id: cyber-exposure-map
   name: "Cyber Threat Exposure Map"
   description: "Real-time CVE exploits and exposed infrastructure."
 
 openrouter:
-  model: "openrouter/free"
-  fallback_model: "openrouter/free"
+  model: "z-ai/glm-5.2:free"
+  fallback_model: "google/gemma-4-31b-it:free"
 
-gdelt_query: "cyber attack vulnerability exploit CVE"
+gdelt_query: "(cyberattack OR ransomware OR vulnerability OR CVE)"
 include_forex: true
 
 sources:
