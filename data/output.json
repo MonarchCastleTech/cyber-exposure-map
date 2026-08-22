@@ -1,1039 +1,488 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-08-22T15:02:49.362185+00:00",
+    "generated": "2026-08-22T16:36:30.989013+00:00",
     "mode": "live",
     "sources": [
       "gdelt_articles",
-      "cisa_kev",
       "exchange_rates"
     ],
-    "version": "1.0.0"
+    "source_notes": [],
+    "version": "1.1.0"
   },
   "stats": [
     {
-      "label": "Active Exploits",
-      "value": "347",
+      "label": "Articles Tracked",
+      "value": "50",
       "delta": "live"
     },
     {
-      "label": "Exposed Assets",
-      "value": "12.4K",
-      "delta": "live"
+      "label": "News Domains",
+      "value": "43",
+      "delta": "deduplicated"
     },
     {
-      "label": "Threat Actors",
-      "value": "89",
-      "delta": "live"
+      "label": "Tone Index",
+      "value": "50/100 (neutral)",
+      "delta": "GDELT scale"
     },
     {
-      "label": "CVEs (30d)",
-      "value": "1,203",
-      "delta": "live"
+      "label": "Geo Points",
+      "value": "0",
+      "delta": "geolocated"
     }
   ],
   "live_data": {
-    "gdelt_articles": [],
-    "cisa_kev": [
-      {
-        "cveID": "CVE-2026-73570",
-        "vendorProject": "Synacor",
-        "product": "Zimbra Collaboration Suite (ZCS)",
-        "vulnerabilityName": "Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability",
-        "dateAdded": "2026-08-21",
-        "shortDescription": "Zimbra Collaboration Suite (ZCS) contains an OS command injection vulnerability which could allow an unauthenticated attacker to send specially crafted SMTP requests that may result in execution of arbitrary operating system commands as the Zimbra user.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-72530",
-        "vendorProject": "TrueConf",
-        "product": "Server",
-        "vulnerabilityName": "TrueConf Server Code Injection Vulnerability",
-        "dateAdded": "2026-08-20",
-        "shortDescription": "TrueConf Server contains a code injection vulnerability that could allow an unauthorized remote attacker with network access via port 4307/TCP to use a specially crafted script to break out of the isolated environment and execute arbitrary code on the host system.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-72529",
-        "vendorProject": "TrueConf",
-        "product": "Server",
-        "vulnerabilityName": "TrueConf Server Missing Authentication for Critical Function Vulnerability",
-        "dateAdded": "2026-08-20",
-        "shortDescription": "TrueConf Server contains a missing authentication for critical function vulnerability which could allow a remote unauthorized attacker with network access via port 4307/TCP to execute an arbitrary script.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-64849",
-        "vendorProject": "MLflow",
-        "product": "MLflow",
-        "vulnerabilityName": "MLflow Server-Side Request Forgery Vulnerability",
-        "dateAdded": "2026-08-19",
-        "shortDescription": "MLflow contains a server-side request forgery vulnerability that can allow attackers to reach internal or cloud metadata services and receive response_status and response_body.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-33824",
-        "vendorProject": "Microsoft",
-        "product": "Internet Key Exchange (IKE) Service Extensions",
-        "vulnerabilityName": "Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability",
-        "dateAdded": "2026-08-18",
-        "shortDescription": "Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-59310",
-        "vendorProject": "Broadcom",
-        "product": "VMware vCenter",
-        "vulnerabilityName": "Broadcom VMware vCenter Path Traversal Vulnerability",
-        "dateAdded": "2026-08-18",
-        "shortDescription": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-55040",
-        "vendorProject": "Microsoft",
-        "product": "SharePoint",
-        "vulnerabilityName": "Microsoft SharePoint Weak Authentication Vulnerability",
-        "dateAdded": "2026-08-18",
-        "shortDescription": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-65400",
-        "vendorProject": "Apple",
-        "product": "macOS",
-        "vulnerabilityName": "Apple macOS Improper Authentication Vulnerability",
-        "dateAdded": "2026-08-18",
-        "shortDescription": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2025-62593",
-        "vendorProject": "Ray-Project",
-        "product": "Ray",
-        "vulnerabilityName": "Ray-Project Ray Code Injection Vulnerability",
-        "dateAdded": "2026-08-17",
-        "shortDescription": "Ray-Project Ray contains a code injection vulnerability that could allow remote code execution. Developers using Ray as a development tool may be exposed to this vulnerability exploitable through Firefox and Safari.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-20349",
-        "vendorProject": "Cisco",
-        "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) ",
-        "vulnerabilityName": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability",
-        "dateAdded": "2026-08-11",
-        "shortDescription": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) contain a heap inspection vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-68820",
-        "vendorProject": "Microsoft",
-        "product": "Windows Ancillary Function Driver for WinSock ",
-        "vulnerabilityName": "Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability",
-        "dateAdded": "2026-08-11",
-        "shortDescription": "Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-72898",
-        "vendorProject": "Metabase",
-        "product": "Metabase",
-        "vulnerabilityName": "Metabase SQL Injection Vulnerability",
-        "dateAdded": "2026-08-11",
-        "shortDescription": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access to the instance. From there, the attacker could change the application configuration, steal stored credentials for the connected databases, read any data accessible through those connections, and export data.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-8037",
-        "vendorProject": "Progress",
-        "product": "LoadMaster",
-        "vulnerabilityName": "Progress LoadMaster Command Injection Vulnerability",
-        "dateAdded": "2026-08-07",
-        "shortDescription": "Progress LoadMaster contains a command injection vulnerability that allows an un-authenticated attacker to execute arbitrary commands on the LoadMaster appliance by exploiting unsanitized input in multiple command endpoints.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-63077",
-        "vendorProject": "JetBrains",
-        "product": "TeamCity",
-        "vulnerabilityName": "JetBrains TeamCity Deserialization of Untrusted Data Vulnerability",
-        "dateAdded": "2026-08-05",
-        "shortDescription": "JetBrains TeamCity contains a deserialization of untrusted data vulnerability that could allow unauthenticated remote code execution via the agent polling protocol.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-18556",
-        "vendorProject": "N-able",
-        "product": "N-central",
-        "vulnerabilityName": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-        "dateAdded": "2026-08-04",
-        "shortDescription": "N-able N-central contains an authentication bypass using an alternate path or channel that allows for authentication bypass.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-34486",
-        "vendorProject": "Apache",
-        "product": "Tomcat",
-        "vulnerabilityName": "Apache Tomcat Missing Encryption of Sensitive Data Vulnerability",
-        "dateAdded": "2026-08-04",
-        "shortDescription": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor. This vulnerability can be chained with CVE‑2025‑24813.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-9198",
-        "vendorProject": "IBM",
-        "product": "Langflow",
-        "vulnerabilityName": "IBM Langflow Code Injection Vulnerability",
-        "dateAdded": "2026-08-04",
-        "shortDescription": "Langflow contains a code injection vulnerability that allows unauthenticated attackers to achieve full remote code execution on default Langflow deployments.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-18577",
-        "vendorProject": "N-able",
-        "product": "N-central",
-        "vulnerabilityName": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-        "dateAdded": "2026-08-03",
-        "shortDescription": "N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-2026-18556.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-20316",
-        "vendorProject": "Cisco",
-        "product": "Secure Firewall Management Center (FMC)",
-        "vulnerabilityName": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
-        "dateAdded": "2026-07-29",
-        "shortDescription": "Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2025-68686",
-        "vendorProject": "Fortinet",
-        "product": "FortiOS",
-        "vulnerabilityName": "Fortinet FortiOS Exposure of Sensitive Information to an Unauthorized Actor Vulnerability",
-        "dateAdded": "2026-07-27",
-        "shortDescription": "Fortinet FortiOS contains an exposure of sensitive information to an unauthorized actor vulnerability. This may allow a remote unauthenticated attacker to bypass the patch developed for the symbolic link persistency mechanism observed in some post-exploit cases, via crafted HTTP requests. An attacker would need first to have compromised the product via another vulnerability, at filesystem level.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-16812",
-        "vendorProject": "Arista",
-        "product": "VeloCloud Orchestrator",
-        "vulnerabilityName": "Arista VeloCloud Orchestrator On-Prem OS Command Injection Vulnerability",
-        "dateAdded": "2026-07-27",
-        "shortDescription": "Arista VeloCloud Orchestrator On-Prem contains an OS command injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-16232",
-        "vendorProject": "Check Point",
-        "product": "SmartConsole",
-        "vulnerabilityName": "Check Point SmartConsole Improper Authentication Vulnerability",
-        "dateAdded": "2026-07-22",
-        "shortDescription": "Check Point SmartConsole contains an improper authentication vulnerability which could allow an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative privileges.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-50522",
-        "vendorProject": "Microsoft",
-        "product": "SharePoint",
-        "vulnerabilityName": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ",
-        "dateAdded": "2026-07-22",
-        "shortDescription": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-60137",
-        "vendorProject": "WordPress",
-        "product": "Core",
-        "vulnerabilityName": "WordPress Core SQL Injection Vulnerability",
-        "dateAdded": "2026-07-21",
-        "shortDescription": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-63030",
-        "vendorProject": "WordPress",
-        "product": "Core",
-        "vulnerabilityName": "WordPress Core Interpretation Conflict Vulnerability",
-        "dateAdded": "2026-07-21",
-        "shortDescription": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-0770",
-        "vendorProject": "Langflow",
-        "product": "Langflow",
-        "vulnerabilityName": "Langflow Inclusion of Functionality from Untrusted Control Sphere Vulnerability",
-        "dateAdded": "2026-07-21",
-        "shortDescription": "Langflow contains an inclusion of functionality from untrusted control sphere vulnerability that allows remote attackers to execute arbitrary code on affected installations. ",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2021-27137",
-        "vendorProject": "DD-WRT",
-        "product": "DD-WRT",
-        "vulnerabilityName": "DD-WRT Stack-Based Buffer Overflow Vulnerability",
-        "dateAdded": "2026-07-21",
-        "shortDescription": "DD-WRT contains a stack-based buffer overflow vulnerability that could allow an unauthenticated attacker to overflow an internal buffer used by UPnP and trigger a code execution vulnerability.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-58644",
-        "vendorProject": "Microsoft",
-        "product": "SharePoint",
-        "vulnerabilityName": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
-        "dateAdded": "2026-07-16",
-        "shortDescription": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability that allows an unauthorized attacker to execute code over a network.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-25089",
-        "vendorProject": "Fortinet",
-        "product": "FortiSandbox",
-        "vulnerabilityName": "Fortinet FortiSandbox OS Command Injection Vulnerability",
-        "dateAdded": "2026-07-16",
-        "shortDescription": "Fortinet FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS contain an OS command injection vulnerability that allows an unauthenticated attacker to execute unauthorized commands via specifically crafted HTTP requests.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-39808",
-        "vendorProject": "Fortinet",
-        "product": "FortiSandbox",
-        "vulnerabilityName": "Fortinet FortiSandbox OS Command Injection Vulnerability",
-        "dateAdded": "2026-07-16",
-        "shortDescription": "Fortinet FortiSandbox contains an OS command injection vulnerability that could allow an unauthenticated attacker to execute unauthorized code or commands via crafted HTTP requests.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-46817",
-        "vendorProject": "Oracle",
-        "product": "E-Business Suite",
-        "vulnerabilityName": "Oracle E-Business Suite Improper Privilege Management Vulnerability",
-        "dateAdded": "2026-07-15",
-        "shortDescription": "Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks of this vulnerability can result in takeover of Oracle Payments.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2023-4346",
-        "vendorProject": "KNX Association",
-        "product": "KNX Protocol Connection Authorization Option 1",
-        "vulnerabilityName": "KNX Association KNX Protocol Connection Authorization Option 1 Overly Restrictive Account Lockout Mechanism Vulnerability",
-        "dateAdded": "2026-07-15",
-        "shortDescription": "KNX Association KNX Protocol Connection Authorization Option 1 contains an overly restrictive account lockout mechanism vulnerability that could allow an attacker to purge all devices without additional security options enabled and set a BCU key to lock the device. ",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-56155",
-        "vendorProject": "Microsoft",
-        "product": "Active Directory Federation Services",
-        "vulnerabilityName": "Microsoft Active Directory Federation Services Insufficient Granularity of Access Control Vulnerability ",
-        "dateAdded": "2026-07-14",
-        "shortDescription": "Microsoft Active Directory Federation Services contains an insufficient granularity of access control vulnerability that allows an authorized attacker to elevate privileges locally.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-56164",
-        "vendorProject": "Microsoft",
-        "product": "SharePoint Server",
-        "vulnerabilityName": "Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability",
-        "dateAdded": "2026-07-14",
-        "shortDescription": "Microsoft SharePoint contains a missing authentication for critical function vulnerability that allows an unauthorized attacker to elevate privileges over a network.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-15409",
-        "vendorProject": "SonicWall",
-        "product": "SMA1000 Appliances",
-        "vulnerabilityName": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
-        "dateAdded": "2026-07-14",
-        "shortDescription": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-15410",
-        "vendorProject": "SonicWall",
-        "product": "SMA1000 Appliances",
-        "vulnerabilityName": "SonicWall SMA1000 Appliances Code Injection Vulnerability",
-        "dateAdded": "2026-07-14",
-        "shortDescription": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2008-4128",
-        "vendorProject": "Cisco",
-        "product": "IOS",
-        "vulnerabilityName": "Cisco IOS Cross-Site Request Forgery Vulnerability",
-        "dateAdded": "2026-07-13",
-        "shortDescription": "Cisco IOS 12.4 contains multiple cross-site forgery vulnerabilities that allows remote attackers to execute arbitrary commands via (1) a certain \"show privilege\" command to the /level/15/exec/- URI, and (2) a certain \"alias exec\" command to the /level/15/exec/-/configure/http URI.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-56291",
-        "vendorProject": "Balbooa",
-        "product": "Forms",
-        "vulnerabilityName": "Balbooa Forms Unrestricted Upload of File with Dangerous Type Vulnerability",
-        "dateAdded": "2026-07-10",
-        "shortDescription": "Balbooa Forms contains an unrestricted upload of file with dangerous type vulnerability that allows an unauthenticated arbitrary file upload which could allow uploading of executable files leading to full RCE.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-48939",
-        "vendorProject": "iCagenda",
-        "product": "iCagenda",
-        "vulnerabilityName": "iCagenda Unrestricted Upload of File with Dangerous Type Vulnerability",
-        "dateAdded": "2026-07-10",
-        "shortDescription": "iCagenda contains an unrestricted upload of file with dangerous type vulnerability that allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-48908",
-        "vendorProject": "JoomShaper",
-        "product": "SP Page Builder",
-        "vulnerabilityName": "JoomShaper SP Page Builder Unrestricted Upload of File with Dangerous Type Vulnerability",
-        "dateAdded": "2026-07-07",
-        "shortDescription": "JoomShaper SP Page Builder contains an unrestricted upload of file with dangerous type vulnerability that allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and execution of PHP code.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-55255",
-        "vendorProject": "Langflow",
-        "product": "Langflow",
-        "vulnerabilityName": "Langflow Authorization Bypass Through User-Controlled Key Vulnerability",
-        "dateAdded": "2026-07-07",
-        "shortDescription": "Langflow contains an authorization bypass through user-controlled key vulnerability which allows an authenticated attacker to execute any flow belonging to another user by specifying the victim's flow ID in the request.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-56290",
-        "vendorProject": "Joomlack",
-        "product": "Page Builder",
-        "vulnerabilityName": "Joomlack Page Builder Improper Access Control Vulnerability",
-        "dateAdded": "2026-07-07",
-        "shortDescription": "Joomlack Page Builder contains an improper access control vulnerability that could allow for remote code execution via unauthenticated arbitrary file upload.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-48282",
-        "vendorProject": "Adobe",
-        "product": "ColdFusion",
-        "vulnerabilityName": "Adobe ColdFusion Path Traversal Vulnerability",
-        "dateAdded": "2026-07-07",
-        "shortDescription": "Adobe ColdFusion contains a path traversal vulnerability that could lead to arbitrary code execution in the context of the current user.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-45659",
-        "vendorProject": "Microsoft",
-        "product": "SharePoint Server",
-        "vulnerabilityName": "Microsoft SharePoint Server Deserialization of Untrusted Data Vulnerability",
-        "dateAdded": "2026-07-01",
-        "shortDescription": "Microsoft SharePoint Server contains a deserialization of untrusted data vulnerability which allows an authorized attacker to execute code over a network.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-48558",
-        "vendorProject": "SimpleHelp ",
-        "product": "SimpleHelp",
-        "vulnerabilityName": "SimpleHelp Authentication Bypass Vulnerability",
-        "dateAdded": "2026-06-29",
-        "shortDescription": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-12569",
-        "vendorProject": "PTC",
-        "product": "Windchill and FlexPLM",
-        "vulnerabilityName": "PTC Windchill and FlexPLM Improper Input Validation Vulnerability",
-        "dateAdded": "2026-06-25",
-        "shortDescription": "PTC Windchill and FlexPLM contains an improper input validation vulnerability allowing an unauthenticated, remote attacker to execute arbitrary code by sending a malicious request to the network.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-20230",
-        "vendorProject": "Cisco",
-        "product": "Unified Communications Manager",
-        "vulnerabilityName": "Cisco Unified Communications Manager Server-Side Request Forgery (SSRF) Vulnerability",
-        "dateAdded": "2026-06-25",
-        "shortDescription": "Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) contain a server-side request forgery (SSRF) Vulnerability that could allow an unauthenticated, remote attacker to write files to the underlying operating system that could be used later to elevate to root.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2025-67038",
-        "vendorProject": "Lantronix",
-        "product": "EDS5000",
-        "vulnerabilityName": "Lantronix EDS5000 Code Injection Vulnerability",
-        "dateAdded": "2026-06-23",
-        "shortDescription": "Lantronix EDS5000 contains a code injection vulnerability that could allow attackers to inject arbitrary OS commands into the username parameter. Injected commands are executed with root privileges.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-34910",
-        "vendorProject": "Ubiquiti",
-        "product": "UniFi OS",
-        "vulnerabilityName": "Ubiquiti UniFi OS Improper Input Validation Vulnerability",
-        "dateAdded": "2026-06-23",
-        "shortDescription": "Ubiquiti UniFi OS contains an improper input validation vulnerability which could allow a malicious actor with access to the network to conduct command injection.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-34909",
-        "vendorProject": "Ubiquiti",
-        "product": "UniFi OS",
-        "vulnerabilityName": "Ubiquiti UniFi OS Path Traversal Vulnerability",
-        "dateAdded": "2026-06-23",
-        "shortDescription": "Ubiquiti UniFi OS contains a path traversal vulnerability which could allow a malicious actor with access to the network to access files on the underlying system that could be manipulated to access an underlying account.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-34908",
-        "vendorProject": "Ubiquiti",
-        "product": "UniFi OS",
-        "vulnerabilityName": "Ubiquiti UniFi OS Improper Access Control Vulnerability",
-        "dateAdded": "2026-06-23",
-        "shortDescription": "Ubiquiti UniFi OS contains an improper access control vulnerability which could allow a malicious actor with access to the network to make unauthorized changes to the system.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-20253",
-        "vendorProject": "Splunk",
-        "product": "Enterprise",
-        "vulnerabilityName": "Splunk Enterprise Missing Authentication for Critical Function Vulnerability",
-        "dateAdded": "2026-06-18",
-        "shortDescription": "Splunk Enterprise contains a missing authentication for critical function vulnerability which could allow an unauthenticated user to create or truncate arbitrary files through a PostgreSQL sidecar service endpoint.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-48907",
-        "vendorProject": "Widget Factory",
-        "product": "Joomla Content Editor ",
-        "vulnerabilityName": "Widget Factory Joomla Content Editor Improper Access Control Vulnerability",
-        "dateAdded": "2026-06-16",
-        "shortDescription": "Widget Factory Joomla Content Editor contains an improper access control vulnerability which could allow for upload and execution of PHP code via the creation of new editor profiles for unauthenticated users. ",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-54420",
-        "vendorProject": "LiteSpeed",
-        "product": "cPanel Plugin",
-        "vulnerabilityName": "LiteSpeed cPanel Plugin UNIX Symbolic Link (Symlink) Following Vulnerability",
-        "dateAdded": "2026-06-15",
-        "shortDescription": "LiteSpeed cPanel plugin contains a UNIX symbolic link (Symlink) following vulnerability that could allow a user with FTP or web shell access on a shared hosting server running CloudLinux/CageFS.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-20262",
-        "vendorProject": "Cisco",
-        "product": "Catalyst SD-WAN Manager",
-        "vulnerabilityName": "Cisco Catalyst SD-WAN Manager Directory or Path Traversal Vulnerability",
-        "dateAdded": "2026-06-15",
-        "shortDescription": "Cisco Catalyst SD-WAN Manager contains a directory or path traversal vulnerability that could allow an authenticated, remote attacker to create a file or overwrite any file on the filesystem of an affected system.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-35273",
-        "vendorProject": "Oracle",
-        "product": " PeopleSoft Enterprise PeopleTools",
-        "vulnerabilityName": "Oracle PeopleSoft Enterprise PeopleTools Missing Authentication for Critical Function Vulnerability",
-        "dateAdded": "2026-06-12",
-        "shortDescription": "Oracle PeopleSoft Enterprise PeopleTools contains a missing authentication for critical function vulnerability which could allow an unauthenticated attacker to obtain takeover of PeopleSoft Enterprise PeopleTools.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-10520",
-        "vendorProject": "Ivanti",
-        "product": "Sentry",
-        "vulnerabilityName": "Ivanti Sentry OS Command Injection Vulnerability",
-        "dateAdded": "2026-06-11",
-        "shortDescription": "Ivanti Sentry (formerly known as MobileIron Sentry) contains an OS command injection vulnerability which could allow a remote unauthenticated user to achieve root-level remote code execution. This vulnerability can be successfully exploited in cases where the Sentry appliance is in an unmanaged state with its endpoints externally reachable. The use of mTLS with EPMM or restricted HTTPS access through Neurons for MDM makes interfaces inaccessible to external actors.",
-        "dueDate": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-11645",
-        "vendorProject": "Google",
-        "product": "Chromium V8",
-        "vulnerabilityName": "Google Chromium V8 Out-of-Bounds Read and Write Vulnerability",
-        "dateAdded": "2026-06-09",
-        "shortDescription": "Google Chromium V8 out-of-bounds read and write vulnerability that could allow a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-7473",
-        "vendorProject": "Arista",
-        "product": "Extensible Operating System",
-        "vulnerabilityName": "Arista Extensible Operating System Incomplete Comparison with Missing Factors Vulnerability",
-        "dateAdded": "2026-06-09",
-        "shortDescription": "Arista Extensible Operating System (EOS) contains an incomplete comparison with missing factors vulnerability when the switch incorrectly decapsulate and forwards other unexpected tunneled packet with a destination IP matching its configured decapsulation IP.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-20245",
-        "vendorProject": "Cisco",
-        "product": "Catalyst SD-WAN Manager",
-        "vulnerabilityName": "Cisco Catalyst SD-WAN Manager Improper Encoding or Escaping of Output Vulnerability",
-        "dateAdded": "2026-06-09",
-        "shortDescription": "Cisco Catalyst SD-WAN Manager formerly SD-WAN vManage contains an improper encoding or escaping of output vulnerability. This vulnerability could allow an authenticated, local attacker to execute arbitrary commands as root by supplying a crafted file to the affected system.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-42271",
-        "vendorProject": "BerriAI",
-        "product": "LiteLLM",
-        "vulnerabilityName": "BerriAI LiteLLM Command Injection Vulnerability",
-        "dateAdded": "2026-06-08",
-        "shortDescription": "BerriAI LiteLLM contains a command injection vulnerability that could allow any authenticated user, including holders of low-privilege internal-user keys, to run arbitrary commands on the host.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-50751",
-        "vendorProject": "Check Point",
-        "product": "Security Gateway",
-        "vulnerabilityName": "Check Point Security Gateway Improper Authentication Vulnerability",
-        "dateAdded": "2026-06-08",
-        "shortDescription": "Check Point Security Gateway contains an improper authentication vulnerability in IKEv1 key exchange that could allow an unauthenticated remote attacker to bypass user authentication and establish a remote access VPN connection without a valid user password.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-28318",
-        "vendorProject": "SolarWinds",
-        "product": "Serv-U",
-        "vulnerabilityName": "SolarWinds Serv-U Uncontrolled Resource Consumption Vulnerability",
-        "dateAdded": "2026-06-05",
-        "shortDescription": "SolarWinds Serv-U contains an uncontrolled resource consumption vulnerability that allows specially crafted POST requests using the Content-Encoding: deflate header to crash the Serv-U service without authentication.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-45247",
-        "vendorProject": "Mirasvit",
-        "product": "Mirasvit Full Page Cache Warmer",
-        "vulnerabilityName": "Mirasvit Full Page Cache Warmer Deserialization of Untrusted Data Vulnerability",
-        "dateAdded": "2026-06-03",
-        "shortDescription": "Mirasvit Full Page Cache Warmer contains a deserialization of untrusted data vulnerability that could allow unauthenticated attackers to achieve remote code execution by supplying a crafted serialized PHP object in the CacheWarmer cookie.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2022-0492",
-        "vendorProject": "Linux",
-        "product": "Kernel",
-        "vulnerabilityName": "Linux Kernel Improper Authentication Vulnerability",
-        "dateAdded": "2026-06-02",
-        "shortDescription": "Linux Kernel contains an improper authentication vulnerability which could allow for privilege escalation via the cgroups v1 release_agent feature.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2025-48595",
-        "vendorProject": "Android",
-        "product": "Framework",
-        "vulnerabilityName": "Android Framework Integer Overflow Vulnerability",
-        "dateAdded": "2026-06-02",
-        "shortDescription": "Android Framework contains an integer overflow vulnerability that allows for code execution that could allow for local privilege escalation.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2024-21182",
-        "vendorProject": "Oracle",
-        "product": "WebLogic Server",
-        "vulnerabilityName": "Oracle WebLogic Server Unspecified Vulnerability",
-        "dateAdded": "2026-06-01",
-        "shortDescription": "Oracle WebLogic contains an unspecified vulnerability that could allow an unauthenticated attacker with network access via T3, IIOP to compromise Oracle WebLogic Server. Successful attacks of this vulnerability can result in unauthorized access to critical data or complete access to all Oracle WebLogic Server accessible data.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-0257",
-        "vendorProject": "Palo Alto Networks",
-        "product": "PAN-OS",
-        "vulnerabilityName": "Palo Alto Networks PAN-OS Authentication Bypass Vulnerability",
-        "dateAdded": "2026-05-29",
-        "shortDescription": "Palo Alto Networks PAN-OS contains an authentication bypass vulnerability that allows attackers to bypass security restrictions and establish an unauthorized VPN connection.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-48027",
-        "vendorProject": "Nx",
-        "product": "Nx Console",
-        "vulnerabilityName": "Nx Console Embedded Malicious Code Vulnerability",
-        "dateAdded": "2026-05-27",
-        "shortDescription": "Nx Console contains an embedded malicious code vulnerability that allowed a malicious version of Nx Console to be published. The compromised extension fetched an obfuscated payload that could harvested credentials from multiple sources on disk and in memory.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-45321",
-        "vendorProject": "TanStack",
-        "product": "TanStack",
-        "vulnerabilityName": "TanStack Unspecified Vulnerability",
-        "dateAdded": "2026-05-27",
-        "shortDescription": "TanStack contains an unspecified vulnerability that allowed malicious versions of the product to be published to the npm registry to publish credential-stealing malware under a trusted identity.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-8398",
-        "vendorProject": "Daemon",
-        "product": "Daemon Tools Lite",
-        "vulnerabilityName": "Daemon Tools Lite Embedded Malicious Code Vulnerability",
-        "dateAdded": "2026-05-27",
-        "shortDescription": "Daemon Tools contains an unspecified vulnerability that has a high impact on confidentiality, integrity, and availability.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-48172",
-        "vendorProject": "LiteSpeed",
-        "product": "cPanel Plugin",
-        "vulnerabilityName": "LiteSpeed cPanel Plugin Privilege Escalation Vulnerability",
-        "dateAdded": "2026-05-26",
-        "shortDescription": "LiteSpeed cPanel Plugin contains privilege escalation vulnerability that is exposed via the user-end cPanel plugin, which can be abused by any cPanel user account to execute arbitrary scripts with root privileges.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-9082",
-        "vendorProject": "Drupal",
-        "product": "Core",
-        "vulnerabilityName": "Drupal Core SQL Injection Vulnerability",
-        "dateAdded": "2026-05-22",
-        "shortDescription": "Drupal Core contains a SQL injection vulnerability that could allow for privilege escalation and remote code execution via specially crafted requests sent with the database abstraction API.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2025-34291",
-        "vendorProject": "Langflow",
-        "product": "Langflow",
-        "vulnerabilityName": "Langflow Origin Validation Error Vulnerability",
-        "dateAdded": "2026-05-21",
-        "shortDescription": "Langflow contains an origin validation error vulnerability in which an overly permissive CORS configuration combined with a refresh token cookie configured as SameSite=None allows a malicious webpage to perform cross-origin requests that include credentials and successfully call the refresh endpoint. This could allow the attacker to execute arbitrary code and achieve full system compromise via obtained tokens that permit access to authenticated endpoints.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-34926",
-        "vendorProject": "Trend Micro",
-        "product": "Apex One",
-        "vulnerabilityName": "Trend Micro Apex One (On-Premise) Directory Traversal Vulnerability",
-        "dateAdded": "2026-05-21",
-        "shortDescription": "Trend Micro Apex One (on-premise) contains a directory traversal vulnerability that could allow a pre-authenticated local attacker to modify a key table on the server to inject malicious code to deploy to agents on affected installations.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2008-4250",
-        "vendorProject": "Microsoft",
-        "product": "Windows",
-        "vulnerabilityName": "Microsoft Windows Buffer Overflow Vulnerability",
-        "dateAdded": "2026-05-20",
-        "shortDescription": "Microsoft Windows contains a buffer overflow vulnerability in the Windows Server Service that allows remote attackers to execute arbitrary code via a crafted RPC request that triggers an overflow during path canonicalization.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2009-1537",
-        "vendorProject": "Microsoft",
-        "product": "DirectX",
-        "vulnerabilityName": "Microsoft DirectX NULL Byte Overwrite Vulnerability",
-        "dateAdded": "2026-05-20",
-        "shortDescription": "Microsoft DirectX contains a NULL byte overwrite vulnerability in the QuickTime Movie Parser Filter in quartz.dll in DirectShow which could allow remote attackers to execute arbitrary code via a crafted QuickTime media file.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2009-3459",
-        "vendorProject": "Adobe",
-        "product": "Acrobat and Reader",
-        "vulnerabilityName": "Adobe Acrobat and Reader Heap-Based Buffer Overflow Vulnerability",
-        "dateAdded": "2026-05-20",
-        "shortDescription": "Adobe Acrobat and Reader contain a heap-based buffer overflow vulnerability which could allow remote attackers to execute arbitrary code via a crafted PDF file that triggers memory corruption.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2010-0249",
-        "vendorProject": "Microsoft",
-        "product": "Internet Explorer",
-        "vulnerabilityName": "Microsoft Internet Explorer Use-After-Free Vulnerability",
-        "dateAdded": "2026-05-20",
-        "shortDescription": "Microsoft Internet Explorer contains an use-after-free vulnerability that could allow remote attackers to execute arbitrary code by accessing a pointer associated with a deleted object. The impacted product could be end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue product utilization.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2010-0806",
-        "vendorProject": "Microsoft",
-        "product": "Internet Explorer",
-        "vulnerabilityName": "Microsoft Internet Explorer Use-After-Free Vulnerability",
-        "dateAdded": "2026-05-20",
-        "shortDescription": "Microsoft Internet Explorer contains an use-after-free vulnerability that could allow remote attackers to execute arbitrary code via vectors involving access to an invalid pointer after the deletion of an object. The impacted product could be end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue product utilization.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-41091",
-        "vendorProject": "Microsoft",
-        "product": "Defender",
-        "vulnerabilityName": "Microsoft Defender Link Following Vulnerability",
-        "dateAdded": "2026-05-20",
-        "shortDescription": "Microsoft Defender contains a link following vulnerability that allows an authorized attacker to elevate privileges locally.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-45498",
-        "vendorProject": "Microsoft",
-        "product": "Defender",
-        "vulnerabilityName": "Microsoft Defender Denial of Service Vulnerability",
-        "dateAdded": "2026-05-20",
-        "shortDescription": "Microsoft Defender contains an unspecified vulnerability that allows for denial of service.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-42897",
-        "vendorProject": "Microsoft",
-        "product": "Microsoft",
-        "vulnerabilityName": "Microsoft Exchange Server Cross-Site Scripting Vulnerability",
-        "dateAdded": "2026-05-15",
-        "shortDescription": "Microsoft Exchange Server contains a cross-site scripting vulnerability during web page generation in Outlook Web Access and when certain interaction conditions are met, arbitrary JavaScript can be executed in the browser context.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-20182",
-        "vendorProject": "Cisco",
-        "product": "Catalyst SD-WAN",
-        "vulnerabilityName": "Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability",
-        "dateAdded": "2026-05-14",
-        "shortDescription": "Cisco Catalyst SD-WAN Controller & Manager contain an authentication bypass vulnerability that allows an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.",
-        "dueDate": "Please adhere to CISA’s guidelines to assess exposure and mitigate risks associated with Cisco SD-WAN devices as outlined in CISA’s Emergency Directive 26-03 (URL listed below in Notes) and CISA’s Hunt & Hardening Guidance for Cisco SD-WAN Devices (URL listed below in Notes). Adhere to the applicable BOD 22-01 guidance for cloud services or discontinue use of the product if mitigations are not available.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-42208",
-        "vendorProject": "BerriAI",
-        "product": "LiteLLM",
-        "vulnerabilityName": "BerriAI LiteLLM SQL Injection Vulnerability",
-        "dateAdded": "2026-05-08",
-        "shortDescription": "BerriAI LiteLLM contains a SQL injection vulnerability that allows an attacker to read data from the proxy's database and potentially modify it, leading to unauthorized access to the proxy and the credentials it manages.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-6973",
-        "vendorProject": "Ivanti",
-        "product": "Endpoint Manager Mobile (EPMM)",
-        "vulnerabilityName": "Ivanti Endpoint Manager Mobile (EPMM) Improper Input Validation Vulnerability",
-        "dateAdded": "2026-05-07",
-        "shortDescription": "Ivanti Endpoint Manager Mobile (EPMM) contains an improper input validation vulnerability that allows a remotely authenticated user with administrative access to achieve remote code execution.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-0300",
-        "vendorProject": "Palo Alto Networks",
-        "product": "PAN-OS",
-        "vulnerabilityName": "Palo Alto Networks PAN-OS Out-of-bounds Write Vulnerability",
-        "dateAdded": "2026-05-06",
-        "shortDescription": "Palo Alto Networks PAN-OS contains an out-of-bounds write vulnerability in the User-ID Authentication Portal (aka Captive Portal) service that can allow an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially crafted packets.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Until the vendor releases an official fix, the following workaround should be implemented:  - Restrict User-ID Authentication Portal access to only trusted zones.  - Disable User-ID Authentication Portal if not required. 5/13/2026: Palo Alto has released a variety of patches. If these are relevant to your environment, please apply the designated patch.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-31431",
-        "vendorProject": "Linux",
-        "product": "Kernel",
-        "vulnerabilityName": "Linux Kernel Incorrect Resource Transfer Between Spheres Vulnerability",
-        "dateAdded": "2026-05-01",
-        "shortDescription": "Linux Kernel contains an incorrect resource transfer between spheres vulnerability that could allow for privilege escalation.",
-        "dueDate": "\"Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-41940",
-        "vendorProject": "WebPros",
-        "product": "cPanel & WHM and WP2 (WordPress Squared)",
-        "vulnerabilityName": "WebPros cPanel & WHM and WP2 (WordPress Squared) Missing Authentication for Critical Function Vulnerability",
-        "dateAdded": "2026-04-30",
-        "shortDescription": "WebPros cPanel & WHM (WebHost Manager) and WP2 (WordPress Squared) contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2024-1708",
-        "vendorProject": "ConnectWise",
-        "product": "ScreenConnect",
-        "vulnerabilityName": "ConnectWise ScreenConnect Path Traversal Vulnerability",
-        "dateAdded": "2026-04-28",
-        "shortDescription": "ConnectWise ScreenConnect contains a path traversal vulnerability which could allow an attacker to execute remote code or directly impact confidential data and critical systems.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-32202",
-        "vendorProject": "Microsoft",
-        "product": "Windows",
-        "vulnerabilityName": "Microsoft Windows Protection Mechanism Failure Vulnerability",
-        "dateAdded": "2026-04-28",
-        "shortDescription": "Microsoft Windows Shell contains a protection mechanism failure vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2025-29635",
-        "vendorProject": "D-Link",
-        "product": "DIR-823X",
-        "vulnerabilityName": "D-Link DIR-823X Command Injection Vulnerability",
-        "dateAdded": "2026-04-24",
-        "shortDescription": "D-Link DIR-823X contains a command injection vulnerability that allows an authorized attacker to execute arbitrary commands on remote devices by sending a POST request to /goform/set_prohibiting via the corresponding function. The impacted product could be end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue product utilization.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2024-7399",
-        "vendorProject": "Samsung",
-        "product": "MagicINFO 9 Server",
-        "vulnerabilityName": "Samsung MagicINFO 9 Server Path Traversal Vulnerability",
-        "dateAdded": "2026-04-24",
-        "shortDescription": "Samsung MagicINFO 9 Server contains a path traversal vulnerability that could allow an attacker to write arbitrary files as system authority.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2024-57728",
-        "vendorProject": "SimpleHelp ",
-        "product": "SimpleHelp",
-        "vulnerabilityName": "SimpleHelp Path Traversal Vulnerability",
-        "dateAdded": "2026-04-24",
-        "shortDescription": "SimpleHelp contains a path traversal vulnerability that allows admin users to upload arbitrary files anywhere on the file system by uploading a crafted zip file (i.e. zip slip). This can be exploited to execute arbitrary code on the host in the context of the SimpleHelp server user.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2024-57726",
-        "vendorProject": "SimpleHelp ",
-        "product": "SimpleHelp",
-        "vulnerabilityName": "SimpleHelp Missing Authorization Vulnerability",
-        "dateAdded": "2026-04-24",
-        "shortDescription": "SimpleHelp contains a missing authorization vulnerability that could allow low-privileged technicians to create API keys with excessive permissions. These API keys can be used to escalate privileges to the server admin role.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-39987",
-        "vendorProject": "Marimo",
-        "product": "Marimo",
-        "vulnerabilityName": "Marimo Remote Code Execution Vulnerability",
-        "dateAdded": "2026-04-23",
-        "shortDescription": "Marimo contains an pre-authorization remote code execution vulnerability, allowing an unauthenticated attacked to shell access and execute arbitrary system commands.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-33825",
-        "vendorProject": "Microsoft",
-        "product": "Defender",
-        "vulnerabilityName": "Microsoft Defender Insufficient Granularity of Access Control Vulnerability",
-        "dateAdded": "2026-04-22",
-        "shortDescription": "Microsoft Defender contains an insufficient granularity of access control vulnerability that could allow an authorized attacker to escalate privileges locally.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-20122",
-        "vendorProject": "Cisco",
-        "product": "Catalyst SD-WAN Manger",
-        "vulnerabilityName": "Cisco Catalyst SD-WAN Manager Incorrect Use of Privileged APIs Vulnerability",
-        "dateAdded": "2026-04-20",
-        "shortDescription": "Cisco Catalyst SD-WAN Manager contains an incorrect use of privileged APIs vulnerability due to improper file handling on the API interface of an affected system. An attacker could exploit this vulnerability by uploading a malicious file on the local file system. A successful exploit could allow the attacker to overwrite arbitrary files on the affected system and gain vmanage user privileges.",
-        "dueDate": "Please adhere to CISA’s guidelines to assess exposure and mitigate risks associated with Cisco SD-WAN devices as outlines in CISA’s Emergency Directive 26-03 (URL listed below in Notes) and CISA’s “Hunt & Hardening Guidance for Cisco SD-WAN Devices (URL listed below in Notes). Adhere to the applicable BOD 22-01 guidance for cloud services or discontinue use of the product if mitigations are not available.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2026-20133",
-        "vendorProject": "Cisco",
-        "product": "Catalyst SD-WAN Manager",
-        "vulnerabilityName": "Cisco Catalyst SD-WAN Manager Exposure of Sensitive Information to an Unauthorized Actor Vulnerability",
-        "dateAdded": "2026-04-20",
-        "shortDescription": "Cisco Catalyst SD-WAN Manager contains an exposure of sensitive information to an unauthorized actor vulnerability that could allow remote attackers to view sensitive information on affected systems.",
-        "dueDate": "Please adhere to CISA’s guidelines to assess exposure and mitigate risks associated with Cisco SD-WAN devices as outlines in CISA’s Emergency Directive 26-03 (URL listed below in Notes) and CISA’s “Hunt & Hardening Guidance for Cisco SD-WAN Devices (URL listed below in Notes). Adhere to the applicable BOD 22-01 guidance for cloud services or discontinue use of the product if mitigations are not available.",
-        "source": "CISA-KEV"
-      },
-      {
-        "cveID": "CVE-2025-2749",
-        "vendorProject": "Kentico",
-        "product": "Kentico Xperience",
-        "vulnerabilityName": "Kentico Xperience Path Traversal Vulnerability",
-        "dateAdded": "2026-04-20",
-        "shortDescription": "Kentico Xperience contains a path traversal vulnerability that could allow an authenticated user's Staging Sync Server to upload arbitrary data to path relative locations.",
-        "dueDate": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "source": "CISA-KEV"
+    "gdelt_articles": [
+      {
+        "title": "Microsoft Patches Entra ID RCE Vulnerability Exploited in Attacks",
+        "url": "https://www.esecurityplanet.com/threats/microsoft-patches-entra-id-rce-vulnerability-exploited-in-attacks/",
+        "domain": "esecurityplanet.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260821T173000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "MLflow Flaw Opens a Path to Cloud Credentials Theft",
+        "url": "https://www.bankinfosecurity.com/mlflow-flaw-opens-path-to-cloud-credentials-theft-a-32626",
+        "domain": "bankinfosecurity.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260821T200000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Opinion : North Carolina biggest threat",
+        "url": "https://www.wilsontimes.com/columns/opinion-north-carolinas-biggest-threat-ed81d483",
+        "domain": "wilsontimes.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260821T211500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Alation Confirms Cyberattack : What Security Teams Need to Know",
+        "url": "https://www.esecurityplanet.com/threats/news-alation-cyberattack-customer-data-exposure/",
+        "domain": "esecurityplanet.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260821T173000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "MLflow Flaw Opens a Path to Cloud Credentials Theft",
+        "url": "https://www.govinfosecurity.com/mlflow-flaw-opens-path-to-cloud-credentials-theft-a-32626",
+        "domain": "govinfosecurity.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260821T164500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Amid Cyber Threats , Oklahoma Commission Steps Up Security",
+        "url": "https://www.govtech.com/security/amid-cyber-threats-oklahoma-commission-steps-up-security",
+        "domain": "govtech.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260821T191500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Experts warn 2 , 000 hacked WordPress sites were secretly running a global crime ring",
+        "url": "https://www.techradar.com/pro/security/experts-warn-2-000-hacked-wordpress-sites-were-secretly-running-a-global-crime-ring",
+        "domain": "techradar.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260822T134500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "AnMed CEO apologizes , confirms data breach after cyberattack",
+        "url": "https://www.wyff4.com/article/anmed-confirms-data-breach-after-cyberattack/73496877",
+        "domain": "wyff4.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260821T224500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Кібератака на Żabka : хакери викрали дані з мережі супермаркетів Світ",
+        "url": "https://tsn.ua/svit/polska-zabka-pid-udarom-khakery-vkarly-personalni-dani-z-merezi-supermarketiv-3153596.html",
+        "domain": "tsn.ua",
+        "language": "Ukrainian",
+        "tone": 0,
+        "seendate": "20260822T124500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "微软 Windows IKE 严重漏洞确认已遭恶意利用 ： 攻击者无需认证即可远程执行代码",
+        "url": "https://finance.sina.com.cn/tech/digi/2026-08-22/doc-inipfkxf7132211.shtml",
+        "domain": "finance.sina.com.cn",
+        "language": "Chinese",
+        "tone": 0,
+        "seendate": "20260822T160000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "WordPress 扩展 W3 Total Cache 曝出 CVSS 满分重大漏洞 ， 可允许黑客写入任意文件",
+        "url": "https://finance.sina.com.cn/tech/digi/2026-08-22/doc-inipeyim7317583.shtml",
+        "domain": "finance.sina.com.cn",
+        "language": "Chinese",
+        "tone": 0,
+        "seendate": "20260822T124500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "研究人员曝光美国NASA地面控制软件AIT - GUI存在严重安全漏洞",
+        "url": "https://www.163.com/dy/article/L4VA14GQ0511B8LM.html",
+        "domain": "163.com",
+        "language": "Chinese",
+        "tone": 0,
+        "seendate": "20260822T123000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "研究人员曝光美国 NASA 地面控制软件 AIT - GUI 存在严重安全漏洞 ， 可导致黑客向飞船发送任意指令",
+        "url": "https://finance.sina.com.cn/tech/digi/2026-08-22/doc-inipeyiq3066324.shtml",
+        "domain": "finance.sina.com.cn",
+        "language": "Chinese",
+        "tone": 0,
+        "seendate": "20260822T124500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "У Польщі сталась кібератака на мережу магазинів Zabka",
+        "url": "https://www.eurointegration.com.ua/news/2026/08/22/7243970/",
+        "domain": "eurointegration.com.ua",
+        "language": "Ukrainian",
+        "tone": 0,
+        "seendate": "20260822T084500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": " 《 Day22 》 CVE 通報 ① 】 沒人能每天讀完全球漏洞 : 規模與時效的人力極限 - iT 邦幫忙 :: 一起幫忙解決難題 ， 拯救 IT 人的一天",
+        "url": "https://ithelp.ithome.com.tw/articles/10404400",
+        "domain": "ithelp.ithome.com.tw",
+        "language": "Chinese",
+        "tone": 0,
+        "seendate": "20260822T030000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Patriot : США признали уязвимость ракетного комплекса перед Россией",
+        "url": "https://ura.news/news/1053120576",
+        "domain": "ura.news",
+        "language": "Russian",
+        "tone": 0,
+        "seendate": "20260822T143000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Your Expired Visa Card Could Be  Zombified  to Make Contactless Payments",
+        "url": "https://www.wired.com/story/security-news-this-week-your-expired-visa-card-could-be-zombiefied-to-make-contactless-payments/",
+        "domain": "wired.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260822T111500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Два дня от патча до боевых атак . В сети появился готовый эксплоит для стирания открытых проектов в GitLab",
+        "url": "https://www.securitylab.ru/news/576288.php",
+        "domain": "securitylab.ru",
+        "language": "Russian",
+        "tone": 0,
+        "seendate": "20260822T064500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "制度漏洞 … 印尼工來台遭換約 月薪砍半 | 社會萬象 | 社會",
+        "url": "https://udn.com/news/story/7320/9706776",
+        "domain": "udn.com",
+        "language": "Chinese",
+        "tone": 0,
+        "seendate": "20260821T201500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "O desafio climático dos próximos governos",
+        "url": "https://newblogs.correiobraziliense.com.br/ecobraziliense/o-desafio-climatico-dos-proximos-governos/",
+        "domain": "newblogs.correiobraziliense.com.br",
+        "language": "Portuguese",
+        "tone": 0,
+        "seendate": "20260821T210000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Healthcare and Health IT News | Healthcare Dive",
+        "url": "https://www.healthcaredive.com/?page=2&_sp=2daebd1f-7de4-498a-9ada-e024937821cb",
+        "domain": "healthcaredive.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260822T014500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Хакери могли перехопити керування космічними апаратами NASA : критичну діру вже закрили",
+        "url": "http://internetua.com/hakeri-mogli-perehopiti-keruvannya-kosmicsnimi-aparatami-nasa-kriticsnu-diru-vje-zakrili",
+        "domain": "internetua.com",
+        "language": "Ukrainian",
+        "tone": 0,
+        "seendate": "20260822T114500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "깃랩 CVSS 9 . 4 결함 , 패치 공개 하루 만에 실제 공격 허니팟서 포착됐다",
+        "url": "https://www.wikitree.co.kr/articles/1154064",
+        "domain": "wikitree.co.kr",
+        "language": "Korean",
+        "tone": 0,
+        "seendate": "20260821T231500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Contoh Soal HOTS IPS Kelas 9 SMP Tema 2 Perkembangan Ekonomi Digital , Soal Terbaru 2026",
+        "url": "https://palembang.tribunnews.com/pendidikan/1326463/contoh-soal-hots-ips-kelas-9-smp-tema-2-perkembangan-ekonomi-digital-soal-terbaru-2026",
+        "domain": "palembang.tribunnews.com",
+        "language": "Indonesian",
+        "tone": 0,
+        "seendate": "20260822T031500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Cegah Salah Sasaran , Data Kesejahteraan Berkala Wajib Dimutakhirkan",
+        "url": "https://jogja.tribunnews.com/diy/1221349/cegah-salah-sasaran-data-kesejahteraan-berkala-wajib-dimutakhirkan",
+        "domain": "jogja.tribunnews.com",
+        "language": "Indonesian",
+        "tone": 0,
+        "seendate": "20260822T091500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": " 【 Day 03 】 當軟體品質遇上資安 ： 從 「 品質觀念演進史 」 解密資安四大防守思維 - iT 邦幫忙 :: 一起幫忙解決難題 ， 拯救 IT 人的一天",
+        "url": "https://ithelp.ithome.com.tw/articles/10404351",
+        "domain": "ithelp.ithome.com.tw",
+        "language": "Chinese",
+        "tone": 0,
+        "seendate": "20260822T030000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Vatic Ventures ( CVE : VCV ) Director Christoph Bruening Purchases 220 , 000 Shares",
+        "url": "https://www.tickerreport.com/banking-finance/13554395/vatic-ventures-cvevcv-director-christoph-bruening-purchases-220000-shares.html",
+        "domain": "tickerreport.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260822T123000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Celebran más de 190 profesionistas el Día del Trabajo Social",
+        "url": "https://www.tiempo.com.mx/cultura/festejo-profesionistas-dia-del-trabajo-social-chihuahua/",
+        "domain": "tiempo.com.mx",
+        "language": "Spanish",
+        "tone": 0,
+        "seendate": "20260821T191500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "MANTRA Chain Hacked Via Cosmos EVM Bug That Already Cost Saga $7M in January",
+        "url": "https://www.techtimes.com/articles/325233/20260821/mantra-chain-hacked-via-cosmos-evm-bug-that-already-cost-saga-7m-january.htm",
+        "domain": "techtimes.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260822T144500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Beneficiários de programas sociais têm acesso a bets bloqueado",
+        "url": "https://istoe.com.br/beneficiarios-programas-sociais-acesso-bets-bloqueado",
+        "domain": "istoe.com.br",
+        "language": "Portuguese",
+        "tone": 0,
+        "seendate": "20260822T040000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Burnout em mulheres : sintomas e por que afeta mais no Brasil",
+        "url": "https://www.uol.com.br/universa/noticias/redacao/2026/08/22/burnout-atinge-mais-mulheres-no-brasil-e-pode-causar-dor-no-peito.ghtm",
+        "domain": "uol.com.br",
+        "language": "Portuguese",
+        "tone": 0,
+        "seendate": "20260822T121500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Rio2 ( CVE : ATM ) Share Price Passes Above 200 Day Moving Average – Here Why",
+        "url": "https://www.themarketsdaily.com/2026/08/22/rio2-cveatm-share-price-passes-above-200-day-moving-average-heres-why.html",
+        "domain": "themarketsdaily.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260822T003000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Entrega Monterrey más de 2 mil 500 Tarjetas Regia Plus a mujeres",
+        "url": "https://horacero.com.mx/nuevo-leon/entrega-monterrey-mas-de-2-mil-500-tarjetas-regia-plus",
+        "domain": "horacero.com.mx",
+        "language": "Spanish",
+        "tone": 0,
+        "seendate": "20260822T040000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "泰國收緊槍枝管制 學者 ： 漏洞仍多籲回收未登記槍枝 | 國際",
+        "url": "https://www.cna.com.tw:443/news/aopl/202608220091.aspx",
+        "domain": "cna.com.tw",
+        "language": "Chinese",
+        "tone": 0,
+        "seendate": "20260822T060000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Los economistas coinciden : los jubilados necesitan entre el 70 % y el 90 % del último salario para mantener su nivel de vida",
+        "url": "https://www.elconfidencial.com/economia/2026-08-22/economistas-jubilados-necesitan-70-90-ultimo-salario-mantener-nivel-vida-1qrt_4397267/",
+        "domain": "elconfidencial.com",
+        "language": "Spanish",
+        "tone": 0,
+        "seendate": "20260822T053000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Un atacante podía tomar el mando de una nave de la NASA desde el navegador : el fallo dejaba ejecutar órdenes y secuencias sin autenticación",
+        "url": "https://www.larazon.es/tecnologia-consumo/ciencia/atacante-podia-tomar-mando-nave-nasa-navegador-fallo-dejaba-ejecutar-ordenes-secuencias-autenticacion_202608226a889cca71b42a0b5dfd32d2.html",
+        "domain": "larazon.es",
+        "language": "Spanish",
+        "tone": 0,
+        "seendate": "20260822T060000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Defesa Civil lança alerta para baixas temperaturas em São Paulo ; veja previsão",
+        "url": "https://www.estadao.com.br/sao-paulo/defesa-civil-lanca-alerta-para-baixas-temperaturas-em-sao-paulo-veja-previsao/",
+        "domain": "estadao.com.br",
+        "language": "Portuguese",
+        "tone": 0,
+        "seendate": "20260822T131500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Lunghi acusó al intendente de Azul de abandonar en Tandil a personas vulnerables y amenaza con denunciarlo",
+        "url": "https://www.lapoliticaonline.com:443/provincia/lunghi-acuso-al-intendente-de-azul-de-abandonar-en-tandil-a-personas-vulnerables-y-amenaza-con-denunciarlo/",
+        "domain": "lapoliticaonline.com",
+        "language": "Spanish",
+        "tone": 0,
+        "seendate": "20260822T033000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "霍尔木兹海峡过船量瞩目 ， 原油周线全线收正 ， 但跨市场价差暴露了什么 ？_ 期市动态 _ 期货 _ 中金在线",
+        "url": "http://futures.cnfol.com/qishidongtai/20260822/32343868.shtml",
+        "domain": "futures.cnfol.com",
+        "language": "Chinese",
+        "tone": 0,
+        "seendate": "20260822T103000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "La mort par arrêt cardiaque survient préférentiellement entre 6h et 10h . Et ce nest pas un hasard",
+        "url": "https://sciencepost.fr/la-mort-par-arret-cardiaque-survient-preferentiellement-entre-6h-et-10h-et-ce-nest-pas-un-hasard/",
+        "domain": "sciencepost.fr",
+        "language": "French",
+        "tone": 0,
+        "seendate": "20260821T203000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": " 「 鹽颱風 」 襲捲全美 ！ T - Mobile剪線網絕殺黑客 | 補丁 | 設備漏洞",
+        "url": "https://www.ntdtv.com/b5/2026/08/21/a104126101.html",
+        "domain": "ntdtv.com",
+        "language": "Chinese",
+        "tone": 0,
+        "seendate": "20260821T184500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "St . James Gold Corp . ( CBS . V ) ( CVE : CBS ) Trading Up 7 . 5 % – Here Why",
+        "url": "https://www.dailypolitical.com/2026/08/22/st-james-gold-corp-cbs-v-cvecbs-trading-up-7-5-heres-why.html",
+        "domain": "dailypolitical.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260822T133000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Guru Besar Untan Prof Gusti Hardiansyah : Risiko Karhutla Tinggi , Tapi Jangan Bangun Ketakutan",
+        "url": "https://pontianak.tribunnews.com/kalbar/1183563/guru-besar-untan-prof-gusti-hardiansyah-risiko-karhutla-tinggi-tapi-jangan-bangun-ketakutan",
+        "domain": "pontianak.tribunnews.com",
+        "language": "Indonesian",
+        "tone": 0,
+        "seendate": "20260822T060000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Venezolano Crisler hace  Terapia  con su nuevo EP",
+        "url": "https://ultimasnoticias.com.ve/chevere/crisler-lanzo-terapia/",
+        "domain": "ultimasnoticias.com.ve",
+        "language": "Spanish",
+        "tone": 0,
+        "seendate": "20260822T003000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Gobierno declaró en emergencia el abastecimiento de GLP en cinco regiones",
+        "url": "https://gestion.pe/peru/politica/gobierno-declaro-en-emergencia-el-abastecimiento-de-glp-en-cinco-regiones-noticia/",
+        "domain": "gestion.pe",
+        "language": "Spanish",
+        "tone": 0,
+        "seendate": "20260822T060000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Celebran más de 190 profesionistas el Día del Trabajo Social",
+        "url": "https://puentelibre.mx/cultura/festejo-profesionistas-dia-del-trabajo-social-chihuahua/",
+        "domain": "puentelibre.mx",
+        "language": "Spanish",
+        "tone": 0,
+        "seendate": "20260821T191500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Padali u komu zbog alkohola i droga , Hitna nije znala gde će pre ! Lekari šokirani u kakvom stanju su noćas prevozili najčešće mlade",
+        "url": "https://naslovi.net/2026-08-22/blic/padali-u-komu-zbog-alkohola-i-droga-hitna-nije-znala-gde-ce-pre-lekari-sokirani-u-kakvom-stanju-su-nocas-prevozili-najcesce-mlade/42253654",
+        "domain": "naslovi.net",
+        "language": "Serbian",
+        "tone": 0,
+        "seendate": "20260822T110000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "美國家實驗室調查中國光達感測器安全漏洞 | 中國光達技術 | 和賽科技",
+        "url": "https://www.ntdtv.com/b5/2026/08/21/a104126179.html",
+        "domain": "ntdtv.com",
+        "language": "Chinese",
+        "tone": 0,
+        "seendate": "20260821T223000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Cypress Development ( CVE : CYP ) Shares Pass Below 50 - Day Moving Average – Here What Happened",
+        "url": "https://www.dailypolitical.com/2026/08/21/cypress-development-cvecyp-shares-pass-below-50-day-moving-average-heres-what-happened.html",
+        "domain": "dailypolitical.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260822T020000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "White Gold ( CVE : WGO ) Trading 7 . 4 % Higher – Time to Buy ? ",
+        "url": "https://www.dailypolitical.com/2026/08/21/white-gold-cvewgo-trading-7-4-higher-time-to-buy.html",
+        "domain": "dailypolitical.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260821T224500Z",
+        "source": "GDELT"
       }
     ],
     "exchange_rates": [
@@ -1120,7 +569,143 @@
     ]
   },
   "entities": [],
-  "events": [],
+  "events": [
+    {
+      "title": "Microsoft Patches Entra ID RCE Vulnerability Exploited in Attacks",
+      "url": "https://www.esecurityplanet.com/threats/microsoft-patches-entra-id-rce-vulnerability-exploited-in-attacks/",
+      "domain": "esecurityplanet.com",
+      "language": "English",
+      "tone": 0,
+      "seendate": "20260821T173000Z",
+      "source": "GDELT"
+    },
+    {
+      "title": "MLflow Flaw Opens a Path to Cloud Credentials Theft",
+      "url": "https://www.bankinfosecurity.com/mlflow-flaw-opens-path-to-cloud-credentials-theft-a-32626",
+      "domain": "bankinfosecurity.com",
+      "language": "English",
+      "tone": 0,
+      "seendate": "20260821T200000Z",
+      "source": "GDELT"
+    },
+    {
+      "title": "Opinion : North Carolina biggest threat",
+      "url": "https://www.wilsontimes.com/columns/opinion-north-carolinas-biggest-threat-ed81d483",
+      "domain": "wilsontimes.com",
+      "language": "English",
+      "tone": 0,
+      "seendate": "20260821T211500Z",
+      "source": "GDELT"
+    },
+    {
+      "title": "Alation Confirms Cyberattack : What Security Teams Need to Know",
+      "url": "https://www.esecurityplanet.com/threats/news-alation-cyberattack-customer-data-exposure/",
+      "domain": "esecurityplanet.com",
+      "language": "English",
+      "tone": 0,
+      "seendate": "20260821T173000Z",
+      "source": "GDELT"
+    },
+    {
+      "title": "MLflow Flaw Opens a Path to Cloud Credentials Theft",
+      "url": "https://www.govinfosecurity.com/mlflow-flaw-opens-path-to-cloud-credentials-theft-a-32626",
+      "domain": "govinfosecurity.com",
+      "language": "English",
+      "tone": 0,
+      "seendate": "20260821T164500Z",
+      "source": "GDELT"
+    },
+    {
+      "title": "Amid Cyber Threats , Oklahoma Commission Steps Up Security",
+      "url": "https://www.govtech.com/security/amid-cyber-threats-oklahoma-commission-steps-up-security",
+      "domain": "govtech.com",
+      "language": "English",
+      "tone": 0,
+      "seendate": "20260821T191500Z",
+      "source": "GDELT"
+    },
+    {
+      "title": "Experts warn 2 , 000 hacked WordPress sites were secretly running a global crime ring",
+      "url": "https://www.techradar.com/pro/security/experts-warn-2-000-hacked-wordpress-sites-were-secretly-running-a-global-crime-ring",
+      "domain": "techradar.com",
+      "language": "English",
+      "tone": 0,
+      "seendate": "20260822T134500Z",
+      "source": "GDELT"
+    },
+    {
+      "title": "AnMed CEO apologizes , confirms data breach after cyberattack",
+      "url": "https://www.wyff4.com/article/anmed-confirms-data-breach-after-cyberattack/73496877",
+      "domain": "wyff4.com",
+      "language": "English",
+      "tone": 0,
+      "seendate": "20260821T224500Z",
+      "source": "GDELT"
+    },
+    {
+      "title": "Кібератака на Żabka : хакери викрали дані з мережі супермаркетів Світ",
+      "url": "https://tsn.ua/svit/polska-zabka-pid-udarom-khakery-vkarly-personalni-dani-z-merezi-supermarketiv-3153596.html",
+      "domain": "tsn.ua",
+      "language": "Ukrainian",
+      "tone": 0,
+      "seendate": "20260822T124500Z",
+      "source": "GDELT"
+    },
+    {
+      "title": "微软 Windows IKE 严重漏洞确认已遭恶意利用 ： 攻击者无需认证即可远程执行代码",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-08-22/doc-inipfkxf7132211.shtml",
+      "domain": "finance.sina.com.cn",
+      "language": "Chinese",
+      "tone": 0,
+      "seendate": "20260822T160000Z",
+      "source": "GDELT"
+    },
+    {
+      "title": "WordPress 扩展 W3 Total Cache 曝出 CVSS 满分重大漏洞 ， 可允许黑客写入任意文件",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-08-22/doc-inipeyim7317583.shtml",
+      "domain": "finance.sina.com.cn",
+      "language": "Chinese",
+      "tone": 0,
+      "seendate": "20260822T124500Z",
+      "source": "GDELT"
+    },
+    {
+      "title": "研究人员曝光美国NASA地面控制软件AIT - GUI存在严重安全漏洞",
+      "url": "https://www.163.com/dy/article/L4VA14GQ0511B8LM.html",
+      "domain": "163.com",
+      "language": "Chinese",
+      "tone": 0,
+      "seendate": "20260822T123000Z",
+      "source": "GDELT"
+    },
+    {
+      "title": "研究人员曝光美国 NASA 地面控制软件 AIT - GUI 存在严重安全漏洞 ， 可导致黑客向飞船发送任意指令",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-08-22/doc-inipeyiq3066324.shtml",
+      "domain": "finance.sina.com.cn",
+      "language": "Chinese",
+      "tone": 0,
+      "seendate": "20260822T124500Z",
+      "source": "GDELT"
+    },
+    {
+      "title": "У Польщі сталась кібератака на мережу магазинів Zabka",
+      "url": "https://www.eurointegration.com.ua/news/2026/08/22/7243970/",
+      "domain": "eurointegration.com.ua",
+      "language": "Ukrainian",
+      "tone": 0,
+      "seendate": "20260822T084500Z",
+      "source": "GDELT"
+    },
+    {
+      "title": " 《 Day22 》 CVE 通報 ① 】 沒人能每天讀完全球漏洞 : 規模與時效的人力極限 - iT 邦幫忙 :: 一起幫忙解決難題 ， 拯救 IT 人的一天",
+      "url": "https://ithelp.ithome.com.tw/articles/10404400",
+      "domain": "ithelp.ithome.com.tw",
+      "language": "Chinese",
+      "tone": 0,
+      "seendate": "20260822T030000Z",
+      "source": "GDELT"
+    }
+  ],
   "timeseries": [],
   "llm_summary": ""
 }
