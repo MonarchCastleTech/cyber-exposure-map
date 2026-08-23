@@ -1,15 +1,13 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-08-23T02:17:34.343168+00:00",
+    "generated": "2026-08-23T07:24:27.031145+00:00",
     "mode": "live",
     "sources": [
       "gdelt_articles",
       "exchange_rates"
     ],
-    "source_notes": [
-      "GDELT unavailable; headlines sourced via Google News RSS fallback."
-    ],
+    "source_notes": [],
     "version": "1.1.0"
   },
   "stats": [
@@ -20,7 +18,7 @@
     },
     {
       "label": "News Domains",
-      "value": "33",
+      "value": "43",
       "delta": "deduplicated"
     },
     {
@@ -37,454 +35,454 @@
   "live_data": {
     "gdelt_articles": [
       {
-        "title": "Vulnerability & Exploit Database",
-        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5oUDR2Z3VJajNuSmFUTno0Uko1dV9GQTMwTENXMGM4OFREUXpwaUlnSERZcTRXQXNmX1otcmhiZVE1cklxWnZMZXdtSQ?oc=5",
-        "domain": "rapid7",
-        "language": "",
+        "title": "County says sharing information about  suspicious activity  in sheriff computer system would  jeopardize public safety  | News , Sports , Jobs - Lawrence Journal - World : news , information , headlines and events in Lawrence , Kansas",
+        "url": "https://www2.ljworld.com/news/public-safety/2026/aug/22/county-says-sharing-details-about-suspicious-activity-in-sheriffs-computer-system-would-jeopardize-public-safety/",
+        "domain": "ljworld.com",
+        "language": "English",
         "tone": 0,
-        "seendate": "20260822T143512Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T213000Z",
+        "source": "GDELT"
       },
       {
-        "title": "CVE-2026-69414 ShieldBreak Zero-Day: No Patch, and CISA BOD 26-04 Gives You 14 Days",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYXhsRzdmNzVSMnBzT29yZXM3dV9YQTYwcVRMZ0R2QlJMQ1FHcVpiZTVtdVRTQlNIOEFEcWtiYWJiYkVLTEh5dGtQd2NBTFdLd1lPRlkycFVlZjJZaTJNOHRGVVZaSU9KVHpwU0lvb3B3Z3RQd3Bac1ZFYVFwWmdHNVBEYUUyeVBJV196UlhSNTJyYWEtQms3eHAtTkd3Z2ZKaTFiVkdJcW45bkthZ1c5ZVpSeWVIbWh0Wkg0akVMQVZuV2tBUlhJNGgxS2kyYnR5bzQw?oc=5",
-        "domain": "qualys",
-        "language": "",
+        "title": "Study reveals 5 , 000 computers infected via WordPress sites",
+        "url": "https://www.thenews.com.pk/latest/1413213-study-reveals-5000-computers-infected-via-wordpress-sites",
+        "domain": "thenews.com.pk",
+        "language": "English",
         "tone": 0,
-        "seendate": "20260820T144151Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T163000Z",
+        "source": "GDELT"
       },
       {
-        "title": "Microsoft Patches Exploited Entra ID Vulnerability",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZTBSb0RyMFluR0JVTUpVNVhqcjBhYU9uaEtaUllwcWFsSE16WmE3a05FOU9lXzBDTzFXNzJmaWltejFwQmQxUTBqSXJxV25ZTUNVT2NmX2d3dzBHYkVvNi1HNUVfdHhUZktwRl9aenFBektEZkZQMmgyUURMX2YxMdIBhgFBVV95cUxPbGpBOU11cEdXbUhnOE8tWHhLMXBOcVZUSWhxYmdZMFlNckgtMUs2cm16Y0NBWjFIM0p2TDRLSXdLWXRfWE1MdVVxdF9CMUotclJid2FoZjhvbWdOZVVsQmVkOVc2R1NuOEN4TFVtaVI5TjZIT2FKNXVFcGNtUHVaLWRGTTNpQQ?oc=5",
-        "domain": "securityweek",
-        "language": "",
+        "title": "Iran cyberattack on united kingdom shuts down British power plant",
+        "url": "https://www.afr.com/world/europe/iranian-hackers-shut-down-uk-power-plant-20260823-p60qop",
+        "domain": "afr.com",
+        "language": "English",
         "tone": 0,
-        "seendate": "20260821T081219Z",
-        "source": "GoogleNews"
+        "seendate": "20260823T044500Z",
+        "source": "GDELT"
       },
       {
-        "title": "GitLab CVE-2026-19478 Comes Under Active Exploitation Within Days of Disclosure",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA2TzhyTnl6QWhhWUhJTGJCajZqV3g5ekcyeU81LWpqRjdybVpLRkY0SS1GbzdHVTQxZ0xOQ3JoRnVUYXpmT0l1Tk90cl8yaTVkVzVQSTJUVXIyTkFVbDloNnN2bk5pVXpMMXNOaC1XOXFVS2E0WndEaWhUX2M?oc=5",
-        "domain": "thehackernews",
-        "language": "",
+        "title": "Experts warn 2 , 000 hacked WordPress sites were secretly running a global crime ring",
+        "url": "https://www.techradar.com/pro/security/experts-warn-2-000-hacked-wordpress-sites-were-secretly-running-a-global-crime-ring",
+        "domain": "techradar.com",
+        "language": "English",
         "tone": 0,
-        "seendate": "20260821T070400Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T134500Z",
+        "source": "GDELT"
       },
       {
-        "title": "What The Hugging Face Cyberattack Teaches Leaders About AI",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWlhqMWhvckZjQkZjRU1udmFzQmdUTFJldlgtc3BrdGc3MmdLaXZwbXdnSVlCbEQ3SEpGLWQ4RU9sN0NZSTkxQ2FoNU9HNG56QWlYdkdoRWpheXdGTkgwdVpHTUk5d1V3NHlwSU5hTEt4RS1IR2VxLVN6ZkhCZ01UVF9oSTM3cldGVXkwaXhYVERzOUdKTTVkcUNReWVwMUk2REliWUtQaUUyOHV3SDZjOTQwZVZ1U043RGFxcQ?oc=5",
-        "domain": "forbes",
-        "language": "",
+        "title": "У Польщі розслідують кібератаку на мережу магазинів Żabka : хакери викрали дані",
+        "url": "https://wz.lviv.ua/news/557394-u-polshchi-rozsliduyut-kiberataku-na-merezhu-magaziniv-abka-khakeri-vikrali-dani",
+        "domain": "wz.lviv.ua",
+        "language": "Ukrainian",
         "tone": 0,
-        "seendate": "20260822T154323Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T180000Z",
+        "source": "GDELT"
       },
       {
-        "title": "Ransomware disproportionately targets medium-sized firms, straining customer relationships",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTi11emk2OWF4bFNlRThvYXVyUm13aWhOY1hLQ09rY2x1dG1FOUJBVkJPTV91RVNheUo0dG5EQXlDY2F2bUF3UEZhOXlfWnVZcmVxbm9mZmw0QS0yS01jZmZCVVdXX0xITXlHSGNNaVQyMmdqcUE1c0p1TlhBa0dHZGdaVWEzU2xjdVZaQ21B?oc=5",
-        "domain": "cybersecuritydive",
-        "language": "",
+        "title": "Кібератака на Żabka : хакери викрали дані з мережі супермаркетів Світ",
+        "url": "https://tsn.ua/svit/polska-zabka-pid-udarom-khakery-vkarly-personalni-dani-z-merezi-supermarketiv-3153596.html",
+        "domain": "tsn.ua",
+        "language": "Ukrainian",
         "tone": 0,
-        "seendate": "20260819T153634Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T124500Z",
+        "source": "GDELT"
       },
       {
-        "title": "AI data giant Alation confirms cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPWUlyVTJja0pwaWZYRE4yaDktRjk0QkxXZzlVTlZra0ptOHdvXzRqZE1ZMDBhc1JmS3p2RlNZZEU1QlhRZHRHdlRpRjFqNmMtZVZNUXRaMHV4eS1ydjNFUVNFbV9wRkZOT21TVVAzQjR6ZXlFa1Z6aGNtWW0yQ2RqMzhJNA?oc=5",
-        "domain": "techcrunch",
-        "language": "",
+        "title": "微软 Windows IKE 严重漏洞确认已遭恶意利用 ： 攻击者无需认证即可远程执行代码",
+        "url": "https://finance.sina.com.cn/tech/digi/2026-08-22/doc-inipfkxf7132211.shtml",
+        "domain": "finance.sina.com.cn",
+        "language": "Chinese",
         "tone": 0,
-        "seendate": "20260820T130124Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T160000Z",
+        "source": "GDELT"
       },
       {
-        "title": "Critical Microsoft Entra ID vulnerability exploited in the wild (CVE-2026-69836)",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQc1JJUGQ3MUxqdTRETE4tZ05CLVQ5N0dMd3RNN3llTmo5Z3l1RlpoaEpTVDd2VkFqYjd2RkZ6bDhQbjFTVkJNQ2p3RlM0THB2RGp3QldRdGY5aWxNYTYtMXl1VlJwV1RUUnNfSWJvckZXYmNlMzZlZVkwc0V1Q1dQbVFBdVhlYU9xU0Z1U1lYSUx4M293UlE?oc=5",
-        "domain": "helpnetsecurity",
-        "language": "",
+        "title": "WordPress 扩展 W3 Total Cache 曝出 CVSS 满分重大漏洞 ， 可允许黑客写入任意文件",
+        "url": "https://finance.sina.com.cn/tech/digi/2026-08-22/doc-inipeyim7317583.shtml",
+        "domain": "finance.sina.com.cn",
+        "language": "Chinese",
         "tone": 0,
-        "seendate": "20260821T122033Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T124500Z",
+        "source": "GDELT"
       },
       {
-        "title": "Specially Crafted NTFS File-System Image Allows Root Access On Linux With NTFS3 Driver",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA2UkJseHpNVk9VeVYwYURjSHByYnBGQTJGbHV3ZHljbE14VmdBSEt3dllGOElxV2VDZEJwemd1SnF6V1RIWnhPMFdxNFpSVy1CZFhlcjctSi1PRk05UU5KeHFOVXpIRzhGX1E?oc=5",
-        "domain": "phoronix",
-        "language": "",
+        "title": "Кібератака у Британії - іранські хакери зупинили електростанцію",
+        "url": "https://zn.ua/ukr/WORLD/bezpretsedentna-kiberataka-iranski-khakeri-viveli-z-ladu-elektrostantsiju-u-britaniji-.html",
+        "domain": "zn.ua",
+        "language": "Ukrainian",
         "tone": 0,
-        "seendate": "20260822T124200Z",
-        "source": "GoogleNews"
+        "seendate": "20260823T063000Z",
+        "source": "GDELT"
       },
       {
-        "title": "Chicago FBI warns of threat of new ransomware attacks, using software like Gunra from Russia",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTW1DMzFSTHN6dVJLUGtvdm8wYXNaM2lGVzRidF96NzQtbGtYQU9wTXFwTTZ3TDFkakQxclppQlYyN3JETmZWYTVxZnM2aXhocEktSG5NY25WZEdld05xdUNGR3hPZFlENmFLUW9HR1JTVGhmMC1iTHF4Rlg3NGlvWG1wV3NXT1VCMDFmbFJwU1RKVm0xZWpJdjgtVEt6RU5wLXB6YzNGQThiNm9jM3hHTWhoS0pnV1BZUENv0gHAAUFVX3lxTE5rb2lKSHZVdWkyYURtU3lWZmNxRW85SW50RGF0V09PUmpPUDBEUUNsb2EzcnVwOXZLb1h1LVZBR043UzdPdHRnbEdxb3o4NUJ6RmczWHJseHp0dlhWeHpHQ2lFYkEyMVloUlpLVms1ejZobTd3VkxqYllJamVtUWIxaVVkU0tyMlVCVEE5Qnh6b1U1T2pFN1dfdngtaFdEZ2FvaDNLbjhucE93amVTUmJfVzFQOHkxV2poeVJvd3BidQ?oc=5",
-        "domain": "abc7chicago",
-        "language": "",
+        "title": "研究人员曝光美国NASA地面控制软件AIT - GUI存在严重安全漏洞",
+        "url": "https://www.163.com/dy/article/L4VA14GQ0511B8LM.html",
+        "domain": "163.com",
+        "language": "Chinese",
         "tone": 0,
-        "seendate": "20260822T000039Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T123000Z",
+        "source": "GDELT"
       },
       {
-        "title": "Virginia Guard Tests Cyberattack Scenarios at Cyber Fortress 26",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMzNCVXZmcnhKcUMyams1ZDFHdnhyazJvX1FzQWNzRkIzLTZHYU9mNWNwMnR3TjdzRUFXcDdaUDRfX3I5dWlBbHo2ZktJZVpDRGJqcDZVTlhtSVJzQk9OVllyNUROVHM3QWZRVnJ2anVneHJZZWZsYzk5aTJjOUxKQ3o3UFhZbWY2WDNGSGxnYzRfUUNscVA1ejQtZm9mSy1Sc3BVUUxDenJWeHpGZWZ1eUJQeHZMcnZvSEhuRzVTTGFrMFBOZjVv?oc=5",
-        "domain": "nationalguard.mil",
-        "language": "",
+        "title": "研究人员曝光美国 NASA 地面控制软件 AIT - GUI 存在严重安全漏洞 ， 可导致黑客向飞船发送任意指令",
+        "url": "https://finance.sina.com.cn/tech/digi/2026-08-22/doc-inipeyiq3066324.shtml",
+        "domain": "finance.sina.com.cn",
+        "language": "Chinese",
         "tone": 0,
-        "seendate": "20260820T211038Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T124500Z",
+        "source": "GDELT"
       },
       {
-        "title": "Functional and Social Vulnerability in Patients With Chronic Obstructive Pulmonary Disease (COPD) Managed in Primary Care: A Population-Based Cohort Study",
-        "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQMDI1LWdOSEVYV24tQW04QkxxbkhhdzZoWlJsLUhGUnFkVVJodGJLUFdRQ0NiVHcyVVFweEJmNmpnVGh3bzktbmlMMkhPNU44WlhITk13Q1VSN0N2WXFLTXZMdUlsS2diZmE3Z2VkUGN0dVdUb1lXbVdieGk2M2RMcEQ4ZTJkVHNEVXJYV2hjTXo1anA0d1NfVUFuTFNXMVlCTVZwdjQxenpiR21uVzhQODF2TEI0ZzlZbUVPbEU2LVVyNEFFZFJoNGxSWXRPVkNlSXNSZHBtamFXMGhLWWFjVF94cWwtT3pPdFdzVmFSSml4VnBhVDA2dWlKUmxJU3ZDUkNzNktyZ096Q2dUamRDM2pzcWpmWDFZVmc?oc=5",
-        "domain": "cureus",
-        "language": "",
+        "title": "У Польщі сталась кібератака на мережу магазинів Zabka",
+        "url": "https://www.eurointegration.com.ua/news/2026/08/22/7243970/",
+        "domain": "eurointegration.com.ua",
+        "language": "Ukrainian",
         "tone": 0,
-        "seendate": "20260822T145452Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T084500Z",
+        "source": "GDELT"
       },
       {
-        "title": "US Bank investigates LockBit's claims as ransomware crims set pay-or-leak deadline",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQd3RCRWtYX0tDM1FIdVZUdTdIc3ROX0RYVnczZGhPS050WlYwcWhPRWlpTWhkbHNCVnFVYTdNRUZTMVhrNTdyTkdGMmdXV09TQlJLS0lSVm9MUEtCVlFMTGViUEYtMUVJMzZUWE8zejd2YmhYUFE2RVBBRDdHUkF1WlFuVWRoaUQzUGhOR3ljQ1gwTnByX3E1N0RMenlrOU93RVVBeTg0ZkU3V3M1cV8xbVlDRXJISE44ejItU29EX2h6Y05FR2pvamU3Zlh6Q2hGXzlB?oc=5",
-        "domain": "theregister",
-        "language": "",
+        "title": "У Польщі хакери атакували мережу магазинів",
+        "url": "https://uainfo.org/blognews/1787390385-u-polshchi-stalas-kiberataka-na-merezhu-magaziniv.html",
+        "domain": "uainfo.org",
+        "language": "Ukrainian",
         "tone": 0,
-        "seendate": "20260820T173039Z",
-        "source": "GoogleNews"
+        "seendate": "20260823T040000Z",
+        "source": "GDELT"
       },
       {
-        "title": "So About That Iranian Cyberattack on Our Water Supply",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNGdLTk9uYzJqVlZEZlZqSzlBZS1ZS3gxVG1iM29jREJrM1hnLUFDMjVuSFNLTVhlcmdMVHF0bzJLMmc0Z2RjYWZLZ2NLcjhrbGpqQm8ydXhKdnhPYjkybUp0TmNzeHRMMzh2RVFWOUszSXAyVjgwcFpmVHBOYU5KYWhPeHBBN2trTzNkODNVRFZ6cXc?oc=5",
-        "domain": "slate",
-        "language": "",
+        "title": "Patriot : США признали уязвимость ракетного комплекса перед Россией",
+        "url": "https://ura.news/news/1053120576",
+        "domain": "ura.news",
+        "language": "Russian",
         "tone": 0,
-        "seendate": "20260819T185800Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T143000Z",
+        "source": "GDELT"
       },
       {
-        "title": "Mapping Iranian Cyberattacks on U.S. Water Systems",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQ0lMaVFKdDVEOWt1Zlp1NVRONmtYX19GS1pEOXZDQ2s2N3JtVUI2a3NJYjZlNHJNRkNrZG5seXIwT2RYenhnRU1NVTdFYmNOVk5vd29iRURQV3dsMUM5RXczaEg4LVo2QjBIQjZqSVVtZDFGWm9kdWRlYzN3aEhUcg?oc=5",
-        "domain": "csiscenterforstrategicandinternationalstudies",
-        "language": "",
+        "title": "Report : Iranian hackers shut united kingdom power plant for four days in unprecedented cyberattac",
+        "url": "https://www.ynetnews.com/article/bkqq4govml",
+        "domain": "ynetnews.com",
+        "language": "English",
         "tone": 0,
-        "seendate": "20260818T213832Z",
-        "source": "GoogleNews"
+        "seendate": "20260823T070000Z",
+        "source": "GDELT"
       },
       {
-        "title": "UTSA cyberattack attempt shows how quickly threats can target universities, cybersecurity expert says",
-        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOZmtkeUVHS1FYLTBidWhYNFA5SFJaVWNXZjBjRUlfNENCSWVQTFZTbUhrcENMeXNaNFFRVEdaV1l6S1A1Ykk1UEtON05xOEc2Um42MWxXWVVuOUtScmUtMjU1NHVIYUlKYmlnUjNnRk1xcmZtZXRmekt4TmxMemFUdzZkUnlTazIzSmRSYXZEcnJLeUluQVdzYUFFMTRnZDRHV3FFd205b1hvdlBmbGVzY19jQVh0dVByVGYxOFlHRnpoUzZndEhqbUZobVMzcXJVSkd0UE5QYmxNR3U5?oc=5",
-        "domain": "ksat",
-        "language": "",
+        "title": "Your Expired Visa Card Could Be  Zombified  to Make Contactless Payments",
+        "url": "https://www.wired.com/story/security-news-this-week-your-expired-visa-card-could-be-zombiefied-to-make-contactless-payments/",
+        "domain": "wired.com",
+        "language": "English",
         "tone": 0,
-        "seendate": "20260820T034537Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T111500Z",
+        "source": "GDELT"
       },
       {
-        "title": "Ransom Busters Claims It Hacked Ransomware Servers, Asks Victims for Up to $60,000",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5tbmhJMzNtc1BMU1BrZ25uNzRSNE44VjE5dVpGZzlJb21JeDdUM29iVnRQX3lRcDZubGlSY0NFTGVINmFEdC0tQUlGYkFCRkhrTnFIWXRZQzVCa29mQVhXYVk2c0hfZ3N2eW43b242SldHX3l0XzVOVTl3?oc=5",
-        "domain": "thehackernews",
-        "language": "",
+        "title": "Хакери могли перехопити керування космічними апаратами NASA : критичну діру вже закрили",
+        "url": "http://internetua.com/hakeri-mogli-perehopiti-keruvannya-kosmicsnimi-aparatami-nasa-kriticsnu-diru-vje-zakrili",
+        "domain": "internetua.com",
+        "language": "Ukrainian",
         "tone": 0,
-        "seendate": "20260818T165800Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T114500Z",
+        "source": "GDELT"
       },
       {
-        "title": "CVE-2026-19490: Critical Vulnerability Affecting Citrix NetScaler ADC and NetScaler Gateway",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTkhtZzVEV1ZZRlpfRTF1eHRlejNQeXc2YmJibXRmeVJfcm9oNDdhV2I0bzNWMnhuQ3QwLURtMjBNTmlnZFo5OF8xdFhDRzB6Mml2STM5R1lwajNQUHJCd3YwYzMzZUV4NFJTelJyalBaLTZuZUIwVy1SMUpua2doZVhOOThaQlJ1X2dQamt4WGN4dHZwVnltOUVETkR2bG5tQnhRM3Y5dGI0Y0NtbndXdlpZNFlnOC16bGExSXlvRjc1OUpmT2tz?oc=5",
-        "domain": "rapid7",
-        "language": "",
+        "title": "Healthcare and Health IT News | Healthcare Dive",
+        "url": "https://www.healthcaredive.com/?page=2&_sp=fe178ade-6b74-49ef-851f-c22c92389e4c",
+        "domain": "healthcaredive.com",
+        "language": "English",
         "tone": 0,
-        "seendate": "20260819T164805Z",
-        "source": "GoogleNews"
+        "seendate": "20260823T010000Z",
+        "source": "GDELT"
       },
       {
-        "title": "Cyberattack Caused Four-Day Network Outage For Town, APS",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQd0FacE1OMy1YQkhBM3lCa1J6dmNWWDYwdzgwTXBGZTM1cHN4Y3ZpMmJKamhNbjczSnpPaTJ4Ym9qYVZhLXdFRzA4UXhVb2lmei1XMzFnS3NEY2JESUpOU19jSzdNanA4dE4tc1VUWjFtV3AyUnhNZWs0MXkxT0RzX19qRDFiLWN4MWc?oc=5",
-        "domain": "andovermanews.com",
-        "language": "",
+        "title": "Cegah Salah Sasaran , Data Kesejahteraan Berkala Wajib Dimutakhirkan",
+        "url": "https://jogja.tribunnews.com/diy/1221349/cegah-salah-sasaran-data-kesejahteraan-berkala-wajib-dimutakhirkan",
+        "domain": "jogja.tribunnews.com",
+        "language": "Indonesian",
         "tone": 0,
-        "seendate": "20260822T140550Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T091500Z",
+        "source": "GDELT"
       },
       {
-        "title": "Critical macOS, SharePoint, vCenter, and Microsoft IKE Flaws Under Active Exploitation",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPek1lQ1NnZWlXTUdzbUxfNi1wM281VUNsSEc0NGZHRHBHdnNvbVMwX3hPd1k5LW0zU3RrTmJJNEVIbE5IWHJaeTE3aFMydElMdXdkNUE5Q1hmVUJVdVB6V3dGQWdCOER6azJqMkYwdm1PVy1mQXRHUzBaeHFjWS1HUlV3?oc=5",
-        "domain": "thehackernews",
-        "language": "",
+        "title": "Vatic Ventures ( CVE : VCV ) Director Christoph Bruening Purchases 220 , 000 Shares",
+        "url": "https://www.tickerreport.com/banking-finance/13554395/vatic-ventures-cvevcv-director-christoph-bruening-purchases-220000-shares.html",
+        "domain": "tickerreport.com",
+        "language": "English",
         "tone": 0,
-        "seendate": "20260819T110100Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T123000Z",
+        "source": "GDELT"
       },
       {
-        "title": "Microsoft Patches Severe Entra ID Flaw (CVSS 10.0) Allowing Remote Code Execution",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBuRjlmUzhUS1lzR3JURENlWUhjYlhZX3lJWmF1ajR1a3ZZSWpPWWhGRkUxSGw5dzBxbkFkSjFiZTVyRXM0MFZVWUJ0NWhXOF9fMm43Zjk5MktlbjdIRjJlQWtNNWVld1NuWm5mMmV3SU5KZklMVUMwWFdZcw?oc=5",
-        "domain": "thehackernews",
-        "language": "",
+        "title": "MANTRA Chain Hacked Via Cosmos EVM Bug That Already Cost Saga $7M in January",
+        "url": "https://www.techtimes.com/articles/325233/20260821/mantra-chain-hacked-via-cosmos-evm-bug-that-already-cost-saga-7m-january.htm",
+        "domain": "techtimes.com",
+        "language": "English",
         "tone": 0,
-        "seendate": "20260821T060600Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T144500Z",
+        "source": "GDELT"
       },
       {
-        "title": "AI-backed campaign targeting vulnerable Siemens S7 devices, CISA and FBI warn",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMHhpWEd2UnZqcGlxOVZaNC01WUt4cW9CTjlvZU1TY19OcndLY180X28zcGNqSWlEdUl3WWRzSHBRcDZJbzVid0VCRkNxa1VzeWk1bjA5NEJmZ05xNTNzRzVGYkZKYlFtQnNobmdlS2hDUFRaRkVEUnRSMkdTVXFZNWM2cXY2aS1ZSW9KZ0t3?oc=5",
-        "domain": "cybersecuritydive",
-        "language": "",
+        "title": "Burnout em mulheres : sintomas e por que afeta mais no Brasil",
+        "url": "https://www.uol.com.br/universa/noticias/redacao/2026/08/22/burnout-atinge-mais-mulheres-no-brasil-e-pode-causar-dor-no-peito.ghtm",
+        "domain": "uol.com.br",
+        "language": "Portuguese",
         "tone": 0,
-        "seendate": "20260819T202216Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T121500Z",
+        "source": "GDELT"
       },
       {
-        "title": "Attackers Exploit MLflow SSRF Flaw to Steal Cloud Credentials and Secrets",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZk5MOEZ1Y2JKb1lBUXM3enNubHVSVHFEa1JCVzd1ZU1VSlFUeDFyUEZjanZVQ1ZHU0N1Y1J6OXIzZFBWanpDNTloTGduMTdzd0hSc3Z3QTRVZHNEejZFdkRuMU1JbnNyTTVuQ01BMXBwV21GdVhFU1p5a0NHRVljT19B?oc=5",
-        "domain": "thehackernews",
-        "language": "",
+        "title": "Labor de las y los trabajadores sociales , fundamental para instituciones sensibles como la CEDH : Josué Mejía",
+        "url": "https://mimorelia.com/michoacan/labor-las-y-los-trabajadores-sociales-fundamental-instituciones-sensibles-como-la-cedh-josue-mejia-n5590326",
+        "domain": "mimorelia.com",
+        "language": "Spanish",
         "tone": 0,
-        "seendate": "20260818T174400Z",
-        "source": "GoogleNews"
+        "seendate": "20260823T033000Z",
+        "source": "GDELT"
       },
       {
-        "title": "Attackers Exploit Zimbra SNMP Flaw for Unauthenticated Remote Code Execution",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNRGdiYVN2d0pfa21mZ2czUTlhd2lUWVJtbTNRTGtUTkp6UTBmOUhPZTlQM1NhY1dpTDZxdTFudG9sUElud25oMEtES2FlYkVNVkhJTklwQ19RNV83eHpaWUtvbUNHU0VYVHVtWmZZd2MxY2o2V2JsekoydmF4SDNzMDVsQQ?oc=5",
-        "domain": "thehackernews",
-        "language": "",
+        "title": "Defesa Civil lança alerta para baixas temperaturas em São Paulo ; veja previsão",
+        "url": "https://www.estadao.com.br/sao-paulo/defesa-civil-lanca-alerta-para-baixas-temperaturas-em-sao-paulo-veja-previsao/",
+        "domain": "estadao.com.br",
+        "language": "Portuguese",
         "tone": 0,
-        "seendate": "20260820T132400Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T131500Z",
+        "source": "GDELT"
       },
       {
-        "title": "Critical NetScaler Flaw Can Bypass Authentication on Certain Gateway and AAA Servers",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE96OGxJMXU5R0hULWFBUDkwNFV3cDVuMFkzQ2dWWVhXclh3VTltS0dtcmJHd051bkdrSS1FeXNZb0l1d1poblZHMDBsSmFfeGFRZVBPeVg5WmtrWmhkUEgzMjlwaklmTkprcTd3M0pyWmlvMlR5em5YVDVVb2dPZw?oc=5",
-        "domain": "thehackernews",
-        "language": "",
+        "title": "Isti jezivi obrazac ubijanja otvorio Pandorinu kutiju ! Jezivo pitanje isplivalo tokom istrage smrti Ruskinje i pekara u Beogradu , spominje se i serijski ubica",
+        "url": "https://naslovi.net/2026-08-23/kurir/isti-jezivi-obrazac-ubijanja-otvorio-pandorinu-kutiju-jezivo-pitanje-isplivalo-tokom-istrage-smrti-ruskinje-i-pekara-u-beogradu-spominje-se-i-serijski-ubica/42256529",
+        "domain": "naslovi.net",
+        "language": "Serbian",
         "tone": 0,
-        "seendate": "20260820T133500Z",
-        "source": "GoogleNews"
+        "seendate": "20260823T070000Z",
+        "source": "GDELT"
       },
       {
-        "title": "Hackers Target Zimbra Servers in Active Exploitation Campaign",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUkw4ZnlUZlFfamxxdC14ZkZMc3Z1X1FVVDE1cEhUd2ZZcGgyNHBrRUFZaHBOYlNqT0ZHRG9GazR4TmVOY1lxMFVyX1pwYUttY2t6bmluVHpRcEQ0OEw2T0oyc19XWHVjTDM0aVB3V1dBYlhIalFmUnhnTFBpM05JbHFqTnRQc0FJUV8zdS1xNWd6M2p0eUHSAZsBQVVfeXFMTk1WX1F1cm1PNXVWYVdacm9od3BnNVNTZG5qeHBBVkc3aHFvTTdzSzZrNUJ6dlM3Sk5Bel8tX01PTTZ3SW5wSVRxQ1g0NVRHSHFDS3M0b0o5bWlNTTZUZWVLZ1NwS0VCcEZRd1NhckFHcnVJM0kta0lJTkk2WUtxWUpVbjNYZTQ2UGVXRjF2UndtcGt0SWd1bVpjS00?oc=5",
-        "domain": "securityweek",
-        "language": "",
+        "title": "霍尔木兹海峡过船量瞩目 ， 原油周线全线收正 ， 但跨市场价差暴露了什么 ？_ 期市动态 _ 期货 _ 中金在线",
+        "url": "http://futures.cnfol.com/qishidongtai/20260822/32343868.shtml",
+        "domain": "futures.cnfol.com",
+        "language": "Chinese",
         "tone": 0,
-        "seendate": "20260820T145049Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T103000Z",
+        "source": "GDELT"
       },
       {
-        "title": "Cyberattack delays classes at UT San Antonio",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQ29sbGtmUjJXQTVCRERmaXpvbllZWEktUDBwNGtPbnZ4OXVWRTBIUjlFd2ZzV1dKLTFBU2dQaTJVcktGdWRwVWdkTHJLQkhWNkhZdmtoX01VVm1KVkJOU1NLRmVPVXVQTm1ydG9sMlRTNThuTmhjaWpsa19SVzVnV0ZTVDkwa1c1NElXeEdKd2lnMFB4LUQ2eFQ0ODh1akhOVWstbmNBZUhqbXVpMXlmOW1VUQ?oc=5",
-        "domain": "spectrumnews",
-        "language": "",
+        "title": "Cegah Tawuran di Ciputat Timur , Brimob Amankan 5 Pelajar dan Sita Senjata Tajam",
+        "url": "https://wartakota.tribunnews.com/jakarta/899112/cegah-tawuran-di-ciputat-timur-brimob-amankan-5-pelajar-dan-sita-senjata-tajam",
+        "domain": "wartakota.tribunnews.com",
+        "language": "Indonesian",
         "tone": 0,
-        "seendate": "20260820T135900Z",
-        "source": "GoogleNews"
+        "seendate": "20260823T064500Z",
+        "source": "GDELT"
       },
       {
-        "title": "OpenAI pauses some AI training after autonomous cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPa3pkZThyZXNILUxPWmJlYXowR0F3clotOTNhOXlncUM4OTJrVWowYlF5ZzFTbXBDVlVFeVpIXzgtU1NfS2xnRW1kVVBzM2UtOGRRZ0R6a0ZuZGhxWkl2b1NxUG56bU1CNmhFQk1yT1R6Qk5QcE5IMGp4SlZlcThQRTNfNEZVSUxjcDBvTXJjRTFCUXJ3UG5wUkVYdUVOdlNRVVZJRdIBqgFBVV95cUxNaVczV25XbXRnN0wzZHpFWGctazgxQXk2bWpCUUxOSDdmcGw5R3VkSU5Zb0doRVVFbEFiaXpWNTl5V0lzWEd6Ny1HdFdrSTFENU5IMUZoZVUyY2R2ZkFtSERZNTJCT3FiXzJyeDlRR2oxWjhoS3BScnU4MUFjT0xlQ2ZZV1c3Zjh5N2pnSnF1U3dFN1FDS1FPbklsT1hYZlZZdy1kbDUxOHc4dw?oc=5",
-        "domain": "abcnews-breakingnewslatestnewsandvideos",
-        "language": "",
+        "title": "St . James Gold Corp . ( CBS . V ) ( CVE : CBS ) Trading Up 7 . 5 % – Here Why",
+        "url": "https://www.dailypolitical.com/2026/08/22/st-james-gold-corp-cbs-v-cvecbs-trading-up-7-5-heres-why.html",
+        "domain": "dailypolitical.com",
+        "language": "English",
         "tone": 0,
-        "seendate": "20260818T213113Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T133000Z",
+        "source": "GDELT"
       },
       {
-        "title": "Fueling Vulnerability: The Economic and Strategic Costs of Oil Dependence in the Pacific",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSGFRT0JhaEtkYVljRzczdE5ZZ3dLSl9MZUQzWnZENmZoS0tsdXJ1SklBeTZtaXVNNGFrd2Y2ZXAwQWhoVUZlbTE4NHBXUHpqaUhvS25wd2cyR2tBZkE3dkU2YzFHT2xlLXh5S3B3cTktRVRzTUlJSHc0RklpVHROdnk5UXJ5V0dOcDVhMUFDYVhUdzZrb1RUMnBCbk9QNXk0cHJLSlpR?oc=5",
-        "domain": "csiscenterforstrategicandinternationalstudies",
-        "language": "",
+        "title": "Presentan proyecto para penalizar la explotación crediticia en barrios vulnerables",
+        "url": "https://www.parlamentario.com/2026/08/23/presentan-proyecto-para-penalizar-la-explotacion-crediticia-en-barrios-vulnerables/",
+        "domain": "parlamentario.com",
+        "language": "Spanish",
         "tone": 0,
-        "seendate": "20260820T152136Z",
-        "source": "GoogleNews"
+        "seendate": "20260823T061500Z",
+        "source": "GDELT"
       },
       {
-        "title": "Update Chrome now: Two critical vulnerabilities fixed",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSG9hVEktZkJVdTZHcDN4VDk4SzlOTGV0RVNwUURudWhZVXBvaHVZMzVLZkc5MzZCOXFIeDJaQlF1V2VjR25ZWnZzRE1VdXhvUDd4WUQ3bmNDdUJPaGVyeEhqRF9yaHdvTk9yU3BvLUpfVmRWOVFsU2pjU2Fqc25rY01PV2dacGl2QnZWai13N2FBUzJpT3dza1RKMjl1TnBh?oc=5",
-        "domain": "malwarebytes",
-        "language": "",
+        "title": "Padali u komu zbog alkohola i droga , Hitna nije znala gde će pre ! Lekari šokirani u kakvom stanju su noćas prevozili najčešće mlade",
+        "url": "https://naslovi.net/2026-08-22/blic/padali-u-komu-zbog-alkohola-i-droga-hitna-nije-znala-gde-ce-pre-lekari-sokirani-u-kakvom-stanju-su-nocas-prevozili-najcesce-mlade/42253654",
+        "domain": "naslovi.net",
+        "language": "Serbian",
         "tone": 0,
-        "seendate": "20260819T103807Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T110000Z",
+        "source": "GDELT"
       },
       {
-        "title": "CISA Urges Immediate Patching of Exploited Microsoft, VMware, Apple Vulnerabilities",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNckpsRFRVN3V1c0loaDNVWWg3THFCYjNzVVRranBodjA4NWdxTFRJUzRkYTNIellVZEF1UVBUVVZiem9oekJOUFlXWFE4bVlzdHk1ZFJOUXJSR0VtVmJrN0xySW5tQ21hUjh6RlBIdlV1ZnY0bGtwOG9uRjFGRUk4ZThzXzNma3hJWHNUVEg0czBWTVRnZVFidld0R1p2Y2hzMlZFLTVKZ1otVWJtNnlBdtIBtgFBVV95cUxPcW54V1o4dzcwaGhVNVd6M2tkelJWLXMtTE1xRElWVVhDNFB2aVdNWXh0YjdGRjY3NGNPOEp1VGpSUzYxQTVJMEhrTEFHWGczbmpaU0pUcndCdlhZRC1FLS0tN1RoemlWWmNlMzNtTDNLTkZzZ0Q0c1FOUURnNGcxLVdLWUgzOF9Dd0Z3QlNBLU5iRGY4bHdfNy1uR1l1Wk1vN19QZjFjWFIwVjlwM3o2SlJjLUVoQQ?oc=5",
-        "domain": "securityweek",
-        "language": "",
+        "title": "Unigold ( CVE : UGD ) Stock Price Passes Below 50 - Day Moving Average – Here Why",
+        "url": "https://www.tickerreport.com/banking-finance/13554600/unigold-cveugd-stock-price-passes-below-50-day-moving-average-heres-why.html",
+        "domain": "tickerreport.com",
+        "language": "English",
         "tone": 0,
-        "seendate": "20260819T103731Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T170000Z",
+        "source": "GDELT"
       },
       {
-        "title": "Elementor Pro Flaw Could Let Unauthenticated Attackers Upload PHP and Execute Code",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5wSzMyMDQ2SXIxQmxacXJKc2pZWkVIdGljSWdkU2NnaVZGMnRDMTBiS3Boc3dTSFlmOFFVdEpfOHdWVk5uYjV6V05GR3l3ZTNRNE5KUF9GV2lKYjZ6WVBUbnlUSmVuaVEyNDBvbEJjT1lJUHp2Smc?oc=5",
-        "domain": "thehackernews",
-        "language": "",
+        "title": "Crisis hídrica",
+        "url": "https://www.elcaribe.com.do/opiniones/buen-oficio/crisis-hidrica/",
+        "domain": "elcaribe.com.do",
+        "language": "Spanish",
         "tone": 0,
-        "seendate": "20260820T060400Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T231500Z",
+        "source": "GDELT"
       },
       {
-        "title": "Ransomware takes aim at enterprise resilience",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOU2otNWh3bkd2cHgzdGxLT0ZwSGZLVUxBNDRzR2dwejBvNkZFNE1XTFk2MXRUUFNBdVN3ZGtfUDRhb3lKZm1nRVFuOFlxQUZ2SjExSGlqVWVPZTRtM2lJT2pwempLV1RsNEx6MkZQMEY2Rl9rZENIYWpwOUNiaWdVWlZEbnl4NEhST0VHM09nMUNXRDZZLXFz?oc=5",
-        "domain": "csoonline.com",
-        "language": "",
+        "title": "Krvava nit koja povezuje dva jeziva ubsitva : Istražitelji pred enigmom u dva slučaja koja su digla Beograd na noge :  Da nije još negde napravio takvo zlo ?! ( foto , video ) ",
+        "url": "https://naslovi.net/2026-08-23/blic/krvava-nit-koja-povezuje-dva-jeziva-ubsitva-istrazitelji-pred-enigmom-u-dva-slucaja-koja-su-digla-beograd-na-noge-da-nije-jos-negde-napravio-takvo-zlo-foto-video/42256210",
+        "domain": "naslovi.net",
+        "language": "Serbian",
         "tone": 0,
-        "seendate": "20260821T041353Z",
-        "source": "GoogleNews"
+        "seendate": "20260823T050000Z",
+        "source": "GDELT"
       },
       {
-        "title": "Cisco Patches Nine Crosswork and Secure Workload Flaws, Five Scoring CVSS 10.0",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZVU5ZGpMWi00VUZjVmJxT05jNnpLSnVJRk5yc242T0xReGRjRXZmUzZNenlVNDdhMG4zQVVkSnk3VjRJdHBvZDVZaTFaaXhmaldidldwaGJYTHZDelM5OWJqTFB2LXJKVWRMeWhwZHVaSHFZX0ZXbGRzUzZFMXlyOHJ4MXU?oc=5",
-        "domain": "thehackernews",
-        "language": "",
+        "title": "La Teleasistencia domiciliaria realiza 14 . 538 llamadas al 112 durante el primer semestre del año",
+        "url": "https://www.abc.es/espana/castilla-la-mancha/teleasistencia-domiciliaria-realiza-14538-llamadas-112-primer-20260822100257-nt.html",
+        "domain": "abc.es",
+        "language": "Spanish",
         "tone": 0,
-        "seendate": "20260821T100300Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T084500Z",
+        "source": "GDELT"
       },
       {
-        "title": "AnMed CEO speaks out on cyberattack, potential patient data exposure",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPd0c2Z1NaVms3Q19RZFdEaGV2aXJ6cjZCTjBNNE9vVVg0N3JhdU1OR0ZvMXF5ZnJvV0dMRG82bDFKeXhyOWpvbVR5Wm50QWRVTXBQVlRXcnNvejlNVDVTN3c4MFNXa3RmZXQwZzRKVFBMS2xsZ1ZiMC1fTnpHTDRRcUJBaXo1bjFMZW9zSzc1UTNKZmYta0Z6MHp2NlctRTlsTW5aWFdQbWZvajdZdDlWZWNaNm41bHB5c3JmMw?oc=5",
-        "domain": "independentmail",
-        "language": "",
+        "title": "美拟要求荷兰全面禁止对华出口光刻机",
+        "url": "https://www.epochtimes.com/gb/26/8/23/n14834869.htm",
+        "domain": "epochtimes.com",
+        "language": "Chinese",
         "tone": 0,
-        "seendate": "20260821T185900Z",
-        "source": "GoogleNews"
+        "seendate": "20260823T070000Z",
+        "source": "GDELT"
       },
       {
-        "title": "Why Traditional Vulnerability Management Fails in an AI-Enabled Threat Environment",
-        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxON3BraURPbk5zLXdVMVBhTExOVTVydEZZbi05OTJzLVhCT3N6XzRNVzlzdGNVTHZ2Vm9uTlBRRU81RDFyNXhpVi15cGRkUmJBUGZhZ0hxcTFPLXJ2clhNU2ZETVVhZm5IaUFDV1RWU2R1cEoyUHRiaDl5WEllbjBmMUFsR2hPSmd4QktNZWdNblJLa3c1NTF1UWZ2M01Rc3NqWlZ4aXRveW53Nkl6TXY4MC05cll2bm1GTEZ4ZFNrdndJT2txLTF2Vm45WHFUX2pxTlBxOVlpWU1BejRoNUs0UktWX1JXMFVq?oc=5",
-        "domain": "securityinfowatch",
-        "language": "",
+        "title": "Liberty Biopharma ( CVE : LTY ) Share Price Crosses Below 200 Day Moving Average – What Next ? ",
+        "url": "https://www.themarketsdaily.com/2026/08/22/liberty-biopharma-cvelty-share-price-crosses-below-200-day-moving-average-whats-next.html",
+        "domain": "themarketsdaily.com",
+        "language": "English",
         "tone": 0,
-        "seendate": "20260819T144456Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T160000Z",
+        "source": "GDELT"
       },
       {
-        "title": "CISA: Medusa ransomware hit over 500 critical infrastructure orgs",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcC1maFNkSnB5Zm9rQW92NXp4eUtlM1ppZlBmZnFVSDYwR1lOZEVtemFIX1A2QzZFd19zQnBpdTBOYzVfakRMWGxrdS15VzBkdnhPQl8zLW16c0lNMnBSTF9GTV9vVERfeVcwMUhmNFpHd0cta3U4YzdjNE1sWHByLVc3ZHh1b3YyZk1DMVQxYnRYbG9McGt4aWREcnlFODRKUUo0TEZfZjRTY09NaXNBYUNn0gG3AUFVX3lxTFBleWtKTjBIek01a1l3M0NTS295QXRzZFc5YkJJc0JwNWpnQTdYZFlYZVZ5ZDlPZl92ejBjVkdaU3FKNWVxeW1MMnlxNUN6VXRxS1huRV9YZHdLMTMtcjc4Q01hdnRfYXJHZUNjM3RZbmJCNFd0QkJ0SnRvZzUwNlZ0QzE0N0V4dFZhU2pnUXVHSUkyS0xlREFnaU45bXJNMnNGMjBOc2RDZjVsRXlGNWM3MjB3WXZzUQ?oc=5",
-        "domain": "bleepingcomputer",
-        "language": "",
+        "title": "The world biggest trees could hold the secret to coping with drought",
+        "url": "http://www.econotimes.com/The-worlds-biggest-trees-could-hold-the-secret-to-coping-with-drought-1750128",
+        "domain": "econotimes.com",
+        "language": "English",
         "tone": 0,
-        "seendate": "20260819T080048Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T183000Z",
+        "source": "GDELT"
       },
       {
-        "title": "CVE-2026-68820 is in KEV. Here Is What CISA BOD 26-04 Actually Requires Now",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVFAtOVlONGloV3V2OTNPYXZoQUplNkk4YlBSYnJILTdzSE01eVNJNDJHdDgxNDJQNzEwd29xc05JWEZUVHlfazRGNWF5QjdYdVhLN1FrNGJpTEdURTBka25ZbW45MVRSR2lmV3F2b1VrVG9NR21WY3VVU3VIcVRTMkFoT2RrX0hUaWZMbjltMUp5TWc?oc=5",
-        "domain": "qualys",
-        "language": "",
+        "title": "  Agresión contra los derechos : Iván Cepeda reacciona a la derogación de 11 circulares del gobierno Petro",
+        "url": "https://www.colombia.com/actualidad/nacionales/ivan-cepeda-cuestiona-derogacion-de-11-circulares-laborales-del-gobierno-petro-597198",
+        "domain": "colombia.com",
+        "language": "Spanish",
         "tone": 0,
-        "seendate": "20260818T180640Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T171500Z",
+        "source": "GDELT"
       },
       {
-        "title": "Safety First: Health halos, Asahi cyberattack and PFAS",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNaWJFUkN0WGctaGEwbmRXOEZoUG10ZWhWdlNoVllDaHVwOHktcURiRVlKUjlOYUJpV01jSmNxS0xFWGtUNy1BeVZRQnlySFpTYnQ1WUhWcTlEeGdFU29vMlpfUEJDOE1RUXZVdmRJZ012SHBVSWFiUnlFSExscTF4RzA0VTcyMFFxT1h1M0x4M3R0VWlZU1hjWVVzMFg3MWRUQUFXbg?oc=5",
-        "domain": "foodnavigator.com",
-        "language": "",
+        "title": "El empleo , el gran obstáculo para los jóvenes con discapacidad en Aragón : solo el 24 , 2 % tiene o lo busca",
+        "url": "https://www.heraldo.es/noticias/economia/2026/08/23/empleo-jovenes-discapacidad-aragon-2046592.html",
+        "domain": "heraldo.es",
+        "language": "Spanish",
         "tone": 0,
-        "seendate": "20260821T060300Z",
-        "source": "GoogleNews"
+        "seendate": "20260823T044500Z",
+        "source": "GDELT"
       },
       {
-        "title": "Citrix urges customers to fix critical NetScaler authentication bypass (CVE-2026-19490)",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPR1l5a2NIcjQyZW9mdDMzMTE3OHRWS3M5dDhOOEk0WDRaamNMU2c3bTRlSlhvRzNCa3pxMENncGh3bmVIMGRsOEJKbXpIOXVKSDgxaEFKbE5jNjlSaDI1T0lZZDlrYW9XOEZyRTNWZE4xcmx0MVdPMnZpWndLTlN6anhQZENWMWZPd0FB?oc=5",
-        "domain": "helpnetsecurity",
-        "language": "",
+        "title": " 「 我不是藥神 」 缺藥版 化療藥 、 排鐵藥短缺⋯食藥署專案進口印度藥 | 生活新聞 | 生活",
+        "url": "https://udn.com/news/story/7266/9708109",
+        "domain": "udn.com",
+        "language": "Chinese",
         "tone": 0,
-        "seendate": "20260821T075543Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T141500Z",
+        "source": "GDELT"
       },
       {
-        "title": "Cyberattacks have plagued the medtech industry in 2026",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVEJUTjM0SmdlOW9xblhwNGNBeTdrejRaeVpEelVRcmFZOHRENkhXY0oxcVJzQllZNTRDdFFWNzNpTWJGdURVNkVWbDFEaExtVVltWUlHSzBGNHNJdG9nZF96V0NUMG45SkhfeDREbHFpa2prRmRkaG9MNnNDN256Q1Ztc3ZIRWNIa0ZfWTJKcnBoME5tcS1kQzlPSQ?oc=5",
-        "domain": "medtechdive",
-        "language": "",
+        "title": "Casa Grande , una nueva respuesta a la creciente vulnerabilidad de los adultos mayores",
+        "url": "https://www.lacapital.com.ar/la-ciudad/casa-grande-una-nueva-respuesta-la-creciente-vulnerabilidad-los-adultos-mayores-n10276568.html",
+        "domain": "lacapital.com.ar",
+        "language": "Spanish",
         "tone": 0,
-        "seendate": "20260821T175436Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T121500Z",
+        "source": "GDELT"
       },
       {
-        "title": "Cisco Patches Multiple Maximum-Severity Vulnerabilities Across Network Automation and Workload Security Platforms",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQX0RpZDBvYk5lT0RhVjZaRC1FVUk5STdUUkZFck9ZZ29WaENvTlkyMnBxWl9keGJSdzV1bEFRcURSZWxXRnE1M2xuUjEwWFN2VmJUUk15VDJvVU5BQ2FZWnpnYWc2VkZfbDk0RkVxUW9ObE1qNzBnQVVrNlNNamhuZU9KQkxmenpHNVhONVR6ellwdFYtbENz?oc=5",
-        "domain": "linkedin",
-        "language": "",
+        "title": "Catatan Peristiwa Karhutla Indonesia , dari Sumatra hingga Kalimantan",
+        "url": "https://rri.co.id/nasional/2672663/catatan-peristiwa-karhutla-indonesia-dari-sumatra-hingga-kalimantan",
+        "domain": "rri.co.id",
+        "language": "Indonesian",
         "tone": 0,
-        "seendate": "20260822T154620Z",
-        "source": "GoogleNews"
+        "seendate": "20260823T023000Z",
+        "source": "GDELT"
       },
       {
-        "title": "CVE-2026-76404: The MCP Security Wave Reaches Enterprise Infrastructure",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNemlpWDh3Wi03bkxoYmJLMEFUQVJBNl9yTnlKRXhqS3BjOVkxd1k3MUhfcmF3Z1lUcFZfczRSank4X1hmME1JeUFnSGVhdFZJSUhVd3hUbjRTeklUTE5LeHVTc3VvaGF1c2ZELURfV1c3UkhPNU9UeDFxTzItRGdEWGdZT3FrR203OE1oMEdRdjRPaWZ6WHRV?oc=5",
-        "domain": "forkast.news",
-        "language": "",
+        "title": "Así es Casa Grande , el hogar transitorio destinado a adultos mayores indigentes que ya tiene fecha de apertura",
+        "url": "https://www.rosario3.com/informaciongeneral/asi-es-casa-grande-el-hogar-transitorio-destinado-a-adultos-mayores-indigentes-que-ya-tiene-fecha-de-apertura-20260821-0056.html",
+        "domain": "rosario3.com",
+        "language": "Spanish",
         "tone": 0,
-        "seendate": "20260822T102907Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T160000Z",
+        "source": "GDELT"
       },
       {
-        "title": "Microsoft SharePoint JWT Token Authentication Bypass Technical Analysis (CVE-2026-55040)",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVkFjSElCR1I0OVowQTRnZ05qRC1tNlAyM3I0MmsxWUVDbE93SG9lb2FLcXE4SGdZeDlNUTM5ZG9vUlFfZG9LaHZONEUzUV95N3NOY1FhLVpsV1gxaVRhNkpKQWdmR1VGOExPSUswUF9tT29xcDBPdm5EVERPanBYZDlhRUpDdUhzUHMwWUxEcG5fMkZEaVZ4cXNocGJVVFYwTGx1Q2J4NA?oc=5",
-        "domain": "rapid7",
-        "language": "",
+        "title": "Oroco Resource ( CVE : OCO ) Trading Down 2 . 1 % – Should You Sell ? ",
+        "url": "https://www.themarketsdaily.com/2026/08/22/oroco-resource-cveoco-trading-down-2-1-should-you-sell.html",
+        "domain": "themarketsdaily.com",
+        "language": "English",
         "tone": 0,
-        "seendate": "20260811T070000Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T133000Z",
+        "source": "GDELT"
       },
       {
-        "title": "CVE-2026-63520: Microsoft SharePoint Remote Code Execution (FIXED)",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdXVBNlNyN3R2cUdyT2I1bWxlYWZoYTRPbV9PR1FjYTZ4aU52UDBsc2lxQ2RWS1VYWGY4dEFEWW1kdllza3NCTnFhZkxGMUFCY19TWE5JLWt4LWpDX1lBVHUyMkYwUUdBVWFGUlJQNzBjOUVyMkp1UFZUcjl5aEs0ZmU0N2NuUVQ5YUxuVGMtdHZnSUtJZnhHZWN6eTdLSC1NdTlV?oc=5",
-        "domain": "rapid7",
-        "language": "",
+        "title": "Projeto de Beto Dois a Um propõe transformar desperdício de alimentos em combate à fome",
+        "url": "https://olhardireto.com.br/noticias/projeto-de-beto-dois-a-um-propoe-transformar-desperdicio-de-alimentos-em-combate-a-fome",
+        "domain": "olhardireto.com.br",
+        "language": "Portuguese",
         "tone": 0,
-        "seendate": "20260811T070000Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T161500Z",
+        "source": "GDELT"
       },
       {
-        "title": "AnMed Investigating Ransomware Group’s Data Theft Claims",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdVBybDNhQ3JuZGFqQlNsdGRBeGMwNUZXdy1kdS1FenBIYl9EVzdpS2stM3lyci1rc2lVNDFxVUpVNlF2Si0tbU5GYTYyaHdVYy1Ja2FBS1JmeGE5aFFKZW0yUU1kdC1fbnFOUXRCd19Dbm5LcVZDXzhhY29wcUFTX3VlaUxEQWZSWTYtM3dCZFFNTjgzbHY1ZEg3NnNCeW8?oc=5",
-        "domain": "thehipaajournal",
-        "language": "",
+        "title": "חדשות היום , 22 באוגוסט",
+        "url": "https://www.haaretz.co.il/news/dailynews/2026-08-22/ty-article-live/000001a0-262f-dd2f-a1b6-7fef84c40000?liveBlogItemId=1240750224",
+        "domain": "haaretz.co.il",
+        "language": "Hebrew",
         "tone": 0,
-        "seendate": "20260814T060513Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T163000Z",
+        "source": "GDELT"
       },
       {
-        "title": "What we know about the cyberattacks on water systems in 7 states",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPSTFZQTZmSkpVMklka3d0cm5FUzdMVUQwMTdwUGNKVjduTFkwa2pscThGX2doODJaM2RtTExPTWdvSnBpTkNqTVQ3UzlEU2wxQVl2ZnczSXlab0pfSC04cWRxTkFNYUF1SFo1YmxMYzl0aHR1ODF1ajJPcTlybzM4U2N4d3k2QVE4OUtZSWwxMVh2c3FVN1UxNGRIa0FqdDA?oc=5",
-        "domain": "pbs",
-        "language": "",
+        "title": "חדשות היום , 22 באוגוסט",
+        "url": "https://www.haaretz.co.il/news/dailynews/2026-08-22/ty-article-live/000001a0-262f-dd2f-a1b6-7fef84c40000?liveBlogItemId=1087826319",
+        "domain": "haaretz.co.il",
+        "language": "Hebrew",
         "tone": 0,
-        "seendate": "20260803T070000Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T163000Z",
+        "source": "GDELT"
       },
       {
-        "title": "128 Seconds to disruption: Microsoft Defender stops ransomware at QNET",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObU9ybjh2dEpQc1ZNOTY1OEpLTjNOeXJ6d1JBWTk4U015aGNLOFA1dzVJR0YwRDIyb29ZNEk1X3k4V2wwVGlwMjV1ZGFZQm9qWGdYQUp4SzYweldqZ3BDUHpQUWhxY09RUUw1d0NjbkxycklueUh5cVpHSjZCNGd5N1RkX25xYkxYUVhUNW43bjVBbWtmaERfODdXSFI5TDhJU2NPS2FFdVQ5aG54bmJhSER4T3pWXzFWQzZuWVp3?oc=5",
-        "domain": "microsoft",
-        "language": "",
+        "title": "Dagens horoskop 23 . august : Nære relationer blomstrer",
+        "url": "https://www.femina.dk/horoskoper/dagens-horoskop-23-august-dette-stjernetegn-styrker-sine-relationer",
+        "domain": "femina.dk",
+        "language": "Danish",
         "tone": 0,
-        "seendate": "20260804T070000Z",
-        "source": "GoogleNews"
+        "seendate": "20260823T063000Z",
+        "source": "GDELT"
       },
       {
-        "title": "Suisun City, Calif., Shutters Network Following Cyber Attack",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWTcyc3ltRW1vb09HRFhlRmE0Ti1kT2wyaG1iUS1JS3RKeHAwRWU2OGQ4UnRCLUdrY2I1TWdmcUJ5dFp1MXdQSmpLdVJ5SGxWSTJiSWxRTmpkNE9jN3J6NEN5OVUxQ3NiS0JlNjZqS3V2bUk4M21HTWxDNmh1cHpINlVMRFAyYzVienVBVFhweHRNLWZm?oc=5",
-        "domain": "govtech",
-        "language": "",
+        "title": "Mulher que se passava por adolescente de 12 anos  entendia caráter ilícito das ae , segundo MPSC",
+        "url": "https://www.terra.com.br/noticias/justica/mulher-que-se-passava-por-adolescente-de-12-anos-entendia-carater-ilicito-das-acoes-segundo-mpsc,34f6cdfaa83a25a6e7ff61daa5486cc9twkkjl9h.html",
+        "domain": "terra.com.br",
+        "language": "Portuguese",
         "tone": 0,
-        "seendate": "20260810T070000Z",
-        "source": "GoogleNews"
+        "seendate": "20260822T141500Z",
+        "source": "GDELT"
       },
       {
-        "title": "County in northern Wisconsin experiencing cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVkpvaXF2alNudkRhbmdUTUFtV1BpR1hhNzhFWDRtSktYTUVaUTBzZXBvaEZ1VC1IVm1ibUZESGFrUmhkOU1iYmlWbElBUGh5VlVvTUl1dzRGY3B1N3VJNklfOVBsUTlQSGxFdkphSzNMTkYtRWFEX0tGRUpYeWFQVW5BRjc?oc=5",
-        "domain": "wpr",
-        "language": "",
+        "title": "Procuraduría pide a alcaldes prevención ante riesgo sísmico",
+        "url": "https://www.hoydiariodelmagdalena.com.co/archivos/1305944/procuraduria-pide-a-alcaldes-prevencion-ante-riesgo-sismico",
+        "domain": "hoydiariodelmagdalena.com.co",
+        "language": "Spanish",
         "tone": 0,
-        "seendate": "20260806T070000Z",
-        "source": "GoogleNews"
+        "seendate": "20260823T004500Z",
+        "source": "GDELT"
       }
     ],
     "exchange_rates": [
@@ -573,139 +571,139 @@
   "entities": [],
   "events": [
     {
-      "title": "Vulnerability & Exploit Database",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5oUDR2Z3VJajNuSmFUTno0Uko1dV9GQTMwTENXMGM4OFREUXpwaUlnSERZcTRXQXNmX1otcmhiZVE1cklxWnZMZXdtSQ?oc=5",
-      "domain": "rapid7",
-      "language": "",
+      "title": "County says sharing information about  suspicious activity  in sheriff computer system would  jeopardize public safety  | News , Sports , Jobs - Lawrence Journal - World : news , information , headlines and events in Lawrence , Kansas",
+      "url": "https://www2.ljworld.com/news/public-safety/2026/aug/22/county-says-sharing-details-about-suspicious-activity-in-sheriffs-computer-system-would-jeopardize-public-safety/",
+      "domain": "ljworld.com",
+      "language": "English",
       "tone": 0,
-      "seendate": "20260822T143512Z",
-      "source": "GoogleNews"
+      "seendate": "20260822T213000Z",
+      "source": "GDELT"
     },
     {
-      "title": "CVE-2026-69414 ShieldBreak Zero-Day: No Patch, and CISA BOD 26-04 Gives You 14 Days",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYXhsRzdmNzVSMnBzT29yZXM3dV9YQTYwcVRMZ0R2QlJMQ1FHcVpiZTVtdVRTQlNIOEFEcWtiYWJiYkVLTEh5dGtQd2NBTFdLd1lPRlkycFVlZjJZaTJNOHRGVVZaSU9KVHpwU0lvb3B3Z3RQd3Bac1ZFYVFwWmdHNVBEYUUyeVBJV196UlhSNTJyYWEtQms3eHAtTkd3Z2ZKaTFiVkdJcW45bkthZ1c5ZVpSeWVIbWh0Wkg0akVMQVZuV2tBUlhJNGgxS2kyYnR5bzQw?oc=5",
-      "domain": "qualys",
-      "language": "",
+      "title": "Study reveals 5 , 000 computers infected via WordPress sites",
+      "url": "https://www.thenews.com.pk/latest/1413213-study-reveals-5000-computers-infected-via-wordpress-sites",
+      "domain": "thenews.com.pk",
+      "language": "English",
       "tone": 0,
-      "seendate": "20260820T144151Z",
-      "source": "GoogleNews"
+      "seendate": "20260822T163000Z",
+      "source": "GDELT"
     },
     {
-      "title": "Microsoft Patches Exploited Entra ID Vulnerability",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZTBSb0RyMFluR0JVTUpVNVhqcjBhYU9uaEtaUllwcWFsSE16WmE3a05FOU9lXzBDTzFXNzJmaWltejFwQmQxUTBqSXJxV25ZTUNVT2NmX2d3dzBHYkVvNi1HNUVfdHhUZktwRl9aenFBektEZkZQMmgyUURMX2YxMdIBhgFBVV95cUxPbGpBOU11cEdXbUhnOE8tWHhLMXBOcVZUSWhxYmdZMFlNckgtMUs2cm16Y0NBWjFIM0p2TDRLSXdLWXRfWE1MdVVxdF9CMUotclJid2FoZjhvbWdOZVVsQmVkOVc2R1NuOEN4TFVtaVI5TjZIT2FKNXVFcGNtUHVaLWRGTTNpQQ?oc=5",
-      "domain": "securityweek",
-      "language": "",
+      "title": "Iran cyberattack on united kingdom shuts down British power plant",
+      "url": "https://www.afr.com/world/europe/iranian-hackers-shut-down-uk-power-plant-20260823-p60qop",
+      "domain": "afr.com",
+      "language": "English",
       "tone": 0,
-      "seendate": "20260821T081219Z",
-      "source": "GoogleNews"
+      "seendate": "20260823T044500Z",
+      "source": "GDELT"
     },
     {
-      "title": "GitLab CVE-2026-19478 Comes Under Active Exploitation Within Days of Disclosure",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA2TzhyTnl6QWhhWUhJTGJCajZqV3g5ekcyeU81LWpqRjdybVpLRkY0SS1GbzdHVTQxZ0xOQ3JoRnVUYXpmT0l1Tk90cl8yaTVkVzVQSTJUVXIyTkFVbDloNnN2bk5pVXpMMXNOaC1XOXFVS2E0WndEaWhUX2M?oc=5",
-      "domain": "thehackernews",
-      "language": "",
+      "title": "Experts warn 2 , 000 hacked WordPress sites were secretly running a global crime ring",
+      "url": "https://www.techradar.com/pro/security/experts-warn-2-000-hacked-wordpress-sites-were-secretly-running-a-global-crime-ring",
+      "domain": "techradar.com",
+      "language": "English",
       "tone": 0,
-      "seendate": "20260821T070400Z",
-      "source": "GoogleNews"
+      "seendate": "20260822T134500Z",
+      "source": "GDELT"
     },
     {
-      "title": "What The Hugging Face Cyberattack Teaches Leaders About AI",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWlhqMWhvckZjQkZjRU1udmFzQmdUTFJldlgtc3BrdGc3MmdLaXZwbXdnSVlCbEQ3SEpGLWQ4RU9sN0NZSTkxQ2FoNU9HNG56QWlYdkdoRWpheXdGTkgwdVpHTUk5d1V3NHlwSU5hTEt4RS1IR2VxLVN6ZkhCZ01UVF9oSTM3cldGVXkwaXhYVERzOUdKTTVkcUNReWVwMUk2REliWUtQaUUyOHV3SDZjOTQwZVZ1U043RGFxcQ?oc=5",
-      "domain": "forbes",
-      "language": "",
+      "title": "У Польщі розслідують кібератаку на мережу магазинів Żabka : хакери викрали дані",
+      "url": "https://wz.lviv.ua/news/557394-u-polshchi-rozsliduyut-kiberataku-na-merezhu-magaziniv-abka-khakeri-vikrali-dani",
+      "domain": "wz.lviv.ua",
+      "language": "Ukrainian",
       "tone": 0,
-      "seendate": "20260822T154323Z",
-      "source": "GoogleNews"
+      "seendate": "20260822T180000Z",
+      "source": "GDELT"
     },
     {
-      "title": "Ransomware disproportionately targets medium-sized firms, straining customer relationships",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTi11emk2OWF4bFNlRThvYXVyUm13aWhOY1hLQ09rY2x1dG1FOUJBVkJPTV91RVNheUo0dG5EQXlDY2F2bUF3UEZhOXlfWnVZcmVxbm9mZmw0QS0yS01jZmZCVVdXX0xITXlHSGNNaVQyMmdqcUE1c0p1TlhBa0dHZGdaVWEzU2xjdVZaQ21B?oc=5",
-      "domain": "cybersecuritydive",
-      "language": "",
+      "title": "Кібератака на Żabka : хакери викрали дані з мережі супермаркетів Світ",
+      "url": "https://tsn.ua/svit/polska-zabka-pid-udarom-khakery-vkarly-personalni-dani-z-merezi-supermarketiv-3153596.html",
+      "domain": "tsn.ua",
+      "language": "Ukrainian",
       "tone": 0,
-      "seendate": "20260819T153634Z",
-      "source": "GoogleNews"
+      "seendate": "20260822T124500Z",
+      "source": "GDELT"
     },
     {
-      "title": "AI data giant Alation confirms cyberattack",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPWUlyVTJja0pwaWZYRE4yaDktRjk0QkxXZzlVTlZra0ptOHdvXzRqZE1ZMDBhc1JmS3p2RlNZZEU1QlhRZHRHdlRpRjFqNmMtZVZNUXRaMHV4eS1ydjNFUVNFbV9wRkZOT21TVVAzQjR6ZXlFa1Z6aGNtWW0yQ2RqMzhJNA?oc=5",
-      "domain": "techcrunch",
-      "language": "",
+      "title": "微软 Windows IKE 严重漏洞确认已遭恶意利用 ： 攻击者无需认证即可远程执行代码",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-08-22/doc-inipfkxf7132211.shtml",
+      "domain": "finance.sina.com.cn",
+      "language": "Chinese",
       "tone": 0,
-      "seendate": "20260820T130124Z",
-      "source": "GoogleNews"
+      "seendate": "20260822T160000Z",
+      "source": "GDELT"
     },
     {
-      "title": "Critical Microsoft Entra ID vulnerability exploited in the wild (CVE-2026-69836)",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQc1JJUGQ3MUxqdTRETE4tZ05CLVQ5N0dMd3RNN3llTmo5Z3l1RlpoaEpTVDd2VkFqYjd2RkZ6bDhQbjFTVkJNQ2p3RlM0THB2RGp3QldRdGY5aWxNYTYtMXl1VlJwV1RUUnNfSWJvckZXYmNlMzZlZVkwc0V1Q1dQbVFBdVhlYU9xU0Z1U1lYSUx4M293UlE?oc=5",
-      "domain": "helpnetsecurity",
-      "language": "",
+      "title": "WordPress 扩展 W3 Total Cache 曝出 CVSS 满分重大漏洞 ， 可允许黑客写入任意文件",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-08-22/doc-inipeyim7317583.shtml",
+      "domain": "finance.sina.com.cn",
+      "language": "Chinese",
       "tone": 0,
-      "seendate": "20260821T122033Z",
-      "source": "GoogleNews"
+      "seendate": "20260822T124500Z",
+      "source": "GDELT"
     },
     {
-      "title": "Specially Crafted NTFS File-System Image Allows Root Access On Linux With NTFS3 Driver",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA2UkJseHpNVk9VeVYwYURjSHByYnBGQTJGbHV3ZHljbE14VmdBSEt3dllGOElxV2VDZEJwemd1SnF6V1RIWnhPMFdxNFpSVy1CZFhlcjctSi1PRk05UU5KeHFOVXpIRzhGX1E?oc=5",
-      "domain": "phoronix",
-      "language": "",
+      "title": "Кібератака у Британії - іранські хакери зупинили електростанцію",
+      "url": "https://zn.ua/ukr/WORLD/bezpretsedentna-kiberataka-iranski-khakeri-viveli-z-ladu-elektrostantsiju-u-britaniji-.html",
+      "domain": "zn.ua",
+      "language": "Ukrainian",
       "tone": 0,
-      "seendate": "20260822T124200Z",
-      "source": "GoogleNews"
+      "seendate": "20260823T063000Z",
+      "source": "GDELT"
     },
     {
-      "title": "Chicago FBI warns of threat of new ransomware attacks, using software like Gunra from Russia",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTW1DMzFSTHN6dVJLUGtvdm8wYXNaM2lGVzRidF96NzQtbGtYQU9wTXFwTTZ3TDFkakQxclppQlYyN3JETmZWYTVxZnM2aXhocEktSG5NY25WZEdld05xdUNGR3hPZFlENmFLUW9HR1JTVGhmMC1iTHF4Rlg3NGlvWG1wV3NXT1VCMDFmbFJwU1RKVm0xZWpJdjgtVEt6RU5wLXB6YzNGQThiNm9jM3hHTWhoS0pnV1BZUENv0gHAAUFVX3lxTE5rb2lKSHZVdWkyYURtU3lWZmNxRW85SW50RGF0V09PUmpPUDBEUUNsb2EzcnVwOXZLb1h1LVZBR043UzdPdHRnbEdxb3o4NUJ6RmczWHJseHp0dlhWeHpHQ2lFYkEyMVloUlpLVms1ejZobTd3VkxqYllJamVtUWIxaVVkU0tyMlVCVEE5Qnh6b1U1T2pFN1dfdngtaFdEZ2FvaDNLbjhucE93amVTUmJfVzFQOHkxV2poeVJvd3BidQ?oc=5",
-      "domain": "abc7chicago",
-      "language": "",
+      "title": "研究人员曝光美国NASA地面控制软件AIT - GUI存在严重安全漏洞",
+      "url": "https://www.163.com/dy/article/L4VA14GQ0511B8LM.html",
+      "domain": "163.com",
+      "language": "Chinese",
       "tone": 0,
-      "seendate": "20260822T000039Z",
-      "source": "GoogleNews"
+      "seendate": "20260822T123000Z",
+      "source": "GDELT"
     },
     {
-      "title": "Virginia Guard Tests Cyberattack Scenarios at Cyber Fortress 26",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMzNCVXZmcnhKcUMyams1ZDFHdnhyazJvX1FzQWNzRkIzLTZHYU9mNWNwMnR3TjdzRUFXcDdaUDRfX3I5dWlBbHo2ZktJZVpDRGJqcDZVTlhtSVJzQk9OVllyNUROVHM3QWZRVnJ2anVneHJZZWZsYzk5aTJjOUxKQ3o3UFhZbWY2WDNGSGxnYzRfUUNscVA1ejQtZm9mSy1Sc3BVUUxDenJWeHpGZWZ1eUJQeHZMcnZvSEhuRzVTTGFrMFBOZjVv?oc=5",
-      "domain": "nationalguard.mil",
-      "language": "",
+      "title": "研究人员曝光美国 NASA 地面控制软件 AIT - GUI 存在严重安全漏洞 ， 可导致黑客向飞船发送任意指令",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-08-22/doc-inipeyiq3066324.shtml",
+      "domain": "finance.sina.com.cn",
+      "language": "Chinese",
       "tone": 0,
-      "seendate": "20260820T211038Z",
-      "source": "GoogleNews"
+      "seendate": "20260822T124500Z",
+      "source": "GDELT"
     },
     {
-      "title": "Functional and Social Vulnerability in Patients With Chronic Obstructive Pulmonary Disease (COPD) Managed in Primary Care: A Population-Based Cohort Study",
-      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQMDI1LWdOSEVYV24tQW04QkxxbkhhdzZoWlJsLUhGUnFkVVJodGJLUFdRQ0NiVHcyVVFweEJmNmpnVGh3bzktbmlMMkhPNU44WlhITk13Q1VSN0N2WXFLTXZMdUlsS2diZmE3Z2VkUGN0dVdUb1lXbVdieGk2M2RMcEQ4ZTJkVHNEVXJYV2hjTXo1anA0d1NfVUFuTFNXMVlCTVZwdjQxenpiR21uVzhQODF2TEI0ZzlZbUVPbEU2LVVyNEFFZFJoNGxSWXRPVkNlSXNSZHBtamFXMGhLWWFjVF94cWwtT3pPdFdzVmFSSml4VnBhVDA2dWlKUmxJU3ZDUkNzNktyZ096Q2dUamRDM2pzcWpmWDFZVmc?oc=5",
-      "domain": "cureus",
-      "language": "",
+      "title": "У Польщі сталась кібератака на мережу магазинів Zabka",
+      "url": "https://www.eurointegration.com.ua/news/2026/08/22/7243970/",
+      "domain": "eurointegration.com.ua",
+      "language": "Ukrainian",
       "tone": 0,
-      "seendate": "20260822T145452Z",
-      "source": "GoogleNews"
+      "seendate": "20260822T084500Z",
+      "source": "GDELT"
     },
     {
-      "title": "US Bank investigates LockBit's claims as ransomware crims set pay-or-leak deadline",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQd3RCRWtYX0tDM1FIdVZUdTdIc3ROX0RYVnczZGhPS050WlYwcWhPRWlpTWhkbHNCVnFVYTdNRUZTMVhrNTdyTkdGMmdXV09TQlJLS0lSVm9MUEtCVlFMTGViUEYtMUVJMzZUWE8zejd2YmhYUFE2RVBBRDdHUkF1WlFuVWRoaUQzUGhOR3ljQ1gwTnByX3E1N0RMenlrOU93RVVBeTg0ZkU3V3M1cV8xbVlDRXJISE44ejItU29EX2h6Y05FR2pvamU3Zlh6Q2hGXzlB?oc=5",
-      "domain": "theregister",
-      "language": "",
+      "title": "У Польщі хакери атакували мережу магазинів",
+      "url": "https://uainfo.org/blognews/1787390385-u-polshchi-stalas-kiberataka-na-merezhu-magaziniv.html",
+      "domain": "uainfo.org",
+      "language": "Ukrainian",
       "tone": 0,
-      "seendate": "20260820T173039Z",
-      "source": "GoogleNews"
+      "seendate": "20260823T040000Z",
+      "source": "GDELT"
     },
     {
-      "title": "So About That Iranian Cyberattack on Our Water Supply",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNGdLTk9uYzJqVlZEZlZqSzlBZS1ZS3gxVG1iM29jREJrM1hnLUFDMjVuSFNLTVhlcmdMVHF0bzJLMmc0Z2RjYWZLZ2NLcjhrbGpqQm8ydXhKdnhPYjkybUp0TmNzeHRMMzh2RVFWOUszSXAyVjgwcFpmVHBOYU5KYWhPeHBBN2trTzNkODNVRFZ6cXc?oc=5",
-      "domain": "slate",
-      "language": "",
+      "title": "Patriot : США признали уязвимость ракетного комплекса перед Россией",
+      "url": "https://ura.news/news/1053120576",
+      "domain": "ura.news",
+      "language": "Russian",
       "tone": 0,
-      "seendate": "20260819T185800Z",
-      "source": "GoogleNews"
+      "seendate": "20260822T143000Z",
+      "source": "GDELT"
     },
     {
-      "title": "Mapping Iranian Cyberattacks on U.S. Water Systems",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQ0lMaVFKdDVEOWt1Zlp1NVRONmtYX19GS1pEOXZDQ2s2N3JtVUI2a3NJYjZlNHJNRkNrZG5seXIwT2RYenhnRU1NVTdFYmNOVk5vd29iRURQV3dsMUM5RXczaEg4LVo2QjBIQjZqSVVtZDFGWm9kdWRlYzN3aEhUcg?oc=5",
-      "domain": "csiscenterforstrategicandinternationalstudies",
-      "language": "",
+      "title": "Report : Iranian hackers shut united kingdom power plant for four days in unprecedented cyberattac",
+      "url": "https://www.ynetnews.com/article/bkqq4govml",
+      "domain": "ynetnews.com",
+      "language": "English",
       "tone": 0,
-      "seendate": "20260818T213832Z",
-      "source": "GoogleNews"
+      "seendate": "20260823T070000Z",
+      "source": "GDELT"
     }
   ],
   "timeseries": [],
