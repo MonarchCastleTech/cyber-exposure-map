@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-08-23T07:24:27.031145+00:00",
+    "generated": "2026-08-23T13:23:10.285315+00:00",
     "mode": "live",
     "sources": [
       "gdelt_articles",
@@ -18,7 +18,7 @@
     },
     {
       "label": "News Domains",
-      "value": "43",
+      "value": "45",
       "delta": "deduplicated"
     },
     {
@@ -71,6 +71,33 @@
         "source": "GDELT"
       },
       {
+        "title": "Small united kingdom power plant shut down after Iran - linked cyberattack : report",
+        "url": "https://www.cnbc.com/2026/08/23/small-uk-power-plant-shut-down-after-iran-linked-cyberattack-report.html",
+        "domain": "cnbc.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260823T120000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "GQG Partners LLC Makes New $411 . 55 Million Investment in Cenovus Energy Inc $CVE",
+        "url": "https://www.themarketsdaily.com/2026/08/23/gqg-partners-llc-makes-new-411-55-million-investment-in-cenovus-energy-inc-cve.html",
+        "domain": "themarketsdaily.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260823T123000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Iranian cyberattack shut down united kingdom power station for several days",
+        "url": "https://www.albawaba.com/news/iranian-cyberattack-shut-down-uk-power-1635562",
+        "domain": "albawaba.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260823T083000Z",
+        "source": "GDELT"
+      },
+      {
         "title": "У Польщі розслідують кібератаку на мережу магазинів Żabka : хакери викрали дані",
         "url": "https://wz.lviv.ua/news/557394-u-polshchi-rozsliduyut-kiberataku-na-merezhu-magaziniv-abka-khakeri-vikrali-dani",
         "domain": "wz.lviv.ua",
@@ -80,12 +107,39 @@
         "source": "GDELT"
       },
       {
-        "title": "Кібератака на Żabka : хакери викрали дані з мережі супермаркетів Світ",
-        "url": "https://tsn.ua/svit/polska-zabka-pid-udarom-khakery-vkarly-personalni-dani-z-merezi-supermarketiv-3153596.html",
-        "domain": "tsn.ua",
-        "language": "Ukrainian",
+        "title": "Metabase Flaw Gives Admin Access Without a Password",
+        "url": "https://sentinel.ht/metabase-sql-injection-admin-takeover/",
+        "domain": "sentinel.ht",
+        "language": "English",
         "tone": 0,
-        "seendate": "20260822T124500Z",
+        "seendate": "20260823T090000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "هجوم إلكتروني إيراني يعطل محطة كهرباء بريطانية",
+        "url": "https://pnn.ps/news/726932",
+        "domain": "pnn.ps",
+        "language": "Arabic",
+        "tone": 0,
+        "seendate": "20260823T090000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Metalla Royalty & Streaming ( CVE : MTA ) Insider Saurabh Handa Sells 79 , 500 Shares of Stock",
+        "url": "https://www.themarketsdaily.com/2026/08/23/metalla-royalty-streaming-cvemta-insider-saurabh-handa-sells-79500-shares-of-stock.html",
+        "domain": "themarketsdaily.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260823T111500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Iran strikes Britain from the shadows as hackers shut down power plant - London Business News",
+        "url": "https://londonlovesbusiness.com/iran-strikes-britain-from-the-shadows-as-hackers-shut-down-power-plant/",
+        "domain": "londonlovesbusiness.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260823T123000Z",
         "source": "GDELT"
       },
       {
@@ -98,12 +152,12 @@
         "source": "GDELT"
       },
       {
-        "title": "WordPress 扩展 W3 Total Cache 曝出 CVSS 满分重大漏洞 ， 可允许黑客写入任意文件",
-        "url": "https://finance.sina.com.cn/tech/digi/2026-08-22/doc-inipeyim7317583.shtml",
-        "domain": "finance.sina.com.cn",
-        "language": "Chinese",
+        "title": "Іранські хакери паралізували роботу електростанції у Великій Британії",
+        "url": "https://www.5.ua/svit/iranski-khakery-paralizuvaly-robotu-elektrostantsii-u-velykii-brytanii-382093.html",
+        "domain": "5.ua",
+        "language": "Ukrainian",
         "tone": 0,
-        "seendate": "20260822T124500Z",
+        "seendate": "20260823T093000Z",
         "source": "GDELT"
       },
       {
@@ -116,30 +170,21 @@
         "source": "GDELT"
       },
       {
-        "title": "研究人员曝光美国NASA地面控制软件AIT - GUI存在严重安全漏洞",
-        "url": "https://www.163.com/dy/article/L4VA14GQ0511B8LM.html",
-        "domain": "163.com",
-        "language": "Chinese",
+        "title": "India becomes Sopho top growth market after 60 % jump in FY26 business",
+        "url": "https://www.business-standard.com/companies/news/india-becomes-sophos-top-growth-market-after-60-jump-in-fy26-business-126082300367_1.html",
+        "domain": "business-standard.com",
+        "language": "English",
         "tone": 0,
-        "seendate": "20260822T123000Z",
+        "seendate": "20260823T113000Z",
         "source": "GDELT"
       },
       {
-        "title": "研究人员曝光美国 NASA 地面控制软件 AIT - GUI 存在严重安全漏洞 ， 可导致黑客向飞船发送任意指令",
-        "url": "https://finance.sina.com.cn/tech/digi/2026-08-22/doc-inipeyiq3066324.shtml",
-        "domain": "finance.sina.com.cn",
-        "language": "Chinese",
+        "title": "India emerges top growth market for Sophos ; business grows 60 pc in FY26",
+        "url": "https://www.dailyexcelsior.com/india-emerges-top-growth-market-for-sophos-business-grows-60-pc-in-fy26/",
+        "domain": "dailyexcelsior.com",
+        "language": "English",
         "tone": 0,
-        "seendate": "20260822T124500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "У Польщі сталась кібератака на мережу магазинів Zabka",
-        "url": "https://www.eurointegration.com.ua/news/2026/08/22/7243970/",
-        "domain": "eurointegration.com.ua",
-        "language": "Ukrainian",
-        "tone": 0,
-        "seendate": "20260822T084500Z",
+        "seendate": "20260823T111500Z",
         "source": "GDELT"
       },
       {
@@ -149,6 +194,15 @@
         "language": "Ukrainian",
         "tone": 0,
         "seendate": "20260823T040000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Iranian - Linked Hackers Shut Down united kingdom Power Plant in Four - Day Cyberattack",
+        "url": "https://www.khaama.com/iranian-linked-hackers-shut-down-uk-power-plant-in-four-day-cyberattack/",
+        "domain": "khaama.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260823T071500Z",
         "source": "GDELT"
       },
       {
@@ -170,21 +224,39 @@
         "source": "GDELT"
       },
       {
-        "title": "Your Expired Visa Card Could Be  Zombified  to Make Contactless Payments",
-        "url": "https://www.wired.com/story/security-news-this-week-your-expired-visa-card-could-be-zombiefied-to-make-contactless-payments/",
-        "domain": "wired.com",
-        "language": "English",
+        "title": "Anthropic offre Claude Mythos 5 con Claude Security",
+        "url": "https://www.punto-informatico.it/anthropic-claude-mythos-5-claude-security/",
+        "domain": "punto-informatico.it",
+        "language": "Italian",
         "tone": 0,
-        "seendate": "20260822T111500Z",
+        "seendate": "20260823T121500Z",
         "source": "GDELT"
       },
       {
-        "title": "Хакери могли перехопити керування космічними апаратами NASA : критичну діру вже закрили",
-        "url": "http://internetua.com/hakeri-mogli-perehopiti-keruvannya-kosmicsnimi-aparatami-nasa-kriticsnu-diru-vje-zakrili",
-        "domain": "internetua.com",
-        "language": "Ukrainian",
+        "title": "Cyberatak Iranu na Wielką Brytanię . Elektrownia wyłączona na cztery dni",
+        "url": "https://www.rp.pl/przestepczosc/art45040051-iranski-cyberatak-na-wielka-brytanie-elektrownia-zostala-wylaczona-na-cztery-dni",
+        "domain": "rp.pl",
+        "language": "Polish",
         "tone": 0,
-        "seendate": "20260822T114500Z",
+        "seendate": "20260823T111500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "  Painajaispimennys  iski Windowsiin taas : Microsoftiin päreensä polttanut tutkija julkaisi taas tietoturvareiän , johon ei ole korjausta",
+        "url": "https://www.tekniikkatalous.fi/uutiset/a/6b4863ff-cc62-4568-a9e0-fc4bc746fc40",
+        "domain": "tekniikkatalous.fi",
+        "language": "Finnish",
+        "tone": 0,
+        "seendate": "20260823T081500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "40支隊伍匯聚香港出戰 「 人工智能網絡安全挑戰賽 」 ",
+        "url": "https://n.yam.com/Article/20260823233933",
+        "domain": "n.yam.com",
+        "language": "Chinese",
+        "tone": 0,
+        "seendate": "20260823T083000Z",
         "source": "GDELT"
       },
       {
@@ -197,21 +269,12 @@
         "source": "GDELT"
       },
       {
-        "title": "Cegah Salah Sasaran , Data Kesejahteraan Berkala Wajib Dimutakhirkan",
-        "url": "https://jogja.tribunnews.com/diy/1221349/cegah-salah-sasaran-data-kesejahteraan-berkala-wajib-dimutakhirkan",
-        "domain": "jogja.tribunnews.com",
-        "language": "Indonesian",
+        "title": "500 menores migrantes de Ceuta : el Gobierno estudia sortear su propia ley para trasladarlos",
+        "url": "https://www.que.es/2026/08/23/menores-migrantes-ceuta-traslado-ley/",
+        "domain": "que.es",
+        "language": "Spanish",
         "tone": 0,
-        "seendate": "20260822T091500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Vatic Ventures ( CVE : VCV ) Director Christoph Bruening Purchases 220 , 000 Shares",
-        "url": "https://www.tickerreport.com/banking-finance/13554395/vatic-ventures-cvevcv-director-christoph-bruening-purchases-220000-shares.html",
-        "domain": "tickerreport.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260822T123000Z",
+        "seendate": "20260823T101500Z",
         "source": "GDELT"
       },
       {
@@ -224,30 +287,12 @@
         "source": "GDELT"
       },
       {
-        "title": "Burnout em mulheres : sintomas e por que afeta mais no Brasil",
-        "url": "https://www.uol.com.br/universa/noticias/redacao/2026/08/22/burnout-atinge-mais-mulheres-no-brasil-e-pode-causar-dor-no-peito.ghtm",
-        "domain": "uol.com.br",
-        "language": "Portuguese",
-        "tone": 0,
-        "seendate": "20260822T121500Z",
-        "source": "GDELT"
-      },
-      {
         "title": "Labor de las y los trabajadores sociales , fundamental para instituciones sensibles como la CEDH : Josué Mejía",
         "url": "https://mimorelia.com/michoacan/labor-las-y-los-trabajadores-sociales-fundamental-instituciones-sensibles-como-la-cedh-josue-mejia-n5590326",
         "domain": "mimorelia.com",
         "language": "Spanish",
         "tone": 0,
         "seendate": "20260823T033000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Defesa Civil lança alerta para baixas temperaturas em São Paulo ; veja previsão",
-        "url": "https://www.estadao.com.br/sao-paulo/defesa-civil-lanca-alerta-para-baixas-temperaturas-em-sao-paulo-veja-previsao/",
-        "domain": "estadao.com.br",
-        "language": "Portuguese",
-        "tone": 0,
-        "seendate": "20260822T131500Z",
         "source": "GDELT"
       },
       {
@@ -260,12 +305,12 @@
         "source": "GDELT"
       },
       {
-        "title": "霍尔木兹海峡过船量瞩目 ， 原油周线全线收正 ， 但跨市场价差暴露了什么 ？_ 期市动态 _ 期货 _ 中金在线",
-        "url": "http://futures.cnfol.com/qishidongtai/20260822/32343868.shtml",
-        "domain": "futures.cnfol.com",
-        "language": "Chinese",
+        "title": "La mentoría social rompe el vínculo entre racismo y soledad",
+        "url": "https://www.lavozdigital.es/provincia/mentoria-social-rompe-vinculo-racismo-soledad-20260823102226-ntv.html",
+        "domain": "lavozdigital.es",
+        "language": "Spanish",
         "tone": 0,
-        "seendate": "20260822T103000Z",
+        "seendate": "20260823T113000Z",
         "source": "GDELT"
       },
       {
@@ -278,12 +323,21 @@
         "source": "GDELT"
       },
       {
-        "title": "St . James Gold Corp . ( CBS . V ) ( CVE : CBS ) Trading Up 7 . 5 % – Here Why",
-        "url": "https://www.dailypolitical.com/2026/08/22/st-james-gold-corp-cbs-v-cvecbs-trading-up-7-5-heres-why.html",
-        "domain": "dailypolitical.com",
-        "language": "English",
+        "title": "20岁女孩被误登记为  精神病  7年 ， 必须严肃追责问责 ， 让失职者承担后果",
+        "url": "https://baijiahao.baidu.com/s?id=1874300137038861859",
+        "domain": "baijiahao.baidu.com",
+        "language": "Chinese",
         "tone": 0,
-        "seendate": "20260822T133000Z",
+        "seendate": "20260823T083000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "  被精神病  求职屡遭拒 ， 纠错不该这么难 | 新京报快评 新京报",
+        "url": "https://www.bjnews.com.cn/detail/1787473608169556.html",
+        "domain": "bjnews.com.cn",
+        "language": "Chinese",
+        "tone": 0,
+        "seendate": "20260823T111500Z",
         "source": "GDELT"
       },
       {
@@ -296,12 +350,30 @@
         "source": "GDELT"
       },
       {
-        "title": "Padali u komu zbog alkohola i droga , Hitna nije znala gde će pre ! Lekari šokirani u kakvom stanju su noćas prevozili najčešće mlade",
-        "url": "https://naslovi.net/2026-08-22/blic/padali-u-komu-zbog-alkohola-i-droga-hitna-nije-znala-gde-ce-pre-lekari-sokirani-u-kakvom-stanju-su-nocas-prevozili-najcesce-mlade/42253654",
+        "title": "St . James Gold Corp . ( CBS . V ) ( CVE : CBS ) Trading Up 7 . 5 % – Here Why",
+        "url": "https://www.dailypolitical.com/2026/08/22/st-james-gold-corp-cbs-v-cvecbs-trading-up-7-5-heres-why.html",
+        "domain": "dailypolitical.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260822T133000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Parteolla , attivo il Pronto intervento sociale - LUnione Sarda . it",
+        "url": "https://www.unionesarda.it/news-sardegna/provincia-cagliari/parteolla-attivo-il-pronto-intervento-sociale-ry78vxgb",
+        "domain": "unionesarda.it",
+        "language": "Italian",
+        "tone": 0,
+        "seendate": "20260823T121500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "Krvava nit koja povezuje dva jeziva ubsitva : Istražitelji pred enigmom u dva slučaja koja su digla Beograd na noge :  Da nije još negde napravio takvo zlo ?! ( foto , video ) ",
+        "url": "https://naslovi.net/2026-08-23/blic/krvava-nit-koja-povezuje-dva-jeziva-ubsitva-istrazitelji-pred-enigmom-u-dva-slucaja-koja-su-digla-beograd-na-noge-da-nije-jos-negde-napravio-takvo-zlo-foto-video/42256210",
         "domain": "naslovi.net",
         "language": "Serbian",
         "tone": 0,
-        "seendate": "20260822T110000Z",
+        "seendate": "20260823T050000Z",
         "source": "GDELT"
       },
       {
@@ -323,21 +395,12 @@
         "source": "GDELT"
       },
       {
-        "title": "Krvava nit koja povezuje dva jeziva ubsitva : Istražitelji pred enigmom u dva slučaja koja su digla Beograd na noge :  Da nije još negde napravio takvo zlo ?! ( foto , video ) ",
-        "url": "https://naslovi.net/2026-08-23/blic/krvava-nit-koja-povezuje-dva-jeziva-ubsitva-istrazitelji-pred-enigmom-u-dva-slucaja-koja-su-digla-beograd-na-noge-da-nije-jos-negde-napravio-takvo-zlo-foto-video/42256210",
-        "domain": "naslovi.net",
-        "language": "Serbian",
-        "tone": 0,
-        "seendate": "20260823T050000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "La Teleasistencia domiciliaria realiza 14 . 538 llamadas al 112 durante el primer semestre del año",
-        "url": "https://www.abc.es/espana/castilla-la-mancha/teleasistencia-domiciliaria-realiza-14538-llamadas-112-primer-20260822100257-nt.html",
-        "domain": "abc.es",
+        "title": "El barrio también cría",
+        "url": "https://www.elmostrador.cl/noticias/opinion/cartas/2026/08/23/el-barrio-tambien-cria/",
+        "domain": "elmostrador.cl",
         "language": "Spanish",
         "tone": 0,
-        "seendate": "20260822T084500Z",
+        "seendate": "20260823T083000Z",
         "source": "GDELT"
       },
       {
@@ -347,6 +410,24 @@
         "language": "Chinese",
         "tone": 0,
         "seendate": "20260823T070000Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "El empleo , el gran obstáculo para los jóvenes con discapacidad en Aragón : solo el 24 , 2 % tiene o lo busca",
+        "url": "https://www.heraldo.es/noticias/economia/2026/08/23/empleo-jovenes-discapacidad-aragon-2046592.html",
+        "domain": "heraldo.es",
+        "language": "Spanish",
+        "tone": 0,
+        "seendate": "20260823T044500Z",
+        "source": "GDELT"
+      },
+      {
+        "title": "BluMetric Environmental ( CVE : BLM ) Trading 5 . 5 % Higher – What Next ? ",
+        "url": "https://www.dailypolitical.com/2026/08/23/blumetric-environmental-cveblm-trading-5-5-higher-whats-next.html",
+        "domain": "dailypolitical.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260823T120000Z",
         "source": "GDELT"
       },
       {
@@ -368,39 +449,21 @@
         "source": "GDELT"
       },
       {
+        "title": "Robert Hinchcliffe Buys 20 , 000 Shares of Galway Metals ( CVE : GWM ) Stock",
+        "url": "https://www.themarketsdaily.com/2026/08/23/robert-hinchcliffe-buys-20000-shares-of-galway-metals-cvegwm-stock.html",
+        "domain": "themarketsdaily.com",
+        "language": "English",
+        "tone": 0,
+        "seendate": "20260823T111500Z",
+        "source": "GDELT"
+      },
+      {
         "title": "  Agresión contra los derechos : Iván Cepeda reacciona a la derogación de 11 circulares del gobierno Petro",
         "url": "https://www.colombia.com/actualidad/nacionales/ivan-cepeda-cuestiona-derogacion-de-11-circulares-laborales-del-gobierno-petro-597198",
         "domain": "colombia.com",
         "language": "Spanish",
         "tone": 0,
         "seendate": "20260822T171500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "El empleo , el gran obstáculo para los jóvenes con discapacidad en Aragón : solo el 24 , 2 % tiene o lo busca",
-        "url": "https://www.heraldo.es/noticias/economia/2026/08/23/empleo-jovenes-discapacidad-aragon-2046592.html",
-        "domain": "heraldo.es",
-        "language": "Spanish",
-        "tone": 0,
-        "seendate": "20260823T044500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": " 「 我不是藥神 」 缺藥版 化療藥 、 排鐵藥短缺⋯食藥署專案進口印度藥 | 生活新聞 | 生活",
-        "url": "https://udn.com/news/story/7266/9708109",
-        "domain": "udn.com",
-        "language": "Chinese",
-        "tone": 0,
-        "seendate": "20260822T141500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Casa Grande , una nueva respuesta a la creciente vulnerabilidad de los adultos mayores",
-        "url": "https://www.lacapital.com.ar/la-ciudad/casa-grande-una-nueva-respuesta-la-creciente-vulnerabilidad-los-adultos-mayores-n10276568.html",
-        "domain": "lacapital.com.ar",
-        "language": "Spanish",
-        "tone": 0,
-        "seendate": "20260822T121500Z",
         "source": "GDELT"
       },
       {
@@ -413,75 +476,12 @@
         "source": "GDELT"
       },
       {
-        "title": "Así es Casa Grande , el hogar transitorio destinado a adultos mayores indigentes que ya tiene fecha de apertura",
-        "url": "https://www.rosario3.com/informaciongeneral/asi-es-casa-grande-el-hogar-transitorio-destinado-a-adultos-mayores-indigentes-que-ya-tiene-fecha-de-apertura-20260821-0056.html",
-        "domain": "rosario3.com",
-        "language": "Spanish",
-        "tone": 0,
-        "seendate": "20260822T160000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Oroco Resource ( CVE : OCO ) Trading Down 2 . 1 % – Should You Sell ? ",
-        "url": "https://www.themarketsdaily.com/2026/08/22/oroco-resource-cveoco-trading-down-2-1-should-you-sell.html",
-        "domain": "themarketsdaily.com",
-        "language": "English",
-        "tone": 0,
-        "seendate": "20260822T133000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Projeto de Beto Dois a Um propõe transformar desperdício de alimentos em combate à fome",
-        "url": "https://olhardireto.com.br/noticias/projeto-de-beto-dois-a-um-propoe-transformar-desperdicio-de-alimentos-em-combate-a-fome",
-        "domain": "olhardireto.com.br",
-        "language": "Portuguese",
-        "tone": 0,
-        "seendate": "20260822T161500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "חדשות היום , 22 באוגוסט",
-        "url": "https://www.haaretz.co.il/news/dailynews/2026-08-22/ty-article-live/000001a0-262f-dd2f-a1b6-7fef84c40000?liveBlogItemId=1240750224",
-        "domain": "haaretz.co.il",
-        "language": "Hebrew",
-        "tone": 0,
-        "seendate": "20260822T163000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "חדשות היום , 22 באוגוסט",
-        "url": "https://www.haaretz.co.il/news/dailynews/2026-08-22/ty-article-live/000001a0-262f-dd2f-a1b6-7fef84c40000?liveBlogItemId=1087826319",
-        "domain": "haaretz.co.il",
-        "language": "Hebrew",
-        "tone": 0,
-        "seendate": "20260822T163000Z",
-        "source": "GDELT"
-      },
-      {
         "title": "Dagens horoskop 23 . august : Nære relationer blomstrer",
         "url": "https://www.femina.dk/horoskoper/dagens-horoskop-23-august-dette-stjernetegn-styrker-sine-relationer",
         "domain": "femina.dk",
         "language": "Danish",
         "tone": 0,
         "seendate": "20260823T063000Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Mulher que se passava por adolescente de 12 anos  entendia caráter ilícito das ae , segundo MPSC",
-        "url": "https://www.terra.com.br/noticias/justica/mulher-que-se-passava-por-adolescente-de-12-anos-entendia-carater-ilicito-das-acoes-segundo-mpsc,34f6cdfaa83a25a6e7ff61daa5486cc9twkkjl9h.html",
-        "domain": "terra.com.br",
-        "language": "Portuguese",
-        "tone": 0,
-        "seendate": "20260822T141500Z",
-        "source": "GDELT"
-      },
-      {
-        "title": "Procuraduría pide a alcaldes prevención ante riesgo sísmico",
-        "url": "https://www.hoydiariodelmagdalena.com.co/archivos/1305944/procuraduria-pide-a-alcaldes-prevencion-ante-riesgo-sismico",
-        "domain": "hoydiariodelmagdalena.com.co",
-        "language": "Spanish",
-        "tone": 0,
-        "seendate": "20260823T004500Z",
         "source": "GDELT"
       }
     ],
@@ -607,6 +607,33 @@
       "source": "GDELT"
     },
     {
+      "title": "Small united kingdom power plant shut down after Iran - linked cyberattack : report",
+      "url": "https://www.cnbc.com/2026/08/23/small-uk-power-plant-shut-down-after-iran-linked-cyberattack-report.html",
+      "domain": "cnbc.com",
+      "language": "English",
+      "tone": 0,
+      "seendate": "20260823T120000Z",
+      "source": "GDELT"
+    },
+    {
+      "title": "GQG Partners LLC Makes New $411 . 55 Million Investment in Cenovus Energy Inc $CVE",
+      "url": "https://www.themarketsdaily.com/2026/08/23/gqg-partners-llc-makes-new-411-55-million-investment-in-cenovus-energy-inc-cve.html",
+      "domain": "themarketsdaily.com",
+      "language": "English",
+      "tone": 0,
+      "seendate": "20260823T123000Z",
+      "source": "GDELT"
+    },
+    {
+      "title": "Iranian cyberattack shut down united kingdom power station for several days",
+      "url": "https://www.albawaba.com/news/iranian-cyberattack-shut-down-uk-power-1635562",
+      "domain": "albawaba.com",
+      "language": "English",
+      "tone": 0,
+      "seendate": "20260823T083000Z",
+      "source": "GDELT"
+    },
+    {
       "title": "У Польщі розслідують кібератаку на мережу магазинів Żabka : хакери викрали дані",
       "url": "https://wz.lviv.ua/news/557394-u-polshchi-rozsliduyut-kiberataku-na-merezhu-magaziniv-abka-khakeri-vikrali-dani",
       "domain": "wz.lviv.ua",
@@ -616,12 +643,39 @@
       "source": "GDELT"
     },
     {
-      "title": "Кібератака на Żabka : хакери викрали дані з мережі супермаркетів Світ",
-      "url": "https://tsn.ua/svit/polska-zabka-pid-udarom-khakery-vkarly-personalni-dani-z-merezi-supermarketiv-3153596.html",
-      "domain": "tsn.ua",
-      "language": "Ukrainian",
+      "title": "Metabase Flaw Gives Admin Access Without a Password",
+      "url": "https://sentinel.ht/metabase-sql-injection-admin-takeover/",
+      "domain": "sentinel.ht",
+      "language": "English",
       "tone": 0,
-      "seendate": "20260822T124500Z",
+      "seendate": "20260823T090000Z",
+      "source": "GDELT"
+    },
+    {
+      "title": "هجوم إلكتروني إيراني يعطل محطة كهرباء بريطانية",
+      "url": "https://pnn.ps/news/726932",
+      "domain": "pnn.ps",
+      "language": "Arabic",
+      "tone": 0,
+      "seendate": "20260823T090000Z",
+      "source": "GDELT"
+    },
+    {
+      "title": "Metalla Royalty & Streaming ( CVE : MTA ) Insider Saurabh Handa Sells 79 , 500 Shares of Stock",
+      "url": "https://www.themarketsdaily.com/2026/08/23/metalla-royalty-streaming-cvemta-insider-saurabh-handa-sells-79500-shares-of-stock.html",
+      "domain": "themarketsdaily.com",
+      "language": "English",
+      "tone": 0,
+      "seendate": "20260823T111500Z",
+      "source": "GDELT"
+    },
+    {
+      "title": "Iran strikes Britain from the shadows as hackers shut down power plant - London Business News",
+      "url": "https://londonlovesbusiness.com/iran-strikes-britain-from-the-shadows-as-hackers-shut-down-power-plant/",
+      "domain": "londonlovesbusiness.com",
+      "language": "English",
+      "tone": 0,
+      "seendate": "20260823T123000Z",
       "source": "GDELT"
     },
     {
@@ -634,12 +688,12 @@
       "source": "GDELT"
     },
     {
-      "title": "WordPress 扩展 W3 Total Cache 曝出 CVSS 满分重大漏洞 ， 可允许黑客写入任意文件",
-      "url": "https://finance.sina.com.cn/tech/digi/2026-08-22/doc-inipeyim7317583.shtml",
-      "domain": "finance.sina.com.cn",
-      "language": "Chinese",
+      "title": "Іранські хакери паралізували роботу електростанції у Великій Британії",
+      "url": "https://www.5.ua/svit/iranski-khakery-paralizuvaly-robotu-elektrostantsii-u-velykii-brytanii-382093.html",
+      "domain": "5.ua",
+      "language": "Ukrainian",
       "tone": 0,
-      "seendate": "20260822T124500Z",
+      "seendate": "20260823T093000Z",
       "source": "GDELT"
     },
     {
@@ -649,60 +703,6 @@
       "language": "Ukrainian",
       "tone": 0,
       "seendate": "20260823T063000Z",
-      "source": "GDELT"
-    },
-    {
-      "title": "研究人员曝光美国NASA地面控制软件AIT - GUI存在严重安全漏洞",
-      "url": "https://www.163.com/dy/article/L4VA14GQ0511B8LM.html",
-      "domain": "163.com",
-      "language": "Chinese",
-      "tone": 0,
-      "seendate": "20260822T123000Z",
-      "source": "GDELT"
-    },
-    {
-      "title": "研究人员曝光美国 NASA 地面控制软件 AIT - GUI 存在严重安全漏洞 ， 可导致黑客向飞船发送任意指令",
-      "url": "https://finance.sina.com.cn/tech/digi/2026-08-22/doc-inipeyiq3066324.shtml",
-      "domain": "finance.sina.com.cn",
-      "language": "Chinese",
-      "tone": 0,
-      "seendate": "20260822T124500Z",
-      "source": "GDELT"
-    },
-    {
-      "title": "У Польщі сталась кібератака на мережу магазинів Zabka",
-      "url": "https://www.eurointegration.com.ua/news/2026/08/22/7243970/",
-      "domain": "eurointegration.com.ua",
-      "language": "Ukrainian",
-      "tone": 0,
-      "seendate": "20260822T084500Z",
-      "source": "GDELT"
-    },
-    {
-      "title": "У Польщі хакери атакували мережу магазинів",
-      "url": "https://uainfo.org/blognews/1787390385-u-polshchi-stalas-kiberataka-na-merezhu-magaziniv.html",
-      "domain": "uainfo.org",
-      "language": "Ukrainian",
-      "tone": 0,
-      "seendate": "20260823T040000Z",
-      "source": "GDELT"
-    },
-    {
-      "title": "Patriot : США признали уязвимость ракетного комплекса перед Россией",
-      "url": "https://ura.news/news/1053120576",
-      "domain": "ura.news",
-      "language": "Russian",
-      "tone": 0,
-      "seendate": "20260822T143000Z",
-      "source": "GDELT"
-    },
-    {
-      "title": "Report : Iranian hackers shut united kingdom power plant for four days in unprecedented cyberattac",
-      "url": "https://www.ynetnews.com/article/bkqq4govml",
-      "domain": "ynetnews.com",
-      "language": "English",
-      "tone": 0,
-      "seendate": "20260823T070000Z",
       "source": "GDELT"
     }
   ],
