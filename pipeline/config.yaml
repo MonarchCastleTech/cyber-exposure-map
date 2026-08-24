@@ -5,14 +5,14 @@ project:
   description: "Real-time CVE exploits and exposed infrastructure."
 
 openrouter:
-  model: "z-ai/glm-5.2:free"
-  fallback_model: "google/gemma-4-31b-it:free"
+  model: "nvidia/nemotron-3-super-120b-a12b:free"
+  fallback_model: "z-ai/glm-5.2:free"
 
-gdelt_query: "(cyberattack OR ransomware OR vulnerability OR CVE)"
+news_query: "(cyberattack OR ransomware OR vulnerability OR CVE)"
 include_forex: true
 
 sources:
-  - name: "GDELT"
+  - name: "Google News RSS"
 
 refresh:
   interval_hours: 6
