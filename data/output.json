@@ -1,14 +1,14 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-08-23T19:12:22.163096+00:00",
+    "generated": "2026-08-24T01:18:05.085138+00:00",
     "mode": "live",
     "sources": [
-      "gdelt_articles",
+      "news_articles",
       "exchange_rates"
     ],
     "source_notes": [],
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   "stats": [
     {
@@ -18,471 +18,471 @@
     },
     {
       "label": "News Domains",
-      "value": "49",
+      "value": "35",
       "delta": "deduplicated"
     },
     {
       "label": "Tone Index",
       "value": "50/100 (neutral)",
-      "delta": "GDELT scale"
+      "delta": "news scale"
     },
     {
-      "label": "Geo Points",
-      "value": "0",
-      "delta": "geolocated"
+      "label": "Live Feeds",
+      "value": "2",
+      "delta": "connected"
     }
   ],
   "live_data": {
-    "gdelt_articles": [
+    "news_articles": [
       {
-        "title": "County says sharing information about  suspicious activity  in sheriff computer system would  jeopardize public safety  | News , Sports , Jobs - Lawrence Journal - World : news , information , headlines and events in Lawrence , Kansas",
-        "url": "https://www2.ljworld.com/news/public-safety/2026/aug/22/county-says-sharing-details-about-suspicious-activity-in-sheriffs-computer-system-would-jeopardize-public-safety/",
-        "domain": "ljworld.com",
-        "language": "English",
+        "title": "Vulnerability & Exploit Database",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9UVjc1bno3X0d4Zk5HT05NNHluTDRaS282aDQ0TlBfMFZxd1EweFQtWGNaRVNkOFY5dl9uLURSOUxKSHFkTG9KN3FzVQ?oc=5",
+        "domain": "rapid7",
+        "language": "",
         "tone": 0,
-        "seendate": "20260822T213000Z",
-        "source": "GDELT"
+        "seendate": "20260823T202247Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "GQG Partners LLC Makes New $411 . 55 Million Investment in Cenovus Energy Inc $CVE",
-        "url": "https://www.themarketsdaily.com/2026/08/23/gqg-partners-llc-makes-new-411-55-million-investment-in-cenovus-energy-inc-cve.html",
-        "domain": "themarketsdaily.com",
-        "language": "English",
+        "title": "When a cyberattack becomes a public safety incident",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMng1UGh0Um02SnNwSkhuUV9zMUkzcWRzTHI4T3g3MFF5WVFNeHpTRm16S3doOGQyMHRUZFpFZmh6UERGMUxha05RQmNhbTRQRkw1aUd0djdydW9CWlJqTUI3d2FiakdZUTdLZnpvN0JnNGt1ZndhUGdPSV92ZG04Nkp3aGswZWZnVTZVZUpCOG1zbGs?oc=5",
+        "domain": "police1",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T123000Z",
-        "source": "GDELT"
+        "seendate": "20260823T154842Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "Iran cyberattack on united kingdom shuts down British power plant",
-        "url": "https://www.afr.com/world/europe/iranian-hackers-shut-down-uk-power-plant-20260823-p60qop",
-        "domain": "afr.com",
-        "language": "English",
+        "title": "Small UK power generator shut down after cyberattack linked to Iran: Telegraph",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQnBUcS0zZUl2QWczcnpTMXNuXy1ILUpSVjYwOERCWXR2XzVvYW04QXd4TVY2VVRaeXBaN1ZXbTFXRFp3RWRJOFBmLTJudllud3dBSl9RcERqbnR1dTZYU09JV2xvcDRmWThIUlgtOTRsQ3VRdEF4aFQ4c2h4MEpQazNMVzdZLVN3YnBqbVVsTnVKVkVSMXFBMjBpNGRibm9oQjdaRHI2WdIBrAFBVV95cUxNZy11ZUJUWVFzQWt6V3pZX2loS0k0OGt3QlRJWWV5VVFucGZkTThHYXkyZ2hSeHQycmYtTHhySzg5QXRkN0tyaUhzUFU0VEhJUHR5amZrX1RqWkJPLU9wVk85UHBFNmFVRVE5X1B2OWNqcHhUc3k1NkFLd1pLSmxQMEt4OFZkY2IzZlBPQ1pjWEc1OTZLUXYyOXpoNDVaeENBbmZHTldQUGRsM3Y0?oc=5",
+        "domain": "cnbc",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T044500Z",
-        "source": "GDELT"
+        "seendate": "20260823T113552Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "Metabase Flaw Gives Admin Access Without a Password",
-        "url": "https://sentinel.ht/metabase-sql-injection-admin-takeover/",
-        "domain": "sentinel.ht",
-        "language": "English",
+        "title": "CVE-2026-69414 ShieldBreak Zero-Day: No Patch, and CISA BOD 26-04 Gives You 14 Days",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYXhsRzdmNzVSMnBzT29yZXM3dV9YQTYwcVRMZ0R2QlJMQ1FHcVpiZTVtdVRTQlNIOEFEcWtiYWJiYkVLTEh5dGtQd2NBTFdLd1lPRlkycFVlZjJZaTJNOHRGVVZaSU9KVHpwU0lvb3B3Z3RQd3Bac1ZFYVFwWmdHNVBEYUUyeVBJV196UlhSNTJyYWEtQms3eHAtTkd3Z2ZKaTFiVkdJcW45bkthZ1c5ZVpSeWVIbWh0Wkg0akVMQVZuV2tBUlhJNGgxS2kyYnR5bzQw?oc=5",
+        "domain": "qualys",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T090000Z",
-        "source": "GDELT"
+        "seendate": "20260820T144151Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "Metalla Royalty & Streaming ( CVE : MTA ) Insider Saurabh Handa Sells 79 , 500 Shares of Stock",
-        "url": "https://www.themarketsdaily.com/2026/08/23/metalla-royalty-streaming-cvemta-insider-saurabh-handa-sells-79500-shares-of-stock.html",
-        "domain": "themarketsdaily.com",
-        "language": "English",
+        "title": "Microsoft Patches Exploited Entra ID Vulnerability",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZTBSb0RyMFluR0JVTUpVNVhqcjBhYU9uaEtaUllwcWFsSE16WmE3a05FOU9lXzBDTzFXNzJmaWltejFwQmQxUTBqSXJxV25ZTUNVT2NmX2d3dzBHYkVvNi1HNUVfdHhUZktwRl9aenFBektEZkZQMmgyUURMX2YxMdIBhgFBVV95cUxPbGpBOU11cEdXbUhnOE8tWHhLMXBOcVZUSWhxYmdZMFlNckgtMUs2cm16Y0NBWjFIM0p2TDRLSXdLWXRfWE1MdVVxdF9CMUotclJid2FoZjhvbWdOZVVsQmVkOVc2R1NuOEN4TFVtaVI5TjZIT2FKNXVFcGNtUHVaLWRGTTNpQQ?oc=5",
+        "domain": "securityweek",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T111500Z",
-        "source": "GDELT"
+        "seendate": "20260821T081219Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://khow.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "khow.iheart.com",
-        "language": "English",
+        "title": "GitLab CVE-2026-19478 Comes Under Active Exploitation Within Days of Disclosure",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA2TzhyTnl6QWhhWUhJTGJCajZqV3g5ekcyeU81LWpqRjdybVpLRkY0SS1GbzdHVTQxZ0xOQ3JoRnVUYXpmT0l1Tk90cl8yaTVkVzVQSTJUVXIyTkFVbDloNnN2bk5pVXpMMXNOaC1XOXFVS2E0WndEaWhUX2M?oc=5",
+        "domain": "thehackernews",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T144500Z",
-        "source": "GDELT"
+        "seendate": "20260821T070400Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | NewsRadio 1110 KFAB",
-        "url": "https://kfab.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "kfab.iheart.com",
-        "language": "English",
+        "title": "Week in review: Records allegedly stolen from Azure tenants, Medusa ransomware hits 500+ orgs",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQNVBrcEk3bmtiZ1NicElPNndoNnotVWlUNXRSeGxsU2FPUUM5QVVmVFNDZzhZdGZnTndVWFNoMVF5QS1VaWU4Zm1BR3BqS203UFBxMkROV2djU3NTaDh2d1FWXy0yQUtpdll0OEdnZGd4RHlOZ0tINUQzYlhGeGs0LXpOeTJwYmM0OVU3UnlISFlnUnVpR3d6czdjWFBjU2xTZzl4YVprU01SZDhZNHhuOEFVVDdieW5KcklGZ1JGRXNjTlRBaW1HbThITWctcmc?oc=5",
+        "domain": "helpnetsecurity",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T151500Z",
-        "source": "GDELT"
+        "seendate": "20260823T080000Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://1430kasi.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "1430kasi.iheart.com",
-        "language": "English",
+        "title": "Review: 'The End of Oak Street' takes viewers on a ride with truth, vulnerability",
+        "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNOHJBQzdLQzZINXpQNGtyNk9PWjBWTk5MNVBmbTdsUEl5TXFvWERiTkJUV3QxS0c4aWJRR1phc0xMREdLeXRzT25oMWlOeUZ1YzNwdG9maFFBa2tTUGlubjRLUWJXU21mSmZZUnRJNnRyQ3MtdTdtRFhNaXJNcDBiTzFMU1BsUjB1Z1dSUGdKNHFaU1NxVFAzWE02clBEY3lsNjNJbHVmWm1nMVpYMUNTZWpYdjVYT0wwZmlyUG5najAxVmxfMmg4eFJvZEM3LU9QZWo1WmhJZTd2aXN0RTRjUXBaOUV2YWR5TUVsNWZUOGVQZkwtWWY0Z2dNTzR0RkI5aEtPNGtTTElVTjY2?oc=5",
+        "domain": "charlestongazette-mail",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T151500Z",
-        "source": "GDELT"
+        "seendate": "20260823T110000Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | News Radio 1410 WDOV",
-        "url": "https://wdov.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "wdov.iheart.com",
-        "language": "English",
+        "title": "UK responds to report of Iranian cyberattack on energy site",
+        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOWjJoYjBVUC1YWUN5OUlOdXpZMXhHX0ZNcTBrcWlpVElxeXF6R2ZhWW5sbkZZWVZza184NW90Q0RmUUg1UEVrVUhsX2FIMy1UYk5jRW4wSUdTeDE4UTZqVzVtWDNtM2VEZjRPUTBkS3VsSm1MNjhsY3pfV1JMb2pWRVk4UmFiSFhXbzBncXBSeGtwcDhicTc0azh1MWVjejZITk9GOXJpNmlMMEZRVW1QakJiVmdCMnAxZTBhc3NhcmRlUVFmQ0lmSjFGSEtyZFAtX1Q1SDhMSlh4RW5ydFotZTROT3EzbDlxM2dvbVNZUnpLUQ?oc=5",
+        "domain": "centraloregondaily",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T171500Z",
-        "source": "GDELT"
+        "seendate": "20260823T195750Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://wiod.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "wiod.iheart.com",
-        "language": "English",
+        "title": "Video Cyberattack in Britain knocks energy facility offline for days",
+        "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5ObVJFNG15VGpZN3RzZFk4XzJRU3lPLU15dVlNZ1BRdUd2dHZZczRtczUwR2thMEpTYnVEbXBZV0JQcVdqZUpKakptVG4?oc=5",
+        "domain": "abcnews-breakingnewslatestnewsandvideos",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T171500Z",
-        "source": "GDELT"
+        "seendate": "20260823T233306Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://55krc.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "55krc.iheart.com",
-        "language": "English",
+        "title": "Chicago FBI warns of threat of new ransomware attacks, using software like Gunra from Russia",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTW1DMzFSTHN6dVJLUGtvdm8wYXNaM2lGVzRidF96NzQtbGtYQU9wTXFwTTZ3TDFkakQxclppQlYyN3JETmZWYTVxZnM2aXhocEktSG5NY25WZEdld05xdUNGR3hPZFlENmFLUW9HR1JTVGhmMC1iTHF4Rlg3NGlvWG1wV3NXT1VCMDFmbFJwU1RKVm0xZWpJdjgtVEt6RU5wLXB6YzNGQThiNm9jM3hHTWhoS0pnV1BZUENv0gHAAUFVX3lxTE5rb2lKSHZVdWkyYURtU3lWZmNxRW85SW50RGF0V09PUmpPUDBEUUNsb2EzcnVwOXZLb1h1LVZBR043UzdPdHRnbEdxb3o4NUJ6RmczWHJseHp0dlhWeHpHQ2lFYkEyMVloUlpLVms1ejZobTd3VkxqYllJamVtUWIxaVVkU0tyMlVCVEE5Qnh6b1U1T2pFN1dfdngtaFdEZ2FvaDNLbjhucE93amVTUmJfVzFQOHkxV2poeVJvd3BidQ?oc=5",
+        "domain": "abc7chicago",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T171500Z",
-        "source": "GDELT"
+        "seendate": "20260822T000039Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | News Radio 1410 AM & 100 . 9 FM",
-        "url": "https://newsradio1410.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "newsradio1410.iheart.com",
-        "language": "English",
+        "title": "Iran-linked hackers blamed for cyber-attack that shut down UK power plant",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPM3V4Wmc1TVo2UHNXakY0YkFSVVJsczZqcjBsQlU5eGxvdzZtZ0pYM1R1anA2TjRBeDl5UEdwR1I3LW80aFpEb2VUN0c4OUMyUm9vNmNPYl9JaElLWUdWdlJ1Zm9lYlBxcXBxelFiWXc4eUV2eGRzMW1LVWpnZ2MyYVd6QWhFQjByT0VNNDZEZzRGd3Y3UDlzY2pTX1REMkhDWnJ5U2NYUl8?oc=5",
+        "domain": "theguardian",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T171500Z",
-        "source": "GDELT"
+        "seendate": "20260823T090700Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://newsradio540.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "newsradio540.iheart.com",
-        "language": "English",
+        "title": "Medusa Ransomware Hitting Healthcare Industry’s Unpatched Software Vulnerabilities",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNY1FiUmxGTlYxNXRSZmxUTUVPbXctVklNWWVVZzFtSUw2aU5IWTlYbWxRSzdUS3RvRkRZOWVYYlgwSkoxOU1MYWpKUG9RY1l3Z3p4MU1qNllDWmNnTjVuY3RaQ2FYUWJtbW1RYmU5VVN3QThZNE8tME9kWFBQb0NqQzRQb2lDSjAzbXNqazU3ZV9BaXhmdldua1RwRWpHdTdCNVI0R2VLekJDQ2dHRzJIUXp5dG_SAboBQVVfeXFMT2VSc3ZBajhZT1c1MEF1dC03N21QVERqVHlpWXp2MkNQaktZUE11SjBXa05OSkFReGRQdkk4bzZPVGpSQ1BmRjZPMDJyR3RwYkVIM2Zob0ZpSjRMNkNuZDRyUUJCcXllMGNCRTJvNHdmbGpIQkF0V1ZIei1fbTd4X3BqRWhId2pGQUxma1M3aUljX0NJU3lYRmcwZVF0ekMya19sR0RzWUJaS3hTOGtHVFZXbHppOHQ4YXRB?oc=5",
+        "domain": "thenationallawreview",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T171500Z",
-        "source": "GDELT"
+        "seendate": "20260824T000000Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | Sports Radio 800 KXIC",
-        "url": "https://kxic.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "kxic.iheart.com",
-        "language": "English",
+        "title": "AI data giant Alation confirms cyberattack",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPWUlyVTJja0pwaWZYRE4yaDktRjk0QkxXZzlVTlZra0ptOHdvXzRqZE1ZMDBhc1JmS3p2RlNZZEU1QlhRZHRHdlRpRjFqNmMtZVZNUXRaMHV4eS1ydjNFUVNFbV9wRkZOT21TVVAzQjR6ZXlFa1Z6aGNtWW0yQ2RqMzhJNA?oc=5",
+        "domain": "techcrunch",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T154500Z",
-        "source": "GDELT"
+        "seendate": "20260820T130124Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | NewsRadio 1000 KTOK",
-        "url": "https://ktok.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "ktok.iheart.com",
-        "language": "English",
+        "title": "US Bank investigates LockBit's claims as ransomware crims set pay-or-leak deadline",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQd3RCRWtYX0tDM1FIdVZUdTdIc3ROX0RYVnczZGhPS050WlYwcWhPRWlpTWhkbHNCVnFVYTdNRUZTMVhrNTdyTkdGMmdXV09TQlJLS0lSVm9MUEtCVlFMTGViUEYtMUVJMzZUWE8zejd2YmhYUFE2RVBBRDdHUkF1WlFuVWRoaUQzUGhOR3ljQ1gwTnByX3E1N0RMenlrOU93RVVBeTg0ZkU3V3M1cV8xbVlDRXJISE44ejItU29EX2h6Y05FR2pvamU3Zlh6Q2hGXzlB?oc=5",
+        "domain": "theregister",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T154500Z",
-        "source": "GDELT"
+        "seendate": "20260820T173039Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://veropatriot.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "veropatriot.iheart.com",
-        "language": "English",
+        "title": "Medusa’s 500 Victims Point to a Bigger Shift in Ransomware",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVDF4STBmVUN2SlRmYm9UWW1meERFMlk5T2VLQUt1MWlzbE5yc1RNRjBUYnRzUWIzRlNLTjNJaDhmU05hSmtkNUUyajBrLVctWGV4RXdrZENTeGRNaWd0Rl82T2ljWktNcWNVMEg3cDFrT1REUGNYZENFYjF5c3pOMVRxVG1ralliSGhlZHp0YTJlc3ljMlp2UmZ0SHlJdw?oc=5",
+        "domain": "cybersecurityinsiders",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T164500Z",
-        "source": "GDELT"
+        "seendate": "20260823T110915Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://1150wima.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "1150wima.iheart.com",
-        "language": "English",
+        "title": "Mapping Iranian Cyberattacks on U.S. Water Systems",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQ0lMaVFKdDVEOWt1Zlp1NVRONmtYX19GS1pEOXZDQ2s2N3JtVUI2a3NJYjZlNHJNRkNrZG5seXIwT2RYenhnRU1NVTdFYmNOVk5vd29iRURQV3dsMUM5RXczaEg4LVo2QjBIQjZqSVVtZDFGWm9kdWRlYzN3aEhUcg?oc=5",
+        "domain": "csiscenterforstrategicandinternationalstudies",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T174500Z",
-        "source": "GDELT"
+        "seendate": "20260818T213832Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://whnz.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "whnz.iheart.com",
-        "language": "English",
+        "title": "Critical Microsoft Entra ID vulnerability exploited in the wild (CVE-2026-69836)",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQc1JJUGQ3MUxqdTRETE4tZ05CLVQ5N0dMd3RNN3llTmo5Z3l1RlpoaEpTVDd2VkFqYjd2RkZ6bDhQbjFTVkJNQ2p3RlM0THB2RGp3QldRdGY5aWxNYTYtMXl1VlJwV1RUUnNfSWJvckZXYmNlMzZlZVkwc0V1Q1dQbVFBdVhlYU9xU0Z1U1lYSUx4M293UlE?oc=5",
+        "domain": "helpnetsecurity",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T174500Z",
-        "source": "GDELT"
+        "seendate": "20260821T122033Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | Talk Radio 98 . 3 WLAC",
-        "url": "https://wlac.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "wlac.iheart.com",
-        "language": "English",
+        "title": "CVE-2026-19490: Critical Vulnerability Affecting Citrix NetScaler ADC and NetScaler Gateway",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTkhtZzVEV1ZZRlpfRTF1eHRlejNQeXc2YmJibXRmeVJfcm9oNDdhV2I0bzNWMnhuQ3QwLURtMjBNTmlnZFo5OF8xdFhDRzB6Mml2STM5R1lwajNQUHJCd3YwYzMzZUV4NFJTelJyalBaLTZuZUIwVy1SMUpua2doZVhOOThaQlJ1X2dQamt4WGN4dHZwVnltOUVETkR2bG5tQnhRM3Y5dGI0Y0NtbndXdlpZNFlnOC16bGExSXlvRjc1OUpmT2tz?oc=5",
+        "domain": "rapid7",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T174500Z",
-        "source": "GDELT"
+        "seendate": "20260819T164805Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | Talk Radio 105 . 9",
-        "url": "https://knrs.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "knrs.iheart.com",
-        "language": "English",
+        "title": "So About That Iranian Cyberattack on Our Water Supply",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNGdLTk9uYzJqVlZEZlZqSzlBZS1ZS3gxVG1iM29jREJrM1hnLUFDMjVuSFNLTVhlcmdMVHF0bzJLMmc0Z2RjYWZLZ2NLcjhrbGpqQm8ydXhKdnhPYjkybUp0TmNzeHRMMzh2RVFWOUszSXAyVjgwcFpmVHBOYU5KYWhPeHBBN2trTzNkODNVRFZ6cXc?oc=5",
+        "domain": "slatemagazine",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T174500Z",
-        "source": "GDELT"
+        "seendate": "20260819T185800Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | Newstalk 1400 , 104 . 5 , and 105 . 9 WJMX",
-        "url": "https://newstalk1400online.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "newstalk1400online.iheart.com",
-        "language": "English",
+        "title": "UTSA cyberattack attempt shows how quickly threats can target universities, cybersecurity expert says",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOZmtkeUVHS1FYLTBidWhYNFA5SFJaVWNXZjBjRUlfNENCSWVQTFZTbUhrcENMeXNaNFFRVEdaV1l6S1A1Ykk1UEtON05xOEc2Um42MWxXWVVuOUtScmUtMjU1NHVIYUlKYmlnUjNnRk1xcmZtZXRmekt4TmxMemFUdzZkUnlTazIzSmRSYXZEcnJLeUluQVdzYUFFMTRnZDRHV3FFd205b1hvdlBmbGVzY19jQVh0dVByVGYxOFlHRnpoUzZndEhqbUZobVMzcXJVSkd0UE5QYmxNR3U5?oc=5",
+        "domain": "ksat",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T174500Z",
-        "source": "GDELT"
+        "seendate": "20260820T034537Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://945wpti.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "945wpti.iheart.com",
-        "language": "English",
+        "title": "Virginia Guard tests cyberattack scenarios at Cyber Fortress 26",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNeVFlZ0F0RHFyVkVlYVlJM3pDVDB1OVBzeUFIUldCclZXYVZ2RUlXYkVjMTdBX0tVZVduWldEOEFkbEJCb2FGLU9ZTk1YVFNaUUkteDljNGo3X3RfeVZaZHVocXpMcEdIZTdjMEo0TWJMZ3pfT0c2emdwNFZPR1A3YjJqUEFadnM2bXZsU2FMamhUZ1pGZXRPSXVleGw3WGNx0gGmAUFVX3lxTE92VUlabkxfZ3V1czhWRUhlNUI1UUJGYnVlVTBVN0ZoY1RlUU5yWG90UDVjNlNnV1FFendNVmlSYkx2a3N3d0tCYXRqU2NtWjROSWhUb1dCMExXQTZ5MUQxUFdZNkVRdHRvNUhPOVdCTWFFa2tNRUxMTkd6eGJXeXpDNUtjWEthRV9LdWdOVDdCX3JWVEhBb1ZpcTN4ald5dkpOQ21pYmc?oc=5",
+        "domain": "army.mil",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T171500Z",
-        "source": "GDELT"
+        "seendate": "20260820T151908Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | NewsRadio 104 . 9 WBUV",
-        "url": "https://newsradio1049.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "newsradio1049.iheart.com",
-        "language": "English",
+        "title": "UK responds to report of Iranian cyberattack on energy site",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB5RWxpVkVGTUJKNVBCa3huR0xBdlRXR3VtbzQzY1ZfZktwVjVpYnNLTnc2ZmNNdFZlSU1xZF96azF3dktpeVB2Zkx3eE9tM1UxUEV2bkVPa2JZaVRMcUZn0gFcQVVfeXFMUEl1UmVYc0pwVjlCcnFFZGJsTXFGX3k3dU1SM2FOb2JsWldIN3ZtSnRFOWJxbzhzZEFWbl8zSGt4Zy1reTNKd2E3TnI5RWlCVF9DVzl6djdYOTR1NFU?oc=5",
+        "domain": "modernghana",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T144500Z",
-        "source": "GDELT"
+        "seendate": "20260823T212834Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://wjno.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "wjno.iheart.com",
-        "language": "English",
+        "title": "Ransom Busters Claims It Hacked Ransomware Servers, Asks Victims for Up to $60,000",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5tbmhJMzNtc1BMU1BrZ25uNzRSNE44VjE5dVpGZzlJb21JeDdUM29iVnRQX3lRcDZubGlSY0NFTGVINmFEdC0tQUlGYkFCRkhrTnFIWXRZQzVCa29mQVhXYVk2c0hfZ3N2eW43b242SldHX3l0XzVOVTl3?oc=5",
+        "domain": "thehackernews",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T144500Z",
-        "source": "GDELT"
+        "seendate": "20260818T165800Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | The Patriot KEIB AM 1150",
-        "url": "https://patriotla.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "patriotla.iheart.com",
-        "language": "English",
+        "title": "Microsoft Patches Severe Entra ID Flaw (CVSS 10.0) Allowing Remote Code Execution",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBuRjlmUzhUS1lzR3JURENlWUhjYlhZX3lJWmF1ajR1a3ZZSWpPWWhGRkUxSGw5dzBxbkFkSjFiZTVyRXM0MFZVWUJ0NWhXOF9fMm43Zjk5MktlbjdIRjJlQWtNNWVld1NuWm5mMmV3SU5KZklMVUMwWFdZcw?oc=5",
+        "domain": "thehackernews",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T144500Z",
-        "source": "GDELT"
+        "seendate": "20260821T060600Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | News Talk 1090 WKBZ - AM",
-        "url": "https://newstalk1090.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "newstalk1090.iheart.com",
-        "language": "English",
+        "title": "Video UK responds to report of Iranian cyberattack on energy site",
+        "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9IdklkNjh4N2NZMVo3WV9yVUhVUW5XV3hVeE00ZUxfZnBnQkd5YW54UUU5TEFMUEk5dXRacTVMbHF0ekxPc0xwM1ZkUHM?oc=5",
+        "domain": "abcnews-breakingnewslatestnewsandvideos",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T144500Z",
-        "source": "GDELT"
+        "seendate": "20260823T200423Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://960weli.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "960weli.iheart.com",
-        "language": "English",
+        "title": "Critical macOS, SharePoint, vCenter, and Microsoft IKE Flaws Under Active Exploitation",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPek1lQ1NnZWlXTUdzbUxfNi1wM281VUNsSEc0NGZHRHBHdnNvbVMwX3hPd1k5LW0zU3RrTmJJNEVIbE5IWHJaeTE3aFMydElMdXdkNUE5Q1hmVUJVdVB6V3dGQWdCOER6azJqMkYwdm1PVy1mQXRHUzBaeHFjWS1HUlV3?oc=5",
+        "domain": "thehackernews",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T153000Z",
-        "source": "GDELT"
+        "seendate": "20260819T110100Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://jetradio1400.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "jetradio1400.iheart.com",
-        "language": "English",
+        "title": "Microsoft Confirms Maximum-Severity Entra ID Vulnerability Exploited In Attacks",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNk8yeVVQWWtiZEJEaG5LaHpKVVFGUGN1MTdIR29IamxjQ3NEQkhBaE91R3E3V1VER0U2S1NGeXZUa0RTamFJdnNHa2lXcUIxeGc0OENObWZwdDhWN1pON0V3NmxXbEJNb0Y5WktudjN6X3otbkpWWm82d2dnYlJLaHh6bklqNVBOQVlXOURhbU53bjBHTkRub0l6MA?oc=5",
+        "domain": "linkedin",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T164500Z",
-        "source": "GDELT"
+        "seendate": "20260821T200002Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | KOA 850 AM & 94 . 1 FM",
-        "url": "https://koacolorado.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "koacolorado.iheart.com",
-        "language": "English",
+        "title": "AI-backed campaign targeting vulnerable Siemens S7 devices, CISA and FBI warn",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMHhpWEd2UnZqcGlxOVZaNC01WUt4cW9CTjlvZU1TY19OcndLY180X28zcGNqSWlEdUl3WWRzSHBRcDZJbzVid0VCRkNxa1VzeWk1bjA5NEJmZ05xNTNzRzVGYkZKYlFtQnNobmdlS2hDUFRaRkVEUnRSMkdTVXFZNWM2cXY2aS1ZSW9KZ0t3?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T164500Z",
-        "source": "GDELT"
+        "seendate": "20260819T202216Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | Hallelujah 95 . 5",
-        "url": "https://hallelujah955.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "hallelujah955.iheart.com",
-        "language": "English",
+        "title": "AnMed CEO speaks out on cyberattack, potential patient data exposure",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPd0c2Z1NaVms3Q19RZFdEaGV2aXJ6cjZCTjBNNE9vVVg0N3JhdU1OR0ZvMXF5ZnJvV0dMRG82bDFKeXhyOWpvbVR5Wm50QWRVTXBQVlRXcnNvejlNVDVTN3c4MFNXa3RmZXQwZzRKVFBMS2xsZ1ZiMC1fTnpHTDRRcUJBaXo1bjFMZW9zSzc1UTNKZmYta0Z6MHp2NlctRTlsTW5aWFdQbWZvajdZdDlWZWNaNm41bHB5c3JmMw?oc=5",
+        "domain": "independentmail",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T164500Z",
-        "source": "GDELT"
+        "seendate": "20260821T185900Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://wrko.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "wrko.iheart.com",
-        "language": "English",
+        "title": "Attackers Exploit Zimbra SNMP Flaw for Unauthenticated Remote Code Execution",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNRGdiYVN2d0pfa21mZ2czUTlhd2lUWVJtbTNRTGtUTkp6UTBmOUhPZTlQM1NhY1dpTDZxdTFudG9sUElud25oMEtES2FlYkVNVkhJTklwQ19RNV83eHpaWUtvbUNHU0VYVHVtWmZZd2MxY2o2V2JsekoydmF4SDNzMDVsQQ?oc=5",
+        "domain": "thehackernews",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T164500Z",
-        "source": "GDELT"
+        "seendate": "20260820T132400Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://wonw1280.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "wonw1280.iheart.com",
-        "language": "English",
+        "title": "Japan outlines measures to protect infrastructure from cyberattacks",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbEJEQ29kb2JycjZJdUNqTUFDTy1zbmdRM0VxSnozeGNDTllnMFRjd0lqZGdjWkhTUjdjM2tEdmtQT1dRQU5Pc3hZaWpQaEdCbndyTVZjSEZyU0NFQ2tfQlEwTGpKczBNZGpfY1hFblZWM2ZVcjhmOEF4bE10NUpVbzRQYTk5UURycXBNSW9mc3JmMzBEaE1FSlNMYnU3MWJFckZlbGtNUlZpQQ?oc=5",
+        "domain": "thejapantimes",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T164500Z",
-        "source": "GDELT"
+        "seendate": "20260823T081300Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | News Radio 1450 WILM",
-        "url": "https://wilm.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "wilm.iheart.com",
-        "language": "English",
+        "title": "Cyberattack delays classes at UT San Antonio",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQ29sbGtmUjJXQTVCRERmaXpvbllZWEktUDBwNGtPbnZ4OXVWRTBIUjlFd2ZzV1dKLTFBU2dQaTJVcktGdWRwVWdkTHJLQkhWNkhZdmtoX01VVm1KVkJOU1NLRmVPVXVQTm1ydG9sMlRTNThuTmhjaWpsa19SVzVnV0ZTVDkwa1c1NElXeEdKd2lnMFB4LUQ2eFQ0ODh1akhOVWstbmNBZUhqbXVpMXlmOW1VUQ?oc=5",
+        "domain": "spectrumnews",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T171500Z",
-        "source": "GDELT"
+        "seendate": "20260820T135900Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://newsradio710.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "newsradio710.iheart.com",
-        "language": "English",
+        "title": "Critical NetScaler Flaw Can Bypass Authentication on Certain Gateway and AAA Servers",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE96OGxJMXU5R0hULWFBUDkwNFV3cDVuMFkzQ2dWWVhXclh3VTltS0dtcmJHd051bkdrSS1FeXNZb0l1d1poblZHMDBsSmFfeGFRZVBPeVg5WmtrWmhkUEgzMjlwaklmTkprcTd3M0pyWmlvMlR5em5YVDVVb2dPZw?oc=5",
+        "domain": "thehackernews",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T171500Z",
-        "source": "GDELT"
+        "seendate": "20260820T133500Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | NewsTalk 1240 WSFC",
-        "url": "https://wsfcam.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "wsfcam.iheart.com",
-        "language": "English",
+        "title": "OpenAI pauses some AI training after autonomous cyberattack",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPa3pkZThyZXNILUxPWmJlYXowR0F3clotOTNhOXlncUM4OTJrVWowYlF5ZzFTbXBDVlVFeVpIXzgtU1NfS2xnRW1kVVBzM2UtOGRRZ0R6a0ZuZGhxWkl2b1NxUG56bU1CNmhFQk1yT1R6Qk5QcE5IMGp4SlZlcThQRTNfNEZVSUxjcDBvTXJjRTFCUXJ3UG5wUkVYdUVOdlNRVVZJRdIBqgFBVV95cUxNaVczV25XbXRnN0wzZHpFWGctazgxQXk2bWpCUUxOSDdmcGw5R3VkSU5Zb0doRVVFbEFiaXpWNTl5V0lzWEd6Ny1HdFdrSTFENU5IMUZoZVUyY2R2ZkFtSERZNTJCT3FiXzJyeDlRR2oxWjhoS3BScnU4MUFjT0xlQ2ZZV1c3Zjh5N2pnSnF1U3dFN1FDS1FPbklsT1hYZlZZdy1kbDUxOHc4dw?oc=5",
+        "domain": "abcnews-breakingnewslatestnewsandvideos",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T171500Z",
-        "source": "GDELT"
+        "seendate": "20260818T213113Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | News Radio 94 . 3 WSC",
-        "url": "https://943wsc.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "943wsc.iheart.com",
-        "language": "English",
+        "title": "Fueling Vulnerability: The Economic and Strategic Costs of Oil Dependence in the Pacific",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSGFRT0JhaEtkYVljRzczdE5ZZ3dLSl9MZUQzWnZENmZoS0tsdXJ1SklBeTZtaXVNNGFrd2Y2ZXAwQWhoVUZlbTE4NHBXUHpqaUhvS25wd2cyR2tBZkE3dkU2YzFHT2xlLXh5S3B3cTktRVRzTUlJSHc0RklpVHROdnk5UXJ5V0dOcDVhMUFDYVhUdzZrb1RUMnBCbk9QNXk0cHJLSlpR?oc=5",
+        "domain": "csiscenterforstrategicandinternationalstudies",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T173000Z",
-        "source": "GDELT"
+        "seendate": "20260820T152136Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | Newsradio WTAM 1100",
-        "url": "https://wtam.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "wtam.iheart.com",
-        "language": "English",
+        "title": "Cisco Patches Nine Crosswork and Secure Workload Flaws, Five Scoring CVSS 10.0",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZVU5ZGpMWi00VUZjVmJxT05jNnpLSnVJRk5yc242T0xReGRjRXZmUzZNenlVNDdhMG4zQVVkSnk3VjRJdHBvZDVZaTFaaXhmaldidldwaGJYTHZDelM5OWJqTFB2LXJKVWRMeWhwZHVaSHFZX0ZXbGRzUzZFMXlyOHJ4MXU?oc=5",
+        "domain": "thehackernews",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T173000Z",
-        "source": "GDELT"
+        "seendate": "20260821T100300Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | NewsRadio 560 WHYN",
-        "url": "https://whyn.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "whyn.iheart.com",
-        "language": "English",
+        "title": "Update Chrome now: Two critical vulnerabilities fixed",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSG9hVEktZkJVdTZHcDN4VDk4SzlOTGV0RVNwUURudWhZVXBvaHVZMzVLZkc5MzZCOXFIeDJaQlF1V2VjR25ZWnZzRE1VdXhvUDd4WUQ3bmNDdUJPaGVyeEhqRF9yaHdvTk9yU3BvLUpfVmRWOVFsU2pjU2Fqc25rY01PV2dacGl2QnZWai13N2FBUzJpT3dza1RKMjl1TnBh?oc=5",
+        "domain": "malwarebytes",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T173000Z",
-        "source": "GDELT"
+        "seendate": "20260819T103807Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://wsyr.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "wsyr.iheart.com",
-        "language": "English",
+        "title": "AI-powered vulnerability clearinghouse faces deep skepticism, major challenges",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOLVZWR0E2WGk0enc2SnhqcHFVSzRmUmd0bWpfZHVjWnZ6QnpMcVpLWTV6bEpOd1ZKNjhkSmZYaV9EVW45aW9tRUFzX0RFZ203MlBMOFZtR0xxSjY3T05FaE5ENDRVMGFXYzZvUnFlQk5nUjAxQjkzU19HczNMX0xOTG1HMWV0a29QclR0WFJNZU5SeE5iRHFvSUo5cDVReEc4X2R5NA?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T173000Z",
-        "source": "GDELT"
+        "seendate": "20260818T141723Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | Talk Radio 1080",
-        "url": "https://talkradio1080.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "talkradio1080.iheart.com",
-        "language": "English",
+        "title": "Patch Google Authenticator CVE-2026-14204: 12 Steps",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxObmVacWo3aENPWVJfNVo3MU44Q3NWSkJzSDlwWEQ2R1BJcXV1aG9HZ01nNFc2WWd5WktmNk5VVUFaUEJSU2tqTHNQUW4zWUpfWWFYb05XRHhsM0lIeTluVU40OHVhTElzNDltZlZ3QU9INEtFNkdvUGZFZnVNaEFCN0Fn?oc=5",
+        "domain": "tech-insider.org",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T173000Z",
-        "source": "GDELT"
+        "seendate": "20260823T151302Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://wtkg.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "wtkg.iheart.com",
-        "language": "English",
+        "title": "Iranian-linked hackers shut down British power plant for 4 days in alarming first-ever cyberattack on UK facility: report",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYmlBcTJoUnpjYnd5MUFmMnZQQzZ2dXpZRU9kNWFNVzR2UUkwS1NLTTFfeGxaVVVOSnNSaXhTR09DTHdtUzVVNDI0WXI0WUdhamJtNFMyYTNTdGg2T2t4Qm80Z1VJS1I1UW9TMF9SckRNRi1WYWVZS0dROU5YQXdRazJnLU96YzdpRXIyNElBZHNPVEdWT3V6djFLX3h4V2pUb1dxNGwxTTk?oc=5",
+        "domain": "newyorkpost",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T173000Z",
-        "source": "GDELT"
+        "seendate": "20260823T160100Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://kste.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "kste.iheart.com",
-        "language": "English",
+        "title": "Iranian cyberattack shuts down British power plant for four days",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5RN1BkdjdPWFd6YTRYdVVUVm1FaTdCTmd2WmdQcnF1X0VTQzB4ejgzRElLUVNxelV6b2t2M21vajFkSk1XeWp3akg1bHF2TVZQemlzTEVpRWpZcng3bUxoNmxLR1FscnZNck5BSmlVRU5NMFprN3NF?oc=5",
+        "domain": "thejerusalempost",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T173000Z",
-        "source": "GDELT"
+        "seendate": "20260823T051625Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | WJBO Newsradio 1150 AM & 98 . 7 FM",
-        "url": "https://wjbo.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "wjbo.iheart.com",
-        "language": "English",
+        "title": "Specially Crafted NTFS File-System Image Allows Root Access On Linux With NTFS3 Driver",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA2UkJseHpNVk9VeVYwYURjSHByYnBGQTJGbHV3ZHljbE14VmdBSEt3dllGOElxV2VDZEJwemd1SnF6V1RIWnhPMFdxNFpSVy1CZFhlcjctSi1PRk05UU5KeHFOVXpIRzhGX1E?oc=5",
+        "domain": "phoronix",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T173000Z",
-        "source": "GDELT"
+        "seendate": "20260822T124200Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | Newsradio 95 WXTK",
-        "url": "https://95wxtk.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "95wxtk.iheart.com",
-        "language": "English",
+        "title": "Elementor Pro Flaw Could Let Unauthenticated Attackers Upload PHP and Execute Code",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5wSzMyMDQ2SXIxQmxacXJKc2pZWkVIdGljSWdkU2NnaVZGMnRDMTBiS3Boc3dTSFlmOFFVdEpfOHdWVk5uYjV6V05GR3l3ZTNRNE5KUF9GV2lKYjZ6WVBUbnlUSmVuaVEyNDBvbEJjT1lJUHp2Smc?oc=5",
+        "domain": "thehackernews",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T181500Z",
-        "source": "GDELT"
+        "seendate": "20260820T060400Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://knst.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "knst.iheart.com",
-        "language": "English",
+        "title": "Ingress-NGINX EOL: CVE-2026-4342 Still Unpatched [2026]",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE16bmxMZFlaeUR2N2xKenVWWm93b255bG10ZTlvTzRlTG5FYU9lajZHTElqM2djR05SelZUOG56dU5QcFNwbmFMd3l4OGdRcFI3bnhGeTB1bk1VX284VE9CbUdMbU1Cc3dhV1ppeDZ3X2NncjA?oc=5",
+        "domain": "tech-insider.org",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T181500Z",
-        "source": "GDELT"
+        "seendate": "20260823T140411Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | Newsradio 970 KFBX - AM",
-        "url": "https://970kfbx.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "970kfbx.iheart.com",
-        "language": "English",
+        "title": "Why Traditional Vulnerability Management Fails in an AI-Enabled Threat Environment",
+        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxON3BraURPbk5zLXdVMVBhTExOVTVydEZZbi05OTJzLVhCT3N6XzRNVzlzdGNVTHZ2Vm9uTlBRRU81RDFyNXhpVi15cGRkUmJBUGZhZ0hxcTFPLXJ2clhNU2ZETVVhZm5IaUFDV1RWU2R1cEoyUHRiaDl5WEllbjBmMUFsR2hPSmd4QktNZWdNblJLa3c1NTF1UWZ2M01Rc3NqWlZ4aXRveW53Nkl6TXY4MC05cll2bm1GTEZ4ZFNrdndJT2txLTF2Vm45WHFUX2pxTlBxOVlpWU1BejRoNUs0UktWX1JXMFVq?oc=5",
+        "domain": "securityinfowatch",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T181500Z",
-        "source": "GDELT"
+        "seendate": "20260819T144456Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://woc1420.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "woc1420.iheart.com",
-        "language": "English",
+        "title": "CISA: How Medusa Ransomware Attacked 500+ Critical Companies",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMDFoMzFCWkxYZmdRSV96VkRTSzlIaE9lVUNRN25udXlkQ1NZM0haRnl0ZWpJVmE1cUpaYWFSVndDM0ZGamNJTnI5VTE1TU1MSTRvTTE3UjNiS1pUdV9EbEd1NEgwUGZDRFVJTHQ5NkFZWTZ3VjVuVkRFMVhaeFZFcVpYbUxqVjMyY1JlX0FJOVpIMTA?oc=5",
+        "domain": "cybermagazine",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T181500Z",
-        "source": "GDELT"
+        "seendate": "20260820T070318Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://wtag.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "wtag.iheart.com",
-        "language": "English",
+        "title": "Safety First: Health halos, Asahi cyberattack and PFAS",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNaWJFUkN0WGctaGEwbmRXOEZoUG10ZWhWdlNoVllDaHVwOHktcURiRVlKUjlOYUJpV01jSmNxS0xFWGtUNy1BeVZRQnlySFpTYnQ1WUhWcTlEeGdFU29vMlpfUEJDOE1RUXZVdmRJZ012SHBVSWFiUnlFSExscTF4RzA0VTcyMFFxT1h1M0x4M3R0VWlZU1hjWVVzMFg3MWRUQUFXbg?oc=5",
+        "domain": "foodnavigator.com",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T181500Z",
-        "source": "GDELT"
+        "seendate": "20260821T060300Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran",
-        "url": "https://650keni.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "650keni.iheart.com",
-        "language": "English",
+        "title": "CISA: Medusa ransomware hit over 500 critical infrastructure orgs",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcC1maFNkSnB5Zm9rQW92NXp4eUtlM1ppZlBmZnFVSDYwR1lOZEVtemFIX1A2QzZFd19zQnBpdTBOYzVfakRMWGxrdS15VzBkdnhPQl8zLW16c0lNMnBSTF9GTV9vVERfeVcwMUhmNFpHd0cta3U4YzdjNE1sWHByLVc3ZHh1b3YyZk1DMVQxYnRYbG9McGt4aWREcnlFODRKUUo0TEZfZjRTY09NaXNBYUNn0gG3AUFVX3lxTFBleWtKTjBIek01a1l3M0NTS295QXRzZFc5YkJJc0JwNWpnQTdYZFlYZVZ5ZDlPZl92ejBjVkdaU3FKNWVxeW1MMnlxNUN6VXRxS1huRV9YZHdLMTMtcjc4Q01hdnRfYXJHZUNjM3RZbmJCNFd0QkJ0SnRvZzUwNlZ0QzE0N0V4dFZhU2pnUXVHSUkyS0xlREFnaU45bXJNMnNGMjBOc2RDZjVsRXlGNWM3MjB3WXZzUQ?oc=5",
+        "domain": "bleepingcomputer",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T181500Z",
-        "source": "GDELT"
+        "seendate": "20260819T080048Z",
+        "source": "GoogleNews"
       },
       {
-        "title": "U . K . Power Plant Cyberattacked By Iran | News Radio 101 . 9 Big WAAX",
-        "url": "https://1019bigwaax.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-        "domain": "1019bigwaax.iheart.com",
-        "language": "English",
+        "title": "Microsoft SharePoint JWT Token Authentication Bypass Technical Analysis (CVE-2026-55040)",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVkFjSElCR1I0OVowQTRnZ05qRC1tNlAyM3I0MmsxWUVDbE93SG9lb2FLcXE4SGdZeDlNUTM5ZG9vUlFfZG9LaHZONEUzUV95N3NOY1FhLVpsV1gxaVRhNkpKQWdmR1VGOExPSUswUF9tT29xcDBPdm5EVERPanBYZDlhRUpDdUhzUHMwWUxEcG5fMkZEaVZ4cXNocGJVVFYwTGx1Q2J4NA?oc=5",
+        "domain": "rapid7",
+        "language": "",
         "tone": 0,
-        "seendate": "20260823T181500Z",
-        "source": "GDELT"
+        "seendate": "20260811T070000Z",
+        "source": "GoogleNews"
       }
     ],
     "exchange_rates": [
@@ -496,15 +496,15 @@
       },
       {
         "currency": "AFN",
-        "rate": 64.54
+        "rate": 65.13
       },
       {
         "currency": "ALL",
-        "rate": 79.12
+        "rate": 79.13
       },
       {
         "currency": "AMD",
-        "rate": 361.76
+        "rate": 363.76
       },
       {
         "currency": "ANG",
@@ -512,7 +512,7 @@
       },
       {
         "currency": "AOA",
-        "rate": 916.63
+        "rate": 917.36
       },
       {
         "currency": "ARS",
@@ -528,7 +528,7 @@
       },
       {
         "currency": "AZN",
-        "rate": 1.69
+        "rate": 1.7
       },
       {
         "currency": "BAM",
@@ -540,7 +540,7 @@
       },
       {
         "currency": "BDT",
-        "rate": 121.6
+        "rate": 122.31
       },
       {
         "currency": "BGN",
@@ -552,7 +552,7 @@
       },
       {
         "currency": "BIF",
-        "rate": 2966.62
+        "rate": 2972.35
       },
       {
         "currency": "BMD",
@@ -564,148 +564,148 @@
       },
       {
         "currency": "BOB",
-        "rate": 11.44
+        "rate": 11.51
       }
     ]
   },
   "entities": [],
   "events": [
     {
-      "title": "County says sharing information about  suspicious activity  in sheriff computer system would  jeopardize public safety  | News , Sports , Jobs - Lawrence Journal - World : news , information , headlines and events in Lawrence , Kansas",
-      "url": "https://www2.ljworld.com/news/public-safety/2026/aug/22/county-says-sharing-details-about-suspicious-activity-in-sheriffs-computer-system-would-jeopardize-public-safety/",
-      "domain": "ljworld.com",
-      "language": "English",
+      "title": "Vulnerability & Exploit Database",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9UVjc1bno3X0d4Zk5HT05NNHluTDRaS282aDQ0TlBfMFZxd1EweFQtWGNaRVNkOFY5dl9uLURSOUxKSHFkTG9KN3FzVQ?oc=5",
+      "domain": "rapid7",
+      "language": "",
       "tone": 0,
-      "seendate": "20260822T213000Z",
-      "source": "GDELT"
+      "seendate": "20260823T202247Z",
+      "source": "GoogleNews"
     },
     {
-      "title": "GQG Partners LLC Makes New $411 . 55 Million Investment in Cenovus Energy Inc $CVE",
-      "url": "https://www.themarketsdaily.com/2026/08/23/gqg-partners-llc-makes-new-411-55-million-investment-in-cenovus-energy-inc-cve.html",
-      "domain": "themarketsdaily.com",
-      "language": "English",
+      "title": "When a cyberattack becomes a public safety incident",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMng1UGh0Um02SnNwSkhuUV9zMUkzcWRzTHI4T3g3MFF5WVFNeHpTRm16S3doOGQyMHRUZFpFZmh6UERGMUxha05RQmNhbTRQRkw1aUd0djdydW9CWlJqTUI3d2FiakdZUTdLZnpvN0JnNGt1ZndhUGdPSV92ZG04Nkp3aGswZWZnVTZVZUpCOG1zbGs?oc=5",
+      "domain": "police1",
+      "language": "",
       "tone": 0,
-      "seendate": "20260823T123000Z",
-      "source": "GDELT"
+      "seendate": "20260823T154842Z",
+      "source": "GoogleNews"
     },
     {
-      "title": "Iran cyberattack on united kingdom shuts down British power plant",
-      "url": "https://www.afr.com/world/europe/iranian-hackers-shut-down-uk-power-plant-20260823-p60qop",
-      "domain": "afr.com",
-      "language": "English",
+      "title": "Small UK power generator shut down after cyberattack linked to Iran: Telegraph",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQnBUcS0zZUl2QWczcnpTMXNuXy1ILUpSVjYwOERCWXR2XzVvYW04QXd4TVY2VVRaeXBaN1ZXbTFXRFp3RWRJOFBmLTJudllud3dBSl9RcERqbnR1dTZYU09JV2xvcDRmWThIUlgtOTRsQ3VRdEF4aFQ4c2h4MEpQazNMVzdZLVN3YnBqbVVsTnVKVkVSMXFBMjBpNGRibm9oQjdaRHI2WdIBrAFBVV95cUxNZy11ZUJUWVFzQWt6V3pZX2loS0k0OGt3QlRJWWV5VVFucGZkTThHYXkyZ2hSeHQycmYtTHhySzg5QXRkN0tyaUhzUFU0VEhJUHR5amZrX1RqWkJPLU9wVk85UHBFNmFVRVE5X1B2OWNqcHhUc3k1NkFLd1pLSmxQMEt4OFZkY2IzZlBPQ1pjWEc1OTZLUXYyOXpoNDVaeENBbmZHTldQUGRsM3Y0?oc=5",
+      "domain": "cnbc",
+      "language": "",
       "tone": 0,
-      "seendate": "20260823T044500Z",
-      "source": "GDELT"
+      "seendate": "20260823T113552Z",
+      "source": "GoogleNews"
     },
     {
-      "title": "Metabase Flaw Gives Admin Access Without a Password",
-      "url": "https://sentinel.ht/metabase-sql-injection-admin-takeover/",
-      "domain": "sentinel.ht",
-      "language": "English",
+      "title": "CVE-2026-69414 ShieldBreak Zero-Day: No Patch, and CISA BOD 26-04 Gives You 14 Days",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYXhsRzdmNzVSMnBzT29yZXM3dV9YQTYwcVRMZ0R2QlJMQ1FHcVpiZTVtdVRTQlNIOEFEcWtiYWJiYkVLTEh5dGtQd2NBTFdLd1lPRlkycFVlZjJZaTJNOHRGVVZaSU9KVHpwU0lvb3B3Z3RQd3Bac1ZFYVFwWmdHNVBEYUUyeVBJV196UlhSNTJyYWEtQms3eHAtTkd3Z2ZKaTFiVkdJcW45bkthZ1c5ZVpSeWVIbWh0Wkg0akVMQVZuV2tBUlhJNGgxS2kyYnR5bzQw?oc=5",
+      "domain": "qualys",
+      "language": "",
       "tone": 0,
-      "seendate": "20260823T090000Z",
-      "source": "GDELT"
+      "seendate": "20260820T144151Z",
+      "source": "GoogleNews"
     },
     {
-      "title": "Metalla Royalty & Streaming ( CVE : MTA ) Insider Saurabh Handa Sells 79 , 500 Shares of Stock",
-      "url": "https://www.themarketsdaily.com/2026/08/23/metalla-royalty-streaming-cvemta-insider-saurabh-handa-sells-79500-shares-of-stock.html",
-      "domain": "themarketsdaily.com",
-      "language": "English",
+      "title": "Microsoft Patches Exploited Entra ID Vulnerability",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZTBSb0RyMFluR0JVTUpVNVhqcjBhYU9uaEtaUllwcWFsSE16WmE3a05FOU9lXzBDTzFXNzJmaWltejFwQmQxUTBqSXJxV25ZTUNVT2NmX2d3dzBHYkVvNi1HNUVfdHhUZktwRl9aenFBektEZkZQMmgyUURMX2YxMdIBhgFBVV95cUxPbGpBOU11cEdXbUhnOE8tWHhLMXBOcVZUSWhxYmdZMFlNckgtMUs2cm16Y0NBWjFIM0p2TDRLSXdLWXRfWE1MdVVxdF9CMUotclJid2FoZjhvbWdOZVVsQmVkOVc2R1NuOEN4TFVtaVI5TjZIT2FKNXVFcGNtUHVaLWRGTTNpQQ?oc=5",
+      "domain": "securityweek",
+      "language": "",
       "tone": 0,
-      "seendate": "20260823T111500Z",
-      "source": "GDELT"
+      "seendate": "20260821T081219Z",
+      "source": "GoogleNews"
     },
     {
-      "title": "U . K . Power Plant Cyberattacked By Iran",
-      "url": "https://khow.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-      "domain": "khow.iheart.com",
-      "language": "English",
+      "title": "GitLab CVE-2026-19478 Comes Under Active Exploitation Within Days of Disclosure",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA2TzhyTnl6QWhhWUhJTGJCajZqV3g5ekcyeU81LWpqRjdybVpLRkY0SS1GbzdHVTQxZ0xOQ3JoRnVUYXpmT0l1Tk90cl8yaTVkVzVQSTJUVXIyTkFVbDloNnN2bk5pVXpMMXNOaC1XOXFVS2E0WndEaWhUX2M?oc=5",
+      "domain": "thehackernews",
+      "language": "",
       "tone": 0,
-      "seendate": "20260823T144500Z",
-      "source": "GDELT"
+      "seendate": "20260821T070400Z",
+      "source": "GoogleNews"
     },
     {
-      "title": "U . K . Power Plant Cyberattacked By Iran | NewsRadio 1110 KFAB",
-      "url": "https://kfab.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-      "domain": "kfab.iheart.com",
-      "language": "English",
+      "title": "Week in review: Records allegedly stolen from Azure tenants, Medusa ransomware hits 500+ orgs",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQNVBrcEk3bmtiZ1NicElPNndoNnotVWlUNXRSeGxsU2FPUUM5QVVmVFNDZzhZdGZnTndVWFNoMVF5QS1VaWU4Zm1BR3BqS203UFBxMkROV2djU3NTaDh2d1FWXy0yQUtpdll0OEdnZGd4RHlOZ0tINUQzYlhGeGs0LXpOeTJwYmM0OVU3UnlISFlnUnVpR3d6czdjWFBjU2xTZzl4YVprU01SZDhZNHhuOEFVVDdieW5KcklGZ1JGRXNjTlRBaW1HbThITWctcmc?oc=5",
+      "domain": "helpnetsecurity",
+      "language": "",
       "tone": 0,
-      "seendate": "20260823T151500Z",
-      "source": "GDELT"
+      "seendate": "20260823T080000Z",
+      "source": "GoogleNews"
     },
     {
-      "title": "U . K . Power Plant Cyberattacked By Iran",
-      "url": "https://1430kasi.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-      "domain": "1430kasi.iheart.com",
-      "language": "English",
+      "title": "Review: 'The End of Oak Street' takes viewers on a ride with truth, vulnerability",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNOHJBQzdLQzZINXpQNGtyNk9PWjBWTk5MNVBmbTdsUEl5TXFvWERiTkJUV3QxS0c4aWJRR1phc0xMREdLeXRzT25oMWlOeUZ1YzNwdG9maFFBa2tTUGlubjRLUWJXU21mSmZZUnRJNnRyQ3MtdTdtRFhNaXJNcDBiTzFMU1BsUjB1Z1dSUGdKNHFaU1NxVFAzWE02clBEY3lsNjNJbHVmWm1nMVpYMUNTZWpYdjVYT0wwZmlyUG5najAxVmxfMmg4eFJvZEM3LU9QZWo1WmhJZTd2aXN0RTRjUXBaOUV2YWR5TUVsNWZUOGVQZkwtWWY0Z2dNTzR0RkI5aEtPNGtTTElVTjY2?oc=5",
+      "domain": "charlestongazette-mail",
+      "language": "",
       "tone": 0,
-      "seendate": "20260823T151500Z",
-      "source": "GDELT"
+      "seendate": "20260823T110000Z",
+      "source": "GoogleNews"
     },
     {
-      "title": "U . K . Power Plant Cyberattacked By Iran | News Radio 1410 WDOV",
-      "url": "https://wdov.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-      "domain": "wdov.iheart.com",
-      "language": "English",
+      "title": "UK responds to report of Iranian cyberattack on energy site",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOWjJoYjBVUC1YWUN5OUlOdXpZMXhHX0ZNcTBrcWlpVElxeXF6R2ZhWW5sbkZZWVZza184NW90Q0RmUUg1UEVrVUhsX2FIMy1UYk5jRW4wSUdTeDE4UTZqVzVtWDNtM2VEZjRPUTBkS3VsSm1MNjhsY3pfV1JMb2pWRVk4UmFiSFhXbzBncXBSeGtwcDhicTc0azh1MWVjejZITk9GOXJpNmlMMEZRVW1QakJiVmdCMnAxZTBhc3NhcmRlUVFmQ0lmSjFGSEtyZFAtX1Q1SDhMSlh4RW5ydFotZTROT3EzbDlxM2dvbVNZUnpLUQ?oc=5",
+      "domain": "centraloregondaily",
+      "language": "",
       "tone": 0,
-      "seendate": "20260823T171500Z",
-      "source": "GDELT"
+      "seendate": "20260823T195750Z",
+      "source": "GoogleNews"
     },
     {
-      "title": "U . K . Power Plant Cyberattacked By Iran",
-      "url": "https://wiod.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-      "domain": "wiod.iheart.com",
-      "language": "English",
+      "title": "Video Cyberattack in Britain knocks energy facility offline for days",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5ObVJFNG15VGpZN3RzZFk4XzJRU3lPLU15dVlNZ1BRdUd2dHZZczRtczUwR2thMEpTYnVEbXBZV0JQcVdqZUpKakptVG4?oc=5",
+      "domain": "abcnews-breakingnewslatestnewsandvideos",
+      "language": "",
       "tone": 0,
-      "seendate": "20260823T171500Z",
-      "source": "GDELT"
+      "seendate": "20260823T233306Z",
+      "source": "GoogleNews"
     },
     {
-      "title": "U . K . Power Plant Cyberattacked By Iran",
-      "url": "https://55krc.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-      "domain": "55krc.iheart.com",
-      "language": "English",
+      "title": "Chicago FBI warns of threat of new ransomware attacks, using software like Gunra from Russia",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTW1DMzFSTHN6dVJLUGtvdm8wYXNaM2lGVzRidF96NzQtbGtYQU9wTXFwTTZ3TDFkakQxclppQlYyN3JETmZWYTVxZnM2aXhocEktSG5NY25WZEdld05xdUNGR3hPZFlENmFLUW9HR1JTVGhmMC1iTHF4Rlg3NGlvWG1wV3NXT1VCMDFmbFJwU1RKVm0xZWpJdjgtVEt6RU5wLXB6YzNGQThiNm9jM3hHTWhoS0pnV1BZUENv0gHAAUFVX3lxTE5rb2lKSHZVdWkyYURtU3lWZmNxRW85SW50RGF0V09PUmpPUDBEUUNsb2EzcnVwOXZLb1h1LVZBR043UzdPdHRnbEdxb3o4NUJ6RmczWHJseHp0dlhWeHpHQ2lFYkEyMVloUlpLVms1ejZobTd3VkxqYllJamVtUWIxaVVkU0tyMlVCVEE5Qnh6b1U1T2pFN1dfdngtaFdEZ2FvaDNLbjhucE93amVTUmJfVzFQOHkxV2poeVJvd3BidQ?oc=5",
+      "domain": "abc7chicago",
+      "language": "",
       "tone": 0,
-      "seendate": "20260823T171500Z",
-      "source": "GDELT"
+      "seendate": "20260822T000039Z",
+      "source": "GoogleNews"
     },
     {
-      "title": "U . K . Power Plant Cyberattacked By Iran | News Radio 1410 AM & 100 . 9 FM",
-      "url": "https://newsradio1410.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-      "domain": "newsradio1410.iheart.com",
-      "language": "English",
+      "title": "Iran-linked hackers blamed for cyber-attack that shut down UK power plant",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPM3V4Wmc1TVo2UHNXakY0YkFSVVJsczZqcjBsQlU5eGxvdzZtZ0pYM1R1anA2TjRBeDl5UEdwR1I3LW80aFpEb2VUN0c4OUMyUm9vNmNPYl9JaElLWUdWdlJ1Zm9lYlBxcXBxelFiWXc4eUV2eGRzMW1LVWpnZ2MyYVd6QWhFQjByT0VNNDZEZzRGd3Y3UDlzY2pTX1REMkhDWnJ5U2NYUl8?oc=5",
+      "domain": "theguardian",
+      "language": "",
       "tone": 0,
-      "seendate": "20260823T171500Z",
-      "source": "GDELT"
+      "seendate": "20260823T090700Z",
+      "source": "GoogleNews"
     },
     {
-      "title": "U . K . Power Plant Cyberattacked By Iran",
-      "url": "https://newsradio540.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-      "domain": "newsradio540.iheart.com",
-      "language": "English",
+      "title": "Medusa Ransomware Hitting Healthcare Industry’s Unpatched Software Vulnerabilities",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNY1FiUmxGTlYxNXRSZmxUTUVPbXctVklNWWVVZzFtSUw2aU5IWTlYbWxRSzdUS3RvRkRZOWVYYlgwSkoxOU1MYWpKUG9RY1l3Z3p4MU1qNllDWmNnTjVuY3RaQ2FYUWJtbW1RYmU5VVN3QThZNE8tME9kWFBQb0NqQzRQb2lDSjAzbXNqazU3ZV9BaXhmdldua1RwRWpHdTdCNVI0R2VLekJDQ2dHRzJIUXp5dG_SAboBQVVfeXFMT2VSc3ZBajhZT1c1MEF1dC03N21QVERqVHlpWXp2MkNQaktZUE11SjBXa05OSkFReGRQdkk4bzZPVGpSQ1BmRjZPMDJyR3RwYkVIM2Zob0ZpSjRMNkNuZDRyUUJCcXllMGNCRTJvNHdmbGpIQkF0V1ZIei1fbTd4X3BqRWhId2pGQUxma1M3aUljX0NJU3lYRmcwZVF0ekMya19sR0RzWUJaS3hTOGtHVFZXbHppOHQ4YXRB?oc=5",
+      "domain": "thenationallawreview",
+      "language": "",
       "tone": 0,
-      "seendate": "20260823T171500Z",
-      "source": "GDELT"
+      "seendate": "20260824T000000Z",
+      "source": "GoogleNews"
     },
     {
-      "title": "U . K . Power Plant Cyberattacked By Iran | Sports Radio 800 KXIC",
-      "url": "https://kxic.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-      "domain": "kxic.iheart.com",
-      "language": "English",
+      "title": "AI data giant Alation confirms cyberattack",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPWUlyVTJja0pwaWZYRE4yaDktRjk0QkxXZzlVTlZra0ptOHdvXzRqZE1ZMDBhc1JmS3p2RlNZZEU1QlhRZHRHdlRpRjFqNmMtZVZNUXRaMHV4eS1ydjNFUVNFbV9wRkZOT21TVVAzQjR6ZXlFa1Z6aGNtWW0yQ2RqMzhJNA?oc=5",
+      "domain": "techcrunch",
+      "language": "",
       "tone": 0,
-      "seendate": "20260823T154500Z",
-      "source": "GDELT"
+      "seendate": "20260820T130124Z",
+      "source": "GoogleNews"
     },
     {
-      "title": "U . K . Power Plant Cyberattacked By Iran | NewsRadio 1000 KTOK",
-      "url": "https://ktok.iheart.com/content/2026-08-23-uk-power-plant-cyberattacked-by-iran/",
-      "domain": "ktok.iheart.com",
-      "language": "English",
+      "title": "US Bank investigates LockBit's claims as ransomware crims set pay-or-leak deadline",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQd3RCRWtYX0tDM1FIdVZUdTdIc3ROX0RYVnczZGhPS050WlYwcWhPRWlpTWhkbHNCVnFVYTdNRUZTMVhrNTdyTkdGMmdXV09TQlJLS0lSVm9MUEtCVlFMTGViUEYtMUVJMzZUWE8zejd2YmhYUFE2RVBBRDdHUkF1WlFuVWRoaUQzUGhOR3ljQ1gwTnByX3E1N0RMenlrOU93RVVBeTg0ZkU3V3M1cV8xbVlDRXJISE44ejItU29EX2h6Y05FR2pvamU3Zlh6Q2hGXzlB?oc=5",
+      "domain": "theregister",
+      "language": "",
       "tone": 0,
-      "seendate": "20260823T154500Z",
-      "source": "GDELT"
+      "seendate": "20260820T173039Z",
+      "source": "GoogleNews"
     }
   ],
   "timeseries": [],
-  "llm_summary": ""
+  "llm_summary": "The live snapshot tracks 50 articles from 35 deduplicated news domains, with an overall tone index of 50/100 indicating a neutral sentiment across the feed. Two live feeds are currently connected, providing real‑time updates. Recent headlines highlight a mix of technical and operational cyber‑risk themes: a vulnerability and exploit database (Rapid7), a framing of cyberattacks as public‑safety incidents (Police1), a reported shutdown of a UK power generator following an Iran‑linked cyberattack (CNBC/Telegraph), disclosure of a ShieldBreak zero‑day (CVE‑2026‑69414) with a CISA BOD 26‑04 deadline (Qualys), and Microsoft’s patch for an exploited Entra ID vulnerability (SecurityWeek). This sample suggests heightened attention to both zero‑day threats and the broader safety implications of cyber incidents, though it reflects only the current news sample and not definitive ground‑truth assessment."
 }
