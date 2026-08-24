@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-08-24T02:13:53.319555+00:00",
+    "generated": "2026-08-24T07:46:26.211429+00:00",
     "mode": "live",
     "sources": [
       "news_articles",
@@ -18,7 +18,7 @@
     },
     {
       "label": "News Domains",
-      "value": "36",
+      "value": "38",
       "delta": "deduplicated"
     },
     {
@@ -36,11 +36,29 @@
     "news_articles": [
       {
         "title": "Vulnerability & Exploit Database",
-        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1CZEM5bjRYdnhMdjAxdF9RYjdZa2NEZWhqMnZBay1QMWw1RVFQUWxLQU84RjZzQ1QtNkl0eHI5Y0pRS1JvSlVBc1hsLXlZbER4OHI3UzI0RGU?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1vTzgyOXp3NVY0d2t4Z00tMmtWRWVtM3ZMa0dkdDhuS3VWSnQ1MWprM0g4WUVkQUpuSko1Z1VYb05PV2hyak50eXA5RQ?oc=5",
         "domain": "rapid7",
         "language": "",
         "tone": 0,
-        "seendate": "20260823T202759Z",
+        "seendate": "20260824T014728Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Ransomware attackers are zeroing in on mid-market companies",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNbGU0UGU3cmpvN1l6ZGlFdF8zelRMRnhaWWYwTlFYdEIzMkJEcTR6dTZzRjhOTU1waG5aeUYzTVltbEstelNvbEJ3TlhJWExSXzBFemlPQW9IQkh4aGZSMHRBdU13OERXOFZxcm1xU1dmQWV1aExYcjVmcWsyQm1LdzdTcEQ4VUNBZE1DSzVMTTJ1dw?oc=5",
+        "domain": "helpnetsecurity",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260824T043008Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Small UK power generator shut down after cyberattack linked to Iran: Telegraph",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQnBUcS0zZUl2QWczcnpTMXNuXy1ILUpSVjYwOERCWXR2XzVvYW04QXd4TVY2VVRaeXBaN1ZXbTFXRFp3RWRJOFBmLTJudllud3dBSl9RcERqbnR1dTZYU09JV2xvcDRmWThIUlgtOTRsQ3VRdEF4aFQ4c2h4MEpQazNMVzdZLVN3YnBqbVVsTnVKVkVSMXFBMjBpNGRibm9oQjdaRHI2WdIBrAFBVV95cUxNZy11ZUJUWVFzQWt6V3pZX2loS0k0OGt3QlRJWWV5VVFucGZkTThHYXkyZ2hSeHQycmYtTHhySzg5QXRkN0tyaUhzUFU0VEhJUHR5amZrX1RqWkJPLU9wVk85UHBFNmFVRVE5X1B2OWNqcHhUc3k1NkFLd1pLSmxQMEt4OFZkY2IzZlBPQ1pjWEc1OTZLUXYyOXpoNDVaeENBbmZHTldQUGRsM3Y0?oc=5",
+        "domain": "cnbc",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260823T113552Z",
         "source": "GoogleNews"
       },
       {
@@ -59,24 +77,6 @@
         "language": "",
         "tone": 0,
         "seendate": "20260824T021113Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Small UK power generator shut down after cyberattack linked to Iran: Telegraph",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQnBUcS0zZUl2QWczcnpTMXNuXy1ILUpSVjYwOERCWXR2XzVvYW04QXd4TVY2VVRaeXBaN1ZXbTFXRFp3RWRJOFBmLTJudllud3dBSl9RcERqbnR1dTZYU09JV2xvcDRmWThIUlgtOTRsQ3VRdEF4aFQ4c2h4MEpQazNMVzdZLVN3YnBqbVVsTnVKVkVSMXFBMjBpNGRibm9oQjdaRHI2WdIBrAFBVV95cUxNZy11ZUJUWVFzQWt6V3pZX2loS0k0OGt3QlRJWWV5VVFucGZkTThHYXkyZ2hSeHQycmYtTHhySzg5QXRkN0tyaUhzUFU0VEhJUHR5amZrX1RqWkJPLU9wVk85UHBFNmFVRVE5X1B2OWNqcHhUc3k1NkFLd1pLSmxQMEt4OFZkY2IzZlBPQ1pjWEc1OTZLUXYyOXpoNDVaeENBbmZHTldQUGRsM3Y0?oc=5",
-        "domain": "cnbc",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260823T113552Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Medusa Ransomware Hitting Healthcare Industry’s Unpatched Software Vulnerabilities",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNY1FiUmxGTlYxNXRSZmxUTUVPbXctVklNWWVVZzFtSUw2aU5IWTlYbWxRSzdUS3RvRkRZOWVYYlgwSkoxOU1MYWpKUG9RY1l3Z3p4MU1qNllDWmNnTjVuY3RaQ2FYUWJtbW1RYmU5VVN3QThZNE8tME9kWFBQb0NqQzRQb2lDSjAzbXNqazU3ZV9BaXhmdldua1RwRWpHdTdCNVI0R2VLekJDQ2dHRzJIUXp5dG_SAboBQVVfeXFMT2VSc3ZBajhZT1c1MEF1dC03N21QVERqVHlpWXp2MkNQaktZUE11SjBXa05OSkFReGRQdkk4bzZPVGpSQ1BmRjZPMDJyR3RwYkVIM2Zob0ZpSjRMNkNuZDRyUUJCcXllMGNCRTJvNHdmbGpIQkF0V1ZIei1fbTd4X3BqRWhId2pGQUxma1M3aUljX0NJU3lYRmcwZVF0ekMya19sR0RzWUJaS3hTOGtHVFZXbHppOHQ4YXRB?oc=5",
-        "domain": "thenationallawreview",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260824T000357Z",
         "source": "GoogleNews"
       },
       {
@@ -107,30 +107,30 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Week in review: Records allegedly stolen from Azure tenants, Medusa ransomware hits 500+ orgs",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQNVBrcEk3bmtiZ1NicElPNndoNnotVWlUNXRSeGxsU2FPUUM5QVVmVFNDZzhZdGZnTndVWFNoMVF5QS1VaWU4Zm1BR3BqS203UFBxMkROV2djU3NTaDh2d1FWXy0yQUtpdll0OEdnZGd4RHlOZ0tINUQzYlhGeGs0LXpOeTJwYmM0OVU3UnlISFlnUnVpR3d6czdjWFBjU2xTZzl4YVprU01SZDhZNHhuOEFVVDdieW5KcklGZ1JGRXNjTlRBaW1HbThITWctcmc?oc=5",
-        "domain": "helpnetsecurity",
+        "title": "Japan outlines measures to protect infrastructure from cyberattacks",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOd1hrTy1VOGNFbXJuMTA4S0sxdE83MEdXcXlOcVZNRHJLSkRZQV9LWWl4WExIa0dhbExmb0tVenZxVkp4cGxUY0p4Rm1NdmdZM0txeVg1Zzh5emRaRUtVRnBGOGk4QlBCSW56dHFZTGd5VndLUDZlejR5YnFrU0xkUDh5UlVEM0ZhRURGeVhQNGNTOEJxZ2piQU10TWMzTmhJWlF1QlE5NGRyZw?oc=5",
+        "domain": "thejapantimes",
         "language": "",
         "tone": 0,
-        "seendate": "20260823T080000Z",
+        "seendate": "20260824T013016Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Review: 'The End of Oak Street' takes viewers on a ride with truth, vulnerability",
-        "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNOHJBQzdLQzZINXpQNGtyNk9PWjBWTk5MNVBmbTdsUEl5TXFvWERiTkJUV3QxS0c4aWJRR1phc0xMREdLeXRzT25oMWlOeUZ1YzNwdG9maFFBa2tTUGlubjRLUWJXU21mSmZZUnRJNnRyQ3MtdTdtRFhNaXJNcDBiTzFMU1BsUjB1Z1dSUGdKNHFaU1NxVFAzWE02clBEY3lsNjNJbHVmWm1nMVpYMUNTZWpYdjVYT0wwZmlyUG5najAxVmxfMmg4eFJvZEM3LU9QZWo1WmhJZTd2aXN0RTRjUXBaOUV2YWR5TUVsNWZUOGVQZkwtWWY0Z2dNTzR0RkI5aEtPNGtTTElVTjY2?oc=5",
-        "domain": "charlestongazette-mail",
+        "title": "Iranian hackers shut down UK power plant",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQV2F4T2dSMFd0YS1wTUduVGFIdmtiOFZJQ0Y2UDFrSm14TkI1b0lEeUJVOURaOFRpVS04N1NHbnpTRnFlZ3NOd1RjaXVCUmJsUTNac1ZvUDhGcW53Q1docnJFWlJPN1l5ODJZSHU4WW5xSlhJOEItMjdyWnVndmo5N3BnR3MwdEVpc3JkbWh3?oc=5",
+        "domain": "thetelegraph",
         "language": "",
         "tone": 0,
-        "seendate": "20260823T110000Z",
+        "seendate": "20260822T205000Z",
         "source": "GoogleNews"
       },
       {
-        "title": "UK responds to report of Iranian cyberattack on energy site",
-        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOWjJoYjBVUC1YWUN5OUlOdXpZMXhHX0ZNcTBrcWlpVElxeXF6R2ZhWW5sbkZZWVZza184NW90Q0RmUUg1UEVrVUhsX2FIMy1UYk5jRW4wSUdTeDE4UTZqVzVtWDNtM2VEZjRPUTBkS3VsSm1MNjhsY3pfV1JMb2pWRVk4UmFiSFhXbzBncXBSeGtwcDhicTc0azh1MWVjejZITk9GOXJpNmlMMEZRVW1QakJiVmdCMnAxZTBhc3NhcmRlUVFmQ0lmSjFGSEtyZFAtX1Q1SDhMSlh4RW5ydFotZTROT3EzbDlxM2dvbVNZUnpLUQ?oc=5",
-        "domain": "centraloregondaily",
+        "title": "Medusa Ransomware Hitting Healthcare Industry’s Unpatched Software Vulnerabilities",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNY1FiUmxGTlYxNXRSZmxUTUVPbXctVklNWWVVZzFtSUw2aU5IWTlYbWxRSzdUS3RvRkRZOWVYYlgwSkoxOU1MYWpKUG9RY1l3Z3p4MU1qNllDWmNnTjVuY3RaQ2FYUWJtbW1RYmU5VVN3QThZNE8tME9kWFBQb0NqQzRQb2lDSjAzbXNqazU3ZV9BaXhmdldua1RwRWpHdTdCNVI0R2VLekJDQ2dHRzJIUXp5dG_SAboBQVVfeXFMT2VSc3ZBajhZT1c1MEF1dC03N21QVERqVHlpWXp2MkNQaktZUE11SjBXa05OSkFReGRQdkk4bzZPVGpSQ1BmRjZPMDJyR3RwYkVIM2Zob0ZpSjRMNkNuZDRyUUJCcXllMGNCRTJvNHdmbGpIQkF0V1ZIei1fbTd4X3BqRWhId2pGQUxma1M3aUljX0NJU3lYRmcwZVF0ekMya19sR0RzWUJaS3hTOGtHVFZXbHppOHQ4YXRB?oc=5",
+        "domain": "thenationallawreview",
         "language": "",
         "tone": 0,
-        "seendate": "20260823T195750Z",
+        "seendate": "20260824T000357Z",
         "source": "GoogleNews"
       },
       {
@@ -152,15 +152,6 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Iran-linked hackers blamed for cyber-attack that shut down UK power plant",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPM3V4Wmc1TVo2UHNXakY0YkFSVVJsczZqcjBsQlU5eGxvdzZtZ0pYM1R1anA2TjRBeDl5UEdwR1I3LW80aFpEb2VUN0c4OUMyUm9vNmNPYl9JaElLWUdWdlJ1Zm9lYlBxcXBxelFiWXc4eUV2eGRzMW1LVWpnZ2MyYVd6QWhFQjByT0VNNDZEZzRGd3Y3UDlzY2pTX1REMkhDWnJ5U2NYUl8?oc=5",
-        "domain": "theguardian",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260823T090700Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "US Bank investigates LockBit's claims as ransomware crims set pay-or-leak deadline",
         "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQd3RCRWtYX0tDM1FIdVZUdTdIc3ROX0RYVnczZGhPS050WlYwcWhPRWlpTWhkbHNCVnFVYTdNRUZTMVhrNTdyTkdGMmdXV09TQlJLS0lSVm9MUEtCVlFMTGViUEYtMUVJMzZUWE8zejd2YmhYUFE2RVBBRDdHUkF1WlFuVWRoaUQzUGhOR3ljQ1gwTnByX3E1N0RMenlrOU93RVVBeTg0ZkU3V3M1cV8xbVlDRXJISE44ejItU29EX2h6Y05FR2pvamU3Zlh6Q2hGXzlB?oc=5",
         "domain": "theregister",
@@ -170,12 +161,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Medusa’s 500 Victims Point to a Bigger Shift in Ransomware",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVDF4STBmVUN2SlRmYm9UWW1meERFMlk5T2VLQUt1MWlzbE5yc1RNRjBUYnRzUWIzRlNLTjNJaDhmU05hSmtkNUUyajBrLVctWGV4RXdrZENTeGRNaWd0Rl82T2ljWktNcWNVMEg3cDFrT1REUGNYZENFYjF5c3pOMVRxVG1ralliSGhlZHp0YTJlc3ljMlp2UmZ0SHlJdw?oc=5",
-        "domain": "cybersecurityinsiders",
+        "title": "UK responds to report of Iranian cyberattack on energy site",
+        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOWjJoYjBVUC1YWUN5OUlOdXpZMXhHX0ZNcTBrcWlpVElxeXF6R2ZhWW5sbkZZWVZza184NW90Q0RmUUg1UEVrVUhsX2FIMy1UYk5jRW4wSUdTeDE4UTZqVzVtWDNtM2VEZjRPUTBkS3VsSm1MNjhsY3pfV1JMb2pWRVk4UmFiSFhXbzBncXBSeGtwcDhicTc0azh1MWVjejZITk9GOXJpNmlMMEZRVW1QakJiVmdCMnAxZTBhc3NhcmRlUVFmQ0lmSjFGSEtyZFAtX1Q1SDhMSlh4RW5ydFotZTROT3EzbDlxM2dvbVNZUnpLUQ?oc=5",
+        "domain": "centraloregondaily",
         "language": "",
         "tone": 0,
-        "seendate": "20260823T110915Z",
+        "seendate": "20260823T195750Z",
         "source": "GoogleNews"
       },
       {
@@ -197,21 +188,21 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Mapping Iranian Cyberattacks on U.S. Water Systems",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQ0lMaVFKdDVEOWt1Zlp1NVRONmtYX19GS1pEOXZDQ2s2N3JtVUI2a3NJYjZlNHJNRkNrZG5seXIwT2RYenhnRU1NVTdFYmNOVk5vd29iRURQV3dsMUM5RXczaEg4LVo2QjBIQjZqSVVtZDFGWm9kdWRlYzN3aEhUcg?oc=5",
-        "domain": "csiscenterforstrategicandinternationalstudies",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260818T213832Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "So About That Iranian Cyberattack on Our Water Supply",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNGdLTk9uYzJqVlZEZlZqSzlBZS1ZS3gxVG1iM29jREJrM1hnLUFDMjVuSFNLTVhlcmdMVHF0bzJLMmc0Z2RjYWZLZ2NLcjhrbGpqQm8ydXhKdnhPYjkybUp0TmNzeHRMMzh2RVFWOUszSXAyVjgwcFpmVHBOYU5KYWhPeHBBN2trTzNkODNVRFZ6cXc?oc=5",
         "domain": "slatemagazine",
         "language": "",
         "tone": 0,
         "seendate": "20260819T185800Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Review: 'The End of Oak Street' takes viewers on a ride with truth, vulnerability",
+        "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNOHJBQzdLQzZINXpQNGtyNk9PWjBWTk5MNVBmbTdsUEl5TXFvWERiTkJUV3QxS0c4aWJRR1phc0xMREdLeXRzT25oMWlOeUZ1YzNwdG9maFFBa2tTUGlubjRLUWJXU21mSmZZUnRJNnRyQ3MtdTdtRFhNaXJNcDBiTzFMU1BsUjB1Z1dSUGdKNHFaU1NxVFAzWE02clBEY3lsNjNJbHVmWm1nMVpYMUNTZWpYdjVYT0wwZmlyUG5najAxVmxfMmg4eFJvZEM3LU9QZWo1WmhJZTd2aXN0RTRjUXBaOUV2YWR5TUVsNWZUOGVQZkwtWWY0Z2dNTzR0RkI5aEtPNGtTTElVTjY2?oc=5",
+        "domain": "charlestongazette-mail",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260823T110000Z",
         "source": "GoogleNews"
       },
       {
@@ -242,6 +233,15 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Critical NetScaler Flaw Can Bypass Authentication on Certain Gateway and AAA Servers",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE96OGxJMXU5R0hULWFBUDkwNFV3cDVuMFkzQ2dWWVhXclh3VTltS0dtcmJHd051bkdrSS1FeXNZb0l1d1poblZHMDBsSmFfeGFRZVBPeVg5WmtrWmhkUEgzMjlwaklmTkprcTd3M0pyWmlvMlR5em5YVDVVb2dPZw?oc=5",
+        "domain": "thehackernews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260820T133500Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Microsoft Patches Severe Entra ID Flaw (CVSS 10.0) Allowing Remote Code Execution",
         "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBuRjlmUzhUS1lzR3JURENlWUhjYlhZX3lJWmF1ajR1a3ZZSWpPWWhGRkUxSGw5dzBxbkFkSjFiZTVyRXM0MFZVWUJ0NWhXOF9fMm43Zjk5MktlbjdIRjJlQWtNNWVld1NuWm5mMmV3SU5KZklMVUMwWFdZcw?oc=5",
         "domain": "thehackernews",
@@ -260,21 +260,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "UK responds to report of Iranian cyberattack on energy site",
-        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB5RWxpVkVGTUJKNVBCa3huR0xBdlRXR3VtbzQzY1ZfZktwVjVpYnNLTnc2ZmNNdFZlSU1xZF96azF3dktpeVB2Zkx3eE9tM1UxUEV2bkVPa2JZaVRMcUZn0gFcQVVfeXFMUEl1UmVYc0pwVjlCcnFFZGJsTXFGX3k3dU1SM2FOb2JsWldIN3ZtSnRFOWJxbzhzZEFWbl8zSGt4Zy1reTNKd2E3TnI5RWlCVF9DVzl6djdYOTR1NFU?oc=5",
-        "domain": "modernghana",
+        "title": "Week in review: Records allegedly stolen from Azure tenants, Medusa ransomware hits 500+ orgs",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQNVBrcEk3bmtiZ1NicElPNndoNnotVWlUNXRSeGxsU2FPUUM5QVVmVFNDZzhZdGZnTndVWFNoMVF5QS1VaWU4Zm1BR3BqS203UFBxMkROV2djU3NTaDh2d1FWXy0yQUtpdll0OEdnZGd4RHlOZ0tINUQzYlhGeGs0LXpOeTJwYmM0OVU3UnlISFlnUnVpR3d6czdjWFBjU2xTZzl4YVprU01SZDhZNHhuOEFVVDdieW5KcklGZ1JGRXNjTlRBaW1HbThITWctcmc?oc=5",
+        "domain": "helpnetsecurity",
         "language": "",
         "tone": 0,
-        "seendate": "20260823T212834Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Video UK responds to report of Iranian cyberattack on energy site",
-        "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9IdklkNjh4N2NZMVo3WV9yVUhVUW5XV3hVeE00ZUxfZnBnQkd5YW54UUU5TEFMUEk5dXRacTVMbHF0ekxPc0xwM1ZkUHM?oc=5",
-        "domain": "abcnews-breakingnewslatestnewsandvideos",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260823T200423Z",
+        "seendate": "20260823T080000Z",
         "source": "GoogleNews"
       },
       {
@@ -287,6 +278,24 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Shell Confirms Investigation Following Cl0p Ransomware Data Theft Claims Tied to PTC Windchill Zero-Day",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQT3F6cWJHd2NVSTNJbGx4STdJMllVQl9Kdk1RbF95a2RMWTNySlRaeTR6RC1nY3pwYWkzZklHbnZiZHkyQXFmX2xDSnVaeXdMTEMyVUdTakV5ZWJmR2ZhejNJSU9MUC1XeG1TclY2ZFF1OEtSeHF6Nk1ZbXRIZU92RW9vTDE4ZllzcUExWVI0d2FCQlpVQW5KMzdLMlVxektTb0tNR0RORXQ3bEE1Z09oaF9heTBhek5vMGFjWjZsTW9wcXlFdmNEYWhFQTJJZnc3b1VPU01vZWR2dw?oc=5",
+        "domain": "izoologic",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260824T065640Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Iran-linked hackers blamed for cyber-attack that shut down UK power plant",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPM3V4Wmc1TVo2UHNXakY0YkFSVVJsczZqcjBsQlU5eGxvdzZtZ0pYM1R1anA2TjRBeDl5UEdwR1I3LW80aFpEb2VUN0c4OUMyUm9vNmNPYl9JaElLWUdWdlJ1Zm9lYlBxcXBxelFiWXc4eUV2eGRzMW1LVWpnZ2MyYVd6QWhFQjByT0VNNDZEZzRGd3Y3UDlzY2pTX1REMkhDWnJ5U2NYUl8?oc=5",
+        "domain": "theguardian",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260823T090700Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Iran-linked hackers halt UK power plant in first verified cyberattack",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObVBndnlSY29oYktVTTdid3hRUmwybGJNcFJMT2ZWd1lKeUZmQU5TWXN5YlVmdjVqU1hmNEh6SklPWGRSclJQTW5xM1hmVHJGdm12VTN4NkZaMGZrSkhkQTF4cndMX0JiQVkxNTVlVjZqT29kYXhOUnlBOUJCSkl3eUtKc20?oc=5",
         "domain": "news.google.com",
@@ -296,12 +305,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "AI-backed campaign targeting vulnerable Siemens S7 devices, CISA and FBI warn",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMHhpWEd2UnZqcGlxOVZaNC01WUt4cW9CTjlvZU1TY19OcndLY180X28zcGNqSWlEdUl3WWRzSHBRcDZJbzVid0VCRkNxa1VzeWk1bjA5NEJmZ05xNTNzRzVGYkZKYlFtQnNobmdlS2hDUFRaRkVEUnRSMkdTVXFZNWM2cXY2aS1ZSW9KZ0t3?oc=5",
-        "domain": "cybersecuritydive",
+        "title": "Video UK responds to report of Iranian cyberattack on energy site",
+        "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9IdklkNjh4N2NZMVo3WV9yVUhVUW5XV3hVeE00ZUxfZnBnQkd5YW54UUU5TEFMUEk5dXRacTVMbHF0ekxPc0xwM1ZkUHM?oc=5",
+        "domain": "abcnews-breakingnewslatestnewsandvideos",
         "language": "",
         "tone": 0,
-        "seendate": "20260819T202216Z",
+        "seendate": "20260823T195810Z",
         "source": "GoogleNews"
       },
       {
@@ -323,48 +332,21 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Medusa’s 500 Victims Point to a Bigger Shift in Ransomware",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVDF4STBmVUN2SlRmYm9UWW1meERFMlk5T2VLQUt1MWlzbE5yc1RNRjBUYnRzUWIzRlNLTjNJaDhmU05hSmtkNUUyajBrLVctWGV4RXdrZENTeGRNaWd0Rl82T2ljWktNcWNVMEg3cDFrT1REUGNYZENFYjF5c3pOMVRxVG1ralliSGhlZHp0YTJlc3ljMlp2UmZ0SHlJdw?oc=5",
+        "domain": "cybersecurityinsiders",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260823T110915Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Cyberattack delays classes at UT San Antonio",
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQ29sbGtmUjJXQTVCRERmaXpvbllZWEktUDBwNGtPbnZ4OXVWRTBIUjlFd2ZzV1dKLTFBU2dQaTJVcktGdWRwVWdkTHJLQkhWNkhZdmtoX01VVm1KVkJOU1NLRmVPVXVQTm1ydG9sMlRTNThuTmhjaWpsa19SVzVnV0ZTVDkwa1c1NElXeEdKd2lnMFB4LUQ2eFQ0ODh1akhOVWstbmNBZUhqbXVpMXlmOW1VUQ?oc=5",
         "domain": "spectrumnews",
         "language": "",
         "tone": 0,
         "seendate": "20260820T135900Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Critical NetScaler Flaw Can Bypass Authentication on Certain Gateway and AAA Servers",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE96OGxJMXU5R0hULWFBUDkwNFV3cDVuMFkzQ2dWWVhXclh3VTltS0dtcmJHd051bkdrSS1FeXNZb0l1d1poblZHMDBsSmFfeGFRZVBPeVg5WmtrWmhkUEgzMjlwaklmTkprcTd3M0pyWmlvMlR5em5YVDVVb2dPZw?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260820T133500Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "OpenAI pauses some AI training after autonomous cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPa3pkZThyZXNILUxPWmJlYXowR0F3clotOTNhOXlncUM4OTJrVWowYlF5ZzFTbXBDVlVFeVpIXzgtU1NfS2xnRW1kVVBzM2UtOGRRZ0R6a0ZuZGhxWkl2b1NxUG56bU1CNmhFQk1yT1R6Qk5QcE5IMGp4SlZlcThQRTNfNEZVSUxjcDBvTXJjRTFCUXJ3UG5wUkVYdUVOdlNRVVZJRdIBqgFBVV95cUxNaVczV25XbXRnN0wzZHpFWGctazgxQXk2bWpCUUxOSDdmcGw5R3VkSU5Zb0doRVVFbEFiaXpWNTl5V0lzWEd6Ny1HdFdrSTFENU5IMUZoZVUyY2R2ZkFtSERZNTJCT3FiXzJyeDlRR2oxWjhoS3BScnU4MUFjT0xlQ2ZZV1c3Zjh5N2pnSnF1U3dFN1FDS1FPbklsT1hYZlZZdy1kbDUxOHc4dw?oc=5",
-        "domain": "abcnews-breakingnewslatestnewsandvideos",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260818T213113Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Fueling Vulnerability: The Economic and Strategic Costs of Oil Dependence in the Pacific",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSGFRT0JhaEtkYVljRzczdE5ZZ3dLSl9MZUQzWnZENmZoS0tsdXJ1SklBeTZtaXVNNGFrd2Y2ZXAwQWhoVUZlbTE4NHBXUHpqaUhvS25wd2cyR2tBZkE3dkU2YzFHT2xlLXh5S3B3cTktRVRzTUlJSHc0RklpVHROdnk5UXJ5V0dOcDVhMUFDYVhUdzZrb1RUMnBCbk9QNXk0cHJLSlpR?oc=5",
-        "domain": "csiscenterforstrategicandinternationalstudies",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260820T152136Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Japan outlines measures to protect infrastructure from cyberattacks",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbEJEQ29kb2JycjZJdUNqTUFDTy1zbmdRM0VxSnozeGNDTllnMFRjd0lqZGdjWkhTUjdjM2tEdmtQT1dRQU5Pc3hZaWpQaEdCbndyTVZjSEZyU0NFQ2tfQlEwTGpKczBNZGpfY1hFblZWM2ZVcjhmOEF4bE10NUpVbzRQYTk5UURycXBNSW9mc3JmMzBEaE1FSlNMYnU3MWJFckZlbGtNUlZpQQ?oc=5",
-        "domain": "thejapantimes",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260823T081300Z",
         "source": "GoogleNews"
       },
       {
@@ -377,6 +359,15 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Fueling Vulnerability: The Economic and Strategic Costs of Oil Dependence in the Pacific",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSGFRT0JhaEtkYVljRzczdE5ZZ3dLSl9MZUQzWnZENmZoS0tsdXJ1SklBeTZtaXVNNGFrd2Y2ZXAwQWhoVUZlbTE4NHBXUHpqaUhvS25wd2cyR2tBZkE3dkU2YzFHT2xlLXh5S3B3cTktRVRzTUlJSHc0RklpVHROdnk5UXJ5V0dOcDVhMUFDYVhUdzZrb1RUMnBCbk9QNXk0cHJLSlpR?oc=5",
+        "domain": "csiscenterforstrategicandinternationalstudies",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260820T152136Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Update Chrome now: Two critical vulnerabilities fixed",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSG9hVEktZkJVdTZHcDN4VDk4SzlOTGV0RVNwUURudWhZVXBvaHVZMzVLZkc5MzZCOXFIeDJaQlF1V2VjR25ZWnZzRE1VdXhvUDd4WUQ3bmNDdUJPaGVyeEhqRF9yaHdvTk9yU3BvLUpfVmRWOVFsU2pjU2Fqc25rY01PV2dacGl2QnZWai13N2FBUzJpT3dza1RKMjl1TnBh?oc=5",
         "domain": "malwarebytes",
@@ -386,12 +377,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "AI-powered vulnerability clearinghouse faces deep skepticism, major challenges",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOLVZWR0E2WGk0enc2SnhqcHFVSzRmUmd0bWpfZHVjWnZ6QnpMcVpLWTV6bEpOd1ZKNjhkSmZYaV9EVW45aW9tRUFzX0RFZ203MlBMOFZtR0xxSjY3T05FaE5ENDRVMGFXYzZvUnFlQk5nUjAxQjkzU19HczNMX0xOTG1HMWV0a29QclR0WFJNZU5SeE5iRHFvSUo5cDVReEc4X2R5NA?oc=5",
-        "domain": "cybersecuritydive",
+        "title": "Latvia’s CSDD reported cyberattack with delay",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNenFVTTJMcy1EenFkckQxeWxPRGFsMm5QZE43SzdDUk01Z2ZvUl9pYVBHWGotTzRpMXpCM0V3QmdCb1l0TVdWanJPdFViOVNObDJGbVRFY1NjMFVNdW1SSTBDR0ZqVi14RzFZX2dTTEZiYlh5WGQ1SGwzZ2VGNEdTaC1KdTYtWXpH?oc=5",
+        "domain": "ua.news",
         "language": "",
         "tone": 0,
-        "seendate": "20260818T141723Z",
+        "seendate": "20260824T062416Z",
         "source": "GoogleNews"
       },
       {
@@ -404,48 +395,21 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Patch Google Authenticator CVE-2026-14204: 12 Steps",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxObmVacWo3aENPWVJfNVo3MU44Q3NWSkJzSDlwWEQ2R1BJcXV1aG9HZ01nNFc2WWd5WktmNk5VVUFaUEJSU2tqTHNQUW4zWUpfWWFYb05XRHhsM0lIeTluVU40OHVhTElzNDltZlZ3QU9INEtFNkdvUGZFZnVNaEFCN0Fn?oc=5",
-        "domain": "tech-insider.org",
+        "title": "After targeting water infrastructure in US, report claims Iran-linked hackers behind cyber attack on powe",
+        "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxOQW9CQmxoX3N1cGNsNUxOWHNjSS1NU0NOVUR4ellzR25rM2JuUGFsdHFNd1pzOGp0V2RDNHR5REZzOWl0dWZDaUR6Z2lQMFMxUDZJMlJuaFIzS1g5VFdqbVZuTlJYZl9LaWpCVV94U1RkcXZDc2JtSVd6RTZ3S0x4Nk9oT2lkSjEtTlVUVnJDSzlQOHZPWnRVRThzeDBuZ2lzZHJSYTBzTDVsSmNlV0hueTJkNnpDbEJXZVRGekhBUHRmNUhjVmRZSjVpQXJ4MFlOZEFqcWtMdTVINEFQOWdEWFdiVTY4YjZRbUdSQWoyX3dPeGFnblhQM1RVUlpMcE53cXFlWjlPZXpfUmhuQXotcXdYVDBkUWc5WGhRWkhJUUlBbTI3R2tZ0gGsAkFVX3lxTE9kN0JSajVoRTlYNjRSc2VWaEcwRFlyaUR0dFdjVkk1dWpmVjV0MGpuYTl2TEVsZEtqcjlneWNrSThhSGhFQ3hNNzNmdUVzMEVVX2RQdVRMZjFqNElySDV2aUtNUWdSQVRxWkQ0ZE5ISGo5SW05aG9QN08wbV9kdHhaR194TnhQaWVWQ1dFcFZkV3J0Y2FCakVYOVktTVBlMDRFVFI0c1lHaVc1MzNjSUxSQ280QnpSRUVMUmxrMkxsVjNDTDVHMTNDV3NrZVpXcW1qQ2lyME5VcmpuVUxTS1pKdVN5YWNfRnVkS2N0RzIzZU5WU0xicUFiVjBGM0Q3dnRIdW12UTBqTkJMd0FfcXJnN2xtSlY5QVd3MW5SYmpqOS1zclE5cXBpalhKQg?oc=5",
+        "domain": "thetimesofindia",
         "language": "",
         "tone": 0,
-        "seendate": "20260823T151302Z",
+        "seendate": "20260824T030700Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Iranian-linked hackers shut down British power plant for 4 days in alarming first-ever cyberattack on UK facility: report",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYmlBcTJoUnpjYnd5MUFmMnZQQzZ2dXpZRU9kNWFNVzR2UUkwS1NLTTFfeGxaVVVOSnNSaXhTR09DTHdtUzVVNDI0WXI0WUdhamJtNFMyYTNTdGg2T2t4Qm80Z1VJS1I1UW9TMF9SckRNRi1WYWVZS0dROU5YQXdRazJnLU96YzdpRXIyNElBZHNPVEdWT3V6djFLX3h4V2pUb1dxNGwxTTk?oc=5",
-        "domain": "newyorkpost",
+        "title": "What The Hugging Face Cyberattack Teaches Leaders About AI",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWlhqMWhvckZjQkZjRU1udmFzQmdUTFJldlgtc3BrdGc3MmdLaXZwbXdnSVlCbEQ3SEpGLWQ4RU9sN0NZSTkxQ2FoNU9HNG56QWlYdkdoRWpheXdGTkgwdVpHTUk5d1V3NHlwSU5hTEt4RS1IR2VxLVN6ZkhCZ01UVF9oSTM3cldGVXkwaXhYVERzOUdKTTVkcUNReWVwMUk2REliWUtQaUUyOHV3SDZjOTQwZVZ1U043RGFxcQ?oc=5",
+        "domain": "forbes",
         "language": "",
         "tone": 0,
-        "seendate": "20260823T160100Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Elementor Pro Flaw Could Let Unauthenticated Attackers Upload PHP and Execute Code",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5wSzMyMDQ2SXIxQmxacXJKc2pZWkVIdGljSWdkU2NnaVZGMnRDMTBiS3Boc3dTSFlmOFFVdEpfOHdWVk5uYjV6V05GR3l3ZTNRNE5KUF9GV2lKYjZ6WVBUbnlUSmVuaVEyNDBvbEJjT1lJUHp2Smc?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260820T060400Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Iranian cyberattack shuts down British power plant for four days",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5RN1BkdjdPWFd6YTRYdVVUVm1FaTdCTmd2WmdQcnF1X0VTQzB4ejgzRElLUVNxelV6b2t2M21vajFkSk1XeWp3akg1bHF2TVZQemlzTEVpRWpZcng3bUxoNmxLR1FscnZNck5BSmlVRU5NMFprN3NF?oc=5",
-        "domain": "thejerusalempost",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260823T051625Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Cyberattack in Britain knocks energy facility offline for days",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQeEl5N0QwZVhlNHk0SVFDVHVyMkx5dGxkOW5hU3pHQTViaUo5SFNfX0ozU0FLVGl1SGN4SndUZWFfTE54NEctaF9PZlJmc1VWdFdBMklqSzZBdjk0ZUMxdDlwTVpLRkdlVWxybzFXbHlnUWIzOERnR053X0R3MFBmWTdTZTIwZms5cTdJN3BxZ055Qm1ISXc?oc=5",
-        "domain": "yahoo",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260823T193306Z",
+        "seendate": "20260822T154323Z",
         "source": "GoogleNews"
       },
       {
@@ -458,12 +422,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Ingress-NGINX EOL: CVE-2026-4342 Still Unpatched [2026]",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE16bmxMZFlaeUR2N2xKenVWWm93b255bG10ZTlvTzRlTG5FYU9lajZHTElqM2djR05SelZUOG56dU5QcFNwbmFMd3l4OGdRcFI3bnhGeTB1bk1VX284VE9CbUdMbU1Cc3dhV1ppeDZ3X2NncjA?oc=5",
-        "domain": "tech-insider.org",
+        "title": "Microsoft SharePoint JWT Token Authentication Bypass Technical Analysis (CVE-2026-55040)",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVkFjSElCR1I0OVowQTRnZ05qRC1tNlAyM3I0MmsxWUVDbE93SG9lb2FLcXE4SGdZeDlNUTM5ZG9vUlFfZG9LaHZONEUzUV95N3NOY1FhLVpsV1gxaVRhNkpKQWdmR1VGOExPSUswUF9tT29xcDBPdm5EVERPanBYZDlhRUpDdUhzUHMwWUxEcG5fMkZEaVZ4cXNocGJVVFYwTGx1Q2J4NA?oc=5",
+        "domain": "rapid7",
         "language": "",
         "tone": 0,
-        "seendate": "20260823T140411Z",
+        "seendate": "20260811T070000Z",
         "source": "GoogleNews"
       },
       {
@@ -476,12 +440,48 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Microsoft SharePoint JWT Token Authentication Bypass Technical Analysis (CVE-2026-55040)",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVkFjSElCR1I0OVowQTRnZ05qRC1tNlAyM3I0MmsxWUVDbE93SG9lb2FLcXE4SGdZeDlNUTM5ZG9vUlFfZG9LaHZONEUzUV95N3NOY1FhLVpsV1gxaVRhNkpKQWdmR1VGOExPSUswUF9tT29xcDBPdm5EVERPanBYZDlhRUpDdUhzUHMwWUxEcG5fMkZEaVZ4cXNocGJVVFYwTGx1Q2J4NA?oc=5",
+        "title": "CVE-2026-63520: Microsoft SharePoint Remote Code Execution (FIXED)",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdXVBNlNyN3R2cUdyT2I1bWxlYWZoYTRPbV9PR1FjYTZ4aU52UDBsc2lxQ2RWS1VYWGY4dEFEWW1kdllza3NCTnFhZkxGMUFCY19TWE5JLWt4LWpDX1lBVHUyMkYwUUdBVWFGUlJQNzBjOUVyMkp1UFZUcjl5aEs0ZmU0N2NuUVQ5YUxuVGMtdHZnSUtJZnhHZWN6eTdLSC1NdTlV?oc=5",
         "domain": "rapid7",
         "language": "",
         "tone": 0,
         "seendate": "20260811T070000Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "CISA: Medusa ransomware hit over 500 critical infrastructure orgs",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcC1maFNkSnB5Zm9rQW92NXp4eUtlM1ppZlBmZnFVSDYwR1lOZEVtemFIX1A2QzZFd19zQnBpdTBOYzVfakRMWGxrdS15VzBkdnhPQl8zLW16c0lNMnBSTF9GTV9vVERfeVcwMUhmNFpHd0cta3U4YzdjNE1sWHByLVc3ZHh1b3YyZk1DMVQxYnRYbG9McGt4aWREcnlFODRKUUo0TEZfZjRTY09NaXNBYUNn0gG3AUFVX3lxTFBleWtKTjBIek01a1l3M0NTS295QXRzZFc5YkJJc0JwNWpnQTdYZFlYZVZ5ZDlPZl92ejBjVkdaU3FKNWVxeW1MMnlxNUN6VXRxS1huRV9YZHdLMTMtcjc4Q01hdnRfYXJHZUNjM3RZbmJCNFd0QkJ0SnRvZzUwNlZ0QzE0N0V4dFZhU2pnUXVHSUkyS0xlREFnaU45bXJNMnNGMjBOc2RDZjVsRXlGNWM3MjB3WXZzUQ?oc=5",
+        "domain": "bleepingcomputer",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260819T080048Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Ledger CTO: Ethereum App Vulnerability Patched Two Weeks Ago, Users Should Update and Ignore FUD",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPUklhY0dCczBJbzZROHZnQllXWXJnZUhGZ0E3YV9lWlo4YlhXX1BmUDRIR25UeE1EN3lzUkxnemJ5cEJLWjViOTVwSW9sYWQ1WWktYWlQV0Jrem9HZ3I5Y3g1ZDBvbS1wSGJUM3cyRlJyOUlnMVZIbDVLT0Uxc0JqQUdUTUJsRENxS1Vn?oc=5",
+        "domain": "cryptorank",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260824T054414Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Cyberattacks have plagued the medtech industry in 2026",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVEJUTjM0SmdlOW9xblhwNGNBeTdrejRaeVpEelVRcmFZOHRENkhXY0oxcVJzQllZNTRDdFFWNzNpTWJGdURVNkVWbDFEaExtVVltWUlHSzBGNHNJdG9nZF96V0NUMG45SkhfeDREbHFpa2prRmRkaG9MNnNDN256Q1Ztc3ZIRWNIa0ZfWTJKcnBoME5tcS1kQzlPSQ?oc=5",
+        "domain": "medtechdive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260821T175436Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Citrix urges customers to fix critical NetScaler authentication bypass (CVE-2026-19490)",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPR1l5a2NIcjQyZW9mdDMzMTE3OHRWS3M5dDhOOEk0WDRaamNMU2c3bTRlSlhvRzNCa3pxMENncGh3bmVIMGRsOEJKbXpIOXVKSDgxaEFKbE5jNjlSaDI1T0lZZDlrYW9XOEZyRTNWZE4xcmx0MVdPMnZpWndLTlN6anhQZENWMWZPd0FB?oc=5",
+        "domain": "helpnetsecurity",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260821T075543Z",
         "source": "GoogleNews"
       }
     ],
@@ -572,11 +572,29 @@
   "events": [
     {
       "title": "Vulnerability & Exploit Database",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1CZEM5bjRYdnhMdjAxdF9RYjdZa2NEZWhqMnZBay1QMWw1RVFQUWxLQU84RjZzQ1QtNkl0eHI5Y0pRS1JvSlVBc1hsLXlZbER4OHI3UzI0RGU?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1vTzgyOXp3NVY0d2t4Z00tMmtWRWVtM3ZMa0dkdDhuS3VWSnQ1MWprM0g4WUVkQUpuSko1Z1VYb05PV2hyak50eXA5RQ?oc=5",
       "domain": "rapid7",
       "language": "",
       "tone": 0,
-      "seendate": "20260823T202759Z",
+      "seendate": "20260824T014728Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "Ransomware attackers are zeroing in on mid-market companies",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNbGU0UGU3cmpvN1l6ZGlFdF8zelRMRnhaWWYwTlFYdEIzMkJEcTR6dTZzRjhOTU1waG5aeUYzTVltbEstelNvbEJ3TlhJWExSXzBFemlPQW9IQkh4aGZSMHRBdU13OERXOFZxcm1xU1dmQWV1aExYcjVmcWsyQm1LdzdTcEQ4VUNBZE1DSzVMTTJ1dw?oc=5",
+      "domain": "helpnetsecurity",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260824T043008Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "Small UK power generator shut down after cyberattack linked to Iran: Telegraph",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQnBUcS0zZUl2QWczcnpTMXNuXy1ILUpSVjYwOERCWXR2XzVvYW04QXd4TVY2VVRaeXBaN1ZXbTFXRFp3RWRJOFBmLTJudllud3dBSl9RcERqbnR1dTZYU09JV2xvcDRmWThIUlgtOTRsQ3VRdEF4aFQ4c2h4MEpQazNMVzdZLVN3YnBqbVVsTnVKVkVSMXFBMjBpNGRibm9oQjdaRHI2WdIBrAFBVV95cUxNZy11ZUJUWVFzQWt6V3pZX2loS0k0OGt3QlRJWWV5VVFucGZkTThHYXkyZ2hSeHQycmYtTHhySzg5QXRkN0tyaUhzUFU0VEhJUHR5amZrX1RqWkJPLU9wVk85UHBFNmFVRVE5X1B2OWNqcHhUc3k1NkFLd1pLSmxQMEt4OFZkY2IzZlBPQ1pjWEc1OTZLUXYyOXpoNDVaeENBbmZHTldQUGRsM3Y0?oc=5",
+      "domain": "cnbc",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260823T113552Z",
       "source": "GoogleNews"
     },
     {
@@ -595,24 +613,6 @@
       "language": "",
       "tone": 0,
       "seendate": "20260824T021113Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Small UK power generator shut down after cyberattack linked to Iran: Telegraph",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQnBUcS0zZUl2QWczcnpTMXNuXy1ILUpSVjYwOERCWXR2XzVvYW04QXd4TVY2VVRaeXBaN1ZXbTFXRFp3RWRJOFBmLTJudllud3dBSl9RcERqbnR1dTZYU09JV2xvcDRmWThIUlgtOTRsQ3VRdEF4aFQ4c2h4MEpQazNMVzdZLVN3YnBqbVVsTnVKVkVSMXFBMjBpNGRibm9oQjdaRHI2WdIBrAFBVV95cUxNZy11ZUJUWVFzQWt6V3pZX2loS0k0OGt3QlRJWWV5VVFucGZkTThHYXkyZ2hSeHQycmYtTHhySzg5QXRkN0tyaUhzUFU0VEhJUHR5amZrX1RqWkJPLU9wVk85UHBFNmFVRVE5X1B2OWNqcHhUc3k1NkFLd1pLSmxQMEt4OFZkY2IzZlBPQ1pjWEc1OTZLUXYyOXpoNDVaeENBbmZHTldQUGRsM3Y0?oc=5",
-      "domain": "cnbc",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260823T113552Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Medusa Ransomware Hitting Healthcare Industry’s Unpatched Software Vulnerabilities",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNY1FiUmxGTlYxNXRSZmxUTUVPbXctVklNWWVVZzFtSUw2aU5IWTlYbWxRSzdUS3RvRkRZOWVYYlgwSkoxOU1MYWpKUG9RY1l3Z3p4MU1qNllDWmNnTjVuY3RaQ2FYUWJtbW1RYmU5VVN3QThZNE8tME9kWFBQb0NqQzRQb2lDSjAzbXNqazU3ZV9BaXhmdldua1RwRWpHdTdCNVI0R2VLekJDQ2dHRzJIUXp5dG_SAboBQVVfeXFMT2VSc3ZBajhZT1c1MEF1dC03N21QVERqVHlpWXp2MkNQaktZUE11SjBXa05OSkFReGRQdkk4bzZPVGpSQ1BmRjZPMDJyR3RwYkVIM2Zob0ZpSjRMNkNuZDRyUUJCcXllMGNCRTJvNHdmbGpIQkF0V1ZIei1fbTd4X3BqRWhId2pGQUxma1M3aUljX0NJU3lYRmcwZVF0ekMya19sR0RzWUJaS3hTOGtHVFZXbHppOHQ4YXRB?oc=5",
-      "domain": "thenationallawreview",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260824T000357Z",
       "source": "GoogleNews"
     },
     {
@@ -643,30 +643,30 @@
       "source": "GoogleNews"
     },
     {
-      "title": "Week in review: Records allegedly stolen from Azure tenants, Medusa ransomware hits 500+ orgs",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQNVBrcEk3bmtiZ1NicElPNndoNnotVWlUNXRSeGxsU2FPUUM5QVVmVFNDZzhZdGZnTndVWFNoMVF5QS1VaWU4Zm1BR3BqS203UFBxMkROV2djU3NTaDh2d1FWXy0yQUtpdll0OEdnZGd4RHlOZ0tINUQzYlhGeGs0LXpOeTJwYmM0OVU3UnlISFlnUnVpR3d6czdjWFBjU2xTZzl4YVprU01SZDhZNHhuOEFVVDdieW5KcklGZ1JGRXNjTlRBaW1HbThITWctcmc?oc=5",
-      "domain": "helpnetsecurity",
+      "title": "Japan outlines measures to protect infrastructure from cyberattacks",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOd1hrTy1VOGNFbXJuMTA4S0sxdE83MEdXcXlOcVZNRHJLSkRZQV9LWWl4WExIa0dhbExmb0tVenZxVkp4cGxUY0p4Rm1NdmdZM0txeVg1Zzh5emRaRUtVRnBGOGk4QlBCSW56dHFZTGd5VndLUDZlejR5YnFrU0xkUDh5UlVEM0ZhRURGeVhQNGNTOEJxZ2piQU10TWMzTmhJWlF1QlE5NGRyZw?oc=5",
+      "domain": "thejapantimes",
       "language": "",
       "tone": 0,
-      "seendate": "20260823T080000Z",
+      "seendate": "20260824T013016Z",
       "source": "GoogleNews"
     },
     {
-      "title": "Review: 'The End of Oak Street' takes viewers on a ride with truth, vulnerability",
-      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNOHJBQzdLQzZINXpQNGtyNk9PWjBWTk5MNVBmbTdsUEl5TXFvWERiTkJUV3QxS0c4aWJRR1phc0xMREdLeXRzT25oMWlOeUZ1YzNwdG9maFFBa2tTUGlubjRLUWJXU21mSmZZUnRJNnRyQ3MtdTdtRFhNaXJNcDBiTzFMU1BsUjB1Z1dSUGdKNHFaU1NxVFAzWE02clBEY3lsNjNJbHVmWm1nMVpYMUNTZWpYdjVYT0wwZmlyUG5najAxVmxfMmg4eFJvZEM3LU9QZWo1WmhJZTd2aXN0RTRjUXBaOUV2YWR5TUVsNWZUOGVQZkwtWWY0Z2dNTzR0RkI5aEtPNGtTTElVTjY2?oc=5",
-      "domain": "charlestongazette-mail",
+      "title": "Iranian hackers shut down UK power plant",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQV2F4T2dSMFd0YS1wTUduVGFIdmtiOFZJQ0Y2UDFrSm14TkI1b0lEeUJVOURaOFRpVS04N1NHbnpTRnFlZ3NOd1RjaXVCUmJsUTNac1ZvUDhGcW53Q1docnJFWlJPN1l5ODJZSHU4WW5xSlhJOEItMjdyWnVndmo5N3BnR3MwdEVpc3JkbWh3?oc=5",
+      "domain": "thetelegraph",
       "language": "",
       "tone": 0,
-      "seendate": "20260823T110000Z",
+      "seendate": "20260822T205000Z",
       "source": "GoogleNews"
     },
     {
-      "title": "UK responds to report of Iranian cyberattack on energy site",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOWjJoYjBVUC1YWUN5OUlOdXpZMXhHX0ZNcTBrcWlpVElxeXF6R2ZhWW5sbkZZWVZza184NW90Q0RmUUg1UEVrVUhsX2FIMy1UYk5jRW4wSUdTeDE4UTZqVzVtWDNtM2VEZjRPUTBkS3VsSm1MNjhsY3pfV1JMb2pWRVk4UmFiSFhXbzBncXBSeGtwcDhicTc0azh1MWVjejZITk9GOXJpNmlMMEZRVW1QakJiVmdCMnAxZTBhc3NhcmRlUVFmQ0lmSjFGSEtyZFAtX1Q1SDhMSlh4RW5ydFotZTROT3EzbDlxM2dvbVNZUnpLUQ?oc=5",
-      "domain": "centraloregondaily",
+      "title": "Medusa Ransomware Hitting Healthcare Industry’s Unpatched Software Vulnerabilities",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNY1FiUmxGTlYxNXRSZmxUTUVPbXctVklNWWVVZzFtSUw2aU5IWTlYbWxRSzdUS3RvRkRZOWVYYlgwSkoxOU1MYWpKUG9RY1l3Z3p4MU1qNllDWmNnTjVuY3RaQ2FYUWJtbW1RYmU5VVN3QThZNE8tME9kWFBQb0NqQzRQb2lDSjAzbXNqazU3ZV9BaXhmdldua1RwRWpHdTdCNVI0R2VLekJDQ2dHRzJIUXp5dG_SAboBQVVfeXFMT2VSc3ZBajhZT1c1MEF1dC03N21QVERqVHlpWXp2MkNQaktZUE11SjBXa05OSkFReGRQdkk4bzZPVGpSQ1BmRjZPMDJyR3RwYkVIM2Zob0ZpSjRMNkNuZDRyUUJCcXllMGNCRTJvNHdmbGpIQkF0V1ZIei1fbTd4X3BqRWhId2pGQUxma1M3aUljX0NJU3lYRmcwZVF0ekMya19sR0RzWUJaS3hTOGtHVFZXbHppOHQ4YXRB?oc=5",
+      "domain": "thenationallawreview",
       "language": "",
       "tone": 0,
-      "seendate": "20260823T195750Z",
+      "seendate": "20260824T000357Z",
       "source": "GoogleNews"
     },
     {
@@ -688,21 +688,21 @@
       "source": "GoogleNews"
     },
     {
-      "title": "Iran-linked hackers blamed for cyber-attack that shut down UK power plant",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPM3V4Wmc1TVo2UHNXakY0YkFSVVJsczZqcjBsQlU5eGxvdzZtZ0pYM1R1anA2TjRBeDl5UEdwR1I3LW80aFpEb2VUN0c4OUMyUm9vNmNPYl9JaElLWUdWdlJ1Zm9lYlBxcXBxelFiWXc4eUV2eGRzMW1LVWpnZ2MyYVd6QWhFQjByT0VNNDZEZzRGd3Y3UDlzY2pTX1REMkhDWnJ5U2NYUl8?oc=5",
-      "domain": "theguardian",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260823T090700Z",
-      "source": "GoogleNews"
-    },
-    {
       "title": "US Bank investigates LockBit's claims as ransomware crims set pay-or-leak deadline",
       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQd3RCRWtYX0tDM1FIdVZUdTdIc3ROX0RYVnczZGhPS050WlYwcWhPRWlpTWhkbHNCVnFVYTdNRUZTMVhrNTdyTkdGMmdXV09TQlJLS0lSVm9MUEtCVlFMTGViUEYtMUVJMzZUWE8zejd2YmhYUFE2RVBBRDdHUkF1WlFuVWRoaUQzUGhOR3ljQ1gwTnByX3E1N0RMenlrOU93RVVBeTg0ZkU3V3M1cV8xbVlDRXJISE44ejItU29EX2h6Y05FR2pvamU3Zlh6Q2hGXzlB?oc=5",
       "domain": "theregister",
       "language": "",
       "tone": 0,
       "seendate": "20260820T173039Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "UK responds to report of Iranian cyberattack on energy site",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOWjJoYjBVUC1YWUN5OUlOdXpZMXhHX0ZNcTBrcWlpVElxeXF6R2ZhWW5sbkZZWVZza184NW90Q0RmUUg1UEVrVUhsX2FIMy1UYk5jRW4wSUdTeDE4UTZqVzVtWDNtM2VEZjRPUTBkS3VsSm1MNjhsY3pfV1JMb2pWRVk4UmFiSFhXbzBncXBSeGtwcDhicTc0azh1MWVjejZITk9GOXJpNmlMMEZRVW1QakJiVmdCMnAxZTBhc3NhcmRlUVFmQ0lmSjFGSEtyZFAtX1Q1SDhMSlh4RW5ydFotZTROT3EzbDlxM2dvbVNZUnpLUQ?oc=5",
+      "domain": "centraloregondaily",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260823T195750Z",
       "source": "GoogleNews"
     }
   ],
