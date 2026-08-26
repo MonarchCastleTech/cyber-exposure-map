@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-08-26T13:42:57.641821+00:00",
+    "generated": "2026-08-26T21:17:51.831579+00:00",
     "mode": "live",
     "sources": [
       "news_articles",
@@ -18,7 +18,7 @@
     },
     {
       "label": "News Domains",
-      "value": "36",
+      "value": "41",
       "delta": "deduplicated"
     },
     {
@@ -35,21 +35,66 @@
   "live_data": {
     "news_articles": [
       {
+        "title": "Boston Scientific says cyberattack disrupted order processing, shipping",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSjRDR0FuNUNXcmx1NDZIRktNdjdpdUV6R2lfeWU3bEFpYmFwZGlubEdQMG9PNUNrYV9LVU9jQ1hpc1dhVU1YZ3VsdERjTlRNT1lFX3QtVEFpdEdDVVhxQk5UOXlTNFlUdmxUc0JBS29aVEdNVG91RWl5UkExcjJPeENsQlMtLWJJM0JiOEJPY1BUR1UwYTdObzZmcWZQc3FDWGl2WGxpc05IMlEyNnNNc1d3?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T150430Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Boston Scientific says a cyberattack is disrupting its global operations",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeExjN0J5bWQ4ekdYRjlvMVpmRkNyZE50S0FZZG1JQWxhZVd3eHdyM1NqY0JVRUVVQkozUHA0STY3WVNwd1NPakRIU3JWSjlwRTZCQnpPYWZqMmM1c1VwV1dlS3pRWnZMcDdOeHpzdmdaRnRjTUNZS1RtVzU4YkdvWDRDVTBmejFCT25OZGVUNA?oc=5",
+        "domain": "cbsnews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T141854Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Boston Scientific hit by cyberattack, global operations affected",
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTFFMWThLS3BjbEN0SkJwaVNoRjBDS2VwSFJrRFpGNmZLV0U3Zm5tV2NWbXpaZkRGMURZbUpHbVdRYnNvU3lMMmUtLTFoRE84QWJZYUROWVYyOWtITlFEdVRFLXJTVHlRS3RXNVlYWmlWSF82T0JQZGhLOExkNXMzTmM0Zlh4QzNXSlFZb3VvLWxsb3hfbFFicElYTWdMVXI0QlNOTmpBUFNxREhBZk5faGY1aVh0M0k?oc=5",
         "domain": "reuters",
         "language": "",
         "tone": 0,
-        "seendate": "20260826T104943Z",
+        "seendate": "20260826T150028Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Boston Scientific hit by cyberattack causing ‘disruptions’ to parts of its business",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUFhka2pKTF9HSG5NU1huWFR1NloyejgxOGdXUVE1VVpBUkNQM185SFBNUU5YSjJMZ1FINjZtRjU4MmlIbXd4Y3dfcXZLQW55M05oTTZCRVVCbE1BZklDVUVUemYtY2pCaHU0ai1DMEFINkY1QWJPbTEyYmxoUkVZNmR2VGo3bFd4ZHFMa2dnSGJ0YlFiZVBwY3VLNVZIa0d1bTVTQTgydld2cE9LMmJJ?oc=5",
-        "domain": "fiercebiotech",
+        "title": "Boston Scientific Stock Price Drops After Cyberattack Triggers Global Outage",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZmdWWEtYOThlOXVNcThLcW9GSFFZaWRoOFc3azlHUUtDek5uaEpac1N2Xzc4cUNFdjY0eXhVM3F0a29qWm9vanpNQURqNV95TDd1ekYwaFRqRlJHanh6MmtVc0NCWjAxQTU0Sml4ZUJuMmpWUUdvQUQwM1hWaXZoMWQzOEhhaWxxOEJ5cnB6RUxhQmQxUElvQmN6bGlQUHhYNGJRWXN5MlU0eWpWSGNmMmhWbVdDWHFaS1FremVLNzQ?oc=5",
+        "domain": "wsj",
         "language": "",
         "tone": 0,
-        "seendate": "20260826T112602Z",
+        "seendate": "20260826T182400Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Cyberattack Disrupts Boston Scientific’s Operations: 7 Things to Know",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1IaTFXT3o1M19iUW5zcDl1eU5jZThsUktpWm5CNkxxR2ZRaUEwcnNiemZzTG9tMGlVQVgxenpEdEJHM3pDVW1CNkhDTnhTYTZneHNmeUlmOGVGYXBHOFRzMDktcFZSM0pRcElwcVlEMA?oc=5",
+        "domain": "medcitynews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T190959Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Medical device maker Boston Scientific says a cyberattack is causing a 'global disruption' to its operations",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOdFlsanVTQjhnamN3YTM2Slh3WWM3SUJpQ0JaWV9fU192NWgxTGltbTJ1aXF6Y3ZyaEZEcm43Qm5zcmRETWFLZWVFODN6Q3BTZ3pKSzBLazI4c296d0FnbkZWVU4yQmx3bTJxak9ZOTFQcTZOLU05cjdfekNtVUF1UnlnWFA0eEoxR0tUZ2ExVVo2RTJmdEJhNG1ZYnNQSFZXSGlXZmFVYmhuNXctY3RubEFydXNicDVqcndWRUE3MHlsTVpJcEpBSEV1LXpXV2xQWWpaWVl3bzM?oc=5",
+        "domain": "techcrunch",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T182309Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Pro-Russian hackers claim responsibility for major cyberattack on Norway's public digital services",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOekYtZzlOUHZBZzJ5RXhHemgwSmd6MGxmY2wxSzBzcHI0N2lNNk5Nak1xZzdjS0h6VjIzZEU3cDJIQzZ2dG5GaEFZNHRhTWRPUUFEQWcweGlQcjBuWVFCQ1RNUmJ5Q1FkRm9oYXhzT3Q0N3Rzc3pWa01mOEpyZzh6OC1Sb1FGYzREaFBCSTJ3X1doTE1ITDVZaUFKTzZvNTF0MmZzdjFhT1I5djFRcUtFR3NKVzE?oc=5",
+        "domain": "apnews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T163500Z",
         "source": "GoogleNews"
       },
       {
@@ -62,39 +107,57 @@
         "source": "GoogleNews"
       },
       {
-        "title": "CISA Warns of Exploited Gitea Vulnerability",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBwWExwTEtRdDRsMVBrWVdVS19TQzhmcFdFd2FCZjlyUnhlenlHYjZMWmYzNkFWSDlOeERaMm9kZk85RDVhUjVTb0dyNzduUWFqRjdvdEdwdXU3Y0p5WmczcTdONHA2V3pjNzZWVDF0Q3BpNkp2Y1I0ZjFvY2xHZ9IBgwFBVV95cUxPSjNqZHYzUkRFV3VqdjA5dWNROFhmb2ljMGxibGtWU0NRUHdPaFpMQW1mdVJlQm1BelNHdDByRXhiY043MUZBQjJ5M1ZVTjZKa1RxNzZ5SnJZVll2bGc0UXVaV1p4cjEwbHF6SUw1M0FUNGtLYlBHdmxOYlNNaUVFd1d0dw?oc=5",
-        "domain": "securityweek",
+        "title": "Boston Scientific hit by cyberattack causing ‘disruptions’ to parts of its business",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUFhka2pKTF9HSG5NU1huWFR1NloyejgxOGdXUVE1VVpBUkNQM185SFBNUU5YSjJMZ1FINjZtRjU4MmlIbXd4Y3dfcXZLQW55M05oTTZCRVVCbE1BZklDVUVUemYtY2pCaHU0ai1DMEFINkY1QWJPbTEyYmxoUkVZNmR2VGo3bFd4ZHFMa2dnSGJ0YlFiZVBwY3VLNVZIa0d1bTVTQTgydld2cE9LMmJJ?oc=5",
+        "domain": "fiercebiotech",
         "language": "",
         "tone": 0,
-        "seendate": "20260826T051728Z",
+        "seendate": "20260826T112602Z",
         "source": "GoogleNews"
       },
       {
-        "title": "UK power facility disabled for days after suspected state-linked cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPTElLeFpwNG03Q0p5Y2pudzItdGFuS3Awb0thUHU5Y2ZVN21hQ3NpTV9MRFZHMmJycHUyY3dKVW52dmF5eUZCb194ZXZjQVFaSHNSVm1PdUVySnIzYlVqNHdRNGJSNkMxTERVZFhWX2R2bFZwQnRmaHpJX055QXdWUHExM2U5RUhwcUkwYzdUR1c0SDk2?oc=5",
-        "domain": "cybersecuritydive",
+        "title": "Boston Scientific discloses 'global disruption' in ongoing cyberattack",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOeDFVc2JSWGlHZDY3cWhKWllld2RWSUpxSmR1bDdQSFUtalZmcnBBLS1POE5RQ1RnazhWOVhUanl1cFBEbjJ1ZFh6WXB3OGlDeTYycUNoNm52ZkJfMjNDQXZHaEhwQWFkbElhZ0hPZjJfbkdjblNsZHRYemQtS3JRVWxaZnpPLTRHX0FuclE4RXhyVFVMdGlmLXcxazUtWGpjMzMxeDFMa0MxX3VGSUJtZktuOVZEN0tpdmlTRGJibkN2UQ?oc=5",
+        "domain": "theregister",
         "language": "",
         "tone": 0,
-        "seendate": "20260824T154652Z",
+        "seendate": "20260826T154400Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Critical Gitea RCE Actively Exploited as Reported Attack Drops Miner-Like Payload",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOa1VvbERhSERYYjQtQzZnMEVfVjkwcFQtNVh1c3ZCU244a1FnWWthcTBidlp1MGFseFVraWpxOWlfN0NHdTlCa285QnBzTkxHVzFsYWo5QmNMdFB2NUNaT25wc3pHUDFZcV9qdE5pdWdYM3F3M3EzOWNHYkJ5clFwSXdn?oc=5",
-        "domain": "thehackernews",
+        "title": "Boston Scientific’s ordering, shipping disrupted in cyberattack",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ3Z5U3FjQmlybGpFTnhlell5djBiNlE2RjFLZllNME1UNXYyRWRrRE84RjFucnB6SnowWU5nbk95Y1R5bloxaVVfUjg3MXlvUVBtVFlpekxCQzVoQjdPcElGdlFic2RSNk1WdHMtUWhEUXUwa0MzVkhJNTNPZ2YtRGtENWYzeEVHZTNmc29HTEVJOUZOd3FXcjBWNmxKdkQxRnBQeA?oc=5",
+        "domain": "medtechdive",
         "language": "",
         "tone": 0,
-        "seendate": "20260826T062700Z",
+        "seendate": "20260826T190546Z",
         "source": "GoogleNews"
       },
       {
-        "title": "AI vulnerability discovery scores the highest impact of 20 emerging risks",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOa015bURBM3hNSUp6VjJHMVFjTFh4cTJyZ1R6eUlxRjVaS1BlM05wOFhHdFlRdVdLTTkwNXljZzFjTFdObEZXWjd6TXlwMEktaWdSa3p5YlI3ejgtcFZOeEFicF9xV2pJR0xmaEU3MUVfdlA3enBNRHRoMnZvYnBzeUZmSmJnMFNpcWctdnFB?oc=5",
-        "domain": "helpnetsecurity",
+        "title": "Boston Scientific hit by cyberattack, customer shipping impacted",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeHY2MHZoeUlKaGkzenY5T2hWUUhReTItdy0tVlE5cGFYbzNndzkwc29teUIwRVlISERBLTBseHd1SjNkdXVBQ0drSVBRYmtEN21qalBfdHdOTW1jMlI2d2R6dmhFX0E4UktEUUZRWVlpNXZOQXRWaEQxVjJjNU5GMk1hNE1ndkNEeUhvSzZ5Wks5TFVBYXFxb2p3?oc=5",
+        "domain": "worcesterbusinessjournal",
         "language": "",
         "tone": 0,
-        "seendate": "20260826T050052Z",
+        "seendate": "20260826T161124Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Boston Scientific hit by cyberattack causing ‘global disruption'",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQT2dhV0Z1T2VNN1o3MzQ4ZjBUVDJlNjMxZnA0UENEMHpTM0VNOV9WUGpWUGtfRC02MGpxM2ptQzNrNlhSamNUYkhLYkdkZ1ZRVld6bWtiQ25ncXJKNE5DS0l5eWZ2VDBPRTdvb0hYSEhjZW9DYS1RUFVsbHhrSGpEdEpRNTRrR2xQNV8wcGtmQ2tHaEVkSXhNX09tb0hidUN3R0HSAaoBQVVfeXFMUHJQVWktRDVkaVpXa1FnOVZlOHBaZm1qUnJoLXlQYWxUZkJ3UnVWdnloVFdpNGtFZ3hnaWRYOWdJTEVCTnZ3RjJGNy1LdlFuOENsbnFnd1E5eW1uUzdaOVd1UGZXbG5mYjNOQVFjV3pYRngwYWZ1SFlJaGEtVmxraWI5SDA3ZHNpN0xscXpqM254a2ZYekhaOExpU01UdFZaYTk0SHZabldSZmc?oc=5",
+        "domain": "nbcboston",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T153451Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "A cyberattack can put your business at risk",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPc24ydlp1Q0lsYlU1Qm92Z1I2ZFh1U1JkeDl5M2t3Um5jYTVSOUtCbGYyeGp2NDZMZjEwcURoSjJSUm96SW1IY0pyOWljLXRGLUctRnJGRnlXQXQyUHBBazNFQkFUUEtNbUhGdmsxVWRHZ3Q1QWJJSGdsVDdfZmZUb2ZFMmJ3QlpaT2Q2aDJCaVZiMW9ieXl0R0FlMWVSd19IMTE3SWZpWQ?oc=5",
+        "domain": "wknofm",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T200000Z",
         "source": "GoogleNews"
       },
       {
@@ -107,12 +170,75 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Pro-Russian hackers claim responsibility for major cyberattack on Norway's public digital services",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOekYtZzlOUHZBZzJ5RXhHemgwSmd6MGxmY2wxSzBzcHI0N2lNNk5Nak1xZzdjS0h6VjIzZEU3cDJIQzZ2dG5GaEFZNHRhTWRPUUFEQWcweGlQcjBuWVFCQ1RNUmJ5Q1FkRm9oYXhzT3Q0N3Rzc3pWa01mOEpyZzh6OC1Sb1FGYzREaFBCSTJ3X1doTE1ITDVZaUFKTzZvNTF0MmZzdjFhT1I5djFRcUtFR3NKVzE?oc=5",
-        "domain": "apnews",
+        "title": "Boston Scientific Stock Is Falling as Cyberattack Puts More Strain on the Medical Device Maker",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ0F5QlpSWXhseGxUNDhlQ1NjeXktWmQtNFp4Y1BUR09ubmt6VC1rU1AyeDlnRkpyaUktVWNuNTRaSUo0OTBFY1NYOXhkbXo0Tm5sc24zUzgxWHctckRtbWxabEhRWElndVg2MENTVGhiSjZ6VEVHMGVvcEFCY0NNSVdMOA?oc=5",
+        "domain": "barrons",
         "language": "",
         "tone": 0,
-        "seendate": "20260826T113200Z",
+        "seendate": "20260826T135800Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "AI-driven cyber vulnerability discovery becomes leading emerging risk, Gartner reports",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNY3kwZDAxTU9kVjZjRzFmMDFUMFdhVWwyc09lMkplRW5iUjFnUlhTMTlqY1BpYXFvNTl2RVFQc0lCYnZnMUJCM1hmLWtPU3pUc2xYZHpXTF8wdW5KZllZOWk2NmdBaW1aTGxlQWxsVllFNmt4YWg0MElOdlhEeF9CX3RaN04yUFJfOURyZWlHVjdJZGtJajhFZVZLS0xTWmxlNGxvWWsxQVhReWx0eWVsdFEweTlZUQ?oc=5",
+        "domain": "reinsurancenews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T143139Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "CISA Warns of Exploited Gitea Vulnerability",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBwWExwTEtRdDRsMVBrWVdVS19TQzhmcFdFd2FCZjlyUnhlenlHYjZMWmYzNkFWSDlOeERaMm9kZk85RDVhUjVTb0dyNzduUWFqRjdvdEdwdXU3Y0p5WmczcTdONHA2V3pjNzZWVDF0Q3BpNkp2Y1I0ZjFvY2xHZ9IBgwFBVV95cUxPSjNqZHYzUkRFV3VqdjA5dWNROFhmb2ljMGxibGtWU0NRUHdPaFpMQW1mdVJlQm1BelNHdDByRXhiY043MUZBQjJ5M1ZVTjZKa1RxNzZ5SnJZVll2bGc0UXVaV1p4cjEwbHF6SUw1M0FUNGtLYlBHdmxOYlNNaUVFd1d0dw?oc=5",
+        "domain": "securityweek",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T051728Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Boston Scientific Stock Slides After Cyberattack Caused ‘Global Disruption’",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZFhSelVIbTVPLVJNOUlDZHlUYXNWQ0ZDN3VjUG4wRDF4X0dWbkZKa0Voc0pUcDlUMklORm5MRFhzcWtha3Z6b3RibEZMLVJiNHhoNUZiOTdrYWxram9FYUZpZWlIZ1lhNVlTTVJfb3hMSlpqNkxJc2pDX2hLTDJoTm56MXdrSkJpV2VpQ1hEVzVaZHZTQ1ZFUEVkN0pFbjJJUkFVckY2SFd1amJ3TmUyYUtRbXoxMTBZelRTMFhSWndpZ0o1Ml93bw?oc=5",
+        "domain": "investopedia",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T191537Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Boston Scientific says cyberattack disrupted operations globally",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVl9yV3Y4RHdEdWx3Q3ExajhlSVljY2ExQko4V1ZwOWp1cTRuQW1EQklKNVAxU3ZXNDE4bHRBUERacC1tZno2OEl3QldtTzdyc0dveWd0WUtaZmNucmdPZGtwOFY1SnhFWkV1UVY0dXBkQjI4WVpWYVNuTkdBNDZBd2ZIMXctS1pHNHRtQXB5N2F2T1RPaTlFVVVPdVI3d3M3WUJnLW4yQk9tNHV4Qno5TXpB0gG3AUFVX3lxTE9EZDBIcjJsSDBOeXh1U0w1d2phUDF5SEw3cVRZWC1BTEJFZ2c1aEJyRnBqeDF6d3Zud05MWF9iODY1UFJHckpxWjdIcVVvdHpRWTRWRk8ydy1XcXN4VkZBaEhPQW55R2JVTnhpLU5YYklwZmhNc0w5NWtiUGhGYm9fWDZIUVkyUjlocTlwdktqSTNqYnotZnhzaXQwV2x4aTdSdnZ0OFJ4TkVYeDhLcHgzN0VXbHNrRQ?oc=5",
+        "domain": "bleepingcomputer",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T151921Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Cyberattack Disrupts Boston Scientific's Global Operations",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUUVSVFBfbmEyWHlnVm9KZ2ZING9abXBWOWpWWjdTNVoydlpsV2VyQng2TDk2SlJ1bmViRW55LW4tR2IwSnJ4RTRFRVo5MlQ3cm91WmZpYnlXOHpxVEZqa2VvX2VqVmdFVVRvTHA5V1IwdDB5dGtKVU5meGgtMVkxNmFDYzhFVFVZWmhEMHJVV3EzeVRvRnFPcFpNbE1Mekk?oc=5",
+        "domain": "bankinfosecurity",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T194140Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "AI vulnerability discovery scores the highest impact of 20 emerging risks",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOa015bURBM3hNSUp6VjJHMVFjTFh4cTJyZ1R6eUlxRjVaS1BlM05wOFhHdFlRdVdLTTkwNXljZzFjTFdObEZXWjd6TXlwMEktaWdSa3p5YlI3ejgtcFZOeEFicF9xV2pJR0xmaEU3MUVfdlA3enBNRHRoMnZvYnBzeUZmSmJnMFNpcWctdnFB?oc=5",
+        "domain": "helpnetsecurity",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T050052Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Qilin ransomware gang claims US firearms agency ATF, provides no details",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdFoySGNWVEF5aTdVcWRkRDNucmhPTVhESWpqa2Z1d0xlUmplQ3A3cExvLWpBcDdGanFkaFlZdnFCQW9KRUs0TGV2c0NQaWtqSHZuT3NlVnlXNVJYYnBpR1JMYk8wM1ZhbWU0UmZtYzhqVzJ4TFpxd09jUEtucU1RbTdJSGJ4eERpVC1IeU5MSHZwVk1GWWx3?oc=5",
+        "domain": "cybernews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T184530Z",
         "source": "GoogleNews"
       },
       {
@@ -126,74 +252,65 @@
       },
       {
         "title": "Boston Scientific hit by cyberattack, global operations affected",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNWdfNldweHJtTDA2LXZlb3hXenFDaG9FQk5TR0pBVzdTNExxZklSTTdsZHN2QU1reGluaVhkSWRwdWtJZkRvbDctbVpab2ZTREIxeW9GRVBYM2pjblpxeUNVSFBXTTdNVDI4ZUJJclREMEtjRGdMeG5oenVaWTRhT1NOdzVOS3Vud2k5MnlGbFE5dnFYT1VB?oc=5",
-        "domain": "whbl.com",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQlB6ZnRrVzJFNjdSUUlabXhzNmRFQzgydjE2QUxtQ1ZRcFpfcHNQT0pJTWFWOUJYQXYxNmFIdDBqUEVlZTVQTmVzV2p2d1FVRFFfQ0hhRWJkQ3V3VDhWNjVyMXhQNUZRS0x2VjlaUkJTZVc3WjNqRF93Ti1uaVVQdlRIdkI0M2NKMnBacHJLeExiUURHS2k2S29R?oc=5",
+        "domain": "wtvb",
         "language": "",
         "tone": 0,
-        "seendate": "20260826T133931Z",
+        "seendate": "20260826T110349Z",
         "source": "GoogleNews"
       },
       {
-        "title": "The End of Assumed Privacy in Vulnerability Disclosure",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQaFc0MGRIaVNuWVc4WkNsejUwNjRGRnB0QU9VTjhSN1EwaDBKR1ZmSFpRbnBVa2lRcHRiclNqTkdnSVpSVUE5bE9KV2RuZUJhaloxbmhBeXRQY1BRbjAwM09lWnZDVU5ud2ZBcHdqU2pMTUtEYV91SUdhWnBGZ256N1pLakVqQTlhVWg2NWx3bkZUbFVWUXZ4TTlB?oc=5",
-        "domain": "cybersecurityinsiders",
+        "title": "Critical Gitea RCE Actively Exploited as Reported Attack Drops Miner-Like Payload",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOa1VvbERhSERYYjQtQzZnMEVfVjkwcFQtNVh1c3ZCU244a1FnWWthcTBidlp1MGFseFVraWpxOWlfN0NHdTlCa285QnBzTkxHVzFsYWo5QmNMdFB2NUNaT25wc3pHUDFZcV9qdE5pdWdYM3F3M3EzOWNHYkJ5clFwSXdn?oc=5",
+        "domain": "thehackernews",
         "language": "",
         "tone": 0,
-        "seendate": "20260826T100710Z",
+        "seendate": "20260826T062700Z",
         "source": "GoogleNews"
       },
       {
-        "title": "AISLE Receives Expanded CVE Authority for Third-Party Vulnerabilities",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdGJRdFFGR0RTUldrLU1scV9BRFZrenZoNHRVcGltLW1rek9ERmpXeWZ4NW5uNmpIQmpfVmN0WVBncjlkd3p0Ujh1ZFY3M2FndDcxeEpvTTcxWkN1VF9BWVc1bkVlRm5CbzRQT0N2R2dBLUZRV3JKbHBPbUZVWUl5WkgzSGRTdmNSb3dLZFlJcXhfWEJ1TDlEWWUyVWR0bkl5WE1uQUNodjRwODEz?oc=5",
-        "domain": "citybiz",
+        "title": "Compromised Servers Provide Cover for Cyber Attack",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOYUlXemI1Qi1kWHBWTXJtdjB1eGpZdmFkTHNKQ09SNUNGa2RVN0VqcGUzQXQtT2hISDQ4cUxxTzRucGhCVkw4RWdSV29HcG1MblVpR01jTEptVmRHcnMwVW9qOThGN1RnSFFySkVWQWhLQWl5SFhLVmFkakd3SWNvdHJWWQ?oc=5",
+        "domain": "communicationsoftheacm",
         "language": "",
         "tone": 0,
-        "seendate": "20260826T130246Z",
+        "seendate": "20260826T170200Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Ransomware surges as criminals deploy AI tools",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPXzlpVlhwQ1RoTkRvNWQycTV0N0FpVDJmUkRFY1B2RjJRckh3M25Hd1M2UG1UbmZqaS1YTGVnNElNcklkbGlfMmFldGFYYmZJZnZQSkhITVViSEc1RUV5TUdZLVJZWXNheVdjaDB3RW1IRnl5LVduNmhLQ3daMUZtOGNFTnNTcndSTkotaXduS1VMaVJheG1XeFdDMHl5ZVZkVFRtdXFR?oc=5",
+        "title": "Ubiquiti patches three max severity security vulnerabilities",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObDhhNmgxdzFReW9ZWHNqVGpYRUczRmk4UlA4c1ZsVUdLdWhrZ3VoX1FsWUMxZDNoZVVLbFpaT0ZpZF9KREsxRnQ5LU9NSVFOdVZvZll0dmpWWUZ6elpod3o0UGtSdXdsZEwzb19ybGtxT0g0SXl4RUh3SmZrbTd1SWQ3SlNoNVdCM3J3VHVhQTBjT0tnRUY0d1NxdE04QmptMldQWkNNSmNGRTFp0gGyAUFVX3lxTE1sUW41U3lkQkxocFF0OFY2WXV2WlJob0F0MmdFNE1sdXNmM0d0ODFGU2xKV0E5ZHF1QlhhSktBbTdoSklwZER1aVNucUJxZTVIN1BCdzB2UDlxN08wWVlqWGVjeEZjWEhGdTIxbGhEV1NEMFBPM3dZSEh3Q2hUdFZHVTlqUEJPLXRsUnN3SWNYdEtfQXJqdXpCZUd2MGQtTGdPcGNTXzJLZjRkQVRCSkZMbEE?oc=5",
+        "domain": "bleepingcomputer",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T131754Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Critical Unpatched Vulnerabilities in Kaltura mwEmbed Expose Organizations to Remote Code Execution and File Read Attacks (CVE-2026-19912, CVE-2026-19913)",
+        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQWEc4ekN3Ump3VVB4WGxlOGVnSzJIX0RTaFlEZU5aRjdGcVhjTHBNQ0h2WlVUOElyaHNzM0QwMDQtbklxYXgwLVdadlhkeTloTFR5ODlyUGZyYmVwUGc2WUpDRmJDNS1vRlZSN05UMkYycjhVd1B3OHVmclpRVWRzTTZfLXFHTDZXU3RvUld5dHlTY2hOMjF2OWdJeXhENFZsYy1ab3RKckc2TEhvQlpzekdvby0tNUFrTnd5NGxVQmZJTFNRT1QyZTVuM3o5aC00WmdabUthckwzRjBrSjMzZldVYw?oc=5",
+        "domain": "rescana",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T143157Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Ransomware Hits 2026 Peak: Is Your Channel Ready for AI-Driven Attacks?",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUy1tMmFMbTY3NkNDZlhzdjRaY2pKQ1ZSdlh1WjBwbHRNSXdNTldxamdCdXEyamN4cVBIa3pyaGZ4SUtFVGl1Wmd3WklEZVpPNDkwclRyXzdOOTdXSTlGNzVTRURmTWstV1hGVGk3UFhmM3NfM1BzeENlSnotaDByQXMwOElRM3h2OU9JSDFoRy1hYkhndHo5TFNpdXEweGtfVTYzYUNJQQ?oc=5",
+        "domain": "thefuturumgroup",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T145730Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Ransomware attack volumes hit ‘high-water-mark’ in July",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcFVscUZyQkV4RkhYOVFNSmszU0lGQ2EwemFhdWhEdy11Y1ZzS2dGaDJLcXdDVzN0LXYxTU1uRTRBMm5OSW9ZRTBtOWp3ektkOHZzX1Y1SjFRQ2p2NUc1UlJsMVZyamtZRTl0T05VYk8tMzhEcGk2WlpZUFdVTHBQcTh4R3lkNHZaYWhkaVlrcGpDQThGLVBpMU5uQmxfZERx?oc=5",
         "domain": "computerweekly",
         "language": "",
         "tone": 0,
-        "seendate": "20260826T133000Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Critical Gitea vulnerability now exploited in the wild (CVE-2026-60004)",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQ0hOdEZQN1ZzWVJlRF9sRzltVm1laUxLZ0FmY3I4NUJIbmZibkMzRDh1b0huTndqZkUydzQtQjZ5eUtzOVQweFRlc3FscG56eW9SbHVYOXpoeTBhU2oyLXhzdUdhcUhfUVNacHZYaDlRRXltc1B3cEhGcFhQcy1FLVRkY29KdGVYemx1enF6bw?oc=5",
-        "domain": "helpnetsecurity",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260826T105958Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "CISA orders agencies to fix exploited Zimbra vulnerability",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQajNvZnpqdXlvVDh4M0dZWEVka2ZNYmNaMlR6bEVxczYzc0xuMVd4VXlhM0JaRUZ5VzJQR3hxWF9XYWVlLWdLU216dDlCYWlRcVhZTDNwV2hFSnVDLU0tLU5Qcm5pd05OSjZZRFl1dmoyd2JYRzU5Tzg4X0xfbG40ai1CQ2ZnS1At?oc=5",
-        "domain": "cybersecuritydive",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260825T154703Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Chrome 152 Patches Over 300 Vulnerabilities",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBFLTJqeXdHZXZVTXdzYndydjZvLWJzTDdPUkpsWjh0TGhoMnB2T0JJWWhETkJia0gzY1ZhbUxwMFYxZHRYV1g2elN2MHdGWHYxUUZsV3VFdGFEdFVBLURlZTlPdjFQVXB3WkJ0Vm1vX3JwUklDV28xM0lPZGZpUdIBgwFBVV95cUxOUXBMMG1VREJGY2xwUVpOM2o0NHNrUVZjRzFUVmNzRTBNUHlqUzRzaExENEZ4enlrMjR0UnZzRXo5cC1ZX3RiT2JUVDZSQzJrbloyS2pibkRDVHBMajFVckFjNHhnQnp6SU1sekJ5SS1XREVHOEY2R2ZUNjd1WnREQk5fWQ?oc=5",
-        "domain": "securityweek",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260826T095034Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Adobe and Nvidia Patch Dozens of Vulnerabilities",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORl9oNGlvZFhNQ29kSXRCSmJyeEI3R3I2RWhCeWpZaXFsRVljSlN1emExNENOc3BZemhZYmpaeFJjMHNwYmdBQ01sd1FWOVI5U0o4VFBhWW9zMjFRVHMybkJJWUNSU0hvUmpoUF9TS19ma2kwUGE1UTFxdHZEN3AtYVJNNHDSAYoBQVVfeXFMTTV3OFE1Ty1wMmowTzhXdlp3LTBrYTcxQmgyWHo4aW9nc2FITndwOGpJT3FEUGRscWlZYlRGTjJyeXJEdXQ4NDlrTXBxT2RRbVNhRVBSN1BqakN4YzZSaHVoOGFBQjlSb3dFbEdEcUFkRkZ3SGhHR2VwWnZjWGR5RDc5a0JWdFRPSTln?oc=5",
-        "domain": "securityweek",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260826T123938Z",
+        "seendate": "20260826T193121Z",
         "source": "GoogleNews"
       },
       {
@@ -206,201 +323,66 @@
         "source": "GoogleNews"
       },
       {
-        "title": "CISA: Over 100 Internet-Exposed Water Systems Targeted in July Cyberattacks",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQc01rYTQ2UnBLVjRubjd1NjVwWWQwancyTzM3RXhQNEJyeXNzSFl1d0czb2pEZ0diVU1udGRCbjBSTHMtb1c4R2xvLVRqbmVsd2ZEdGJOQ2s5YzJaV2JFdWRQekFKSjU1QVc1bVdOM040QXlpc0RKUWNYMW8zcEhzdmxibHd6eDlZZ3JHdGliNXFpVkVibUNlV3k1NmtudW5sYjYzNzlMUdIBrAFBVV95cUxPUUhnc05nYkxfYUdwWlFtb25GY0dLcUxtdEJFckYycmlGc0p6NHc4ckZJMWJZd29yRU5ZQlRpSUJJS1oxdDZVcEllcFR6MEpfMkJ3U2RsOXZIODktTW1DUHAzMDhIR1UxSTlzY2p6TWJoWHloRC0tTWwzWmdFbzFSYzI5TklOa0s0c2xKZEpsMW1IcGprblhjenY1WmlkdHNHeTZneDg0cmhMUXRJ?oc=5",
+        "title": "Kraków Archdiocese to review past, current cases of possible abuse of vulnerable adults",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNaVc2Q2x5Mm4tVkh1WHdZR0cxdnFvRThNaUhyY25pWFpOVWdqVlhnajFFc09DWkdGQTNobjI0azRoNlNZUGFTV0kxenUtdDdiUE1xUEFJWTN2eUJUZWRXZHlFcGFmSjNmRlZiYXhHTUNUb1Rndm9hTXZNMHhqOG5HZnRnODZXUUYwTnNlc1hKZjdYYjREa3c1WmNoYXFxcGpKcnpFZFIzT0pBN3hOTHZxSHltSlFoVmpaN3ZnVTRtb2xXb25sMXlj?oc=5",
+        "domain": "detroitcatholic",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T201500Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "The End of Assumed Privacy in Vulnerability Disclosure",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQaFc0MGRIaVNuWVc4WkNsejUwNjRGRnB0QU9VTjhSN1EwaDBKR1ZmSFpRbnBVa2lRcHRiclNqTkdnSVpSVUE5bE9KV2RuZUJhaloxbmhBeXRQY1BRbjAwM09lWnZDVU5ud2ZBcHdqU2pMTUtEYV91SUdhWnBGZ256N1pLakVqQTlhVWg2NWx3bkZUbFVWUXZ4TTlB?oc=5",
+        "domain": "cybersecurityinsiders",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T100710Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "CISA orders agencies to fix exploited Zimbra vulnerability",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQajNvZnpqdXlvVDh4M0dZWEVka2ZNYmNaMlR6bEVxczYzc0xuMVd4VXlhM0JaRUZ5VzJQR3hxWF9XYWVlLWdLU216dDlCYWlRcVhZTDNwV2hFSnVDLU0tLU5Qcm5pd05OSjZZRFl1dmoyd2JYRzU5Tzg4X0xfbG40ai1CQ2ZnS1At?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260825T154703Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "July was the worst month for ransomware victim claims in 2026 - or was it?",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPRnlybnpsZ1duRy1LTVN4aHMyWlBSZlU0LW5rbE41WVkwaFpXaU1ua0JmQi1lQzdwVkU2NVlJcjZIdDZWOVVnY0c0dy05WS02TzM4TmdyTGlTSVF2NGNhamVCZEZUUHNjTWQtTnlFb2JqcmVOMmphVjFuMTd0ZkY2dldVRjV2YUZSM3FxTWdKeTlFa3piZVlaSURB?oc=5",
+        "domain": "zdnet",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T150000Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Three 10.0 security flaws fixed across Ubiquiti’s UniFi line",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9SMmtBLUdubl9aUk15dWo2aFh6a2pvRzBnRXZGb2F0amRoa1NLZ0JXWVlUQlY5VF9jRk9icE9GRVlydzNLOEFBeWFrbFhYQ2NidkR6ZVlKUk1OWEFmSzBTTHVEYzl2OThiR2YyNEpmZ1NXYjRnVEk0YjRnbw?oc=5",
+        "domain": "cyberscoop",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T185203Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Critical Gitea vulnerability now exploited in the wild (CVE-2026-60004)",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQ0hOdEZQN1ZzWVJlRF9sRzltVm1laUxLZ0FmY3I4NUJIbmZibkMzRDh1b0huTndqZkUydzQtQjZ5eUtzOVQweFRlc3FscG56eW9SbHVYOXpoeTBhU2oyLXhzdUdhcUhfUVNacHZYaDlRRXltc1B3cEhGcFhQcy1FLVRkY29KdGVYemx1enF6bw?oc=5",
+        "domain": "helpnetsecurity",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T105958Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Adobe and Nvidia Patch Dozens of Vulnerabilities",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORl9oNGlvZFhNQ29kSXRCSmJyeEI3R3I2RWhCeWpZaXFsRVljSlN1emExNENOc3BZemhZYmpaeFJjMHNwYmdBQ01sd1FWOVI5U0o4VFBhWW9zMjFRVHMybkJJWUNSU0hvUmpoUF9TS19ma2kwUGE1UTFxdHZEN3AtYVJNNHDSAYoBQVVfeXFMTTV3OFE1Ty1wMmowTzhXdlp3LTBrYTcxQmgyWHo4aW9nc2FITndwOGpJT3FEUGRscWlZYlRGTjJyeXJEdXQ4NDlrTXBxT2RRbVNhRVBSN1BqakN4YzZSaHVoOGFBQjlSb3dFbEdEcUFkRkZ3SGhHR2VwWnZjWGR5RDc5a0JWdFRPSTln?oc=5",
         "domain": "securityweek",
         "language": "",
         "tone": 0,
-        "seendate": "20260826T112950Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Paylogix TPA data breach puts benefits brokers on notice",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNTzlMVlh6VXlMRXJuQjNkNkNhbU5icWl3Y29IOVVlM2NWQ0s1cHYyaUJvUkhvbkJhUU1zMDBCeUJMZzRWMFVIcFl3MFE3QVY5NERHc2FWcENBOHpMcnZlV1gwdTZUS1MtOE9ZU2dnZTRwWVpMdnF0dXAtXzdRb2t4WW5zb0lMMzV6RlN6cWo4dFFjbE5ubFN0RHJwSzdUQ1FYUmdXdkc0dHBtdzNydFdJQTl4NmFGSFFhQS1CeDhLdw?oc=5",
-        "domain": "insurancebusiness",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260826T100843Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "CISA and the FBI Are Sounding the Alarm on Ransomware",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPOWxEOXczUW9Tb2VvLUJyYy1UcDFCWnBLcmhjcDd0RGQ3aXQ1Xy11bzVkUnVqc0M1LXlzV2pOSEQ3ZE8zcWJ0TlBuaDliSVdzeDFGb3VRN3BDc0JPYjN3MTFVNEluZDZ3WTFHckhuamdGM2pKVXppTTBDQjVsTjNmanZmNA?oc=5",
-        "domain": "thenationalinterest",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260825T210103Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "AnMed CEO: Cyberattack ‘attack on all of us’ |",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNNUhkNlhBQ0JLWGNndWc4ZzY2NEFNd2FlRzhNaktEM25HSHR0NjFsbVY5enRtS1hmMUUxQk5PUzZPN2JFaFJMUlBRX0YwZWwxejBhX000SVdaYk85YkRMT3I5eDZPalR3TlItSTVNamZOVDcxUmhBdTAtZDN0X2swaVRB?oc=5",
-        "domain": "pickenscountycouriernewspaper",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260826T085942Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Google Chrome Multiple Vulnerabilities",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRjJqcmtfVG1SMmxEbzctdzF5MkUwcUIwUl9MQXo3V3U0QV9zbFRHQ0pEclVXZU5qNDFpa21CeGplNXBKMlpQaG9wZDJBWGpzU0w3MTBNQktHZnN2WHRNUUJTUkVWMVZPZlYweU5wbXc4UDlJNHRwNzRxbHpkOTA4UUNiMUxtN2NiNkVDRWlSX2MyQQ?oc=5",
-        "domain": "hongkongcomputeremergencyresponseteamcoordinationcentre",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260826T020052Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Actively Exploited Oracle WebLogic Flaw Lets Unauthenticated Attackers Access Critical Data",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWkluVlh3YUlpYk1jTmNwYzBZVjlwdFRvZ1htMkEzdjRSS21EdFVJWDNKWERFNUJrOFBrS3VKZDlBVWU1b1c1UjAyMl9ieWNFdHdqVEpJN3Y5MW9JYld0Z3lDNmR5dGhOZFJmZy1taVBHVXZKZ29UUDVoU2gxazNXMFN1Slc?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260825T061200Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Unpatched Kaltura mwEmbed Flaws Could Let Remote Attackers Read Files and Run Code",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQLUY5dGg3emhCLTZqTDJBdmRzWnVGU3EzdzdTYUF3QWJNcmE3QjFPMjA2Nm0yZ1RXaWxRWFdGV2taNWxWbHBPMTJ0dDJMdnR5T0xTeVVZQmJhSjc5a1l0ckdaOHJtNWlOTkNzVFlnYy13M2hsSFZaT0I4U3BHZXFPWkZR?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260826T115500Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Boston Scientific Shares Fall After Cyberattack Disrupts Global Operations",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOX2hic3luTU1Qc3lJdE1hcDdQWXBxRTlmQ0Q3dXJ3NjZLNGc0SmlrTVRKb3B6VFJRb0kxX3pacjFiYTBaT2VGZzJqZ3EtWm1keVlMWGdTY1pmelpFR21jYUdKRnhPWGtSVzBGNGFqNFkyNmY3M2FRQTJSRDEwaW9janRLQkEwckl2bHhiaWh3YjZ1VnAxUWNqalBOSTl4c3JsUkxmWWJFYkdEUVJPMFgwWk5jRQ?oc=5",
-        "domain": "citybiz",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260826T133310Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "US water sector supplier hack draws FBI scrutiny as Iran-linked cyber concerns grow",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBkTkUzT2hLa1lQbG05Zk1rS0p4RjhwR291N2dITDExZW80T29ILXR6ZWhNRE5zbEhBcDVta0o2ZTZBTlhIZlZad1RyZVA1NG9uRlBtTXN1T01CZTZiaEFsNGJsSkZscWtBWHc?oc=5",
-        "domain": "thejerusalempost",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260826T111603Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Boston Scientific hit by cyberattack disrupting operations and shipments, shares fall 3.5%.",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWFBTS2s3b19EWmhBNlRPc0pVOElkNFJPM0s0RjM3MHB1QnpqTXVFcXppa09FWVFZYWEwYy1oSy15SVo5WHU4WkxyNUtQTFhONXZtczBaaG9qQ0NiTVRaQ19SUC1jZlZXOE1idTZSUVpacDlqZTI2WmNhandfbWNjQnROSk9ZSmRoWDBoemt3?oc=5",
-        "domain": "pluang",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260826T122118Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Oracle Proxy Flaw CVE-2026-21962 Fueled China-Linked Attacks on 100+ Governments",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNY1Y1Q0JYMkhsLTJ4M0hMbXp2Y2JCODV0Q3liUV9NRkZTSFpfa3c2Mnpla2tiYTFsV2JnYWcxeU9UMzdYcUF2eWhfMDJldW1yTW9xcU9MVEFkbWFPWklPV1ZSaUw4MDlPR2V4Qm5LT2VUVWNpUUJybTllTGFCYjdSbm52OG9iRmdLU3FGU0wxd0dicGZ1dVhRS2QwdmdRUHNDWmltNGZmcFRiVHZNbmIyeGVJcGt5RUR1VmQxVXlEcUFqVWFxY3N1MF9LWQ?oc=5",
-        "domain": "techtimes",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260826T121332Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Critical Keycloak Password Reset Flaw Could Let Unauthenticated Attackers Take Over Any Account",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQY0t0Y1FyNmZXZ3pBTDNDWUE5Q1pYZUJsQTczdEplWVVHRUwtdjJFU19KN2FPZ1pGWjZqNUk1OFhDUFBxS1JKQlVuZDl3WjV5elJqbUE5eXAyT3BNZWRCX3B2bkNYNGxlNG9HUzRvZTlldURVN2N1eEo2THhDakdLU093?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260824T115600Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Cenovus Energy (TSX:CVE) Pulls Back Following Growth Project Optimism And An Undervalued View",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUUpSeW9NNlZHT1o0NF9iMzlmb0xKb1RzN3pPZUVBMTVSN09MN1lnMVVIak91WG9GUEk0bnliZ2tMS3kzVlU4dFVQSTF5S0h5NFNKZUFOQkZmaHltbVJ0YW5kbGtvNkg0RE54ajByazJBTjZWSTE4WFJVMnpEQlZuS1JUTDZ4WGJDZGlYeXVB?oc=5",
-        "domain": "yahoofinance",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260826T091110Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Small UK power generator shut down after cyberattack linked to Iran: Telegraph",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQnBUcS0zZUl2QWczcnpTMXNuXy1ILUpSVjYwOERCWXR2XzVvYW04QXd4TVY2VVRaeXBaN1ZXbTFXRFp3RWRJOFBmLTJudllud3dBSl9RcERqbnR1dTZYU09JV2xvcDRmWThIUlgtOTRsQ3VRdEF4aFQ4c2h4MEpQazNMVzdZLVN3YnBqbVVsTnVKVkVSMXFBMjBpNGRibm9oQjdaRHI2WdIBrAFBVV95cUxNZy11ZUJUWVFzQWt6V3pZX2loS0k0OGt3QlRJWWV5VVFucGZkTThHYXkyZ2hSeHQycmYtTHhySzg5QXRkN0tyaUhzUFU0VEhJUHR5amZrX1RqWkJPLU9wVk85UHBFNmFVRVE5X1B2OWNqcHhUc3k1NkFLd1pLSmxQMEt4OFZkY2IzZlBPQ1pjWEc1OTZLUXYyOXpoNDVaeENBbmZHTldQUGRsM3Y0?oc=5",
-        "domain": "cnbc",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260823T113552Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "GitLab CVE-2026-19478 Comes Under Active Exploitation Within Days of Disclosure",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA2TzhyTnl6QWhhWUhJTGJCajZqV3g5ekcyeU81LWpqRjdybVpLRkY0SS1GbzdHVTQxZ0xOQ3JoRnVUYXpmT0l1Tk90cl8yaTVkVzVQSTJUVXIyTkFVbDloNnN2bk5pVXpMMXNOaC1XOXFVS2E0WndEaWhUX2M?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260821T070400Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Attackers Target miniOrange SAML Flaws That Can Grant WordPress Admin Access",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQWTJ5aTlHdy1rb3c4bGNWc2h6SXFhX0JGR1BLQWRUOE9HemxDVU1BNlRLdmk2VHJVei0zQWRBcGk5RVpBOTJ6QUs3V0hLdEhWXzRhUVQtcG5qUmlUMDRMUE9IWnh2Wkhad25OX1g0alU4Y21HanlRODB2dVdUdy1iRGxTNA?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260825T083400Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Vulnerability to wildfire smoke is in our genes, thanks to an evolutionary quirk",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPT28zUUJ5QzFCTWJGNi1tRU9ncUJLdHN3N1U3S1AycXRwWFMybjF0NTlsdm1PY0pycVQ4aVhRa1lFN08yaTNZU2kwaWU3SUlLbFF5ZzN6Rk8tUlRtSDNTZE9qRGF5MVp5aE80QUVoVTh3R3NhWFByajEtTUJrcmdSWnFxZG5MYmZaNkktSzhkbVZoWWhwY0hvXzFEOEs1QkdTMUZJczZIZlFnQnI4alNrTkJDRW4?oc=5",
-        "domain": "theconversation",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260825T185956Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Orientation’s ‘I Am U.Va.’ brings vulnerability and connectedness",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQXlrYmZ6ZWJHM3pJUlpEN2FkNlcweDUtSHRRaC02Q1dUaUoyWFVneFVLSVQzRFBVRkRxQ3dQWkdrOWV3ZnVhRkpWTE5GSklnYTZVY1hDQUtaT1plNHRxa2NucWJlalViQTNxVm5aTVNxOThVakwzYU1WR1VXLUo1NmpLYzN1UGNyR2tPbjFUNXUyQkU2allHRTc1SlhYQ3NyNF90RGFRNkphUQ?oc=5",
-        "domain": "thecavalierdaily",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260825T223658Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "CISA slaps its tightest three-day patching deadline on perfect-10 Oracle flaw",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPdE9tNnpLQVJsbDNISnVTcTNJUGp5NEp4NXlfb2V4RDU1UDNrTmgzazBPZk42cHE0U3hlSWxaTmNzdjM5WFBYbmg0SHlVaGpPUFFiZGpETHpNN3RjODQzYk93b1ZOZTFKOUJJbWdWUGhWZ1Fia094a0J1eVN1Q0V0MlU1RG53czVEcEVHbU1DRU1DYzdLLUdsbTd4V0s3cFVac0t4cG5nU1Y1cG1Ham11M1l0eGo4WHlJeWtrejZOeTNWTXp0b09YYlBnUkFSQQ?oc=5",
-        "domain": "theregister",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260825T104300Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Vulnerability & Exploit Database",
-        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5QVDhTUS14eUNIWDVVZmt4LV8yMTZRMFFuWVJMYzhSRG04YUtTV29UeXB2UmdZWmtDVWRlX25KcWNnRmhNbTlTZ2RB?oc=5",
-        "domain": "rapid7",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260824T102252Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Shabana Amzi on Her Career, Vulnerability, and \"Batwara 1947\"",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBRbmFvdm9CMWE1ZTg1dzNMQnZ0eURrRzk2R292OHpQckk3TThDVDV4bjBuelZFQXBJZVpPRVhTY2tBY2Z5Mk9DdW9ZNTFNQUpRSERDc3RlNlB5LTlWd3FUMjVsYTd0TDY1REwyajdWVXlJWGV6dW8teGRPVzhoUQ?oc=5",
-        "domain": "rogerebert",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260826T130000Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Chicago FBI warns of threat of new ransomware attacks, using software like Gunra from Russia",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTW1DMzFSTHN6dVJLUGtvdm8wYXNaM2lGVzRidF96NzQtbGtYQU9wTXFwTTZ3TDFkakQxclppQlYyN3JETmZWYTVxZnM2aXhocEktSG5NY25WZEdld05xdUNGR3hPZFlENmFLUW9HR1JTVGhmMC1iTHF4Rlg3NGlvWG1wV3NXT1VCMDFmbFJwU1RKVm0xZWpJdjgtVEt6RU5wLXB6YzNGQThiNm9jM3hHTWhoS0pnV1BZUENv0gHAAUFVX3lxTE5rb2lKSHZVdWkyYURtU3lWZmNxRW85SW50RGF0V09PUmpPUDBEUUNsb2EzcnVwOXZLb1h1LVZBR043UzdPdHRnbEdxb3o4NUJ6RmczWHJseHp0dlhWeHpHQ2lFYkEyMVloUlpLVms1ejZobTd3VkxqYllJamVtUWIxaVVkU0tyMlVCVEE5Qnh6b1U1T2pFN1dfdngtaFdEZ2FvaDNLbjhucE93amVTUmJfVzFQOHkxV2poeVJvd3BidQ?oc=5",
-        "domain": "abc7chicago",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260822T000039Z",
+        "seendate": "20260826T123938Z",
         "source": "GoogleNews"
       },
       {
@@ -413,75 +395,93 @@
         "source": "GoogleNews"
       },
       {
-        "title": "The Vulnerability Gap: Why Discovery Is Outrunning Repair",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbk5CS0pLU18weWRJTVlFY1BveFFOV3ZDNlhQQi1rR1h1UFZ1U0FYRzBrd3VINkRpOHd1TjdVLWdueVl5V3c0alFUdG03NnBuUG5XVlZWdE85M0ljdk1oNnFUNXB1Uk9SLUdjOUNyaExtY2s4eWw5ZnVqRWlkUzFDVUNRa3J6YjZfQ2tYc0ZHVFFlcV9PdDZhdjBTb09kcG5OZXE3SVY0cDY?oc=5",
-        "domain": "darkreading",
+        "title": "Actively Exploited Oracle WebLogic Flaw Lets Unauthenticated Attackers Access Critical Data",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWkluVlh3YUlpYk1jTmNwYzBZVjlwdFRvZ1htMkEzdjRSS21EdFVJWDNKWERFNUJrOFBrS3VKZDlBVWU1b1c1UjAyMl9ieWNFdHdqVEpJN3Y5MW9JYld0Z3lDNmR5dGhOZFJmZy1taVBHVXZKZ29UUDVoU2gxazNXMFN1Slc?oc=5",
+        "domain": "thehackernews",
         "language": "",
         "tone": 0,
-        "seendate": "20260824T170015Z",
+        "seendate": "20260825T061200Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Mapping Iran’s Cyberattack on American Water Infrastructure | CSIS",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZm9TSnYwd0ZDNjVwZU9HbUxlZzRkalJYb2JmOWh3NHA3TVRUQ0pBN0NySXFfZEYyUk5VYURwc2N6bUQ2aFl1cXlIT09zR1pmMkhYU0hFOFpOUDJodFUxTzFvME5EZXNCMVJ4Mzd3bWx4dGs2RzlOZU8xMnpBMWZuM18zd29mYkFNcFZRcmNKaUQ1UVJaZmdmVXA2NDZDSDZRdTQ5bTAtNA?oc=5",
-        "domain": "smallwarsjournal",
+        "title": "Ransomware surges as criminals deploy AI tools",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPXzlpVlhwQ1RoTkRvNWQycTV0N0FpVDJmUkRFY1B2RjJRckh3M25Hd1M2UG1UbmZqaS1YTGVnNElNcklkbGlfMmFldGFYYmZJZnZQSkhITVViSEc1RUV5TUdZLVJZWXNheVdjaDB3RW1IRnl5LVduNmhLQ3daMUZtOGNFTnNTcndSTkotaXduS1VMaVJheG1XeFdDMHl5ZVZkVFRtdXFR?oc=5",
+        "domain": "computerweekly",
         "language": "",
         "tone": 0,
-        "seendate": "20260824T164223Z",
+        "seendate": "20260826T133404Z",
         "source": "GoogleNews"
       },
       {
-        "title": "How to Protect Against Ransomware: 13 Steps, 100 Min [2026]",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ydnUxeHRSMFFHTTY0NHhnbTRyR2VfbWt0YXlZbk42SE5vWVpmQmw3cUJtaHk5NW1Db1FoSXVSRk9PTGNSWU82RktNbUNaVUs2UWVtWFQ1OVc5N19LUzBQRnhrNmJUQlFSTkpuak1sdUhFdw?oc=5",
-        "domain": "tech-insider.org",
+        "title": "Chrome 152 Patches Over 300 Vulnerabilities",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBFLTJqeXdHZXZVTXdzYndydjZvLWJzTDdPUkpsWjh0TGhoMnB2T0JJWWhETkJia0gzY1ZhbUxwMFYxZHRYV1g2elN2MHdGWHYxUUZsV3VFdGFEdFVBLURlZTlPdjFQVXB3WkJ0Vm1vX3JwUklDV28xM0lPZGZpUdIBgwFBVV95cUxOUXBMMG1VREJGY2xwUVpOM2o0NHNrUVZjRzFUVmNzRTBNUHlqUzRzaExENEZ4enlrMjR0UnZzRXo5cC1ZX3RiT2JUVDZSQzJrbloyS2pibkRDVHBMajFVckFjNHhnQnp6SU1sekJ5SS1XREVHOEY2R2ZUNjd1WnREQk5fWQ?oc=5",
+        "domain": "securityweek",
         "language": "",
         "tone": 0,
-        "seendate": "20260825T201031Z",
+        "seendate": "20260826T095034Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Norway Cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcHNCZmtxQVRrQXBTNWU4ZmE2VzZWN0F6ZWJyc1p2UkZONXFjMlVNMDR5Yi1Jc2dSNkJURjVmeU1pcHZiNGFxVW1YR3VIUHFTVWJYYnFzZGgxLXp1SlFUTlZwbFh5SDVET3pFeElGVXFvZXltdVRGUHFGOXg1cTBRTzYzVng3NlhNbG40QnF0VkdRdWl5bUhpZFE1cjF0dWZGLThhSklXUVQyYjZHaEJz?oc=5",
-        "domain": "timesdaily.com",
+        "title": "CISA: Over 100 Internet-Exposed Water Systems Targeted in July Cyberattacks",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQc01rYTQ2UnBLVjRubjd1NjVwWWQwancyTzM3RXhQNEJyeXNzSFl1d0czb2pEZ0diVU1udGRCbjBSTHMtb1c4R2xvLVRqbmVsd2ZEdGJOQ2s5YzJaV2JFdWRQekFKSjU1QVc1bVdOM040QXlpc0RKUWNYMW8zcEhzdmxibHd6eDlZZ3JHdGliNXFpVkVibUNlV3k1NmtudW5sYjYzNzlMUdIBrAFBVV95cUxPUUhnc05nYkxfYUdwWlFtb25GY0dLcUxtdEJFckYycmlGc0p6NHc4ckZJMWJZd29yRU5ZQlRpSUJJS1oxdDZVcEllcFR6MEpfMkJ3U2RsOXZIODktTW1DUHAzMDhIR1UxSTlzY2p6TWJoWHloRC0tTWwzWmdFbzFSYzI5TklOa0s0c2xKZEpsMW1IcGprblhjenY1WmlkdHNHeTZneDg0cmhMUXRJ?oc=5",
+        "domain": "securityweek",
         "language": "",
         "tone": 0,
-        "seendate": "20260826T105249Z",
+        "seendate": "20260826T112950Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Pro-Russian hackers claim responsibility for cyberattacks on Norway over support for Ukraine",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1WTnQ2Nm1Bd2Z3U1hiaE12a3p6VnZtNkpWOUFnM0xtV0hybGcwNS1VMU1NWlhFYmdUT3JiMVFnMzFDQWUtcXVRaG92SWxhYllMcGp2TWdndWhSTTJ1ajJsZUUwaGPSAXBBVV95cUxOdkpoNkFfMEtVcmFFT0oyQXJ4bV9lVVA3LU1yRlZQb0hBT0h5TFN1ZU5YM1d2Zk9YRmNVTnFod0lSejdUUW5UNHk1d1ZVRWhJUzJjR0dpT1VoWUhBMzl4eGZKcXVGMGczdU8wakhwekFP?oc=5",
-        "domain": "news.google.com",
+        "title": "AISLE Receives Expanded CVE Authority for Third-Party Vulnerabilities",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdGJRdFFGR0RTUldrLU1scV9BRFZrenZoNHRVcGltLW1rek9ERmpXeWZ4NW5uNmpIQmpfVmN0WVBncjlkd3p0Ujh1ZFY3M2FndDcxeEpvTTcxWkN1VF9BWVc1bkVlRm5CbzRQT0N2R2dBLUZRV3JKbHBPbUZVWUl5WkgzSGRTdmNSb3dLZFlJcXhfWEJ1TDlEWWUyVWR0bkl5WE1uQUNodjRwODEz?oc=5",
+        "domain": "citybiz",
         "language": "",
         "tone": 0,
-        "seendate": "20260826T094300Z",
+        "seendate": "20260826T130246Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Iran-linked hackers behind cyber attack that shut down power plant, reports say",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1peUdwV1h1Vno2SUg3ZjU5Vmc0bVhrUjd2UEVnMXYzNDlXRzd6RWtnODBLOWVSQXNZT0UyR29UMVFONHJvbi15Tl9WaHphRzl5a1praU9VODZzUQ?oc=5",
-        "domain": "bbc",
+        "title": "Boston Scientific Targeted in Cyberattack",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPb1k3ZS1PVGRnRHA2RWMyNEhoR3U0U3JVa0hSZTFGTjNQYlJmV0dBbi1OU1A5YUw5LXNrTFZIM01jMlRwQnBaRGV6Wm5LangwZXA0a05fQ2NLeWwzVW9PNHF5WE5NeEQ4a1p3dGhLYkV2a25xTU1TSzZDb3VjMk9QNUpzX0hYblU?oc=5",
+        "domain": "medicalproductoutsourcing",
         "language": "",
         "tone": 0,
-        "seendate": "20260823T024841Z",
+        "seendate": "20260826T145214Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Apple Quietly Fixes iCloud Private Relay Vulnerability in iOS 26.6.1",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPc1U3WEcyOFBHYVE3LWU2NGJfd3hyaTdVdTk1LXVVU1NDa2todWM4U2NiSk1HR1FHcEQxRFRJM0Q3LUh6clZObFdZSG1FalFnRXZkaUlEb2FvNkRZZ3NQWFJtYmFTSTQ5bzdwSDBfSGxHTVhSLWtCWUtwOTdiTUwxN2xMenFMY0ctVTVTMnBRa29ZbDFUYXRTRzVBaFRIcU9CS2cxSFhPU084RS1kQzEyejBQakpaLTNC?oc=5",
-        "domain": "cnet",
+        "title": "US says Chinese hackers broke into DOJ, NASA, Federal Reserve, Senate",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVmRMNE4zQ0hPREwwa0UxMnJsVWdDU3ZMb3E0Z0JHMTFRek1EVjBfbzBycmg3VEY5cm1CSE5rLWpFTXZKTHRtREVLUXBPcXVZMDdfRW9ScUVnTVdMWXpwb3ZHNGdoN1FZQ25HRW5mb3hYbTlwWmUwV0lZcDl1TU1hdHA2S0YyVEMyNUZ1eWNwdG5Zb1kxZDhNTG1JVWFyTk4zNFdsdWZwYVhPaEVWYlo4?oc=5",
+        "domain": "usatoday",
         "language": "",
         "tone": 0,
-        "seendate": "20260825T182405Z",
+        "seendate": "20260826T182800Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Norway Cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbzV1UUJyRzRJQmNxZnJLTVg5Z3pxckFxYnJ3dmpYS0xVVVV1SHFBdHI3eWJjYUhLWGVWM0VqYjZWYWNFZmU0UU1BSlExSFVMSFpjLXhpM3AybFp0Rmp2T3RsUjM5THpteFgtcS1pcjNLemlHUlVnN2pWY0FOcmdvTjd0bkwwLVl6SXc5UFE1MWtPNTVLRmF1QUxQSQ?oc=5",
-        "domain": "theheraldjournal",
+        "title": "Medical device maker with location in Owen Co. hit by cyberattack",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNN1BrM1I3bl9PYWlyUEVBX1FKalV2UUtCYndmZklEQWlaYWR1YVIySE9ZVGRaUWpPcl8ySzJ3dWpINXJRUlBJU3Rxb0lkRUctbk5wZ3Z5Z1Jpd29rNXZEWjFBdy1iaThDeXEzM1AyT1l1MnhfY3Y3Vk1qY2dJT21zaERtSWdSZ0xYY2ozQkhUSEZBb3BNUkFadWJMSjVCdw?oc=5",
+        "domain": "102.7wbow",
         "language": "",
         "tone": 0,
-        "seendate": "20260826T105249Z",
+        "seendate": "20260826T192336Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Boston Scientific hit by cyberattack. Stock fell Wednesday",
+        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQVUxHc2hlSWV3djRJTDhKMFIwdTVCZmx5V1hmOG1jMnBmd2s5SlB0OVRoVG1hZlpWNE9ubzFCQ2ZKZ3VZM1RJdGNibUEyaG1YUHJHWkFyTDdRNHB3bVBVTzdHN0VJYnpkQ2Z5QXlLaGhGdVd0aEswOTJxX29KRjI5ckxvMmxqZGl2Y0ZsTktNUFQxVWx5QlBhOTVlQVBYaFdMZFFJTlVDcG83Z3NhY2YtLUY4WHdMOHVCSl9HWnNuYVJ0d2ktRHZZektWMDRqZGVaSk5OeWk5SHRDLUV0SzJERFh2WjkwWlU?oc=5",
+        "domain": "theworcestertelegramgazette",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T164200Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "WordPress Plugin Vulnerability Exposes 100,000 Sites to Complete Site Takeover Attacks",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVlBodmtpSVdvRk1sb3dyX3VSUEtGX0dfYkg4dzBSMlhzdHdXN1dJVFg2TVFPaGFFdDdCc2I1UFU5V3BJUGhneVhXTTlBZmpOMXN1QWhYaWFFZThQcnNvRnhGWXNCY2RKVFZLdlQyeWNkVzdtSzZBS2xYTVBRNy1nMW02ejVrWkV6ZUhvbmJCdG1DZVZkX3JoUmpFNEcyZnp3TnE5QWtGTE9xQ0hLSWVhM3VFelJIX18tc2w4a3M4T2Z1UQ?oc=5",
+        "domain": "securityboulevard",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260826T184022Z",
         "source": "GoogleNews"
       }
     ],
@@ -571,21 +571,66 @@
   "entities": [],
   "events": [
     {
+      "title": "Boston Scientific says cyberattack disrupted order processing, shipping",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSjRDR0FuNUNXcmx1NDZIRktNdjdpdUV6R2lfeWU3bEFpYmFwZGlubEdQMG9PNUNrYV9LVU9jQ1hpc1dhVU1YZ3VsdERjTlRNT1lFX3QtVEFpdEdDVVhxQk5UOXlTNFlUdmxUc0JBS29aVEdNVG91RWl5UkExcjJPeENsQlMtLWJJM0JiOEJPY1BUR1UwYTdObzZmcWZQc3FDWGl2WGxpc05IMlEyNnNNc1d3?oc=5",
+      "domain": "cybersecuritydive",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260826T150430Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "Boston Scientific says a cyberattack is disrupting its global operations",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeExjN0J5bWQ4ekdYRjlvMVpmRkNyZE50S0FZZG1JQWxhZVd3eHdyM1NqY0JVRUVVQkozUHA0STY3WVNwd1NPakRIU3JWSjlwRTZCQnpPYWZqMmM1c1VwV1dlS3pRWnZMcDdOeHpzdmdaRnRjTUNZS1RtVzU4YkdvWDRDVTBmejFCT25OZGVUNA?oc=5",
+      "domain": "cbsnews",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260826T141854Z",
+      "source": "GoogleNews"
+    },
+    {
       "title": "Boston Scientific hit by cyberattack, global operations affected",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTFFMWThLS3BjbEN0SkJwaVNoRjBDS2VwSFJrRFpGNmZLV0U3Zm5tV2NWbXpaZkRGMURZbUpHbVdRYnNvU3lMMmUtLTFoRE84QWJZYUROWVYyOWtITlFEdVRFLXJTVHlRS3RXNVlYWmlWSF82T0JQZGhLOExkNXMzTmM0Zlh4QzNXSlFZb3VvLWxsb3hfbFFicElYTWdMVXI0QlNOTmpBUFNxREhBZk5faGY1aVh0M0k?oc=5",
       "domain": "reuters",
       "language": "",
       "tone": 0,
-      "seendate": "20260826T104943Z",
+      "seendate": "20260826T150028Z",
       "source": "GoogleNews"
     },
     {
-      "title": "Boston Scientific hit by cyberattack causing ‘disruptions’ to parts of its business",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUFhka2pKTF9HSG5NU1huWFR1NloyejgxOGdXUVE1VVpBUkNQM185SFBNUU5YSjJMZ1FINjZtRjU4MmlIbXd4Y3dfcXZLQW55M05oTTZCRVVCbE1BZklDVUVUemYtY2pCaHU0ai1DMEFINkY1QWJPbTEyYmxoUkVZNmR2VGo3bFd4ZHFMa2dnSGJ0YlFiZVBwY3VLNVZIa0d1bTVTQTgydld2cE9LMmJJ?oc=5",
-      "domain": "fiercebiotech",
+      "title": "Boston Scientific Stock Price Drops After Cyberattack Triggers Global Outage",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZmdWWEtYOThlOXVNcThLcW9GSFFZaWRoOFc3azlHUUtDek5uaEpac1N2Xzc4cUNFdjY0eXhVM3F0a29qWm9vanpNQURqNV95TDd1ekYwaFRqRlJHanh6MmtVc0NCWjAxQTU0Sml4ZUJuMmpWUUdvQUQwM1hWaXZoMWQzOEhhaWxxOEJ5cnB6RUxhQmQxUElvQmN6bGlQUHhYNGJRWXN5MlU0eWpWSGNmMmhWbVdDWHFaS1FremVLNzQ?oc=5",
+      "domain": "wsj",
       "language": "",
       "tone": 0,
-      "seendate": "20260826T112602Z",
+      "seendate": "20260826T182400Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "Cyberattack Disrupts Boston Scientific’s Operations: 7 Things to Know",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1IaTFXT3o1M19iUW5zcDl1eU5jZThsUktpWm5CNkxxR2ZRaUEwcnNiemZzTG9tMGlVQVgxenpEdEJHM3pDVW1CNkhDTnhTYTZneHNmeUlmOGVGYXBHOFRzMDktcFZSM0pRcElwcVlEMA?oc=5",
+      "domain": "medcitynews",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260826T190959Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "Medical device maker Boston Scientific says a cyberattack is causing a 'global disruption' to its operations",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOdFlsanVTQjhnamN3YTM2Slh3WWM3SUJpQ0JaWV9fU192NWgxTGltbTJ1aXF6Y3ZyaEZEcm43Qm5zcmRETWFLZWVFODN6Q3BTZ3pKSzBLazI4c296d0FnbkZWVU4yQmx3bTJxak9ZOTFQcTZOLU05cjdfekNtVUF1UnlnWFA0eEoxR0tUZ2ExVVo2RTJmdEJhNG1ZYnNQSFZXSGlXZmFVYmhuNXctY3RubEFydXNicDVqcndWRUE3MHlsTVpJcEpBSEV1LXpXV2xQWWpaWVl3bzM?oc=5",
+      "domain": "techcrunch",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260826T182309Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "Pro-Russian hackers claim responsibility for major cyberattack on Norway's public digital services",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOekYtZzlOUHZBZzJ5RXhHemgwSmd6MGxmY2wxSzBzcHI0N2lNNk5Nak1xZzdjS0h6VjIzZEU3cDJIQzZ2dG5GaEFZNHRhTWRPUUFEQWcweGlQcjBuWVFCQ1RNUmJ5Q1FkRm9oYXhzT3Q0N3Rzc3pWa01mOEpyZzh6OC1Sb1FGYzREaFBCSTJ3X1doTE1ITDVZaUFKTzZvNTF0MmZzdjFhT1I5djFRcUtFR3NKVzE?oc=5",
+      "domain": "apnews",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260826T163500Z",
       "source": "GoogleNews"
     },
     {
@@ -598,39 +643,57 @@
       "source": "GoogleNews"
     },
     {
-      "title": "CISA Warns of Exploited Gitea Vulnerability",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBwWExwTEtRdDRsMVBrWVdVS19TQzhmcFdFd2FCZjlyUnhlenlHYjZMWmYzNkFWSDlOeERaMm9kZk85RDVhUjVTb0dyNzduUWFqRjdvdEdwdXU3Y0p5WmczcTdONHA2V3pjNzZWVDF0Q3BpNkp2Y1I0ZjFvY2xHZ9IBgwFBVV95cUxPSjNqZHYzUkRFV3VqdjA5dWNROFhmb2ljMGxibGtWU0NRUHdPaFpMQW1mdVJlQm1BelNHdDByRXhiY043MUZBQjJ5M1ZVTjZKa1RxNzZ5SnJZVll2bGc0UXVaV1p4cjEwbHF6SUw1M0FUNGtLYlBHdmxOYlNNaUVFd1d0dw?oc=5",
-      "domain": "securityweek",
+      "title": "Boston Scientific hit by cyberattack causing ‘disruptions’ to parts of its business",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUFhka2pKTF9HSG5NU1huWFR1NloyejgxOGdXUVE1VVpBUkNQM185SFBNUU5YSjJMZ1FINjZtRjU4MmlIbXd4Y3dfcXZLQW55M05oTTZCRVVCbE1BZklDVUVUemYtY2pCaHU0ai1DMEFINkY1QWJPbTEyYmxoUkVZNmR2VGo3bFd4ZHFMa2dnSGJ0YlFiZVBwY3VLNVZIa0d1bTVTQTgydld2cE9LMmJJ?oc=5",
+      "domain": "fiercebiotech",
       "language": "",
       "tone": 0,
-      "seendate": "20260826T051728Z",
+      "seendate": "20260826T112602Z",
       "source": "GoogleNews"
     },
     {
-      "title": "UK power facility disabled for days after suspected state-linked cyberattack",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPTElLeFpwNG03Q0p5Y2pudzItdGFuS3Awb0thUHU5Y2ZVN21hQ3NpTV9MRFZHMmJycHUyY3dKVW52dmF5eUZCb194ZXZjQVFaSHNSVm1PdUVySnIzYlVqNHdRNGJSNkMxTERVZFhWX2R2bFZwQnRmaHpJX055QXdWUHExM2U5RUhwcUkwYzdUR1c0SDk2?oc=5",
-      "domain": "cybersecuritydive",
+      "title": "Boston Scientific discloses 'global disruption' in ongoing cyberattack",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOeDFVc2JSWGlHZDY3cWhKWllld2RWSUpxSmR1bDdQSFUtalZmcnBBLS1POE5RQ1RnazhWOVhUanl1cFBEbjJ1ZFh6WXB3OGlDeTYycUNoNm52ZkJfMjNDQXZHaEhwQWFkbElhZ0hPZjJfbkdjblNsZHRYemQtS3JRVWxaZnpPLTRHX0FuclE4RXhyVFVMdGlmLXcxazUtWGpjMzMxeDFMa0MxX3VGSUJtZktuOVZEN0tpdmlTRGJibkN2UQ?oc=5",
+      "domain": "theregister",
       "language": "",
       "tone": 0,
-      "seendate": "20260824T154652Z",
+      "seendate": "20260826T154400Z",
       "source": "GoogleNews"
     },
     {
-      "title": "Critical Gitea RCE Actively Exploited as Reported Attack Drops Miner-Like Payload",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOa1VvbERhSERYYjQtQzZnMEVfVjkwcFQtNVh1c3ZCU244a1FnWWthcTBidlp1MGFseFVraWpxOWlfN0NHdTlCa285QnBzTkxHVzFsYWo5QmNMdFB2NUNaT25wc3pHUDFZcV9qdE5pdWdYM3F3M3EzOWNHYkJ5clFwSXdn?oc=5",
-      "domain": "thehackernews",
+      "title": "Boston Scientific’s ordering, shipping disrupted in cyberattack",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ3Z5U3FjQmlybGpFTnhlell5djBiNlE2RjFLZllNME1UNXYyRWRrRE84RjFucnB6SnowWU5nbk95Y1R5bloxaVVfUjg3MXlvUVBtVFlpekxCQzVoQjdPcElGdlFic2RSNk1WdHMtUWhEUXUwa0MzVkhJNTNPZ2YtRGtENWYzeEVHZTNmc29HTEVJOUZOd3FXcjBWNmxKdkQxRnBQeA?oc=5",
+      "domain": "medtechdive",
       "language": "",
       "tone": 0,
-      "seendate": "20260826T062700Z",
+      "seendate": "20260826T190546Z",
       "source": "GoogleNews"
     },
     {
-      "title": "AI vulnerability discovery scores the highest impact of 20 emerging risks",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOa015bURBM3hNSUp6VjJHMVFjTFh4cTJyZ1R6eUlxRjVaS1BlM05wOFhHdFlRdVdLTTkwNXljZzFjTFdObEZXWjd6TXlwMEktaWdSa3p5YlI3ejgtcFZOeEFicF9xV2pJR0xmaEU3MUVfdlA3enBNRHRoMnZvYnBzeUZmSmJnMFNpcWctdnFB?oc=5",
-      "domain": "helpnetsecurity",
+      "title": "Boston Scientific hit by cyberattack, customer shipping impacted",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeHY2MHZoeUlKaGkzenY5T2hWUUhReTItdy0tVlE5cGFYbzNndzkwc29teUIwRVlISERBLTBseHd1SjNkdXVBQ0drSVBRYmtEN21qalBfdHdOTW1jMlI2d2R6dmhFX0E4UktEUUZRWVlpNXZOQXRWaEQxVjJjNU5GMk1hNE1ndkNEeUhvSzZ5Wks5TFVBYXFxb2p3?oc=5",
+      "domain": "worcesterbusinessjournal",
       "language": "",
       "tone": 0,
-      "seendate": "20260826T050052Z",
+      "seendate": "20260826T161124Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "Boston Scientific hit by cyberattack causing ‘global disruption'",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQT2dhV0Z1T2VNN1o3MzQ4ZjBUVDJlNjMxZnA0UENEMHpTM0VNOV9WUGpWUGtfRC02MGpxM2ptQzNrNlhSamNUYkhLYkdkZ1ZRVld6bWtiQ25ncXJKNE5DS0l5eWZ2VDBPRTdvb0hYSEhjZW9DYS1RUFVsbHhrSGpEdEpRNTRrR2xQNV8wcGtmQ2tHaEVkSXhNX09tb0hidUN3R0HSAaoBQVVfeXFMUHJQVWktRDVkaVpXa1FnOVZlOHBaZm1qUnJoLXlQYWxUZkJ3UnVWdnloVFdpNGtFZ3hnaWRYOWdJTEVCTnZ3RjJGNy1LdlFuOENsbnFnd1E5eW1uUzdaOVd1UGZXbG5mYjNOQVFjV3pYRngwYWZ1SFlJaGEtVmxraWI5SDA3ZHNpN0xscXpqM254a2ZYekhaOExpU01UdFZaYTk0SHZabldSZmc?oc=5",
+      "domain": "nbcboston",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260826T153451Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "A cyberattack can put your business at risk",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPc24ydlp1Q0lsYlU1Qm92Z1I2ZFh1U1JkeDl5M2t3Um5jYTVSOUtCbGYyeGp2NDZMZjEwcURoSjJSUm96SW1IY0pyOWljLXRGLUctRnJGRnlXQXQyUHBBazNFQkFUUEtNbUhGdmsxVWRHZ3Q1QWJJSGdsVDdfZmZUb2ZFMmJ3QlpaT2Q2aDJCaVZiMW9ieXl0R0FlMWVSd19IMTE3SWZpWQ?oc=5",
+      "domain": "wknofm",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260826T200000Z",
       "source": "GoogleNews"
     },
     {
@@ -640,69 +703,6 @@
       "language": "",
       "tone": 0,
       "seendate": "20260826T100004Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Pro-Russian hackers claim responsibility for major cyberattack on Norway's public digital services",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOekYtZzlOUHZBZzJ5RXhHemgwSmd6MGxmY2wxSzBzcHI0N2lNNk5Nak1xZzdjS0h6VjIzZEU3cDJIQzZ2dG5GaEFZNHRhTWRPUUFEQWcweGlQcjBuWVFCQ1RNUmJ5Q1FkRm9oYXhzT3Q0N3Rzc3pWa01mOEpyZzh6OC1Sb1FGYzREaFBCSTJ3X1doTE1ITDVZaUFKTzZvNTF0MmZzdjFhT1I5djFRcUtFR3NKVzE?oc=5",
-      "domain": "apnews",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260826T113200Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Boston Scientific cyberattack disrupts global operations, shipments",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOUU1mS0hGSi1URm9ySGlJdzJ6QVBSNTU5WWZlX2dNMXdBUmZTY04tTVdJVXNEWTRNQWpfUmxfSGtvazRSN1VXS1RDQlhqUXl2V0Zzamx1N05RcnplZzUwT01xWTZyQjVPNU50bW5HTWRpbTljV3JWaGUzMjlvNDhSakw4dWczQQ?oc=5",
-      "domain": "qz.com",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260826T125601Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Boston Scientific hit by cyberattack, global operations affected",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNWdfNldweHJtTDA2LXZlb3hXenFDaG9FQk5TR0pBVzdTNExxZklSTTdsZHN2QU1reGluaVhkSWRwdWtJZkRvbDctbVpab2ZTREIxeW9GRVBYM2pjblpxeUNVSFBXTTdNVDI4ZUJJclREMEtjRGdMeG5oenVaWTRhT1NOdzVOS3Vud2k5MnlGbFE5dnFYT1VB?oc=5",
-      "domain": "whbl.com",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260826T133931Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "The End of Assumed Privacy in Vulnerability Disclosure",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQaFc0MGRIaVNuWVc4WkNsejUwNjRGRnB0QU9VTjhSN1EwaDBKR1ZmSFpRbnBVa2lRcHRiclNqTkdnSVpSVUE5bE9KV2RuZUJhaloxbmhBeXRQY1BRbjAwM09lWnZDVU5ud2ZBcHdqU2pMTUtEYV91SUdhWnBGZ256N1pLakVqQTlhVWg2NWx3bkZUbFVWUXZ4TTlB?oc=5",
-      "domain": "cybersecurityinsiders",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260826T100710Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "AISLE Receives Expanded CVE Authority for Third-Party Vulnerabilities",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdGJRdFFGR0RTUldrLU1scV9BRFZrenZoNHRVcGltLW1rek9ERmpXeWZ4NW5uNmpIQmpfVmN0WVBncjlkd3p0Ujh1ZFY3M2FndDcxeEpvTTcxWkN1VF9BWVc1bkVlRm5CbzRQT0N2R2dBLUZRV3JKbHBPbUZVWUl5WkgzSGRTdmNSb3dLZFlJcXhfWEJ1TDlEWWUyVWR0bkl5WE1uQUNodjRwODEz?oc=5",
-      "domain": "citybiz",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260826T130246Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Ransomware surges as criminals deploy AI tools",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPXzlpVlhwQ1RoTkRvNWQycTV0N0FpVDJmUkRFY1B2RjJRckh3M25Hd1M2UG1UbmZqaS1YTGVnNElNcklkbGlfMmFldGFYYmZJZnZQSkhITVViSEc1RUV5TUdZLVJZWXNheVdjaDB3RW1IRnl5LVduNmhLQ3daMUZtOGNFTnNTcndSTkotaXduS1VMaVJheG1XeFdDMHl5ZVZkVFRtdXFR?oc=5",
-      "domain": "computerweekly",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260826T133000Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Critical Gitea vulnerability now exploited in the wild (CVE-2026-60004)",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQ0hOdEZQN1ZzWVJlRF9sRzltVm1laUxLZ0FmY3I4NUJIbmZibkMzRDh1b0huTndqZkUydzQtQjZ5eUtzOVQweFRlc3FscG56eW9SbHVYOXpoeTBhU2oyLXhzdUdhcUhfUVNacHZYaDlRRXltc1B3cEhGcFhQcy1FLVRkY29KdGVYemx1enF6bw?oc=5",
-      "domain": "helpnetsecurity",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260826T105958Z",
       "source": "GoogleNews"
     }
   ],
