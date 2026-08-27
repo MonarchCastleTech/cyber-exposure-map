@@ -1,5 +1,6 @@
 const INTEL = {
   data: null,
+  warning: null,
   articles: [],
   geoPoints: [],
   MAP_W: 1000,
@@ -21,16 +22,20 @@ const INTEL = {
       ? this.data.events
       : ((this.data.live_data && (this.data.live_data.news_articles || this.data.live_data.news_articles)) || []);
     this.geoPoints = (this.data.live_data && this.data.live_data.geo_points) || [];
+    this.warning = this.data.early_warning || null;
     this.renderMode();
     this.renderStatus();
+    this.renderEarlyWarning();
     this.renderStats();
+    this.renderKevRadar();
+    this.renderEpssFrontier();
     this.renderSourceTable();
     this.renderEvents();
     this.renderSourceTags();
     this.renderGeneratedTime();
     this.renderAnalysis();
     this.setupTabs();
-    await Promise.all([this.renderMap(), this.renderTimeline()]);
+    await this.renderTimeline();
   },
 
   injectStyles() {
@@ -112,9 +117,10 @@ const INTEL = {
     alert.classList.add(mode === 'live' ? 'alert-info' : mode === 'unavailable' ? 'alert-danger' : 'alert-warning');
     const base = alert.dataset.baseText || alert.textContent.trim();
     alert.dataset.baseText = base;
-    const counts = this.articles.length
-      ? ` ${this.articles.length} recent signals from ${this.uniqueDomains(this.articles)} public sources across ${this.geoPoints.length} geolocated points.`
-      : ' No validated signals in the current snapshot.';
+    const health = (this.warning && this.warning.data_health) || {};
+    const counts = this.warning
+      ? ` ${health.cisa_catalog_count || 0} CISA KEVs, ${health.epss_frontier_count || 0} forward candidates, and ${health.news_events_considered || 0} recent public signals evaluated.`
+      : ' No validated warning snapshot is available.';
     const note = notes.length ? ' ' + notes.join(' ') : '';
     alert.replaceChildren();
     const strong = document.createElement('strong');
@@ -125,20 +131,127 @@ const INTEL = {
   renderStats() {
     const grid = document.querySelector('.stat-grid');
     if (!grid) return;
-    const tone = this.meanTone(this.articles);
-    const toneIndex = Math.round(Math.max(0, Math.min(100, 50 + tone * 5)));
-    const feeds = Object.values(this.data.live_data || {}).filter(v => v && (Array.isArray(v) ? v.length : true)).length;
+    const warning = this.warning || {};
+    const components = new Map((warning.components || []).map(row => [row.id, row]));
+    const kev = components.get('kev_addition_pressure') || {};
+    const epss = components.get('epss_frontier_momentum') || {};
+    const narrative = components.get('exploit_narrative_pressure') || {};
     const stats = [
-      { value: String(this.articles.length), label: 'Recent Signals', note: 'Google News RSS snapshot', cls: 'neutral' },
-      { value: String(this.uniqueDomains(this.articles)), label: 'News Domains', note: 'deduplicated', cls: 'neutral' },
-      { value: `${toneIndex}/100`, label: 'News Tone Index', note: tone > 0.2 ? '\u25b2 positive' : tone < -0.2 ? '\u25bc negative' : '\u25cf neutral', cls: tone > 0.2 ? 'up' : tone < -0.2 ? 'down' : 'neutral' },
-      { value: String(this.geoPoints.length || feeds), label: this.geoPoints.length ? 'Geo Points' : 'Live Feeds', note: this.geoPoints.length ? 'geolocated coverage' : 'connected sources', cls: 'neutral' },
+      { value: `${Number(warning.score || 0).toFixed(1)}`, label: 'Pressure Index', note: warning.level || 'unavailable', cls: Number(warning.score || 0) >= 55 ? 'down' : 'neutral' },
+      { value: String(kev.recent_7d_count ?? '\u2014'), label: 'New KEVs · 7d', note: `prior week ${kev.prior_7d_count ?? '\u2014'}`, cls: 'neutral' },
+      { value: String(epss.accelerated_7d_count ?? '\u2014'), label: 'EPSS Accelerators', note: 'not yet in KEV', cls: 'neutral' },
+      { value: String(narrative.independent_sources ?? this.uniqueDomains(this.articles)), label: 'Distinct News Sources', note: `${narrative.matched_event_count ?? 0} matched signals`, cls: 'neutral' },
     ];
     grid.replaceChildren(...stats.map(s => {
       const card = document.createElement('div');
       card.className = 'stat-card';
       card.innerHTML = `<div class="stat-value">${s.value}</div><div class="stat-label">${s.label}</div><div class="stat-delta ${s.cls}">${s.note}</div>`;
       return card;
+    }));
+  },
+
+  renderEarlyWarning() {
+    const warning = this.warning;
+    if (!warning) return;
+    const score = document.getElementById('warning-score');
+    const level = document.getElementById('warning-level');
+    const summary = document.getElementById('warning-summary');
+    if (score) score.textContent = Number(warning.score).toFixed(1);
+    if (level) { level.textContent = warning.level; level.dataset.level = String(warning.level || '').toLowerCase(); }
+    if (summary) summary.textContent = warning.method && warning.method.warning
+      ? warning.method.warning
+      : 'Global exploitation pressure derived from public, reproducible sources.';
+    const confidence = document.getElementById('warning-confidence');
+    const horizon = document.getElementById('warning-horizon');
+    const concurrence = document.getElementById('warning-concurrence');
+    if (confidence) confidence.textContent = `${warning.confidence} · ${Number(warning.confidence_score).toFixed(0)}%`;
+    if (horizon) horizon.textContent = warning.horizon;
+    if (concurrence) concurrence.textContent = warning.concurrence && warning.concurrence.active
+      ? `${warning.concurrence.elevated_components.length} domains · +${warning.concurrence.score_bonus}`
+      : 'No bonus';
+
+    const components = document.getElementById('warning-components');
+    if (components) components.replaceChildren(...(warning.components || []).map(component => {
+      const card = document.createElement('article');
+      card.className = 'warning-component';
+      const retained = component.retained ? '<em>Retained &lt;72h</em>' : '<em>Current</em>';
+      card.innerHTML = `<div><span>${component.label}</span>${retained}</div><strong>${component.available ? Number(component.score).toFixed(1) : '\u2014'}</strong><div class="component-bar"><i style="width:${component.available ? Math.max(1, Number(component.score)) : 0}%"></i></div>`;
+      return card;
+    }));
+
+    const alerts = document.getElementById('warning-alerts');
+    if (alerts) {
+      const rows = warning.alerts || [];
+      if (!rows.length) {
+        const p = document.createElement('p');
+        p.textContent = 'No component currently exceeds the WATCH threshold.';
+        alerts.replaceChildren(p);
+      } else {
+        alerts.replaceChildren(...rows.map(row => {
+          const item = document.createElement('article');
+          item.innerHTML = `<b>${row.level} · ${Number(row.score).toFixed(1)}</b><span>${row.title}</span><p>${row.why}</p>`;
+          return item;
+        }));
+      }
+    }
+
+    const health = document.getElementById('warning-health');
+    if (health) {
+      const values = warning.data_health || {};
+      const chips = [
+        ['CISA', `${values.cisa_catalog_count || 0} records`],
+        ['EPSS', `${values.epss_frontier_count || 0} frontier`],
+        ['History', `${values.epss_timeseries_count || 0} series`],
+        ['News', `${values.news_events_considered || 0} events`],
+        ['Sources', `${values.independent_news_sources || 0} distinct`],
+        ['Components', `${values.available_components || 0}/3 available`],
+      ];
+      health.replaceChildren(...chips.map(([label, value]) => {
+        const chip = document.createElement('span');
+        chip.innerHTML = `<b>${label}</b>${value}`;
+        return chip;
+      }));
+    }
+  },
+
+  renderKevRadar() {
+    const target = document.getElementById('kev-radar');
+    if (!target) return;
+    const component = (this.warning && this.warning.components || []).find(row => row.id === 'kev_addition_pressure');
+    const rows = (component && component.evidence) || [];
+    if (!rows.length) {
+      target.innerHTML = '<p class="chart-empty">No CISA additions in the latest seven-day window.</p>';
+      return;
+    }
+    target.replaceChildren(...rows.map(row => {
+      const item = document.createElement('article');
+      item.className = 'radar-row';
+      const link = document.createElement('a');
+      link.href = `https://nvd.nist.gov/vuln/detail/${encodeURIComponent(row.cveID || '')}`;
+      link.target = '_blank'; link.rel = 'noreferrer noopener';
+      link.innerHTML = `<strong>${row.cveID || 'CVE'}</strong><span>${this.cleanText(row.vendorProject || '')} · ${this.cleanText(row.product || '')}</span><p>${this.cleanText(row.vulnerabilityName || row.shortDescription || '')}</p>`;
+      const meta = document.createElement('div');
+      meta.className = 'radar-meta';
+      meta.textContent = `${row.dateAdded || '\u2014'} · due ${row.dueDate || '\u2014'}${String(row.knownRansomwareCampaignUse).toLowerCase() === 'known' ? ' · ransomware known' : ''}`;
+      item.append(link, meta);
+      return item;
+    }));
+  },
+
+  renderEpssFrontier() {
+    const body = document.getElementById('epss-rows');
+    if (!body) return;
+    const component = (this.warning && this.warning.components || []).find(row => row.id === 'epss_frontier_momentum');
+    const rows = (component && component.evidence || []).slice(0, 10);
+    if (!rows.length) {
+      body.innerHTML = '<tr><td colspan="3">No validated EPSS frontier.</td></tr>';
+      return;
+    }
+    body.replaceChildren(...rows.map(row => {
+      const tr = document.createElement('tr');
+      const delta = Number(row.delta_7d || 0);
+      tr.innerHTML = `<td><a href="${row.url}" target="_blank" rel="noreferrer noopener">${row.cve}</a></td><td>${(Number(row.epss) * 100).toFixed(1)}%</td><td class="${delta > 0 ? 'delta-up' : ''}">${delta >= 0 ? '+' : ''}${(delta * 100).toFixed(1)}pp</td>`;
+      return tr;
     }));
   },
 
@@ -225,7 +338,7 @@ const INTEL = {
   renderSourceTags() {
     const container = document.getElementById('source-tags');
     if (!container) return;
-    const labels = { news_articles: 'News RSS', news_articles: 'Google News RSS', geo: 'Geolocated feed', economic_news: 'Economic News', crypto: 'CoinGecko', exchange_rates: 'Exchange Rates', energy_news: 'Energy News', forex: 'Exchange Rates' };
+    const labels = { news_articles: 'Google News RSS', cisa_catalog: 'CISA KEV', epss_frontier: 'FIRST EPSS' };
     const names = (this.data.meta && this.data.meta.sources) || Object.keys((this.data.live_data || {}));
     container.replaceChildren(...names.map(name => {
       const tag = document.createElement('span');
@@ -403,42 +516,33 @@ const INTEL = {
   async renderTimeline() {
     const container = document.getElementById('timeseries-chart');
     if (!container) return;
-    const buckets = new Map();
-    this.articles.forEach(article => {
-      const date = this.parseDate(article.seendate || article.timestamp || article.date);
-      if (!date) return;
-      date.setUTCMinutes(0, 0, 0);
-      const key = date.toISOString();
-      buckets.set(key, (buckets.get(key) || 0) + 1);
-    });
-    const observed = [...buckets].map(([date, value]) => ({ date: new Date(date), value })).sort((a, b) => a.date - b.date);
-    if (!observed.length) {
+    const history = ((this.warning && this.warning.history) || [])
+      .map(row => ({ date: this.parseDate(row.timestamp), value: Number(row.score) }))
+      .filter(row => row.date && Number.isFinite(row.value))
+      .sort((a, b) => a.date - b.date);
+    if (!history.length) {
       const p = document.createElement('p');
       p.className = 'chart-empty';
-      p.textContent = 'No valid timestamps in this snapshot.';
+      p.textContent = 'No accepted warning history is available.';
       container.replaceChildren(p);
       return;
     }
-    const series = [];
-    const stepMs = 3600000;
-    if (observed.length === 1) series.push({ date: new Date(observed[0].date.getTime() - stepMs), value: 0 });
-    for (let cursor = observed[0].date.getTime(); cursor <= observed[observed.length - 1].date.getTime(); cursor += stepMs) {
-      const date = new Date(cursor);
-      series.push({ date, value: buckets.get(date.toISOString()) || 0 });
-    }
+    const series = history.length === 1
+      ? [{ date: new Date(history[0].date.getTime() - 21600000), value: history[0].value }, history[0]]
+      : history;
     const width = Math.max(container.clientWidth || 600, 480);
     const height = 240;
     const margin = { top: 18, right: 18, bottom: 35, left: 34 };
-    const max = Math.max(1, ...series.map(s => s.value));
+    const max = 100;
     const x = i => margin.left + i * (width - margin.left - margin.right) / (series.length - 1);
     const y = v => height - margin.bottom - v / max * (height - margin.top - margin.bottom);
-    const svg = this.svgElement('svg', { viewBox: `0 0 ${width} ${height}`, 'aria-label': 'Signals observed by hour' });
+    const svg = this.svgElement('svg', { viewBox: `0 0 ${width} ${height}`, 'aria-label': 'Cyber exploitation warning score history', role: 'img' });
     [0, 0.5, 1].forEach(ratio => svg.append(this.svgElement('line', { x1: margin.left, x2: width - margin.right, y1: y(max * ratio), y2: y(max * ratio), class: 'chart-gridline' })));
     const area = `M${x(0)},${height - margin.bottom} ` + series.map((s, i) => `L${x(i)},${y(s.value)}`).join(' ') + ` L${x(series.length - 1)},${height - margin.bottom} Z`;
     svg.append(this.svgElement('path', { d: area, class: 'timeline-area' }));
     const line = series.map((s, i) => `${i ? 'L' : 'M'}${x(i)},${y(s.value)}`).join(' ');
     svg.append(this.svgElement('path', { d: line, class: 'timeline-line' }));
-    series.forEach((s, i) => { if (s.value) svg.append(this.svgElement('circle', { cx: x(i), cy: y(s.value), r: 4, class: 'timeline-point' })); });
+    series.forEach((s, i) => svg.append(this.svgElement('circle', { cx: x(i), cy: y(s.value), r: 4, class: 'timeline-point' })));
     const firstLabel = this.svgElement('text', { x: margin.left, y: height - 10, class: 'chart-label' });
     firstLabel.textContent = this.formatDate(series[0].date.toISOString());
     const lastLabel = this.svgElement('text', { x: width - margin.right, y: height - 10, class: 'chart-label', 'text-anchor': 'end' });
@@ -459,7 +563,7 @@ const INTEL = {
     }
     const generated = document.getElementById('generated-time');
     if (generated) generated.textContent = '\u2014';
-    ['entity-rows'].forEach(id => {
+    ['entity-rows', 'epss-rows'].forEach(id => {
       const el = document.getElementById(id);
       if (el) el.innerHTML = '<tr><td colspan="4" class="chart-empty">Data unavailable.</td></tr>';
     });
@@ -467,7 +571,7 @@ const INTEL = {
       const el = document.getElementById(id);
       if (el) { const p = document.createElement('p'); p.className = 'chart-empty'; p.textContent = 'Data unavailable.'; el.replaceChildren(p); }
     });
-    ['map', 'timeseries-chart'].forEach(id => {
+    ['kev-radar', 'timeseries-chart', 'warning-components', 'warning-alerts'].forEach(id => {
       const el = document.getElementById(id);
       if (el) { const p = document.createElement('p'); p.className = 'chart-empty'; p.textContent = 'Live data could not be loaded.'; el.replaceChildren(p); }
     });

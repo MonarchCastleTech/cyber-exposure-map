@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://monarchcastletech.github.io/cyber-exposure-map/">
   <meta property="og:image" content="https://monarchcastletech.github.io/cyber-exposure-map/assets/mct-mark.png">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css?v=4">
 </head>
 <body data-project="cyber-exposure-map">
   <a class="skip-link" href="#overview">Skip to dashboard</a>
@@ -35,15 +35,36 @@
 
   <nav class="nav-tabs" aria-label="Dashboard sections">
     <a class="nav-tab active" href="#overview">Overview</a>
-    <a class="nav-tab" href="#map">Map</a>
+    <a class="nav-tab" href="#early-warning">Early Warning</a>
     <a class="nav-tab" href="#llm-summary">Analysis</a>
     <a class="nav-tab" href="#sources">Sources</a>
+    <a class="nav-tab" href="#methodology">Methodology</a>
   </nav>
 
   <main class="main" id="overview">
     <div class="alert alert-info" id="status-message">
-      <strong>Intelligence Status:</strong> Real-time CVE exploits, exposed infrastructure, and threat actor activity.
+      <strong>Intelligence Status:</strong> CISA exploitation evidence, EPSS forward probabilities, and cross-source precursor language.
     </div>
+
+    <section class="warning-desk" id="early-warning" aria-labelledby="warning-title">
+      <div class="warning-lead">
+        <p class="warning-kicker">30-day exploitation pressure</p>
+        <h2 id="warning-title">Cyber Exploitation Early Warning</h2>
+        <p id="warning-summary">Loading the latest accepted warning snapshot…</p>
+      </div>
+      <div class="warning-score" aria-live="polite">
+        <strong id="warning-score">—</strong><span>/100</span>
+        <b id="warning-level">—</b>
+      </div>
+      <dl class="warning-meta">
+        <div><dt>Confidence</dt><dd id="warning-confidence">—</dd></div>
+        <div><dt>Horizon</dt><dd id="warning-horizon">—</dd></div>
+        <div><dt>Concurrence</dt><dd id="warning-concurrence">—</dd></div>
+      </dl>
+      <div class="warning-components" id="warning-components"></div>
+      <div class="warning-alerts" id="warning-alerts"></div>
+      <div class="health-strip" id="warning-health"></div>
+    </section>
 
     <div class="stat-grid" id="stat-grid"></div>
 
@@ -52,18 +73,18 @@
         <div class="card">
           <div class="card-header">
             <div>
-              <div class="card-title">Global Activity Map</div>
-              <div class="card-subtitle">Geolocated coverage Â· updates every 6 hours</div>
+              <div class="card-title">CISA KEV Addition Radar</div>
+              <div class="card-subtitle">Confirmed in-the-wild exploitation · latest seven days</div>
             </div>
           </div>
-          <div class="map-container" id="map"></div>
+          <div class="radar-list" id="kev-radar"></div>
         </div>
 
         <div class="card" style="margin-top:1.5rem">
           <div class="card-header">
             <div>
-              <div class="card-title">Trend Analysis</div>
-              <div class="card-subtitle">Signal activity by hour Â· current snapshot</div>
+              <div class="card-title">Warning History</div>
+              <div class="card-subtitle">Accepted early-warning snapshots · up to 180 observations</div>
             </div>
           </div>
           <div class="chart-container" id="timeseries-chart"></div>
@@ -71,6 +92,19 @@
       </div>
 
       <div class="sidebar">
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">EPSS Frontier</div>
+              <div class="card-subtitle">High-probability CVEs not yet in CISA KEV</div>
+            </div>
+          </div>
+          <table class="data-table epss-table">
+            <thead><tr><th>CVE</th><th>EPSS</th><th>7d Δ</th></tr></thead>
+            <tbody id="epss-rows"></tbody>
+          </table>
+        </div>
+
         <div class="card">
           <div class="card-header">
             <div>
@@ -91,13 +125,11 @@
           <div class="card-header">
             <div>
               <div class="card-title">Recent Events</div>
-              <div class="card-subtitle">Last 24 hours</div>
+              <div class="card-subtitle">Weaponization, scanning, access, and campaign signals</div>
             </div>
           </div>
           <div id="event-list"></div>
         </div>
-
-        
 
         <div class="card">
           <div class="card-header">
@@ -114,13 +146,30 @@
           </div>
               <div id="source-tags">
         <span class="tag-source">CISA KEV</span>
-              <span class="tag-source">AlienVault OTX</span>
-              <span class="tag-source">Shodan</span>
-              <span class="tag-source">MalwareBazaar</span>
+              <span class="tag-source">FIRST EPSS</span>
+              <span class="tag-source">Google News RSS</span>
       </div>
       </div>
       </div>
     </div>
+
+    <section class="methodology" id="methodology" aria-labelledby="methodology-title">
+      <p class="warning-kicker">Reproducible method · version 2.0</p>
+      <h2 id="methodology-title">Methodology</h2>
+      <p class="method-intro">This index measures global exploitation pressure for analyst triage. It is not an organisation-specific breach probability and does not claim that a product is present in any network.</p>
+      <div class="method-grid">
+        <article><span>40%</span><h3>CISA KEV burst</h3><p>Counts vulnerabilities CISA added during the latest seven days, compares that count with 26 prior non-overlapping weeks using a median/MAD robust z-score, then adds disclosed ransomware and urgent-deadline terms.</p></article>
+        <article><span>35%</span><h3>EPSS frontier momentum</h3><p>Examines the highest EPSS probabilities above 0.10 that are not yet in KEV. Current probability and seven-day acceleration identify vulnerabilities moving toward observed exploitation during EPSS’s next-30-day horizon.</p></article>
+        <article><span>25%</span><h3>Cross-source precursor language</h3><p>Measures named-source confirmation of weaponization, mass scanning, perimeter access, and campaign-shift phrases. Repeated items from the same named source count once for cross-source confirmation.</p></article>
+      </div>
+      <div class="method-formula"><strong>Index</strong> = availability-renormalized weighted mean + 5 points only when at least two components reach WATCH. Missing components never silently score zero. Verified source snapshots may be retained for at most 72 hours and are visibly marked.</div>
+      <div class="method-links">
+        <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">CISA KEV</a>
+        <a href="https://api.first.org/epss/">FIRST EPSS API</a>
+        <a href="https://www.first.org/epss/how-it-works.html">EPSS model</a>
+        <a href="https://github.com/MonarchCastleTech/cyber-exposure-map">Code and data</a>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -128,6 +177,6 @@
     <p style="margin-top:0.5rem">Auto-refreshed every 6 hours via GitHub Actions &bull; Source data available in <code>data/</code></p>
   </footer>
 
-  <script src="assets/app.js"></script>
+  <script src="assets/app.js?v=4"></script>
 </body>
 </html>

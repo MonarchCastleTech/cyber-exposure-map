@@ -8,10 +8,11 @@ openrouter:
   model: "nvidia/nemotron-3-super-120b-a12b:free"
   fallback_model: "z-ai/glm-5.2:free"
 
-news_query: "(cyberattack OR ransomware OR vulnerability OR CVE)"
-include_forex: true
+news_query: '(cybersecurity OR cyberattack OR vulnerability OR ransomware OR CVE) when:7d'
 
 sources:
+  - name: "CISA Known Exploited Vulnerabilities"
+  - name: "FIRST EPSS"
   - name: "Google News RSS"
 
 refresh:

@@ -4,6 +4,37 @@ import os
 import json
 import requests
 from datetime import datetime, timezone, timedelta
+from pathlib import Path
+
+CACHE_MAX_AGE = timedelta(hours=72)
+
+
+def _cache_path(name):
+    root = Path(os.path.expanduser("~")) / ".cache" / "cyber-exposure-map"
+    root.mkdir(parents=True, exist_ok=True)
+    return root / f"{name}.json"
+
+
+def _read_recent_cache(name):
+    path = _cache_path(name)
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        fetched = datetime.fromisoformat(str(payload.get("fetched_at", "")).replace("Z", "+00:00"))
+        if fetched.tzinfo is None:
+            fetched = fetched.replace(tzinfo=timezone.utc)
+        age = datetime.now(timezone.utc) - fetched.astimezone(timezone.utc)
+        if timedelta(0) <= age <= CACHE_MAX_AGE:
+            return payload.get("data")
+    except (OSError, ValueError, json.JSONDecodeError):
+        pass
+    return None
+
+
+def _write_cache(name, data):
+    _cache_path(name).write_text(
+        json.dumps({"fetched_at": datetime.now(timezone.utc).isoformat(), "data": data}),
+        encoding="utf-8",
+    )
 
 def fetch_nasa_firms(api_key=None, region="world", days=1):
     """Fetch NASA FIRMS fire/thermal anomaly data."""
@@ -34,25 +65,106 @@ def fetch_cisa_kev():
     try:
         r = requests.get(url, timeout=30, headers={"User-Agent": "MCT-Intel/1.0"})
         if r.status_code == 200:
-            data = r.json()
-            vulns = data.get("vulnerabilities", [])
-            return [
-                {
-                    "cveID": v.get("cveID", ""),
-                    "vendorProject": v.get("vendorProject", ""),
-                    "product": v.get("product", ""),
-                    "vulnerabilityName": v.get("vulnerabilityName", ""),
-                    "dateAdded": v.get("dateAdded", ""),
-                    "shortDescription": v.get("shortDescription", ""),
-                    "dueDate": v.get("requiredAction", ""),
-                    "source": "CISA-KEV"
-                }
-                for v in vulns
-            ]
-        return []
+            raw = r.json()
+            data = {
+                "catalog_version": raw.get("catalogVersion"),
+                "date_released": raw.get("dateReleased"),
+                "vulnerabilities": [
+                    {
+                        "cveID": v.get("cveID", ""),
+                        "vendorProject": v.get("vendorProject", ""),
+                        "product": v.get("product", ""),
+                        "vulnerabilityName": v.get("vulnerabilityName", ""),
+                        "dateAdded": v.get("dateAdded", ""),
+                        "shortDescription": v.get("shortDescription", ""),
+                        "requiredAction": v.get("requiredAction", ""),
+                        "dueDate": v.get("dueDate", ""),
+                        "knownRansomwareCampaignUse": v.get("knownRansomwareCampaignUse", "Unknown"),
+                        "notes": v.get("notes", ""),
+                        "cwes": v.get("cwes", []),
+                        "source": "CISA-KEV",
+                    }
+                    for v in raw.get("vulnerabilities", [])
+                ],
+                "cached": False,
+            }
+            if data["vulnerabilities"]:
+                _write_cache("cisa-kev", data)
+                return data
+        cached = _read_recent_cache("cisa-kev")
+        if cached:
+            cached["cached"] = True
+            return cached
+        return {}
     except Exception as e:
         print(f"[CISA-KEV] Error: {e}")
-        return []
+        cached = _read_recent_cache("cisa-kev")
+        if cached:
+            cached["cached"] = True
+            return cached
+        return {}
+
+
+def fetch_epss_frontier(kev_ids, threshold=0.10, candidate_limit=40):
+    """Fetch high-EPSS non-KEV CVEs and their public 30-day time series."""
+    url = "https://api.first.org/data/v1/epss"
+    headers = {"User-Agent": "cyber-exposure-map/2.0"}
+    try:
+        rows = []
+        offset = 0
+        total = None
+        while total is None or offset < total:
+            response = requests.get(
+                url,
+                params={"epss-gt": threshold, "limit": 10000, "offset": offset},
+                timeout=35,
+                headers=headers,
+            )
+            response.raise_for_status()
+            payload = response.json()
+            page = payload.get("data") or []
+            rows.extend(page)
+            total = int(payload.get("total") or len(rows))
+            if not page:
+                break
+            offset += len(page)
+
+        kev_set = {str(value).upper() for value in kev_ids}
+        frontier = sorted(
+            (row for row in rows if str(row.get("cve") or "").upper() not in kev_set),
+            key=lambda row: float(row.get("epss") or 0),
+            reverse=True,
+        )[:candidate_limit]
+        if frontier:
+            identifiers = ",".join(str(row["cve"]) for row in frontier)
+            history_response = requests.get(
+                url,
+                params={"cve": identifiers, "scope": "time-series", "limit": candidate_limit},
+                timeout=35,
+                headers=headers,
+            )
+            history_response.raise_for_status()
+            history = {row.get("cve"): row for row in history_response.json().get("data") or []}
+            for row in frontier:
+                series = history.get(row.get("cve"), {}).get("time-series") or []
+                row["time_series"] = series
+
+        data = {
+            "threshold": threshold,
+            "total_above_threshold": total or 0,
+            "rows": frontier,
+            "cached": False,
+        }
+        if frontier:
+            _write_cache("epss-frontier", data)
+            return data
+    except Exception as e:
+        print(f"[FIRST-EPSS] Error: {e}")
+    cached = _read_recent_cache("epss-frontier")
+    if cached:
+        cached["cached"] = True
+        return cached
+    return {}
 
 def fetch_acled(*_args, **_kwargs):
     """Disabled until a licensed ACLED key is explicitly configured."""
