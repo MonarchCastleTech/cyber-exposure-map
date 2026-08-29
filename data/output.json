@@ -1,14 +1,16 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-08-28T22:44:45.088113+00:00",
-    "mode": "live",
+    "generated": "2026-08-29T07:28:53.744278+00:00",
+    "mode": "partial",
     "sources": [
       "cisa_catalog",
       "epss_frontier",
       "news_articles"
     ],
-    "source_notes": [],
+    "source_notes": [
+      "news_articles unavailable; retained a validated snapshot less than 72 hours old."
+    ],
     "version": "2.0.0"
   },
   "stats": [
@@ -33677,10 +33679,10 @@
   "timeseries": [],
   "llm_summary": "",
   "early_warning": {
-    "issued_at": "2026-08-28T22:44:45.088352+00:00",
+    "issued_at": "2026-08-29T07:28:53.744468+00:00",
     "horizon": "next 30 days",
     "classification": "global-exploitation-pressure-not-organisation-breach-probability",
-    "score": 55.7,
+    "score": 55.3,
     "level": "ELEVATED",
     "confidence": "HIGH",
     "confidence_score": 100.0,
@@ -33689,7 +33691,7 @@
         "id": "kev_addition_pressure",
         "label": "CISA exploited-vulnerability burst",
         "available": true,
-        "score": 73.5,
+        "score": 72.5,
         "catalog_count": 1685,
         "recent_7d_count": 11,
         "prior_7d_count": 9,
@@ -33697,7 +33699,7 @@
         "baseline_weekly_median": 5.5,
         "anomaly_z": 1.48,
         "ransomware_known_7d": 0,
-        "due_within_7d": 5,
+        "due_within_7d": 4,
         "catalog_version": "2026.08.27",
         "released_at": "2026-08-27T17:00:36.6632Z",
         "evidence": [
@@ -34153,7 +34155,7 @@
       {
         "id": "kev_addition_pressure",
         "title": "CISA exploited-vulnerability burst",
-        "score": 73.5,
+        "score": 72.5,
         "level": "ELEVATED",
         "why": "CISA additions are elevated against the previous 26 weekly windows."
       },
@@ -34202,6 +34204,16 @@
         "level": "ELEVATED",
         "components": {
           "kev_addition_pressure": 73.5,
+          "epss_frontier_momentum": 25.1,
+          "exploit_narrative_pressure": 50.0
+        }
+      },
+      {
+        "timestamp": "2026-08-29T07:28:53.744468+00:00",
+        "score": 55.3,
+        "level": "ELEVATED",
+        "components": {
+          "kev_addition_pressure": 72.5,
           "epss_frontier_momentum": 25.1,
           "exploit_narrative_pressure": 50.0
         }
