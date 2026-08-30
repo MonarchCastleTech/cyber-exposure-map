@@ -15,6 +15,10 @@ def test_ui_discloses_warning_method_and_real_sources():
     assert "Shodan" not in html
     assert "renderEarlyWarning" in script
     assert "global exploitation pressure" in html.lower()
+    assert "Analyst Brief" in html
+    assert "AI Analysis" not in html
+    assert "not ground truth" not in script
+    assert "illustrative coverage indicators" not in script
 
 
 def test_workflow_runs_tests_and_preserves_last_good_data():
@@ -24,4 +28,4 @@ def test_workflow_runs_tests_and_preserves_last_good_data():
     assert "set -euo pipefail" in workflow
     assert "continue-on-error: true" in workflow
     assert "Retry delayed Pages activation" in workflow
-
+    assert workflow.index("python -m pytest -q") < workflow.index("Refresh public data")

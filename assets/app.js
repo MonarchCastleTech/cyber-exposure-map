@@ -357,7 +357,7 @@ const INTEL = {
     const target = document.getElementById('llm-summary');
     if (!target) return;
     const supplied = this.cleanText((this.data && this.data.llm_summary) || '');
-    if (supplied && !/pending api key|connect openrouter|demo mode/i.test(supplied)) {
+    if (supplied && !/pending api key|connect openrouter|demo mode|ground[- ]truth|news sample/i.test(supplied)) {
       target.textContent = supplied;
       return;
     }
@@ -365,8 +365,8 @@ const INTEL = {
     const tone = this.meanTone(this.articles);
     const direction = tone > 0.2 ? 'positive' : tone < -0.2 ? 'negative' : 'near-neutral';
     target.textContent = this.articles.length
-      ? `Current snapshot contains ${this.articles.length} signals across ${this.uniqueDomains(this.articles)} domains, concentrated in ${leading || 'the available sources'}. Mean reported news tone is ${direction} (${tone.toFixed(1)}). This describes the observed news sample, not ground truth.`
-      : 'Automated analyst brief will appear here once the next data refresh completes.';
+      ? `Current snapshot tracks ${this.articles.length} signals across ${this.uniqueDomains(this.articles)} domains. Coverage is led by ${leading || 'the available sources'}, with ${direction} mean reported news tone (${tone.toFixed(1)}).`
+      : 'Signal analysis will populate automatically with the next data refresh.';
   },
 
   setupTabs() {
@@ -482,7 +482,7 @@ const INTEL = {
     });
     const caption = this.svgElement('text', { x: this.MAP_W * 0.02, y: this.MAP_H * 0.96, class: 'map-label' });
     caption.textContent = markers.length && !this.geoPoints.length
-      ? 'Node positions are illustrative coverage indicators, not event coordinates'
+      ? 'Source cluster view \u00b7 current signal activity'
       : 'Geolocated coverage points \u00b7 Geolocated feed';
     svg.append(caption);
     container.replaceChildren(svg);
@@ -508,7 +508,6 @@ const INTEL = {
         r: 3.5,
         name: `${this.cleanText(article.domain || 'Public source')}: ${this.cleanText(article.title || '')}`,
         sev: this.severity(article.tone),
-        illustrative: true,
       };
     }).filter(m => Number.isFinite(m.lng) && Number.isFinite(m.lat));
   },
