@@ -1,14 +1,16 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-09-09T05:22:35.885661+00:00",
-    "mode": "live",
+    "generated": "2026-09-09T11:58:05.785234+00:00",
+    "mode": "partial",
     "sources": [
       "cisa_catalog",
       "epss_frontier",
       "news_articles"
     ],
-    "source_notes": [],
+    "source_notes": [
+      "news_articles unavailable; retained a validated snapshot less than 72 hours old."
+    ],
     "version": "2.0.0"
   },
   "stats": [
@@ -33908,7 +33910,7 @@
   "timeseries": [],
   "llm_summary": "",
   "early_warning": {
-    "issued_at": "2026-09-09T05:22:35.885903+00:00",
+    "issued_at": "2026-09-09T11:58:05.785357+00:00",
     "horizon": "next 30 days",
     "classification": "global-exploitation-pressure-not-organisation-breach-probability",
     "score": 42.8,
@@ -34753,6 +34755,16 @@
       },
       {
         "timestamp": "2026-09-09T05:22:35.885903+00:00",
+        "score": 42.8,
+        "level": "WATCH",
+        "components": {
+          "kev_addition_pressure": 39.5,
+          "epss_frontier_momentum": 25.0,
+          "exploit_narrative_pressure": 53.0
+        }
+      },
+      {
+        "timestamp": "2026-09-09T11:58:05.785357+00:00",
         "score": 42.8,
         "level": "WATCH",
         "components": {
