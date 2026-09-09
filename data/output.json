@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-09-09T16:55:19.755946+00:00",
+    "generated": "2026-09-09T21:16:04.583680+00:00",
     "mode": "live",
     "sources": [
       "cisa_catalog",
@@ -19,7 +19,7 @@
     },
     {
       "label": "News Domains",
-      "value": "28",
+      "value": "32",
       "delta": "deduplicated"
     },
     {
@@ -36,8 +36,73 @@
   "live_data": {
     "cisa_catalog": {
       "catalog_version": "2026.09.09",
-      "date_released": "2026-09-09T12:56:45.0136Z",
+      "date_released": "2026-09-09T19:00:50.2591Z",
       "vulnerabilities": [
+        {
+          "cveID": "CVE-2026-19490",
+          "vendorProject": "Citrix",
+          "product": "NetScaler",
+          "vulnerabilityName": "Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+          "dateAdded": "2026-09-09",
+          "shortDescription": "Citrix NetScaler ADC and NetScaler Gateway contain an authentication-bypass vulnerability involving an alternate path or channel. When the NetScaler appliance is configured as an AAA virtual server or as a Gateway (SSL VPN, ICA Proxy, CVPN, or RDP Proxy), an unauthenticated remote threat actor may be able to bypass authentication.",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-09-12",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "https://support.citrix.com/external/article/CTX696939/netscaler-adc-and-netscaler-gateway-secu.html ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-19490",
+          "cwes": [
+            "CWE-288"
+          ],
+          "source": "CISA-KEV"
+        },
+        {
+          "cveID": "CVE-2025-25249",
+          "vendorProject": "Fortinet",
+          "product": "Multiple Products",
+          "vulnerabilityName": "Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability",
+          "dateAdded": "2026-09-09",
+          "shortDescription": "Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets.",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-09-12",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "https://fortiguard.fortinet.com/psirt/FG-IR-25-084 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2025-25249",
+          "cwes": [
+            "CWE-122",
+            "CWE-787"
+          ],
+          "source": "CISA-KEV"
+        },
+        {
+          "cveID": "CVE-2026-87491",
+          "vendorProject": "Google",
+          "product": "Chromium V8",
+          "vulnerabilityName": "Google Chromium V8 Out of Bounds Write Vulnerability",
+          "dateAdded": "2026-09-09",
+          "shortDescription": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-09-23",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-87491 ",
+          "cwes": [
+            "CWE-787"
+          ],
+          "source": "CISA-KEV"
+        },
+        {
+          "cveID": "CVE-2026-20079",
+          "vendorProject": "Cisco",
+          "product": "Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management",
+          "vulnerabilityName": "Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+          "dateAdded": "2026-09-09",
+          "shortDescription": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management contain an authentication Bypass using an alternate path or channel vulnerability that could allow an unauthenticated, remote attacker to bypass authentication and execute script files on an affected device to obtain root access to the underlying operating system.",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-09-12",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-onprem-fmc-authbypass-5JPp45V2 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-20079",
+          "cwes": [
+            "CWE-288"
+          ],
+          "source": "CISA-KEV"
+        },
         {
           "cveID": "CVE-2026-75650",
           "vendorProject": "Adobe",
@@ -33318,7 +33383,7 @@
       {
         "title": "Luminis cybersecurity incident highlights ‘concerning’ rise in attacks on healthcare",
         "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmlmbFJ1UEZkd1RRSDloR1lrMGEzSjhrNVBNQ2FQT0tOZUZLV2RoOS0tQ0dWSGo2eDNDY3ZZdHd5SVJBVk9lYnVtMktNSjBmMnR0MklmUll3QnozNHFXbmhVZ2g0X1pSdkc3MFVwcF8za0RPZE1uSDE5VDY0ME5HSERINFJIaTg0bWR5Wk9GNDVsdE1uUDdpWFd0R2ppUWVjZ2w2YjhpaXlhY3pRcE9GaS1DanpTVlpNY0FHeWktYw?oc=5",
-        "domain": "marylandmatters",
+        "domain": "marylandmatters.org",
         "language": "",
         "tone": 0,
         "seendate": "20260909T090348Z",
@@ -33331,15 +33396,6 @@
         "language": "",
         "tone": 0,
         "seendate": "20260908T070000Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Critical SonicWall SMA1000 Vulnerabilities CVE-2026-83548, CVE-2026-83549 Exploited in the Wild",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMDdXaHRPQVBuTDdIeFlRdGtOMkt2NEhrbVpfaTg3NUh1bmJ5bjJOamliMlQxS3V2cDU3VzNPMkR0Vi13MEJnWF8tQzAzamlXRDJNUlZBaDZ3X09LSTZUMWVSbnltX3ZhcXA5YklXYmV2T1o1MmxIX29SZmY5QVB3RlBrZzRUM0JZMlhWNk03U0wtZ0FnYTB6cDdBUTZjMy1QOV81UmhfVDczS1hTTHc1WGlDdjdGOFY4SlpjWEM4WWlOd19JYkJnb3dTR3A?oc=5",
-        "domain": "rapid7",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260902T170318Z",
         "source": "GoogleNews"
       },
       {
@@ -33424,15 +33480,6 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Don’t let AI distract from cybersecurity basics, officials and executives warn",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVzFzdTlsOFhyVmVvNTBsamIxUVZPdzFBbWwzRzRZcUNjYzJTOVNJMXMydFJPWFJQQTNONkRNVFpDYXdoZWx2ZnNaRUJXNEkwcFRMck1fdFZlWWdEVjRCS1IxVFpSN0xYVFcyNGNuNlloc19ZVC16S09zYVRFUWxlQ0h2TF90MnN5?oc=5",
-        "domain": "cybersecuritydive",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T164903Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "Boston Scientific says unlikely to meet 2026 sales, profit forecast after cyberattack",
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPV0hfNmdmb2ZPZlZjVU9TOVduRl8zU0d6c1VDOUVRd2lBX09oWGtLdTBNZ1hjWGJpZkY3UFFBZnlZU0doQWdOTXNMeWQ0RTUzLW5hTUlsbk1ZVmItcXJHY2hyTUF2UnZ0OGE5ZTdOMHF6ZVB5UW1UektuMTc4NlQwV09mNzBVQ3R2anNxb05mNVhHMm9yUkxDQUxjZGV0eTRVYTlSdlBZMTY3bm00bUJLTg?oc=5",
         "domain": "reuters",
@@ -33442,12 +33489,39 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Don’t let AI distract from cybersecurity basics, officials and executives warn",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVzFzdTlsOFhyVmVvNTBsamIxUVZPdzFBbWwzRzRZcUNjYzJTOVNJMXMydFJPWFJQQTNONkRNVFpDYXdoZWx2ZnNaRUJXNEkwcFRMck1fdFZlWWdEVjRCS1IxVFpSN0xYVFcyNGNuNlloc19ZVC16S09zYVRFUWxlQ0h2TF90MnN5?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260908T164903Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPM1BUZjYxWHpROXM2QVZDX3hGTHhuV2d3TUl1M0JFQnh2bU96SzF0dVB4QXdvMm5IWWd0SFVEaldtcnZSSkZDT0hnczMzRWdrM2FmcDN2dkYybGV5R21FVWxVa2dKWDhBQURDaVVqdDVTTURtd1hTVTBuSGhwcVRNVA?oc=5",
         "domain": "thehackernews",
         "language": "",
         "tone": 0,
         "seendate": "20260909T091100Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Microsoft breaks Patch Tuesday record with 974-CVE deluge",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ0hSb3BmdHJ0ZlFMdkp6c0Uxb1VJRmdUWXU2WEtBeWM3bUZvS1Jqclp2UVVfZUlRVzFSbHA2Y0FQNWUzaEsyaWdUX1h3QkF0UkFnaXRqTzFHR0FGc0RiVDlFWjByT1VkakQ0UWFwQUlQVVFqTTJmUTMxYVk3U0N2V0xGR1hDLVM2UnFzVldyTGk4VnJxTFNITzRQTHRFYm5oWXVfbG8xTTlvNXAzMjI4OV9oSQ?oc=5",
+        "domain": "theregister",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T002522Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Safety overview: GPT-6 Astra",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE96LWRUcTNTOGszRVdVcDMxel8yNUFJajFqLUxxWklNZDZ1a0FKcW9pMXo5X29iS0ZQcFVGLW5KaTVGczUxRi1iUzZYcm1XcDVBZGlUZ0Jfc2xrSGhNN29QbXVRcw?oc=5",
+        "domain": "openai",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260903T200743Z",
         "source": "GoogleNews"
       },
       {
@@ -33487,30 +33561,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Exclusive | Blackstone Backs Cybersecurity Startup Huskeys to Fight Unwanted AI Traffic",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNWNMenktMnNjcTZhektqWDJTRXRXZ09fV0wxMGk1WGlzLVlDNno2ZVIyZXdIaldMMkkwWE5ReVJOQk5DVmNJYkhNVklXUUgwRkJndkFPYzBsc3VHNlBWdEtzam14Z25Td3RCXzhEdTBOM2xjdU1FYWhWdUYzUWhwMzByMTN2bDdwcEExTTRqRFZzcjg4dWI3bjAyQ2pWMnkzZndFYjVtTkpWeHNYWUZSWE9SNkFfcDYyTTRDRy1VdUQ?oc=5",
-        "domain": "wsj",
+        "title": "Winona County paid $128K ransom after cyberattack; then was attacked again",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZkQ2M0dxMTJNbWRaVXBHM19IbTJFUVliX3JQOVV6Yy1qdU95M0tPaUVlaVFza1hONVJ6Q0UyMjE3eWhKR2Jla3lYV0t4ZUFsMWxGRmp4SkowUjZqT3lMSUlfd1pwN2pBMkdqaE8wdDlxT0s4bUFiaDJvSkxYZzlDRU50YUpOSHlqaERRRnFCRnhRUEI1aTI2dTZ2WkVvajFMdl9LQV9jR0ZDT1Iy?oc=5",
+        "domain": "mprnews",
         "language": "",
         "tone": 0,
-        "seendate": "20260902T230312Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Microsoft breaks Patch Tuesday record with 974-CVE deluge",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ0hSb3BmdHJ0ZlFMdkp6c0Uxb1VJRmdUWXU2WEtBeWM3bUZvS1Jqclp2UVVfZUlRVzFSbHA2Y0FQNWUzaEsyaWdUX1h3QkF0UkFnaXRqTzFHR0FGc0RiVDlFWjByT1VkakQ0UWFwQUlQVVFqTTJmUTMxYVk3U0N2V0xGR1hDLVM2UnFzVldyTGk4VnJxTFNITzRQTHRFYm5oWXVfbG8xTTlvNXAzMjI4OV9oSQ?oc=5",
-        "domain": "theregister",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260909T002522Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "CVE-2026-82533: DeepSeek Harness Vulnerability Lets AI Agents Escape Their Own Sandbox",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQT1ptSVFXeUQzc1gtNzhzQmpsbGJSdHd1RndnSm0zMWRkcWV5dHNVZk5pWUFzaUZyQzlPZ25GMHhRemY4cVBUUkFhU1JoeUo4Z0RWVlZVNHhnRV9mYWlBNlJXNjZUcC1Dd2dnQ0tmZVMxTkdHMEhhazFuazBQRTlWeUsxWHZwSU0zZE1UZTNn?oc=5",
-        "domain": "ox.security",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T203754Z",
+        "seendate": "20260906T090000Z",
         "source": "GoogleNews"
       },
       {
@@ -33523,21 +33579,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Winona County paid $128K ransom after cyberattack; then was attacked again",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZkQ2M0dxMTJNbWRaVXBHM19IbTJFUVliX3JQOVV6Yy1qdU95M0tPaUVlaVFza1hONVJ6Q0UyMjE3eWhKR2Jla3lYV0t4ZUFsMWxGRmp4SkowUjZqT3lMSUlfd1pwN2pBMkdqaE8wdDlxT0s4bUFiaDJvSkxYZzlDRU50YUpOSHlqaERRRnFCRnhRUEI1aTI2dTZ2WkVvajFMdl9LQV9jR0ZDT1Iy?oc=5",
-        "domain": "mprnews",
+        "title": "CVE-2026-82533: DeepSeek Harness Vulnerability Lets AI Agents Escape Their Own Sandbox",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQT1ptSVFXeUQzc1gtNzhzQmpsbGJSdHd1RndnSm0zMWRkcWV5dHNVZk5pWUFzaUZyQzlPZ25GMHhRemY4cVBUUkFhU1JoeUo4Z0RWVlZVNHhnRV9mYWlBNlJXNjZUcC1Dd2dnQ0tmZVMxTkdHMEhhazFuazBQRTlWeUsxWHZwSU0zZE1UZTNn?oc=5",
+        "domain": "oxsecurity",
         "language": "",
         "tone": 0,
-        "seendate": "20260906T090000Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Safety overview: GPT-6 Astra",
-        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE96LWRUcTNTOGszRVdVcDMxel8yNUFJajFqLUxxWklNZDZ1a0FKcW9pMXo5X29iS0ZQcFVGLW5KaTVGczUxRi1iUzZYcm1XcDVBZGlUZ0Jfc2xrSGhNN29QbXVRcw?oc=5",
-        "domain": "openai",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260903T200743Z",
+        "seendate": "20260908T203754Z",
         "source": "GoogleNews"
       },
       {
@@ -33550,12 +33597,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "DOE and Sandia National Lab use AI to boost electric grid cybersecurity, detect threats with 95% accuracy",
-        "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQY2NoV0FDYnJSdklwYmVpOEVZTkFQTUJUREhWSFpzSjZLdjRaeWMyS0JLbDFPRXRkTXo3dy1oYXNBc3RHY2J2WkhjMmRrSFhCcWp3QmtSdGozRWNjWDlqejBWTDBnNFotWDFIbkxVOGlYUDhFWXRHNFB0V241Q3J4SlVLX0hlNkRFQ3YwVGM4WHVNUDFlcjVuZ19MOGFBb25tZ3MzNnotYU9pVnZMOFl2UUZXSWlkNG5sU3ZrWEtJd1VKR195cXFyZ2lzSVI3M1FMUVVzLTY3Y3B5RW91SUZnSXNqVi13LUZtdm1vWk1fTkMzYUpkbUFvWXl3?oc=5",
-        "domain": "industrialcyber",
+        "title": "Microsoft Patches Record 974 Flaws, Including Two Exploited Windows Zero-Days",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1yY1hjMGVadnJZbXZOczUzMzJpVTh6Tm9XWWkzcFJyM3hrVW9BS1VHQjdDLUkyY2c5WHVVYkZuV1JrUVZMS2paNDZNclktOTRGbVV6eTNlX0RFeUI0WVhHUWR4OWxqcFQ2cjJLWVJDcHRhZWJYVVpKdjZmZS1DZw?oc=5",
+        "domain": "thehackernews",
         "language": "",
         "tone": 0,
-        "seendate": "20260908T063239Z",
+        "seendate": "20260909T044100Z",
         "source": "GoogleNews"
       },
       {
@@ -33568,24 +33615,6 @@
         "source": "GoogleNews"
       },
       {
-        "title": "AI agents carried out every step of this ransomware attack – then left the victim an 80-page security audit",
-        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQQUJkX0VXdElDcDRWQzl0MnU2bGxpTjZLTjUtTzEtY29YeFVXdVNILWhHRnRuYUJsYmdUTnBJUF9hSTlmejBSbGN0NDVXZ3g3WEh4SGRTVWZmOVhuVFFENkZWc2pTYXVTanhsMUV6cEpkdWVxb0g0VklNT1pwdmJraHRfbDkxUXZ4VTdFY2dSN0dnQ2tqckJ3Z3R1M2VTYXRzWWtnNi1DR0FNZHJYTzFuYzNWc29KalBPcDZXd0NYR3lPeHFEWjdzcVpOQU5HN24zQ190QXd0Z2NwMHkzX0l2QzRRdTFTaHV4S2lzSzg5UFFvT1E?oc=5",
-        "domain": "theregister",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260902T182800Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYmF3RUktTzNSWTMxYi0wUS1EVE13SFBqekxZbGJPNVRQTExCMkdta1djR3VpRmpDZVlwaUg3WHBMUjdfY2JNaGN1TEJlM1FCeVAtVTBzUmtsQWIwMkI0ZDFhcDlXSWdtdzJ3dlZuWEpMT0tOQmFFc3h2OGZJcl9UOURBcw?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260904T071800Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "CISA retires six cybersecurity assessments for critical infrastructure amid rising threats, workforce pressures",
         "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOaXI3VnBtdkRuUE5oTDZXdWY4UUF4eDRkRDZid3pxc05IRGIwR1FKcWp3aVhsQTdFQVRwbE1MU1JkZi1zWlJYeE01UXVXU1NSbk5pcU5hR3E4Xy05MnZ4TWtxNC02djlhMndXNmpGbEZOY0E5T3doQ0JEZEI0ckwtN3VlLS1hZDhsSmRkOWx5Tkk1V3lIZFlQQjQ1dWIyRnpYRVlYTXFpSGVFX3lBSXkyZWNHd3g2QVlSb293WDR3TWJQSFY0X2U1TVNYQ0JaTFhINE8zVHVNbEVQQ2c?oc=5",
         "domain": "industrialcyber",
@@ -33595,66 +33624,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Microsoft Patches Record 974 Flaws, Including Two Exploited Windows Zero-Days",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1yY1hjMGVadnJZbXZOczUzMzJpVTh6Tm9XWWkzcFJyM3hrVW9BS1VHQjdDLUkyY2c5WHVVYkZuV1JrUVZMS2paNDZNclktOTRGbVV6eTNlX0RFeUI0WVhHUWR4OWxqcFQ2cjJLWVJDcHRhZWJYVVpKdjZmZS1DZw?oc=5",
-        "domain": "thehackernews",
+        "title": "Ransomware Is The New Normal: Cybersecurity Considerations for Fiduciaries",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPb3F4MGZpS2dSZm53ZTNxOHZmVU9hYTJpMklsU0RzY1V0c3Z4ekNoOVlvSGtfUDNrMDdrQzZGaGdLekNsaHpQMDZIVTBVRnAtWFlsdWUtOWVpVTFESy04bGJVREhqMF9LYmtSVWx0WlprQnJoSWdOMTBVVDRpekRTMF9SUllQSFZoWDlJc3gxY1pwWVFKMFZFMzhMMWwyUngtR3hDZHI1RlFVdllM?oc=5",
+        "domain": "cybercrimemagazine",
         "language": "",
         "tone": 0,
-        "seendate": "20260909T044100Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "SANS Institute signs German government cybersecurity training deal to strengthen national cyber resilience",
-        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMEVKWmd2TlZyUGhVdjhXNWYySFVNVW9jd1d6TFFVdV9PeWlvSHRlUklTSXItNjBsbG9NQjNKSnJ5SXlTVWhtaVVfQ193djljR3hlT05JMTU3YnJndzRUMEVZQnRiTHF4WEQ2X0hfTUJQcl9pQ0h4Zk1ndmFvbHFuUEVyWU9ub1BWQWp4ZEk2N1ZUTzFxUjh3SE1ZMWNCbkZDdHg0SFlYd0wxaGJhdE5XU0FOc3IwMlpvaW9ZYkRNSDNoUWZIOXFaVHdBbnN4NTZtaWlwZzF3?oc=5",
-        "domain": "industrialcyber",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T055233Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Tech company discloses first-of-its-kind A.I. cyberattack of one government against another",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYW9BSk5NaVZJXzczSHBuM1J0VG9wR2xrckxWY2JRc2JuOTJqY1NtM1E1RFZYUTNNYlNFZWVnTWhHQmx5S085TzN4VVRic1JhRjY4WlVBVzRCclktLUJnRjBhTkJteHpUTUxLSTY2ZTFMeVZtV1dqS1cxMDVTVjBCQ09yNHc1QTYzcHNCdEJvbVhUal82SHJvZ3JXc3M0UWpyTjhGN1o3RmF2aU9WYmN2MzhDU2NFd2swY1NUWg?oc=5",
-        "domain": "nbcnews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T233032Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Five Healthcare Providers Report Ransomware-Related Data Breaches",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSFVuQ3Q5b0UzRnRCZXhBNU1nd1BraWVEaDRSa245ek9HZ0tVWl81LXpsTXo0eDk2bG9QQXMzQWxlNG1pZ2RqSWV0UUtKTUlsbS1QX3lQeDhSOFZDeFRzQmtyenZQX2FYYzNHUE03dmo2OHR3cV9HbkE1bFhqUHJ3MzJB?oc=5",
-        "domain": "thehipaajournal",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260903T141917Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "OpenAI commits $1 billion to expand frontier AI cybersecurity for critical infrastructure, essential services",
-        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQSXVTYU8ta0RZVEJfb0tIcmppdVVRbkxGNHVwU2pMLXdpQXZ3bDNjT2s3Vl83ZDlkeGF3UGQ3eDNXR0hxNTBIR1pJa0tJSl9xei1rM2syM080YzhneW1ucXVVNlowaHZQMmhfNVYtdmZCVnFwSGtqeTQxS3NlY1ltNHRMaTNBLV9WV0NYNGQ1MTFyVk92VG5iRkkyVGc2Mk5reGY4X3hWNkUyUVE3b0xNcVFIZGp6OFNySzA1V1ZRVlRZdmhBQ3dGU3Q4VG9wVWh0RlVPc0ZKWlp1ZEpSaThxR2tVeTJBVUpKTy1YM09Oa04?oc=5",
-        "domain": "industrialcyber",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260907T155726Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "SAP Patches CVSS 10.0 Kernel Flaw Enabling Unauthenticated Remote Code Execution",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE91N09HZllKOGNmZzFtQVB5NC1DZlNyRl9ISndWMU1EbXJ6Vl9ROV94SmdSVjA2VXk1VUR4aWR6WTktX0E4ZWp0UHgwb3g5emg1a2hucW5SREd5SGNwRGVRZG9FRnNLQUlybm1xVklFLU5EU0gtQzM4WXFZdw?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260909T062500Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Critical VMware Workstation and Fusion Flaw Lets VM Admins Execute Host Code",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTkY2S0pXVFdhM01sRVJ2UVdYa2dqeFUwcmxGbXdTeWZ3VE9lSHp4cVQ3cXBUcllFSXJNMjZiaVlGTWc4dWtVdXYtM2lBU09rRXBNbEZublNOUW1zLXF5MGg5c1FfNWkzMWFYX3pjSnUycVczZlAyMmZDeFZxcUV1WWJxMA?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260905T160500Z",
+        "seendate": "20260909T125703Z",
         "source": "GoogleNews"
       },
       {
@@ -33667,21 +33642,57 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYmF3RUktTzNSWTMxYi0wUS1EVE13SFBqekxZbGJPNVRQTExCMkdta1djR3VpRmpDZVlwaUg3WHBMUjdfY2JNaGN1TEJlM1FCeVAtVTBzUmtsQWIwMkI0ZDFhcDlXSWdtdzJ3dlZuWEpMT0tOQmFFc3h2OGZJcl9UOURBcw?oc=5",
+        "domain": "thehackernews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260904T071800Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Tech company discloses first-of-its-kind A.I. cyberattack of one government against another",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYW9BSk5NaVZJXzczSHBuM1J0VG9wR2xrckxWY2JRc2JuOTJqY1NtM1E1RFZYUTNNYlNFZWVnTWhHQmx5S085TzN4VVRic1JhRjY4WlVBVzRCclktLUJnRjBhTkJteHpUTUxLSTY2ZTFMeVZtV1dqS1cxMDVTVjBCQ09yNHc1QTYzcHNCdEJvbVhUal82SHJvZ3JXc3M0UWpyTjhGN1o3RmF2aU9WYmN2MzhDU2NFd2swY1NUWg?oc=5",
+        "domain": "nbcnews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260908T233032Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Cyberattack forces Mass. district to cancel classes Tuesday",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWFN4MXNIamhqcUpQWlJzendiSzBjLWhVbkxuSTBqNEhtcElOUy02VDVNT00yTXdhVjFnV09iMFJEZ2JSeUlNVVBsNFBVS0xkSHA5WFZ4N2lleGVENk1hamc4QzJUR2pfSHNMazFfUVZqR1V3a2xRUmtDa0NHVkJfMWVSaENoblRia2xILQ?oc=5",
+        "domain": "wcvb",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260907T213000Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Critical VMware Workstation and Fusion Flaw Lets VM Admins Execute Host Code",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTkY2S0pXVFdhM01sRVJ2UVdYa2dqeFUwcmxGbXdTeWZ3VE9lSHp4cVQ3cXBUcllFSXJNMjZiaVlGTWc4dWtVdXYtM2lBU09rRXBNbEZublNOUW1zLXF5MGg5c1FfNWkzMWFYX3pjSnUycVczZlAyMmZDeFZxcUV1WWJxMA?oc=5",
+        "domain": "thehackernews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260905T160500Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "SAP Patches CVSS 10.0 Kernel Flaw Enabling Unauthenticated Remote Code Execution",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE91N09HZllKOGNmZzFtQVB5NC1DZlNyRl9ISndWMU1EbXJ6Vl9ROV94SmdSVjA2VXk1VUR4aWR6WTktX0E4ZWp0UHgwb3g5emg1a2hucW5SREd5SGNwRGVRZG9FRnNLQUlybm1xVklFLU5EU0gtQzM4WXFZdw?oc=5",
+        "domain": "thehackernews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T062500Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Cognizant, CrowdStrike expand collaboration with OT cybersecurity service for converged IT and OT environments",
         "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNTDRtTnlOd3JORkhsU21XcjFtNFdDSWE3aGJNMnRrdENrM2FZU09SY0ZHcFhjdkxhTE5tYVJhNXluc3JtcVcyN0VtbFV0M05WOHlqTnJaM3RtMHVtWkJjZWxOTGQ5WmU4enpCb2puOE1yZFN1bDB2ZEluY3B4a3p2akg2M2M1a2pEU0doclQyZkluWjhYN2lGYVowWWg2QUZsQnFwYm5adVhUUDFzaE4zcUQ2MUlKVjJLSEVhUEhIYUlzMkJBdHU5SV9KaU56WXlnb0pzVDF3anMtQQ?oc=5",
         "domain": "industrialcyber",
         "language": "",
         "tone": 0,
         "seendate": "20260905T032011Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Cyberattack encrypts systems at Bavarian municipal utility",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBrdjBzQ0RDbWktNVlTUnNSR0o0UU9VZWdlWUJSMnZyVnZSX01VYzc1NUNyQTlXZHczRldBd2JCQzU2WmtDM3p0WW5UTW5GWThHcHRTQi1Dbk5NOW54OVRicThFRXd1YWd6dldn?oc=5",
-        "domain": "therecordfromrecordedfuturenews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T122049Z",
         "source": "GoogleNews"
       },
       {
@@ -33703,6 +33714,24 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Google fixes yet another actively exploited Chrome zero-day (CVE-2026-87491)",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdnFCLW9wVy1EUURGc0JQbUtDemFaNzJhRmpfdmkxbjg3SmVUMjFQZnRNcDNjUHVxOEFmcDkzQnlWQ2NhTjIxSjZFMjUyZnptYkNEMy1pblpHQmtxZ1ZGVTE5N3lNc1hwcGItOVRObG90UFQxM3Z2dnhiLVppenRyUmhlTkt2aUNfa1poQzBKVQ?oc=5",
+        "domain": "helpnetsecurity",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T075357Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "CVE-2026-86206, CVE-2026-86207: N-able N-central Authentication Bypass (FIXED)",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeTMtMTMweDczNDJnV2hJQTRPczF5TUxtQVh2dEppc2VjMlVBQW9ETVBIaE1PWUpNbFJ6aG9TSWZ4Z05ZdTlKZDVoWHExbHZEb0R3VFduSFgzZ25PQnkyWGxBT045RHJYYkN1QnhWSkE2N1hPeS00eEk4bmVfdC1pNUM3aXg3Nlg5dDM0eWIzS3I5TDVqRHhVd2JDU3NRaWFpX3BFMnNQR2stbjc2RHViYQ?oc=5",
+        "domain": "rapid7.com",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260908T112753Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Researcher Drops New Microsoft Defender PoC Showing ShieldBreak Patch Can Be Bypassed",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMndGeWg0RWU2eU1QSFU5a19sTUFvZ1FDakJFd0lkWVhkOVM2OU1xSHY3QTMyQk9jY3dtVmdaUHhtNENOUnRacFA3bnR6ME95LWV2cGZVc1JjLVg5Nm1XeERlQmRNbm9CNGtOY1pGejBkQVh1bnJPYUx3V3BKS0RfWmVMX0M?oc=5",
         "domain": "thehackernews",
@@ -33712,18 +33741,9 @@
         "source": "GoogleNews"
       },
       {
-        "title": "CVE-2026-86206, CVE-2026-86207: N-able N-central Authentication Bypass (FIXED)",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeTMtMTMweDczNDJnV2hJQTRPczF5TUxtQVh2dEppc2VjMlVBQW9ETVBIaE1PWUpNbFJ6aG9TSWZ4Z05ZdTlKZDVoWHExbHZEb0R3VFduSFgzZ25PQnkyWGxBT045RHJYYkN1QnhWSkE2N1hPeS00eEk4bmVfdC1pNUM3aXg3Nlg5dDM0eWIzS3I5TDVqRHhVd2JDU3NRaWFpX3BFMnNQR2stbjc2RHViYQ?oc=5",
-        "domain": "rapid7",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T112753Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "UConn Student Justin Fargo Went from Family iPhone-Fixer to Small Business Cybersecurity Champion",
         "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQTEE2akxkQlZqem04MEw1OXNiVEw2WlA4Rml4dk9ocjlFZTYwbGU1T2NQZGRET0lmbW9ZWWppLU45bEMyOGdGbnFPdzRSX0s5X0s1dXFKUkZoSjlhVTNxT2dRdnpDSnZ2YzlSOTRfMHh2Q0hxUjROSGNYZExNenNJZXpudkgyOFZhamNnWVpJM0ZoYUxyTUl5MThQNVBzNlVDWnNfZXFzQ29MTGtsVFZxbG5UVk9yTHBodTQxTXVTLUZ4VVoxd2lESm93?oc=5",
-        "domain": "today.uconn.edu",
+        "domain": "uconntoday",
         "language": "",
         "tone": 0,
         "seendate": "20260909T163000Z",
@@ -33748,21 +33768,66 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Ransomware Is The New Normal: Cybersecurity Considerations for Fiduciaries",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPb3F4MGZpS2dSZm53ZTNxOHZmVU9hYTJpMklsU0RzY1V0c3Z4ekNoOVlvSGtfUDNrMDdrQzZGaGdLekNsaHpQMDZIVTBVRnAtWFlsdWUtOWVpVTFESy04bGJVREhqMF9LYmtSVWx0WlprQnJoSWdOMTBVVDRpekRTMF9SUllQSFZoWDlJc3gxY1pwWVFKMFZFMzhMMWwyUngtR3hDZHI1RlFVdllM?oc=5",
-        "domain": "cybercrimemagazine",
+        "title": "Why judgment is emerging as cybersecurity’s defining skill",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9ZT2ZiUXVWcUpzLU5yRUljVEw0Y1BTVFN1SWlrTURhcDl0ckw2dmtVTUJGdXo1b2d5X1NOMXdQcVJGWDhTSTVreEJWT2FHVzV6YkhKRUVFLVotS0g0S1Z5d25tMzZ4ZDJNQ3lUd0dKWTlsLVpuUTNOQUtTVQ?oc=5",
+        "domain": "cyberscoop",
         "language": "",
         "tone": 0,
-        "seendate": "20260909T125703Z",
+        "seendate": "20260904T100734Z",
         "source": "GoogleNews"
       },
       {
-        "title": "SAP Patches Critical Extended Passport Processing Vulnerability",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWXRISmxpU0xfMTFyWGxYYmJSZVZtei13NWI5V2VjQUJjSFpkVFpOQjI3d0g3dVdQd0RDRTJqdmZURkg0WmZnaVAxRlJ1OU15VVAtakpFMVI0bl9CVWdHSGNZN0kxZXA5aDd0YXBaeTdscUxQYjV4LUtyZmo3Y1lOQ2JUNjFwS2hBZGZfY19CYUpXd2pBai1sOdIBngFBVV95cUxNSHo1dVliOTlNS250d1JLNGpKd1ZQTFdvLUQ2RU1fb1hJSG1QVkxseDlQM2Q3T0U3amljVTFHS0gzODBrckZScHpETU9IY3VKMThxd1lZVWd3dW44Qzk1VzU1QXdBZE5ZYlFiTGx5b3dkcFNwQVBlRjNtUGxRcl9lb0gwemxmSVFKVmdTSWNfZVo4bkxTOXR6T3daSERPUQ?oc=5",
+        "title": "'Cybersecurity incident' causes Tuesday closure of Everett City Hall",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdTZTb0VhbFl5TDF6NmZvdHl0RFRQTzBXZlZuNFBkdW95bktfejlEdmV1V3FkYkJKcDFUU2ZtcFJTNFcxNFNmNE9abUZzOHRPUEhMTzc1V3JzNEVsUV80MlJEVlR3SHdMUzM3MmdHSzExMkZXUTRwWkxFVWtyMVpvNUNZQ2FTTmIxdHJxd1I0ZXpTZHVV?oc=5",
+        "domain": "wcvb",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260908T210500Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Berlin cyberattack: hackers leak highly sensitive data across dark web",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOQWU4cHZUWkl3VHQyNnZtSV9YS3lXbkJpT2c1UFhTR2M0Zmt3SDRUXzVpdWVydUtMNDhOVE16RlVQcHd0aHlJUXFKMnBKZ1Q0QXRtZTA2em9WTkZVSFgtS2hQa0tHZlQwSldQRWswbm1XdEE5VmdYMXhJalhuck1oWkk3U2lnbDdnSHVGX2lZa3Q2Q2JGVWM2NUU3Mi11QlNxXzB6cFkxT3AwWVpjdkpB?oc=5",
+        "domain": "euronews.com",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260905T071758Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Boston Scientific says disruption to remote monitoring services resolved following cyber incident",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOVjFiYTJMUmtBTXVMYVZzZWJtaTB6dnJaZkU1RFllcFN0bXZPcXV6U3lJU2VRcVJlRDZndTJVa1ZOV2UtOXZhV0Nuc2tkWC1rMmJoRU93T21STUdHU3Q2TmE0WEJGMXcyMnVJSzJNSndORTJXNG9peEV0RE85b3FmRGMyWnFidHdfeUJEVzR3bGlQX0J2TE5TdjdiWE5RaVlONnQtdFNaOXM4d0ZUMFI1NF96SXdqM2lnMXVlX04wTlJGY0Y1YzRHNEt4NVgyLXFDQjdYdmhB?oc=5",
+        "domain": "americanhospitalassociation",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260908T201125Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Adobe Commerce Zero-Day Exploited to Backdoor Online Stores",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdnpITnZQRnpmdU1MUWkycWx2T2ZXRTFJMFNtXzRZMklQcW1NU3BBTXQzQWxzSzljZl9xYmptZTgxdGU3ZzNpQlZWR0N4THByMUFxVGdrWUVjUTlKUWNpRmdBSXhNR3NXQV9QMktWMzlPWmI3Vm5KWkVJX0h4RGszNVhCZnhzWElIYVpiUnI4el9NX2fSAZgBQVVfeXFMTnh0OC1OMjcwU253NWVaU1FMTnR3TjhoeUI2ck9GOUtaSTlrOHZ3d3BTbUZURU92NzFMR1dseDJaR013VDU4clJPYTIwM3l0M3dZYkd0WklZV2FfNEVOc1NEamRPUVVQUlcxcldtNkdkcUhKQUZsSFNaV3VGUzlSN3lOMk00Ym9BTlpvVmFzWTBtT2hvNVhnVHc?oc=5",
         "domain": "securityweek",
         "language": "",
         "tone": 0,
-        "seendate": "20260908T145506Z",
+        "seendate": "20260907T115837Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "When Detection Arrives After the Damage: Ransomware as a Patient-Safety Emergency",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQ1lEX0NTdVBCTXBMSTdRU2FLUlhobnk2MG1MT29MX1FLTzkwSG40YmREVGU2WmEzU180U2dUVEQzWFJqeU5FZTV4cVozQVYyeUpDRU5ZVXVoaFllMFhtNE40emtKZk15NkJ4eTVjS0ppeWpYQ1ZwdldOWnR1TlFnTWVCdW5aNVFXY24zWHhuSy11UFFZamlkOGhuWWtSRXRBOEZjaHpGMjNyckR4VURLU0hn?oc=5",
+        "domain": "morphisec",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260908T150740Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Exploring cybersecurity needs for energy-efficient analog computing",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9sWFNGVDB6emZKSnl0YUphVGp1QjBBMFctekZzaFhxVmpfaGY4SHZnU0xXWlpkWHhZRWY0cG1OcDdSdi16aW1aMUlRcnVQN2FXRW9teXF3TW9rS0dzeEV2UThYV2tFU2dYMm1RZkxRTQ?oc=5",
+        "domain": "ucsantacruz-news",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260908T070000Z",
         "source": "GoogleNews"
       }
     ]
@@ -33772,7 +33837,7 @@
     {
       "title": "Luminis cybersecurity incident highlights ‘concerning’ rise in attacks on healthcare",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmlmbFJ1UEZkd1RRSDloR1lrMGEzSjhrNVBNQ2FQT0tOZUZLV2RoOS0tQ0dWSGo2eDNDY3ZZdHd5SVJBVk9lYnVtMktNSjBmMnR0MklmUll3QnozNHFXbmhVZ2g0X1pSdkc3MFVwcF8za0RPZE1uSDE5VDY0ME5HSERINFJIaTg0bWR5Wk9GNDVsdE1uUDdpWFd0R2ppUWVjZ2w2YjhpaXlhY3pRcE9GaS1DanpTVlpNY0FHeWktYw?oc=5",
-      "domain": "marylandmatters",
+      "domain": "marylandmatters.org",
       "language": "",
       "tone": 0,
       "seendate": "20260909T090348Z",
@@ -33785,15 +33850,6 @@
       "language": "",
       "tone": 0,
       "seendate": "20260908T070000Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Critical SonicWall SMA1000 Vulnerabilities CVE-2026-83548, CVE-2026-83549 Exploited in the Wild",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMDdXaHRPQVBuTDdIeFlRdGtOMkt2NEhrbVpfaTg3NUh1bmJ5bjJOamliMlQxS3V2cDU3VzNPMkR0Vi13MEJnWF8tQzAzamlXRDJNUlZBaDZ3X09LSTZUMWVSbnltX3ZhcXA5YklXYmV2T1o1MmxIX29SZmY5QVB3RlBrZzRUM0JZMlhWNk03U0wtZ0FnYTB6cDdBUTZjMy1QOV81UmhfVDczS1hTTHc1WGlDdjdGOFY4SlpjWEM4WWlOd19JYkJnb3dTR3A?oc=5",
-      "domain": "rapid7",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260902T170318Z",
       "source": "GoogleNews"
     },
     {
@@ -33878,21 +33934,21 @@
       "source": "GoogleNews"
     },
     {
-      "title": "Don’t let AI distract from cybersecurity basics, officials and executives warn",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVzFzdTlsOFhyVmVvNTBsamIxUVZPdzFBbWwzRzRZcUNjYzJTOVNJMXMydFJPWFJQQTNONkRNVFpDYXdoZWx2ZnNaRUJXNEkwcFRMck1fdFZlWWdEVjRCS1IxVFpSN0xYVFcyNGNuNlloc19ZVC16S09zYVRFUWxlQ0h2TF90MnN5?oc=5",
-      "domain": "cybersecuritydive",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260908T164903Z",
-      "source": "GoogleNews"
-    },
-    {
       "title": "Boston Scientific says unlikely to meet 2026 sales, profit forecast after cyberattack",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPV0hfNmdmb2ZPZlZjVU9TOVduRl8zU0d6c1VDOUVRd2lBX09oWGtLdTBNZ1hjWGJpZkY3UFFBZnlZU0doQWdOTXNMeWQ0RTUzLW5hTUlsbk1ZVmItcXJHY2hyTUF2UnZ0OGE5ZTdOMHF6ZVB5UW1UektuMTc4NlQwV09mNzBVQ3R2anNxb05mNVhHMm9yUkxDQUxjZGV0eTRVYTlSdlBZMTY3bm00bUJLTg?oc=5",
       "domain": "reuters",
       "language": "",
       "tone": 0,
       "seendate": "20260908T134358Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "Don’t let AI distract from cybersecurity basics, officials and executives warn",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVzFzdTlsOFhyVmVvNTBsamIxUVZPdzFBbWwzRzRZcUNjYzJTOVNJMXMydFJPWFJQQTNONkRNVFpDYXdoZWx2ZnNaRUJXNEkwcFRMck1fdFZlWWdEVjRCS1IxVFpSN0xYVFcyNGNuNlloc19ZVC16S09zYVRFUWxlQ0h2TF90MnN5?oc=5",
+      "domain": "cybersecuritydive",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260908T164903Z",
       "source": "GoogleNews"
     },
     {
@@ -33903,16 +33959,25 @@
       "tone": 0,
       "seendate": "20260909T091100Z",
       "source": "GoogleNews"
+    },
+    {
+      "title": "Microsoft breaks Patch Tuesday record with 974-CVE deluge",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ0hSb3BmdHJ0ZlFMdkp6c0Uxb1VJRmdUWXU2WEtBeWM3bUZvS1Jqclp2UVVfZUlRVzFSbHA2Y0FQNWUzaEsyaWdUX1h3QkF0UkFnaXRqTzFHR0FGc0RiVDlFWjByT1VkakQ0UWFwQUlQVVFqTTJmUTMxYVk3U0N2V0xGR1hDLVM2UnFzVldyTGk4VnJxTFNITzRQTHRFYm5oWXVfbG8xTTlvNXAzMjI4OV9oSQ?oc=5",
+      "domain": "theregister",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260909T002522Z",
+      "source": "GoogleNews"
     }
   ],
   "timeseries": [],
   "llm_summary": "",
   "early_warning": {
-    "issued_at": "2026-09-09T16:55:19.756473+00:00",
+    "issued_at": "2026-09-09T21:16:04.583942+00:00",
     "horizon": "next 30 days",
     "classification": "global-exploitation-pressure-not-organisation-breach-probability",
-    "score": 45.8,
-    "level": "WATCH",
+    "score": 60.1,
+    "level": "ELEVATED",
     "confidence": "HIGH",
     "confidence_score": 100.0,
     "components": [
@@ -33920,18 +33985,83 @@
         "id": "kev_addition_pressure",
         "label": "CISA exploited-vulnerability burst",
         "available": true,
-        "score": 39.5,
-        "catalog_count": 1699,
-        "recent_7d_count": 5,
+        "score": 74.7,
+        "catalog_count": 1703,
+        "recent_7d_count": 9,
         "prior_7d_count": 12,
         "baseline_weeks": 26,
         "baseline_weekly_median": 5.5,
-        "anomaly_z": -0.22,
+        "anomaly_z": 1.57,
         "ransomware_known_7d": 0,
-        "due_within_7d": 2,
+        "due_within_7d": 5,
         "catalog_version": "2026.09.09",
-        "released_at": "2026-09-09T12:56:45.0136Z",
+        "released_at": "2026-09-09T19:00:50.2591Z",
         "evidence": [
+          {
+            "cveID": "CVE-2026-19490",
+            "vendorProject": "Citrix",
+            "product": "NetScaler",
+            "vulnerabilityName": "Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+            "dateAdded": "2026-09-09",
+            "shortDescription": "Citrix NetScaler ADC and NetScaler Gateway contain an authentication-bypass vulnerability involving an alternate path or channel. When the NetScaler appliance is configured as an AAA virtual server or as a Gateway (SSL VPN, ICA Proxy, CVPN, or RDP Proxy), an unauthenticated remote threat actor may be able to bypass authentication.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-09-12",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "https://support.citrix.com/external/article/CTX696939/netscaler-adc-and-netscaler-gateway-secu.html ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-19490",
+            "cwes": [
+              "CWE-288"
+            ],
+            "source": "CISA-KEV"
+          },
+          {
+            "cveID": "CVE-2025-25249",
+            "vendorProject": "Fortinet",
+            "product": "Multiple Products",
+            "vulnerabilityName": "Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability",
+            "dateAdded": "2026-09-09",
+            "shortDescription": "Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-09-12",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "https://fortiguard.fortinet.com/psirt/FG-IR-25-084 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2025-25249",
+            "cwes": [
+              "CWE-122",
+              "CWE-787"
+            ],
+            "source": "CISA-KEV"
+          },
+          {
+            "cveID": "CVE-2026-87491",
+            "vendorProject": "Google",
+            "product": "Chromium V8",
+            "vulnerabilityName": "Google Chromium V8 Out of Bounds Write Vulnerability",
+            "dateAdded": "2026-09-09",
+            "shortDescription": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-09-23",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-87491 ",
+            "cwes": [
+              "CWE-787"
+            ],
+            "source": "CISA-KEV"
+          },
+          {
+            "cveID": "CVE-2026-20079",
+            "vendorProject": "Cisco",
+            "product": "Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management",
+            "vulnerabilityName": "Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+            "dateAdded": "2026-09-09",
+            "shortDescription": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management contain an authentication Bypass using an alternate path or channel vulnerability that could allow an unauthenticated, remote attacker to bypass authentication and execute script files on an affected device to obtain root access to the underlying operating system.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-09-12",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-onprem-fmc-authbypass-5JPp45V2 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-20079",
+            "cwes": [
+              "CWE-288"
+            ],
+            "source": "CISA-KEV"
+          },
           {
             "cveID": "CVE-2026-75650",
             "vendorProject": "Adobe",
@@ -34145,12 +34275,12 @@
         "id": "exploit_narrative_pressure",
         "label": "Cross-source exploit precursor language",
         "available": true,
-        "score": 65.0,
+        "score": 66.0,
         "events_considered": 50,
-        "matched_event_count": 11,
-        "matched_share": 0.22,
-        "independent_sources": 28,
-        "unique_cves": 6,
+        "matched_event_count": 12,
+        "matched_share": 0.24,
+        "independent_sources": 32,
+        "unique_cves": 5,
         "cross_source_baskets": 2,
         "baskets": [
           {
@@ -34165,12 +34295,12 @@
           },
           {
             "id": "perimeter_access",
-            "independent_sources": 4,
+            "independent_sources": 5,
             "cross_source_confirmed": true
           },
           {
             "id": "campaign_shift",
-            "independent_sources": 4,
+            "independent_sources": 3,
             "cross_source_confirmed": true
           }
         ],
@@ -34217,10 +34347,23 @@
             "cves": []
           },
           {
-            "title": "AI agents carried out every step of this ransomware attack – then left the victim an 80-page security audit",
-            "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQQUJkX0VXdElDcDRWQzl0MnU2bGxpTjZLTjUtTzEtY29YeFVXdVNILWhHRnRuYUJsYmdUTnBJUF9hSTlmejBSbGN0NDVXZ3g3WEh4SGRTVWZmOVhuVFFENkZWc2pTYXVTanhsMUV6cEpkdWVxb0g0VklNT1pwdmJraHRfbDkxUXZ4VTdFY2dSN0dnQ2tqckJ3Z3R1M2VTYXRzWWtnNi1DR0FNZHJYTzFuYzNWc29KalBPcDZXd0NYR3lPeHFEWjdzcVpOQU5HN24zQ190QXd0Z2NwMHkzX0l2QzRRdTFTaHV4S2lzSzg5UFFvT1E?oc=5",
-            "source": "theregister",
-            "observed_at": "20260902T182800Z",
+            "title": "Microsoft Patches Record 974 Flaws, Including Two Exploited Windows Zero-Days",
+            "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1yY1hjMGVadnJZbXZOczUzMzJpVTh6Tm9XWWkzcFJyM3hrVW9BS1VHQjdDLUkyY2c5WHVVYkZuV1JrUVZMS2paNDZNclktOTRGbVV6eTNlX0RFeUI0WVhHUWR4OWxqcFQ2cjJLWVJDcHRhZWJYVVpKdjZmZS1DZw?oc=5",
+            "source": "thehackernews",
+            "observed_at": "20260909T044100Z",
+            "baskets": [
+              "perimeter_access"
+            ],
+            "terms": [
+              "zero-day"
+            ],
+            "cves": []
+          },
+          {
+            "title": "Ransomware Is The New Normal: Cybersecurity Considerations for Fiduciaries",
+            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPb3F4MGZpS2dSZm53ZTNxOHZmVU9hYTJpMklsU0RzY1V0c3Z4ekNoOVlvSGtfUDNrMDdrQzZGaGdLekNsaHpQMDZIVTBVRnAtWFlsdWUtOWVpVTFESy04bGJVREhqMF9LYmtSVWx0WlprQnJoSWdOMTBVVDRpekRTMF9SUllQSFZoWDlJc3gxY1pwWVFKMFZFMzhMMWwyUngtR3hDZHI1RlFVdllM?oc=5",
+            "source": "cybercrimemagazine",
+            "observed_at": "20260909T125703Z",
             "baskets": [
               "campaign_shift"
             ],
@@ -34243,32 +34386,6 @@
             "cves": []
           },
           {
-            "title": "Microsoft Patches Record 974 Flaws, Including Two Exploited Windows Zero-Days",
-            "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1yY1hjMGVadnJZbXZOczUzMzJpVTh6Tm9XWWkzcFJyM3hrVW9BS1VHQjdDLUkyY2c5WHVVYkZuV1JrUVZMS2paNDZNclktOTRGbVV6eTNlX0RFeUI0WVhHUWR4OWxqcFQ2cjJLWVJDcHRhZWJYVVpKdjZmZS1DZw?oc=5",
-            "source": "thehackernews",
-            "observed_at": "20260909T044100Z",
-            "baskets": [
-              "perimeter_access"
-            ],
-            "terms": [
-              "zero-day"
-            ],
-            "cves": []
-          },
-          {
-            "title": "Five Healthcare Providers Report Ransomware-Related Data Breaches",
-            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSFVuQ3Q5b0UzRnRCZXhBNU1nd1BraWVEaDRSa245ek9HZ0tVWl81LXpsTXo0eDk2bG9QQXMzQWxlNG1pZ2RqSWV0UUtKTUlsbS1QX3lQeDhSOFZDeFRzQmtyenZQX2FYYzNHUE03dmo2OHR3cV9HbkE1bFhqUHJ3MzJB?oc=5",
-            "source": "thehipaajournal",
-            "observed_at": "20260903T141917Z",
-            "baskets": [
-              "campaign_shift"
-            ],
-            "terms": [
-              "ransomware"
-            ],
-            "cves": []
-          },
-          {
             "title": "SAP Patches CVSS 10.0 Kernel Flaw Enabling Unauthenticated Remote Code Execution",
             "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE91N09HZllKOGNmZzFtQVB5NC1DZlNyRl9ISndWMU1EbXJ6Vl9ROV94SmdSVjA2VXk1VUR4aWR6WTktX0E4ZWp0UHgwb3g5emg1a2hucW5SREd5SGNwRGVRZG9FRnNLQUlybm1xVklFLU5EU0gtQzM4WXFZdw?oc=5",
             "source": "thehackernews",
@@ -34282,9 +34399,24 @@
             "cves": []
           },
           {
+            "title": "Google fixes yet another actively exploited Chrome zero-day (CVE-2026-87491)",
+            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdnFCLW9wVy1EUURGc0JQbUtDemFaNzJhRmpfdmkxbjg3SmVUMjFQZnRNcDNjUHVxOEFmcDkzQnlWQ2NhTjIxSjZFMjUyZnptYkNEMy1pblpHQmtxZ1ZGVTE5N3lNc1hwcGItOVRObG90UFQxM3Z2dnhiLVppenRyUmhlTkt2aUNfa1poQzBKVQ?oc=5",
+            "source": "helpnetsecurity",
+            "observed_at": "20260909T075357Z",
+            "baskets": [
+              "perimeter_access"
+            ],
+            "terms": [
+              "zero-day"
+            ],
+            "cves": [
+              "CVE-2026-87491"
+            ]
+          },
+          {
             "title": "CVE-2026-86206, CVE-2026-86207: N-able N-central Authentication Bypass (FIXED)",
             "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeTMtMTMweDczNDJnV2hJQTRPczF5TUxtQVh2dEppc2VjMlVBQW9ETVBIaE1PWUpNbFJ6aG9TSWZ4Z05ZdTlKZDVoWHExbHZEb0R3VFduSFgzZ25PQnkyWGxBT045RHJYYkN1QnhWSkE2N1hPeS00eEk4bmVfdC1pNUM3aXg3Nlg5dDM0eWIzS3I5TDVqRHhVd2JDU3NRaWFpX3BFMnNQR2stbjc2RHViYQ?oc=5",
-            "source": "rapid7",
+            "source": "rapid7.com",
             "observed_at": "20260908T112753Z",
             "baskets": [
               "perimeter_access"
@@ -34311,10 +34443,23 @@
             "cves": []
           },
           {
-            "title": "Ransomware Is The New Normal: Cybersecurity Considerations for Fiduciaries",
-            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPb3F4MGZpS2dSZm53ZTNxOHZmVU9hYTJpMklsU0RzY1V0c3Z4ekNoOVlvSGtfUDNrMDdrQzZGaGdLekNsaHpQMDZIVTBVRnAtWFlsdWUtOWVpVTFESy04bGJVREhqMF9LYmtSVWx0WlprQnJoSWdOMTBVVDRpekRTMF9SUllQSFZoWDlJc3gxY1pwWVFKMFZFMzhMMWwyUngtR3hDZHI1RlFVdllM?oc=5",
-            "source": "cybercrimemagazine",
-            "observed_at": "20260909T125703Z",
+            "title": "Adobe Commerce Zero-Day Exploited to Backdoor Online Stores",
+            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdnpITnZQRnpmdU1MUWkycWx2T2ZXRTFJMFNtXzRZMklQcW1NU3BBTXQzQWxzSzljZl9xYmptZTgxdGU3ZzNpQlZWR0N4THByMUFxVGdrWUVjUTlKUWNpRmdBSXhNR3NXQV9QMktWMzlPWmI3Vm5KWkVJX0h4RGszNVhCZnhzWElIYVpiUnI4el9NX2fSAZgBQVVfeXFMTnh0OC1OMjcwU253NWVaU1FMTnR3TjhoeUI2ck9GOUtaSTlrOHZ3d3BTbUZURU92NzFMR1dseDJaR013VDU4clJPYTIwM3l0M3dZYkd0WklZV2FfNEVOc1NEamRPUVVQUlcxcldtNkdkcUhKQUZsSFNaV3VGUzlSN3lOMk00Ym9BTlpvVmFzWTBtT2hvNVhnVHc?oc=5",
+            "source": "securityweek",
+            "observed_at": "20260907T115837Z",
+            "baskets": [
+              "perimeter_access"
+            ],
+            "terms": [
+              "zero-day"
+            ],
+            "cves": []
+          },
+          {
+            "title": "When Detection Arrives After the Damage: Ransomware as a Patient-Safety Emergency",
+            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQ1lEX0NTdVBCTXBMSTdRU2FLUlhobnk2MG1MT29MX1FLTzkwSG40YmREVGU2WmEzU180U2dUVEQzWFJqeU5FZTV4cVozQVYyeUpDRU5ZVXVoaFllMFhtNE40emtKZk15NkJ4eTVjS0ppeWpYQ1ZwdldOWnR1TlFnTWVCdW5aNVFXY24zWHhuSy11UFFZamlkOGhuWWtSRXRBOEZjaHpGMjNyckR4VURLU0hn?oc=5",
+            "source": "morphisec",
+            "observed_at": "20260908T150740Z",
             "baskets": [
               "campaign_shift"
             ],
@@ -34336,18 +34481,18 @@
     },
     "alerts": [
       {
-        "id": "exploit_narrative_pressure",
-        "title": "Cross-source exploit precursor language",
-        "score": 65.0,
-        "level": "ELEVATED",
-        "why": "Weaponization or exploitation language is confirmed across distinct named sources."
-      },
-      {
         "id": "kev_addition_pressure",
         "title": "CISA exploited-vulnerability burst",
-        "score": 39.5,
-        "level": "WATCH",
+        "score": 74.7,
+        "level": "ELEVATED",
         "why": "CISA additions are elevated against the previous 26 weekly windows."
+      },
+      {
+        "id": "exploit_narrative_pressure",
+        "title": "Cross-source exploit precursor language",
+        "score": 66.0,
+        "level": "ELEVATED",
+        "why": "Weaponization or exploitation language is confirmed across distinct named sources."
       }
     ],
     "history": [
@@ -34830,14 +34975,24 @@
           "epss_frontier_momentum": 25.0,
           "exploit_narrative_pressure": 65.0
         }
+      },
+      {
+        "timestamp": "2026-09-09T21:16:04.583942+00:00",
+        "score": 60.1,
+        "level": "ELEVATED",
+        "components": {
+          "kev_addition_pressure": 74.7,
+          "epss_frontier_momentum": 25.0,
+          "exploit_narrative_pressure": 66.0
+        }
       }
     ],
     "data_health": {
-      "cisa_catalog_count": 1699,
+      "cisa_catalog_count": 1703,
       "epss_frontier_count": 40,
       "epss_timeseries_count": 40,
       "news_events_considered": 50,
-      "independent_news_sources": 28,
+      "independent_news_sources": 32,
       "available_components": 3,
       "retained_components": []
     },
