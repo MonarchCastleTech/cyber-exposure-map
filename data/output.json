@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-09-09T21:16:04.583680+00:00",
+    "generated": "2026-09-10T05:22:34.579363+00:00",
     "mode": "live",
     "sources": [
       "cisa_catalog",
@@ -19,7 +19,7 @@
     },
     {
       "label": "News Domains",
-      "value": "32",
+      "value": "30",
       "delta": "deduplicated"
     },
     {
@@ -33381,12 +33381,30 @@
     },
     "news_articles": [
       {
+        "title": "Cyberattack & Weak 2026 Outlook Weigh on BSX: Is the Stock a Sell?",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPM2tHc3dEV3lQNE85M3ZuVlVScDE2Yzh3WXp5OGVVb1Fyd1hSZ2g0QkZCdDBaT1VFZTlSVmktWWtSRUlBSUw5UjZadk9NTk84azJVVXJEekJiOHlrbzFTMDJWOFlXMTR1dzAtSXRaVGJfV25haG9TbjBpanBKMlBkdEpzS2pmSDF3Q0hQRWdTYnV5TnJWMUFxSEdRZ1o?oc=5",
+        "domain": "yahoofinance",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260903T125400Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Luminis cybersecurity incident highlights ‘concerning’ rise in attacks on healthcare",
         "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmlmbFJ1UEZkd1RRSDloR1lrMGEzSjhrNVBNQ2FQT0tOZUZLV2RoOS0tQ0dWSGo2eDNDY3ZZdHd5SVJBVk9lYnVtMktNSjBmMnR0MklmUll3QnozNHFXbmhVZ2g0X1pSdkc3MFVwcF8za0RPZE1uSDE5VDY0ME5HSERINFJIaTg0bWR5Wk9GNDVsdE1uUDdpWFd0R2ppUWVjZ2w2YjhpaXlhY3pRcE9GaS1DanpTVlpNY0FHeWktYw?oc=5",
-        "domain": "marylandmatters.org",
+        "domain": "marylandmatters",
         "language": "",
         "tone": 0,
         "seendate": "20260909T090348Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "An alignment assessment of recent cybersecurity incidents",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQOFZuQXh2LWp1d0NoNDQ2cHdrTktoZ0dIdDUyeEVrSGVyWDBzT3dsV3lhelR6RXhtYy03MTNSYVlya2hSZm1MMHVkZVFMeEt4RDFJM0Z2TW9SRlFDYTM5eGhxU2YzTWNJOU8yWWktWjU5Y0FUeDdLV0lfdnJ2SW9uZE0zOFFXZw?oc=5",
+        "domain": "anthropic",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T191344Z",
         "source": "GoogleNews"
       },
       {
@@ -33395,7 +33413,7 @@
         "domain": "bostonscientific",
         "language": "",
         "tone": 0,
-        "seendate": "20260908T070000Z",
+        "seendate": "20260910T000704Z",
         "source": "GoogleNews"
       },
       {
@@ -33417,39 +33435,21 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Two Maryland hospitals hit by cyberattack, compromising systems",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdl85bWQ5dTZuSU5QSU92cnZobE5iOFlMRWdfbUpCY3g0TlQzM2NCU2pJT3ExRjFCOXlYbzNZMm9sQU9BdlRaM2xCTExFdmc2eURCOFlFY25FTlBFRGFCNnE1NUN3RVZ4WUlmdnVwVEdWRko0OTZfQmZMY2k5NDNFcVZiVHZibXh2eGxUNmRSTEo0ZnlaYlkwaDg1MVZCTUFyQTNVRGpsWQ?oc=5",
-        "domain": "wypr",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260903T001600Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Boston Scientific Won’t Meet Guidance Due to Cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQU1QWGlJWDQ1bXROelFDaGEwVXBlcFk2ZWdBeXd1eWQ0d1RyT29seGN0Q19Vb3E5VDhPeGZTMnA3dGU4TS13bTdJMmNhVlpUcXhnSmdaTVpwblVmalRDb2xBU3RQV2liMmpGQUxQR1dBTElVQVhCYXM2UGlITFN3Q2x6VU1rcEFCOVF4eUFhQ1Biak1abW5ESA?oc=5",
-        "domain": "wsj",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T105800Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Luminis Health cyber-attack disrupts Anne Arundel Medical Center",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPUUk1Q0VRY2c3RUMxd0U0REFiZ2NDNUllRzRjZFdlcnhocGFYNnl3aTE3RFB2LXQ1cTd2WnNYTEp2LTVYYjgyR2d6NS1XOGx3aG1rQ1A4SUNSc3lrZFZ2elNmMXNjMDE1YnRGcldUVHoyWHZFdHJ5TTR5aklOWldlNlJuMG5BQQ?oc=5",
+        "title": "Anne Arundel Medical Center cyberattack delays patient care",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbEJ6eG1CME15d0k2RkNsd2pSRmpsYTcwLUgtTnRIMHhKdkRDOF9sZ0xILUhqNjZCU3A3Uy1hQ0JqMW5xWWpNcWRzbjVrOXZ2OU41YjlHenRRbmpEOFpmZEpDRm42bGhWa1RHbWpKbkcyckFSRHl5dVdPV3E4OW9FTHNEb0RhZElnS24weUQxVVYtdnEzX3NXV1ZEUjQ?oc=5",
         "domain": "wbal-tv",
         "language": "",
         "tone": 0,
-        "seendate": "20260903T112100Z",
+        "seendate": "20260910T012712Z",
         "source": "GoogleNews"
       },
       {
-        "title": "12-Year-Old PostgreSQL Vulnerability Enables Database, Server Takeover",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQ0NfNWV2ajlrVU9iZ3J6bDZta29rSy13QUhaVmttR3FXZE5UdkM2WkN4eGFlZks5bFdQWnlIMVJjMXNkazhlelNsMnlkYXhiRlhkYjJuOGtZNU1CWWtOTDBCU0VwbG56Y2Q4LS0tZWV6T3RCZEVkTkRlcHdKeXdRVzh5WjNLQjlRQUNFMjFuRnF0MHhTYS00bVNRcjlodzcz0gGmAUFVX3lxTE1Wa2R3XzE2RTkxTG1KWVRIc0dZbFV6VGVjTW5nM21SeXZtZzQ1QWh0bGRpZkk5V1JfR1VNRG5KT2UtWWlYdGg4RFRkUnpsa0F1dzMtdFFhZnNaWmcwZ2RlNkI5TDJQOG1vWGE5S2o5YUxDSjVlcUhUVzZ2a0ZPUkZ4aHlzMF9rcHA1dXg4cllHU2J2Wl9qNkpRV29EdWlEQXQtUEthR3c?oc=5",
-        "domain": "securityweek",
+        "title": "Nvidia and CrowdStrike Develop New Cybersecurity AI Models | The Morning Download for Sept. 2",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNa19QTkMyU3B3eUJFcXB3TmFIWVJ5RW5aNTN4LVhBby1oaVhaei12N2VmYW9kTUFPc0pPajNLSkhXWTFsOXF5RDRIWkhJNUoyN29HcGd1UUU3bDhLMUtvLWhvb2l1bUdTaHMwWUR4RDFrS21Xc1VRWXJ5c25nR0E1TVAxV2IxR3QyT0MzOC1GTFNxeDY0RDdxenA0bmQ4WFlZ?oc=5",
+        "domain": "wsj",
         "language": "",
         "tone": 0,
-        "seendate": "20260904T120613Z",
+        "seendate": "20260910T002027Z",
         "source": "GoogleNews"
       },
       {
@@ -33471,9 +33471,18 @@
         "source": "GoogleNews"
       },
       {
+        "title": "12-Year-Old PostgreSQL Vulnerability Enables Database, Server Takeover",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQ0NfNWV2ajlrVU9iZ3J6bDZta29rSy13QUhaVmttR3FXZE5UdkM2WkN4eGFlZks5bFdQWnlIMVJjMXNkazhlelNsMnlkYXhiRlhkYjJuOGtZNU1CWWtOTDBCU0VwbG56Y2Q4LS0tZWV6T3RCZEVkTkRlcHdKeXdRVzh5WjNLQjlRQUNFMjFuRnF0MHhTYS00bVNRcjlodzcz0gGmAUFVX3lxTE1Wa2R3XzE2RTkxTG1KWVRIc0dZbFV6VGVjTW5nM21SeXZtZzQ1QWh0bGRpZkk5V1JfR1VNRG5KT2UtWWlYdGg4RFRkUnpsa0F1dzMtdFFhZnNaWmcwZ2RlNkI5TDJQOG1vWGE5S2o5YUxDSjVlcUhUVzZ2a0ZPUkZ4aHlzMF9rcHA1dXg4cllHU2J2Wl9qNkpRV29EdWlEQXQtUEthR3c?oc=5",
+        "domain": "securityweek",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260904T120613Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Google patches actively exploited Chrome zero-day (CVE-2026-85046)",
         "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZkZ0bk8yX3d4eF9fei1QZUhLbjZLVFNGRFJHLVVfUnItRkk2UldsNkdTMzVmdGpaNGJPUklOR3pEWmljZ2xlSU84d3R2Q1g3N2pxZDlVM2tyaWVzVEdUNHVJOVJCaTljYXVIb3hDbkVwbWloVXRBMEJxSUxVU1RFRkYtYW8wMVQw?oc=5",
-        "domain": "helpnetsecurity",
+        "domain": "helpnetsecurity.com",
         "language": "",
         "tone": 0,
         "seendate": "20260904T120913Z",
@@ -33507,30 +33516,30 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Microsoft breaks Patch Tuesday record with 974-CVE deluge",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ0hSb3BmdHJ0ZlFMdkp6c0Uxb1VJRmdUWXU2WEtBeWM3bUZvS1Jqclp2UVVfZUlRVzFSbHA2Y0FQNWUzaEsyaWdUX1h3QkF0UkFnaXRqTzFHR0FGc0RiVDlFWjByT1VkakQ0UWFwQUlQVVFqTTJmUTMxYVk3U0N2V0xGR1hDLVM2UnFzVldyTGk4VnJxTFNITzRQTHRFYm5oWXVfbG8xTTlvNXAzMjI4OV9oSQ?oc=5",
-        "domain": "theregister",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260909T002522Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Safety overview: GPT-6 Astra",
-        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE96LWRUcTNTOGszRVdVcDMxel8yNUFJajFqLUxxWklNZDZ1a0FKcW9pMXo5X29iS0ZQcFVGLW5KaTVGczUxRi1iUzZYcm1XcDVBZGlUZ0Jfc2xrSGhNN29QbXVRcw?oc=5",
-        "domain": "openai",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260903T200743Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Nvidia and CrowdStrike Develop New Cybersecurity AI Models | The Morning Download for Sept. 2",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNa19QTkMyU3B3eUJFcXB3TmFIWVJ5RW5aNTN4LVhBby1oaVhaei12N2VmYW9kTUFPc0pPajNLSkhXWTFsOXF5RDRIWkhJNUoyN29HcGd1UUU3bDhLMUtvLWhvb2l1bUdTaHMwWUR4RDFrS21Xc1VRWXJ5c25nR0E1TVAxV2IxR3QyT0MzOC1GTFNxeDY0RDdxenA0bmQ4WFlZ?oc=5",
+        "title": "Boston Scientific Won’t Meet Guidance Due to Cyberattack",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQU1QWGlJWDQ1bXROelFDaGEwVXBlcFk2ZWdBeXd1eWQ0d1RyT29seGN0Q19Vb3E5VDhPeGZTMnA3dGU4TS13bTdJMmNhVlpUcXhnSmdaTVpwblVmalRDb2xBU3RQV2liMmpGQUxQR1dBTElVQVhCYXM2UGlITFN3Q2x6VU1rcEFCOVF4eUFhQ1Biak1abW5ESA?oc=5",
         "domain": "wsj",
         "language": "",
         "tone": 0,
-        "seendate": "20260909T122018Z",
+        "seendate": "20260908T105800Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Luminis Health cyber-attack disrupts Anne Arundel Medical Center",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPUUk1Q0VRY2c3RUMxd0U0REFiZ2NDNUllRzRjZFdlcnhocGFYNnl3aTE3RFB2LXQ1cTd2WnNYTEp2LTVYYjgyR2d6NS1XOGx3aG1rQ1A4SUNSc3lrZFZ2elNmMXNjMDE1YnRGcldUVHoyWHZFdHJ5TTR5aklOWldlNlJuMG5BQQ?oc=5",
+        "domain": "wbal-tv",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260903T214200Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "New FBI cyber strategy promises increase in adversary disruptions",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdHRTS3Boam1FQTVNTWxLWllNVXhPLUZZTkUxTWhOYkJMazVSbzl6V2p2UXdweHBUZ0VMcUpkejZia2lZTURiaGFjYVc2dnJDbEZGR3duYXZHb2NreFRjTXhuUVBLWTNzbTVLTEhQTHlvTnAxVU1HSEhZWWxubGpXM1RvUDY1eDhOd1c4UlQwTU5yQ2xhYy16R21vbWZrSjhTblN6a01UTV8?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T160349Z",
         "source": "GoogleNews"
       },
       {
@@ -33543,48 +33552,39 @@
         "source": "GoogleNews"
       },
       {
-        "title": "N-able issues patch for zero-day flaw",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcURrLWFnVUFRNzBKbkJ6b00zRjMzZDIzXzUybk5jUF9VMlkxNTNzRklRSElHc0VYcDBZTmRxUVBiVFYyTmtfLVZsUFhsQi1tZ2dYamg1cmp2S2tOeEpxVWcwcG41WVBJdWU1S2F5WFJTWHpyRUpMdEhBV2ZvVnB2bUtZTFdDS3c?oc=5",
-        "domain": "cybersecuritydive",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T161910Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "CISA Adds Seven Exploited Flaws as Attackers Deploy Reverse Shells and Crypto Miners",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1NdVZYenoxdEdpdGp2ZUtyeHQySDdrUTd2ZFJKbFJDWTR0N3hDUGMyTVZVUjVyQUFWTVZDbWlRMEtEV3N6bHpBYzdDVWRoLTctMmtrU1BIZlRmb1FqWHc0LXBmTGJpX1lMR2w3di02TWlsamNXTVkyalV2MDVpQQ?oc=5",
+        "title": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYmF3RUktTzNSWTMxYi0wUS1EVE13SFBqekxZbGJPNVRQTExCMkdta1djR3VpRmpDZVlwaUg3WHBMUjdfY2JNaGN1TEJlM1FCeVAtVTBzUmtsQWIwMkI0ZDFhcDlXSWdtdzJ3dlZuWEpMT0tOQmFFc3h2OGZJcl9UOURBcw?oc=5",
         "domain": "thehackernews",
         "language": "",
         "tone": 0,
-        "seendate": "20260903T051900Z",
+        "seendate": "20260904T071800Z",
         "source": "GoogleNews"
       },
       {
         "title": "Winona County paid $128K ransom after cyberattack; then was attacked again",
         "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZkQ2M0dxMTJNbWRaVXBHM19IbTJFUVliX3JQOVV6Yy1qdU95M0tPaUVlaVFza1hONVJ6Q0UyMjE3eWhKR2Jla3lYV0t4ZUFsMWxGRmp4SkowUjZqT3lMSUlfd1pwN2pBMkdqaE8wdDlxT0s4bUFiaDJvSkxYZzlDRU50YUpOSHlqaERRRnFCRnhRUEI1aTI2dTZ2WkVvajFMdl9LQV9jR0ZDT1Iy?oc=5",
-        "domain": "mprnews",
+        "domain": "mprnews.org",
         "language": "",
         "tone": 0,
         "seendate": "20260906T090000Z",
         "source": "GoogleNews"
       },
       {
-        "title": "SonicWall urges immediate patching of chained vulnerabilities",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOa0dmbEZEbHJqekYwUENsS21nQWwxMkNEX3FUR3lfRzZNZkZwc2FCUEVpMm9xd25HUllUd2d6UjlNendGakZIM3JQUGFEbTQtcTBSN19GU1BySDZJLXpSOFVKazczTE9VMEY3elFjV09HLXNyVVJtbV9yWmZhVkZzbzZZazdScGZaNzQ4WXVyQUFpOFk1TmhMYTNIUTR3eFRp?oc=5",
-        "domain": "cybersecuritydive",
+        "title": "Microsoft breaks Patch Tuesday record with 974-CVE deluge",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ0hSb3BmdHJ0ZlFMdkp6c0Uxb1VJRmdUWXU2WEtBeWM3bUZvS1Jqclp2UVVfZUlRVzFSbHA2Y0FQNWUzaEsyaWdUX1h3QkF0UkFnaXRqTzFHR0FGc0RiVDlFWjByT1VkakQ0UWFwQUlQVVFqTTJmUTMxYVk3U0N2V0xGR1hDLVM2UnFzVldyTGk4VnJxTFNITzRQTHRFYm5oWXVfbG8xTTlvNXAzMjI4OV9oSQ?oc=5",
+        "domain": "theregister",
         "language": "",
         "tone": 0,
-        "seendate": "20260903T160422Z",
+        "seendate": "20260909T002522Z",
         "source": "GoogleNews"
       },
       {
-        "title": "CVE-2026-82533: DeepSeek Harness Vulnerability Lets AI Agents Escape Their Own Sandbox",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQT1ptSVFXeUQzc1gtNzhzQmpsbGJSdHd1RndnSm0zMWRkcWV5dHNVZk5pWUFzaUZyQzlPZ25GMHhRemY4cVBUUkFhU1JoeUo4Z0RWVlZVNHhnRV9mYWlBNlJXNjZUcC1Dd2dnQ0tmZVMxTkdHMEhhazFuazBQRTlWeUsxWHZwSU0zZE1UZTNn?oc=5",
-        "domain": "oxsecurity",
+        "title": "Safety overview: GPT-6 Astra",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE96LWRUcTNTOGszRVdVcDMxel8yNUFJajFqLUxxWklNZDZ1a0FKcW9pMXo5X29iS0ZQcFVGLW5KaTVGczUxRi1iUzZYcm1XcDVBZGlUZ0Jfc2xrSGhNN29QbXVRcw?oc=5",
+        "domain": "openai.com",
         "language": "",
         "tone": 0,
-        "seendate": "20260908T203754Z",
+        "seendate": "20260903T200743Z",
         "source": "GoogleNews"
       },
       {
@@ -33597,21 +33597,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Microsoft Patches Record 974 Flaws, Including Two Exploited Windows Zero-Days",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1yY1hjMGVadnJZbXZOczUzMzJpVTh6Tm9XWWkzcFJyM3hrVW9BS1VHQjdDLUkyY2c5WHVVYkZuV1JrUVZMS2paNDZNclktOTRGbVV6eTNlX0RFeUI0WVhHUWR4OWxqcFQ2cjJLWVJDcHRhZWJYVVpKdjZmZS1DZw?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260909T044100Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "New FBI cyber strategy promises increase in adversary disruptions",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdHRTS3Boam1FQTVNTWxLWllNVXhPLUZZTkUxTWhOYkJMazVSbzl6V2p2UXdweHBUZ0VMcUpkejZia2lZTURiaGFjYVc2dnJDbEZGR3duYXZHb2NreFRjTXhuUVBLWTNzbTVLTEhQTHlvTnAxVU1HSEhZWWxubGpXM1RvUDY1eDhOd1c4UlQwTU5yQ2xhYy16R21vbWZrSjhTblN6a01UTV8?oc=5",
+        "title": "SonicWall urges immediate patching of chained vulnerabilities",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOa0dmbEZEbHJqekYwUENsS21nQWwxMkNEX3FUR3lfRzZNZkZwc2FCUEVpMm9xd25HUllUd2d6UjlNendGakZIM3JQUGFEbTQtcTBSN19GU1BySDZJLXpSOFVKazczTE9VMEY3elFjV09HLXNyVVJtbV9yWmZhVkZzbzZZazdScGZaNzQ4WXVyQUFpOFk1TmhMYTNIUTR3eFRp?oc=5",
         "domain": "cybersecuritydive",
         "language": "",
         "tone": 0,
-        "seendate": "20260909T153330Z",
+        "seendate": "20260903T160422Z",
         "source": "GoogleNews"
       },
       {
@@ -33624,57 +33615,39 @@
         "source": "GoogleNews"
       },
       {
+        "title": "CVE-2026-82533: DeepSeek Harness Vulnerability Lets AI Agents Escape Their Own Sandbox",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQT1ptSVFXeUQzc1gtNzhzQmpsbGJSdHd1RndnSm0zMWRkcWV5dHNVZk5pWUFzaUZyQzlPZ25GMHhRemY4cVBUUkFhU1JoeUo4Z0RWVlZVNHhnRV9mYWlBNlJXNjZUcC1Dd2dnQ0tmZVMxTkdHMEhhazFuazBQRTlWeUsxWHZwSU0zZE1UZTNn?oc=5",
+        "domain": "oxsecurity",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260908T203754Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Microsoft Patches Record 974 Flaws, Including Two Exploited Windows Zero-Days",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1yY1hjMGVadnJZbXZOczUzMzJpVTh6Tm9XWWkzcFJyM3hrVW9BS1VHQjdDLUkyY2c5WHVVYkZuV1JrUVZMS2paNDZNclktOTRGbVV6eTNlX0RFeUI0WVhHUWR4OWxqcFQ2cjJLWVJDcHRhZWJYVVpKdjZmZS1DZw?oc=5",
+        "domain": "thehackernews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T044100Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Report: States Tackling Local Gaps in Infrastructure Cybersecurity",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbmJlWkZqYl9SQmp5SE1nR3RsdmxtQUQ2YU5UYlFrNnhwZnRJZkJqSFd6OFBualhJU1RtVklNTmdVM3E4UklNUXphWko0ZlJvQ2hnQVpGS1NsTUxjcmNwOUVaODM2dF8zbVlmb1NsUFFIdEI3YWtjYjZRYWZDUmpRU3JheFR5RDlBN3J0aGVfZWlzYi11WFJvR0xsOVJCWkU?oc=5",
+        "domain": "govtech",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T224935Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Ransomware Is The New Normal: Cybersecurity Considerations for Fiduciaries",
         "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPb3F4MGZpS2dSZm53ZTNxOHZmVU9hYTJpMklsU0RzY1V0c3Z4ekNoOVlvSGtfUDNrMDdrQzZGaGdLekNsaHpQMDZIVTBVRnAtWFlsdWUtOWVpVTFESy04bGJVREhqMF9LYmtSVWx0WlprQnJoSWdOMTBVVDRpekRTMF9SUllQSFZoWDlJc3gxY1pwWVFKMFZFMzhMMWwyUngtR3hDZHI1RlFVdllM?oc=5",
         "domain": "cybercrimemagazine",
         "language": "",
         "tone": 0,
         "seendate": "20260909T125703Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Springfield schools closed as cyberattack locks access to student medical records",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZ082cGhSMlF5cEp3TFhwc3VodTdwVEswVWVHT2hzVzdpTlpSR1gwSk1RZWZvNUxkNTl1bUtsVVBfWVVtMV9uZGlQR1M4NUFkdUVpQnptQW1DaTVpNXJQeHR3Ul9zc2k2U0NqZk5aSVR6M0U1OVdsMkVPUURMbjZ6MmczaHpyR0Rha3pDT3czbDIyNThQMVZ1TG9DZWlFb3pLbWxzNE9fb3dfQWhWUC1Cb3NMMEXSAboBQVVfeXFMTkdGWE1nUmVzTlpVVjdjX1BuMHRJRnN5TjRkd1lwRGVack5aV2pLQkNLSXNkWktLMDJteEtaQ3FOcVc1cUJ2c0ZybjRKUlJIcFRCNVlIaVNaUkZYbWZJVVJFalg4YUxJWGppM1lScXlxU0RBeVd4Njd2bXl2U2twb1lDd195bkZIMmN4RUVXLXFOcDJMS05HNFhVVG9tc2Q3SGdXck9QZEMtdjJocUFaX2lhdTNFYWVDUHdR?oc=5",
-        "domain": "wwlp",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260909T130100Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYmF3RUktTzNSWTMxYi0wUS1EVE13SFBqekxZbGJPNVRQTExCMkdta1djR3VpRmpDZVlwaUg3WHBMUjdfY2JNaGN1TEJlM1FCeVAtVTBzUmtsQWIwMkI0ZDFhcDlXSWdtdzJ3dlZuWEpMT0tOQmFFc3h2OGZJcl9UOURBcw?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260904T071800Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Tech company discloses first-of-its-kind A.I. cyberattack of one government against another",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYW9BSk5NaVZJXzczSHBuM1J0VG9wR2xrckxWY2JRc2JuOTJqY1NtM1E1RFZYUTNNYlNFZWVnTWhHQmx5S085TzN4VVRic1JhRjY4WlVBVzRCclktLUJnRjBhTkJteHpUTUxLSTY2ZTFMeVZtV1dqS1cxMDVTVjBCQ09yNHc1QTYzcHNCdEJvbVhUal82SHJvZ3JXc3M0UWpyTjhGN1o3RmF2aU9WYmN2MzhDU2NFd2swY1NUWg?oc=5",
-        "domain": "nbcnews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T233032Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Cyberattack forces Mass. district to cancel classes Tuesday",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWFN4MXNIamhqcUpQWlJzendiSzBjLWhVbkxuSTBqNEhtcElOUy02VDVNT00yTXdhVjFnV09iMFJEZ2JSeUlNVVBsNFBVS0xkSHA5WFZ4N2lleGVENk1hamc4QzJUR2pfSHNMazFfUVZqR1V3a2xRUmtDa0NHVkJfMWVSaENoblRia2xILQ?oc=5",
-        "domain": "wcvb",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260907T213000Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Critical VMware Workstation and Fusion Flaw Lets VM Admins Execute Host Code",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTkY2S0pXVFdhM01sRVJ2UVdYa2dqeFUwcmxGbXdTeWZ3VE9lSHp4cVQ3cXBUcllFSXJNMjZiaVlGTWc4dWtVdXYtM2lBU09rRXBNbEZublNOUW1zLXF5MGg5c1FfNWkzMWFYX3pjSnUycVczZlAyMmZDeFZxcUV1WWJxMA?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260905T160500Z",
         "source": "GoogleNews"
       },
       {
@@ -33687,21 +33660,48 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Critical VMware Workstation and Fusion Flaw Lets VM Admins Execute Host Code",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTkY2S0pXVFdhM01sRVJ2UVdYa2dqeFUwcmxGbXdTeWZ3VE9lSHp4cVQ3cXBUcllFSXJNMjZiaVlGTWc4dWtVdXYtM2lBU09rRXBNbEZublNOUW1zLXF5MGg5c1FfNWkzMWFYX3pjSnUycVczZlAyMmZDeFZxcUV1WWJxMA?oc=5",
+        "domain": "thehackernews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260905T160500Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "N-able issues patch for zero-day flaw",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcURrLWFnVUFRNzBKbkJ6b00zRjMzZDIzXzUybk5jUF9VMlkxNTNzRklRSElHc0VYcDBZTmRxUVBiVFYyTmtfLVZsUFhsQi1tZ2dYamg1cmp2S2tOeEpxVWcwcG41WVBJdWU1S2F5WFJTWHpyRUpMdEhBV2ZvVnB2bUtZTFdDS3c?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260908T161910Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Palo Alto Projects Double-Digit Growth as AI Drives Cybersecurity Spending",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOcFIweVpVUHJlR1I3SlpLSkMwRDdjS1dUMFlBR0ZERFMyQjRFdkp2STVuX2FOUWpwNXdDSEFLcVVoRzNNdnE1VWVFVE5RZkVtc3Exajl4bHNGNWlTQzNzQUdCYzV2Y3pYZk1XeXl5WXBpSEJMa0xQUWRxQkwyYkJ0dkNGS0w5WUMtZDNaSDBnbXJDR3B2YTNEVmwxYVYzNEJVVzBpal9SaXhRbExOa3M1dmwxMEczakY5OGlZcTdR?oc=5",
+        "domain": "wsj",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260910T013446Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Dream’s Hero scores 96.6% on CyberGym to rank first globally in autonomous cybersecurity research benchmark",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdldJamlsNlJSdUtVeEgxSGY5N0lLUTM5SnltSzdTYjJGV2Z2NExmZjdVRmRkREljNGhmRHVjYkVwc1BBbEFQbjBCSVFfRC13SnpxTkJPQVZPR3A4cVVNMjVNeDcwNHZYR1JTdnZRVHZRQlVJbXNlUGZ5VTJ1R0cwNU1CcGlSaXRnMUNxd0dxM2ZlajFwVDdoX3JFRWxXXzFhbHM4d0ZpRnp4OWR5ZWZPNkdKZndaUEhYNmJWeW1ITzV0UFpLenZTV2VxU2ZycjlRZDZLVA?oc=5",
+        "domain": "industrialcyber",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T111806Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Cognizant, CrowdStrike expand collaboration with OT cybersecurity service for converged IT and OT environments",
         "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNTDRtTnlOd3JORkhsU21XcjFtNFdDSWE3aGJNMnRrdENrM2FZU09SY0ZHcFhjdkxhTE5tYVJhNXluc3JtcVcyN0VtbFV0M05WOHlqTnJaM3RtMHVtWkJjZWxOTGQ5WmU4enpCb2puOE1yZFN1bDB2ZEluY3B4a3p2akg2M2M1a2pEU0doclQyZkluWjhYN2lGYVowWWg2QUZsQnFwYm5adVhUUDFzaE4zcUQ2MUlKVjJLSEVhUEhIYUlzMkJBdHU5SV9KaU56WXlnb0pzVDF3anMtQQ?oc=5",
         "domain": "industrialcyber",
         "language": "",
         "tone": 0,
         "seendate": "20260905T032011Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Critical Cisco Nexus 9000 Flaw Lets Unauthenticated Remote Attackers Run Code as Root",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBjampyc08ySm80c0JwZnJpdF85S2NkLTk2MkdER3RFRGZ5M2xGZjhwUW5ZX1FPcV9FWjRnenFCdFZWMmxQazJxRnBRMjVqempHaGR5VktCMzEydDJ5T3pxamk3dGVEQlRydjNwUE0zMWZTb1l3TnN6STV1LXZadWc?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260903T155200Z",
         "source": "GoogleNews"
       },
       {
@@ -33714,21 +33714,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Google fixes yet another actively exploited Chrome zero-day (CVE-2026-87491)",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdnFCLW9wVy1EUURGc0JQbUtDemFaNzJhRmpfdmkxbjg3SmVUMjFQZnRNcDNjUHVxOEFmcDkzQnlWQ2NhTjIxSjZFMjUyZnptYkNEMy1pblpHQmtxZ1ZGVTE5N3lNc1hwcGItOVRObG90UFQxM3Z2dnhiLVppenRyUmhlTkt2aUNfa1poQzBKVQ?oc=5",
-        "domain": "helpnetsecurity",
+        "title": "Critical Cisco Nexus 9000 Flaw Lets Unauthenticated Remote Attackers Run Code as Root",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBjampyc08ySm80c0JwZnJpdF85S2NkLTk2MkdER3RFRGZ5M2xGZjhwUW5ZX1FPcV9FWjRnenFCdFZWMmxQazJxRnBRMjVqempHaGR5VktCMzEydDJ5T3pxamk3dGVEQlRydjNwUE0zMWZTb1l3TnN6STV1LXZadWc?oc=5",
+        "domain": "thehackernews",
         "language": "",
         "tone": 0,
-        "seendate": "20260909T075357Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "CVE-2026-86206, CVE-2026-86207: N-able N-central Authentication Bypass (FIXED)",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeTMtMTMweDczNDJnV2hJQTRPczF5TUxtQVh2dEppc2VjMlVBQW9ETVBIaE1PWUpNbFJ6aG9TSWZ4Z05ZdTlKZDVoWHExbHZEb0R3VFduSFgzZ25PQnkyWGxBT045RHJYYkN1QnhWSkE2N1hPeS00eEk4bmVfdC1pNUM3aXg3Nlg5dDM0eWIzS3I5TDVqRHhVd2JDU3NRaWFpX3BFMnNQR2stbjc2RHViYQ?oc=5",
-        "domain": "rapid7.com",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T112753Z",
+        "seendate": "20260903T155200Z",
         "source": "GoogleNews"
       },
       {
@@ -33741,12 +33732,75 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Amazon adds cybersecurity veteran Kevin Mandia to board 2 years after he left Google",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSVVLdTcxcFMzNDNLWVk5NEpac1h4TDYzT21IWEFxOUE3aDk3cTBrdHJROWFscW41V2xJX2xtbThjeHREdVV4MGtPUEF5T1cxeVFjNEgzTzZxUUdhbTQtcktvYUtHVkQ0TWctQXE2WksyaU1mUzZzaVJ6WUZlQ3kyOWtyTmFWbWRERkJGZ3BKdV9NSUE3Z3hiX1pEUzVzeE8zNWY0UlNR0gGrAUFVX3lxTE5VT0RXc25OMW5hekdmUVl1TUtDVVFTWk9YSDBnY1BLQld3NmRjMms4WW5iMFRRVHMwcjhOTG9RN3hIZDQ5aVRmLXpSVjRMbWd3V3AzVkc3X3VmQUFRdUszdmNGZzlyd3VsSTFnY1ltNi1TNXB6SGZLQjc3Ymk3U0h6d3YzdEtTaEtWdTNCeXFZTXJYVE9YVy1aTlppNkN4Y2JmcU9LOVZZS1dWOA?oc=5",
+        "domain": "cnbc",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T214534Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Tech company discloses first-of-its-kind A.I. cyberattack of one government against another",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYW9BSk5NaVZJXzczSHBuM1J0VG9wR2xrckxWY2JRc2JuOTJqY1NtM1E1RFZYUTNNYlNFZWVnTWhHQmx5S085TzN4VVRic1JhRjY4WlVBVzRCclktLUJnRjBhTkJteHpUTUxLSTY2ZTFMeVZtV1dqS1cxMDVTVjBCQ09yNHc1QTYzcHNCdEJvbVhUal82SHJvZ3JXc3M0UWpyTjhGN1o3RmF2aU9WYmN2MzhDU2NFd2swY1NUWg?oc=5",
+        "domain": "nbcnews.com",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260908T233129Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "UConn Student Justin Fargo Went from Family iPhone-Fixer to Small Business Cybersecurity Champion",
         "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQTEE2akxkQlZqem04MEw1OXNiVEw2WlA4Rml4dk9ocjlFZTYwbGU1T2NQZGRET0lmbW9ZWWppLU45bEMyOGdGbnFPdzRSX0s5X0s1dXFKUkZoSjlhVTNxT2dRdnpDSnZ2YzlSOTRfMHh2Q0hxUjROSGNYZExNenNJZXpudkgyOFZhamNnWVpJM0ZoYUxyTUl5MThQNVBzNlVDWnNfZXFzQ29MTGtsVFZxbG5UVk9yTHBodTQxTXVTLUZ4VVoxd2lESm93?oc=5",
         "domain": "uconntoday",
         "language": "",
         "tone": 0,
         "seendate": "20260909T163000Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Google fixes yet another actively exploited Chrome zero-day (CVE-2026-87491)",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdnFCLW9wVy1EUURGc0JQbUtDemFaNzJhRmpfdmkxbjg3SmVUMjFQZnRNcDNjUHVxOEFmcDkzQnlWQ2NhTjIxSjZFMjUyZnptYkNEMy1pblpHQmtxZ1ZGVTE5N3lNc1hwcGItOVRObG90UFQxM3Z2dnhiLVppenRyUmhlTkt2aUNfa1poQzBKVQ?oc=5",
+        "domain": "helpnetsecurity.com",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T075357Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Springfield schools remain closed through Friday as cyberattack locks access to student medical records",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZ082cGhSMlF5cEp3TFhwc3VodTdwVEswVWVHT2hzVzdpTlpSR1gwSk1RZWZvNUxkNTl1bUtsVVBfWVVtMV9uZGlQR1M4NUFkdUVpQnptQW1DaTVpNXJQeHR3Ul9zc2k2U0NqZk5aSVR6M0U1OVdsMkVPUURMbjZ6MmczaHpyR0Rha3pDT3czbDIyNThQMVZ1TG9DZWlFb3pLbWxzNE9fb3dfQWhWUC1Cb3NMMEXSAboBQVVfeXFMTkdGWE1nUmVzTlpVVjdjX1BuMHRJRnN5TjRkd1lwRGVack5aV2pLQkNLSXNkWktLMDJteEtaQ3FOcVc1cUJ2c0ZybjRKUlJIcFRCNVlIaVNaUkZYbWZJVVJFalg4YUxJWGppM1lScXlxU0RBeVd4Njd2bXl2U2twb1lDd195bkZIMmN4RUVXLXFOcDJMS05HNFhVVG9tc2Q3SGdXck9QZEMtdjJocUFaX2lhdTNFYWVDUHdR?oc=5",
+        "domain": "wwlp",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T130100Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Anthropic discloses fourth AI hacking incident missed in earlier review",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaU1ZZ0ZRWnBaSnRlakoxVTU1SE9aZTEySkNZU2N2eU5XWG9remJKT29feUVoNlhhQVpfWnNFd1NKZ0xnb3lobTExTXE5dXZud0tCbGVLMzR4Y0NFRkRRUUlnWUllbjVTcXBWeHJzMDJVamFBQjJveC1PNThKSGUzNlRfUlVEVkJPbHhtendZdXdsSmdva0RvT3NidFdSb3BWSmd6R1lFb1NxYXdjR0xKeVVnZWY4c3JlbHlycFhkcXlmQ1Jv?oc=5",
+        "domain": "reuters",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T221817Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Hilltop Bank: ‘Cybersecurity incident’ takes all banking services offline",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUzRoMFV1NVZGc25rU3pqMUZpZzlKRGp5alR1aU16cTFxTzQ3R2Rya2dCMWt0Z01IQzlPMklkOGhwVS0zV21JZmFydDFGRjVpcVhxVHV4NzJBaFpPNW1nbzFRX28ySl9wTDhGdnV3QnFIcG9zeUZ5Y2t2Qk1zeHRkUy1uckEyTE92SzRTQjZhMmlOUG9yeTgtaDRjaUhnU1BkaTRaTzlJaV94VEQ4VGdhajdScms?oc=5",
+        "domain": "oilcitynews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T204605Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Two Ransomware Groups Claim Attacks on Nationwide Home Healthcare Provider",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBFYmZMU3FGZUNlY2JGVFRUdzJrZXV1ekxHSHNrQzZEaXlkS0Z2SXRJYWhCUWExSTR1U1pUcFYzZUV6MzhaQUdvSkQ2M3RzS05fUGVqZGF3U1YyMGhzUVlSZG1PZkhKdGxNRXZJ?oc=5",
+        "domain": "thehipaajournal",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T100518Z",
         "source": "GoogleNews"
       },
       {
@@ -33759,66 +33813,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Ransomware in 2026: What the Data Demands From You",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAzT09DOGJWLUxndV8tZTZZbHltb0ZMVk9yNTQwRmdGM3dDZ0tmX0NRVTF2WW5CNnNnaV9JT1BtdHVfdmY1NWlHc25vdGt5TXVscWpGZkRndTZzb0RMTTU2dE8yZ3JaSHlQYlU1UVZrbEY5Y0tvZ2FTWA?oc=5",
-        "domain": "group-ib",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T101623Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Why judgment is emerging as cybersecurity’s defining skill",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9ZT2ZiUXVWcUpzLU5yRUljVEw0Y1BTVFN1SWlrTURhcDl0ckw2dmtVTUJGdXo1b2d5X1NOMXdQcVJGWDhTSTVreEJWT2FHVzV6YkhKRUVFLVotS0g0S1Z5d25tMzZ4ZDJNQ3lUd0dKWTlsLVpuUTNOQUtTVQ?oc=5",
-        "domain": "cyberscoop",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260904T100734Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "'Cybersecurity incident' causes Tuesday closure of Everett City Hall",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdTZTb0VhbFl5TDF6NmZvdHl0RFRQTzBXZlZuNFBkdW95bktfejlEdmV1V3FkYkJKcDFUU2ZtcFJTNFcxNFNmNE9abUZzOHRPUEhMTzc1V3JzNEVsUV80MlJEVlR3SHdMUzM3MmdHSzExMkZXUTRwWkxFVWtyMVpvNUNZQ2FTTmIxdHJxd1I0ZXpTZHVV?oc=5",
-        "domain": "wcvb",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T210500Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "Berlin cyberattack: hackers leak highly sensitive data across dark web",
         "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOQWU4cHZUWkl3VHQyNnZtSV9YS3lXbkJpT2c1UFhTR2M0Zmt3SDRUXzVpdWVydUtMNDhOVE16RlVQcHd0aHlJUXFKMnBKZ1Q0QXRtZTA2em9WTkZVSFgtS2hQa0tHZlQwSldQRWswbm1XdEE5VmdYMXhJalhuck1oWkk3U2lnbDdnSHVGX2lZa3Q2Q2JGVWM2NUU3Mi11QlNxXzB6cFkxT3AwWVpjdkpB?oc=5",
         "domain": "euronews.com",
         "language": "",
         "tone": 0,
         "seendate": "20260905T071758Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Boston Scientific says disruption to remote monitoring services resolved following cyber incident",
-        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOVjFiYTJMUmtBTXVMYVZzZWJtaTB6dnJaZkU1RFllcFN0bXZPcXV6U3lJU2VRcVJlRDZndTJVa1ZOV2UtOXZhV0Nuc2tkWC1rMmJoRU93T21STUdHU3Q2TmE0WEJGMXcyMnVJSzJNSndORTJXNG9peEV0RE85b3FmRGMyWnFidHdfeUJEVzR3bGlQX0J2TE5TdjdiWE5RaVlONnQtdFNaOXM4d0ZUMFI1NF96SXdqM2lnMXVlX04wTlJGY0Y1YzRHNEt4NVgyLXFDQjdYdmhB?oc=5",
-        "domain": "americanhospitalassociation",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T201125Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Adobe Commerce Zero-Day Exploited to Backdoor Online Stores",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdnpITnZQRnpmdU1MUWkycWx2T2ZXRTFJMFNtXzRZMklQcW1NU3BBTXQzQWxzSzljZl9xYmptZTgxdGU3ZzNpQlZWR0N4THByMUFxVGdrWUVjUTlKUWNpRmdBSXhNR3NXQV9QMktWMzlPWmI3Vm5KWkVJX0h4RGszNVhCZnhzWElIYVpiUnI4el9NX2fSAZgBQVVfeXFMTnh0OC1OMjcwU253NWVaU1FMTnR3TjhoeUI2ck9GOUtaSTlrOHZ3d3BTbUZURU92NzFMR1dseDJaR013VDU4clJPYTIwM3l0M3dZYkd0WklZV2FfNEVOc1NEamRPUVVQUlcxcldtNkdkcUhKQUZsSFNaV3VGUzlSN3lOMk00Ym9BTlpvVmFzWTBtT2hvNVhnVHc?oc=5",
-        "domain": "securityweek",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260907T115837Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "When Detection Arrives After the Damage: Ransomware as a Patient-Safety Emergency",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQ1lEX0NTdVBCTXBMSTdRU2FLUlhobnk2MG1MT29MX1FLTzkwSG40YmREVGU2WmEzU180U2dUVEQzWFJqeU5FZTV4cVozQVYyeUpDRU5ZVXVoaFllMFhtNE40emtKZk15NkJ4eTVjS0ppeWpYQ1ZwdldOWnR1TlFnTWVCdW5aNVFXY24zWHhuSy11UFFZamlkOGhuWWtSRXRBOEZjaHpGMjNyckR4VURLU0hn?oc=5",
-        "domain": "morphisec",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T150740Z",
         "source": "GoogleNews"
       },
       {
@@ -33835,12 +33835,30 @@
   "entities": [],
   "events": [
     {
+      "title": "Cyberattack & Weak 2026 Outlook Weigh on BSX: Is the Stock a Sell?",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPM2tHc3dEV3lQNE85M3ZuVlVScDE2Yzh3WXp5OGVVb1Fyd1hSZ2g0QkZCdDBaT1VFZTlSVmktWWtSRUlBSUw5UjZadk9NTk84azJVVXJEekJiOHlrbzFTMDJWOFlXMTR1dzAtSXRaVGJfV25haG9TbjBpanBKMlBkdEpzS2pmSDF3Q0hQRWdTYnV5TnJWMUFxSEdRZ1o?oc=5",
+      "domain": "yahoofinance",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260903T125400Z",
+      "source": "GoogleNews"
+    },
+    {
       "title": "Luminis cybersecurity incident highlights ‘concerning’ rise in attacks on healthcare",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmlmbFJ1UEZkd1RRSDloR1lrMGEzSjhrNVBNQ2FQT0tOZUZLV2RoOS0tQ0dWSGo2eDNDY3ZZdHd5SVJBVk9lYnVtMktNSjBmMnR0MklmUll3QnozNHFXbmhVZ2g0X1pSdkc3MFVwcF8za0RPZE1uSDE5VDY0ME5HSERINFJIaTg0bWR5Wk9GNDVsdE1uUDdpWFd0R2ppUWVjZ2w2YjhpaXlhY3pRcE9GaS1DanpTVlpNY0FHeWktYw?oc=5",
-      "domain": "marylandmatters.org",
+      "domain": "marylandmatters",
       "language": "",
       "tone": 0,
       "seendate": "20260909T090348Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "An alignment assessment of recent cybersecurity incidents",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQOFZuQXh2LWp1d0NoNDQ2cHdrTktoZ0dIdDUyeEVrSGVyWDBzT3dsV3lhelR6RXhtYy03MTNSYVlya2hSZm1MMHVkZVFMeEt4RDFJM0Z2TW9SRlFDYTM5eGhxU2YzTWNJOU8yWWktWjU5Y0FUeDdLV0lfdnJ2SW9uZE0zOFFXZw?oc=5",
+      "domain": "anthropic",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260909T191344Z",
       "source": "GoogleNews"
     },
     {
@@ -33849,7 +33867,7 @@
       "domain": "bostonscientific",
       "language": "",
       "tone": 0,
-      "seendate": "20260908T070000Z",
+      "seendate": "20260910T000704Z",
       "source": "GoogleNews"
     },
     {
@@ -33871,39 +33889,21 @@
       "source": "GoogleNews"
     },
     {
-      "title": "Two Maryland hospitals hit by cyberattack, compromising systems",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdl85bWQ5dTZuSU5QSU92cnZobE5iOFlMRWdfbUpCY3g0TlQzM2NCU2pJT3ExRjFCOXlYbzNZMm9sQU9BdlRaM2xCTExFdmc2eURCOFlFY25FTlBFRGFCNnE1NUN3RVZ4WUlmdnVwVEdWRko0OTZfQmZMY2k5NDNFcVZiVHZibXh2eGxUNmRSTEo0ZnlaYlkwaDg1MVZCTUFyQTNVRGpsWQ?oc=5",
-      "domain": "wypr",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260903T001600Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Boston Scientific Won’t Meet Guidance Due to Cyberattack",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQU1QWGlJWDQ1bXROelFDaGEwVXBlcFk2ZWdBeXd1eWQ0d1RyT29seGN0Q19Vb3E5VDhPeGZTMnA3dGU4TS13bTdJMmNhVlpUcXhnSmdaTVpwblVmalRDb2xBU3RQV2liMmpGQUxQR1dBTElVQVhCYXM2UGlITFN3Q2x6VU1rcEFCOVF4eUFhQ1Biak1abW5ESA?oc=5",
-      "domain": "wsj",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260908T105800Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Luminis Health cyber-attack disrupts Anne Arundel Medical Center",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPUUk1Q0VRY2c3RUMxd0U0REFiZ2NDNUllRzRjZFdlcnhocGFYNnl3aTE3RFB2LXQ1cTd2WnNYTEp2LTVYYjgyR2d6NS1XOGx3aG1rQ1A4SUNSc3lrZFZ2elNmMXNjMDE1YnRGcldUVHoyWHZFdHJ5TTR5aklOWldlNlJuMG5BQQ?oc=5",
+      "title": "Anne Arundel Medical Center cyberattack delays patient care",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbEJ6eG1CME15d0k2RkNsd2pSRmpsYTcwLUgtTnRIMHhKdkRDOF9sZ0xILUhqNjZCU3A3Uy1hQ0JqMW5xWWpNcWRzbjVrOXZ2OU41YjlHenRRbmpEOFpmZEpDRm42bGhWa1RHbWpKbkcyckFSRHl5dVdPV3E4OW9FTHNEb0RhZElnS24weUQxVVYtdnEzX3NXV1ZEUjQ?oc=5",
       "domain": "wbal-tv",
       "language": "",
       "tone": 0,
-      "seendate": "20260903T112100Z",
+      "seendate": "20260910T012712Z",
       "source": "GoogleNews"
     },
     {
-      "title": "12-Year-Old PostgreSQL Vulnerability Enables Database, Server Takeover",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQ0NfNWV2ajlrVU9iZ3J6bDZta29rSy13QUhaVmttR3FXZE5UdkM2WkN4eGFlZks5bFdQWnlIMVJjMXNkazhlelNsMnlkYXhiRlhkYjJuOGtZNU1CWWtOTDBCU0VwbG56Y2Q4LS0tZWV6T3RCZEVkTkRlcHdKeXdRVzh5WjNLQjlRQUNFMjFuRnF0MHhTYS00bVNRcjlodzcz0gGmAUFVX3lxTE1Wa2R3XzE2RTkxTG1KWVRIc0dZbFV6VGVjTW5nM21SeXZtZzQ1QWh0bGRpZkk5V1JfR1VNRG5KT2UtWWlYdGg4RFRkUnpsa0F1dzMtdFFhZnNaWmcwZ2RlNkI5TDJQOG1vWGE5S2o5YUxDSjVlcUhUVzZ2a0ZPUkZ4aHlzMF9rcHA1dXg4cllHU2J2Wl9qNkpRV29EdWlEQXQtUEthR3c?oc=5",
-      "domain": "securityweek",
+      "title": "Nvidia and CrowdStrike Develop New Cybersecurity AI Models | The Morning Download for Sept. 2",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNa19QTkMyU3B3eUJFcXB3TmFIWVJ5RW5aNTN4LVhBby1oaVhaei12N2VmYW9kTUFPc0pPajNLSkhXWTFsOXF5RDRIWkhJNUoyN29HcGd1UUU3bDhLMUtvLWhvb2l1bUdTaHMwWUR4RDFrS21Xc1VRWXJ5c25nR0E1TVAxV2IxR3QyT0MzOC1GTFNxeDY0RDdxenA0bmQ4WFlZ?oc=5",
+      "domain": "wsj",
       "language": "",
       "tone": 0,
-      "seendate": "20260904T120613Z",
+      "seendate": "20260910T002027Z",
       "source": "GoogleNews"
     },
     {
@@ -33925,9 +33925,18 @@
       "source": "GoogleNews"
     },
     {
+      "title": "12-Year-Old PostgreSQL Vulnerability Enables Database, Server Takeover",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQ0NfNWV2ajlrVU9iZ3J6bDZta29rSy13QUhaVmttR3FXZE5UdkM2WkN4eGFlZks5bFdQWnlIMVJjMXNkazhlelNsMnlkYXhiRlhkYjJuOGtZNU1CWWtOTDBCU0VwbG56Y2Q4LS0tZWV6T3RCZEVkTkRlcHdKeXdRVzh5WjNLQjlRQUNFMjFuRnF0MHhTYS00bVNRcjlodzcz0gGmAUFVX3lxTE1Wa2R3XzE2RTkxTG1KWVRIc0dZbFV6VGVjTW5nM21SeXZtZzQ1QWh0bGRpZkk5V1JfR1VNRG5KT2UtWWlYdGg4RFRkUnpsa0F1dzMtdFFhZnNaWmcwZ2RlNkI5TDJQOG1vWGE5S2o5YUxDSjVlcUhUVzZ2a0ZPUkZ4aHlzMF9rcHA1dXg4cllHU2J2Wl9qNkpRV29EdWlEQXQtUEthR3c?oc=5",
+      "domain": "securityweek",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260904T120613Z",
+      "source": "GoogleNews"
+    },
+    {
       "title": "Google patches actively exploited Chrome zero-day (CVE-2026-85046)",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZkZ0bk8yX3d4eF9fei1QZUhLbjZLVFNGRFJHLVVfUnItRkk2UldsNkdTMzVmdGpaNGJPUklOR3pEWmljZ2xlSU84d3R2Q1g3N2pxZDlVM2tyaWVzVEdUNHVJOVJCaTljYXVIb3hDbkVwbWloVXRBMEJxSUxVU1RFRkYtYW8wMVQw?oc=5",
-      "domain": "helpnetsecurity",
+      "domain": "helpnetsecurity.com",
       "language": "",
       "tone": 0,
       "seendate": "20260904T120913Z",
@@ -33959,24 +33968,15 @@
       "tone": 0,
       "seendate": "20260909T091100Z",
       "source": "GoogleNews"
-    },
-    {
-      "title": "Microsoft breaks Patch Tuesday record with 974-CVE deluge",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ0hSb3BmdHJ0ZlFMdkp6c0Uxb1VJRmdUWXU2WEtBeWM3bUZvS1Jqclp2UVVfZUlRVzFSbHA2Y0FQNWUzaEsyaWdUX1h3QkF0UkFnaXRqTzFHR0FGc0RiVDlFWjByT1VkakQ0UWFwQUlQVVFqTTJmUTMxYVk3U0N2V0xGR1hDLVM2UnFzVldyTGk4VnJxTFNITzRQTHRFYm5oWXVfbG8xTTlvNXAzMjI4OV9oSQ?oc=5",
-      "domain": "theregister",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260909T002522Z",
-      "source": "GoogleNews"
     }
   ],
   "timeseries": [],
   "llm_summary": "",
   "early_warning": {
-    "issued_at": "2026-09-09T21:16:04.583942+00:00",
+    "issued_at": "2026-09-10T05:22:34.579588+00:00",
     "horizon": "next 30 days",
     "classification": "global-exploitation-pressure-not-organisation-breach-probability",
-    "score": 60.1,
+    "score": 56.9,
     "level": "ELEVATED",
     "confidence": "HIGH",
     "confidence_score": 100.0,
@@ -33988,7 +33988,7 @@
         "score": 74.7,
         "catalog_count": 1703,
         "recent_7d_count": 9,
-        "prior_7d_count": 12,
+        "prior_7d_count": 9,
         "baseline_weeks": 26,
         "baseline_weekly_median": 5.5,
         "anomaly_z": 1.57,
@@ -34275,12 +34275,12 @@
         "id": "exploit_narrative_pressure",
         "label": "Cross-source exploit precursor language",
         "available": true,
-        "score": 66.0,
+        "score": 53.0,
         "events_considered": 50,
-        "matched_event_count": 12,
-        "matched_share": 0.24,
-        "independent_sources": 32,
-        "unique_cves": 5,
+        "matched_event_count": 9,
+        "matched_share": 0.18,
+        "independent_sources": 30,
+        "unique_cves": 3,
         "cross_source_baskets": 2,
         "baskets": [
           {
@@ -34295,12 +34295,12 @@
           },
           {
             "id": "perimeter_access",
-            "independent_sources": 5,
+            "independent_sources": 3,
             "cross_source_confirmed": true
           },
           {
             "id": "campaign_shift",
-            "independent_sources": 3,
+            "independent_sources": 2,
             "cross_source_confirmed": true
           }
         ],
@@ -34308,7 +34308,7 @@
           {
             "title": "Google patches actively exploited Chrome zero-day (CVE-2026-85046)",
             "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZkZ0bk8yX3d4eF9fei1QZUhLbjZLVFNGRFJHLVVfUnItRkk2UldsNkdTMzVmdGpaNGJPUklOR3pEWmljZ2xlSU84d3R2Q1g3N2pxZDlVM2tyaWVzVEdUNHVJOVJCaTljYXVIb3hDbkVwbWloVXRBMEJxSUxVU1RFRkYtYW8wMVQw?oc=5",
-            "source": "helpnetsecurity",
+            "source": "helpnetsecurity.com",
             "observed_at": "20260904T120913Z",
             "baskets": [
               "perimeter_access"
@@ -34334,10 +34334,10 @@
             "cves": []
           },
           {
-            "title": "N-able issues patch for zero-day flaw",
-            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcURrLWFnVUFRNzBKbkJ6b00zRjMzZDIzXzUybk5jUF9VMlkxNTNzRklRSElHc0VYcDBZTmRxUVBiVFYyTmtfLVZsUFhsQi1tZ2dYamg1cmp2S2tOeEpxVWcwcG41WVBJdWU1S2F5WFJTWHpyRUpMdEhBV2ZvVnB2bUtZTFdDS3c?oc=5",
-            "source": "cybersecuritydive",
-            "observed_at": "20260908T161910Z",
+            "title": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
+            "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYmF3RUktTzNSWTMxYi0wUS1EVE13SFBqekxZbGJPNVRQTExCMkdta1djR3VpRmpDZVlwaUg3WHBMUjdfY2JNaGN1TEJlM1FCeVAtVTBzUmtsQWIwMkI0ZDFhcDlXSWdtdzJ3dlZuWEpMT0tOQmFFc3h2OGZJcl9UOURBcw?oc=5",
+            "source": "thehackernews",
+            "observed_at": "20260904T071800Z",
             "baskets": [
               "perimeter_access"
             ],
@@ -34373,19 +34373,6 @@
             "cves": []
           },
           {
-            "title": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
-            "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYmF3RUktTzNSWTMxYi0wUS1EVE13SFBqekxZbGJPNVRQTExCMkdta1djR3VpRmpDZVlwaUg3WHBMUjdfY2JNaGN1TEJlM1FCeVAtVTBzUmtsQWIwMkI0ZDFhcDlXSWdtdzJ3dlZuWEpMT0tOQmFFc3h2OGZJcl9UOURBcw?oc=5",
-            "source": "thehackernews",
-            "observed_at": "20260904T071800Z",
-            "baskets": [
-              "perimeter_access"
-            ],
-            "terms": [
-              "zero-day"
-            ],
-            "cves": []
-          },
-          {
             "title": "SAP Patches CVSS 10.0 Kernel Flaw Enabling Unauthenticated Remote Code Execution",
             "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE91N09HZllKOGNmZzFtQVB5NC1DZlNyRl9ISndWMU1EbXJ6Vl9ROV94SmdSVjA2VXk1VUR4aWR6WTktX0E4ZWp0UHgwb3g5emg1a2hucW5SREd5SGNwRGVRZG9FRnNLQUlybm1xVklFLU5EU0gtQzM4WXFZdw?oc=5",
             "source": "thehackernews",
@@ -34399,9 +34386,22 @@
             "cves": []
           },
           {
+            "title": "N-able issues patch for zero-day flaw",
+            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcURrLWFnVUFRNzBKbkJ6b00zRjMzZDIzXzUybk5jUF9VMlkxNTNzRklRSElHc0VYcDBZTmRxUVBiVFYyTmtfLVZsUFhsQi1tZ2dYamg1cmp2S2tOeEpxVWcwcG41WVBJdWU1S2F5WFJTWHpyRUpMdEhBV2ZvVnB2bUtZTFdDS3c?oc=5",
+            "source": "cybersecuritydive",
+            "observed_at": "20260908T161910Z",
+            "baskets": [
+              "perimeter_access"
+            ],
+            "terms": [
+              "zero-day"
+            ],
+            "cves": []
+          },
+          {
             "title": "Google fixes yet another actively exploited Chrome zero-day (CVE-2026-87491)",
             "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdnFCLW9wVy1EUURGc0JQbUtDemFaNzJhRmpfdmkxbjg3SmVUMjFQZnRNcDNjUHVxOEFmcDkzQnlWQ2NhTjIxSjZFMjUyZnptYkNEMy1pblpHQmtxZ1ZGVTE5N3lNc1hwcGItOVRObG90UFQxM3Z2dnhiLVppenRyUmhlTkt2aUNfa1poQzBKVQ?oc=5",
-            "source": "helpnetsecurity",
+            "source": "helpnetsecurity.com",
             "observed_at": "20260909T075357Z",
             "baskets": [
               "perimeter_access"
@@ -34414,52 +34414,10 @@
             ]
           },
           {
-            "title": "CVE-2026-86206, CVE-2026-86207: N-able N-central Authentication Bypass (FIXED)",
-            "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeTMtMTMweDczNDJnV2hJQTRPczF5TUxtQVh2dEppc2VjMlVBQW9ETVBIaE1PWUpNbFJ6aG9TSWZ4Z05ZdTlKZDVoWHExbHZEb0R3VFduSFgzZ25PQnkyWGxBT045RHJYYkN1QnhWSkE2N1hPeS00eEk4bmVfdC1pNUM3aXg3Nlg5dDM0eWIzS3I5TDVqRHhVd2JDU3NRaWFpX3BFMnNQR2stbjc2RHViYQ?oc=5",
-            "source": "rapid7.com",
-            "observed_at": "20260908T112753Z",
-            "baskets": [
-              "perimeter_access"
-            ],
-            "terms": [
-              "authentication bypass"
-            ],
-            "cves": [
-              "CVE-2026-86206",
-              "CVE-2026-86207"
-            ]
-          },
-          {
-            "title": "Ransomware in 2026: What the Data Demands From You",
-            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAzT09DOGJWLUxndV8tZTZZbHltb0ZMVk9yNTQwRmdGM3dDZ0tmX0NRVTF2WW5CNnNnaV9JT1BtdHVfdmY1NWlHc25vdGt5TXVscWpGZkRndTZzb0RMTTU2dE8yZ3JaSHlQYlU1UVZrbEY5Y0tvZ2FTWA?oc=5",
-            "source": "group-ib",
-            "observed_at": "20260908T101623Z",
-            "baskets": [
-              "campaign_shift"
-            ],
-            "terms": [
-              "ransomware"
-            ],
-            "cves": []
-          },
-          {
-            "title": "Adobe Commerce Zero-Day Exploited to Backdoor Online Stores",
-            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdnpITnZQRnpmdU1MUWkycWx2T2ZXRTFJMFNtXzRZMklQcW1NU3BBTXQzQWxzSzljZl9xYmptZTgxdGU3ZzNpQlZWR0N4THByMUFxVGdrWUVjUTlKUWNpRmdBSXhNR3NXQV9QMktWMzlPWmI3Vm5KWkVJX0h4RGszNVhCZnhzWElIYVpiUnI4el9NX2fSAZgBQVVfeXFMTnh0OC1OMjcwU253NWVaU1FMTnR3TjhoeUI2ck9GOUtaSTlrOHZ3d3BTbUZURU92NzFMR1dseDJaR013VDU4clJPYTIwM3l0M3dZYkd0WklZV2FfNEVOc1NEamRPUVVQUlcxcldtNkdkcUhKQUZsSFNaV3VGUzlSN3lOMk00Ym9BTlpvVmFzWTBtT2hvNVhnVHc?oc=5",
-            "source": "securityweek",
-            "observed_at": "20260907T115837Z",
-            "baskets": [
-              "perimeter_access"
-            ],
-            "terms": [
-              "zero-day"
-            ],
-            "cves": []
-          },
-          {
-            "title": "When Detection Arrives After the Damage: Ransomware as a Patient-Safety Emergency",
-            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQ1lEX0NTdVBCTXBMSTdRU2FLUlhobnk2MG1MT29MX1FLTzkwSG40YmREVGU2WmEzU180U2dUVEQzWFJqeU5FZTV4cVozQVYyeUpDRU5ZVXVoaFllMFhtNE40emtKZk15NkJ4eTVjS0ppeWpYQ1ZwdldOWnR1TlFnTWVCdW5aNVFXY24zWHhuSy11UFFZamlkOGhuWWtSRXRBOEZjaHpGMjNyckR4VURLU0hn?oc=5",
-            "source": "morphisec",
-            "observed_at": "20260908T150740Z",
+            "title": "Two Ransomware Groups Claim Attacks on Nationwide Home Healthcare Provider",
+            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBFYmZMU3FGZUNlY2JGVFRUdzJrZXV1ekxHSHNrQzZEaXlkS0Z2SXRJYWhCUWExSTR1U1pUcFYzZUV6MzhaQUdvSkQ2M3RzS05fUGVqZGF3U1YyMGhzUVlSZG1PZkhKdGxNRXZJ?oc=5",
+            "source": "thehipaajournal",
+            "observed_at": "20260909T100518Z",
             "baskets": [
               "campaign_shift"
             ],
@@ -34490,8 +34448,8 @@
       {
         "id": "exploit_narrative_pressure",
         "title": "Cross-source exploit precursor language",
-        "score": 66.0,
-        "level": "ELEVATED",
+        "score": 53.0,
+        "level": "WATCH",
         "why": "Weaponization or exploitation language is confirmed across distinct named sources."
       }
     ],
@@ -34985,6 +34943,16 @@
           "epss_frontier_momentum": 25.0,
           "exploit_narrative_pressure": 66.0
         }
+      },
+      {
+        "timestamp": "2026-09-10T05:22:34.579588+00:00",
+        "score": 56.9,
+        "level": "ELEVATED",
+        "components": {
+          "kev_addition_pressure": 74.7,
+          "epss_frontier_momentum": 25.0,
+          "exploit_narrative_pressure": 53.0
+        }
       }
     ],
     "data_health": {
@@ -34992,7 +34960,7 @@
       "epss_frontier_count": 40,
       "epss_timeseries_count": 40,
       "news_events_considered": 50,
-      "independent_news_sources": 32,
+      "independent_news_sources": 30,
       "available_components": 3,
       "retained_components": []
     },
