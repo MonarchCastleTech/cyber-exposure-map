@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-09-11T16:47:42.448818+00:00",
+    "generated": "2026-09-11T21:21:59.497633+00:00",
     "mode": "live",
     "sources": [
       "cisa_catalog",
@@ -19,7 +19,7 @@
     },
     {
       "label": "News Domains",
-      "value": "34",
+      "value": "32",
       "delta": "deduplicated"
     },
     {
@@ -36,8 +36,73 @@
   "live_data": {
     "cisa_catalog": {
       "catalog_version": "2026.09.11",
-      "date_released": "2026-09-11T15:39:54.626Z",
+      "date_released": "2026-09-11T19:32:16.8993Z",
       "vulnerabilities": [
+        {
+          "cveID": "CVE-2026-84869",
+          "vendorProject": "ConnectWise",
+          "product": "ScreenConnect",
+          "vulnerabilityName": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
+          "dateAdded": "2026-09-11",
+          "shortDescription": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to file transfer and execution through an active remote sessions without authorization or host confirmation.",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-09-14",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "https://www.connectwise.com/company/trust/security-bulletins/2026-09-08-screenconnect-bulletin ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-84869",
+          "cwes": [
+            "CWE-269",
+            "CWE-862"
+          ],
+          "source": "CISA-KEV"
+        },
+        {
+          "cveID": "CVE-2026-42016",
+          "vendorProject": "JFrog",
+          "product": "Artifactory",
+          "vulnerabilityName": "JFrog Artifactory Incorrect Authorization Vulnerability",
+          "dateAdded": "2026-09-11",
+          "shortDescription": "JFrog Artifactory contains an incorrect authorization vulnerability that allows leads to privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope.",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-09-25",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "https://docs.jfrog.com/releases/docs/jfrog-security-advisories ; https://docs.jfrog.com/releases/docs/artifactory-self-managed-releases ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-42016",
+          "cwes": [
+            "CWE-863"
+          ],
+          "source": "CISA-KEV"
+        },
+        {
+          "cveID": "CVE-2026-42018",
+          "vendorProject": "JFrog",
+          "product": "Artifactory",
+          "vulnerabilityName": "JFrog Artifactory Improper Authentication Vulnerability",
+          "dateAdded": "2026-09-11",
+          "shortDescription": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive resources.",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-09-25",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "https://docs.jfrog.com/releases/docs/jfrog-security-advisories ; https://docs.jfrog.com/releases/docs/artifactory-self-managed-releases ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-42018",
+          "cwes": [
+            "CWE-287"
+          ],
+          "source": "CISA-KEV"
+        },
+        {
+          "cveID": "CVE-2026-85706",
+          "vendorProject": "GitLab",
+          "product": "Community Edition and Enterprise Edition",
+          "vulnerabilityName": "GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability",
+          "dateAdded": "2026-09-11",
+          "shortDescription": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing authentication enforcement in the repository commits API.",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-09-14",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-3-2-released/ ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-85706",
+          "cwes": [
+            "CWE-35"
+          ],
+          "source": "CISA-KEV"
+        },
         {
           "cveID": "CVE-2026-86060",
           "vendorProject": "MikroTik",
@@ -33413,6 +33478,15 @@
     },
     "news_articles": [
       {
+        "title": "Luminis cybersecurity incident highlights ‘concerning’ rise in attacks on healthcare",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmlmbFJ1UEZkd1RRSDloR1lrMGEzSjhrNVBNQ2FQT0tOZUZLV2RoOS0tQ0dWSGo2eDNDY3ZZdHd5SVJBVk9lYnVtMktNSjBmMnR0MklmUll3QnozNHFXbmhVZ2g0X1pSdkc3MFVwcF8za0RPZE1uSDE5VDY0ME5HSERINFJIaTg0bWR5Wk9GNDVsdE1uUDdpWFd0R2ppUWVjZ2w2YjhpaXlhY3pRcE9GaS1DanpTVlpNY0FHeWktYw?oc=5",
+        "domain": "marylandmatters",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T090348Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "An alignment assessment of recent cybersecurity incidents",
         "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQOFZuQXh2LWp1d0NoNDQ2cHdrTktoZ0dIdDUyeEVrSGVyWDBzT3dsV3lhelR6RXhtYy03MTNSYVlya2hSZm1MMHVkZVFMeEt4RDFJM0Z2TW9SRlFDYTM5eGhxU2YzTWNJOU8yWWktWjU5Y0FUeDdLV0lfdnJ2SW9uZE0zOFFXZw?oc=5",
         "domain": "anthropic",
@@ -33422,39 +33496,39 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Luminis cybersecurity incident highlights ‘concerning’ rise in attacks on healthcare",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmlmbFJ1UEZkd1RRSDloR1lrMGEzSjhrNVBNQ2FQT0tOZUZLV2RoOS0tQ0dWSGo2eDNDY3ZZdHd5SVJBVk9lYnVtMktNSjBmMnR0MklmUll3QnozNHFXbmhVZ2g0X1pSdkc3MFVwcF8za0RPZE1uSDE5VDY0ME5HSERINFJIaTg0bWR5Wk9GNDVsdE1uUDdpWFd0R2ppUWVjZ2w2YjhpaXlhY3pRcE9GaS1DanpTVlpNY0FHeWktYw?oc=5",
-        "domain": "marylandmatters.org",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260909T090348Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "FBI cyber leader details bureau’s first unclassified cyber strategy",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSTYwX3RXVUdMNmx3MXVJMnY2ZnVIeVhUZnNqMDJoV19sWDMxNURmR2FtSlQ3eGZqWXVUYkdmaEhRODBTRy03d3lHYjVuem5PbWFQS0dnbDliaFZ6anZOcUUxeDFDdWJiQnBCMWI4bE5xdkJ1MUJEdW1MZnlBODJKRFRqUENrWVdFZmFuYVJVLVJheExQVTZ3WUpPVDNLZEU5Rk1ad3A1ZnV0N1JqWlk1UnJhdXNQd0JVUURwaw?oc=5",
-        "domain": "federalnewsnetwork.com",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260909T163331Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "CVE-2026-82533: DeepSeek Harness Vulnerability Lets AI Agents Escape Their Own Sandbox",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQT1ptSVFXeUQzc1gtNzhzQmpsbGJSdHd1RndnSm0zMWRkcWV5dHNVZk5pWUFzaUZyQzlPZ25GMHhRemY4cVBUUkFhU1JoeUo4Z0RWVlZVNHhnRV9mYWlBNlJXNjZUcC1Dd2dnQ0tmZVMxTkdHMEhhazFuazBQRTlWeUsxWHZwSU0zZE1UZTNn?oc=5",
-        "domain": "ox.security",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T203754Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "Update on recent cybersecurity incident",
         "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE93MGNzZWgtLW1GSDVGMmtzajVyei1QMm8wVm1sT1lGNDNEZEpwUGt1Z3ZzU21yLWQ1OXVESVdGWnY3M2M0a3F5Z1MzRTlNY3k1a2pWOHVqZlBaOUI1VDVtaWs5SlpxVjh5UE1jT2VfVERDbFRKcXU1V3R3MVA4dw?oc=5",
         "domain": "bostonscientific",
         "language": "",
         "tone": 0,
         "seendate": "20260909T070000Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "CVE-2026-82533: DeepSeek Harness Vulnerability Lets AI Agents Escape Their Own Sandbox",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQT1ptSVFXeUQzc1gtNzhzQmpsbGJSdHd1RndnSm0zMWRkcWV5dHNVZk5pWUFzaUZyQzlPZ25GMHhRemY4cVBUUkFhU1JoeUo4Z0RWVlZVNHhnRV9mYWlBNlJXNjZUcC1Dd2dnQ0tmZVMxTkdHMEhhazFuazBQRTlWeUsxWHZwSU0zZE1UZTNn?oc=5",
+        "domain": "oxsecurity",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260908T203754Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "FBI cyber leader details bureau’s first unclassified cyber strategy",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSTYwX3RXVUdMNmx3MXVJMnY2ZnVIeVhUZnNqMDJoV19sWDMxNURmR2FtSlQ3eGZqWXVUYkdmaEhRODBTRy03d3lHYjVuem5PbWFQS0dnbDliaFZ6anZOcUUxeDFDdWJiQnBCMWI4bE5xdkJ1MUJEdW1MZnlBODJKRFRqUENrWVdFZmFuYVJVLVJheExQVTZ3WUpPVDNLZEU5Rk1ad3A1ZnV0N1JqWlk1UnJhdXNQd0JVUURwaw?oc=5",
+        "domain": "federalnewsnetwork",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T163331Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Artifactory Under Attack: In-the-Wild Exploitation of CVE-2026-42016, CVE-2026-42018 & CVE-2026-82329",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOajNXeExNODcxNFNRMDFEYTdjd3BOME42c0FkTGVfcG00NUQ0VUlUeGpKSjRHNnRWb2FoNHBYRTM4T0RFSkhlbUhIdjVEVmhzMG0tVDhkOWdSM2c0TmZTYVBnRmZQdmxUTWRtSFRpYVRITUF0M1Q2WlU0OVFUaTJqcTFITEdfRlZ4cU1QOURUY0o5emhKbWNXMXZ5SEdKVktNcmM3ci00R3k?oc=5",
+        "domain": "wiz.io",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260910T190400Z",
         "source": "GoogleNews"
       },
       {
@@ -33478,28 +33552,10 @@
       {
         "title": "Boston Scientific begins to restore shipping after cyberattack",
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZFBIUzZqQ3o2NGNUUS1tNTBfZl9CWEF6dFAwcU9kR01VX0RBUW1oNC1YSnljc29Dc3BaZE1HcG51V1gxU052U3Jhb09VQkNrTzdrWnB1THZMdHN3bzNmUFA5U2FNd1BUX3BDdzJUQlFERVJjZzh3d3pnNjZMcG82UGNOY0N2VmpwWmsya0lNeGlNa3Bna1hzeUZYZzB3WjRIOEhNb01R?oc=5",
-        "domain": "medtechdive",
+        "domain": "medtechdive.com",
         "language": "",
         "tone": 0,
         "seendate": "20260905T040437Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Boston Scientific Won’t Meet Guidance Due to Cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQU1QWGlJWDQ1bXROelFDaGEwVXBlcFk2ZWdBeXd1eWQ0d1RyT29seGN0Q19Vb3E5VDhPeGZTMnA3dGU4TS13bTdJMmNhVlpUcXhnSmdaTVpwblVmalRDb2xBU3RQV2liMmpGQUxQR1dBTElVQVhCYXM2UGlITFN3Q2x6VU1rcEFCOVF4eUFhQ1Biak1abW5ESA?oc=5",
-        "domain": "wsj",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T105800Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "NSA and Others Warn China-Based AI Companies are Distilling U.S. Frontier AI Models",
-        "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQbE80SEUzdlJMcDM2NEI3dFFreTJzNVdQeFlBenYybG5RekJvUFRldEtWd3NCZ0FJSG0wbjQ4SDgwM1BWWW55YTVvX0VEQV9yUzRNMk4wLXdPZDRVMEI3THAxSU9BRmNwMFJSNEltZk5Za28zS2ZjNFR3X2pfbzJrQnhjLUlVWVlCTXQ0X042cmhoR2loWjRUdnp0Yk1xYmVjMkR6RUxjZ295djlfOHlZemlMdEtXU01McndEdU9CVVhqOUNPMFR1TWRibmhJYXlJampGNzZzdlZDWF9TQm13eEswdFktM3VxY0tmcUJoQ012XzFMcVpNNm5kY09UQld1MlE?oc=5",
-        "domain": "nationalsecurityagency.gov",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T205718Z",
         "source": "GoogleNews"
       },
       {
@@ -33512,12 +33568,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Meet the CISO: A new front line star in the AI cybersecurity war",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBpNHNHQUFyRkhTcXhsMDVFaFpsVnJjR0hVTlB0VUQ3aHpPVk1ucGdGbUhDZnExLXJCZG05cXFmTnVwMUg1M3FuOFBPSlFJUk16MU92N1pYN0FscHB2a3hOdkhpTThwSmwwTnphbHUzZnF5Slhyc3I40gF8QVVfeXFMTVB3VEJaN2p3RV83VzZ1RjZRSm56cXlqa2pmWjVMQ1FUMllJVlBtakd4UXBORWNpeE5OeVFGYUJjSS05SFZHazlGOFBGVFFGUXZJY1EwOElGakxiR3c1Q0IyQ2g4aEFQVE1Tb1pHc055YnV2S3BpdU9qcFBhUQ?oc=5",
-        "domain": "cnbc",
+        "title": "Boston Scientific Won’t Meet Guidance Due to Cyberattack",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQU1QWGlJWDQ1bXROelFDaGEwVXBlcFk2ZWdBeXd1eWQ0d1RyT29seGN0Q19Vb3E5VDhPeGZTMnA3dGU4TS13bTdJMmNhVlpUcXhnSmdaTVpwblVmalRDb2xBU3RQV2liMmpGQUxQR1dBTElVQVhCYXM2UGlITFN3Q2x6VU1rcEFCOVF4eUFhQ1Biak1abW5ESA?oc=5",
+        "domain": "wsj.com",
         "language": "",
         "tone": 0,
-        "seendate": "20260905T120001Z",
+        "seendate": "20260908T105800Z",
         "source": "GoogleNews"
       },
       {
@@ -33530,15 +33586,6 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPM1BUZjYxWHpROXM2QVZDX3hGTHhuV2d3TUl1M0JFQnh2bU96SzF0dVB4QXdvMm5IWWd0SFVEaldtcnZSSkZDT0hnczMzRWdrM2FmcDN2dkYybGV5R21FVWxVa2dKWDhBQURDaVVqdDVTTURtd1hTVTBuSGhwcVRNVA?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260909T091100Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "Nvidia’s Huang Touts Cybersecurity as Next Big Market for AI",
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObTk1Ul8zTVNzemNWaEFYNUZvUUNWS1I1OEoyckYtRGtablRwMDI5bVlaRld3SDdxSV82amQ5UlJkWllPYUdCdEw4ak9lVkY3TDZPRlh2azZkY3ZJTzBnaC00UDdsY2RLTmdtM2JiRFNhdHhXdzYzd3pUUEFjTHZteFBnTXhrVlFFQUJNemtjeEt6ZXFVb3NUOUcwTXYwMUFfYzJnMm9TQkJ3cnQ0UmJZcA?oc=5",
         "domain": "bloomberg.com",
@@ -33548,48 +33595,30 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Meet the CISO: A new front line star in the AI cybersecurity war",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBpNHNHQUFyRkhTcXhsMDVFaFpsVnJjR0hVTlB0VUQ3aHpPVk1ucGdGbUhDZnExLXJCZG05cXFmTnVwMUg1M3FuOFBPSlFJUk16MU92N1pYN0FscHB2a3hOdkhpTThwSmwwTnphbHUzZnF5Slhyc3I40gF8QVVfeXFMTVB3VEJaN2p3RV83VzZ1RjZRSm56cXlqa2pmWjVMQ1FUMllJVlBtakd4UXBORWNpeE5OeVFGYUJjSS05SFZHazlGOFBGVFFGUXZJY1EwOElGakxiR3c1Q0IyQ2g4aEFQVE1Tb1pHc055YnV2S3BpdU9qcFBhUQ?oc=5",
+        "domain": "cnbc",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260905T120001Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPM1BUZjYxWHpROXM2QVZDX3hGTHhuV2d3TUl1M0JFQnh2bU96SzF0dVB4QXdvMm5IWWd0SFVEaldtcnZSSkZDT0hnczMzRWdrM2FmcDN2dkYybGV5R21FVWxVa2dKWDhBQURDaVVqdDVTTURtd1hTVTBuSGhwcVRNVA?oc=5",
+        "domain": "thehackernews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T091100Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Cyberattack in Berlin: 1.4 million files on the dark web",
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWWFNcEtKR0NvbG1FRm1FMnpjeF9tdzZubkhYSnVfSXllZVlRNFM4MWM2TmluU3hmZWd5Y2dNSHR6NlI3eWpLUUJrbk1Hd1VQTEtyNGcxdG1yamVKZUdvOE02UkhCQTVHQjJwbHJpS1FPZnRadzJsTURBRXJIZ0hoVEtmbEVWVzN1RTZmVDRkV0zSAZABQVVfeXFMUHA0V2NuQ2toR3B4Z3ViTmlOb2lYS0hrdUxkeDhZc2J2Qkh2NEhObWdLZnZtQUgtXzlhSUZ3X3RCRlp0QmdVWHlMLVdrOVhQRVZ3QVhYWXAteTNaXzlQTnRxTEhXZEdnQk9oTF9mR1pVb3k0NzVWdUlhVVhmZG1ZRnJ1OUtTZnZxQjlPWjVidlZu?oc=5",
         "domain": "dw.com",
         "language": "",
         "tone": 0,
-        "seendate": "20260911T075928Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Boston Scientific Restores Key Operations After Cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPanlad1Jpd0FxNm5pSnQzUlJfQng2VVVLNUpVRFRBSFJZOExsZDl5Vk9XbnJndWs5WFNGdWdTY0NTZklMN1ZsV1VfV0M4cEVSV2FKcHNwck11bnAwcXVIZlZQV19vbTdSQXk1Zm0yTnBGdGV4bkpaeTJFb2RZNW1NMEpnX3c1TjBRTTVfVzlnYjI1RVVmeGEtOHNBWXU1SXpyWEJyUXhua24?oc=5",
-        "domain": "wsj",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260910T153100Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Don’t let AI distract from cybersecurity basics, officials and executives warn",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVzFzdTlsOFhyVmVvNTBsamIxUVZPdzFBbWwzRzRZcUNjYzJTOVNJMXMydFJPWFJQQTNONkRNVFpDYXdoZWx2ZnNaRUJXNEkwcFRMck1fdFZlWWdEVjRCS1IxVFpSN0xYVFcyNGNuNlloc19ZVC16S09zYVRFUWxlQ0h2TF90MnN5?oc=5",
-        "domain": "cybersecuritydive",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T164903Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "How AI anxieties dominated the summer’s big cybersecurity conference",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQQ1Y2TGc5WW9OQjZjX1VJTW5aSVRCX2I5ejJIM2tMaTRiLW5RUGtaMy1mZUswUVE4RExLYlVmQk5ld1loNDhoTFlIbFc1Y3FOeTcyclJaRUhENHpZdnZzNzBkYzYxNjNpR0p0MFZwMzdJR05fQ0FTY0JBazlKcm5yODlZV2l3cUZyU1E?oc=5",
-        "domain": "cybersecuritydive",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260909T070000Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Threat groups enhance cyberattack capabilities with AI",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcFdLMUhZWHBrNm1rOUVqWkdBNDVxUkh2WThLSHo3T0wtMTkzMFJ2SDRseldtQjRPdm93bjlZNUFZZ1U4ZkhGSHR0SnJNdnNnVllvMkRUelFxemxDTWZ6MnZyNzdQZXdOejh5QWF2bWRSajlCYk03T3pvc2tjQUl4UEsxUW9OZHRfcDlnMjRFbVp0bzNPc19rN2RaemE?oc=5",
-        "domain": "cybersecuritydive",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260910T163021Z",
+        "seendate": "20260911T140419Z",
         "source": "GoogleNews"
       },
       {
@@ -33602,12 +33631,75 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Boston Scientific Restores Key Operations After Cyberattack",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPanlad1Jpd0FxNm5pSnQzUlJfQng2VVVLNUpVRFRBSFJZOExsZDl5Vk9XbnJndWs5WFNGdWdTY0NTZklMN1ZsV1VfV0M4cEVSV2FKcHNwck11bnAwcXVIZlZQV19vbTdSQXk1Zm0yTnBGdGV4bkpaeTJFb2RZNW1NMEpnX3c1TjBRTTVfVzlnYjI1RVVmeGEtOHNBWXU1SXpyWEJyUXhua24?oc=5",
+        "domain": "wsj.com",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260910T153100Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Threat groups enhance cyberattack capabilities with AI",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcFdLMUhZWHBrNm1rOUVqWkdBNDVxUkh2WThLSHo3T0wtMTkzMFJ2SDRseldtQjRPdm93bjlZNUFZZ1U4ZkhGSHR0SnJNdnNnVllvMkRUelFxemxDTWZ6MnZyNzdQZXdOejh5QWF2bWRSajlCYk03T3pvc2tjQUl4UEsxUW9OZHRfcDlnMjRFbVp0bzNPc19rN2RaemE?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260910T163021Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "How AI anxieties dominated the summer’s big cybersecurity conference",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQQ1Y2TGc5WW9OQjZjX1VJTW5aSVRCX2I5ejJIM2tMaTRiLW5RUGtaMy1mZUswUVE4RExLYlVmQk5ld1loNDhoTFlIbFc1Y3FOeTcyclJaRUhENHpZdnZzNzBkYzYxNjNpR0p0MFZwMzdJR05fQ0FTY0JBazlKcm5yODlZV2l3cUZyU1E?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T070000Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Springfield officials give public update on cyberattack on school district",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTmdFaXJtMzZRbVhBVS1jREtUMWV0a0t1OWJ2SFRMNmlnLUNoS0RYUkZjT2hLOEVRV0haR0NmeTdaclhoeHhQcXZyYU0zQ1BCbWtGNmNpMWU0NGZldWFEMGRUNzNUcUl0SVhsMEg5OTN3S3l4RE9kaUx1cEhwNHg1YU9YRDRGd2g1VE9YZmdqejFmVW0zLUZNcWdJXy1NN2xla0lIaGxydklSbUwxaWExUkZB0gHGAUFVX3lxTE9mUWI0RnR2NUhFdU1CaTBHMDJ5d2VKM0h5U1FobkJRSHhDaTBkRUJ5R01xMkVvUmpMWkxkVFRzWW1rSDU1Q29CUkM3RkowcmRRZGM0QjlNLTIxcXNvOW5zMThqOGtzSDYyaVlFcG5WUm55Q1BBa1BJMEdKNHZhSHRkVV83R1l6WWt0OEFUeHctZG9XMEZGTV9Bb2xvbzNQenFFcjB5dmd4dzk5dFBjZjR6Vzc5TnoyenN6S3RXeVRCZGhKQVBoUQ?oc=5",
+        "domain": "westernmassnews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260910T221900Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Boston Scientific restores operations after cybersecurity incident disrupts order fulfillment",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPLUgySTNYZDU5dmx1T2VwbGJlZkZoVnBNRl9KTUtyWmV5TUxMSmJ2YURFUFROVVRFLXpGVGRiUGx6bFpDcnA0VzYtaHZvY19BbEFyUUVBMTdSTTBhUnNsOXZBUGhaZUd2Umh4WXVoMnpfdTNURnJSUXpOc0Y4U2FNVDNndjNKNVpuckxZSUY3RFRxZmxJbk1UcndjUnZ3OC1UYjFVSFMyVlFURU5ZLTJ1TXNoOTc4Y3JJcG05MThhZWZiRFpoOTNGUGhRTkZEaUpo?oc=5",
+        "domain": "industrialcyber",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260911T155156Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "White House sees water cybersecurity partnership in Texas as national blueprint",
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNblZ6T3FvRFE0WGtuYlMxTzMtSnp2MHdNSVhxMEtZczYzYnB6cVBKM25FY0didlFxd1dNcm5LSjA0S3A2bGRpbzFpTzFHam51MURoOE5nOFBpVzY3em9PWXhOVUZzYXVfZDFjSG0yTUp3cnk0cUViem9QTHJFQmU3RjlxRldGR2xMRUZYbkFyMmFEOUZUMGw2c0Q4OXNGY1hsV01BZEhzTGU2VlJPWDE3UmJn?oc=5",
         "domain": "cybersecuritydive",
         "language": "",
         "tone": 0,
         "seendate": "20260910T203144Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Don’t let AI distract from cybersecurity basics, officials and executives warn",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVzFzdTlsOFhyVmVvNTBsamIxUVZPdzFBbWwzRzRZcUNjYzJTOVNJMXMydFJPWFJQQTNONkRNVFpDYXdoZWx2ZnNaRUJXNEkwcFRMck1fdFZlWWdEVjRCS1IxVFpSN0xYVFcyNGNuNlloc19ZVC16S09zYVRFUWxlQ0h2TF90MnN5?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260908T164903Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Hilltop Bank: ‘Cybersecurity incident’ takes all banking services offline",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUzRoMFV1NVZGc25rU3pqMUZpZzlKRGp5alR1aU16cTFxTzQ3R2Rya2dCMWt0Z01IQzlPMklkOGhwVS0zV21JZmFydDFGRjVpcVhxVHV4NzJBaFpPNW1nbzFRX28ySl9wTDhGdnV3QnFIcG9zeUZ5Y2t2Qk1zeHRkUy1uckEyTE92SzRTQjZhMmlOUG9yeTgtaDRjaUhnU1BkaTRaTzlJaV94VEQ4VGdhajdScms?oc=5",
+        "domain": "oilcitynews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T204605Z",
         "source": "GoogleNews"
       },
       {
@@ -33629,39 +33721,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Hilltop Bank: ‘Cybersecurity incident’ takes all banking services offline",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUzRoMFV1NVZGc25rU3pqMUZpZzlKRGp5alR1aU16cTFxTzQ3R2Rya2dCMWt0Z01IQzlPMklkOGhwVS0zV21JZmFydDFGRjVpcVhxVHV4NzJBaFpPNW1nbzFRX28ySl9wTDhGdnV3QnFIcG9zeUZ5Y2t2Qk1zeHRkUy1uckEyTE92SzRTQjZhMmlOUG9yeTgtaDRjaUhnU1BkaTRaTzlJaV94VEQ4VGdhajdScms?oc=5",
-        "domain": "oilcitynews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260909T204605Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "With Students Back to School, CISA Provides Cybersecurity Tools for Districts",
         "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRVFqOXRRQlZBYm1IMi01YkNFVTh6TnZTN2UtVjhfMXJYdEhwUi1YcG1tMHEyR0l3OGh2ZVFDc184V25BVzRmRTZoRmZkU2I4NHcxeDlubUJ1NkdaemhiVUMxanlZYjVZNXpPeklXaE5uUFJOcFlBVm5qellZbXJmb25oTWFEeUFWRkxPemRsZ09JUUN5aTE0ZGN6ZU1ETWE4QVVQZ0RlanVlbzE4STlr?oc=5",
-        "domain": "afcea.org",
+        "domain": "afceainternational",
         "language": "",
         "tone": 0,
         "seendate": "20260910T120000Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Springfield officials give public update on cyberattack on school district",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTmdFaXJtMzZRbVhBVS1jREtUMWV0a0t1OWJ2SFRMNmlnLUNoS0RYUkZjT2hLOEVRV0haR0NmeTdaclhoeHhQcXZyYU0zQ1BCbWtGNmNpMWU0NGZldWFEMGRUNzNUcUl0SVhsMEg5OTN3S3l4RE9kaUx1cEhwNHg1YU9YRDRGd2g1VE9YZmdqejFmVW0zLUZNcWdJXy1NN2xla0lIaGxydklSbUwxaWExUkZB0gHGAUFVX3lxTE9mUWI0RnR2NUhFdU1CaTBHMDJ5d2VKM0h5U1FobkJRSHhDaTBkRUJ5R01xMkVvUmpMWkxkVFRzWW1rSDU1Q29CUkM3RkowcmRRZGM0QjlNLTIxcXNvOW5zMThqOGtzSDYyaVlFcG5WUm55Q1BBa1BJMEdKNHZhSHRkVV83R1l6WWt0OEFUeHctZG9XMEZGTV9Bb2xvbzNQenFFcjB5dmd4dzk5dFBjZjR6Vzc5TnoyenN6S3RXeVRCZGhKQVBoUQ?oc=5",
-        "domain": "westernmassnews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260910T221900Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "CISA is on the verge of filling hundreds of critical vacancies",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVkpFeEo5X25xSHEyWkFDbVZpa0ZZV2Q3bWFiSm1GX2MzenAxb1hxcXgzTVBGbUVQelhxVDFwb0FXbE9vd0NvVWhtS0p0UDQ4TFFjRXdkMlU4QzZtMzJHaks4VGYxX2M0R2M2UTBTNklJTUNYRWkzM0FNcEpmdzJOdWFzbVdreFVtaktQZDl4OA?oc=5",
-        "domain": "cybersecuritydive",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260910T152520Z",
         "source": "GoogleNews"
       },
       {
@@ -33674,6 +33739,15 @@
         "source": "GoogleNews"
       },
       {
+        "title": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPcUdFVW1kVmNiWlNVOWFhaXpOZlJWbkFSSWlRM1JMNDBRdnRxMjVScEpuUmV6MTZBam5Gek5JVDcwbUtEUThUNTdabkxTWFZva1RPeFdQUmhlU0MxeXhsNV8tSjcyQTRyYTI0VHhhbjVIMjd2aF9PdmhxVzA5a0hlX3pkTQ?oc=5",
+        "domain": "thehackernews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260911T163000Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "PwC India and Claroty join forces to address growing cybersecurity risks across OT and connected environments",
         "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOaFpBR0dZOTZMSDVxblRPOHI2SUR4REczaWZqelJINDV6d0swT2JBNW03dkRqNXFRUVRDVFRTSzVaT3dNV2d1SThoakJ0Rl8zRHI0XzhlNWgxampWdVU1OGhOMDI2b09VMnlfMndvcGFrOW9Qc1YxT3hoVTE5X2tsc0VJb05VLW9lTHd1T25vMmV6YUpnbThSRlJ5MFpvWm5rYXNtVXc4ZXppTkhkR2VQY2Rub0g0VDlOWkppQ2M4TE5sYzZfaGJPS25RZDk3dTRKNm1MYlhrMXVQV2NfU0E?oc=5",
         "domain": "industrialcyber",
@@ -33683,12 +33757,21 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Boston Scientific restores operations after cybersecurity incident disrupts order fulfillment",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPLUgySTNYZDU5dmx1T2VwbGJlZkZoVnBNRl9KTUtyWmV5TUxMSmJ2YURFUFROVVRFLXpGVGRiUGx6bFpDcnA0VzYtaHZvY19BbEFyUUVBMTdSTTBhUnNsOXZBUGhaZUd2Umh4WXVoMnpfdTNURnJSUXpOc0Y4U2FNVDNndjNKNVpuckxZSUY3RFRxZmxJbk1UcndjUnZ3OC1UYjFVSFMyVlFURU5ZLTJ1TXNoOTc4Y3JJcG05MThhZWZiRFpoOTNGUGhRTkZEaUpo?oc=5",
+        "title": "EU Cyber Resilience Act reporting rules take effect, putting vulnerability disclosure and product security in focus",
+        "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOa3FncklTak5MblI2clBvNGVxQUcycVNoaGF1d09xYTBhYXk0akFoT3FqQjM1SmFTZHpnWFdnUGNVZGFFUTlMNkczM1ZIRW5kVEVKdzBWdjZMSEdRcTd3OV9lM1FnUmhXUmlkcHdwQnFBVjBRQXNMY3I0SnVMUGxtd0J1bzU3WkhWdk42UkEzVVZ0cG14UUg2QkRfcjdWRzdXU1BPcVBzWTlKYUNKc1NzUjd4NG1mV3M0QVhjSFdkcllsaGQyQUVPbTVMTUd0MjVodjBCVHpEWmNZdXRFRW1JSVhfVEVTWG13MnpXRnc0dmpSZnhTSFJnMHotNlpFSUFzYW1GWWR0U2ZiUQ?oc=5",
         "domain": "industrialcyber",
         "language": "",
         "tone": 0,
-        "seendate": "20260911T155156Z",
+        "seendate": "20260911T160828Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Finite State highlights firmware visibility challenge as EU Cyber Resilience Act vulnerability reporting begins",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNbFBsQ09JeEdXLXZJR0ZQWVhsSk5IclgzUW1YQjdESS1Bb2ZEcFBRMnlSSFVkRnFNdTNJbFpPeVVLYjhrbVp6QmhZYWF2SnlhaGg3d01sNUhkblgwSnFXWWFydXFhT182Yk9ETFkzNWIyR3V3ZkltQ0taZHpSNTVrcHVXcnBtRGZXYy13WjdKMzVEVFJzeUEwS3BHa1ZKbWhwOHMtWm5YVTMyc0FMLTJaS1dyVlVBMkp0THZiTi1LaXhmX0xUQThYREx5T2hVYnMyX2lWaUJ3SVZ0WUVt?oc=5",
+        "domain": "industrialcyber",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260911T154636Z",
         "source": "GoogleNews"
       },
       {
@@ -33701,6 +33784,15 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Fortinet Patches Critical Vulnerabilities in FortiMonitorOnSight, Chrome Extension",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSjNReG5uRkhVbXA3T1c0SDh4WktNSWd4M1pvVDNXSlJQNG1Oblpzel9zZXIxeGo1YzFtZGhJSW00TE1hQWtQU0RPb0p4ZWRUdmxIc0ZaWnF0LXQwWWRyOFNjTURZZExCT2d5MXFiZGJvSTFaWHptU1RLRVZsT3FiWXdvYUFzM3h6Qlc4bjZScjAwVi1mOHVicFJsWmFDZGNJVDZLeC1OeHdLamRyQm8tWdIBtgFBVV95cUxPTl94NEJkdENyY2NFOE41dXdHYzA0VlFJMFVORUplUEJRZGxZbDFZamtTRDdxRVEyN0xBWXI3QWI1cDlteFZXY0ZyNVVuOWszNEpsNHN1WmNpcHNsSGY4dElaVDYzdDc5TnFtNUJacGNfcWxuRmZjd2dOUnhXTFFlanY3UDRwOEMyaFpiT3NYdFJOTXJJOTFQTFJHQmNIZXY1dUZrNUVQMnBNbVJoX09nbThlWEpPUQ?oc=5",
+        "domain": "securityweek",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T143352Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Panzer ransomware targets Italian manufacturer as ESXi capability raises industrial security concerns",
         "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNam5JY0pSV0RUc2FfRVplenl5OHR1QUJ5ZkM1QVlQZm5LX3REN1ZZNkhxYWF5U1dzUXVQZi1Rb3BWVVAyckptWDRDZmFJYU0xYURDTHp6ZnpZa1piOGZqTGdrWTh6T2dhNkpzeFB1OUhUNGxUUHd2TV9qY3Z4RmtEd25FMldJa1ZsaDFkSmhhcVc4UUhOVXo1TnE4ZzFXekxybGJ3X2hPWDlackRkVTM4Q0M5QV9OTlN6VGNDMDI4Z2JkeDNDakt3c1NEOWJzdUN1U0RPREVsdTdRenc?oc=5",
         "domain": "industrialcyber",
@@ -33710,39 +33802,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Artifactory Under Attack: In-the-Wild Exploitation of CVE-2026-42016, CVE-2026-42018 & CVE-2026-82329",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOajNXeExNODcxNFNRMDFEYTdjd3BOME42c0FkTGVfcG00NUQ0VUlUeGpKSjRHNnRWb2FoNHBYRTM4T0RFSkhlbUhIdjVEVmhzMG0tVDhkOWdSM2c0TmZTYVBnRmZQdmxUTWRtSFRpYVRITUF0M1Q2WlU0OVFUaTJqcTFITEdfRlZ4cU1QOURUY0o5emhKbWNXMXZ5SEdKVktNcmM3ci00R3k?oc=5",
-        "domain": "wiz.io",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T070000Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "Critical VMware Workstation and Fusion Flaw Lets VM Admins Execute Host Code",
         "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTkY2S0pXVFdhM01sRVJ2UVdYa2dqeFUwcmxGbXdTeWZ3VE9lSHp4cVQ3cXBUcllFSXJNMjZiaVlGTWc4dWtVdXYtM2lBU09rRXBNbEZublNOUW1zLXF5MGg5c1FfNWkzMWFYX3pjSnUycVczZlAyMmZDeFZxcUV1WWJxMA?oc=5",
         "domain": "thehackernews",
         "language": "",
         "tone": 0,
         "seendate": "20260905T160500Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "EU Cyber Resilience Act reporting rules take effect, putting vulnerability disclosure and product security in focus",
-        "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOa3FncklTak5MblI2clBvNGVxQUcycVNoaGF1d09xYTBhYXk0akFoT3FqQjM1SmFTZHpnWFdnUGNVZGFFUTlMNkczM1ZIRW5kVEVKdzBWdjZMSEdRcTd3OV9lM1FnUmhXUmlkcHdwQnFBVjBRQXNMY3I0SnVMUGxtd0J1bzU3WkhWdk42UkEzVVZ0cG14UUg2QkRfcjdWRzdXU1BPcVBzWTlKYUNKc1NzUjd4NG1mV3M0QVhjSFdkcllsaGQyQUVPbTVMTUd0MjVodjBCVHpEWmNZdXRFRW1JSVhfVEVTWG13MnpXRnc0dmpSZnhTSFJnMHotNlpFSUFzYW1GWWR0U2ZiUQ?oc=5",
-        "domain": "industrialcyber",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260911T155157Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Fortinet Patches Critical Vulnerabilities in FortiMonitorOnSight, Chrome Extension",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSjNReG5uRkhVbXA3T1c0SDh4WktNSWd4M1pvVDNXSlJQNG1Oblpzel9zZXIxeGo1YzFtZGhJSW00TE1hQWtQU0RPb0p4ZWRUdmxIc0ZaWnF0LXQwWWRyOFNjTURZZExCT2d5MXFiZGJvSTFaWHptU1RLRVZsT3FiWXdvYUFzM3h6Qlc4bjZScjAwVi1mOHVicFJsWmFDZGNJVDZLeC1OeHdLamRyQm8tWdIBtgFBVV95cUxPTl94NEJkdENyY2NFOE41dXdHYzA0VlFJMFVORUplUEJRZGxZbDFZamtTRDdxRVEyN0xBWXI3QWI1cDlteFZXY0ZyNVVuOWszNEpsNHN1WmNpcHNsSGY4dElaVDYzdDc5TnFtNUJacGNfcWxuRmZjd2dOUnhXTFFlanY3UDRwOEMyaFpiT3NYdFJOTXJJOTFQTFJHQmNIZXY1dUZrNUVQMnBNbVJoX09nbThlWEpPUQ?oc=5",
-        "domain": "securityweek",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260909T143352Z",
         "source": "GoogleNews"
       },
       {
@@ -33773,30 +33838,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Cybersecurity Funding Available to MD Local Governments",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONzFNWkk2a3JLRWhBWlQtWWRPcjJwY3Q4SFJscnlULXFjUUxVTmNLcUwzZzdNaEYwN3BEX1RCc2VZZlYtZU5uRHhjUHlLV05DS3ZXdEswS3lqSUFidWFzbXhCYnZHSFlrdk9FSnJ4QVUwNnViUVMtbXBySDQ4R2FXaFM2X0daaE9GSEdKUEVsbUNBMjRWaXVyZ0E4aE5PX3Vta0FiQ1pBdw?oc=5",
-        "domain": "conduitstreetblog",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260910T130949Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "N-able Issues Fourth N-central Hotfix in Five Weeks for Unauthenticated RCE Flaw",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPNm5lWG0tX3ZBeGQ2WFhnbmw5YTFkN216WjV2eXVFUUp5b0VMdFR2SkFpYV9DWkFCYVVqMUNCdXpWTFl3ZlEtdm9TNF9CQ1MwUmI1OVdMcy1pSF9VVjd5M1BrMDlDUnlraU13am5sczU4WXkzQmwtSnhrMkZRWnBYbTJ3?oc=5",
         "domain": "thehackernews",
         "language": "",
         "tone": 0,
         "seendate": "20260907T083100Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "CVE-2026-86206, CVE-2026-86207: N-able N-central Authentication Bypass (FIXED)",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeTMtMTMweDczNDJnV2hJQTRPczF5TUxtQVh2dEppc2VjMlVBQW9ETVBIaE1PWUpNbFJ6aG9TSWZ4Z05ZdTlKZDVoWHExbHZEb0R3VFduSFgzZ25PQnkyWGxBT045RHJYYkN1QnhWSkE2N1hPeS00eEk4bmVfdC1pNUM3aXg3Nlg5dDM0eWIzS3I5TDVqRHhVd2JDU3NRaWFpX3BFMnNQR2stbjc2RHViYQ?oc=5",
-        "domain": "rapid7",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260908T112753Z",
         "source": "GoogleNews"
       },
       {
@@ -33809,21 +33856,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "CVE-2026-87491: Chrome V8 Zero-Day Exploited in the Wild Enables Arbitrary Code Execution",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5FVFlZTk5mclhSN1RhYjdTcVlURll6Q1g0b1lDNzZvb3FDTW9nQnRlTkNVZ1UzeWh6QVc1LWZzSFd3UFc5U09qYnd6dzBsb3NhanhRUWpDUlRnVmFhVkZNZVk0RU1CaGN5aEpXOVdzOUVtSjkxUnBvUFlR?oc=5",
-        "domain": "socprime",
+        "title": "Cybersecurity Funding Available to MD Local Governments",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONzFNWkk2a3JLRWhBWlQtWWRPcjJwY3Q4SFJscnlULXFjUUxVTmNLcUwzZzdNaEYwN3BEX1RCc2VZZlYtZU5uRHhjUHlLV05DS3ZXdEswS3lqSUFidWFzbXhCYnZHSFlrdk9FSnJ4QVUwNnViUVMtbXBySDQ4R2FXaFM2X0daaE9GSEdKUEVsbUNBMjRWaXVyZ0E4aE5PX3Vta0FiQ1pBdw?oc=5",
+        "domain": "conduitstreetblog",
         "language": "",
         "tone": 0,
-        "seendate": "20260910T020459Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Cybersecurity expert Kevin Mandia joins Amazon's Board of Directors",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdHVLaG9jX1A0Qk81YV92YzFwVDBlTnRTamtSaS1DUnFnQ0hRdWRzcktUeXIwc1h6dW9MY1ZaeDdNNkRSY0Q2UDRfUnlPY0VULUxyMGNfOXBDbVJlRTFQcDd0N1BjMWZJSHFGRW13NHRMeU0wQjloaGY1d3dzWFRtSHIyajZuMUJJTlZseg?oc=5",
-        "domain": "aboutamazon",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260909T203724Z",
+        "seendate": "20260910T130949Z",
         "source": "GoogleNews"
       },
       {
@@ -33836,15 +33874,6 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Berlin cyberattack: hackers leak highly sensitive data across dark web",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOQWU4cHZUWkl3VHQyNnZtSV9YS3lXbkJpT2c1UFhTR2M0Zmt3SDRUXzVpdWVydUtMNDhOVE16RlVQcHd0aHlJUXFKMnBKZ1Q0QXRtZTA2em9WTkZVSFgtS2hQa0tHZlQwSldQRWswbm1XdEE5VmdYMXhJalhuck1oWkk3U2lnbDdnSHVGX2lZa3Q2Q2JGVWM2NUU3Mi11QlNxXzB6cFkxT3AwWVpjdkpB?oc=5",
-        "domain": "euronews.com",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260905T071758Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "Researcher Drops New Microsoft Defender PoC Showing ShieldBreak Patch Can Be Bypassed",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMndGeWg0RWU2eU1QSFU5a19sTUFvZ1FDakJFd0lkWVhkOVM2OU1xSHY3QTMyQk9jY3dtVmdaUHhtNENOUnRacFA3bnR6ME95LWV2cGZVc1JjLVg5Nm1XeERlQmRNbm9CNGtOY1pGejBkQVh1bnJPYUx3V3BKS0RfWmVMX0M?oc=5",
         "domain": "thehackernews",
@@ -33854,18 +33883,63 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Springfield schools remain closed through Friday as cyberattack locks access to student medical records",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZ082cGhSMlF5cEp3TFhwc3VodTdwVEswVWVHT2hzVzdpTlpSR1gwSk1RZWZvNUxkNTl1bUtsVVBfWVVtMV9uZGlQR1M4NUFkdUVpQnptQW1DaTVpNXJQeHR3Ul9zc2k2U0NqZk5aSVR6M0U1OVdsMkVPUURMbjZ6MmczaHpyR0Rha3pDT3czbDIyNThQMVZ1TG9DZWlFb3pLbWxzNE9fb3dfQWhWUC1Cb3NMMEXSAboBQVVfeXFMTkdGWE1nUmVzTlpVVjdjX1BuMHRJRnN5TjRkd1lwRGVack5aV2pLQkNLSXNkWktLMDJteEtaQ3FOcVc1cUJ2c0ZybjRKUlJIcFRCNVlIaVNaUkZYbWZJVVJFalg4YUxJWGppM1lScXlxU0RBeVd4Njd2bXl2U2twb1lDd195bkZIMmN4RUVXLXFOcDJMS05HNFhVVG9tc2Q3SGdXck9QZEMtdjJocUFaX2lhdTNFYWVDUHdR?oc=5",
-        "domain": "wwlp",
+        "title": "Attackers Chain JFrog Artifactory Flaws to Gain Admin Control and Plant Backdoors",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZGdURVVvS1NkWVZqVTBYMmw2Y0lHTzcwdDcxejdCZmtCejFYbXFpTjR6bEJTSzIwTjlBYTExLV9wWDFCTGFYRUladXJoZTQ5ZkVpUUNSeGF1SWt3dHBaZDR5eUNiV1pYYXZncF9NLVN1Ukx5bmliM2ZPR0dVLTVNV0M2SUo?oc=5",
+        "domain": "thehackernews",
         "language": "",
         "tone": 0,
-        "seendate": "20260909T130100Z",
+        "seendate": "20260911T073100Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Berlin cyberattack: hackers leak highly sensitive data across dark web",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOQWU4cHZUWkl3VHQyNnZtSV9YS3lXbkJpT2c1UFhTR2M0Zmt3SDRUXzVpdWVydUtMNDhOVE16RlVQcHd0aHlJUXFKMnBKZ1Q0QXRtZTA2em9WTkZVSFgtS2hQa0tHZlQwSldQRWswbm1XdEE5VmdYMXhJalhuck1oWkk3U2lnbDdnSHVGX2lZa3Q2Q2JGVWM2NUU3Mi11QlNxXzB6cFkxT3AwWVpjdkpB?oc=5",
+        "domain": "euronews.com",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260905T071758Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Cybersecurity expert Kevin Mandia joins Amazon's Board of Directors",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdHVLaG9jX1A0Qk81YV92YzFwVDBlTnRTamtSaS1DUnFnQ0hRdWRzcktUeXIwc1h6dW9MY1ZaeDdNNkRSY0Q2UDRfUnlPY0VULUxyMGNfOXBDbVJlRTFQcDd0N1BjMWZJSHFGRW13NHRMeU0wQjloaGY1d3dzWFRtSHIyajZuMUJJTlZseg?oc=5",
+        "domain": "aboutamazon",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T203724Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Anthropic reports fourth cybersecurity incident with early version of Claude",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNVDNYS0lWQ0xGQUhzdWxVSnM0U0ZqYWZMMnBWVHpxZEpBQWNhYWJMd3FQSzR1clZQRHFDRFhhc3dJYW1GYmRoZk5vbnp5b3hIUGRzaTNrdUhzVVhTWnVpYTE3cVctZmZyMk51cnpRZ0xLVjZPZmVSalFhQkY1TVljaDJFTElLSWpNSlRuR1FmYWNIaXlGdXJ1bVk4OUk?oc=5",
+        "domain": "yahoofinancecanada",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T194842Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Tech company discloses first-of-its-kind A.I. cyberattack of one government against another",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYW9BSk5NaVZJXzczSHBuM1J0VG9wR2xrckxWY2JRc2JuOTJqY1NtM1E1RFZYUTNNYlNFZWVnTWhHQmx5S085TzN4VVRic1JhRjY4WlVBVzRCclktLUJnRjBhTkJteHpUTUxLSTY2ZTFMeVZtV1dqS1cxMDVTVjBCQ09yNHc1QTYzcHNCdEJvbVhUal82SHJvZ3JXc3M0UWpyTjhGN1o3RmF2aU9WYmN2MzhDU2NFd2swY1NUWg?oc=5",
+        "domain": "nbcnews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260908T233129Z",
         "source": "GoogleNews"
       }
     ]
   },
   "entities": [],
   "events": [
+    {
+      "title": "Luminis cybersecurity incident highlights ‘concerning’ rise in attacks on healthcare",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmlmbFJ1UEZkd1RRSDloR1lrMGEzSjhrNVBNQ2FQT0tOZUZLV2RoOS0tQ0dWSGo2eDNDY3ZZdHd5SVJBVk9lYnVtMktNSjBmMnR0MklmUll3QnozNHFXbmhVZ2g0X1pSdkc3MFVwcF8za0RPZE1uSDE5VDY0ME5HSERINFJIaTg0bWR5Wk9GNDVsdE1uUDdpWFd0R2ppUWVjZ2w2YjhpaXlhY3pRcE9GaS1DanpTVlpNY0FHeWktYw?oc=5",
+      "domain": "marylandmatters",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260909T090348Z",
+      "source": "GoogleNews"
+    },
     {
       "title": "An alignment assessment of recent cybersecurity incidents",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQOFZuQXh2LWp1d0NoNDQ2cHdrTktoZ0dIdDUyeEVrSGVyWDBzT3dsV3lhelR6RXhtYy03MTNSYVlya2hSZm1MMHVkZVFMeEt4RDFJM0Z2TW9SRlFDYTM5eGhxU2YzTWNJOU8yWWktWjU5Y0FUeDdLV0lfdnJ2SW9uZE0zOFFXZw?oc=5",
@@ -33876,39 +33950,39 @@
       "source": "GoogleNews"
     },
     {
-      "title": "Luminis cybersecurity incident highlights ‘concerning’ rise in attacks on healthcare",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMmlmbFJ1UEZkd1RRSDloR1lrMGEzSjhrNVBNQ2FQT0tOZUZLV2RoOS0tQ0dWSGo2eDNDY3ZZdHd5SVJBVk9lYnVtMktNSjBmMnR0MklmUll3QnozNHFXbmhVZ2g0X1pSdkc3MFVwcF8za0RPZE1uSDE5VDY0ME5HSERINFJIaTg0bWR5Wk9GNDVsdE1uUDdpWFd0R2ppUWVjZ2w2YjhpaXlhY3pRcE9GaS1DanpTVlpNY0FHeWktYw?oc=5",
-      "domain": "marylandmatters.org",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260909T090348Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "FBI cyber leader details bureau’s first unclassified cyber strategy",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSTYwX3RXVUdMNmx3MXVJMnY2ZnVIeVhUZnNqMDJoV19sWDMxNURmR2FtSlQ3eGZqWXVUYkdmaEhRODBTRy03d3lHYjVuem5PbWFQS0dnbDliaFZ6anZOcUUxeDFDdWJiQnBCMWI4bE5xdkJ1MUJEdW1MZnlBODJKRFRqUENrWVdFZmFuYVJVLVJheExQVTZ3WUpPVDNLZEU5Rk1ad3A1ZnV0N1JqWlk1UnJhdXNQd0JVUURwaw?oc=5",
-      "domain": "federalnewsnetwork.com",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260909T163331Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "CVE-2026-82533: DeepSeek Harness Vulnerability Lets AI Agents Escape Their Own Sandbox",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQT1ptSVFXeUQzc1gtNzhzQmpsbGJSdHd1RndnSm0zMWRkcWV5dHNVZk5pWUFzaUZyQzlPZ25GMHhRemY4cVBUUkFhU1JoeUo4Z0RWVlZVNHhnRV9mYWlBNlJXNjZUcC1Dd2dnQ0tmZVMxTkdHMEhhazFuazBQRTlWeUsxWHZwSU0zZE1UZTNn?oc=5",
-      "domain": "ox.security",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260908T203754Z",
-      "source": "GoogleNews"
-    },
-    {
       "title": "Update on recent cybersecurity incident",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE93MGNzZWgtLW1GSDVGMmtzajVyei1QMm8wVm1sT1lGNDNEZEpwUGt1Z3ZzU21yLWQ1OXVESVdGWnY3M2M0a3F5Z1MzRTlNY3k1a2pWOHVqZlBaOUI1VDVtaWs5SlpxVjh5UE1jT2VfVERDbFRKcXU1V3R3MVA4dw?oc=5",
       "domain": "bostonscientific",
       "language": "",
       "tone": 0,
       "seendate": "20260909T070000Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "CVE-2026-82533: DeepSeek Harness Vulnerability Lets AI Agents Escape Their Own Sandbox",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQT1ptSVFXeUQzc1gtNzhzQmpsbGJSdHd1RndnSm0zMWRkcWV5dHNVZk5pWUFzaUZyQzlPZ25GMHhRemY4cVBUUkFhU1JoeUo4Z0RWVlZVNHhnRV9mYWlBNlJXNjZUcC1Dd2dnQ0tmZVMxTkdHMEhhazFuazBQRTlWeUsxWHZwSU0zZE1UZTNn?oc=5",
+      "domain": "oxsecurity",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260908T203754Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "FBI cyber leader details bureau’s first unclassified cyber strategy",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSTYwX3RXVUdMNmx3MXVJMnY2ZnVIeVhUZnNqMDJoV19sWDMxNURmR2FtSlQ3eGZqWXVUYkdmaEhRODBTRy03d3lHYjVuem5PbWFQS0dnbDliaFZ6anZOcUUxeDFDdWJiQnBCMWI4bE5xdkJ1MUJEdW1MZnlBODJKRFRqUENrWVdFZmFuYVJVLVJheExQVTZ3WUpPVDNLZEU5Rk1ad3A1ZnV0N1JqWlk1UnJhdXNQd0JVUURwaw?oc=5",
+      "domain": "federalnewsnetwork",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260909T163331Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "Artifactory Under Attack: In-the-Wild Exploitation of CVE-2026-42016, CVE-2026-42018 & CVE-2026-82329",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOajNXeExNODcxNFNRMDFEYTdjd3BOME42c0FkTGVfcG00NUQ0VUlUeGpKSjRHNnRWb2FoNHBYRTM4T0RFSkhlbUhIdjVEVmhzMG0tVDhkOWdSM2c0TmZTYVBnRmZQdmxUTWRtSFRpYVRITUF0M1Q2WlU0OVFUaTJqcTFITEdfRlZ4cU1QOURUY0o5emhKbWNXMXZ5SEdKVktNcmM3ci00R3k?oc=5",
+      "domain": "wiz.io",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260910T190400Z",
       "source": "GoogleNews"
     },
     {
@@ -33932,28 +34006,10 @@
     {
       "title": "Boston Scientific begins to restore shipping after cyberattack",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZFBIUzZqQ3o2NGNUUS1tNTBfZl9CWEF6dFAwcU9kR01VX0RBUW1oNC1YSnljc29Dc3BaZE1HcG51V1gxU052U3Jhb09VQkNrTzdrWnB1THZMdHN3bzNmUFA5U2FNd1BUX3BDdzJUQlFERVJjZzh3d3pnNjZMcG82UGNOY0N2VmpwWmsya0lNeGlNa3Bna1hzeUZYZzB3WjRIOEhNb01R?oc=5",
-      "domain": "medtechdive",
+      "domain": "medtechdive.com",
       "language": "",
       "tone": 0,
       "seendate": "20260905T040437Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Boston Scientific Won’t Meet Guidance Due to Cyberattack",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQU1QWGlJWDQ1bXROelFDaGEwVXBlcFk2ZWdBeXd1eWQ0d1RyT29seGN0Q19Vb3E5VDhPeGZTMnA3dGU4TS13bTdJMmNhVlpUcXhnSmdaTVpwblVmalRDb2xBU3RQV2liMmpGQUxQR1dBTElVQVhCYXM2UGlITFN3Q2x6VU1rcEFCOVF4eUFhQ1Biak1abW5ESA?oc=5",
-      "domain": "wsj",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260908T105800Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "NSA and Others Warn China-Based AI Companies are Distilling U.S. Frontier AI Models",
-      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQbE80SEUzdlJMcDM2NEI3dFFreTJzNVdQeFlBenYybG5RekJvUFRldEtWd3NCZ0FJSG0wbjQ4SDgwM1BWWW55YTVvX0VEQV9yUzRNMk4wLXdPZDRVMEI3THAxSU9BRmNwMFJSNEltZk5Za28zS2ZjNFR3X2pfbzJrQnhjLUlVWVlCTXQ0X042cmhoR2loWjRUdnp0Yk1xYmVjMkR6RUxjZ295djlfOHlZemlMdEtXU01McndEdU9CVVhqOUNPMFR1TWRibmhJYXlJampGNzZzdlZDWF9TQm13eEswdFktM3VxY0tmcUJoQ012XzFMcVpNNm5kY09UQld1MlE?oc=5",
-      "domain": "nationalsecurityagency.gov",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260908T205718Z",
       "source": "GoogleNews"
     },
     {
@@ -33966,12 +34022,12 @@
       "source": "GoogleNews"
     },
     {
-      "title": "Meet the CISO: A new front line star in the AI cybersecurity war",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBpNHNHQUFyRkhTcXhsMDVFaFpsVnJjR0hVTlB0VUQ3aHpPVk1ucGdGbUhDZnExLXJCZG05cXFmTnVwMUg1M3FuOFBPSlFJUk16MU92N1pYN0FscHB2a3hOdkhpTThwSmwwTnphbHUzZnF5Slhyc3I40gF8QVVfeXFMTVB3VEJaN2p3RV83VzZ1RjZRSm56cXlqa2pmWjVMQ1FUMllJVlBtakd4UXBORWNpeE5OeVFGYUJjSS05SFZHazlGOFBGVFFGUXZJY1EwOElGakxiR3c1Q0IyQ2g4aEFQVE1Tb1pHc055YnV2S3BpdU9qcFBhUQ?oc=5",
-      "domain": "cnbc",
+      "title": "Boston Scientific Won’t Meet Guidance Due to Cyberattack",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQU1QWGlJWDQ1bXROelFDaGEwVXBlcFk2ZWdBeXd1eWQ0d1RyT29seGN0Q19Vb3E5VDhPeGZTMnA3dGU4TS13bTdJMmNhVlpUcXhnSmdaTVpwblVmalRDb2xBU3RQV2liMmpGQUxQR1dBTElVQVhCYXM2UGlITFN3Q2x6VU1rcEFCOVF4eUFhQ1Biak1abW5ESA?oc=5",
+      "domain": "wsj.com",
       "language": "",
       "tone": 0,
-      "seendate": "20260905T120001Z",
+      "seendate": "20260908T105800Z",
       "source": "GoogleNews"
     },
     {
@@ -33984,15 +34040,6 @@
       "source": "GoogleNews"
     },
     {
-      "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPM1BUZjYxWHpROXM2QVZDX3hGTHhuV2d3TUl1M0JFQnh2bU96SzF0dVB4QXdvMm5IWWd0SFVEaldtcnZSSkZDT0hnczMzRWdrM2FmcDN2dkYybGV5R21FVWxVa2dKWDhBQURDaVVqdDVTTURtd1hTVTBuSGhwcVRNVA?oc=5",
-      "domain": "thehackernews",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260909T091100Z",
-      "source": "GoogleNews"
-    },
-    {
       "title": "Nvidia’s Huang Touts Cybersecurity as Next Big Market for AI",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObTk1Ul8zTVNzemNWaEFYNUZvUUNWS1I1OEoyckYtRGtablRwMDI5bVlaRld3SDdxSV82amQ5UlJkWllPYUdCdEw4ak9lVkY3TDZPRlh2azZkY3ZJTzBnaC00UDdsY2RLTmdtM2JiRFNhdHhXdzYzd3pUUEFjTHZteFBnTXhrVlFFQUJNemtjeEt6ZXFVb3NUOUcwTXYwMUFfYzJnMm9TQkJ3cnQ0UmJZcA?oc=5",
       "domain": "bloomberg.com",
@@ -34000,15 +34047,33 @@
       "tone": 0,
       "seendate": "20260910T170833Z",
       "source": "GoogleNews"
+    },
+    {
+      "title": "Meet the CISO: A new front line star in the AI cybersecurity war",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBpNHNHQUFyRkhTcXhsMDVFaFpsVnJjR0hVTlB0VUQ3aHpPVk1ucGdGbUhDZnExLXJCZG05cXFmTnVwMUg1M3FuOFBPSlFJUk16MU92N1pYN0FscHB2a3hOdkhpTThwSmwwTnphbHUzZnF5Slhyc3I40gF8QVVfeXFMTVB3VEJaN2p3RV83VzZ1RjZRSm56cXlqa2pmWjVMQ1FUMllJVlBtakd4UXBORWNpeE5OeVFGYUJjSS05SFZHazlGOFBGVFFGUXZJY1EwOElGakxiR3c1Q0IyQ2g4aEFQVE1Tb1pHc055YnV2S3BpdU9qcFBhUQ?oc=5",
+      "domain": "cnbc",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260905T120001Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPM1BUZjYxWHpROXM2QVZDX3hGTHhuV2d3TUl1M0JFQnh2bU96SzF0dVB4QXdvMm5IWWd0SFVEaldtcnZSSkZDT0hnczMzRWdrM2FmcDN2dkYybGV5R21FVWxVa2dKWDhBQURDaVVqdDVTTURtd1hTVTBuSGhwcVRNVA?oc=5",
+      "domain": "thehackernews",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260909T091100Z",
+      "source": "GoogleNews"
     }
   ],
   "timeseries": [],
   "llm_summary": "",
   "early_warning": {
-    "issued_at": "2026-09-11T16:47:42.449027+00:00",
+    "issued_at": "2026-09-11T21:21:59.497870+00:00",
     "horizon": "next 30 days",
     "classification": "global-exploitation-pressure-not-organisation-breach-probability",
-    "score": 54.8,
+    "score": 49.6,
     "level": "WATCH",
     "confidence": "HIGH",
     "confidence_score": 100.0,
@@ -34017,18 +34082,83 @@
         "id": "kev_addition_pressure",
         "label": "CISA exploited-vulnerability burst",
         "available": true,
-        "score": 68.2,
-        "catalog_count": 1705,
-        "recent_7d_count": 10,
+        "score": 81.5,
+        "catalog_count": 1709,
+        "recent_7d_count": 14,
         "prior_7d_count": 10,
         "baseline_weeks": 26,
         "baseline_weekly_median": 6.0,
-        "anomaly_z": 0.9,
+        "anomaly_z": 1.8,
         "ransomware_known_7d": 0,
-        "due_within_7d": 7,
+        "due_within_7d": 9,
         "catalog_version": "2026.09.11",
-        "released_at": "2026-09-11T15:39:54.626Z",
+        "released_at": "2026-09-11T19:32:16.8993Z",
         "evidence": [
+          {
+            "cveID": "CVE-2026-84869",
+            "vendorProject": "ConnectWise",
+            "product": "ScreenConnect",
+            "vulnerabilityName": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
+            "dateAdded": "2026-09-11",
+            "shortDescription": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to file transfer and execution through an active remote sessions without authorization or host confirmation.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-09-14",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "https://www.connectwise.com/company/trust/security-bulletins/2026-09-08-screenconnect-bulletin ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-84869",
+            "cwes": [
+              "CWE-269",
+              "CWE-862"
+            ],
+            "source": "CISA-KEV"
+          },
+          {
+            "cveID": "CVE-2026-42016",
+            "vendorProject": "JFrog",
+            "product": "Artifactory",
+            "vulnerabilityName": "JFrog Artifactory Incorrect Authorization Vulnerability",
+            "dateAdded": "2026-09-11",
+            "shortDescription": "JFrog Artifactory contains an incorrect authorization vulnerability that allows leads to privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-09-25",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "https://docs.jfrog.com/releases/docs/jfrog-security-advisories ; https://docs.jfrog.com/releases/docs/artifactory-self-managed-releases ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-42016",
+            "cwes": [
+              "CWE-863"
+            ],
+            "source": "CISA-KEV"
+          },
+          {
+            "cveID": "CVE-2026-42018",
+            "vendorProject": "JFrog",
+            "product": "Artifactory",
+            "vulnerabilityName": "JFrog Artifactory Improper Authentication Vulnerability",
+            "dateAdded": "2026-09-11",
+            "shortDescription": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive resources.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-09-25",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "https://docs.jfrog.com/releases/docs/jfrog-security-advisories ; https://docs.jfrog.com/releases/docs/artifactory-self-managed-releases ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-42018",
+            "cwes": [
+              "CWE-287"
+            ],
+            "source": "CISA-KEV"
+          },
+          {
+            "cveID": "CVE-2026-85706",
+            "vendorProject": "GitLab",
+            "product": "Community Edition and Enterprise Edition",
+            "vulnerabilityName": "GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability",
+            "dateAdded": "2026-09-11",
+            "shortDescription": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing authentication enforcement in the repository commits API.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-09-14",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-3-2-released/ ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-85706",
+            "cwes": [
+              "CWE-35"
+            ],
+            "source": "CISA-KEV"
+          },
           {
             "cveID": "CVE-2026-86060",
             "vendorProject": "MikroTik",
@@ -34156,39 +34286,6 @@
             "cwes": [
               "CWE-59",
               "CWE-284"
-            ],
-            "source": "CISA-KEV"
-          },
-          {
-            "cveID": "CVE-2026-86218",
-            "vendorProject": "N-able",
-            "product": "N-central",
-            "vulnerabilityName": "N-able N-central Static Code Injection Vulnerability",
-            "dateAdded": "2026-09-08",
-            "shortDescription": "N-able N-central contains a static code injection vulnerability that could allow for pre-authentication remote code execution.",
-            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-            "dueDate": "2026-09-11",
-            "knownRansomwareCampaignUse": "Unknown",
-            "notes": "https://status.n-able.com/2026/09/06/n-central-2026-3-hotfix-4-cve-2026-86218/ ; https://me.n-able.com/s/security-advisory/aArVy0000002Ld3KAE/cve202686218-preauthentication-remote-code-execution ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-86218",
-            "cwes": [
-              "CWE-96"
-            ],
-            "source": "CISA-KEV"
-          },
-          {
-            "cveID": "CVE-2026-85880",
-            "vendorProject": "Microsoft",
-            "product": "Windows",
-            "vulnerabilityName": "Microsoft Windows Heap-Based Buffer Overflow Vulnerability",
-            "dateAdded": "2026-09-08",
-            "shortDescription": "Microsoft Windows Advanced Local Procedure Call contains a heap-based buffer overflow vulnerability that allows an attacker to elevate privileges locally.",
-            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-            "dueDate": "2026-09-22",
-            "knownRansomwareCampaignUse": "Unknown",
-            "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-85880 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-85880",
-            "cwes": [
-              "CWE-122",
-              "CWE-908"
             ],
             "source": "CISA-KEV"
           }
@@ -34323,13 +34420,13 @@
         "id": "exploit_narrative_pressure",
         "label": "Cross-source exploit precursor language",
         "available": true,
-        "score": 55.0,
+        "score": 33.0,
         "events_considered": 50,
-        "matched_event_count": 7,
-        "matched_share": 0.14,
-        "independent_sources": 34,
-        "unique_cves": 7,
-        "cross_source_baskets": 2,
+        "matched_event_count": 5,
+        "matched_share": 0.1,
+        "independent_sources": 32,
+        "unique_cves": 4,
+        "cross_source_baskets": 1,
         "baskets": [
           {
             "id": "weaponization",
@@ -34343,8 +34440,8 @@
           },
           {
             "id": "perimeter_access",
-            "independent_sources": 3,
-            "cross_source_confirmed": true
+            "independent_sources": 1,
+            "cross_source_confirmed": false
           },
           {
             "id": "campaign_shift",
@@ -34417,63 +34514,24 @@
               "ransomware"
             ],
             "cves": []
-          },
-          {
-            "title": "CVE-2026-86206, CVE-2026-86207: N-able N-central Authentication Bypass (FIXED)",
-            "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeTMtMTMweDczNDJnV2hJQTRPczF5TUxtQVh2dEppc2VjMlVBQW9ETVBIaE1PWUpNbFJ6aG9TSWZ4Z05ZdTlKZDVoWHExbHZEb0R3VFduSFgzZ25PQnkyWGxBT045RHJYYkN1QnhWSkE2N1hPeS00eEk4bmVfdC1pNUM3aXg3Nlg5dDM0eWIzS3I5TDVqRHhVd2JDU3NRaWFpX3BFMnNQR2stbjc2RHViYQ?oc=5",
-            "source": "rapid7",
-            "observed_at": "20260908T112753Z",
-            "baskets": [
-              "perimeter_access"
-            ],
-            "terms": [
-              "authentication bypass"
-            ],
-            "cves": [
-              "CVE-2026-86206",
-              "CVE-2026-86207"
-            ]
-          },
-          {
-            "title": "CVE-2026-87491: Chrome V8 Zero-Day Exploited in the Wild Enables Arbitrary Code Execution",
-            "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5FVFlZTk5mclhSN1RhYjdTcVlURll6Q1g0b1lDNzZvb3FDTW9nQnRlTkNVZ1UzeWh6QVc1LWZzSFd3UFc5U09qYnd6dzBsb3NhanhRUWpDUlRnVmFhVkZNZVk0RU1CaGN5aEpXOVdzOUVtSjkxUnBvUFlR?oc=5",
-            "source": "socprime",
-            "observed_at": "20260910T020459Z",
-            "baskets": [
-              "perimeter_access"
-            ],
-            "terms": [
-              "zero-day"
-            ],
-            "cves": [
-              "CVE-2026-87491"
-            ]
           }
         ]
       }
     ],
     "concurrence": {
-      "active": true,
+      "active": false,
       "elevated_components": [
-        "kev_addition_pressure",
-        "exploit_narrative_pressure"
+        "kev_addition_pressure"
       ],
-      "score_bonus": 5.0
+      "score_bonus": 0.0
     },
     "alerts": [
       {
         "id": "kev_addition_pressure",
         "title": "CISA exploited-vulnerability burst",
-        "score": 68.2,
-        "level": "ELEVATED",
+        "score": 81.5,
+        "level": "SEVERE",
         "why": "CISA additions are elevated against the previous 26 weekly windows."
-      },
-      {
-        "id": "exploit_narrative_pressure",
-        "title": "Cross-source exploit precursor language",
-        "score": 55.0,
-        "level": "ELEVATED",
-        "why": "Weaponization or exploitation language is confirmed across distinct named sources."
       }
     ],
     "history": [
@@ -35036,14 +35094,24 @@
           "epss_frontier_momentum": 25.0,
           "exploit_narrative_pressure": 55.0
         }
+      },
+      {
+        "timestamp": "2026-09-11T21:21:59.497870+00:00",
+        "score": 49.6,
+        "level": "WATCH",
+        "components": {
+          "kev_addition_pressure": 81.5,
+          "epss_frontier_momentum": 25.0,
+          "exploit_narrative_pressure": 33.0
+        }
       }
     ],
     "data_health": {
-      "cisa_catalog_count": 1705,
+      "cisa_catalog_count": 1709,
       "epss_frontier_count": 40,
       "epss_timeseries_count": 40,
       "news_events_considered": 50,
-      "independent_news_sources": 34,
+      "independent_news_sources": 32,
       "available_components": 3,
       "retained_components": []
     },
