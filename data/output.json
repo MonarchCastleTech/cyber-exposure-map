@@ -1,14 +1,16 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-09-16T12:12:20.857379+00:00",
-    "mode": "live",
+    "generated": "2026-09-16T17:19:35.595770+00:00",
+    "mode": "partial",
     "sources": [
       "cisa_catalog",
       "epss_frontier",
       "news_articles"
     ],
-    "source_notes": [],
+    "source_notes": [
+      "epss_frontier endpoint unavailable; used verified cache less than 72 hours old."
+    ],
     "version": "2.0.0"
   },
   "stats": [
@@ -19,7 +21,7 @@
     },
     {
       "label": "News Domains",
-      "value": "38",
+      "value": "39",
       "delta": "deduplicated"
     },
     {
@@ -35,9 +37,25 @@
   ],
   "live_data": {
     "cisa_catalog": {
-      "catalog_version": "2026.09.14",
-      "date_released": "2026-09-14T19:00:02.426Z",
+      "catalog_version": "2026.09.16",
+      "date_released": "2026-09-16T14:19:54.4996Z",
       "vulnerabilities": [
+        {
+          "cveID": "CVE-2026-58704",
+          "vendorProject": "Google",
+          "product": "Pixel",
+          "vulnerabilityName": "Google Pixel Improper Authorization Vulnerability",
+          "dateAdded": "2026-09-16",
+          "shortDescription": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges.",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-09-19",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-09-01 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-58704",
+          "cwes": [
+            "CWE-693"
+          ],
+          "source": "CISA-KEV"
+        },
         {
           "cveID": "CVE-2026-76461",
           "vendorProject": "Cisco",
@@ -60,7 +78,7 @@
           "product": "ScreenConnect",
           "vulnerabilityName": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
           "dateAdded": "2026-09-11",
-          "shortDescription": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to file transfer and execution through an active remote sessions without authorization or host confirmation.",
+          "shortDescription": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote session without authorization or host confirmation.",
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
           "dueDate": "2026-09-14",
           "knownRansomwareCampaignUse": "Unknown",
@@ -77,7 +95,7 @@
           "product": "Artifactory",
           "vulnerabilityName": "JFrog Artifactory Incorrect Authorization Vulnerability",
           "dateAdded": "2026-09-11",
-          "shortDescription": "JFrog Artifactory contains an incorrect authorization vulnerability that allows leads to privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope.",
+          "shortDescription": "JFrog Artifactory contains an incorrect authorization vulnerability that leads to a privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope.",
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
           "dueDate": "2026-09-25",
           "knownRansomwareCampaignUse": "Unknown",
@@ -125,11 +143,11 @@
           "product": "RouterOS",
           "vulnerabilityName": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
           "dateAdded": "2026-09-10",
-          "shortDescription": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacked to change the trusted RouterOS policy mask, leading to privilege escalation.",
+          "shortDescription": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacker to change the trusted RouterOS policy mask, leading to privilege escalation.",
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
           "dueDate": "2026-09-13",
           "knownRansomwareCampaignUse": "Unknown",
-          "notes": " ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-86060",
+          "notes": "https://mikrotik.com/supportsec/september-2026-vulnerability ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-86060",
           "cwes": [
             "CWE-88"
           ],
@@ -141,7 +159,7 @@
           "product": "RouterOS",
           "vulnerabilityName": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
           "dateAdded": "2026-09-10",
-          "shortDescription": "MikroTik RouterOS contains a missing authenticaion for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
+          "shortDescription": "MikroTik RouterOS contains a missing authentication for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
           "dueDate": "2026-09-13",
           "knownRansomwareCampaignUse": "Unknown",
@@ -33490,7 +33508,7 @@
           ]
         }
       ],
-      "cached": false
+      "cached": true
     },
     "news_articles": [
       {
@@ -33512,30 +33530,21 @@
         "source": "GoogleNews"
       },
       {
-        "title": "An alignment assessment of recent cybersecurity incidents",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQOFZuQXh2LWp1d0NoNDQ2cHdrTktoZ0dIdDUyeEVrSGVyWDBzT3dsV3lhelR6RXhtYy03MTNSYVlya2hSZm1MMHVkZVFMeEt4RDFJM0Z2TW9SRlFDYTM5eGhxU2YzTWNJOU8yWWktWjU5Y0FUeDdLV0lfdnJ2SW9uZE0zOFFXZw?oc=5",
-        "domain": "anthropic",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260909T191344Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "New FBI cyber strategy promises increase in adversary disruptions",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdHRTS3Boam1FQTVNTWxLWllNVXhPLUZZTkUxTWhOYkJMazVSbzl6V2p2UXdweHBUZ0VMcUpkejZia2lZTURiaGFjYVc2dnJDbEZGR3duYXZHb2NreFRjTXhuUVBLWTNzbTVLTEhQTHlvTnAxVU1HSEhZWWxubGpXM1RvUDY1eDhOd1c4UlQwTU5yQ2xhYy16R21vbWZrSjhTblN6a01UTV8?oc=5",
-        "domain": "cybersecuritydive",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260909T160349Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "CVE-2026-85706: Critical GitLab Path Traversal Exploited in the Wild",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUG4xby02ZVRmZWpOZWVSR0JfbmxSek5NTUhXR3BVSG9LTE5ud2xfUVJ4aTFVSmRyWmJfU1d4dFhYOXMzZkNFSHl2WTVVcGpHOEhISTM4eDI2N3Q0cm1VWDNIYU5HOE4xX3ExQzZ0MzFVTjk5Y0NfaHJJMkdaUWNaNk9vYkFZRHJZSzI4akh1eGNNeTJKd0pVbDQteTFiTGN6UlNMaGJmUFA?oc=5",
         "domain": "rapid7",
         "language": "",
         "tone": 0,
         "seendate": "20260914T101001Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "An alignment assessment of recent cybersecurity incidents",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQOFZuQXh2LWp1d0NoNDQ2cHdrTktoZ0dIdDUyeEVrSGVyWDBzT3dsV3lhelR6RXhtYy03MTNSYVlya2hSZm1MMHVkZVFMeEt4RDFJM0Z2TW9SRlFDYTM5eGhxU2YzTWNJOU8yWWktWjU5Y0FUeDdLV0lfdnJ2SW9uZE0zOFFXZw?oc=5",
+        "domain": "anthropic.com",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260909T191344Z",
         "source": "GoogleNews"
       },
       {
@@ -33550,7 +33559,7 @@
       {
         "title": "Cyberattack halts state financial aid office operations",
         "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBzRGRTTXZZZDk2S3BXcVJxd0YteTNDYU85QzBsUl8zVFFVZDFvdXQtUFE3Ny1QQUp1el9MM2ZVcUNjNWtuV1NyOXZtcVJBY19NeXdEWlgzMVQ3OE11ZzFMa1YweEotWi04TXZwZlp3YWM4Q2FFX1kwbVh3?oc=5",
-        "domain": "mississippitoday",
+        "domain": "mississippitoday.org",
         "language": "",
         "tone": 0,
         "seendate": "20260910T233921Z",
@@ -33568,19 +33577,10 @@
       {
         "title": "Anne Arundel Medical Center cyberattack delays patient care",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbEJ6eG1CME15d0k2RkNsd2pSRmpsYTcwLUgtTnRIMHhKdkRDOF9sZ0xILUhqNjZCU3A3Uy1hQ0JqMW5xWWpNcWRzbjVrOXZ2OU41YjlHenRRbmpEOFpmZEpDRm42bGhWa1RHbWpKbkcyckFSRHl5dVdPV3E4OW9FTHNEb0RhZElnS24weUQxVVYtdnEzX3NXV1ZEUjQ?oc=5",
-        "domain": "wbal-tv",
+        "domain": "wbaltv.com",
         "language": "",
         "tone": 0,
         "seendate": "20260909T215800Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Cybersecurity stocks get a jolt on gloomy AI warnings from CEOs of Anthropic and OpenAI",
-        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQS2NMMFVDTjByeUlHV2lnSkMwbTgwd2dobmkyVy1OaXJHNHplMVRoOVc1cDhVSGNkWDJHUWkteElaOWY5QUotSDFsUWNxdVFKUlV4bzdvN0F6RTFpVTNVcU1WeGZ2ZjA5dlpBS2MzWHUwU1N1UC1EMkJ3cVV4OHJRdW1mQ3J3bm1STHlublY0aW5lZV9aeTlxRHU2NjJNSWRZUy1fYl8yYU0tMnpsS3RycFNpLVlUMkN1OVEwRTNtYU9OYWtsMFZ1b1EzRmxfMnV2dkJmU3ZDRGF6Y09uSktkTkhHektKdw?oc=5",
-        "domain": "yahoofinance",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260914T102226Z",
         "source": "GoogleNews"
       },
       {
@@ -33593,12 +33593,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Active exploitation of Cisco Secure Firewall Management Center vulnerabilities",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE56TnptV1RTMGhXanliQlMzcDBQU3BieFVhUEFQTnl1aXo5dGpGd24xVVZZQUU4UWhVRDJwRndVYThUeWJrZHVkemZzS2VBWGg4X0Z4TEVBYVU1NHVFdU5SQVIzcXNUMTNncWYzYg?oc=5",
-        "domain": "ciscotalosblog",
+        "title": "Cybersecurity stocks get a jolt on gloomy AI warnings from CEOs of Anthropic and OpenAI",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQS2NMMFVDTjByeUlHV2lnSkMwbTgwd2dobmkyVy1OaXJHNHplMVRoOVc1cDhVSGNkWDJHUWkteElaOWY5QUotSDFsUWNxdVFKUlV4bzdvN0F6RTFpVTNVcU1WeGZ2ZjA5dlpBS2MzWHUwU1N1UC1EMkJ3cVV4OHJRdW1mQ3J3bm1STHlublY0aW5lZV9aeTlxRHU2NjJNSWRZUy1fYl8yYU0tMnpsS3RycFNpLVlUMkN1OVEwRTNtYU9OYWtsMFZ1b1EzRmxfMnV2dkJmU3ZDRGF6Y09uSktkTkhHektKdw?oc=5",
+        "domain": "yahoofinance",
         "language": "",
         "tone": 0,
-        "seendate": "20260909T161321Z",
+        "seendate": "20260914T143118Z",
         "source": "GoogleNews"
       },
       {
@@ -33620,6 +33620,15 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Threat groups enhance cyberattack capabilities with AI",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcFdLMUhZWHBrNm1rOUVqWkdBNDVxUkh2WThLSHo3T0wtMTkzMFJ2SDRseldtQjRPdm93bjlZNUFZZ1U4ZkhGSHR0SnJNdnNnVllvMkRUelFxemxDTWZ6MnZyNzdQZXdOejh5QWF2bWRSajlCYk03T3pvc2tjQUl4UEsxUW9OZHRfcDlnMjRFbVp0bzNPc19rN2RaemE?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260910T163021Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Cyberattack sends International Meteor Organization crashing back to Earth",
         "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPWTFqZlZUT3Q1MkFwVWJ6TWxwTGIwYTRCZUtSOWtOUThMa09XY3ExMjNkQ1pPUExGQl9tczZuVWdVajBVRFlMNElva3pQQmNaWlNNSTQ0ZTI3S2hOcjJxZHdvT09VX0NRMHFBb2UzclNJa0dOLWxwUTNJWnMwY2lBYkRrVFpiQjI1OXBhR0t2alJqSmJDdXpXVHpMUC1qaFRDQWJTRHo1ckJBY2lNNER1ZmN6WVlLemtrbWxlXy1HR0ZkYmVQOTY2RVY5WEU5dw?oc=5",
         "domain": "theregister",
@@ -33629,12 +33638,30 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Russia is weaponizing US-built AI to make killer drones, cyberattack bots, and fake news",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOTV9lS1hJOGotZmJPT1hpUjVNbmQ5b2ttbUc4VDZFNEtJbllQaVNjWDhIZ3Y0bGVGZFZSOVdmU004WXRmTlI3VEVXajVBX0VHS1F3SzFoZF9IVFVlVGZHeTdPQTI1RXk1VFZZU3VWS3k2WUV3bXE4ZW9mTi15elZMVEVLejlpQnlCYUlxZDhTbUI2MGJpZ3B6S3BHM05ST25MNjVMVkFMY0dpRUxqTWhrQzdwRENUcWNWV0VWOWZKOFlnclZ2RGZaSW9FZDEwZTg?oc=5",
+        "domain": "defenseone",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260911T225322Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "ConnectWise Patches ScreenConnect Vulnerability Exploited in Worm-Like Attacks",
         "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMVNZWE5NU2V6Q014RTJXUnNzaXowUC1hSENlbkVQNEJKSkVkX1NpVm5QZzVLclc4YzZ6a3hsRW9YTDRkc1p0RUFIUzhvTUZLSGlOQ3gxdERLelNRS1VsUVZaanlZWGlfQm1nSUpFaHFReENPOGhFdlp2STJzb0tUbUF4Mk1SWTdCMzkyMjluek5FMlM5SnJpNHpqNVc2WDIxR01aS2d2VVRLRW5x0gGyAUFVX3lxTFBHd01BczMwcEd1TTZma0xjOUpHZlp2NE4ySDk2N1ExLUFrZmtmSmxnc1pUOFlTZTZELXQ3bEZkNFN4TUE4LTV0MFZTcVczaVM3QVJxSGNZQTNMb0JpNWpLZzRiZEtwZktpVjF1TEdRTWpvQVFZcWhmOTk1VFh0TlpWNmJ5V1liTWpPVTNlQVdIYXFfamdwOXBEZlByd01SeUlscmxZYk9VV1o0Vl9DLW9aREE?oc=5",
         "domain": "securityweek",
         "language": "",
         "tone": 0,
         "seendate": "20260914T082514Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "NIST Finalizes Guidelines on Protecting Online Identity and Access Tokens From Misuse",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdGowZkd1SUgwRTI1TEtvVjc3eFgzOWhxVjNjV2hfeTRTaEtPZDZOQ2NJcUJkbTZIQS1rQTlOX2x0Sl9RQnVobDQyaWNWVnZwcVk4SU5jV092WG51SEhNNnNnZG14ZmJURkdTRW5uNnNMU1JXdlNpUnBoZjFMTWY5ZXNiMG9tU2dCalREcDQ0ampfSzJybVo4SU5PMzRkYmE0aFpRLTB2T2xxU1NaNlhxUUFVTnJoeG8?oc=5",
+        "domain": "nationalinstituteofstandardsandtechnology.gov",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260915T120000Z",
         "source": "GoogleNews"
       },
       {
@@ -33661,16 +33688,7 @@
         "domain": "wsj",
         "language": "",
         "tone": 0,
-        "seendate": "20260911T222500Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Threat groups enhance cyberattack capabilities with AI",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcFdLMUhZWHBrNm1rOUVqWkdBNDVxUkh2WThLSHo3T0wtMTkzMFJ2SDRseldtQjRPdm93bjlZNUFZZ1U4ZkhGSHR0SnJNdnNnVllvMkRUelFxemxDTWZ6MnZyNzdQZXdOejh5QWF2bWRSajlCYk03T3pvc2tjQUl4UEsxUW9OZHRfcDlnMjRFbVp0bzNPc19rN2RaemE?oc=5",
-        "domain": "cybersecuritydive",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260910T163021Z",
+        "seendate": "20260914T070000Z",
         "source": "GoogleNews"
       },
       {
@@ -33692,21 +33710,21 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Russia is weaponizing US-built AI to make killer drones, cyberattack bots, and fake news",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOTV9lS1hJOGotZmJPT1hpUjVNbmQ5b2ttbUc4VDZFNEtJbllQaVNjWDhIZ3Y0bGVGZFZSOVdmU004WXRmTlI3VEVXajVBX0VHS1F3SzFoZF9IVFVlVGZHeTdPQTI1RXk1VFZZU3VWS3k2WUV3bXE4ZW9mTi15elZMVEVLejlpQnlCYUlxZDhTbUI2MGJpZ3B6S3BHM05ST25MNjVMVkFMY0dpRUxqTWhrQzdwRENUcWNWV0VWOWZKOFlnclZ2RGZaSW9FZDEwZTg?oc=5",
-        "domain": "defenseone",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260911T225322Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "Cyberattack in Berlin: 1.4 million files on the dark web",
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWWFNcEtKR0NvbG1FRm1FMnpjeF9tdzZubkhYSnVfSXllZVlRNFM4MWM2TmluU3hmZWd5Y2dNSHR6NlI3eWpLUUJrbk1Hd1VQTEtyNGcxdG1yamVKZUdvOE02UkhCQTVHQjJwbHJpS1FPZnRadzJsTURBRXJIZ0hoVEtmbEVWVzN1RTZmVDRkV0zSAZABQVVfeXFMUHA0V2NuQ2toR3B4Z3ViTmlOb2lYS0hrdUxkeDhZc2J2Qkh2NEhObWdLZnZtQUgtXzlhSUZ3X3RCRlp0QmdVWHlMLVdrOVhQRVZ3QVhYWXAteTNaXzlQTnRxTEhXZEdnQk9oTF9mR1pVb3k0NzVWdUlhVVhmZG1ZRnJ1OUtTZnZxQjlPWjVidlZu?oc=5",
         "domain": "dw.com",
         "language": "",
         "tone": 0,
         "seendate": "20260910T165331Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Google Patches Pixel Modem Flaw Amid Signs of Limited Targeted Exploitation",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxONUVvWVpNTjBXSUxEM2lsRWR5TWExQWd1ajVYaDVmM0pvN2xMRzgtS3BqUWtIbEtBVUVtUjJVRUpXX3IzVEo4WWhaVFFfTUFfM2NKNGFDTUhGemNOREdLbjR0ZlVsb2tBM0dtcmZ5X0VhbWpuQm1lM2t4Zl9od0NfMQ?oc=5",
+        "domain": "thehackernews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260916T144141Z",
         "source": "GoogleNews"
       },
       {
@@ -33719,21 +33737,21 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Coast Guard, FBI boarded Texas-bound commercial oil tanker to investigate cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1SWk1Dc0dJV1lfSm1jTkNHMm5aMF90VmFkekxWRlV0dXNWMWQ4SW9VMXlWTXhnbTZUbXY4ZnlfS2FGaWJVQklGTkc0TTFSUTMxbXp0OElSbTNJZkdIOFB0by1LdjloS3dteHdjMlNGbTd0ekhTNFMw?oc=5",
-        "domain": "cbsnews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260916T025700Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "Top cybersecurity news to know this month",
         "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNc1NILW1STWdCVHItRENZR3oyenFHX3RadTZncDVYN1NNbFNTRDNVb3AwQ3VmNkFiRXUzdUMwa3Mxa2tPMzN2THMyaVdiczlzdEFwQlBTRUZxYXpDUjBwSEZ1ZTBxd3ZPVWs2Yi10eVZuQVdQNVJ4bGxBRklXZXNNckxIdFMwOWJfYWpUV0RFZXE4Rk9ZV25OLUxnVDlmT1lUWDVNekpPRGdlOHV1TXZPRDBCbFNuUUM2end3VXhXZEdEb0ExUHNN?oc=5",
         "domain": "theworldeconomicforum",
         "language": "",
         "tone": 0,
         "seendate": "20260914T121824Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Committee Approves Bills to Strengthen Maritime Cybersecurity, Increase Oversight of Federal Real Estate, Improve Aviation Safety, and More",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOYS1yTnJLaEFha3l2TG1sbkVJOVFONE9QT2xfMWIyYzZpY3pTVE94VFBfTHd5b0tVNDdqaldWZmd1TGU4OGQ3cC0xeU42ZmNlLW1xdU5VY2thakNRN3pHdC1IcW96R3htQ1ZRSXE3RkZVeWtmdHEtYnQ4N29lWnM2cQ?oc=5",
+        "domain": "housetransportationandinfrastructurecommittee.gov",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260915T202412Z",
         "source": "GoogleNews"
       },
       {
@@ -33773,15 +33791,6 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Cybersecurity Stocks Surge as AI Safety Warnings Spark Security Bid: CrowdStrike and Zscaler Jump 12%, Palo Alto Rallies 11%",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdFUtc2xTM2dDRzBZb0d4OTRFcmpNUzg4amxpdll5N3oydGpJUVpfQ3JLVmp0cWVhR1dDMmxKaFl1YWhyMF9VVW1wTkFuYVhOT0x0NlZfeU9MZFpHWFdkOHBXeGYtbGh4dXhFZ3hEc2d4c3BKMHZwbDlNZWtNR1N3eTlDbUFUeDIxa1RuNUJJVGRQUHQyYmoxM2Nvc0s4ckQyUHJr?oc=5",
-        "domain": "yahoofinance",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260914T150807Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "The 15 Best Cybersecurity Stocks to Buy Whether AI Booms or Busts",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE51QVBPQUp3c1FVcER6eDExYmNNaEc0bGNfQy1pZG9ZeVY5bVQ4RURIRnBOQThMeWVSb2Y2aU8wakRWZlhDVGpvVXRJeXk0Q3BETnlrZkdnUXV2aHo4VlFDdGk1YmZUa3N4SEl0ZnJPbTZkUQ?oc=5",
         "domain": "marketwise",
@@ -33791,21 +33800,30 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Cybersecurity Stocks Surge as AI Safety Warnings Spark Security Bid: CrowdStrike and Zscaler Jump 12%, Palo Alto Rallies 11%",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdFUtc2xTM2dDRzBZb0d4OTRFcmpNUzg4amxpdll5N3oydGpJUVpfQ3JLVmp0cWVhR1dDMmxKaFl1YWhyMF9VVW1wTkFuYVhOT0x0NlZfeU9MZFpHWFdkOHBXeGYtbGh4dXhFZ3hEc2d4c3BKMHZwbDlNZWtNR1N3eTlDbUFUeDIxa1RuNUJJVGRQUHQyYmoxM2Nvc0s4ckQyUHJr?oc=5",
+        "domain": "yahoofinance",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260914T150807Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Springfield students returning to school following cyberattack",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUHB4OEdlcWFtdVpwT2I0TmRYX2pta1JJWVJWaFhEc2VhTU5iRHFZSGtYalE1UlRwU3VGUlVNVG5Nc3Q0NXlfM19LdmFUUVlVQzl4Q2tacE56bnNnZnAwYmpfRFFvQXlVdWxKLUptdExoM2hnYmp6eEFJMmxDRUo3cEpDbS1jMjh6NU5ESjFRV0k1RVF4azdvcmlVWWNHbXE0em5uX29vTGRLMmsyODhFaHBkUE43Z9IBuwFBVV95cUxNUUlFSG1JLUhYMTRKLTNTakQzSXJJYWpFT05jWHplSFdYWG03a3FjZXB4aVUweVM0a0d0QzZncmhXUXNvRlM5VFBCTU9keWpxOE1VSzJWNVJBTG9feFV4dlMxY2Z2dzRUM1pmWmd3eUVkdUpHbW5Td25VUkEwdUNGeEhLMHdDR01wQ05udTc0MHhXZ0xDRWRUc251YmFmUGpvbU8yMEJGQ2JnYzVzR2JvMFJjVTZ1M0JzNnE4?oc=5",
-        "domain": "wwlp.com",
+        "domain": "wwlp",
         "language": "",
         "tone": 0,
         "seendate": "20260914T134330Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Cisco Secure Email Gateway Flaw Exploited in the Wild, Enables Root Command Execution",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9ieDFfelY3bmNxOThWUUhhSDdRZHhpMktWT3d2TVoydVc2d3Ytb0pzZEdBenBELXVJWU53SURSeVNGeno0aE9ESUdQU1FNOUdPdVlzQkw1aElKN0JpSU1lMEdYdjk1S2tzMFU2TEVacVhma2lOT2plemx3?oc=5",
-        "domain": "thehackernews",
+        "title": "Coast Guard, FBI boarded Texas-bound oil tanker after ship's network was potentially breached",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1SWk1Dc0dJV1lfSm1jTkNHMm5aMF90VmFkekxWRlV0dXNWMWQ4SW9VMXlWTXhnbTZUbXY4ZnlfS2FGaWJVQklGTkc0TTFSUTMxbXp0OElSbTNJZkdIOFB0by1LdjloS3dteHdjMlNGbTd0ekhTNFMw?oc=5",
+        "domain": "cbsnews",
         "language": "",
         "tone": 0,
-        "seendate": "20260915T061100Z",
+        "seendate": "20260916T161113Z",
         "source": "GoogleNews"
       },
       {
@@ -33818,21 +33836,30 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Cybersecurity expert says ‘zero trust’ approach can help prevent scams, ransomware attacks",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRjRGVTU5VmtMN3E4Q2RmTjBMQjJINzlTZ0h6RVduX0JxTlh6WHhBR3RfQWxDTGV4ZWdnYjhZSFRVak5RTm1ReVJ1OEpUSVJtZ2tBV0R0cnBWY0NjTFJEZXRHcXNfMldldzBZWE9fRklIb1FzTDZSX1RPbzRVNGxpd0VyX1Y5LUhQbHlpc2Z4SC1vb1h5dnA4TDQtUlR4T29GMVNWSmZFcjNfd2ZuSXlHcTMwVmM2ZEw0cDlzdA?oc=5",
+        "domain": "wcax",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260915T123300Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Cisco Secure Email Gateway Flaw Exploited in the Wild, Enables Root Command Execution",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9ieDFfelY3bmNxOThWUUhhSDdRZHhpMktWT3d2TVoydVc2d3Ytb0pzZEdBenBELXVJWU53SURSeVNGeno0aE9ESUdQU1FNOUdPdVlzQkw1aElKN0JpSU1lMEdYdjk1S2tzMFU2TEVacVhma2lOT2plemx3?oc=5",
+        "domain": "thehackernews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260915T061100Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Attackers Chain JFrog Artifactory Flaws to Gain Admin Control and Plant Backdoors",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZGdURVVvS1NkWVZqVTBYMmw2Y0lHTzcwdDcxejdCZmtCejFYbXFpTjR6bEJTSzIwTjlBYTExLV9wWDFCTGFYRUladXJoZTQ5ZkVpUUNSeGF1SWt3dHBaZDR5eUNiV1pYYXZncF9NLVN1Ukx5bmliM2ZPR0dVLTVNV0M2SUo?oc=5",
         "domain": "thehackernews",
         "language": "",
         "tone": 0,
         "seendate": "20260911T073100Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Nvidia CEO Jensen Huang: AI fears designed to generate cybersecurity business",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA0eGJqRVJHajB5T2FPR2tIaHhXYVd2TW5tMXc0UjM0NV9IU0tJQ3ViTnY2VkxqNVJIMmNoRlJSSlhFb2hCUktlX0hITXdPc0JIalh1Y3JlSlp1MjlfTjZ3LUpTSWdIcTdOYy1DZFZxa3F6TFQ3M0hZaw?oc=5",
-        "domain": "axios",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260910T191255Z",
         "source": "GoogleNews"
       },
       {
@@ -33845,12 +33872,21 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Root RCE Zero-Day in Cisco Secure Email Gateway Under Active Exploitation",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNd2ctYkszWjgzRlkxWmIzNzNINlNhdVNURmd2WDNXWXNzdm9LdGpiOFFueGw4bnp4LXRpaGZqa2hQdnJ0TkJybFFKNnJzc09BODU0NFJyeTlqNGYwZXNET0ZSZmtKamhfa1NKRGdVZGxXYVhJc3lXZkxoOFZTWE1ucmFaUkt2dmh4TW5CNHNTaFhKRFkyaVc5NUdWTTNqajBrS3ZWNkx30gGrAUFVX3lxTE5VNmpWXzAwTlY1VzFVemotSXhOb2RLYTV3MUVZMlY4b1YtMUdrVHlJX05OcnJkT2p6dTF1emlqd25zYksyYmJrTGJBMWRZWXhJZU02M3pwV1NTREpJdnBNMUlWb2RNeEVsYkJtRWU4RExKUl9fdmNVOWpyNlM5aWRlUXNiMlE1VGRyQlZ2UERsaXZmYVZMTEtyLUVYcUtUakJudmszdU9ya1dZWQ?oc=5",
-        "domain": "securityweek",
+        "title": "Nvidia CEO Jensen Huang: AI fears designed to generate cybersecurity business",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA0eGJqRVJHajB5T2FPR2tIaHhXYVd2TW5tMXc0UjM0NV9IU0tJQ3ViTnY2VkxqNVJIMmNoRlJSSlhFb2hCUktlX0hITXdPc0JIalh1Y3JlSlp1MjlfTjZ3LUpTSWdIcTdOYy1DZFZxa3F6TFQ3M0hZaw?oc=5",
+        "domain": "axios",
         "language": "",
         "tone": 0,
-        "seendate": "20260915T051851Z",
+        "seendate": "20260910T191255Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Inside Alabama’s Next-Generation Cybersecurity Classroom",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNOUhzNEkwSG1EVE9EQ2daQXVDTUl1UlE5T3lZZkpNSkRYTjlBa3d2b2xPRXlLSmNLbHA3Wnc2R3hyN1VldERrZ0w0c2p3aklvRlRoUHljbUtzVUNjRHRRc0RJcXVIdVkyMDMzTVl6akNKLUxLS215SmtyRW1PU0lSNTd1d0wtLWs0b2tYNA?oc=5",
+        "domain": "edsurge",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260916T100736Z",
         "source": "GoogleNews"
       },
       {
@@ -33863,21 +33899,21 @@
         "source": "GoogleNews"
       },
       {
+        "title": "CISA: Critical VMware RCE flaw now exploited by ransomware gangs",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSXU4dDEwTUZHeWZUUktLYjBpX1dublVNczZmWnMtOF9mN0lraWxobk8yS0lvMkxwS3JmcHFDRjhaT1FyLUk4Yktmb1MyWlJxTmhJdUVMNUJEUE5IZ3B3RktKeXV2NE01aTNSOElNY0RWeVp1NEJjQTEySlc1UXJ5YVVzT2w5Q2x1ek8xWFJJYjVGa0xrOFI1eFo1d2gyM0FaOE5DVmZhVVBrU1dLanpKb0g0c21rOFFuVWVz0gHAAUFVX3lxTFBWcXNOMVBKYmp0WVVvT1hhUWl2SURkZXlaaXQweXNvR2oxRS1CWllBeG1IVmQwd1RROU9aNGxsUk12VDlYeVp5cDJaa0o1M055REFoUGRfZGZiWmRYWk5aay1oQU5MVGlpcnhKa19uU3VUeG4xS0lZUUhwSVVDQTBoVG5IMF9iRXdBeEZPRFgtdFRyREFLMTNsbURDMG54WVduakVic1NIY0xYRndOM1JFbllILUtSeWxhQkxTUF85ZA?oc=5",
+        "domain": "bleepingcomputer",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260915T121632Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "EU's cybersecurity agency granted access to Mythos 5 AI model, Commission says",
         "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRWVkQ1I1dzB2Wm10ZmloY0d5bW9PNEpSSnVTT0V5bHU0SXNsMnEyY1c0V2NmVnhzSm1qZ0JXZ1dsaHBDNkJmRXdzaWVaeks5ekhROVF0SjU3cGQ5VWRPc1NPRFd2UmtYRTJPZWVLamFvRjV0WmRnWk04UW13UUcwZnlGNFlORzd2cFUxZ056UkRJcEJaekZSMFM3MjREMHpzcWQybWVpTGZkSGZGOGNCQnV3bFowZ3dxeXl2bw?oc=5",
         "domain": "reuters",
         "language": "",
         "tone": 0,
         "seendate": "20260910T085646Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Voices: Michigan’s water systems need cybersecurity coordination after summer attacks",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5zamtQWWZJc0tVMlZ3emRaMVNUdDdpeXhPbm9OMVUxV0Q1NHJYUmdla3h4VEdrMm9mUE80Vjk4c29YYUFHaExnektTdGRuN3laUTd0cG9weklDXzNiNzNjcEhXTUZxYUs1MDJoTk1hM19kZFNYdkE3MUlJOA?oc=5",
-        "domain": "planetdetroit",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260915T152119Z",
         "source": "GoogleNews"
       },
       {
@@ -33890,57 +33926,39 @@
         "source": "GoogleNews"
       },
       {
-        "title": "CISA: Critical VMware RCE flaw now exploited by ransomware gangs",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSXU4dDEwTUZHeWZUUktLYjBpX1dublVNczZmWnMtOF9mN0lraWxobk8yS0lvMkxwS3JmcHFDRjhaT1FyLUk4Yktmb1MyWlJxTmhJdUVMNUJEUE5IZ3B3RktKeXV2NE01aTNSOElNY0RWeVp1NEJjQTEySlc1UXJ5YVVzT2w5Q2x1ek8xWFJJYjVGa0xrOFI1eFo1d2gyM0FaOE5DVmZhVVBrU1dLanpKb0g0c21rOFFuVWVz0gHAAUFVX3lxTFBWcXNOMVBKYmp0WVVvT1hhUWl2SURkZXlaaXQweXNvR2oxRS1CWllBeG1IVmQwd1RROU9aNGxsUk12VDlYeVp5cDJaa0o1M055REFoUGRfZGZiWmRYWk5aay1oQU5MVGlpcnhKa19uU3VUeG4xS0lZUUhwSVVDQTBoVG5IMF9iRXdBeEZPRFgtdFRyREFLMTNsbURDMG54WVduakVic1NIY0xYRndOM1JFbllILUtSeWxhQkxTUF85ZA?oc=5",
-        "domain": "bleepingcomputer",
+        "title": "Voices: Michigan’s water systems need cybersecurity coordination after summer attacks",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5zamtQWWZJc0tVMlZ3emRaMVNUdDdpeXhPbm9OMVUxV0Q1NHJYUmdla3h4VEdrMm9mUE80Vjk4c29YYUFHaExnektTdGRuN3laUTd0cG9weklDXzNiNzNjcEhXTUZxYUs1MDJoTk1hM19kZFNYdkE3MUlJOA?oc=5",
+        "domain": "planetdetroit.org",
         "language": "",
         "tone": 0,
-        "seendate": "20260915T121632Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "The federal government can’t buy cybersecurity at the speed of a cyber attack",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPX3JjQThnbmwtT3VkQmtwRFdqVk5ham5fdldXcmJMTTJESmphdW5oRmo2Q3dvdUhWeHc2THVyNzlRcHdRZTdEajM3Y2VDZmdPcUlaMTB5bG5YOWZiakZrRHFNVmllQUZPb1VEYXhFT0pLb2F0N29YSTBGU0pUYzBuZUhpM2lXM0RBeG9lc09oMHJ0OEFGNm9jMkFVX2lrRmMtYTA4cWJITGdPZU91Uno0Z21pdm1RN2Y3bHR2TWFMcnlYbFp5bFE?oc=5",
-        "domain": "federalnewsnetwork",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260916T035516Z",
+        "seendate": "20260915T152119Z",
         "source": "GoogleNews"
       },
       {
         "title": "Nvidia CEO Jensen Huang says cybersecurity is AI's next blockbuster app",
         "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNNXZtZHdlZkFUY3VCNzdGS3h4bGZ1WjVoVjVpX1Zpc090R1VYd2xMaEFyZjdfY1RaSTd2ckZvY004SnJuWXZtWGJoTHpIalBsT181T2syNzJQbTBKQUw1WlpMY0d3dzNITUk1SG5kMXZzQjQwc2g3MkdXam9zQzhMaFZHLXZYdGZMWGp0bENoTzQ5bUV0WXAyR3lXRzJvUQ?oc=5",
-        "domain": "businessinsider",
+        "domain": "businessinsider.com",
         "language": "",
         "tone": 0,
         "seendate": "20260910T190400Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Boston Scientific fully restores operations after cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQlZNcEdWdWdZakhsNHFhVHQzRXZPUmF3NFZjcDMxS3Q5amhHT041QWRzWTFTdHhwQ2hwWVVmYU1lVUJkS19QWEpCeElldnVmanZ3TTNaOGFCRktFaUNXa2ZrMGFGMUR1NzFBQVBNN3NfQ2UzcEJGRUo1RW9ESnlERVk0Snl0VGtWVlJtSWI2M1pnYURoekhHUHlOTW0wX3dkaUh4NQ?oc=5",
-        "domain": "medtechdive.com",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260912T040459Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "UConn Student Justin Fargo Went from Family iPhone-Fixer to Small Business Cybersecurity Champion",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQTEE2akxkQlZqem04MEw1OXNiVEw2WlA4Rml4dk9ocjlFZTYwbGU1T2NQZGRET0lmbW9ZWWppLU45bEMyOGdGbnFPdzRSX0s5X0s1dXFKUkZoSjlhVTNxT2dRdnpDSnZ2YzlSOTRfMHh2Q0hxUjROSGNYZExNenNJZXpudkgyOFZhamNnWVpJM0ZoYUxyTUl5MThQNVBzNlVDWnNfZXFzQ29MTGtsVFZxbG5UVk9yTHBodTQxTXVTLUZ4VVoxd2lESm93?oc=5",
-        "domain": "uconntoday",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260909T163536Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "GitLab Vulnerability Exploited One Day After Disclosure",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNekxLZUh4d2dEWHVuTTluV3dKZzRVMWxNTWRvUkRDT1ByNlREdWlMSkYxNWFzZ1EwSFR5OENjcy00ZnRHMWF6OTdwOGJEeDluVGlhcHhrTG02THhwc0RZc2xtam5aZFFTNWNSU3F3Zndta184NXExUEZ4em5GWGM0QmV4VFZxczB3ZFZaem130gGTAUFVX3lxTFBVcGxZOW90cm5saVp1Tkl6MEZNS2hqb0stR3Zwb3h4QWRmT1Rpa2dudzVuejdLNWMwb3FxSEw3UGxZSHBlRy1kdVNyaG80V0tYeG9iakZGNVBlT0M3S2twaDM5b1Nha2x0QURxZFJGTTFVTno0aUprQ2lJTzB4NkE1QVNKdXNDRnU4SHRFWXFLTzVJQQ?oc=5",
+        "title": "Root RCE Zero-Day in Cisco Secure Email Gateway Under Active Exploitation",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNd2ctYkszWjgzRlkxWmIzNzNINlNhdVNURmd2WDNXWXNzdm9LdGpiOFFueGw4bnp4LXRpaGZqa2hQdnJ0TkJybFFKNnJzc09BODU0NFJyeTlqNGYwZXNET0ZSZmtKamhfa1NKRGdVZGxXYVhJc3lXZkxoOFZTWE1ucmFaUkt2dmh4TW5CNHNTaFhKRFkyaVc5NUdWTTNqajBrS3ZWNkx30gGrAUFVX3lxTE5VNmpWXzAwTlY1VzFVemotSXhOb2RLYTV3MUVZMlY4b1YtMUdrVHlJX05OcnJkT2p6dTF1emlqd25zYksyYmJrTGJBMWRZWXhJZU02M3pwV1NTREpJdnBNMUlWb2RNeEVsYkJtRWU4RExKUl9fdmNVOWpyNlM5aWRlUXNiMlE1VGRyQlZ2UERsaXZmYVZMTEtyLUVYcUtUakJudmszdU9ya1dZWQ?oc=5",
         "domain": "securityweek",
         "language": "",
         "tone": 0,
-        "seendate": "20260911T161108Z",
+        "seendate": "20260915T051851Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Boston Scientific fully restores operations after cyberattack",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQlZNcEdWdWdZakhsNHFhVHQzRXZPUmF3NFZjcDMxS3Q5amhHT041QWRzWTFTdHhwQ2hwWVVmYU1lVUJkS19QWEpCeElldnVmanZ3TTNaOGFCRktFaUNXa2ZrMGFGMUR1NzFBQVBNN3NfQ2UzcEJGRUo1RW9ESnlERVk0Snl0VGtWVlJtSWI2M1pnYURoekhHUHlOTW0wX3dkaUh4NQ?oc=5",
+        "domain": "medtechdive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260912T040459Z",
         "source": "GoogleNews"
       }
     ]
@@ -33966,30 +33984,21 @@
       "source": "GoogleNews"
     },
     {
-      "title": "An alignment assessment of recent cybersecurity incidents",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQOFZuQXh2LWp1d0NoNDQ2cHdrTktoZ0dIdDUyeEVrSGVyWDBzT3dsV3lhelR6RXhtYy03MTNSYVlya2hSZm1MMHVkZVFMeEt4RDFJM0Z2TW9SRlFDYTM5eGhxU2YzTWNJOU8yWWktWjU5Y0FUeDdLV0lfdnJ2SW9uZE0zOFFXZw?oc=5",
-      "domain": "anthropic",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260909T191344Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "New FBI cyber strategy promises increase in adversary disruptions",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdHRTS3Boam1FQTVNTWxLWllNVXhPLUZZTkUxTWhOYkJMazVSbzl6V2p2UXdweHBUZ0VMcUpkejZia2lZTURiaGFjYVc2dnJDbEZGR3duYXZHb2NreFRjTXhuUVBLWTNzbTVLTEhQTHlvTnAxVU1HSEhZWWxubGpXM1RvUDY1eDhOd1c4UlQwTU5yQ2xhYy16R21vbWZrSjhTblN6a01UTV8?oc=5",
-      "domain": "cybersecuritydive",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260909T160349Z",
-      "source": "GoogleNews"
-    },
-    {
       "title": "CVE-2026-85706: Critical GitLab Path Traversal Exploited in the Wild",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUG4xby02ZVRmZWpOZWVSR0JfbmxSek5NTUhXR3BVSG9LTE5ud2xfUVJ4aTFVSmRyWmJfU1d4dFhYOXMzZkNFSHl2WTVVcGpHOEhISTM4eDI2N3Q0cm1VWDNIYU5HOE4xX3ExQzZ0MzFVTjk5Y0NfaHJJMkdaUWNaNk9vYkFZRHJZSzI4akh1eGNNeTJKd0pVbDQteTFiTGN6UlNMaGJmUFA?oc=5",
       "domain": "rapid7",
       "language": "",
       "tone": 0,
       "seendate": "20260914T101001Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "An alignment assessment of recent cybersecurity incidents",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQOFZuQXh2LWp1d0NoNDQ2cHdrTktoZ0dIdDUyeEVrSGVyWDBzT3dsV3lhelR6RXhtYy03MTNSYVlya2hSZm1MMHVkZVFMeEt4RDFJM0Z2TW9SRlFDYTM5eGhxU2YzTWNJOU8yWWktWjU5Y0FUeDdLV0lfdnJ2SW9uZE0zOFFXZw?oc=5",
+      "domain": "anthropic.com",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260909T191344Z",
       "source": "GoogleNews"
     },
     {
@@ -34004,7 +34013,7 @@
     {
       "title": "Cyberattack halts state financial aid office operations",
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBzRGRTTXZZZDk2S3BXcVJxd0YteTNDYU85QzBsUl8zVFFVZDFvdXQtUFE3Ny1QQUp1el9MM2ZVcUNjNWtuV1NyOXZtcVJBY19NeXdEWlgzMVQ3OE11ZzFMa1YweEotWi04TXZwZlp3YWM4Q2FFX1kwbVh3?oc=5",
-      "domain": "mississippitoday",
+      "domain": "mississippitoday.org",
       "language": "",
       "tone": 0,
       "seendate": "20260910T233921Z",
@@ -34022,19 +34031,10 @@
     {
       "title": "Anne Arundel Medical Center cyberattack delays patient care",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbEJ6eG1CME15d0k2RkNsd2pSRmpsYTcwLUgtTnRIMHhKdkRDOF9sZ0xILUhqNjZCU3A3Uy1hQ0JqMW5xWWpNcWRzbjVrOXZ2OU41YjlHenRRbmpEOFpmZEpDRm42bGhWa1RHbWpKbkcyckFSRHl5dVdPV3E4OW9FTHNEb0RhZElnS24weUQxVVYtdnEzX3NXV1ZEUjQ?oc=5",
-      "domain": "wbal-tv",
+      "domain": "wbaltv.com",
       "language": "",
       "tone": 0,
       "seendate": "20260909T215800Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Cybersecurity stocks get a jolt on gloomy AI warnings from CEOs of Anthropic and OpenAI",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQS2NMMFVDTjByeUlHV2lnSkMwbTgwd2dobmkyVy1OaXJHNHplMVRoOVc1cDhVSGNkWDJHUWkteElaOWY5QUotSDFsUWNxdVFKUlV4bzdvN0F6RTFpVTNVcU1WeGZ2ZjA5dlpBS2MzWHUwU1N1UC1EMkJ3cVV4OHJRdW1mQ3J3bm1STHlublY0aW5lZV9aeTlxRHU2NjJNSWRZUy1fYl8yYU0tMnpsS3RycFNpLVlUMkN1OVEwRTNtYU9OYWtsMFZ1b1EzRmxfMnV2dkJmU3ZDRGF6Y09uSktkTkhHektKdw?oc=5",
-      "domain": "yahoofinance",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260914T102226Z",
       "source": "GoogleNews"
     },
     {
@@ -34047,12 +34047,12 @@
       "source": "GoogleNews"
     },
     {
-      "title": "Active exploitation of Cisco Secure Firewall Management Center vulnerabilities",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE56TnptV1RTMGhXanliQlMzcDBQU3BieFVhUEFQTnl1aXo5dGpGd24xVVZZQUU4UWhVRDJwRndVYThUeWJrZHVkemZzS2VBWGg4X0Z4TEVBYVU1NHVFdU5SQVIzcXNUMTNncWYzYg?oc=5",
-      "domain": "ciscotalosblog",
+      "title": "Cybersecurity stocks get a jolt on gloomy AI warnings from CEOs of Anthropic and OpenAI",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQS2NMMFVDTjByeUlHV2lnSkMwbTgwd2dobmkyVy1OaXJHNHplMVRoOVc1cDhVSGNkWDJHUWkteElaOWY5QUotSDFsUWNxdVFKUlV4bzdvN0F6RTFpVTNVcU1WeGZ2ZjA5dlpBS2MzWHUwU1N1UC1EMkJ3cVV4OHJRdW1mQ3J3bm1STHlublY0aW5lZV9aeTlxRHU2NjJNSWRZUy1fYl8yYU0tMnpsS3RycFNpLVlUMkN1OVEwRTNtYU9OYWtsMFZ1b1EzRmxfMnV2dkJmU3ZDRGF6Y09uSktkTkhHektKdw?oc=5",
+      "domain": "yahoofinance",
       "language": "",
       "tone": 0,
-      "seendate": "20260909T161321Z",
+      "seendate": "20260914T143118Z",
       "source": "GoogleNews"
     },
     {
@@ -34074,6 +34074,15 @@
       "source": "GoogleNews"
     },
     {
+      "title": "Threat groups enhance cyberattack capabilities with AI",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcFdLMUhZWHBrNm1rOUVqWkdBNDVxUkh2WThLSHo3T0wtMTkzMFJ2SDRseldtQjRPdm93bjlZNUFZZ1U4ZkhGSHR0SnJNdnNnVllvMkRUelFxemxDTWZ6MnZyNzdQZXdOejh5QWF2bWRSajlCYk03T3pvc2tjQUl4UEsxUW9OZHRfcDlnMjRFbVp0bzNPc19rN2RaemE?oc=5",
+      "domain": "cybersecuritydive",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260910T163021Z",
+      "source": "GoogleNews"
+    },
+    {
       "title": "Cyberattack sends International Meteor Organization crashing back to Earth",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPWTFqZlZUT3Q1MkFwVWJ6TWxwTGIwYTRCZUtSOWtOUThMa09XY3ExMjNkQ1pPUExGQl9tczZuVWdVajBVRFlMNElva3pQQmNaWlNNSTQ0ZTI3S2hOcjJxZHdvT09VX0NRMHFBb2UzclNJa0dOLWxwUTNJWnMwY2lBYkRrVFpiQjI1OXBhR0t2alJqSmJDdXpXVHpMUC1qaFRDQWJTRHo1ckJBY2lNNER1ZmN6WVlLemtrbWxlXy1HR0ZkYmVQOTY2RVY5WEU5dw?oc=5",
       "domain": "theregister",
@@ -34081,35 +34090,60 @@
       "tone": 0,
       "seendate": "20260914T160000Z",
       "source": "GoogleNews"
+    },
+    {
+      "title": "Russia is weaponizing US-built AI to make killer drones, cyberattack bots, and fake news",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOTV9lS1hJOGotZmJPT1hpUjVNbmQ5b2ttbUc4VDZFNEtJbllQaVNjWDhIZ3Y0bGVGZFZSOVdmU004WXRmTlI3VEVXajVBX0VHS1F3SzFoZF9IVFVlVGZHeTdPQTI1RXk1VFZZU3VWS3k2WUV3bXE4ZW9mTi15elZMVEVLejlpQnlCYUlxZDhTbUI2MGJpZ3B6S3BHM05ST25MNjVMVkFMY0dpRUxqTWhrQzdwRENUcWNWV0VWOWZKOFlnclZ2RGZaSW9FZDEwZTg?oc=5",
+      "domain": "defenseone",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260911T225322Z",
+      "source": "GoogleNews"
     }
   ],
   "timeseries": [],
   "llm_summary": "",
   "early_warning": {
-    "issued_at": "2026-09-16T12:12:20.858078+00:00",
+    "issued_at": "2026-09-16T17:19:35.596079+00:00",
     "horizon": "next 30 days",
     "classification": "global-exploitation-pressure-not-organisation-breach-probability",
-    "score": 40.5,
+    "score": 43.2,
     "level": "WATCH",
     "confidence": "HIGH",
-    "confidence_score": 100.0,
+    "confidence_score": 94.8,
     "components": [
       {
         "id": "kev_addition_pressure",
         "label": "CISA exploited-vulnerability burst",
         "available": true,
-        "score": 59.4,
-        "catalog_count": 1710,
-        "recent_7d_count": 7,
+        "score": 66.1,
+        "catalog_count": 1711,
+        "recent_7d_count": 8,
         "prior_7d_count": 9,
         "baseline_weeks": 26,
         "baseline_weekly_median": 5.5,
-        "anomaly_z": 0.67,
+        "anomaly_z": 1.12,
         "ransomware_known_7d": 0,
-        "due_within_7d": 1,
-        "catalog_version": "2026.09.14",
-        "released_at": "2026-09-14T19:00:02.426Z",
+        "due_within_7d": 2,
+        "catalog_version": "2026.09.16",
+        "released_at": "2026-09-16T14:19:54.4996Z",
         "evidence": [
+          {
+            "cveID": "CVE-2026-58704",
+            "vendorProject": "Google",
+            "product": "Pixel",
+            "vulnerabilityName": "Google Pixel Improper Authorization Vulnerability",
+            "dateAdded": "2026-09-16",
+            "shortDescription": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-09-19",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-09-01 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-58704",
+            "cwes": [
+              "CWE-693"
+            ],
+            "source": "CISA-KEV"
+          },
           {
             "cveID": "CVE-2026-76461",
             "vendorProject": "Cisco",
@@ -34132,7 +34166,7 @@
             "product": "ScreenConnect",
             "vulnerabilityName": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
             "dateAdded": "2026-09-11",
-            "shortDescription": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to file transfer and execution through an active remote sessions without authorization or host confirmation.",
+            "shortDescription": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote session without authorization or host confirmation.",
             "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
             "dueDate": "2026-09-14",
             "knownRansomwareCampaignUse": "Unknown",
@@ -34149,7 +34183,7 @@
             "product": "Artifactory",
             "vulnerabilityName": "JFrog Artifactory Incorrect Authorization Vulnerability",
             "dateAdded": "2026-09-11",
-            "shortDescription": "JFrog Artifactory contains an incorrect authorization vulnerability that allows leads to privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope.",
+            "shortDescription": "JFrog Artifactory contains an incorrect authorization vulnerability that leads to a privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope.",
             "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
             "dueDate": "2026-09-25",
             "knownRansomwareCampaignUse": "Unknown",
@@ -34197,11 +34231,11 @@
             "product": "RouterOS",
             "vulnerabilityName": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
             "dateAdded": "2026-09-10",
-            "shortDescription": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacked to change the trusted RouterOS policy mask, leading to privilege escalation.",
+            "shortDescription": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacker to change the trusted RouterOS policy mask, leading to privilege escalation.",
             "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
             "dueDate": "2026-09-13",
             "knownRansomwareCampaignUse": "Unknown",
-            "notes": " ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-86060",
+            "notes": "https://mikrotik.com/supportsec/september-2026-vulnerability ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-86060",
             "cwes": [
               "CWE-88"
             ],
@@ -34213,7 +34247,7 @@
             "product": "RouterOS",
             "vulnerabilityName": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
             "dateAdded": "2026-09-10",
-            "shortDescription": "MikroTik RouterOS contains a missing authenticaion for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
+            "shortDescription": "MikroTik RouterOS contains a missing authentication for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
             "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
             "dueDate": "2026-09-13",
             "knownRansomwareCampaignUse": "Unknown",
@@ -34348,7 +34382,7 @@
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2020-13379"
           }
         ],
-        "retained": false
+        "retained": true
       },
       {
         "id": "exploit_narrative_pressure",
@@ -34358,7 +34392,7 @@
         "events_considered": 50,
         "matched_event_count": 4,
         "matched_share": 0.08,
-        "independent_sources": 38,
+        "independent_sources": 39,
         "unique_cves": 5,
         "cross_source_baskets": 1,
         "baskets": [
@@ -34385,23 +34419,36 @@
         ],
         "evidence": [
           {
-            "title": "Active exploitation of Cisco Secure Firewall Management Center vulnerabilities",
-            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE56TnptV1RTMGhXanliQlMzcDBQU3BieFVhUEFQTnl1aXo5dGpGd24xVVZZQUU4UWhVRDJwRndVYThUeWJrZHVkemZzS2VBWGg4X0Z4TEVBYVU1NHVFdU5SQVIzcXNUMTNncWYzYg?oc=5",
-            "source": "ciscotalosblog",
-            "observed_at": "20260909T161321Z",
-            "baskets": [
-              "campaign_shift"
-            ],
-            "terms": [
-              "active exploitation"
-            ],
-            "cves": []
-          },
-          {
             "title": "Cisco FMC Flaws Exploited to Steal Credentials and Deploy Qilin Ransomware",
             "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBtRHJFWjVHdVR6RlNmTFlmU2dFUGpaUlJFMEZKVm9lcmlzYndtOWlPdmN1MHNXcTFPZjBwbzdZQ2FjVWRfWTduNFQ5OGJxOEFjbHptWDdsZWVGck5rLTNOZjdyaXdPcFpvdnkwSFhidmdiMi1ydllyT0R3UnlVZw?oc=5",
             "source": "thehackernews",
             "observed_at": "20260911T061900Z",
+            "baskets": [
+              "campaign_shift"
+            ],
+            "terms": [
+              "ransomware"
+            ],
+            "cves": []
+          },
+          {
+            "title": "Cybersecurity expert says ‘zero trust’ approach can help prevent scams, ransomware attacks",
+            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRjRGVTU5VmtMN3E4Q2RmTjBMQjJINzlTZ0h6RVduX0JxTlh6WHhBR3RfQWxDTGV4ZWdnYjhZSFRVak5RTm1ReVJ1OEpUSVJtZ2tBV0R0cnBWY0NjTFJEZXRHcXNfMldldzBZWE9fRklIb1FzTDZSX1RPbzRVNGxpd0VyX1Y5LUhQbHlpc2Z4SC1vb1h5dnA4TDQtUlR4T29GMVNWSmZFcjNfd2ZuSXlHcTMwVmM2ZEw0cDlzdA?oc=5",
+            "source": "wcax",
+            "observed_at": "20260915T123300Z",
+            "baskets": [
+              "campaign_shift"
+            ],
+            "terms": [
+              "ransomware"
+            ],
+            "cves": []
+          },
+          {
+            "title": "CISA: Critical VMware RCE flaw now exploited by ransomware gangs",
+            "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSXU4dDEwTUZHeWZUUktLYjBpX1dublVNczZmWnMtOF9mN0lraWxobk8yS0lvMkxwS3JmcHFDRjhaT1FyLUk4Yktmb1MyWlJxTmhJdUVMNUJEUE5IZ3B3RktKeXV2NE01aTNSOElNY0RWeVp1NEJjQTEySlc1UXJ5YVVzT2w5Q2x1ek8xWFJJYjVGa0xrOFI1eFo1d2gyM0FaOE5DVmZhVVBrU1dLanpKb0g0c21rOFFuVWVz0gHAAUFVX3lxTFBWcXNOMVBKYmp0WVVvT1hhUWl2SURkZXlaaXQweXNvR2oxRS1CWllBeG1IVmQwd1RROU9aNGxsUk12VDlYeVp5cDJaa0o1M055REFoUGRfZGZiWmRYWk5aay1oQU5MVGlpcnhKa19uU3VUeG4xS0lZUUhwSVVDQTBoVG5IMF9iRXdBeEZPRFgtdFRyREFLMTNsbURDMG54WVduakVic1NIY0xYRndOM1JFbllILUtSeWxhQkxTUF85ZA?oc=5",
+            "source": "bleepingcomputer",
+            "observed_at": "20260915T121632Z",
             "baskets": [
               "campaign_shift"
             ],
@@ -34424,19 +34471,6 @@
               "zero-day"
             ],
             "cves": []
-          },
-          {
-            "title": "CISA: Critical VMware RCE flaw now exploited by ransomware gangs",
-            "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSXU4dDEwTUZHeWZUUktLYjBpX1dublVNczZmWnMtOF9mN0lraWxobk8yS0lvMkxwS3JmcHFDRjhaT1FyLUk4Yktmb1MyWlJxTmhJdUVMNUJEUE5IZ3B3RktKeXV2NE01aTNSOElNY0RWeVp1NEJjQTEySlc1UXJ5YVVzT2w5Q2x1ek8xWFJJYjVGa0xrOFI1eFo1d2gyM0FaOE5DVmZhVVBrU1dLanpKb0g0c21rOFFuVWVz0gHAAUFVX3lxTFBWcXNOMVBKYmp0WVVvT1hhUWl2SURkZXlaaXQweXNvR2oxRS1CWllBeG1IVmQwd1RROU9aNGxsUk12VDlYeVp5cDJaa0o1M055REFoUGRfZGZiWmRYWk5aay1oQU5MVGlpcnhKa19uU3VUeG4xS0lZUUhwSVVDQTBoVG5IMF9iRXdBeEZPRFgtdFRyREFLMTNsbURDMG54WVduakVic1NIY0xYRndOM1JFbllILUtSeWxhQkxTUF85ZA?oc=5",
-            "source": "bleepingcomputer",
-            "observed_at": "20260915T121632Z",
-            "baskets": [
-              "campaign_shift"
-            ],
-            "terms": [
-              "ransomware"
-            ],
-            "cves": []
           }
         ]
       }
@@ -34452,7 +34486,7 @@
       {
         "id": "kev_addition_pressure",
         "title": "CISA exploited-vulnerability burst",
-        "score": 59.4,
+        "score": 66.1,
         "level": "ELEVATED",
         "why": "CISA additions are elevated against the previous 26 weekly windows."
       }
@@ -35197,16 +35231,28 @@
           "epss_frontier_momentum": 25.0,
           "exploit_narrative_pressure": 32.0
         }
+      },
+      {
+        "timestamp": "2026-09-16T17:19:35.596079+00:00",
+        "score": 43.2,
+        "level": "WATCH",
+        "components": {
+          "kev_addition_pressure": 66.1,
+          "epss_frontier_momentum": 25.0,
+          "exploit_narrative_pressure": 32.0
+        }
       }
     ],
     "data_health": {
-      "cisa_catalog_count": 1710,
+      "cisa_catalog_count": 1711,
       "epss_frontier_count": 40,
       "epss_timeseries_count": 40,
       "news_events_considered": 50,
-      "independent_news_sources": 38,
+      "independent_news_sources": 39,
       "available_components": 3,
-      "retained_components": []
+      "retained_components": [
+        "epss_frontier_momentum"
+      ]
     },
     "method": {
       "name": "Cyber exploitation precursor concurrence model v1",
