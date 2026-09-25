@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-09-25T17:35:52.058604+00:00",
+    "generated": "2026-09-25T21:51:59.907791+00:00",
     "mode": "live",
     "sources": [
       "cisa_catalog",
@@ -19,7 +19,7 @@
     },
     {
       "label": "News Domains",
-      "value": "35",
+      "value": "36",
       "delta": "deduplicated"
     },
     {
@@ -36,7 +36,7 @@
   "live_data": {
     "cisa_catalog": {
       "catalog_version": "2026.09.25",
-      "date_released": "2026-09-25T14:39:25.3654Z",
+      "date_released": "2026-09-25T18:58:16.5029Z",
       "vulnerabilities": [
         {
           "cveID": "CVE-2026-67279",
@@ -67,6 +67,22 @@
           "notes": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65660 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-65660",
           "cwes": [
             "CWE-94"
+          ],
+          "source": "CISA-KEV"
+        },
+        {
+          "cveID": "CVE-2026-87902",
+          "vendorProject": "WordPress",
+          "product": "Core",
+          "vulnerabilityName": "WordPress Core Remote File Inclusion Vulnerability",
+          "dateAdded": "2026-09-25",
+          "shortDescription": "WordPress Core contains a remote file inclusion vulnerability which could allow an unauthenticated attacker to make page-template resolution include a chosen readable local `.php` file outside the active theme directories, leading to remote code execution.",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-09-28",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-7hp8-65ch-5whp ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-87902",
+          "cwes": [
+            "CWE-98"
           ],
           "source": "CISA-KEV"
         },
@@ -33745,10 +33761,19 @@
       {
         "title": "Epic shifts focus to cybersecurity while AI, interoperability agenda still on track, company says",
         "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcEhmc1QyTWFLQXdHblozTUVNcW1KeXdsZDlIdXFjQkU4VlR5TVhrSzc5aGxZZ1lfeUJCUmtwNWVTNUt3TzAzU0ZZWUpVUC1fX29iN1pPbHpYWEZDMUx4N21yaHM2V2xEX1M1X1NDZGZNMlZpNWZqT1d5dC1jNHd3b1p3N24wR2YtQWpFNUNqUkNOTktxYXdXRTk4Q0oyaXJPZzVwYl95akI5bVJYT2FubEkxYkthS3NVRUFSNHRjbWNac1k?oc=5",
-        "domain": "fiercehealthcare.com",
+        "domain": "fiercehealthcare",
         "language": "",
         "tone": 0,
         "seendate": "20260923T150000Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Single-cell atlas of transcriptomic vulnerability across brain disorders",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5tNFZKbVlSYXo3ZWZSd2FDOGFSbkpScFB2RldaMFdPYzgwRHRqMWF1eFZESDBVQTBjWEo5Y2tIN2M3aFd3aVhPaDJCYWFYMmVDMW9pNlJxWjdselFkMVFZ?oc=5",
+        "domain": "nature",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260923T151953Z",
         "source": "GoogleNews"
       },
       {
@@ -33767,15 +33792,6 @@
         "language": "",
         "tone": 0,
         "seendate": "20260919T110000Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Single-cell atlas of transcriptomic vulnerability across brain disorders",
-        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5tNFZKbVlSYXo3ZWZSd2FDOGFSbkpScFB2RldaMFdPYzgwRHRqMWF1eFZESDBVQTBjWEo5Y2tIN2M3aFd3aVhPaDJCYWFYMmVDMW9pNlJxWjdselFkMVFZ?oc=5",
-        "domain": "nature",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260923T151953Z",
         "source": "GoogleNews"
       },
       {
@@ -33806,6 +33822,24 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Kiteworks urges customers to shut down their servers amid ‘imminent’ threat of cyberattack",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPc2c3VHpKOTdfRnRuazRlTi03Wk9LelRMSkk2ZmtsVjFhaS02UEhfYk9VN2xxZldFV1V3UnBQWXFtSUFEZ3VlSnJiX2FqOVRCZkFnTHhaUVBjUlUyREx1WktoN0pKd0RMY0pueDcwbnZnVER5NzBSTU5DcnpQQmd0OTBvajdvMEx4RDFVdjV4U1pLMXBlNW9aTlFlTU4wYlV3RFdvSDhSQlkyd2czM0N2N3Z4ZWNhRGMwNjlsVzg4eUg?oc=5",
+        "domain": "techcrunch.com",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260925T155213Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "ShinyHunters cybercrime gang takes over Cl0p ransomware site, demands extortion payment",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ZZDk3VWc1czhFUHl4eWtHaWV1bWY1LXRQMGpnWkN1T1N0WGF2M3EyZjB0VGd5MDkteFpQOUZBTG5wUkhHTFdRbGh1eF9YSGNwdVpRU0YtQ3JxVG00OHRSNmhMNFNxY1NmZzl2a1NB?oc=5",
+        "domain": "therecordfromrecordedfuturenews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260921T141529Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "America’s Water Systems Face a Growing Cybersecurity Threat",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPU1ZfNDlFZFNUcGRWdllpWnNiTEJTcG94Z1hCZS1vTk5VamFjcVBaSkZrN1B1Q1poUjNJd0dnemtUcnduZUJiZGxzZHhkaW1aMGs1SzhZZ3pSQm02aG4talQyMzdsTVJuN1NKNVNkem9iSktkVDdNM1FwMDc1Zks1VG9BSXdLbWh4dlZ5c2N4bHlZbWhBaTlWNW5mMTg3TVN1?oc=5",
         "domain": "governing",
@@ -33824,30 +33858,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "ShinyHunters cybercrime gang takes over Cl0p ransomware site, demands extortion payment",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ZZDk3VWc1czhFUHl4eWtHaWV1bWY1LXRQMGpnWkN1T1N0WGF2M3EyZjB0VGd5MDkteFpQOUZBTG5wUkhHTFdRbGh1eF9YSGNwdVpRU0YtQ3JxVG00OHRSNmhMNFNxY1NmZzl2a1NB?oc=5",
-        "domain": "therecordfromrecordedfuturenews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260921T141529Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "Palo Alto Networks unveils AI-powered cybersecurity service using Claude, GPT models",
         "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVW5mc2xwMFhGeW1Dd3Y1bUY4dE9NVzFOa2FQSTI1a193YUk0aExLeFU2cm4xOXZVc0RqYjljNWVxMHpfWVRabVJMVkg5OE1aMWdXYUJKSG5RN2tYeUlycXh0VTcwck83TEdlcV9kOTRTdERZRXo5X3FUWkQ2WnlHb1hUZ3FDTzhwb3h0bWRlTWFOUmxBN2luR0QwQjRjeHhMWjRFRUN2M0V4U3FIaUZmRzk2QlN2SjRxSmZmUEhSQmo?oc=5",
         "domain": "reuters",
         "language": "",
         "tone": 0,
         "seendate": "20260922T133712Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Kiteworks urges customers to shut down their servers amid ‘imminent’ threat of cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPc2c3VHpKOTdfRnRuazRlTi03Wk9LelRMSkk2ZmtsVjFhaS02UEhfYk9VN2xxZldFV1V3UnBQWXFtSUFEZ3VlSnJiX2FqOVRCZkFnTHhaUVBjUlUyREx1WktoN0pKd0RMY0pueDcwbnZnVER5NzBSTU5DcnpQQmd0OTBvajdvMEx4RDFVdjV4U1pLMXBlNW9aTlFlTU4wYlV3RFdvSDhSQlkyd2czM0N2N3Z4ZWNhRGMwNjlsVzg4eUg?oc=5",
-        "domain": "techcrunch",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260925T155213Z",
         "source": "GoogleNews"
       },
       {
@@ -33869,21 +33885,21 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Interlock ransomware claim triggers lawsuit against NFM Lending",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBsNEt2UDlQSW5jM3ZoZmNEc3BMdGdBcmNHcDZJamVhcl85eFFlVmNubV85STFSMDNFM1dHeUdoXzV4UlZEYVhhZHV0WmpFbTdQZXpiT2lHeEJjZmdJUERqQ2d6ZjFPYmJlc0dxTHJ0QUM5MXpE?oc=5",
+        "domain": "housingwire",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260924T182324Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Cybersecurity stocks are back with a bang. These four are on Josh Brown's list",
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQTgybHVJRktXREpsVTBrTjlRN0hySHluZTUyamFQVk9xNVNPOV9iU1dDYzVJM3htcC1JTnpBdDZxS0l1ZVVoT0lRYkNTc1h1dW9Uc1ZQTzUzVndPTmVhanpxU25qTVZILTNjclRERVhnRm96UXA1OFlXemFfQ1RaLTJZdGlmb3BlR3dqOTJWODdXWV8zcjJUWUdNLTJQN3ktN25vWGVnY0VWMnJkZ1dzbUdrbw?oc=5",
         "domain": "cnbc",
         "language": "",
         "tone": 0,
         "seendate": "20260921T154344Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Security Advisory – Action Required – Active Exploitation of CVE-2026-85102 and a Management Pre-Authentication Vulnerability CVE-2026-93616",
-        "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNSkxndkZ0Z0JyS2FmSnZEV3BNUERiLWJJdlVwRkxpN3Q1WTZQZHFtWEFvZDROZklVWHVnWUxVelRjaEp5eWI0WjNZUExuMVp1R29ZeTgxWGRzWE9LM0ZlNnp5ZlgxY29aaUFFSnlnbXh1emtmQVlkbV9MbDk0aVdrbmJ1bk04Q1lFUjA5cDM4NkNnUFFMQWR2Xy03VnpHeTgyVjRYWUczM0o2OUZzNU1SMlJtNHpkWTQ2SEhiSXA2XzMtZUVKRU1yTHlodjNfcnJFVkEyMVJmZ1lsRVQ2QXZqQzJMY2k1ZzRsMXB1UUkwLTc4RWZtNXJIU3Z2WVc2ZGVPd3VIXw?oc=5",
-        "domain": "checkpointblog",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260922T060322Z",
         "source": "GoogleNews"
       },
       {
@@ -33905,12 +33921,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "SolarWinds Patches ARM Hard-Coded Key Flaw Enabling Unauthenticated RCE",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNam1IYUxic3JRZ0hJV0pqLVBoMlhWY0Jxa1dveVVBdEZTRFBIVEJXMmtkTXozRjNrbXJpNFN1dTlaemgxMk5BRkxadDZxNUpWdEVYR3FuZEh3dFlJZzE3YlIxZGRlemV6T29zZzRTNzBCT21SSkhSb1pUYXo2dzVMd2xR?oc=5",
-        "domain": "thehackernews",
+        "title": "Businesses expand AI’s cybersecurity uses as comfort with technology grows",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZkduSExGT2pnbVpBcTI2bE95OW5hWXNVUFdyMHR0bEpwbUMzeFZCREdFVldlN1FTQlNTbGg4N05xeHV3ODRSa3VkalJrRzlqRXRNWHVrdlpCcl9Oa1RHcE5UbDM1djA5MldJekJHOFhWaC05VVZMUlYtX3BSRjZHUWs2TlpYVDM2eTRQNg?oc=5",
+        "domain": "cybersecuritydive",
         "language": "",
         "tone": 0,
-        "seendate": "20260919T093100Z",
+        "seendate": "20260925T154712Z",
         "source": "GoogleNews"
       },
       {
@@ -33920,6 +33936,24 @@
         "language": "",
         "tone": 0,
         "seendate": "20260919T062400Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "SolarWinds Patches ARM Hard-Coded Key Flaw Enabling Unauthenticated RCE",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNam1IYUxic3JRZ0hJV0pqLVBoMlhWY0Jxa1dveVVBdEZTRFBIVEJXMmtkTXozRjNrbXJpNFN1dTlaemgxMk5BRkxadDZxNUpWdEVYR3FuZEh3dFlJZzE3YlIxZGRlemV6T29zZzRTNzBCT21SSkhSb1pUYXo2dzVMd2xR?oc=5",
+        "domain": "thehackernews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260919T093100Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Security Advisory – Action Required – Active Exploitation of CVE-2026-85102 and a Management Pre-Authentication Vulnerability CVE-2026-93616",
+        "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNSkxndkZ0Z0JyS2FmSnZEV3BNUERiLWJJdlVwRkxpN3Q1WTZQZHFtWEFvZDROZklVWHVnWUxVelRjaEp5eWI0WjNZUExuMVp1R29ZeTgxWGRzWE9LM0ZlNnp5ZlgxY29aaUFFSnlnbXh1emtmQVlkbV9MbDk0aVdrbmJ1bk04Q1lFUjA5cDM4NkNnUFFMQWR2Xy03VnpHeTgyVjRYWUczM0o2OUZzNU1SMlJtNHpkWTQ2SEhiSXA2XzMtZUVKRU1yTHlodjNfcnJFVkEyMVJmZ1lsRVQ2QXZqQzJMY2k1ZzRsMXB1UUkwLTc4RWZtNXJIU3Z2WVc2ZGVPd3VIXw?oc=5",
+        "domain": "checkpointblog",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260922T060322Z",
         "source": "GoogleNews"
       },
       {
@@ -33941,21 +33975,21 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Is This A Joke? In The Auth Header? (F5 BIG-IP UnAuth Heap-Overflow to RCE CVE-2026-94127)",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTURvS3lMVVRNNnh4QVJ5d0JodUtGVHJvNnZibkQ1TUVlOFNrSjN3UC1wT0NjaF9WcTdqbGxIblFESlFFUG9CM2xITXNZM2JFbHMzZEpiZUVMUEc2bjI4WEVST2ZwdlNpVmRDYlkxY0pvck9BQXdSZzRTM29zLTczNTh1R1Z0Nk96MTBzcTdvdl9zNkliVms4TnJxanQ1V2pYNklTTk5xbkdHU3BUbG9md0NuZ1g?oc=5",
-        "domain": "watchtowrlabs",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260923T232044Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "The EU spent billions on a cyberattack shield — nobody checked if it worked",
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNGVWVkl5V0hJc1pySnJwRURUMEtOMW12MU1aSllicFhhbm5mU2w1UWhYLVZWQVhaVEsteFJVQWZKSXdoMzBpUU9IenYybTdaWEdxOW9FaFJEOUkxd2ZKcTUzT3hObUNORXQ4MENjMnNzWXZ5bVFRbW93QmlVMnlIamo0QkNQLUl3UnhlNXU5NVFzUGNkRE5FdWp6S2V4VXhMTDhRRFExakRxcTk2WlE?oc=5",
         "domain": "euronews.com",
         "language": "",
         "tone": 0,
         "seendate": "20260922T111400Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Is This A Joke? In The Auth Header? (F5 BIG-IP UnAuth Heap-Overflow to RCE CVE-2026-94127)",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTURvS3lMVVRNNnh4QVJ5d0JodUtGVHJvNnZibkQ1TUVlOFNrSjN3UC1wT0NjaF9WcTdqbGxIblFESlFFUG9CM2xITXNZM2JFbHMzZEpiZUVMUEc2bjI4WEVST2ZwdlNpVmRDYlkxY0pvck9BQXdSZzRTM29zLTczNTh1R1Z0Nk96MTBzcTdvdl9zNkliVms4TnJxanQ1V2pYNklTTk5xbkdHU3BUbG9md0NuZ1g?oc=5",
+        "domain": "watchtowrlabs",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260923T232044Z",
         "source": "GoogleNews"
       },
       {
@@ -34022,6 +34056,15 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Rogue OpenAI agent targeted Australian government site",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRUtzZDZrN2VHTmR4OS1DTTVidWd0aFNHaUxlNWYtdE0xMmZQRUtyMzhzS1lsNlZNb3lIYmNoalpUa1B1WEFheDYweFpKa2NPQkdyaHI4UXdjNUtEaTVGT2VMZGdlTGotUUhZZXVnc240X3dhWmotOWhDS1pEbVBEbWswNWozYWU4T1hGR25CSGNfZDBzcWw1UVFiaUFmbkNGaHBn?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260924T185640Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "ShinyHunters Claim Hack of Rival Ransomware Gang Clop",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOaU5OQjNITTBDQm1LdXJGZWhlWW83QnhHdHFCUVlHeW1ocUJ4SDZUZ0JORmFpMmFqYld6UGdjY2VTeGRNeVNzX0V2c2RNSzc4b1U0ZkVXMFo4R2d5TTdKZXdTOHZ3STF0STQ0eU1lbks3Y1FZWlVURTFubTN1VGVTcQ?oc=5",
         "domain": "infosecuritymagazine",
@@ -34040,15 +34083,6 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Rogue OpenAI agent targeted Australian government site",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRUtzZDZrN2VHTmR4OS1DTTVidWd0aFNHaUxlNWYtdE0xMmZQRUtyMzhzS1lsNlZNb3lIYmNoalpUa1B1WEFheDYweFpKa2NPQkdyaHI4UXdjNUtEaTVGT2VMZGdlTGotUUhZZXVnc240X3dhWmotOWhDS1pEbVBEbWswNWozYWU4T1hGR25CSGNfZDBzcWw1UVFiaUFmbkNGaHBn?oc=5",
-        "domain": "cybersecuritydive",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260924T185640Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "Information Networking Institute",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBaSlA3X3kxX3VXNzFfSGxOdVVBOFViX25QQTNKbVNvck84UHlDXzVlNnV4eHVvQXA1RUIwbjVyeHdwTS1vdjV3V1BoMXp1OUlJLWcwZXpqSXdKWl9PRUZvMnpJXzJXWW9QZUcwUmYwOGlkblU?oc=5",
         "domain": "carnegiemellonuniversity",
@@ -34060,10 +34094,28 @@
       {
         "title": "Ongoing Eagle Mountain internet outages caused by cyberattack, provider confirms",
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQeVNad2RrbHQtVmF4TXZLUk9OM2NrU2J5VUVVLU5wYkdmQzFMSGZYWjROSTlMREJISGtJOVVKZmhBWVpSc1p1bGpnRE83N1VJX1NtWUFKdjFseWgxVmJ6MDB6VXIxaUlDcGJ5V052ZDhTT3l0SjJ6RjdBQ3NRZTk3NXdlem02RzZRcWMw0gGQAUFVX3lxTFA5Qkt1N0dVajRER3JHYXZ3V3FKdG1LaU13OWZzUDktT2hHZHFGdmItUVdOZktGbzVDQWJMV3YtOTlTWmctV08zU3h0TjR6SEtPMWxHWk01akxmcjBtU0E1Q1MyTHFzVWVJcEQyaWJsSlJ5RzV6NU5ST0VYM2N4Wm9EYzVTaE0yNHB5QXA1V0ItTQ?oc=5",
-        "domain": "abc4.com",
+        "domain": "abc4utah",
         "language": "",
         "tone": 0,
         "seendate": "20260920T225714Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Critical WordPress Vulnerability Exploited Immediately After Disclosure",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdHYwWlB0OGx2TnM0anMyZEJNWTJGLUpWbDV0alhVWncyQXZaLWk3WUVnQ2xiWWlVVkVlX3dGazhKb0V5cTByRXJfek9ZcUNfRkZ2NmhNODZFelozN0Jua19hdktHNWhWUG82WWdSaHVfaHRmMDhmNjllNUowOFVHMTVLWjVoYUFrRUFpRHNSSDJkRzZUY0ZBM0VacU4tSXlLR2RJ0gGoAUFVX3lxTE1GRWFqSGpJR3hkS285REVKUTNnbjRfZ3dzQXR1LXpmS0JmTldtQXg2Uk85dGlReTlNNnJCUS1DR2dzdG5rWGVpb0lvQjZqTDczUFc2bDd5ZzR5RDMwMDVmbjBRUTZQOUpFdUYtbEd0LUE0RkFlMFpudzZ5VjdLcmV6LXVvaTFDZzlkQkQtZVIwV3hHQXVhY2lzR1RERDRtbWkyenBwYXROTg?oc=5",
+        "domain": "securityweek",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260924T071226Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "40 days to midterms, election officials say new US cyber plan comes too late",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTmNGU0tUVHVmSExPTzVrQnZOOVU0c1MxQzVURVBmR293a1JsRXppUnhJQWphVXpLSGxIZC1SeGR3SGlJVnBEempldmJ5YnZUQlktRUhYMldnN0ZIM2FPMHdhZlhFVzhpQ2Y5UGpkYklrQlpOYThnZkw2RTU5T3M4WmMxSE9FR0hGMi1rbGdUSmMtand1RzB3cXpwMjZabjJheFlFZ3ZnYw?oc=5",
+        "domain": "apnews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260924T213500Z",
         "source": "GoogleNews"
       },
       {
@@ -34103,6 +34155,15 @@
         "source": "GoogleNews"
       },
       {
+        "title": "OPSWAT: AI-Powered Cybersecurity Protects the World’s Critical Infrastructure",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNU1h1U2FJQ3VsVXVaUjZ6U253TktrbV92b0F6UUd2ZWotbkpIZk5TVlhBbHJ0V0NuVjg5dEp5YWNLbnl4SV8tbG9ZUC1GaHNYSXd2RTlIMUdkWnVLeVVRMlFyRGVfWHV2bkV2Y2hzTEF6VHJoSjlQaUZsVFp2MjcybndRMVZIUWVEMG9Pa0xXYURsQlU3Njh6bHluckZYcVlUV25RMHVlaHlQY3BuSEtJ?oc=5",
+        "domain": "cybercrimemagazine",
+        "language": "",
+        "tone": 0,
+        "seendate": "20260925T125645Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "NSF Awards $4.8 Million to URI Cybersecurity Center Under Victor Fay-Wolfe",
         "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNMFBUQ1F4RTFpeldoNEhZRWcxTXloejVudVI0SWhRN1Z2YUNETUpaTEVhaE9pbFRNSXRGTHdmMzhvT09CYnNuREdHbHhvZm0wUmRRaTM2clNvZFB3RVo4TzVZQ01GWDNWN1FrdmhRaUY2VTZqa1RIVVQxeDhKWWtTM2cybWs5LU0wbUdENFF4NTBVOERIbFpLTGEzY05oZw?oc=5",
         "domain": "theuniversityofrhodeisland",
@@ -34112,12 +34173,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Belgium's Aikido launches cybersecurity AI model as demand for local tools grows",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPc3ltX05ZbWFrSDlYLVJmREhNcUZuTXlpMzVKdy1SNUlfbnQtSGd6UUNkLUpYQV9LRURFc0o2MEp4X1N5NXVRM0ZPaFE0TFBBaFVwVkxIbWUxMUtyNmNFZ0Jjam5NaVprcEpzT2xTcHh1QkxiaW9oVWpLeFNoaFdLTTJTd0FFRjZCc1V5XzFSZ3UzZ2lsT2Z1ZjZXak5FZHVQeXlPeTFxeHdrS3BMelR1ZzdlNlhBamhIVXFldVM2elY0Y3M?oc=5",
-        "domain": "reuters",
+        "title": "WordPress patches a critical severity security vulnerability",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWXFzaklzNVFrVXVXVFlMUk8ySDdybTc1VkZ1YVlnbE8zeWY1clN5SDVWSmNBWjlPNHhhOTRwaXk1UG1jZG5leHdXRG1oelRyUVoyVEo1YjFYWlk3RnNGa0l0dnpMbGdqX29BSTFEZGpaZEtYNGRLQ0xtT21VWXBmakY1QTRMX09WMTdseWRwR0lLUTJPckM0aW9aRUxyNkxiTm0yQ1JtMjdudEU?oc=5",
+        "domain": "csoonline.com",
         "language": "",
         "tone": 0,
-        "seendate": "20260921T142135Z",
+        "seendate": "20260924T202751Z",
         "source": "GoogleNews"
       },
       {
@@ -34137,51 +34198,6 @@
         "tone": 0,
         "seendate": "20260921T054754Z",
         "source": "GoogleNews"
-      },
-      {
-        "title": "CVE flood pushes Ubuntu onto weekly kernel release cycle",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPM2FQOFBCSVZrbXVTdmlFYVNWTS1Ndm5XYk5hY3I2QjMwcWd3aS05SklQOEpaZ1dMZHRWa2xfRlkyMGYwZEZLTF9qZWQ1bjlFbVNIRW1oN18xNGlmTS1QZDBBbzdoVlJWWHFuNWFBRkotWDRyZHNuTnd2OFlSRFZjYUY1cHlfWWlSSjlJVVNJeGY0MmpJV0xzc2o3dTBqLW95WGlWZFFUUmI1TFRZMVJ3Ul9Ka2sxc2c?oc=5",
-        "domain": "theregister",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260924T163300Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "WordPress patches a critical severity security vulnerability",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWXFzaklzNVFrVXVXVFlMUk8ySDdybTc1VkZ1YVlnbE8zeWY1clN5SDVWSmNBWjlPNHhhOTRwaXk1UG1jZG5leHdXRG1oelRyUVoyVEo1YjFYWlk3RnNGa0l0dnpMbGdqX29BSTFEZGpaZEtYNGRLQ0xtT21VWXBmakY1QTRMX09WMTdseWRwR0lLUTJPckM0aW9aRUxyNkxiTm0yQ1JtMjdudEU?oc=5",
-        "domain": "csoonline.com",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260924T202751Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Critical WordPress Vulnerability Exploited Immediately After Disclosure",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdHYwWlB0OGx2TnM0anMyZEJNWTJGLUpWbDV0alhVWncyQXZaLWk3WUVnQ2xiWWlVVkVlX3dGazhKb0V5cTByRXJfek9ZcUNfRkZ2NmhNODZFelozN0Jua19hdktHNWhWUG82WWdSaHVfaHRmMDhmNjllNUowOFVHMTVLWjVoYUFrRUFpRHNSSDJkRzZUY0ZBM0VacU4tSXlLR2RJ0gGoAUFVX3lxTE1GRWFqSGpJR3hkS285REVKUTNnbjRfZ3dzQXR1LXpmS0JmTldtQXg2Uk85dGlReTlNNnJCUS1DR2dzdG5rWGVpb0lvQjZqTDczUFc2bDd5ZzR5RDMwMDVmbjBRUTZQOUpFdUYtbEd0LUE0RkFlMFpudzZ5VjdLcmV6LXVvaTFDZzlkQkQtZVIwV3hHQXVhY2lzR1RERDRtbWkyenBwYXROTg?oc=5",
-        "domain": "securityweek",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260924T071226Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Businesses expand AI’s cybersecurity uses as comfort with technology grows",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZkduSExGT2pnbVpBcTI2bE95OW5hWXNVUFdyMHR0bEpwbUMzeFZCREdFVldlN1FTQlNTbGg4N05xeHV3ODRSa3VkalJrRzlqRXRNWHVrdlpCcl9Oa1RHcE5UbDM1djA5MldJekJHOFhWaC05VVZMUlYtX3BSRjZHUWs2TlpYVDM2eTRQNg?oc=5",
-        "domain": "cybersecuritydive",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260925T154803Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "‘Our Oppenheimer moment’: Officials debate speed of AI development at Duke cybersecurity conference",
-        "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOQkdXb25ZNGR6YW1mX3lQcVM5eW5aRjRIUDZ0aGFBR09JTVJOanlUWXRDSTBCajljalZBazk2Q2VZX0oyU2QzbHJnV0ttaWFpdl9BWC1kM0VTNS13dDl0bkJuLXBUaV9hTjNncEJEV3lyelFRZ1h1VVFLbUdMVDNzM1MzT0hFbTR3bDJxYVBITFpfMkJNb0NVWF84cXdRSkttRWtMTVl3dXNLbVFtYU94WHJpN25aMTVoOTFuVGJiU2tvTm12dFRBNG1OMlIzMDhCM0VBck1QSmI0cE5kNU1KZ1pMcjdOM1kzbmFPY2VHTEFVandWWlRyc0RVbw?oc=5",
-        "domain": "thedukechronicle",
-        "language": "",
-        "tone": 0,
-        "seendate": "20260921T022950Z",
-        "source": "GoogleNews"
       }
     ]
   },
@@ -34199,10 +34215,19 @@
     {
       "title": "Epic shifts focus to cybersecurity while AI, interoperability agenda still on track, company says",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcEhmc1QyTWFLQXdHblozTUVNcW1KeXdsZDlIdXFjQkU4VlR5TVhrSzc5aGxZZ1lfeUJCUmtwNWVTNUt3TzAzU0ZZWUpVUC1fX29iN1pPbHpYWEZDMUx4N21yaHM2V2xEX1M1X1NDZGZNMlZpNWZqT1d5dC1jNHd3b1p3N24wR2YtQWpFNUNqUkNOTktxYXdXRTk4Q0oyaXJPZzVwYl95akI5bVJYT2FubEkxYkthS3NVRUFSNHRjbWNac1k?oc=5",
-      "domain": "fiercehealthcare.com",
+      "domain": "fiercehealthcare",
       "language": "",
       "tone": 0,
       "seendate": "20260923T150000Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "Single-cell atlas of transcriptomic vulnerability across brain disorders",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5tNFZKbVlSYXo3ZWZSd2FDOGFSbkpScFB2RldaMFdPYzgwRHRqMWF1eFZESDBVQTBjWEo5Y2tIN2M3aFd3aVhPaDJCYWFYMmVDMW9pNlJxWjdselFkMVFZ?oc=5",
+      "domain": "nature",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260923T151953Z",
       "source": "GoogleNews"
     },
     {
@@ -34221,15 +34246,6 @@
       "language": "",
       "tone": 0,
       "seendate": "20260919T110000Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Single-cell atlas of transcriptomic vulnerability across brain disorders",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5tNFZKbVlSYXo3ZWZSd2FDOGFSbkpScFB2RldaMFdPYzgwRHRqMWF1eFZESDBVQTBjWEo5Y2tIN2M3aFd3aVhPaDJCYWFYMmVDMW9pNlJxWjdselFkMVFZ?oc=5",
-      "domain": "nature",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260923T151953Z",
       "source": "GoogleNews"
     },
     {
@@ -34260,6 +34276,24 @@
       "source": "GoogleNews"
     },
     {
+      "title": "Kiteworks urges customers to shut down their servers amid ‘imminent’ threat of cyberattack",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPc2c3VHpKOTdfRnRuazRlTi03Wk9LelRMSkk2ZmtsVjFhaS02UEhfYk9VN2xxZldFV1V3UnBQWXFtSUFEZ3VlSnJiX2FqOVRCZkFnTHhaUVBjUlUyREx1WktoN0pKd0RMY0pueDcwbnZnVER5NzBSTU5DcnpQQmd0OTBvajdvMEx4RDFVdjV4U1pLMXBlNW9aTlFlTU4wYlV3RFdvSDhSQlkyd2czM0N2N3Z4ZWNhRGMwNjlsVzg4eUg?oc=5",
+      "domain": "techcrunch.com",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260925T155213Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "ShinyHunters cybercrime gang takes over Cl0p ransomware site, demands extortion payment",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ZZDk3VWc1czhFUHl4eWtHaWV1bWY1LXRQMGpnWkN1T1N0WGF2M3EyZjB0VGd5MDkteFpQOUZBTG5wUkhHTFdRbGh1eF9YSGNwdVpRU0YtQ3JxVG00OHRSNmhMNFNxY1NmZzl2a1NB?oc=5",
+      "domain": "therecordfromrecordedfuturenews",
+      "language": "",
+      "tone": 0,
+      "seendate": "20260921T141529Z",
+      "source": "GoogleNews"
+    },
+    {
       "title": "America’s Water Systems Face a Growing Cybersecurity Threat",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPU1ZfNDlFZFNUcGRWdllpWnNiTEJTcG94Z1hCZS1vTk5VamFjcVBaSkZrN1B1Q1poUjNJd0dnemtUcnduZUJiZGxzZHhkaW1aMGs1SzhZZ3pSQm02aG4talQyMzdsTVJuN1NKNVNkem9iSktkVDdNM1FwMDc1Zks1VG9BSXdLbWh4dlZ5c2N4bHlZbWhBaTlWNW5mMTg3TVN1?oc=5",
       "domain": "governing",
@@ -34278,30 +34312,12 @@
       "source": "GoogleNews"
     },
     {
-      "title": "ShinyHunters cybercrime gang takes over Cl0p ransomware site, demands extortion payment",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ZZDk3VWc1czhFUHl4eWtHaWV1bWY1LXRQMGpnWkN1T1N0WGF2M3EyZjB0VGd5MDkteFpQOUZBTG5wUkhHTFdRbGh1eF9YSGNwdVpRU0YtQ3JxVG00OHRSNmhMNFNxY1NmZzl2a1NB?oc=5",
-      "domain": "therecordfromrecordedfuturenews",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260921T141529Z",
-      "source": "GoogleNews"
-    },
-    {
       "title": "Palo Alto Networks unveils AI-powered cybersecurity service using Claude, GPT models",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVW5mc2xwMFhGeW1Dd3Y1bUY4dE9NVzFOa2FQSTI1a193YUk0aExLeFU2cm4xOXZVc0RqYjljNWVxMHpfWVRabVJMVkg5OE1aMWdXYUJKSG5RN2tYeUlycXh0VTcwck83TEdlcV9kOTRTdERZRXo5X3FUWkQ2WnlHb1hUZ3FDTzhwb3h0bWRlTWFOUmxBN2luR0QwQjRjeHhMWjRFRUN2M0V4U3FIaUZmRzk2QlN2SjRxSmZmUEhSQmo?oc=5",
       "domain": "reuters",
       "language": "",
       "tone": 0,
       "seendate": "20260922T133712Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Kiteworks urges customers to shut down their servers amid ‘imminent’ threat of cyberattack",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPc2c3VHpKOTdfRnRuazRlTi03Wk9LelRMSkk2ZmtsVjFhaS02UEhfYk9VN2xxZldFV1V3UnBQWXFtSUFEZ3VlSnJiX2FqOVRCZkFnTHhaUVBjUlUyREx1WktoN0pKd0RMY0pueDcwbnZnVER5NzBSTU5DcnpQQmd0OTBvajdvMEx4RDFVdjV4U1pLMXBlNW9aTlFlTU4wYlV3RFdvSDhSQlkyd2czM0N2N3Z4ZWNhRGMwNjlsVzg4eUg?oc=5",
-      "domain": "techcrunch",
-      "language": "",
-      "tone": 0,
-      "seendate": "20260925T155213Z",
       "source": "GoogleNews"
     },
     {
@@ -34326,11 +34342,11 @@
   "timeseries": [],
   "llm_summary": "",
   "early_warning": {
-    "issued_at": "2026-09-25T17:35:52.058831+00:00",
+    "issued_at": "2026-09-25T21:51:59.908001+00:00",
     "horizon": "next 30 days",
     "classification": "global-exploitation-pressure-not-organisation-breach-probability",
-    "score": 54.2,
-    "level": "WATCH",
+    "score": 56.4,
+    "level": "ELEVATED",
     "confidence": "HIGH",
     "confidence_score": 100.0,
     "components": [
@@ -34338,17 +34354,17 @@
         "id": "kev_addition_pressure",
         "label": "CISA exploited-vulnerability burst",
         "available": true,
-        "score": 66.4,
-        "catalog_count": 1725,
-        "recent_7d_count": 9,
+        "score": 70.2,
+        "catalog_count": 1726,
+        "recent_7d_count": 10,
         "prior_7d_count": 7,
         "baseline_weeks": 26,
         "baseline_weekly_median": 6.0,
-        "anomaly_z": 0.67,
+        "anomaly_z": 0.9,
         "ransomware_known_7d": 0,
-        "due_within_7d": 8,
+        "due_within_7d": 9,
         "catalog_version": "2026.09.25",
-        "released_at": "2026-09-25T14:39:25.3654Z",
+        "released_at": "2026-09-25T18:58:16.5029Z",
         "evidence": [
           {
             "cveID": "CVE-2026-67279",
@@ -34379,6 +34395,22 @@
             "notes": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65660 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-65660",
             "cwes": [
               "CWE-94"
+            ],
+            "source": "CISA-KEV"
+          },
+          {
+            "cveID": "CVE-2026-87902",
+            "vendorProject": "WordPress",
+            "product": "Core",
+            "vulnerabilityName": "WordPress Core Remote File Inclusion Vulnerability",
+            "dateAdded": "2026-09-25",
+            "shortDescription": "WordPress Core contains a remote file inclusion vulnerability which could allow an unauthenticated attacker to make page-template resolution include a chosen readable local `.php` file outside the active theme directories, leading to remote code execution.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-09-28",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-7hp8-65ch-5whp ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-87902",
+            "cwes": [
+              "CWE-98"
             ],
             "source": "CISA-KEV"
           },
@@ -34625,11 +34657,11 @@
         "id": "exploit_narrative_pressure",
         "label": "Cross-source exploit precursor language",
         "available": true,
-        "score": 55.0,
+        "score": 58.0,
         "events_considered": 50,
-        "matched_event_count": 9,
-        "matched_share": 0.18,
-        "independent_sources": 35,
+        "matched_event_count": 10,
+        "matched_share": 0.2,
+        "independent_sources": 36,
         "unique_cves": 4,
         "cross_source_baskets": 2,
         "baskets": [
@@ -34650,7 +34682,7 @@
           },
           {
             "id": "campaign_shift",
-            "independent_sources": 5,
+            "independent_sources": 6,
             "cross_source_confirmed": true
           }
         ],
@@ -34686,6 +34718,19 @@
             "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPWFlWT0d3NEdZODBKSUNkOVdqWVNZOFV5c3lrSlpXc08yXzRsVWo5bF9QZFJCUnhCOVJRQXVkeS0zX1lzLWU3b3J5TU8xaVdCeE1hOVRqbkVyZTlOTUxvZmt1VkY4ek9JY1I4NURTZ1RzVUlrTzlLc1NTWDNiWGFZcGFONXE1ZDlQdTU4dW8tOXNocmlETFo1ckhSY2tPMTlycDh2SktZT2I3VkxLLS1yVkZHazlMOGlWZ2xmcFZKNWltTjliQ2ZpRm04ZmdtandJdkE?oc=5",
             "source": "microsoft",
             "observed_at": "20260924T160000Z",
+            "baskets": [
+              "campaign_shift"
+            ],
+            "terms": [
+              "ransomware"
+            ],
+            "cves": []
+          },
+          {
+            "title": "Interlock ransomware claim triggers lawsuit against NFM Lending",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBsNEt2UDlQSW5jM3ZoZmNEc3BMdGdBcmNHcDZJamVhcl85eFFlVmNubV85STFSMDNFM1dHeUdoXzV4UlZEYVhhZHV0WmpFbTdQZXpiT2lHeEJjZmdJUERqQ2d6ZjFPYmJlc0dxTHJ0QUM5MXpE?oc=5",
+            "source": "housingwire",
+            "observed_at": "20260924T182324Z",
             "baskets": [
               "campaign_shift"
             ],
@@ -34792,14 +34837,14 @@
       {
         "id": "kev_addition_pressure",
         "title": "CISA exploited-vulnerability burst",
-        "score": 66.4,
+        "score": 70.2,
         "level": "ELEVATED",
         "why": "CISA additions are elevated against the previous 26 weekly windows."
       },
       {
         "id": "exploit_narrative_pressure",
         "title": "Cross-source exploit precursor language",
-        "score": 55.0,
+        "score": 58.0,
         "level": "ELEVATED",
         "why": "Weaponization or exploitation language is confirmed across distinct named sources."
       }
@@ -35904,14 +35949,24 @@
           "epss_frontier_momentum": 25.3,
           "exploit_narrative_pressure": 55.0
         }
+      },
+      {
+        "timestamp": "2026-09-25T21:51:59.908001+00:00",
+        "score": 56.4,
+        "level": "ELEVATED",
+        "components": {
+          "kev_addition_pressure": 70.2,
+          "epss_frontier_momentum": 25.3,
+          "exploit_narrative_pressure": 58.0
+        }
       }
     ],
     "data_health": {
-      "cisa_catalog_count": 1725,
+      "cisa_catalog_count": 1726,
       "epss_frontier_count": 40,
       "epss_timeseries_count": 40,
       "news_events_considered": 50,
-      "independent_news_sources": 35,
+      "independent_news_sources": 36,
       "available_components": 3,
       "retained_components": []
     },
