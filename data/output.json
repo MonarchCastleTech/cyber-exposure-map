@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-10-09T13:52:19.789078+00:00",
+    "generated": "2026-10-09T22:56:17.673676+00:00",
     "mode": "live",
     "sources": [
       "cisa_catalog",
@@ -27632,14 +27632,19 @@
     },
     "epss_frontier": {
       "threshold": 0.1,
-      "total_above_threshold": 17298,
+      "total_above_threshold": 17300,
       "rows": [
         {
           "cve": "CVE-2021-45105",
           "epss": "0.999990000",
           "percentile": "0.999910000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99999000",
+              "percentile": "0.99991000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99999000",
               "percentile": "0.99991000",
@@ -27784,11 +27789,6 @@
               "epss": "0.99999000",
               "percentile": "0.99991000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99999000",
-              "percentile": "0.99991000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -27796,8 +27796,13 @@
           "cve": "CVE-2014-3566",
           "epss": "0.999990000",
           "percentile": "0.999990000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99999000",
+              "percentile": "0.99999000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99999000",
               "percentile": "0.99999000",
@@ -27942,11 +27947,6 @@
               "epss": "0.99999000",
               "percentile": "1.00000000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99999000",
-              "percentile": "1.00000000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -27954,8 +27954,13 @@
           "cve": "CVE-2023-50387",
           "epss": "0.999880000",
           "percentile": "0.999840000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99988000",
+              "percentile": "0.99984000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99988000",
               "percentile": "0.99984000",
@@ -28100,11 +28105,6 @@
               "epss": "0.99995000",
               "percentile": "0.99988000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99995000",
-              "percentile": "0.99988000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -28112,8 +28112,13 @@
           "cve": "CVE-2014-0195",
           "epss": "0.999770000",
           "percentile": "0.999790000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99977000",
+              "percentile": "0.99979000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99977000",
               "percentile": "0.99979000",
@@ -28258,11 +28263,6 @@
               "epss": "0.99977000",
               "percentile": "0.99979000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99977000",
-              "percentile": "0.99979000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -28270,8 +28270,13 @@
           "cve": "CVE-2014-3704",
           "epss": "0.999740000",
           "percentile": "0.999780000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99974000",
+              "percentile": "0.99978000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99974000",
               "percentile": "0.99978000",
@@ -28416,11 +28421,6 @@
               "epss": "0.99974000",
               "percentile": "0.99977000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99974000",
-              "percentile": "0.99977000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -28428,8 +28428,13 @@
           "cve": "CVE-2015-7297",
           "epss": "0.999670000",
           "percentile": "0.999770000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99967000",
+              "percentile": "0.99977000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99967000",
               "percentile": "0.99977000",
@@ -28574,11 +28579,6 @@
               "epss": "0.99967000",
               "percentile": "0.99976000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99967000",
-              "percentile": "0.99976000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -28586,8 +28586,13 @@
           "cve": "CVE-2012-1456",
           "epss": "0.999340000",
           "percentile": "0.999710000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99934000",
+              "percentile": "0.99971000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99934000",
               "percentile": "0.99971000",
@@ -28732,11 +28737,6 @@
               "epss": "0.99934000",
               "percentile": "0.99970000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99934000",
-              "percentile": "0.99970000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -28744,8 +28744,13 @@
           "cve": "CVE-2022-42889",
           "epss": "0.999310000",
           "percentile": "0.999700000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99931000",
+              "percentile": "0.99970000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99931000",
               "percentile": "0.99970000",
@@ -28890,11 +28895,6 @@
               "epss": "0.99931000",
               "percentile": "0.99969000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99931000",
-              "percentile": "0.99969000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -28902,8 +28902,13 @@
           "cve": "CVE-2019-0232",
           "epss": "0.999230000",
           "percentile": "0.999690000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99923000",
+              "percentile": "0.99969000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99923000",
               "percentile": "0.99968000",
@@ -29048,11 +29053,6 @@
               "epss": "0.99652000",
               "percentile": "0.99948000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99652000",
-              "percentile": "0.99948000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -29060,8 +29060,13 @@
           "cve": "CVE-2024-29826",
           "epss": "0.998770000",
           "percentile": "0.999640000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99877000",
+              "percentile": "0.99964000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99877000",
               "percentile": "0.99964000",
@@ -29206,11 +29211,6 @@
               "epss": "0.99877000",
               "percentile": "0.99964000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99877000",
-              "percentile": "0.99963000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -29218,8 +29218,13 @@
           "cve": "CVE-2024-29825",
           "epss": "0.998770000",
           "percentile": "0.999640000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99877000",
+              "percentile": "0.99964000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99877000",
               "percentile": "0.99964000",
@@ -29364,11 +29369,6 @@
               "epss": "0.99877000",
               "percentile": "0.99964000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99877000",
-              "percentile": "0.99963000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -29376,8 +29376,13 @@
           "cve": "CVE-2024-29823",
           "epss": "0.998600000",
           "percentile": "0.999610000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99860000",
+              "percentile": "0.99961000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99860000",
               "percentile": "0.99961000",
@@ -29522,20 +29527,20 @@
               "epss": "0.99860000",
               "percentile": "0.99961000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99860000",
-              "percentile": "0.99960000",
-              "date": "2026-09-08"
             }
           ]
         },
         {
           "cve": "CVE-2015-4000",
           "epss": "0.998600000",
-          "percentile": "0.999610000",
-          "date": "2026-10-08",
+          "percentile": "0.999620000",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99860000",
+              "percentile": "0.99961000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99860000",
               "percentile": "0.99961000",
@@ -29680,11 +29685,6 @@
               "epss": "0.99860000",
               "percentile": "0.99961000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99860000",
-              "percentile": "0.99961000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -29692,8 +29692,13 @@
           "cve": "CVE-2020-13379",
           "epss": "0.998560000",
           "percentile": "0.999610000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99856000",
+              "percentile": "0.99961000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99856000",
               "percentile": "0.99961000",
@@ -29838,11 +29843,6 @@
               "epss": "0.99856000",
               "percentile": "0.99961000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99856000",
-              "percentile": "0.99960000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -29850,8 +29850,13 @@
           "cve": "CVE-2017-12635",
           "epss": "0.998380000",
           "percentile": "0.999600000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99838000",
+              "percentile": "0.99960000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99838000",
               "percentile": "0.99960000",
@@ -29996,11 +30001,6 @@
               "epss": "0.99838000",
               "percentile": "0.99960000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99838000",
-              "percentile": "0.99960000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -30008,8 +30008,13 @@
           "cve": "CVE-2017-8917",
           "epss": "0.998260000",
           "percentile": "0.999600000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99826000",
+              "percentile": "0.99960000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99826000",
               "percentile": "0.99960000",
@@ -30154,11 +30159,6 @@
               "epss": "0.99826000",
               "percentile": "0.99959000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99826000",
-              "percentile": "0.99959000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -30166,8 +30166,13 @@
           "cve": "CVE-2012-1459",
           "epss": "0.998140000",
           "percentile": "0.999590000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99814000",
+              "percentile": "0.99959000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99814000",
               "percentile": "0.99959000",
@@ -30312,11 +30317,6 @@
               "epss": "0.99814000",
               "percentile": "0.99958000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99814000",
-              "percentile": "0.99958000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -30324,11 +30324,16 @@
           "cve": "CVE-2025-53771",
           "epss": "0.998080000",
           "percentile": "0.999580000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
             {
               "epss": "0.998080000",
               "percentile": "0.999580000",
+              "date": "2026-10-08"
+            },
+            {
+              "epss": "0.99808000",
+              "percentile": "0.99958000",
               "date": "2026-10-07"
             },
             {
@@ -30470,11 +30475,6 @@
               "epss": "0.99900000",
               "percentile": "0.99964000",
               "date": "2026-09-08"
-            },
-            {
-              "epss": "0.99900000",
-              "percentile": "0.99964000",
-              "date": "2026-09-07"
             }
           ]
         },
@@ -30482,8 +30482,13 @@
           "cve": "CVE-2022-39952",
           "epss": "0.997940000",
           "percentile": "0.999560000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99794000",
+              "percentile": "0.99956000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99794000",
               "percentile": "0.99956000",
@@ -30628,11 +30633,6 @@
               "epss": "0.99809000",
               "percentile": "0.99958000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99809000",
-              "percentile": "0.99957000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -30640,8 +30640,13 @@
           "cve": "CVE-2012-1446",
           "epss": "0.997230000",
           "percentile": "0.999520000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99723000",
+              "percentile": "0.99952000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99723000",
               "percentile": "0.99952000",
@@ -30786,11 +30791,6 @@
               "epss": "0.99723000",
               "percentile": "0.99951000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99723000",
-              "percentile": "0.99951000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -30798,8 +30798,13 @@
           "cve": "CVE-2008-2938",
           "epss": "0.997080000",
           "percentile": "0.999510000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99708000",
+              "percentile": "0.99951000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99708000",
               "percentile": "0.99951000",
@@ -30944,11 +30949,6 @@
               "epss": "0.99708000",
               "percentile": "0.99950000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99708000",
-              "percentile": "0.99950000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -30956,8 +30956,13 @@
           "cve": "CVE-2020-10220",
           "epss": "0.996970000",
           "percentile": "0.999510000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99697000",
+              "percentile": "0.99951000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99697000",
               "percentile": "0.99951000",
@@ -31102,11 +31107,6 @@
               "epss": "0.99697000",
               "percentile": "0.99950000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99697000",
-              "percentile": "0.99950000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -31114,8 +31114,13 @@
           "cve": "CVE-2023-27372",
           "epss": "0.996820000",
           "percentile": "0.999500000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99682000",
+              "percentile": "0.99950000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99682000",
               "percentile": "0.99950000",
@@ -31260,11 +31265,6 @@
               "epss": "0.99682000",
               "percentile": "0.99950000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99682000",
-              "percentile": "0.99949000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -31272,8 +31272,13 @@
           "cve": "CVE-2012-1443",
           "epss": "0.996360000",
           "percentile": "0.999490000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99636000",
+              "percentile": "0.99949000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99636000",
               "percentile": "0.99949000",
@@ -31418,20 +31423,20 @@
               "epss": "0.99636000",
               "percentile": "0.99948000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99636000",
-              "percentile": "0.99948000",
-              "date": "2026-09-08"
             }
           ]
         },
         {
           "cve": "CVE-2022-37061",
           "epss": "0.996070000",
-          "percentile": "0.999470000",
-          "date": "2026-10-08",
+          "percentile": "0.999480000",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99607000",
+              "percentile": "0.99947000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99607000",
               "percentile": "0.99947000",
@@ -31576,11 +31581,6 @@
               "epss": "0.99607000",
               "percentile": "0.99947000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99607000",
-              "percentile": "0.99946000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -31588,8 +31588,13 @@
           "cve": "CVE-2020-14181",
           "epss": "0.996030000",
           "percentile": "0.999470000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99603000",
+              "percentile": "0.99947000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99603000",
               "percentile": "0.99947000",
@@ -31734,11 +31739,6 @@
               "epss": "0.99603000",
               "percentile": "0.99946000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99603000",
-              "percentile": "0.99946000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -31746,8 +31746,13 @@
           "cve": "CVE-2020-16040",
           "epss": "0.995950000",
           "percentile": "0.999470000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99595000",
+              "percentile": "0.99947000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99595000",
               "percentile": "0.99947000",
@@ -31892,11 +31897,6 @@
               "epss": "0.99595000",
               "percentile": "0.99946000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99595000",
-              "percentile": "0.99946000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -31904,8 +31904,13 @@
           "cve": "CVE-2022-1471",
           "epss": "0.995690000",
           "percentile": "0.999460000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99569000",
+              "percentile": "0.99946000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99569000",
               "percentile": "0.99946000",
@@ -32050,11 +32055,6 @@
               "epss": "0.99569000",
               "percentile": "0.99945000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99569000",
-              "percentile": "0.99945000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -32062,8 +32062,13 @@
           "cve": "CVE-2014-0094",
           "epss": "0.995660000",
           "percentile": "0.999460000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99566000",
+              "percentile": "0.99946000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99566000",
               "percentile": "0.99946000",
@@ -32208,11 +32213,6 @@
               "epss": "0.99524000",
               "percentile": "0.99944000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99524000",
-              "percentile": "0.99943000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -32220,8 +32220,13 @@
           "cve": "CVE-2024-6387",
           "epss": "0.995060000",
           "percentile": "0.999450000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99506000",
+              "percentile": "0.99945000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99506000",
               "percentile": "0.99945000",
@@ -32366,11 +32371,6 @@
               "epss": "0.99506000",
               "percentile": "0.99943000",
               "date": "2026-09-08"
-            },
-            {
-              "epss": "0.99506000",
-              "percentile": "0.99942000",
-              "date": "2026-09-07"
             }
           ]
         },
@@ -32378,8 +32378,13 @@
           "cve": "CVE-2017-1000028",
           "epss": "0.994790000",
           "percentile": "0.999440000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99479000",
+              "percentile": "0.99944000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99479000",
               "percentile": "0.99944000",
@@ -32524,11 +32529,6 @@
               "epss": "0.99479000",
               "percentile": "0.99943000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99479000",
-              "percentile": "0.99942000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -32536,8 +32536,13 @@
           "cve": "CVE-2013-0156",
           "epss": "0.994490000",
           "percentile": "0.999430000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99449000",
+              "percentile": "0.99943000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99449000",
               "percentile": "0.99943000",
@@ -32682,11 +32687,6 @@
               "epss": "0.99449000",
               "percentile": "0.99941000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99449000",
-              "percentile": "0.99941000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -32694,8 +32694,13 @@
           "cve": "CVE-2023-37679",
           "epss": "0.994340000",
           "percentile": "0.999430000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99434000",
+              "percentile": "0.99943000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99434000",
               "percentile": "0.99942000",
@@ -32840,11 +32845,6 @@
               "epss": "0.99434000",
               "percentile": "0.99940000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99434000",
-              "percentile": "0.99940000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -32852,8 +32852,13 @@
           "cve": "CVE-2023-32560",
           "epss": "0.994010000",
           "percentile": "0.999410000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99401000",
+              "percentile": "0.99941000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99401000",
               "percentile": "0.99941000",
@@ -32998,11 +33003,6 @@
               "epss": "0.99428000",
               "percentile": "0.99940000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99428000",
-              "percentile": "0.99940000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -33010,8 +33010,13 @@
           "cve": "CVE-2025-1974",
           "epss": "0.993840000",
           "percentile": "0.999400000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99384000",
+              "percentile": "0.99940000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99384000",
               "percentile": "0.99940000",
@@ -33156,11 +33161,6 @@
               "epss": "0.99525000",
               "percentile": "0.99944000",
               "date": "2026-09-08"
-            },
-            {
-              "epss": "0.99525000",
-              "percentile": "0.99944000",
-              "date": "2026-09-07"
             }
           ]
         },
@@ -33168,8 +33168,13 @@
           "cve": "CVE-2023-34960",
           "epss": "0.993250000",
           "percentile": "0.999390000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99325000",
+              "percentile": "0.99939000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99325000",
               "percentile": "0.99939000",
@@ -33314,11 +33319,6 @@
               "epss": "0.99325000",
               "percentile": "0.99937000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99325000",
-              "percentile": "0.99937000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -33326,8 +33326,13 @@
           "cve": "CVE-2021-34429",
           "epss": "0.992980000",
           "percentile": "0.999390000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99298000",
+              "percentile": "0.99939000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99298000",
               "percentile": "0.99939000",
@@ -33472,11 +33477,6 @@
               "epss": "0.99298000",
               "percentile": "0.99937000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99298000",
-              "percentile": "0.99937000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -33484,8 +33484,13 @@
           "cve": "CVE-2017-12542",
           "epss": "0.992940000",
           "percentile": "0.999380000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99294000",
+              "percentile": "0.99938000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99294000",
               "percentile": "0.99938000",
@@ -33630,11 +33635,6 @@
               "epss": "0.99294000",
               "percentile": "0.99937000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99294000",
-              "percentile": "0.99936000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -33642,8 +33642,13 @@
           "cve": "CVE-2018-12998",
           "epss": "0.992930000",
           "percentile": "0.999380000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99293000",
+              "percentile": "0.99938000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99293000",
               "percentile": "0.99938000",
@@ -33788,11 +33793,6 @@
               "epss": "0.99293000",
               "percentile": "0.99936000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99293000",
-              "percentile": "0.99936000",
-              "date": "2026-09-08"
             }
           ]
         },
@@ -33800,8 +33800,13 @@
           "cve": "CVE-2023-23333",
           "epss": "0.992910000",
           "percentile": "0.999380000",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "time_series": [
+            {
+              "epss": "0.99291000",
+              "percentile": "0.99938000",
+              "date": "2026-10-08"
+            },
             {
               "epss": "0.99291000",
               "percentile": "0.99938000",
@@ -33946,11 +33951,6 @@
               "epss": "0.99291000",
               "percentile": "0.99936000",
               "date": "2026-09-09"
-            },
-            {
-              "epss": "0.99291000",
-              "percentile": "0.99936000",
-              "date": "2026-09-08"
             }
           ]
         }
@@ -33958,24 +33958,6 @@
       "cached": false
     },
     "news_articles": [
-      {
-        "title": "Fortinet warns that critical flaw in FortiMail is facing exploitation",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYTZ5WUg4dVdmZlR2dVd2QUxtMmdXTzVwNFY4N0VYRXNuVmdSMVdFX2Nldkc4c2dwSEFhVVRuMTJtQUFxSnRPZnotejdVbGRfdzJ5WlVZbDYzT1NuSTB1S2ZQdHZQdXF3bExLd3A1dWM4cHJUTm1pSFoxY2lFVEs5VDZIZjNoSzhqS0Q0YkNfY0hYbjZUMFYw?oc=5",
-        "domain": "cybersecuritydive",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261002T163056Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Hundreds of Wisconsin election offices not using cybersecurity best practices",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNLW94eEcxbFlCLWNuNktNeUk5cmhPcU9iTTltSGhKZ1pEalo1NllsalFDbkJvSjF1VnhwSloyaVc1ZHY2SEJPanlZRE9yRjNoX1BKUHU2bDJyNzZrQUlGdHp3WVdGQzB1WUsxWURsTUdHbHp5UXp3UXR6MC03cFJpaXNCUHJNdXdQVXNjODFsNDYwbHI1TUhfeno5akJvOGRrM3RMcVZJUGxqcFlQ?oc=5",
-        "domain": "votebeat",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261002T144500Z",
-        "source": "GoogleNews"
-      },
       {
         "title": "You Won’t Hear About These, Even In Myths (Atlassian Jira, Confluence (and more) Pre-Auth Arbitrary File Read CVE-2026-21589)",
         "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPdlYtREwyaF81U0JhVENrOEhTUzFHU0lGZVFsUUtKM01SVkJTWUszNjd3cTlPTVVaeDNSckQ4RXpzUDFJTm4ydEVPYjY5QmJONFhkSmhxMy1ZQWpWMVZ0Q01zZnF6VnAyYnN6VUd0cGpjbGNXNnpSclBGU1hqaUpxRC1wR2V6RUpFOWtnUmVTdjA0Qk4zNGFVZ1BaTnAzVl9KMy1iVnFoV3JKY1NLSzJvZkh3YWdQaHVSMnRKMEJLckNjZG85YXExS09jRjRIalB2SDhhVUprdFRXRkxDUzFN?oc=5",
@@ -34004,21 +33986,21 @@
         "source": "GoogleNews"
       },
       {
-        "title": "University of Illinois Chicago affected by ransomware attack on medical school",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9fYTdySVJjWjdzazc5RWRYQVlKVE1rUmpiS2xoTWtmb2VfMXp6S1M2N1ozRE9CbmVSeGw2M0ZHcnRkOWVlOGk4d2Y2Q25xLXBWU3JnNnl4c1ZoQUZaSksyZERHOUlqU3B3aVhQNHNBVQ?oc=5",
-        "domain": "therecordfromrecordedfuturenews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261006T020746Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "Introducing the New Small Business Cybersecurity Support Program Finder",
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQOU5uWVlEY1RSMmpEUjZtRDBOdC1sS2pWdjc2cHJMckQtSTY0ZzFXNFZrdzh4UmwxSW50alpmSGlFeERVLUNVODl4bUVoNVFNRDFXZy1DZ0ZiY09EQWJkbF9aY3VtREVlYllCUEtqZDZ1bFBfVFlpX3duYkpubnhPWGQ3dVdsXzVvclFmQ05EdWVUa0xGdnVweE1MYTBnVlpTZmlNOTNudUQ3ZTJVZGFwRGpCQVhmclN4?oc=5",
         "domain": "nationalinstituteofstandardsandtechnology.gov",
         "language": "",
         "tone": 0,
         "seendate": "20261005T120000Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "University of Illinois Chicago affected by ransomware attack on medical school",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9fYTdySVJjWjdzazc5RWRYQVlKVE1rUmpiS2xoTWtmb2VfMXp6S1M2N1ozRE9CbmVSeGw2M0ZHcnRkOWVlOGk4d2Y2Q25xLXBWU3JnNnl4c1ZoQUZaSksyZERHOUlqU3B3aVhQNHNBVQ?oc=5",
+        "domain": "therecordfromrecordedfuturenews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261006T020746Z",
         "source": "GoogleNews"
       },
       {
@@ -34058,21 +34040,21 @@
         "source": "GoogleNews"
       },
       {
+        "title": "As frontier models go rogue, colleges beef up AI cybersecurity education",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbUsyWDlhNlJGNnJBV1l6Sk5uZGdUTzI1MlZaOUFOSXlmSEpmYXVUUmR0T2d6bDhKVnJETFhSZXB2SmEyOU44QU9iU3hJMHA5NzVCdmVCNmp4Z21QOHQzSUNjQXJpRUpZZHppRzluN3JQRmstM1lpWG13bVJrMjhTc3EydklBY1Z3QmVjdw?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261009T125355Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Reps. Carter, Thompson Reintroduce the Cybersecurity and Infrastructure Security Agency Securing AI Task Force Act to Address the Evolving Challenges Posed by AI",
         "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxQcEhSLWp5MWwyZHdob0N4X055Wm9BR19WZFlNZjN5c1R0MUxEY2NIX2ozbVNZQWhGckhPY2pqNXdCZkpqREo4cDVTaDJNeV81c0h4eWhhNXRZQzhzTThxLXA3dm5kUHVheGNyOW5OeGgtZWdaVUpfU29nV2tnaGpES2pzakxzdWF1RFlkMndTQU00S25OZFQ3SVdSa3d0Rmp3Y0ZmdU55aXpQSjM0aERjaTRoTDJyVXpCS3JHYmJ0d20wMExpbVpLUWZJRDlsYWNxMTlkYVFYb01talY4YkZzQ3dQd1hCQzNYaDRCSS1LMTBVcmhwTGVMUEl0bDVKSENlOFBiSi1FX2RsSmxDczJQMFVDcVIybFpZVVRNRmVsbDhWbE5GcjlwR1FCU1pyeW90R2V3bm5LTG8?oc=5",
         "domain": "househomelanddemocrats.gov",
         "language": "",
         "tone": 0,
         "seendate": "20261008T191725Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "A Nationwide Consortium Is Needed to Address Cybersecurity Risks in Agricultural and Food Systems, Researchers Urge",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUFVmcWpNUjdicWJEeTY3dVE2cDh4ZmdIcGlrU3hqX0l4LUd3TWZKRC1qMm51RWlYMi1sUlljWmtfTm90c3BIRi1IX3M5QjRCMHl1NHFsbzZmQmx3bTBiUFc3NUNzSHZEZGRaN2hOeFZqTTFNcldZRmxNc1I2NFN6REtVT2JacWxpWTZpREJmUmxxUXFYTDZPN2tyQTBYWm5iV2xSbGVuRlFtaHBDRk1IM0I1Y0hIZTg1WjZaV1JFclQ?oc=5",
-        "domain": "ucdaviscollegeofengineering",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261008T212430Z",
         "source": "GoogleNews"
       },
       {
@@ -34085,12 +34067,21 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Part 1 – Cybersecurity journeys: I didn’t plan this",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNaW1YMU1WZWVnU0lVMktkMnpiNEljM3lLT3FCOHpiSGhGWFRMcmhIZWFZdDJ4d1AwS2Z6NGk1ZlAxZXlVYjFrNzVQcWxGejFWQWUzaHYzRFJHQ09FZXBWS0Q3emVCMUloRTkyU0hYTkM2cVZWbnJNdnBQcU9wWEIyUU5GRUFjUHI5ZzdRcURtdw?oc=5",
+        "title": "Building your AI vulnerability harness, Part 1",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZWhiVWtMdEdQYmt1ek8yblpKZ1Q3el9PdkhkYzdlS19GMmhDNGQtN090T0luRWxHM3psV25hZWliZ2QzZVptMWNJdmhlakZZdXhTcGQxcFhFN3JPeFBXZDdOYUpTdkFVRjk1STI5UWJveUVNa2sxRV9SY0VrWFNBMXlFTE5xZ3o5eTVXMw?oc=5",
         "domain": "amazonwebservicesaws",
         "language": "",
         "tone": 0,
-        "seendate": "20261007T162119Z",
+        "seendate": "20261007T214943Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "A Nationwide Consortium Is Needed to Address Cybersecurity Risks in Agricultural and Food Systems, Researchers Urge",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUFVmcWpNUjdicWJEeTY3dVE2cDh4ZmdIcGlrU3hqX0l4LUd3TWZKRC1qMm51RWlYMi1sUlljWmtfTm90c3BIRi1IX3M5QjRCMHl1NHFsbzZmQmx3bTBiUFc3NUNzSHZEZGRaN2hOeFZqTTFNcldZRmxNc1I2NFN6REtVT2JacWxpWTZpREJmUmxxUXFYTDZPN2tyQTBYWm5iV2xSbGVuRlFtaHBDRk1IM0I1Y0hIZTg1WjZaV1JFclQ?oc=5",
+        "domain": "ucdaviscollegeofengineering",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261008T212430Z",
         "source": "GoogleNews"
       },
       {
@@ -34100,6 +34091,15 @@
         "language": "",
         "tone": 0,
         "seendate": "20261008T081500Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Cybersecurity Fair to Focus on Protecting Personal Information, Data in Age of AI",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPN1lqRUxQUjZxWlRoeU5QdkJyRjI1QlAwSnVfTlM4V1c4YUhBUXNLTEs0ZDIyT2xkSWhxd0NaLTBoUmJfaXZJUkg3dHhRdDNDbG5EOVFWN3hQMktaZHd1MVpPS0trVmVNZVpDTm84ellQQ1Fpc1QzTVQ5eTZlcFJlaXJXU3JnT3hZM3h4SDhaVUkzX0cxeFQ2V0J1RWhneXdPYVpHNnVDcTJrXzFFLW11Ml9GR0Nod2JjYnA3NUstNmN0eVUwSHVLRF9CRzJDUQ?oc=5",
+        "domain": "calpolypomona",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261007T070000Z",
         "source": "GoogleNews"
       },
       {
@@ -34121,15 +34121,6 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Warlock Exploits SharePoint Flaws to Disable Security Tools and Deploy Ransomware",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNX09pTGNTQ1BXdkthcjNETnAxWHgxc0NMX1VZeXJocGwwN1AwOXRtUUNya1I2NDNTem9TZjlyeFBkZGttZFNxdXdlb1BjeTZLMk5NVld3YktwZGlUWGFGeTBGaHppUG9PMjBHTWtOelR1aW5qNnRXR3lFeFFjSHBUVg?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261003T143600Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "Dell System Update flaw allows attackers to gain root privileges (CVE-2026-86360)",
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcTc5WnNTY0N6UFhWRWt5bUo3QmNuSGJqdGprWHNvcVVHNGJGTEZkWDdOb0l5MWxrNkh1QXlzeXdYVlpJWF9pTWlpeUR0TlFfczJwUVhYLUh0dTh3U3hTcXBvaDZsNEFyTEhvVk15c3VlbGkzOW5XeFREejJFVl9UdDdOazd6c1Nqb3FuY3gxMUFZbm5vMnc?oc=5",
         "domain": "helpnetsecurity",
@@ -34139,21 +34130,30 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Building your AI vulnerability harness, Part 1",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZWhiVWtMdEdQYmt1ek8yblpKZ1Q3el9PdkhkYzdlS19GMmhDNGQtN090T0luRWxHM3psV25hZWliZ2QzZVptMWNJdmhlakZZdXhTcGQxcFhFN3JPeFBXZDdOYUpTdkFVRjk1STI5UWJveUVNa2sxRV9SY0VrWFNBMXlFTE5xZ3o5eTVXMw?oc=5",
-        "domain": "amazonwebservicesaws",
+        "title": "Warlock Exploits SharePoint Flaws to Disable Security Tools and Deploy Ransomware",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNX09pTGNTQ1BXdkthcjNETnAxWHgxc0NMX1VZeXJocGwwN1AwOXRtUUNya1I2NDNTem9TZjlyeFBkZGttZFNxdXdlb1BjeTZLMk5NVld3YktwZGlUWGFGeTBGaHppUG9PMjBHTWtOelR1aW5qNnRXR3lFeFFjSHBUVg?oc=5",
+        "domain": "thehackernews",
         "language": "",
         "tone": 0,
-        "seendate": "20261007T214943Z",
+        "seendate": "20261003T143600Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Cybersecurity Awareness Month 2026: Training for Defense",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYzBJVVFoUEhBaVI4VEJ5SUc2TldHb1ZrSzRBTEdtbllLV08yNkpqcGNETFQ4OTJaRlpyUDhTSGZTNUxwZko3OUcxN0YtbldnbjRNeFVMYVE1WWVQRkxRcTUwdFpHYUpfbHZDcERFTVBrVU1DQW1rNFNWb2hzdk5wTWdLU3NnZXM5dExHREpMcFFxTjBGZmllYWh1d2Y?oc=5",
-        "domain": "clarkhill",
+        "title": "IBM’s AI-powered vulnerability clearinghouse finds hundreds of Java flaws",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQV0lfNlRGc283bDBMbEdweXZqSVNwb19ZNHdmM3hqLVFBTGNicG8yVzQ2d1BCekFibWVxV2hqeGx1R3U5Y21BS0VJSzhEMmtHdmlJd3M1RGV2WEo2QlFhQlo0dTB6cFdqQjBmREhrT1ZLT2M3VF9PVGJGWkFyMkk2YUZpTjBsbWNQQmc?oc=5",
+        "domain": "cybersecuritydive",
         "language": "",
         "tone": 0,
-        "seendate": "20261008T161319Z",
+        "seendate": "20261006T152850Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "New Mexico cybersecurity leader calls for quantum safeguards while state inks deal with major player",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxORi1oMExCYXJyS1dwWFZtaHV4cFBDc2pOVE1lN1RheGFkWWtsZ2ZfOURQRE9ya2Qydnd2UFdpRFItczFSRmVLOVhLaHlSc1NMZlQ2Njc1ZGFGRjE3VXZCd2g1VjJORW41b2pDZ1RTVGs3T1Y4cWhGYU9OdVRtVVZGZW51TXlGNWI0SlJqZVBmc3poOFlpblFtTTBhWDk0Z3BJSUVoaE1fRTlEOXZVSlZGbjEyY0ZlR0ZzWTN1U0tRcjc5VVpkNlBkaUEzcEhtUQ?oc=5",
+        "domain": "sourcenewmexico",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261008T202710Z",
         "source": "GoogleNews"
       },
       {
@@ -34166,21 +34166,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Cybersecurity Fair to Focus on Protecting Personal Information, Data in Age of AI",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPN1lqRUxQUjZxWlRoeU5QdkJyRjI1QlAwSnVfTlM4V1c4YUhBUXNLTEs0ZDIyT2xkSWhxd0NaLTBoUmJfaXZJUkg3dHhRdDNDbG5EOVFWN3hQMktaZHd1MVpPS0trVmVNZVpDTm84ellQQ1Fpc1QzTVQ5eTZlcFJlaXJXU3JnT3hZM3h4SDhaVUkzX0cxeFQ2V0J1RWhneXdPYVpHNnVDcTJrXzFFLW11Ml9GR0Nod2JjYnA3NUstNmN0eVUwSHVLRF9CRzJDUQ?oc=5",
-        "domain": "calpolypomona",
+        "title": "Cybersecurity Awareness Month 2026: Training for Defense",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYzBJVVFoUEhBaVI4VEJ5SUc2TldHb1ZrSzRBTEdtbllLV08yNkpqcGNETFQ4OTJaRlpyUDhTSGZTNUxwZko3OUcxN0YtbldnbjRNeFVMYVE1WWVQRkxRcTUwdFpHYUpfbHZDcERFTVBrVU1DQW1rNFNWb2hzdk5wTWdLU3NnZXM5dExHREpMcFFxTjBGZmllYWh1d2Y?oc=5",
+        "domain": "clarkhill",
         "language": "",
         "tone": 0,
-        "seendate": "20261007T070000Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "US, Australia warn of latest Citrix vulnerability after NetScaler advisory",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1QdFJ5SnRqRVlrUXdNSENsZ3BaLUNHcGlRVHdQUmU1blZST181LXhXaklHZFNrdFl5SzZ0XzE4N1JDSXlqdU5fbU1Qdng3SWdYOWRaZ1BST2I5VW9oRzRjU3duZTNCQlkzR3U0VUxRaGRKd3NjUFpJNS1qSGg?oc=5",
-        "domain": "therecordfromrecordedfuturenews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261005T231334Z",
+        "seendate": "20261008T161319Z",
         "source": "GoogleNews"
       },
       {
@@ -34193,6 +34184,24 @@
         "source": "GoogleNews"
       },
       {
+        "title": "US, Australia warn of latest Citrix vulnerability after NetScaler advisory",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1QdFJ5SnRqRVlrUXdNSENsZ3BaLUNHcGlRVHdQUmU1blZST181LXhXaklHZFNrdFl5SzZ0XzE4N1JDSXlqdU5fbU1Qdng3SWdYOWRaZ1BST2I5VW9oRzRjU3duZTNCQlkzR3U0VUxRaGRKd3NjUFpJNS1qSGg?oc=5",
+        "domain": "therecordfromrecordedfuturenews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261005T231334Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Guilford County IT Shares Online Safety Tips for Cybersecurity Awareness Month",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZjNpMUFTeG9sQkdyVGwzaVRKUElJVXhSczNjUnZHZENqODc2cUVRSXk2LWVMVmotQ2ptNVM0TVdKWmU4OUFhbUxGdUtuQnBlWnp1cHNnX25yNU5XaUVtMDQxbE1HWTg1eW9mT1VGTE91VGd2cl9vVDUzMW80Q2picjdRRnRMc1NaVjJqWmluWkY1MVdmVngzaEJyZHRUM0llR2ZaOUV6UFh0ZTlVZUxDamkzYkRHTUNIeU16VjhxN0UwWWJGS1dCN3RjVVd4blJVVlJOeg?oc=5",
+        "domain": "guilfordcountygovernment.gov",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261009T190519Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "NSA recommends adoption of zero trust controls to improve cybersecurity of essential functions",
         "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQZWg4OGRJWDlfRzlhbFF5LWZLZmRaeTFxSVE1VTZjYXdyN2dmaF9Pc01iTXdLSHVkMU93WHV0T25GdzJmSWJabEZ0ckoxUk8zbnkxQjBjbUczNGV6LXVJdmpzYmxsa3d0dEp3dlJNY3J4S05RMENTUldsVHdwLW9wS3hwSkV2Mm43TmNxbktCRlg5RU53bEI3eEdkSjJwZXMzZk5oWmpBaGZzWU9aV1RzSWRFYnBQSjNyY2xwX0FhX2NkY0R6bWgtRFl3?oc=5",
         "domain": "americanhospitalassociation",
@@ -34202,39 +34211,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOcTFGdDlkaV94QW9zX3psbl9wTktqNlZpR214UjB0RVVoa1M0TVdGX09kYS1xeGRwdTI5OFB0X3podmJRWnFFc3haenVpeVdaXzFXLXdEMUVDdjNQZTJWMDBINU5sT1FId2Y5U0hyLTN1ZlN2cjRtYWQ4bnNOdldVcWlB?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261002T170200Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Ransomware gang targets FlyDubai - and says it has Boeing's code",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPM0JBN2FMTDMwa01hZmJhcWdrSlVBc0R4U1ktNnl0Q2hXcWx1MGE4ODZTQ3B3M0lkRWcwbERadlIzV0VXSTB4cDRWei16QTlQaGMwd3h6WDBkTi05UUkwaGVoSFI1aEdPbi1BOENRRExkZlB4Nko4bHRfakt2dW5uMDk0YlFpV1dpLUlUR2Nzbm1nRVh4c1VBRGhDREItb1BxQXZvQ2pRRWI4RGEwb3Z1OGxVV1NDYVd2ekNVWDhWcV8zWDA?oc=5",
-        "domain": "insurancebusiness",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261007T162842Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "New NetScaler Zero-Day Exploited in Targeted Attacks Can Knock SAML Deployments Offline",
         "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9iWnlpLXdHTS1hVVJMOGRUZEFtRGRsLUpMX2RXeHlVckh0cjNZMDNBVkFicFdseEFsMTgtWWt4Vkl6ekFuNWZzMUNPMy1nbEQ1c2M5cjVrSk4wUkh2NkxJLU5hUmQ5ZHR2VTVMbHNfNHBPQmpWYTNuTHdRTjF1VnM?oc=5",
         "domain": "thehackernews",
         "language": "",
         "tone": 0,
         "seendate": "20261005T064000Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Saber Healthcare Ramps Up Cybersecurity Measures After Late-July Attack as Private Data May Have Been Compromised",
-        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOT3FmUDNPa3Z5R3I3d3JxWm5RZHRHenNtTnk4OXItb2FvTVFENzNNdUx6aHRkWEM3RU5hNWE3U3FITkdjUWt0MjF4eUNLbmg1eEJEdHJaTUxORldYRW5qNlh3bnhkUXUxczlZVVBRaTYwREthYTZhbk1XWVVEV1IzMzBUVmFlZmFRY1ZQNVdiWk1aRXN4dEM5QUZJaEREd1JxWGRLT1lzdi1rN2Y4Nm1VcjFuUkxfREEta1ZZLUF4R0VSWHdNUzJ6dzdqeWdDdHA1WFlweW9yRmNUWnZFSXBjVDRPaTUwWk9m?oc=5",
-        "domain": "skillednursingnews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261007T220000Z",
         "source": "GoogleNews"
       },
       {
@@ -34274,24 +34256,6 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Exclusive: Anthropic's new plan to protect critical infrastructure",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPaUhqYlFvYUhvdUZPa283VmtJSmRzTWVyYjJyNFhsVG9tQ21rQzJBVVViN1JGdkVfZjBDVThkZk9HRXAtdk1sbm9seEh5ekYwOEpBTXA2Q2loRF80QXAyYVpmVUprNjJwQkx3VFJ6UEozUWNSTVBwWmhFRGVtbS1xV2hRYVN6ZXM?oc=5",
-        "domain": "axios",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261009T083813Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "New Mexico cybersecurity leader calls for quantum safeguards while state inks deal with major player",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxORi1oMExCYXJyS1dwWFZtaHV4cFBDc2pOVE1lN1RheGFkWWtsZ2ZfOURQRE9ya2Qydnd2UFdpRFItczFSRmVLOVhLaHlSc1NMZlQ2Njc1ZGFGRjE3VXZCd2g1VjJORW41b2pDZ1RTVGs3T1Y4cWhGYU9OdVRtVVZGZW51TXlGNWI0SlJqZVBmc3poOFlpblFtTTBhWDk0Z3BJSUVoaE1fRTlEOXZVSlZGbjEyY0ZlR0ZzWTN1U0tRcjc5VVpkNlBkaUEzcEhtUQ?oc=5",
-        "domain": "sourcenewmexico",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261008T202710Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "Exploitation of Citrix NetScaler Zero-Day Hits Appliances Patched Days Earlier",
         "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOY0JKQUt4VHNuQUhMaHk2bTZROEFCT3ZnUWwtdUpMMEN4VzFDTUNXZ0dVUTk5aDN0VkM2eTNwSFd4bXRJT0pkdE1RR2hveVJtMm1ZUlVvSl90LXp5RFZKckdUejZmcmJRdjEwVlNjTUlsU193d2xLcUNBbF8xXzhXNVUxYnJ0cHZJdFhySGZWR0EzckdXeEsta1E1bDQ0UVU3ZWstcFFqeEI4UkVC0gGyAUFVX3lxTFBleThwblFuaVNfV2ZzdDgwamlEdHkyTDlfZzJheWhiR29nZzlJOWFlMHA5a0FvTEg0X3RubWNCdmFwRUdCckJHMmxGczJkaDZmNnZZRWdFYkJGSDhoaGJGNndyX0t4QzUwQjRBd1FBOHpDakZEcDQ5VkdmT2UySDJnal90bnc2U0VDdkxNRmp4cWRZd0pjai1KRzk2OGhkRFM2QlBuSzRobWhLWVJUQW9fZ0E?oc=5",
         "domain": "securityweek",
@@ -34307,15 +34271,6 @@
         "language": "",
         "tone": 0,
         "seendate": "20261006T065800Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Why synthetic media is a new kind of cybersecurity threat",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSy1wOHllMXZsZXhsQW9kMVVBdXpxeEJSYWdxSmozb1YxT1RrSWJNcktQUkJGVU9UcDZVaXZtNV9zZFhjY3pyUVp4aGxwdW0zcUdZSWdhRDd3YzdEcWg1eU1zbzZzSllYVm51bGdQWk9EUmdsc3RhVXpxWlhuZnFhajI3Vm11cWQ5RE5zZHQxZTd5SFc5a3lfUjlMZGc1Ul8xdUlFekVhSVotSWtRTm5PWGM1WEw?oc=5",
-        "domain": "theworldeconomicforum",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261008T094904Z",
         "source": "GoogleNews"
       },
       {
@@ -34337,21 +34292,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Japan and cybersecurity: What’s behind recent attacks and what’s being done?",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUnpHd05WRW05OTZvaXdTd2o0SGlZbGZCMHdDb2dQUkNGLVJ6STNTbWg5cUlKZ3MzNU9zYVZ5T1dkbVF4UDdmN3IzSmZ6TlBjeHhSdUhFUDIxNGE4VmFXS2ZoQlFfanJLWVJCZ2RpUldlRUFZVXljTUxGWV9YeG1VNlJB?oc=5",
-        "domain": "thejapantimes",
+        "title": "Why synthetic media is a new kind of cybersecurity threat",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSy1wOHllMXZsZXhsQW9kMVVBdXpxeEJSYWdxSmozb1YxT1RrSWJNcktQUkJGVU9UcDZVaXZtNV9zZFhjY3pyUVp4aGxwdW0zcUdZSWdhRDd3YzdEcWg1eU1zbzZzSllYVm51bGdQWk9EUmdsc3RhVXpxWlhuZnFhajI3Vm11cWQ5RE5zZHQxZTd5SFc5a3lfUjlMZGc1Ul8xdUlFekVhSVotSWtRTm5PWGM1WEw?oc=5",
+        "domain": "theworldeconomicforum",
         "language": "",
         "tone": 0,
-        "seendate": "20261008T090300Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "As frontier models go rogue, colleges beef up AI cybersecurity education",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbUsyWDlhNlJGNnJBV1l6Sk5uZGdUTzI1MlZaOUFOSXlmSEpmYXVUUmR0T2d6bDhKVnJETFhSZXB2SmEyOU44QU9iU3hJMHA5NzVCdmVCNmp4Z21QOHQzSUNjQXJpRUpZZHppRzluN3JQRmstM1lpWG13bVJrMjhTc3EydklBY1Z3QmVjdw?oc=5",
-        "domain": "cybersecuritydive",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261009T124500Z",
+        "seendate": "20261008T094904Z",
         "source": "GoogleNews"
       },
       {
@@ -34364,6 +34310,33 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Exclusive: Anthropic's new plan to protect critical infrastructure",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPaUhqYlFvYUhvdUZPa283VmtJSmRzTWVyYjJyNFhsVG9tQ21rQzJBVVViN1JGdkVfZjBDVThkZk9HRXAtdk1sbm9seEh5ekYwOEpBTXA2Q2loRF80QXAyYVpmVUprNjJwQkx3VFJ6UEozUWNSTVBwWmhFRGVtbS1xV2hRYVN6ZXM?oc=5",
+        "domain": "axios",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261009T144508Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Japan and cybersecurity: What’s behind recent attacks and what’s being done?",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUnpHd05WRW05OTZvaXdTd2o0SGlZbGZCMHdDb2dQUkNGLVJ6STNTbWg5cUlKZ3MzNU9zYVZ5T1dkbVF4UDdmN3IzSmZ6TlBjeHhSdUhFUDIxNGE4VmFXS2ZoQlFfanJLWVJCZ2RpUldlRUFZVXljTUxGWV9YeG1VNlJB?oc=5",
+        "domain": "thejapantimes",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261008T090300Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "DOJ charges ransomware recovery CEO for secretly paying hackers",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9yZWdTZ3hmWnppV1Nlb3kzNFNmekdDYlBHRE9HWG5uMldkMmh3ZUlPYnJQQVZ2UE8wUlYwZ1k5bG4xWW5wa0c1bkFUWW9LUFdlY2Zwd053M3IwWlk2Rkt1TGVaa2R5QQ?oc=5",
+        "domain": "therecordfromrecordedfuturenews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261008T171357Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "What Whole-of-State Cybersecurity Looks Like in Maine",
         "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQb3NRYU11NTZ1VlY4ZzFuR016ekNIYTRLeWZnNllwT19PT2xJdnZUUUROczlWU1kxZnR5N3Y4TjZVVWhZRnpKb3FwVzdFWVpaT1hGWUpYbkpueVpEdk9WVHpGcjl0akdCUTV3YTNfSmI3WGZESGRYTFZMTHBRZE54TV9sRWdVcVNrMHZKRVNBTQ?oc=5",
         "domain": "govtech",
@@ -34373,12 +34346,21 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Carson Examines National Cybersecurity and Artificial Intelligence Through New Scholarship",
-        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPRmczcmdpWXJkaGdjNzVHcDl1WjVPNTNXV3JUYmx0c09FUE9Sd2J2TG1sZmVGOTZGRGhfVlNzenp1TklJTFBuVlBJWWtFaXZqQmZEQ3djaXRIX0tqYWZvcGdOQU5rLVVLcHpsc094MlBlMWFkUGJqdXdtemQ1R0VHMlRuM2NoTFg1dl9pZzkxeVZGYUw0YWo3ZDVveG40Y19FR1o0XzMyV2U1YzRxbGZES3FDU0V4TGhtM09PLXJFd25oUGd1T3o1WXVqNzYtU2h6VXdVTEhGcC0tU3AzM2ZhMw?oc=5",
-        "domain": "samforduniversity",
+        "title": "Florida Cybersecurity Firm Head Charged With Scamming Victimized Businesses",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1US3NXSTBocVRGMk52U3lKeHZacGdUcUNwNUxldk51RUVoUDUyYzJiT1AybnltdWdVdjkxX1ZJcHF2LVBzNkNlNFYteWQ2NDNlWFVfRThqUnNaV0F1NkxEMzVremI1RURJMEhra1hONWszQm5VZHU4cA?oc=5",
+        "domain": "insurancejournal",
         "language": "",
         "tone": 0,
-        "seendate": "20261007T215035Z",
+        "seendate": "20261009T033420Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "FBI seizes domains linked to China-nexus botnet",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOczNIU3diNlZkZzF6Z1FaZGdVREhhS1BQOUZ3cmJ2ekZpWjlVOGRROGVFV3NMa0RfOFhOSGJZY1VGNm42R0llQTdVRkFWOGtteGk3LXdkdU9VRVE1dHBZa3BraDZHclFrTVAzVVlKNnRJRWhhd0YxNHJTdk9VeFlLM1R5ZFF4RmJuaEhRSEtiNDNYLUVzN3c?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261009T145855Z",
         "source": "GoogleNews"
       },
       {
@@ -34391,45 +34373,45 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Ransomware Is Moving Faster Than SMBs Can Respond",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQeFpFUkRkUUUzTm1mMGw0Vy02Nm9oR19nWGdSQ0s1bnVOcnVBTFF0SFhoS2Y0TzVveGYtTm9PdzhpUGxJVE4yaTUteGhjcDJ6YmNfdjR4cVNaeGtZZnlqenNJTVZaMFgzdVlPSkNiRVo1RkxHNEhJQTJPUzZFRFJwaml0eFpweGZtMWdOU3N3?oc=5",
-        "domain": "biztechmagazine",
+        "title": "Princeton says cybersecurity incident exposed personal data",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVmRHQ01pRk9tUGg4VFpKbTZGbGgzMEVUeUZjNXVqQk5xR2I0bk5YRTBqWHJnR3lmMlhiR2JoR1JQRUthSkFjTzBwUGRGVHdCaHZ2YllyVENoNHNoSmQ1bU00TVVvYWpOOW1XT1Q0VXpzVDZpckJIQlRHWGRhcDFPZFFnQkpYajIzQmVvMEwwYU1fU185UWFtQ09lZGxGZm1qNzdUdtIBrAFBVV95cUxNd3lEaktyRUN2aHlVVjVTZGNXTldPNXZCa3d4QmcxRzhnOERTRDQwLUplNW9rd2p0b3poMC1QQ1FycnR3ZjNKX2tIcEs2VHljX05pOTRyNmdaeGNhLWVXZWxneGJOUEx1dklKV3c1ZHU3SFJUSXNIY3lmMG1hVzFuZFBuc0xOai03bVZpSTh4amdjM3hMRGN2dVVnSlpuN0oySTdqWWRBdndkN2ZU?oc=5",
+        "domain": "nbc5dallas-fortworth",
         "language": "",
         "tone": 0,
-        "seendate": "20261007T191933Z",
+        "seendate": "20261006T024638Z",
         "source": "GoogleNews"
       },
       {
-        "title": "ThreatsDay: Ransomware Affiliate Betrayal, WhatsApp RAT, Exposed Hacker Tools and 12 More Stories",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1EZHNUT1hseDNrLTgtaG1UVDhJS1QxYzkxdm5acURNbUliTU13c2FpM0VUdWxWZmRUeGNqdnk0ekJGb3JpSGplNzhMdVJlOVhGQlFyVGNTcmdXUkVQdjFyNFA2NHFrT2NJMHZGQ3EwRUtmWk9TQ3poU0lR?oc=5",
-        "domain": "thehackernews",
+        "title": "Ukraine’s surprise robot offensive exposes a vulnerability in Putin’s war machine",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdTFtV1pwZjU2aTNjWFRaQWRScS1vakQ3R3hXUXJKXzdtX2taOEhjUU9RdjhCUk1nYW8yNlhWOTdFbmlWRjVOVjRZYVF3M1hWTTdsUHBlX0E0cUV4dGRHNEpOUmNQRFVwcE1SMkIyNHNzX1UyMFhxaWdHMU1fX1pESFR1RDI3VHI5YzNXetIBkgFBVV95cUxOSlpxRWpGdkRZeVNaYkM1bTlzT3ROMWM3WjFTRlFHZENhOWx4X2hyNV9QNkx3YWROakhRdURnUDZyVXNWNVRVZmE3STJINWZOdUF0RGZOWHVMcTMwWjkxUEd2TUYyenY3eGJOc0pfa2hKaUZ4Y0tleDFtNDNXX2hVa2c4YVozeW5sMUt1SnZLRF9lQQ?oc=5",
+        "domain": "cnbc",
         "language": "",
         "tone": 0,
-        "seendate": "20261008T175800Z",
+        "seendate": "20261004T050001Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Exploitation Hits Rejetto HFS Vulnerability Discovered by AI",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOajY5UExndkV6Uk1QSERIMVBVVTEybWoxZWJJRnp4TXBUN3VsdGNVVmU5MzI0SkdlWU1RN2xGRm40VFFrRGp2aXNfT1c4QU82cFRndlhfZ2FSUmJIaDdXNEtkanA3dGw2T1hOR3h2eTBXU3ljaFZaMHFYVlBiTkpPU1I1TVJfaTBLVXJyck94enhDNVVw0gGaAUFVX3lxTE1TRlFyWXBMc3gzdUYwa09lTVBjYXg2MkZYRDJKdk0yNkFwdkRDNDljWHNZTXRNRmM4NXFrb1J6MVRSNW5oWlFKTFJuMG5URXcyOXotM1k0aHJURTdnMGhLVndVWTJvaE9Ub2R1dC12NFF5RGp6bVZSMFZLQU1UZjk2cmpVbVkwQ09QNWREalVSVFNnaGhrZmpXeGc?oc=5",
+        "domain": "securityweek",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261005T110005Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Students, officials discuss cybersecurity legal barriers at summit at LSU",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMlBaZjc4OXRXemdfdzdyWjlSSWJVbHBtS25MdGNaVEZzWkpTTDVmZzRqSFNPcWViZS1VY0Z0djNxeHh2ZEZzdTZtNUN1MjZuVVpwaS1RaHlNN2RNVS1ORFNNc19pVnNxenAyYUs2TGFhYTlJTmF6dEZxalVKOWZCUVU3bG1HekhLeTR5YS16YUxlVGNLOWNXT080UU8waS1s0gG0AUFVX3lxTE5LNHVMbFNfMHhvWll5V2plMzNkQ2JEWGY0cm44X2tLSFFNVkZadHZ1WmtYcjZMVUdNck5CaW93QmZtOFdzd2lxeTYyQm9HYUtkR2tDR1F1dmFQdUEyU2FERjRqd3dnR3BUYmZDZm1UY19GQkQwYW0yYmRDUUpieU9RSDFhb1BPaGZtVjdjc3J3bXZnclpWSWphb0xfdkJNTV83SWRJbEtKVXZxeGhJdW4xLVVZRA?oc=5",
+        "domain": "wafb",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261008T215400Z",
         "source": "GoogleNews"
       }
     ]
   },
   "entities": [],
   "events": [
-    {
-      "title": "Fortinet warns that critical flaw in FortiMail is facing exploitation",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYTZ5WUg4dVdmZlR2dVd2QUxtMmdXTzVwNFY4N0VYRXNuVmdSMVdFX2Nldkc4c2dwSEFhVVRuMTJtQUFxSnRPZnotejdVbGRfdzJ5WlVZbDYzT1NuSTB1S2ZQdHZQdXF3bExLd3A1dWM4cHJUTm1pSFoxY2lFVEs5VDZIZjNoSzhqS0Q0YkNfY0hYbjZUMFYw?oc=5",
-      "domain": "cybersecuritydive",
-      "language": "",
-      "tone": 0,
-      "seendate": "20261002T163056Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Hundreds of Wisconsin election offices not using cybersecurity best practices",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNLW94eEcxbFlCLWNuNktNeUk5cmhPcU9iTTltSGhKZ1pEalo1NllsalFDbkJvSjF1VnhwSloyaVc1ZHY2SEJPanlZRE9yRjNoX1BKUHU2bDJyNzZrQUlGdHp3WVdGQzB1WUsxWURsTUdHbHp5UXp3UXR6MC03cFJpaXNCUHJNdXdQVXNjODFsNDYwbHI1TUhfeno5akJvOGRrM3RMcVZJUGxqcFlQ?oc=5",
-      "domain": "votebeat",
-      "language": "",
-      "tone": 0,
-      "seendate": "20261002T144500Z",
-      "source": "GoogleNews"
-    },
     {
       "title": "You Won’t Hear About These, Even In Myths (Atlassian Jira, Confluence (and more) Pre-Auth Arbitrary File Read CVE-2026-21589)",
       "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPdlYtREwyaF81U0JhVENrOEhTUzFHU0lGZVFsUUtKM01SVkJTWUszNjd3cTlPTVVaeDNSckQ4RXpzUDFJTm4ydEVPYjY5QmJONFhkSmhxMy1ZQWpWMVZ0Q01zZnF6VnAyYnN6VUd0cGpjbGNXNnpSclBGU1hqaUpxRC1wR2V6RUpFOWtnUmVTdjA0Qk4zNGFVZ1BaTnAzVl9KMy1iVnFoV3JKY1NLSzJvZkh3YWdQaHVSMnRKMEJLckNjZG85YXExS09jRjRIalB2SDhhVUprdFRXRkxDUzFN?oc=5",
@@ -34458,21 +34440,21 @@
       "source": "GoogleNews"
     },
     {
-      "title": "University of Illinois Chicago affected by ransomware attack on medical school",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9fYTdySVJjWjdzazc5RWRYQVlKVE1rUmpiS2xoTWtmb2VfMXp6S1M2N1ozRE9CbmVSeGw2M0ZHcnRkOWVlOGk4d2Y2Q25xLXBWU3JnNnl4c1ZoQUZaSksyZERHOUlqU3B3aVhQNHNBVQ?oc=5",
-      "domain": "therecordfromrecordedfuturenews",
-      "language": "",
-      "tone": 0,
-      "seendate": "20261006T020746Z",
-      "source": "GoogleNews"
-    },
-    {
       "title": "Introducing the New Small Business Cybersecurity Support Program Finder",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQOU5uWVlEY1RSMmpEUjZtRDBOdC1sS2pWdjc2cHJMckQtSTY0ZzFXNFZrdzh4UmwxSW50alpmSGlFeERVLUNVODl4bUVoNVFNRDFXZy1DZ0ZiY09EQWJkbF9aY3VtREVlYllCUEtqZDZ1bFBfVFlpX3duYkpubnhPWGQ3dVdsXzVvclFmQ05EdWVUa0xGdnVweE1MYTBnVlpTZmlNOTNudUQ3ZTJVZGFwRGpCQVhmclN4?oc=5",
       "domain": "nationalinstituteofstandardsandtechnology.gov",
       "language": "",
       "tone": 0,
       "seendate": "20261005T120000Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "University of Illinois Chicago affected by ransomware attack on medical school",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9fYTdySVJjWjdzazc5RWRYQVlKVE1rUmpiS2xoTWtmb2VfMXp6S1M2N1ozRE9CbmVSeGw2M0ZHcnRkOWVlOGk4d2Y2Q25xLXBWU3JnNnl4c1ZoQUZaSksyZERHOUlqU3B3aVhQNHNBVQ?oc=5",
+      "domain": "therecordfromrecordedfuturenews",
+      "language": "",
+      "tone": 0,
+      "seendate": "20261006T020746Z",
       "source": "GoogleNews"
     },
     {
@@ -34512,21 +34494,21 @@
       "source": "GoogleNews"
     },
     {
+      "title": "As frontier models go rogue, colleges beef up AI cybersecurity education",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbUsyWDlhNlJGNnJBV1l6Sk5uZGdUTzI1MlZaOUFOSXlmSEpmYXVUUmR0T2d6bDhKVnJETFhSZXB2SmEyOU44QU9iU3hJMHA5NzVCdmVCNmp4Z21QOHQzSUNjQXJpRUpZZHppRzluN3JQRmstM1lpWG13bVJrMjhTc3EydklBY1Z3QmVjdw?oc=5",
+      "domain": "cybersecuritydive",
+      "language": "",
+      "tone": 0,
+      "seendate": "20261009T125355Z",
+      "source": "GoogleNews"
+    },
+    {
       "title": "Reps. Carter, Thompson Reintroduce the Cybersecurity and Infrastructure Security Agency Securing AI Task Force Act to Address the Evolving Challenges Posed by AI",
       "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxQcEhSLWp5MWwyZHdob0N4X055Wm9BR19WZFlNZjN5c1R0MUxEY2NIX2ozbVNZQWhGckhPY2pqNXdCZkpqREo4cDVTaDJNeV81c0h4eWhhNXRZQzhzTThxLXA3dm5kUHVheGNyOW5OeGgtZWdaVUpfU29nV2tnaGpES2pzakxzdWF1RFlkMndTQU00S25OZFQ3SVdSa3d0Rmp3Y0ZmdU55aXpQSjM0aERjaTRoTDJyVXpCS3JHYmJ0d20wMExpbVpLUWZJRDlsYWNxMTlkYVFYb01talY4YkZzQ3dQd1hCQzNYaDRCSS1LMTBVcmhwTGVMUEl0bDVKSENlOFBiSi1FX2RsSmxDczJQMFVDcVIybFpZVVRNRmVsbDhWbE5GcjlwR1FCU1pyeW90R2V3bm5LTG8?oc=5",
       "domain": "househomelanddemocrats.gov",
       "language": "",
       "tone": 0,
       "seendate": "20261008T191725Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "A Nationwide Consortium Is Needed to Address Cybersecurity Risks in Agricultural and Food Systems, Researchers Urge",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUFVmcWpNUjdicWJEeTY3dVE2cDh4ZmdIcGlrU3hqX0l4LUd3TWZKRC1qMm51RWlYMi1sUlljWmtfTm90c3BIRi1IX3M5QjRCMHl1NHFsbzZmQmx3bTBiUFc3NUNzSHZEZGRaN2hOeFZqTTFNcldZRmxNc1I2NFN6REtVT2JacWxpWTZpREJmUmxxUXFYTDZPN2tyQTBYWm5iV2xSbGVuRlFtaHBDRk1IM0I1Y0hIZTg1WjZaV1JFclQ?oc=5",
-      "domain": "ucdaviscollegeofengineering",
-      "language": "",
-      "tone": 0,
-      "seendate": "20261008T212430Z",
       "source": "GoogleNews"
     },
     {
@@ -34539,22 +34521,40 @@
       "source": "GoogleNews"
     },
     {
-      "title": "Part 1 – Cybersecurity journeys: I didn’t plan this",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNaW1YMU1WZWVnU0lVMktkMnpiNEljM3lLT3FCOHpiSGhGWFRMcmhIZWFZdDJ4d1AwS2Z6NGk1ZlAxZXlVYjFrNzVQcWxGejFWQWUzaHYzRFJHQ09FZXBWS0Q3emVCMUloRTkyU0hYTkM2cVZWbnJNdnBQcU9wWEIyUU5GRUFjUHI5ZzdRcURtdw?oc=5",
+      "title": "Building your AI vulnerability harness, Part 1",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZWhiVWtMdEdQYmt1ek8yblpKZ1Q3el9PdkhkYzdlS19GMmhDNGQtN090T0luRWxHM3psV25hZWliZ2QzZVptMWNJdmhlakZZdXhTcGQxcFhFN3JPeFBXZDdOYUpTdkFVRjk1STI5UWJveUVNa2sxRV9SY0VrWFNBMXlFTE5xZ3o5eTVXMw?oc=5",
       "domain": "amazonwebservicesaws",
       "language": "",
       "tone": 0,
-      "seendate": "20261007T162119Z",
+      "seendate": "20261007T214943Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "A Nationwide Consortium Is Needed to Address Cybersecurity Risks in Agricultural and Food Systems, Researchers Urge",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUFVmcWpNUjdicWJEeTY3dVE2cDh4ZmdIcGlrU3hqX0l4LUd3TWZKRC1qMm51RWlYMi1sUlljWmtfTm90c3BIRi1IX3M5QjRCMHl1NHFsbzZmQmx3bTBiUFc3NUNzSHZEZGRaN2hOeFZqTTFNcldZRmxNc1I2NFN6REtVT2JacWxpWTZpREJmUmxxUXFYTDZPN2tyQTBYWm5iV2xSbGVuRlFtaHBDRk1IM0I1Y0hIZTg1WjZaV1JFclQ?oc=5",
+      "domain": "ucdaviscollegeofengineering",
+      "language": "",
+      "tone": 0,
+      "seendate": "20261008T212430Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "Cheapskates wouldn't pay for security help, got hit by ransomware, and went bust months later",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPLWsyRW1sbFV4TFZiVmpDTTY3eFZHN1NXRldHYi1qVG56dlduOV9Ia1lFbU9JbENKSHRYMjU2VmRCMzYtcW1uMEw2U1dJQUJhdG9rNHFZQ1NmRXI3SjExcnVrU0VrRm5LZTBleUktZ1FaSWtPa0hScW11X2t4Mm5yTktvV2RpaWdhLXc3dDZFLVEtRmJNMkVfVV81WDNoRlo4b29aTENvbkdRVVdnbXRxdkdwa21iTmJvSkJBejJyQmZWNkltNm0wcGlmTHhoRDdmdElGbXpkWVVhTHlfeHBn?oc=5",
+      "domain": "theregister",
+      "language": "",
+      "tone": 0,
+      "seendate": "20261008T081500Z",
       "source": "GoogleNews"
     }
   ],
   "timeseries": [],
   "llm_summary": "",
   "early_warning": {
-    "issued_at": "2026-10-09T13:52:19.789314+00:00",
+    "issued_at": "2026-10-09T22:56:17.673911+00:00",
     "horizon": "next 30 days",
     "classification": "global-exploitation-pressure-not-organisation-breach-probability",
-    "score": 48.8,
+    "score": 48.0,
     "level": "WATCH",
     "confidence": "HIGH",
     "confidence_score": 100.0,
@@ -34680,7 +34680,7 @@
         "available": true,
         "score": 25.0,
         "frontier_count": 40,
-        "global_above_threshold": 17298,
+        "global_above_threshold": 17300,
         "threshold": 0.1,
         "accelerated_7d_count": 0,
         "maximum_7d_delta": 0.0,
@@ -34693,7 +34693,7 @@
             "percentile": 0.99991,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-10-08",
+            "date": "2026-10-09",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2021-45105"
           },
           {
@@ -34702,7 +34702,7 @@
             "percentile": 0.99999,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-10-08",
+            "date": "2026-10-09",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2014-3566"
           },
           {
@@ -34711,7 +34711,7 @@
             "percentile": 0.99984,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-10-08",
+            "date": "2026-10-09",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2023-50387"
           },
           {
@@ -34720,7 +34720,7 @@
             "percentile": 0.99979,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-10-08",
+            "date": "2026-10-09",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2014-0195"
           },
           {
@@ -34729,7 +34729,7 @@
             "percentile": 0.99978,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-10-08",
+            "date": "2026-10-09",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2014-3704"
           },
           {
@@ -34738,7 +34738,7 @@
             "percentile": 0.99977,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-10-08",
+            "date": "2026-10-09",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2015-7297"
           },
           {
@@ -34747,7 +34747,7 @@
             "percentile": 0.99971,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-10-08",
+            "date": "2026-10-09",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2012-1456"
           },
           {
@@ -34756,7 +34756,7 @@
             "percentile": 0.9997,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-10-08",
+            "date": "2026-10-09",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2022-42889"
           },
           {
@@ -34765,7 +34765,7 @@
             "percentile": 0.99969,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-10-08",
+            "date": "2026-10-09",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2019-0232"
           },
           {
@@ -34774,7 +34774,7 @@
             "percentile": 0.99964,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-10-08",
+            "date": "2026-10-09",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2024-29826"
           },
           {
@@ -34783,7 +34783,7 @@
             "percentile": 0.99964,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-10-08",
+            "date": "2026-10-09",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2024-29825"
           },
           {
@@ -34792,7 +34792,7 @@
             "percentile": 0.99961,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-10-08",
+            "date": "2026-10-09",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2024-29823"
           }
         ],
@@ -34802,10 +34802,10 @@
         "id": "exploit_narrative_pressure",
         "label": "Cross-source exploit precursor language",
         "available": true,
-        "score": 60.0,
+        "score": 57.0,
         "events_considered": 50,
-        "matched_event_count": 10,
-        "matched_share": 0.2,
+        "matched_event_count": 9,
+        "matched_share": 0.18,
         "independent_sources": 35,
         "unique_cves": 5,
         "cross_source_baskets": 2,
@@ -34817,7 +34817,7 @@
           },
           {
             "id": "mass_scanning",
-            "independent_sources": 0,
+            "independent_sources": 1,
             "cross_source_confirmed": false
           },
           {
@@ -34827,7 +34827,7 @@
           },
           {
             "id": "campaign_shift",
-            "independent_sources": 6,
+            "independent_sources": 4,
             "cross_source_confirmed": true
           }
         ],
@@ -34902,19 +34902,6 @@
             "cves": []
           },
           {
-            "title": "Ransomware gang targets FlyDubai - and says it has Boeing's code",
-            "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPM0JBN2FMTDMwa01hZmJhcWdrSlVBc0R4U1ktNnl0Q2hXcWx1MGE4ODZTQ3B3M0lkRWcwbERadlIzV0VXSTB4cDRWei16QTlQaGMwd3h6WDBkTi05UUkwaGVoSFI1aEdPbi1BOENRRExkZlB4Nko4bHRfakt2dW5uMDk0YlFpV1dpLUlUR2Nzbm1nRVh4c1VBRGhDREItb1BxQXZvQ2pRRWI4RGEwb3Z1OGxVV1NDYVd2ekNVWDhWcV8zWDA?oc=5",
-            "source": "insurancebusiness",
-            "observed_at": "20261007T162842Z",
-            "baskets": [
-              "campaign_shift"
-            ],
-            "terms": [
-              "ransomware"
-            ],
-            "cves": []
-          },
-          {
             "title": "New NetScaler Zero-Day Exploited in Targeted Attacks Can Knock SAML Deployments Offline",
             "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9iWnlpLXdHTS1hVVJMOGRUZEFtRGRsLUpMX2RXeHlVckh0cjNZMDNBVkFicFdseEFsMTgtWWt4Vkl6ekFuNWZzMUNPMy1nbEQ1c2M5cjVrSk4wUkh2NkxJLU5hUmQ5ZHR2VTVMbHNfNHBPQmpWYTNuTHdRTjF1VnM?oc=5",
             "source": "thehackernews",
@@ -34941,10 +34928,10 @@
             "cves": []
           },
           {
-            "title": "Ransomware Is Moving Faster Than SMBs Can Respond",
-            "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQeFpFUkRkUUUzTm1mMGw0Vy02Nm9oR19nWGdSQ0s1bnVOcnVBTFF0SFhoS2Y0TzVveGYtTm9PdzhpUGxJVE4yaTUteGhjcDJ6YmNfdjR4cVNaeGtZZnlqenNJTVZaMFgzdVlPSkNiRVo1RkxHNEhJQTJPUzZFRFJwaml0eFpweGZtMWdOU3N3?oc=5",
-            "source": "biztechmagazine",
-            "observed_at": "20261007T191933Z",
+            "title": "DOJ charges ransomware recovery CEO for secretly paying hackers",
+            "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9yZWdTZ3hmWnppV1Nlb3kzNFNmekdDYlBHRE9HWG5uMldkMmh3ZUlPYnJQQVZ2UE8wUlYwZ1k5bG4xWW5wa0c1bkFUWW9LUFdlY2Zwd053M3IwWlk2Rkt1TGVaa2R5QQ?oc=5",
+            "source": "therecordfromrecordedfuturenews",
+            "observed_at": "20261008T171357Z",
             "baskets": [
               "campaign_shift"
             ],
@@ -34954,15 +34941,15 @@
             "cves": []
           },
           {
-            "title": "ThreatsDay: Ransomware Affiliate Betrayal, WhatsApp RAT, Exposed Hacker Tools and 12 More Stories",
-            "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1EZHNUT1hseDNrLTgtaG1UVDhJS1QxYzkxdm5acURNbUliTU13c2FpM0VUdWxWZmRUeGNqdnk0ekJGb3JpSGplNzhMdVJlOVhGQlFyVGNTcmdXUkVQdjFyNFA2NHFrT2NJMHZGQ3EwRUtmWk9TQ3poU0lR?oc=5",
-            "source": "thehackernews",
-            "observed_at": "20261008T175800Z",
+            "title": "FBI seizes domains linked to China-nexus botnet",
+            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOczNIU3diNlZkZzF6Z1FaZGdVREhhS1BQOUZ3cmJ2ekZpWjlVOGRROGVFV3NMa0RfOFhOSGJZY1VGNm42R0llQTdVRkFWOGtteGk3LXdkdU9VRVE1dHBZa3BraDZHclFrTVAzVVlKNnRJRWhhd0YxNHJTdk9VeFlLM1R5ZFF4RmJuaEhRSEtiNDNYLUVzN3c?oc=5",
+            "source": "cybersecuritydive",
+            "observed_at": "20261009T145855Z",
             "baskets": [
-              "campaign_shift"
+              "mass_scanning"
             ],
             "terms": [
-              "ransomware"
+              "botnet"
             ],
             "cves": []
           }
@@ -34981,7 +34968,7 @@
       {
         "id": "exploit_narrative_pressure",
         "title": "Cross-source exploit precursor language",
-        "score": 60.0,
+        "score": 57.0,
         "level": "ELEVATED",
         "why": "Weaponization or exploitation language is confirmed across distinct named sources."
       },
@@ -36542,6 +36529,16 @@
           "kev_addition_pressure": 50.0,
           "epss_frontier_momentum": 25.0,
           "exploit_narrative_pressure": 60.0
+        }
+      },
+      {
+        "timestamp": "2026-10-09T22:56:17.673911+00:00",
+        "score": 48.0,
+        "level": "WATCH",
+        "components": {
+          "kev_addition_pressure": 50.0,
+          "epss_frontier_momentum": 25.0,
+          "exploit_narrative_pressure": 57.0
         }
       }
     ],
