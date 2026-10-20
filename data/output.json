@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-10-20T17:35:02.192746+00:00",
+    "generated": "2026-10-20T21:56:30.854157+00:00",
     "mode": "live",
     "sources": [
       "cisa_catalog",
@@ -19,7 +19,7 @@
     },
     {
       "label": "News Domains",
-      "value": "37",
+      "value": "36",
       "delta": "deduplicated"
     },
     {
@@ -35,9 +35,105 @@
   ],
   "live_data": {
     "cisa_catalog": {
-      "catalog_version": "2026.10.16",
-      "date_released": "2026-10-16T17:15:48.8752Z",
+      "catalog_version": "2026.10.20",
+      "date_released": "2026-10-20T19:00:31.8765Z",
       "vulnerabilities": [
+        {
+          "cveID": "CVE-2026-106931",
+          "vendorProject": "EG Secure Solutions",
+          "product": "SiteGuard Server Edition",
+          "vulnerabilityName": "EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
+          "dateAdded": "2026-10-20",
+          "shortDescription": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product.",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-10-23",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "https://www.eg-secure.co.jp/siteguard/news/alert-202610-1 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-106931",
+          "cwes": [
+            "CWE-78"
+          ],
+          "source": "CISA-KEV"
+        },
+        {
+          "cveID": "CVE-2026-96656",
+          "vendorProject": "Plex",
+          "product": "Media Server",
+          "vulnerabilityName": "Plex Media Server External Control of File Name or Path Vulnerability",
+          "dateAdded": "2026-10-20",
+          "shortDescription": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-10-23",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-96656",
+          "cwes": [
+            "CWE-73"
+          ],
+          "source": "CISA-KEV"
+        },
+        {
+          "cveID": "CVE-2026-96655",
+          "vendorProject": "Plex",
+          "product": "Media Server",
+          "vulnerabilityName": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+          "dateAdded": "2026-10-20",
+          "shortDescription": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-11-03",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-96655",
+          "cwes": [
+            "CWE-918"
+          ],
+          "source": "CISA-KEV"
+        },
+        {
+          "cveID": "CVE-2026-96654",
+          "vendorProject": "Plex",
+          "product": "Media Server",
+          "vulnerabilityName": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+          "dateAdded": "2026-10-20",
+          "shortDescription": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-10-23",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-96654",
+          "cwes": [
+            "CWE-84"
+          ],
+          "source": "CISA-KEV"
+        },
+        {
+          "cveID": "CVE-2026-96652",
+          "vendorProject": "Plex",
+          "product": "Media Server",
+          "vulnerabilityName": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+          "dateAdded": "2026-10-20",
+          "shortDescription": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656. ",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-11-03",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-96652",
+          "cwes": [
+            "CWE-918"
+          ],
+          "source": "CISA-KEV"
+        },
+        {
+          "cveID": "CVE-2026-110936",
+          "vendorProject": "Siemens",
+          "product": "Software Center",
+          "vulnerabilityName": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
+          "dateAdded": "2026-10-20",
+          "shortDescription": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-11-03",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "https://productcert.siemens.com/productcert/html/ssa-580366.html ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-110936",
+          "cwes": [
+            "CWE-427"
+          ],
+          "source": "CISA-KEV"
+        },
         {
           "cveID": "CVE-2026-102764",
           "vendorProject": "BeyondTrust",
@@ -34113,24 +34209,6 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Dangerous flaws in refrigeration equipment were disclosed months before retail attacks",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5tWU9vQUpiVDNRZUw5LTE1WVlvdF9uZ29pM25Tcmhocm9PZ1hWWFJCckZodTQyU25jVkxaUC1hbWRybVZRRnpfWm5xeGxTUGN1YURGUzhQSnRudHJxNzVlN2lPTXI4b1ZpS1Rpbk1rYjNsaktTblZ6UGlROUN1dw?oc=5",
-        "domain": "cybersecuritydive",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261013T204348Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Ahold Delhaize update on status of cybersecurity incident",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYzVQTEROWllYUWQ4c1FHSmQ3V05aZ2JIUUpxbmdndzdWTFRiMmRpNGplTkkxWEJ3UlJzUUZlT2xWYjNOOE8tTkZMWE9wYlpuUEwtWFFwTjRtRWpsUE9zdF9tcVdGVWkwaHFya0NTNW01TWtEQ1pFbUxWdl9XdWpUZ3ZCTloza2QyUVpOUGZOZmhRQWRXTHpxZQ?oc=5",
-        "domain": "aholddelhaize",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261019T150425Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257 (Updated October 19)",
         "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTUVTa0pZeTdwQS1ySmhSTV85cFBkeXdBOUFkWWFxeW9MOE9RNGtETVlwOEVXbkxxcmREUkNqVWlQNmh6VHJMMGZZTHBfdGhmTTNfaTh4S1gwMnZCdkhEdkJrYXBMb0NJOXJhT0U4R0lFVGJfYjNaREM3eFMxeU52bVdpUjhrbGc?oc=5",
         "domain": "unit42",
@@ -34140,12 +34218,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Ransomware Attacks Have Swept Japan. A.I. May Be Making Them Easier.",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQOTNCNXVKUG9UeXhyUGhiQmx1OFM4eFpHWjNTSjJBNTlFaU9ZYS1Bb0drQUh5VXFpVG90LTFUaklyNjBXOVlZazkwT01sNzM3dHBoYU45Vk5xcnhuWnVoNVdqdVR3UllkNk11R1ZzMjdnSmdSakZpaElHbjk0TV9GcHB0U1dIel8tbEpaU0pGSE1MVVhUNXVr?oc=5",
-        "domain": "thenewyorktimes",
+        "title": "Ahold Delhaize update on status of cybersecurity incident",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYzVQTEROWllYUWQ4c1FHSmQ3V05aZ2JIUUpxbmdndzdWTFRiMmRpNGplTkkxWEJ3UlJzUUZlT2xWYjNOOE8tTkZMWE9wYlpuUEwtWFFwTjRtRWpsUE9zdF9tcVdGVWkwaHFya0NTNW01TWtEQ1pFbUxWdl9XdWpUZ3ZCTloza2QyUVpOUGZOZmhRQWRXTHpxZQ?oc=5",
+        "domain": "aholddelhaize",
         "language": "",
         "tone": 0,
-        "seendate": "20261013T210026Z",
+        "seendate": "20261019T150425Z",
         "source": "GoogleNews"
       },
       {
@@ -34167,12 +34245,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Thousands of refrigerators were hacked across France. How worried should you be?",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOY1FIemJmYWM4cnV6MzZ3RS05QmtuZjZXT0V4ei0xV0x3R1Y4ZTZ5M1NGaS1UeEYySGxQSmtuMlNBWFFTMVNEa29ldFpXUnZzbmFfajVaa1NKNjhMTG5POFpDcnFwbE9xSzY5eWhtUTlxSHljUlBzaXpUUzJSTXBHamFIU3BYNFk5?oc=5",
-        "domain": "cnn",
+        "title": "Trump Appointees Asked a Federal Cybersecurity Agency to Secretly Acquire a Voting Machine — and Hack It",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE40Y0diSHM2SWs5aUJzdHFmRUdGQ25pcS1KVDVtV0Nqc0ZlcEtjVTFJWTRXMHpsY00waEFjc0NYaS1ScFZLbGFUOEtfTG1UY0o4U0tCQ3RYenZGLWY5THlBRTRaUGlfSzM0N0FnNHBjZUZLd2o1Rm83NVNn?oc=5",
+        "domain": "propublica",
         "language": "",
         "tone": 0,
-        "seendate": "20261014T110244Z",
+        "seendate": "20261019T090000Z",
         "source": "GoogleNews"
       },
       {
@@ -34185,12 +34263,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Trump Appointees Asked a Federal Cybersecurity Agency to Secretly Acquire a Voting Machine — and Hack It",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE40Y0diSHM2SWs5aUJzdHFmRUdGQ25pcS1KVDVtV0Nqc0ZlcEtjVTFJWTRXMHpsY00waEFjc0NYaS1ScFZLbGFUOEtfTG1UY0o4U0tCQ3RYenZGLWY5THlBRTRaUGlfSzM0N0FnNHBjZUZLd2o1Rm83NVNn?oc=5",
-        "domain": "propublica",
+        "title": "Cyberattack disrupts Transportation Department safety agency contact center",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWVVjdFl6VmYta1BXUlpSb0dHSXVyWXlXX1I4aVVGMHNlWWRtak1MUkJtVmtITDhLQ3VQOXJIQUJEalNIbVluLXAxbEduSkV5SWZVcURRd1RfeDZMdURoVHkyN09GX0hCWl9qSjVhMUQwOWVOTm9sSWt4YjgwUHdLZkcxVWZEYXh3RmdFZ3RUN3pyOTkzZDN0emkwaFZXWWpsYmhCUVoxUQ?oc=5",
+        "domain": "politico",
         "language": "",
         "tone": 0,
-        "seendate": "20261019T090000Z",
+        "seendate": "20261014T214800Z",
         "source": "GoogleNews"
       },
       {
@@ -34203,39 +34281,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Ransomware gets personal: 'We-know-where-you-are kind of stuff'",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZ1V0WUhvLWlScDctU2RzazBpOFRZdm9vb09HX1VaLUdNeWVMSlZTdFFfUndhOFhMRHpnNkNFcXZmQXZZZFdHeTM1WnRFLVBXVWtqTGJGTVN4Wm5TTnh0d3ZVZGZfcXFaY1Zfd3J0ZlNrYVBDS2RTa0lZZ2dmVU1tZ01Rc0hQNFhyNl9sLUVKalNXMW00Z284VUVoRHBrWkZNdEZmUkI3WUNjWUlaVDJpMHdaSm1lMWpaSTVv?oc=5",
-        "domain": "theregister",
+        "title": "Sweden sweeps the winning title of the European Cybersecurity Challenge",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQU09NR3dIdU11SjJWQmkzaUloV2Y1d1pDQTRYTUpEWHB3SWxwNlU2UmpBMVRVWkFmV1VFVHVwaDBVbU81WjdfX1JBd3ZWWEx1SUN4SnQ4a0MxbVAycXAyNURraVRidTg3WFkyYlBXekMzZGVpdVkyY2F0WVZhbUtCa0g2bmNJWkR3MHRxM1NFTkd1djJPUGVINFBqRkwyWkpKUzAzdUdwSQ?oc=5",
+        "domain": "enisa",
         "language": "",
         "tone": 0,
-        "seendate": "20261014T050000Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Cyberattack disrupts Transportation Department safety agency contact center",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWVVjdFl6VmYta1BXUlpSb0dHSXVyWXlXX1I4aVVGMHNlWWRtak1MUkJtVmtITDhLQ3VQOXJIQUJEalNIbVluLXAxbEduSkV5SWZVcURRd1RfeDZMdURoVHkyN09GX0hCWl9qSjVhMUQwOWVOTm9sSWt4YjgwUHdLZkcxVWZEYXh3RmdFZ3RUN3pyOTkzZDN0emkwaFZXWWpsYmhCUVoxUQ?oc=5",
-        "domain": "politico",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261014T214800Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Cyberattacks hit European supermarket chains and disrupt refrigeration systems",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMENMX3JUelZ4aS1rZklxQXBPSWdtRGc3eWJfaEpVS25tU20wLVFIbGpXNDZ5ek9fWFk3QnlxX25IUDB6QjNGdERaalNoWDljZDdGdVM3TUxSUlpZazF2ZXp3cF8zTGJKSExodlN2MFhvZWg4SzJWenpNd0NPSHB1QUx5aXhBV1FyS3d4YmpuVG9jMU1adVJkM0h6UUQ4TWNoUURuejRpU0Zlc2FKS05PR00tWQ?oc=5",
-        "domain": "apnews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261013T202700Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "CVE-2026-99999: Critical PwnEscape Linux Kernel Flaw Enables Guest-to-Host Escape",
-        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBiZGRiR0JhTGJjOUpHTWpMVl9ycGtPaWxSbjk0WFFwOWlvYTFhMUltOTkxWUZla2RDeURwVG44VkRPVzgyX3EtdE0wNmxKWWt3YThrejg0VXBKR0h5TTZR?oc=5",
-        "domain": "socprime",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261016T134126Z",
+        "seendate": "20261016T151608Z",
         "source": "GoogleNews"
       },
       {
@@ -34248,66 +34299,39 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Copeland, Dixell refrigeration systems also hacked, French cybersecurity agency says",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPcEw5ZkNkalNNZjZRdGZhZ1VDQUpRMy1mOEVfdlhEVHNLRlVCMnZydHVvdVBUOXlneXlDNjdNT1NyYmhvVE44LU4yelRWWE1IcU02RWlJVE9mODNlMGdJLTRzY25ia3l1M2NCUWFSRl8xb0I3Z1E3djNkcVctVGRMMUsxV21TeVg5S0dJZy1LeWFqdWRVaHE5cmdsWlRCbE44TUtlOGJ3SGl1a1VYM2hCalFhY3F5SGo5LXlLbktnaHMyLXNiVXpYZl9aSlhselJLeWtMYQ?oc=5",
-        "domain": "reuters",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261013T180352Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQY1hjMHo3dzc2V2RrMEZwa2FYVmZnWjVMLWRfTHBzZ0VmamJ3azdWdkZnZDVaSnpYMFFXYjY5ZnhvcTFZMGtQT2RJOXE3UWVHSVE4TENtNmx2SWwxVmhLeGRaTHhXcW1zUlFPZDc2MGxXdURkMWVXcGltUE1OX2h1RC1LVGtzdzJKWFdn?oc=5",
-        "domain": "unit42",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261014T220626Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Retailer Ahold Delhaize reports cybersecurity incident to Dutch police",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOY2JWUUotblpkTEd1SjkxejFvR1hVQWxLbVVERUYtaTVYT0pobGl0cGFQLVhQOWMxYTFkZGFSZnJkaEMxV01GYzhISk9OVlhIeW5iUmRXa3pISWlHaVl1bVBtaE5oLXlmYTlqZllBcC1xc3dtRlIwRDRXSXpQb0FRVVQ2Smp4MnpkU0xLRWxvVHEwZ0pfOGdINFhMRFk1NlZyaWh0djRB?oc=5",
-        "domain": "reuters",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261019T165500Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "US federal bankruptcy court operations disrupted by cybersecurity incident",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNXNmUUpSS1FzeGdSRmFNNHIxSHVKQ091eWExcmhWblo0S1hTUTRuWkVLYlVTLU5jaHZzLWJBT1RtWUh2ZnV4WllqWC1rNHZuZ1ZBbW1xa212NF9tQ1dRd244bUpSUXRPdFZxQ0VjUHo3enpiaEJuNktQR3pRSUEtWURaNW9LUl9Ua1JDZ1VSTU5XUVVwS1ZEYTlRTy1xUXpjczJNLVhIMTE2Z21ueDAzaXAxbHhncFV3dEp4YXZzaWthNUxvX1E?oc=5",
-        "domain": "reuters",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261016T163325Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Cisco Warns of Active Attacks Exploiting New Critical Secure Email Gateway Vulnerability",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE55YTR6aDF0SFJlWEFJWGkyWEJqR1VVX29GTXJYdUo4cGVEYkxOMmtnU1N1VDM4bDBnSWs2Y2txNjBSTnZGSF83SHNNUHI5clZ0d1Z2QVJWWkk0Zng5bGZxM3FxakM2cE4wZEFOOTVwaG1Ec18zZVNJ?oc=5",
+        "title": "Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE03NTFEOHpHVzBmeEs4OEhFU2xHS2RXUUtaaXRFUHNyZFlJREFqZkpnTFJyZXl0TjRmOXVLTURSTW1ITWN4cDBVd04zZFdOb0NoQWFYQV8wTVR4dmlNOENsRkxHUUt4NTFib0d5aTZFekZrWEdwcXBjYWJR?oc=5",
         "domain": "thehackernews",
         "language": "",
         "tone": 0,
-        "seendate": "20261014T183800Z",
+        "seendate": "20261015T202400Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Food Lion, Stop & Shop and Hannaford websites face outages after cybersecurity issue",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTFMzeVVWdHY5dk5icjF3NUdwb2NZREZpbmNnVlhsYmNrcHhzZkFKT01RdlpkOGctcDZQMHFtbzltVU9ScjFwR2M3T3lOU0RCS21fLTdwY2t4amVQUXFLVHAxaGJWRVBseFdwdEM0cHJGUzFqRjJablNNc3dxOUhjQ2RvX2pCWXBrWFFzYUEyNGZzY3Y1OGxjY1MyNE9jSkgxM041cTFpRVNlcExXZTVLckxHZDB0UdIBuwFBVV95cUxPT3N3S3htT1pWUk5lTE9NMDZlTmZBRmpLeFFYU2V3a0MtMFo5YnhYQzZOdDlQandPb184ZEpidGlfQXNTZzkwWEJVWEhNSW9vaUFJcjgxaE1GUEZlUlNxc2otdTFEYk9pazM5WTRxZ2tYUGMxVUY2WXBNTVJ3LWxsWm1rSXpMSnZaQWVqY0FyMWxISlhMSlNNWGNtQ3FRdjMtLXBMZTAxVGFQSFRGcU10V1ZtUWRpdVVzX3E0?oc=5",
-        "domain": "foxbusiness",
+        "title": "US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPeE96TlNGQ3kyaUdnZ3h2WVhPY3l2a0kwby04VnlaWTRtUlN0TXBTLTdJaUROOWd5T3NGZ1c1Y0xySFpUTjk0RkVLdG9DN1ctZEU4cGhfZ1VsN3E1bkRXdnJ1ZmtvaUVDbm5ZZlNOWW4xOEtGc2RpdWJQdVBPMGZzSDNIeXE0VUlIeVFjQ21TOXE4LVowYm13azUwckctcno4T3NBMG9ua9IBrAFBVV95cUxNaU1DcXhEZDFlM3ZfVVhybkdaWGE5OHoyNXkwcjUwNVQxaHI5OHVOdlpBNk9IV1JQNy1kdWJRbmxSTEt6U2llWUludGZDVFFBWTg0cUdDYlZLQ2JUdTczU0JaSkUxdFFTVmkyXzRGU2lyVWxWMTNLWlVqOWdyWi1BNnNaZ2ZaMElqZjBXTGFleExLc3QwQWdXVkx6VFNVMklCeUpvODRhTVBnY2gw?oc=5",
+        "domain": "securityweek",
         "language": "",
         "tone": 0,
-        "seendate": "20261013T202700Z",
+        "seendate": "20261018T110000Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Cohere moves to buy AI cybersecurity startup Aisle",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUE9DbHl3UklEenZpVjFtNVpCb1RXY0ljendQMVZudHZGSFRiYk4tT2hsNk5KMjJIVDhjbDVyVXNxSkVXS0JmaTFUSml1XzNsdDdpQjBJNDd1MFlEdmdPNFE5VDMwbEc3dWhUTWdGT2ZzbVdScGJtTkFjNkdMT19KYVRXUTI4b1d0eE9KVHhPWUhFbTFPQlRsVWVTdC1EbEMyODlkc2FR?oc=5",
-        "domain": "reuters",
+        "title": "CVE-2026-99999: Critical PwnEscape Linux Kernel Flaw Enables Guest-to-Host Escape",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBiZGRiR0JhTGJjOUpHTWpMVl9ycGtPaWxSbjk0WFFwOWlvYTFhMUltOTkxWUZla2RDeURwVG44VkRPVzgyX3EtdE0wNmxKWWt3YThrejg0VXBKR0h5TTZR?oc=5",
+        "domain": "socprime",
         "language": "",
         "tone": 0,
-        "seendate": "20261015T220948Z",
+        "seendate": "20261016T134126Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Thousands of refrigerators were hacked across France. How worried should you be?",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOY1FIemJmYWM4cnV6MzZ3RS05QmtuZjZXT0V4ei0xV0x3R1Y4ZTZ5M1NGaS1UeEYySGxQSmtuMlNBWFFTMVNEa29ldFpXUnZzbmFfajVaa1NKNjhMTG5POFpDcnFwbE9xSzY5eWhtUTlxSHljUlBzaXpUUzJSTXBHamFIU3BYNFk5?oc=5",
+        "domain": "cnn",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261014T110307Z",
         "source": "GoogleNews"
       },
       {
@@ -34320,6 +34344,51 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Retailer Ahold Delhaize reports cybersecurity incident to Dutch police",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOY2JWUUotblpkTEd1SjkxejFvR1hVQWxLbVVERUYtaTVYT0pobGl0cGFQLVhQOWMxYTFkZGFSZnJkaEMxV01GYzhISk9OVlhIeW5iUmRXa3pISWlHaVl1bVBtaE5oLXlmYTlqZllBcC1xc3dtRlIwRDRXSXpQb0FRVVQ2Smp4MnpkU0xLRWxvVHEwZ0pfOGdINFhMRFk1NlZyaWh0djRB?oc=5",
+        "domain": "reuters",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261019T165500Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQY1hjMHo3dzc2V2RrMEZwa2FYVmZnWjVMLWRfTHBzZ0VmamJ3azdWdkZnZDVaSnpYMFFXYjY5ZnhvcTFZMGtQT2RJOXE3UWVHSVE4TENtNmx2SWwxVmhLeGRaTHhXcW1zUlFPZDc2MGxXdURkMWVXcGltUE1OX2h1RC1LVGtzdzJKWFdn?oc=5",
+        "domain": "unit42",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261014T220626Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Cisco Warns of Active Attacks Exploiting New Critical Secure Email Gateway Vulnerability",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE55YTR6aDF0SFJlWEFJWGkyWEJqR1VVX29GTXJYdUo4cGVEYkxOMmtnU1N1VDM4bDBnSWs2Y2txNjBSTnZGSF83SHNNUHI5clZ0d1Z2QVJWWkk0Zng5bGZxM3FxakM2cE4wZEFOOTVwaG1Ec18zZVNJ?oc=5",
+        "domain": "thehackernews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261014T183800Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "US federal bankruptcy court operations disrupted by cybersecurity incident",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNXNmUUpSS1FzeGdSRmFNNHIxSHVKQ091eWExcmhWblo0S1hTUTRuWkVLYlVTLU5jaHZzLWJBT1RtWUh2ZnV4WllqWC1rNHZuZ1ZBbW1xa212NF9tQ1dRd244bUpSUXRPdFZxQ0VjUHo3enpiaEJuNktQR3pRSUEtWURaNW9LUl9Ua1JDZ1VSTU5XUVVwS1ZEYTlRTy1xUXpjczJNLVhIMTE2Z21ueDAzaXAxbHhncFV3dEp4YXZzaWthNUxvX1E?oc=5",
+        "domain": "reuters",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261016T163325Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Cohere moves to buy AI cybersecurity startup Aisle",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUE9DbHl3UklEenZpVjFtNVpCb1RXY0ljendQMVZudHZGSFRiYk4tT2hsNk5KMjJIVDhjbDVyVXNxSkVXS0JmaTFUSml1XzNsdDdpQjBJNDd1MFlEdmdPNFE5VDMwbEc3dWhUTWdGT2ZzbVdScGJtTkFjNkdMT19KYVRXUTI4b1d0eE9KVHhPWUhFbTFPQlRsVWVTdC1EbEMyODlkc2FR?oc=5",
+        "domain": "reuters",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261015T220948Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Ransomware groups expand targeting of Palo Alto Networks vulnerability",
         "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcXlLMW9kbnlTcFVMbGQwQW0wTFhuOGZkOHBFbUNKLV8xTW1nZ0dxbDBMaGpMM2luVWU5eFZzVUprdXhqeGxnR2pad2F0QUw3Um1Wckszamx6TTVicl9hU3ZEZ25NeFp5ODF1TlFrdHJSbC1LVlNyTG9YTF9UTW1BN1JjNldXcHZMMjZzWVVvV3JXNWpLUVo5RDNDRGstRWstT1E?oc=5",
         "domain": "cybersecuritydive",
@@ -34329,39 +34398,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Part 2 – Cybersecurity journeys: What even is this job?",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONnVocG5jYkV4VW5lN2cyVjd4dGh5NXJ6T1RKYWlERXB6Q0NzYW9wSk5JRFJNSzY5YUd3WW04Y1ZnVHpWcjQ0S3JPbnpMTS1hWWVMaWctVXNmZDlULU50VmlLUjBfRWdMb0R1NVJhRi1kNUU3ZFFjRTlNMkV1dHVwbnFJMV94cFpwa3VBSGRPdlVkUEdD?oc=5",
-        "domain": "amazonwebservicesaws",
+        "title": "ConnectWise suspends Cloud Backup service as hacker targets Microsoft 365 users",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWjQwU0ZncUdOV3RGQzBwel9wNzNVMFVfQlFqZk1TMWJwX1g5d1cxUzNaMFdfNjJLUVRTQW4wSkw2SzNrRGMtR3pELWFoWDJhNGl5X3lSNUJjRFVDdy0waDQxaGxUQlVmTDhqaHRyc3YycHByLTNMVm1jenpTaXFFVWNwaGdsal80QU4yTk52cklVYkk2MkltSUY4RlJrRDU2akE?oc=5",
+        "domain": "cybersecuritydive",
         "language": "",
         "tone": 0,
-        "seendate": "20261013T205801Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Grocery giant Ahold Delhaize confirms cyberattack forced US and European systems offline",
-        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNc29SZEthX0lVbmRCcEw2OHZqR1BudkRlaVhYV1VBczdaTGExYklKV0s4cnRPTlFNSExLMHRCWVRiRnE5NTM5NlU4RVdwXzRtREFVRGtHcm1rbzhCVm9tdlNTMk92SmVFM1lncEpZTUZnSmstTXVkU2lkbjZWMHdMVVZmQkxPTkRMRVYtMGJVT1NsMDdUUnpMSnZGOUE5QkZmU0ZaVGVLeVAxLXBnNkM1NFBlZnRHdEtUUDhucUZTYzNVdVYtVl9nRmFpdkdxSHpHcHdCeEZoSjY1TXZ4?oc=5",
-        "domain": "theregister",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261019T202621Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE03NTFEOHpHVzBmeEs4OEhFU2xHS2RXUUtaaXRFUHNyZFlJREFqZkpnTFJyZXl0TjRmOXVLTURSTW1ITWN4cDBVd04zZFdOb0NoQWFYQV8wTVR4dmlNOENsRkxHUUt4NTFib0d5aTZFekZrWEdwcXBjYWJR?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261015T202400Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "When a Ship’s Systems Lie, Cybersecurity Gets Complicated",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSk13STNkeHozNTVTUVUwZ3RaRTVJQkpNN0Q3Rm80Y19tdEZyMzZ3OTZPZEMxT2syRU1xRjhuaW1qZHdINHY1SUlUNWtOQ3kwQi15ZV9leGJMcmFHcHZrV2JiRzlEMmZjelV0b3A1SjN2T2FOajE4Tmc0Sk5JLXZhRGpNNXhYOExEczRVQkh3Mzd3T3R3ME9CVFFFQVJwdw?oc=5",
-        "domain": "georgiainstituteoftechnology",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261016T070000Z",
+        "seendate": "20261019T155811Z",
         "source": "GoogleNews"
       },
       {
@@ -34374,12 +34416,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Sweden sweeps the winning title of the European Cybersecurity Challenge",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQU09NR3dIdU11SjJWQmkzaUloV2Y1d1pDQTRYTUpEWHB3SWxwNlU2UmpBMVRVWkFmV1VFVHVwaDBVbU81WjdfX1JBd3ZWWEx1SUN4SnQ4a0MxbVAycXAyNURraVRidTg3WFkyYlBXekMzZGVpdVkyY2F0WVZhbUtCa0g2bmNJWkR3MHRxM1NFTkd1djJPUGVINFBqRkwyWkpKUzAzdUdwSQ?oc=5",
-        "domain": "enisa",
+        "title": "Grocery giant Ahold Delhaize confirms cyberattack forced US and European systems offline",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNc29SZEthX0lVbmRCcEw2OHZqR1BudkRlaVhYV1VBczdaTGExYklKV0s4cnRPTlFNSExLMHRCWVRiRnE5NTM5NlU4RVdwXzRtREFVRGtHcm1rbzhCVm9tdlNTMk92SmVFM1lncEpZTUZnSmstTXVkU2lkbjZWMHdMVVZmQkxPTkRMRVYtMGJVT1NsMDdUUnpMSnZGOUE5QkZmU0ZaVGVLeVAxLXBnNkM1NFBlZnRHdEtUUDhucUZTYzNVdVYtVl9nRmFpdkdxSHpHcHdCeEZoSjY1TXZ4?oc=5",
+        "domain": "theregister",
         "language": "",
         "tone": 0,
-        "seendate": "20261016T151608Z",
+        "seendate": "20261019T202621Z",
         "source": "GoogleNews"
       },
       {
@@ -34401,12 +34443,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "New cybersecurity challenges are on the horizon; will the world be ready?",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbGd6NnV4R0t3NnNNMTBVSy1zVjZMSkIyVXQ0TTBsNlh4b09oUnZPSjUtVUV0cmZHR3RkSXNBbGlSd0p1QnJaRGZ2bDIybjRjMG5RWV9vVEpEcmhhNzhFakR5dHM3d3V2dUFhSm5OQVRqQ0dtdnRITlBBNFotX19GZ3pFMlNiVHczR2p3RE4ybDQ5XzBoN0tNOEtOTkJVNUhxSmhxRFZnaGh4YWVRTVRzTVBQRQ?oc=5",
-        "domain": "asunews",
+        "title": "Ransomware gets personal: 'We-know-where-you-are kind of stuff'",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZ1V0WUhvLWlScDctU2RzazBpOFRZdm9vb09HX1VaLUdNeWVMSlZTdFFfUndhOFhMRHpnNkNFcXZmQXZZZFdHeTM1WnRFLVBXVWtqTGJGTVN4Wm5TTnh0d3ZVZGZfcXFaY1Zfd3J0ZlNrYVBDS2RTa0lZZ2dmVU1tZ01Rc0hQNFhyNl9sLUVKalNXMW00Z284VUVoRHBrWkZNdEZmUkI3WUNjWUlaVDJpMHdaSm1lMWpaSTVv?oc=5",
+        "domain": "theregister",
         "language": "",
         "tone": 0,
-        "seendate": "20261019T170652Z",
+        "seendate": "20261014T050000Z",
         "source": "GoogleNews"
       },
       {
@@ -34419,6 +34461,15 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Can government and industry prove they’re ready for a cyberattack?",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBzYkRsRVVBWWduSEk2dzJYSEhJTkxETmhYUHl1QnVXdldpa2VKN09MVEgwc2Q4aTJHUEFJM29lQzhON3poRnVYODROaFpLUkx6UldSMTNreXRQMExVbnJ6RGJQRXBFbVlRY0dkQlNBZ1kxVTA?oc=5",
+        "domain": "fedscoop",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261020T150213Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Day Two of Cybersecurity Career Week: Exploring Cyber Careers",
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUHRWeFk5QlpRa1oyVy1WTWdON0p1bUxabUh3MVdBcWNpRVpLRXRiLWtQUURndmQ1WUlyTEtIM2hHQnVITmJ2ZGs0QjVQU2xjRmh4WUhXaHo3dVVGOGVEdE1NVUhHT1pQNlJCOHplNXR5VTNoTG1aR0ZMLUJ1M2k5TF95QjZxZ0RFdi1yZzJnZkhMaERLYTdQZkpiSjFOX252UTlkUHlR?oc=5",
         "domain": "nationalinstituteofstandardsandtechnology.gov",
@@ -34428,21 +34479,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "ConnectWise suspends Cloud Backup service as hacker targets Microsoft 365 users",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWjQwU0ZncUdOV3RGQzBwel9wNzNVMFVfQlFqZk1TMWJwX1g5d1cxUzNaMFdfNjJLUVRTQW4wSkw2SzNrRGMtR3pELWFoWDJhNGl5X3lSNUJjRFVDdy0waDQxaGxUQlVmTDhqaHRyc3YycHByLTNMVm1jenpTaXFFVWNwaGdsal80QU4yTk52cklVYkk2MkltSUY4RlJrRDU2akE?oc=5",
-        "domain": "cybersecuritydive",
+        "title": "New cybersecurity challenges are on the horizon; will the world be ready?",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbGd6NnV4R0t3NnNNMTBVSy1zVjZMSkIyVXQ0TTBsNlh4b09oUnZPSjUtVUV0cmZHR3RkSXNBbGlSd0p1QnJaRGZ2bDIybjRjMG5RWV9vVEpEcmhhNzhFakR5dHM3d3V2dUFhSm5OQVRqQ0dtdnRITlBBNFotX19GZ3pFMlNiVHczR2p3RE4ybDQ5XzBoN0tNOEtOTkJVNUhxSmhxRFZnaGh4YWVRTVRzTVBQRQ?oc=5",
+        "domain": "asunews",
         "language": "",
         "tone": 0,
-        "seendate": "20261019T155811Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Boards confident on cybersecurity, AI oversight, but tech changes outpace readiness",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxON1YxTHMzbDdtR1o3WngyOWNZandDU2k5Rll4aUh6UGxiNURIN194VlpLZWp6UWJDMy1UY09ORDdqRHdWenpGRmNRUGlLZFBxRXFkVWI3WFBiMVU5Y1FsTl9pbjFad1pMS01zUDQyTjcxQUFaZTFla19SQVhBaHFGelhyVEZTVVFudVI4VGZPZEk4QXQwb3kzTWV3?oc=5",
-        "domain": "cybersecuritydive",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261019T153811Z",
+        "seendate": "20261019T170652Z",
         "source": "GoogleNews"
       },
       {
@@ -34464,21 +34506,21 @@
         "source": "GoogleNews"
       },
       {
+        "title": "AI security hiring focuses on red-teaming, SOC orchestration and governance",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOTWFpMFhyRVI2czJRTHRnZEo0LTNKaFg1S3JlTGpKOGdKOVdNb3VhQXpieDBUSGlxQ0c1VV9PajlSeTgtVzdZcHJLWEktWHNld2YtNWFyVnkxMks4eTVua3VsbXVBbHBaWUttWWhJX0hDckNGS1RNYjJDRjRyTEQ0VlZ5andmRWhjb2JZ?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261020T153812Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Cybersecurity Stocks Fall Amid Report Of OpenAI Acquisition",
         "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWU9jRUExMm1FUE9TSGdfNzJIWnhWTHZzYTJoLXFlbzhhOUNZMDZfWnI3Q0ZVZUFyUEFOdXVwenFwMFY2SE82Mi1TUVZVZjZJOXIzYnVnYW1MTXFvU2RpYnIyRG92MzdsMjRIX2c3SDA4dUNKOHFDbWdRekdoQ2RkaVNxMXBqSnNIbjlPX2VmRlIzbFNGSFY4YW1fNUVsT2tQUTI2eFdPcXd3eHo0bkRzOEt0TnhhUEk4WEZLYUJ3?oc=5",
         "domain": "investorsbusinessdaily",
         "language": "",
         "tone": 0,
         "seendate": "20261014T142100Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Is AI cybersecurity a game? Local researchers part of NSA grant to show it can be",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeUFYd0VHR3M4a2ppOW1fdG5JQnFFSTZRd0JGQmJuYVJJNEFPREx5LWpVWGZVTlhEaVl0WlAzejdZRERSRVJ5c08zRk8yYjlCSzktcm9PSWI4bDVwQWFsN3pITFdIRmpvT09Zbk52TmZYSDJMbDh5ZFFzNDJKcGdvYmRtTENfMlNQ?oc=5",
-        "domain": "universityofdayton",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261020T151805Z",
         "source": "GoogleNews"
       },
       {
@@ -34491,12 +34533,30 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Giant, Food Lion parent’s ‘cybersecurity incident’ takes websites and apps offline",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNR0ZRU2dBeEtreUt5amMzSDhEOUM5LTJadkVuZlQ3QjZIM0x5S0Yxa2NTTkowYWx5amx6eFdmZmx2OG1IU24xY28tS2F2QmI4SGhIekFiWnFZbkZUTHRpSHZiMVVLNXZiR2gwTEQ4NXRjLS1lNG1BbUl0ZkdKUkswRkRtNlN5ODg1b3dIQW9RbjlUTUR0cVlQSU13VjFFaTJQMTY3MVVJQk1reEd6MlZuZnp2WjFFbDB4WHJJ?oc=5",
-        "domain": "wtopnews",
+        "title": "AI Safety and Cybersecurity Should Be Allies. Instead, They're at Odds",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1fdDhvMnNVcE4yMG1TZ2I5SXlQT2VtSkhXRHM3Q3lEQzJHdmZVeS00Zlc5WUpwLXJLU3VaTEF1Z1lfcnY4SC1KOF9WSWtwRXVoZ25QZmt1NlBqMVRxWTBicEt2b1MzanJSREplYw?oc=5",
+        "domain": "timemagazine",
         "language": "",
         "tone": 0,
-        "seendate": "20261014T191946Z",
+        "seendate": "20261020T145101Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Is AI cybersecurity a game? Local researchers part of NSA grant to show it can be",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeUFYd0VHR3M4a2ppOW1fdG5JQnFFSTZRd0JGQmJuYVJJNEFPREx5LWpVWGZVTlhEaVl0WlAzejdZRERSRVJ5c08zRk8yYjlCSzktcm9PSWI4bDVwQWFsN3pITFdIRmpvT09Zbk52TmZYSDJMbDh5ZFFzNDJKcGdvYmRtTENfMlNQ?oc=5",
+        "domain": "universityofdayton",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261020T151805Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Davenport's highly acclaimed cybersecurity programs prepare students for in-demand careers",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQzc2ZmhTMzVGbDJPbllETHhxZ19oVUJYMVViMThyZWNwY2JiRlJUWDFSdndCOERUVlo1M19GOUVpcG5NZXE2ZnZiLTl1VEpHeEVtekF3RFV2bDg2RnZqeUFpMFpvMjB0eF80dmxWOWI1Y2RVdHZSaW1JTFo3bzJmSnNCSThURFZ3UDl4Qkc2M2FMd3F6YTJKUmNpbkItNm94RUZJeFdtaVVsMEtVT1Nkd2RJT1pFallGZ1k2cWVPX1E0N0FDYlE?oc=5",
+        "domain": "davenportuniversity",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261020T173648Z",
         "source": "GoogleNews"
       },
       {
@@ -34518,21 +34578,30 @@
         "source": "GoogleNews"
       },
       {
-        "title": "September 2026 CVE Landscape",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1sd2s0bXBrYlVURHlOMkg3R3VQOW40eDJ6STVHcVJuNThyVGZ0MEFhbTFTd0R4bjNYSDlWTzYtMGpCemlPTHQxMTIzMjFEOWQ5SG5BVjZtTEN4T3F4ZExsQ05oYnIwV1RaQktKRlUwY18xUQ?oc=5",
-        "domain": "recordedfuture",
+        "title": "There's only so much code: the rise in vulnerability numbers",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRUVIUVFuT1hmNkt3MnNjcWo2Z3BTUnk5eTI2ZFZyOUFZVHFrenIxcE1OYmNoZU0tdkJRMUpPQVFzVEVQbll4TGx1TUxHcTNGWmZHUWdIQzdEM29wNVpMMF9Wd3ZRc2ItOFM3RVhpNm9EMFlLUlFyUmdrRW1kcU44ZGk5QzY2OWFsa1RCVEwweGoxMTMwTFRLNGNB?oc=5",
+        "domain": "ciscotalosblog",
         "language": "",
         "tone": 0,
-        "seendate": "20261013T210818Z",
+        "seendate": "20261020T153615Z",
         "source": "GoogleNews"
       },
       {
-        "title": "French supermarkets face millions in losses after cyberattack hits refrigerators nationwide",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZXVyc25Na3BNSjJ2T3BQQ2VfcGFCS2Fsd042Rnh0MldobUJGVm10SktyUEktaGh0V21QdURYRDhWYVV2elpSZ2Y4VktHdTJFYUV5dEI4OG9MLWlrN0V2WVp4SGJsNUQ2OHJwSEtCUXBlTXlXZ3ZQN01QV185SXA1Um9vUUpGTEp1MjZkaHBBSVNmay14TEtuU05oVjN6UFBxWUp0cmxaNkd0djZrQ1NfcNIBtgFBVV95cUxPamJnNXh3WFpfTV9UVEh4LXlkZ2tlUHhjSzdNYnlacXR6YlhBV0xvNFRNZi03d3ZfMDAxQjVOamtSdEdHalFDdFFJLVN2T05WRkpyWHdvZGFhempUREN4QUx0RjVaMkpFZjhFUGd1RzFwODVaZW1MY1pIRE1ZOWc2UUR2MUl2cUZCRFZSMlVLeTFFNGh5eU8yRXAyUWVSU0FTMHJzbURZMkhSTHl3ZXN2VmtCUHRaZw?oc=5",
-        "domain": "foxnews",
+        "title": "Boards confident on cybersecurity, AI oversight, but tech changes outpace readiness",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxON1YxTHMzbDdtR1o3WngyOWNZandDU2k5Rll4aUh6UGxiNURIN194VlpLZWp6UWJDMy1UY09ORDdqRHdWenpGRmNRUGlLZFBxRXFkVWI3WFBiMVU5Y1FsTl9pbjFad1pMS01zUDQyTjcxQUFaZTFla19SQVhBaHFGelhyVEZTVVFudVI4VGZPZEk4QXQwb3kzTWV3?oc=5",
+        "domain": "cybersecuritydive",
         "language": "",
         "tone": 0,
-        "seendate": "20261013T175404Z",
+        "seendate": "20261019T153811Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Click wisely: promoting online safety during European Cybersecurity Month",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOYlo5SGdUWFlnQXBhdVhsNFBOSnBvNXRjcXhOMHdheGUwWUdVWWlQN1ZUSVlEX0FhaGJUWkdBN3hIN0lTNFFSLXZUTU9hb1Z2M184YjM2TmtjeThkNWZTRjhoMXViMFFPbDNadTVab0FfTUR5YmV6RGZKQjNBc1JSSGNlcXZVNmhJeXRwaWdLZXJKU3BYc2JzMkhXdEpaWFBUMElsZ2EzQnozRG5RR19GeEhOUExIdHc0eEJHVzl6RHF1YmF5RkpDQTZPS3dfMnRs?oc=5",
+        "domain": "europeancommission",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261020T153256Z",
         "source": "GoogleNews"
       },
       {
@@ -34545,12 +34614,39 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Palo Alto's firewall OS has been under attack from multiple ransomware groups since June",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQYTNkOHlyYUpPZllfN091NVlrbUpiRUxRS0JRek9ROWZRZlowUVlic256S2d6VUkxMkZfRUxGS0VCSTlQME9nOFhQOEh4RG1NbDFpbENLRy04T1Y2WnFYU1U5Mmx6Q1VsNWc1c2oxR3NzU0NydWNabVl4akdqSHJGNk9FOXo5a2ZDMlpDR1RkU0JIZUFMaW9qaHluUlJtSG91a0NqeTBnNlNpanVjS3Z1YW5NWDFhYXdWM2p4OURVYms5aWg3dVpReks1bXNvZG12UnlPMDlaTlUyMnlac2dF?oc=5",
+        "domain": "theregister",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261020T173326Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Around 1.4 million people impacted by Central Ohio Primary Care cybersecurity breach",
         "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQWGFzamJ0NkNacE96Q1Rla3BEdUduaDEzakl2N3p0NlpreDJMbWdLSmw5dUc2MFRHZHFySHZEaE5WdWl4ZDY4MHVYUThvY1NOWHMweEJVOUFfX3d1ZnZCaDQ0TlNBYzA3V0RVbUpTNzlkNjQ0ZXVBT2VUTkE3dEotM3pFQUxBb0hBOER4bHFSdHZDZXZ5T2d4ZHJCLUIxNnM3bm16dFV4YkpKQkNXbVpHZ2FjOUV4Uzh5MEQ0anRsOXVoMlZYUVdWS2FnWXdLZEE?oc=5",
         "domain": "10tv",
         "language": "",
         "tone": 0,
         "seendate": "20261015T201400Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Giant, Food Lion parent’s ‘cybersecurity incident’ takes websites and apps offline",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNR0ZRU2dBeEtreUt5amMzSDhEOUM5LTJadkVuZlQ3QjZIM0x5S0Yxa2NTTkowYWx5amx6eFdmZmx2OG1IU24xY28tS2F2QmI4SGhIekFiWnFZbkZUTHRpSHZiMVVLNXZiR2gwTEQ4NXRjLS1lNG1BbUl0ZkdKUkswRkRtNlN5ODg1b3dIQW9RbjlUTUR0cVlQSU13VjFFaTJQMTY3MVVJQk1reEd6MlZuZnp2WjFFbDB4WHJJ?oc=5",
+        "domain": "wtopnews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261014T191946Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Ahold Delhaize says there’s no evidence cybersecurity incident compromised personal data",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbEdITUpUNzkxYl9BdlRITkhwb3ZIMHVuTHhfUHpXb2g3MWRTdEdTQzQ5WDFuMVo1NVNwYTc3RXB3V215VjlpVDdTN1dmQ0dQbUR5cW55dEZTdGx6SHJsSjhxWjBRZW91enUwYkRtNWg0OFlscEc3QmVvZ1lzQWdIVXFheEFHVEFFRFE?oc=5",
+        "domain": "grocerydive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261020T182246Z",
         "source": "GoogleNews"
       }
     ]
@@ -34567,24 +34663,6 @@
       "source": "GoogleNews"
     },
     {
-      "title": "Dangerous flaws in refrigeration equipment were disclosed months before retail attacks",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5tWU9vQUpiVDNRZUw5LTE1WVlvdF9uZ29pM25Tcmhocm9PZ1hWWFJCckZodTQyU25jVkxaUC1hbWRybVZRRnpfWm5xeGxTUGN1YURGUzhQSnRudHJxNzVlN2lPTXI4b1ZpS1Rpbk1rYjNsaktTblZ6UGlROUN1dw?oc=5",
-      "domain": "cybersecuritydive",
-      "language": "",
-      "tone": 0,
-      "seendate": "20261013T204348Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Ahold Delhaize update on status of cybersecurity incident",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYzVQTEROWllYUWQ4c1FHSmQ3V05aZ2JIUUpxbmdndzdWTFRiMmRpNGplTkkxWEJ3UlJzUUZlT2xWYjNOOE8tTkZMWE9wYlpuUEwtWFFwTjRtRWpsUE9zdF9tcVdGVWkwaHFya0NTNW01TWtEQ1pFbUxWdl9XdWpUZ3ZCTloza2QyUVpOUGZOZmhRQWRXTHpxZQ?oc=5",
-      "domain": "aholddelhaize",
-      "language": "",
-      "tone": 0,
-      "seendate": "20261019T150425Z",
-      "source": "GoogleNews"
-    },
-    {
       "title": "Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257 (Updated October 19)",
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTUVTa0pZeTdwQS1ySmhSTV85cFBkeXdBOUFkWWFxeW9MOE9RNGtETVlwOEVXbkxxcmREUkNqVWlQNmh6VHJMMGZZTHBfdGhmTTNfaTh4S1gwMnZCdkhEdkJrYXBMb0NJOXJhT0U4R0lFVGJfYjNaREM3eFMxeU52bVdpUjhrbGc?oc=5",
       "domain": "unit42",
@@ -34594,12 +34672,12 @@
       "source": "GoogleNews"
     },
     {
-      "title": "Ransomware Attacks Have Swept Japan. A.I. May Be Making Them Easier.",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQOTNCNXVKUG9UeXhyUGhiQmx1OFM4eFpHWjNTSjJBNTlFaU9ZYS1Bb0drQUh5VXFpVG90LTFUaklyNjBXOVlZazkwT01sNzM3dHBoYU45Vk5xcnhuWnVoNVdqdVR3UllkNk11R1ZzMjdnSmdSakZpaElHbjk0TV9GcHB0U1dIel8tbEpaU0pGSE1MVVhUNXVr?oc=5",
-      "domain": "thenewyorktimes",
+      "title": "Ahold Delhaize update on status of cybersecurity incident",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYzVQTEROWllYUWQ4c1FHSmQ3V05aZ2JIUUpxbmdndzdWTFRiMmRpNGplTkkxWEJ3UlJzUUZlT2xWYjNOOE8tTkZMWE9wYlpuUEwtWFFwTjRtRWpsUE9zdF9tcVdGVWkwaHFya0NTNW01TWtEQ1pFbUxWdl9XdWpUZ3ZCTloza2QyUVpOUGZOZmhRQWRXTHpxZQ?oc=5",
+      "domain": "aholddelhaize",
       "language": "",
       "tone": 0,
-      "seendate": "20261013T210026Z",
+      "seendate": "20261019T150425Z",
       "source": "GoogleNews"
     },
     {
@@ -34621,12 +34699,12 @@
       "source": "GoogleNews"
     },
     {
-      "title": "Thousands of refrigerators were hacked across France. How worried should you be?",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOY1FIemJmYWM4cnV6MzZ3RS05QmtuZjZXT0V4ei0xV0x3R1Y4ZTZ5M1NGaS1UeEYySGxQSmtuMlNBWFFTMVNEa29ldFpXUnZzbmFfajVaa1NKNjhMTG5POFpDcnFwbE9xSzY5eWhtUTlxSHljUlBzaXpUUzJSTXBHamFIU3BYNFk5?oc=5",
-      "domain": "cnn",
+      "title": "Trump Appointees Asked a Federal Cybersecurity Agency to Secretly Acquire a Voting Machine — and Hack It",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE40Y0diSHM2SWs5aUJzdHFmRUdGQ25pcS1KVDVtV0Nqc0ZlcEtjVTFJWTRXMHpsY00waEFjc0NYaS1ScFZLbGFUOEtfTG1UY0o4U0tCQ3RYenZGLWY5THlBRTRaUGlfSzM0N0FnNHBjZUZLd2o1Rm83NVNn?oc=5",
+      "domain": "propublica",
       "language": "",
       "tone": 0,
-      "seendate": "20261014T110244Z",
+      "seendate": "20261019T090000Z",
       "source": "GoogleNews"
     },
     {
@@ -34639,12 +34717,12 @@
       "source": "GoogleNews"
     },
     {
-      "title": "Trump Appointees Asked a Federal Cybersecurity Agency to Secretly Acquire a Voting Machine — and Hack It",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE40Y0diSHM2SWs5aUJzdHFmRUdGQ25pcS1KVDVtV0Nqc0ZlcEtjVTFJWTRXMHpsY00waEFjc0NYaS1ScFZLbGFUOEtfTG1UY0o4U0tCQ3RYenZGLWY5THlBRTRaUGlfSzM0N0FnNHBjZUZLd2o1Rm83NVNn?oc=5",
-      "domain": "propublica",
+      "title": "Cyberattack disrupts Transportation Department safety agency contact center",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWVVjdFl6VmYta1BXUlpSb0dHSXVyWXlXX1I4aVVGMHNlWWRtak1MUkJtVmtITDhLQ3VQOXJIQUJEalNIbVluLXAxbEduSkV5SWZVcURRd1RfeDZMdURoVHkyN09GX0hCWl9qSjVhMUQwOWVOTm9sSWt4YjgwUHdLZkcxVWZEYXh3RmdFZ3RUN3pyOTkzZDN0emkwaFZXWWpsYmhCUVoxUQ?oc=5",
+      "domain": "politico",
       "language": "",
       "tone": 0,
-      "seendate": "20261019T090000Z",
+      "seendate": "20261014T214800Z",
       "source": "GoogleNews"
     },
     {
@@ -34657,30 +34735,39 @@
       "source": "GoogleNews"
     },
     {
-      "title": "Ransomware gets personal: 'We-know-where-you-are kind of stuff'",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZ1V0WUhvLWlScDctU2RzazBpOFRZdm9vb09HX1VaLUdNeWVMSlZTdFFfUndhOFhMRHpnNkNFcXZmQXZZZFdHeTM1WnRFLVBXVWtqTGJGTVN4Wm5TTnh0d3ZVZGZfcXFaY1Zfd3J0ZlNrYVBDS2RTa0lZZ2dmVU1tZ01Rc0hQNFhyNl9sLUVKalNXMW00Z284VUVoRHBrWkZNdEZmUkI3WUNjWUlaVDJpMHdaSm1lMWpaSTVv?oc=5",
-      "domain": "theregister",
+      "title": "Sweden sweeps the winning title of the European Cybersecurity Challenge",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQU09NR3dIdU11SjJWQmkzaUloV2Y1d1pDQTRYTUpEWHB3SWxwNlU2UmpBMVRVWkFmV1VFVHVwaDBVbU81WjdfX1JBd3ZWWEx1SUN4SnQ4a0MxbVAycXAyNURraVRidTg3WFkyYlBXekMzZGVpdVkyY2F0WVZhbUtCa0g2bmNJWkR3MHRxM1NFTkd1djJPUGVINFBqRkwyWkpKUzAzdUdwSQ?oc=5",
+      "domain": "enisa",
       "language": "",
       "tone": 0,
-      "seendate": "20261014T050000Z",
+      "seendate": "20261016T151608Z",
       "source": "GoogleNews"
     },
     {
-      "title": "Cyberattack disrupts Transportation Department safety agency contact center",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWVVjdFl6VmYta1BXUlpSb0dHSXVyWXlXX1I4aVVGMHNlWWRtak1MUkJtVmtITDhLQ3VQOXJIQUJEalNIbVluLXAxbEduSkV5SWZVcURRd1RfeDZMdURoVHkyN09GX0hCWl9qSjVhMUQwOWVOTm9sSWt4YjgwUHdLZkcxVWZEYXh3RmdFZ3RUN3pyOTkzZDN0emkwaFZXWWpsYmhCUVoxUQ?oc=5",
-      "domain": "politico",
+      "title": "Thousands of supermarket fridges still exposed after cyberattacks",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcVY4Tk9fTTY5ZWdWUmlKeGV5bkdGc2tUVV9MbWN6Mkl0dk4xSVp2dEg0d1VWQkwwVzVtVzliWmZOdWpGTllSUjExZ1hZdGNTMndMMERyNDh3MXNQellBell6NFoyTDZpUW9kNHk3UmNkWnk3eEZ1YjkzdWFiajhOeU5KQi1scGNPdldadWpKYmtFZFBTajBwS2Q0V1NhS2V5S2c?oc=5",
+      "domain": "euronews.com",
       "language": "",
       "tone": 0,
-      "seendate": "20261014T214800Z",
+      "seendate": "20261014T154218Z",
       "source": "GoogleNews"
     },
     {
-      "title": "Cyberattacks hit European supermarket chains and disrupt refrigeration systems",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMENMX3JUelZ4aS1rZklxQXBPSWdtRGc3eWJfaEpVS25tU20wLVFIbGpXNDZ5ek9fWFk3QnlxX25IUDB6QjNGdERaalNoWDljZDdGdVM3TUxSUlpZazF2ZXp3cF8zTGJKSExodlN2MFhvZWg4SzJWenpNd0NPSHB1QUx5aXhBV1FyS3d4YmpuVG9jMU1adVJkM0h6UUQ4TWNoUURuejRpU0Zlc2FKS05PR00tWQ?oc=5",
-      "domain": "apnews",
+      "title": "Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE03NTFEOHpHVzBmeEs4OEhFU2xHS2RXUUtaaXRFUHNyZFlJREFqZkpnTFJyZXl0TjRmOXVLTURSTW1ITWN4cDBVd04zZFdOb0NoQWFYQV8wTVR4dmlNOENsRkxHUUt4NTFib0d5aTZFekZrWEdwcXBjYWJR?oc=5",
+      "domain": "thehackernews",
       "language": "",
       "tone": 0,
-      "seendate": "20261013T202700Z",
+      "seendate": "20261015T202400Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPeE96TlNGQ3kyaUdnZ3h2WVhPY3l2a0kwby04VnlaWTRtUlN0TXBTLTdJaUROOWd5T3NGZ1c1Y0xySFpUTjk0RkVLdG9DN1ctZEU4cGhfZ1VsN3E1bkRXdnJ1ZmtvaUVDbm5ZZlNOWW4xOEtGc2RpdWJQdVBPMGZzSDNIeXE0VUlIeVFjQ21TOXE4LVowYm13azUwckctcno4T3NBMG9ua9IBrAFBVV95cUxNaU1DcXhEZDFlM3ZfVVhybkdaWGE5OHoyNXkwcjUwNVQxaHI5OHVOdlpBNk9IV1JQNy1kdWJRbmxSTEt6U2llWUludGZDVFFBWTg0cUdDYlZLQ2JUdTczU0JaSkUxdFFTVmkyXzRGU2lyVWxWMTNLWlVqOWdyWi1BNnNaZ2ZaMElqZjBXTGFleExLc3QwQWdXVkx6VFNVMklCeUpvODRhTVBnY2gw?oc=5",
+      "domain": "securityweek",
+      "language": "",
+      "tone": 0,
+      "seendate": "20261018T110000Z",
       "source": "GoogleNews"
     },
     {
@@ -34691,15 +34778,24 @@
       "tone": 0,
       "seendate": "20261016T134126Z",
       "source": "GoogleNews"
+    },
+    {
+      "title": "Thousands of refrigerators were hacked across France. How worried should you be?",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOY1FIemJmYWM4cnV6MzZ3RS05QmtuZjZXT0V4ei0xV0x3R1Y4ZTZ5M1NGaS1UeEYySGxQSmtuMlNBWFFTMVNEa29ldFpXUnZzbmFfajVaa1NKNjhMTG5POFpDcnFwbE9xSzY5eWhtUTlxSHljUlBzaXpUUzJSTXBHamFIU3BYNFk5?oc=5",
+      "domain": "cnn",
+      "language": "",
+      "tone": 0,
+      "seendate": "20261014T110307Z",
+      "source": "GoogleNews"
     }
   ],
   "timeseries": [],
   "llm_summary": "",
   "early_warning": {
-    "issued_at": "2026-10-20T17:35:02.192854+00:00",
+    "issued_at": "2026-10-20T21:56:30.854386+00:00",
     "horizon": "next 30 days",
     "classification": "global-exploitation-pressure-not-organisation-breach-probability",
-    "score": 37.6,
+    "score": 52.3,
     "level": "WATCH",
     "confidence": "HIGH",
     "confidence_score": 100.0,
@@ -34708,18 +34804,114 @@
         "id": "kev_addition_pressure",
         "label": "CISA exploited-vulnerability burst",
         "available": true,
-        "score": 52.8,
-        "catalog_count": 1748,
-        "recent_7d_count": 7,
+        "score": 89.5,
+        "catalog_count": 1754,
+        "recent_7d_count": 13,
         "prior_7d_count": 7,
         "baseline_weeks": 26,
         "baseline_weekly_median": 6.5,
-        "anomaly_z": 0.22,
+        "anomaly_z": 2.92,
         "ransomware_known_7d": 0,
-        "due_within_7d": 0,
-        "catalog_version": "2026.10.16",
-        "released_at": "2026-10-16T17:15:48.8752Z",
+        "due_within_7d": 3,
+        "catalog_version": "2026.10.20",
+        "released_at": "2026-10-20T19:00:31.8765Z",
         "evidence": [
+          {
+            "cveID": "CVE-2026-106931",
+            "vendorProject": "EG Secure Solutions",
+            "product": "SiteGuard Server Edition",
+            "vulnerabilityName": "EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
+            "dateAdded": "2026-10-20",
+            "shortDescription": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-10-23",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "https://www.eg-secure.co.jp/siteguard/news/alert-202610-1 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-106931",
+            "cwes": [
+              "CWE-78"
+            ],
+            "source": "CISA-KEV"
+          },
+          {
+            "cveID": "CVE-2026-96656",
+            "vendorProject": "Plex",
+            "product": "Media Server",
+            "vulnerabilityName": "Plex Media Server External Control of File Name or Path Vulnerability",
+            "dateAdded": "2026-10-20",
+            "shortDescription": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-10-23",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-96656",
+            "cwes": [
+              "CWE-73"
+            ],
+            "source": "CISA-KEV"
+          },
+          {
+            "cveID": "CVE-2026-96655",
+            "vendorProject": "Plex",
+            "product": "Media Server",
+            "vulnerabilityName": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+            "dateAdded": "2026-10-20",
+            "shortDescription": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-11-03",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-96655",
+            "cwes": [
+              "CWE-918"
+            ],
+            "source": "CISA-KEV"
+          },
+          {
+            "cveID": "CVE-2026-96654",
+            "vendorProject": "Plex",
+            "product": "Media Server",
+            "vulnerabilityName": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+            "dateAdded": "2026-10-20",
+            "shortDescription": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-10-23",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-96654",
+            "cwes": [
+              "CWE-84"
+            ],
+            "source": "CISA-KEV"
+          },
+          {
+            "cveID": "CVE-2026-96652",
+            "vendorProject": "Plex",
+            "product": "Media Server",
+            "vulnerabilityName": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+            "dateAdded": "2026-10-20",
+            "shortDescription": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656. ",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-11-03",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-96652",
+            "cwes": [
+              "CWE-918"
+            ],
+            "source": "CISA-KEV"
+          },
+          {
+            "cveID": "CVE-2026-110936",
+            "vendorProject": "Siemens",
+            "product": "Software Center",
+            "vulnerabilityName": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
+            "dateAdded": "2026-10-20",
+            "shortDescription": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-11-03",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "https://productcert.siemens.com/productcert/html/ssa-580366.html ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-110936",
+            "cwes": [
+              "CWE-427"
+            ],
+            "source": "CISA-KEV"
+          },
           {
             "cveID": "CVE-2026-102764",
             "vendorProject": "BeyondTrust",
@@ -34814,22 +35006,6 @@
             "notes": "https://www.ahsay.com/en/company/announcements/patch-cve-105133-105134-update ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-105133",
             "cwes": [
               "CWE-287"
-            ],
-            "source": "CISA-KEV"
-          },
-          {
-            "cveID": "CVE-2026-0322",
-            "vendorProject": "Palo Alto Networks",
-            "product": "PAN-OS",
-            "vulnerabilityName": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
-            "dateAdded": "2026-10-14",
-            "shortDescription": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.",
-            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-            "dueDate": "2026-10-17",
-            "knownRansomwareCampaignUse": "Unknown",
-            "notes": "https://security.paloaltonetworks.com/CVE-2026-0322 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-0322",
-            "cwes": [
-              "CWE-94"
             ],
             "source": "CISA-KEV"
           }
@@ -34968,7 +35144,7 @@
         "events_considered": 50,
         "matched_event_count": 5,
         "matched_share": 0.1,
-        "independent_sources": 37,
+        "independent_sources": 36,
         "unique_cves": 3,
         "cross_source_baskets": 1,
         "baskets": [
@@ -34989,7 +35165,7 @@
           },
           {
             "id": "campaign_shift",
-            "independent_sources": 5,
+            "independent_sources": 4,
             "cross_source_confirmed": true
           }
         ],
@@ -35010,10 +35186,10 @@
             ]
           },
           {
-            "title": "Ransomware Attacks Have Swept Japan. A.I. May Be Making Them Easier.",
-            "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQOTNCNXVKUG9UeXhyUGhiQmx1OFM4eFpHWjNTSjJBNTlFaU9ZYS1Bb0drQUh5VXFpVG90LTFUaklyNjBXOVlZazkwT01sNzM3dHBoYU45Vk5xcnhuWnVoNVdqdVR3UllkNk11R1ZzMjdnSmdSakZpaElHbjk0TV9GcHB0U1dIel8tbEpaU0pGSE1MVVhUNXVr?oc=5",
-            "source": "thenewyorktimes",
-            "observed_at": "20261013T210026Z",
+            "title": "AI linked to 84% of ransomware attacks, new report finds",
+            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSDAxYjk0QWdGcUtHV2RHQklZNXhhdkJXaG9WZkRTZUNzTjJGYmlVX0xya09iMnBLcTB4S1VTR29yVTlLTWFXV3I5cU9CeHNZUURKMHRTcHFZV091MzF0Yk1FYmd1eE1RSy1JY01pV1ljYXdReHlvVDVtUVA5TGpVaUFCZmFjMVdiYXIySEpUX0c?oc=5",
+            "source": "cbsnews",
+            "observed_at": "20261014T100000Z",
             "baskets": [
               "campaign_shift"
             ],
@@ -35023,10 +35199,10 @@
             "cves": []
           },
           {
-            "title": "AI linked to 84% of ransomware attacks, new report finds",
-            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSDAxYjk0QWdGcUtHV2RHQklZNXhhdkJXaG9WZkRTZUNzTjJGYmlVX0xya09iMnBLcTB4S1VTR29yVTlLTWFXV3I5cU9CeHNZUURKMHRTcHFZV091MzF0Yk1FYmd1eE1RSy1JY01pV1ljYXdReHlvVDVtUVA5TGpVaUFCZmFjMVdiYXIySEpUX0c?oc=5",
-            "source": "cbsnews",
-            "observed_at": "20261014T100000Z",
+            "title": "Ransomware groups expand targeting of Palo Alto Networks vulnerability",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcXlLMW9kbnlTcFVMbGQwQW0wTFhuOGZkOHBFbUNKLV8xTW1nZ0dxbDBMaGpMM2luVWU5eFZzVUprdXhqeGxnR2pad2F0QUw3Um1Wckszamx6TTVicl9hU3ZEZ25NeFp5ODF1TlFrdHJSbC1LVlNyTG9YTF9UTW1BN1JjNldXcHZMMjZzWVVvV3JXNWpLUVo5RDNDRGstRWstT1E?oc=5",
+            "source": "cybersecuritydive",
+            "observed_at": "20261020T161812Z",
             "baskets": [
               "campaign_shift"
             ],
@@ -35049,10 +35225,10 @@
             "cves": []
           },
           {
-            "title": "Ransomware groups expand targeting of Palo Alto Networks vulnerability",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcXlLMW9kbnlTcFVMbGQwQW0wTFhuOGZkOHBFbUNKLV8xTW1nZ0dxbDBMaGpMM2luVWU5eFZzVUprdXhqeGxnR2pad2F0QUw3Um1Wckszamx6TTVicl9hU3ZEZ25NeFp5ODF1TlFrdHJSbC1LVlNyTG9YTF9UTW1BN1JjNldXcHZMMjZzWVVvV3JXNWpLUVo5RDNDRGstRWstT1E?oc=5",
-            "source": "cybersecuritydive",
-            "observed_at": "20261020T161812Z",
+            "title": "Palo Alto's firewall OS has been under attack from multiple ransomware groups since June",
+            "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQYTNkOHlyYUpPZllfN091NVlrbUpiRUxRS0JRek9ROWZRZlowUVlic256S2d6VUkxMkZfRUxGS0VCSTlQME9nOFhQOEh4RG1NbDFpbENLRy04T1Y2WnFYU1U5Mmx6Q1VsNWc1c2oxR3NzU0NydWNabVl4akdqSHJGNk9FOXo5a2ZDMlpDR1RkU0JIZUFMaW9qaHluUlJtSG91a0NqeTBnNlNpanVjS3Z1YW5NWDFhYXdWM2p4OURVYms5aWg3dVpReks1bXNvZG12UnlPMDlaTlUyMnlac2dF?oc=5",
+            "source": "theregister",
+            "observed_at": "20261020T173326Z",
             "baskets": [
               "campaign_shift"
             ],
@@ -35075,22 +35251,12 @@
       {
         "id": "kev_addition_pressure",
         "title": "CISA exploited-vulnerability burst",
-        "score": 52.8,
-        "level": "WATCH",
+        "score": 89.5,
+        "level": "SEVERE",
         "why": "CISA additions are elevated against the previous 26 weekly windows."
       }
     ],
     "history": [
-      {
-        "timestamp": "2026-08-31T23:03:50.078320+00:00",
-        "score": 52.9,
-        "level": "WATCH",
-        "components": {
-          "kev_addition_pressure": 75.3,
-          "epss_frontier_momentum": 25.1,
-          "exploit_narrative_pressure": 36.0
-        }
-      },
       {
         "timestamp": "2026-09-01T05:45:50.903301+00:00",
         "score": 55.1,
@@ -36880,14 +37046,24 @@
           "epss_frontier_momentum": 25.0,
           "exploit_narrative_pressure": 31.0
         }
+      },
+      {
+        "timestamp": "2026-10-20T21:56:30.854386+00:00",
+        "score": 52.3,
+        "level": "WATCH",
+        "components": {
+          "kev_addition_pressure": 89.5,
+          "epss_frontier_momentum": 25.0,
+          "exploit_narrative_pressure": 31.0
+        }
       }
     ],
     "data_health": {
-      "cisa_catalog_count": 1748,
+      "cisa_catalog_count": 1754,
       "epss_frontier_count": 40,
       "epss_timeseries_count": 40,
       "news_events_considered": 50,
-      "independent_news_sources": 37,
+      "independent_news_sources": 36,
       "available_components": 3,
       "retained_components": []
     },
