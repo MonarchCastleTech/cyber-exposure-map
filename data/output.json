@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-11-13T20:05:30.959522+00:00",
+    "generated": "2026-11-14T07:05:16.635855+00:00",
     "mode": "live",
     "sources": [
       "cisa_catalog",
@@ -19,7 +19,7 @@
     },
     {
       "label": "News Domains",
-      "value": "34",
+      "value": "38",
       "delta": "deduplicated"
     },
     {
@@ -36,7 +36,7 @@
   "live_data": {
     "cisa_catalog": {
       "catalog_version": "2026.11.13",
-      "date_released": "2026-11-13T17:49:24.9532Z",
+      "date_released": "2026-11-13T20:24:18.3008Z",
       "vulnerabilities": [
         {
           "cveID": "CVE-2026-114713",
@@ -556,7 +556,7 @@
           "product": "Media Server",
           "vulnerabilityName": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
           "dateAdded": "2026-10-20",
-          "shortDescription": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656. ",
+          "shortDescription": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656.",
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
           "dueDate": "2026-11-03",
           "knownRansomwareCampaignUse": "Unknown",
@@ -731,7 +731,7 @@
           "cveID": "CVE-2015-5477",
           "vendorProject": "ISC",
           "product": "BIND",
-          "vulnerabilityName": " ISC BIND Data Processing Errors Vulnerability",
+          "vulnerabilityName": "ISC BIND Data Processing Errors Vulnerability",
           "dateAdded": "2026-10-08",
           "shortDescription": "ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries.",
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
@@ -765,7 +765,7 @@
           "product": "Strapi",
           "vulnerabilityName": "Strapi Cleartext Storage of Sensitive Information Vulnerability",
           "dateAdded": "2026-10-08",
-          "shortDescription": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. This vulnerability can be chained with CVE-2023-22621 to achieve remote code execution. ",
+          "shortDescription": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. This vulnerability can be chained with CVE-2023-22621 to achieve remote code execution.",
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
           "dueDate": "2026-10-11",
           "knownRansomwareCampaignUse": "Unknown",
@@ -988,9 +988,9 @@
           "cveID": "CVE-2026-5430",
           "vendorProject": "WSO2",
           "product": "Multiple Products",
-          "vulnerabilityName": "WSO2 Multiple Products Path Traversal Vulnerability ",
+          "vulnerabilityName": "WSO2 Multiple Products Path Traversal Vulnerability",
           "dateAdded": "2026-09-24",
-          "shortDescription": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution. ",
+          "shortDescription": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution.",
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
           "dueDate": "2026-09-27",
           "knownRansomwareCampaignUse": "Unknown",
@@ -1003,10 +1003,10 @@
         {
           "cveID": "CVE-2026-71362",
           "vendorProject": "Adobe",
-          "product": "Commerce and Magento ",
-          "vulnerabilityName": "Adobe Commerce and Magento Incorrect Authorization Vulnerability ",
+          "product": "Commerce and Magento",
+          "vulnerabilityName": "Adobe Commerce and Magento Incorrect Authorization Vulnerability",
           "dateAdded": "2026-09-24",
-          "shortDescription": "Adobe Commerce and Magento contains an incorrect authorization vulnerability that could allow an attacker to leverage this vulnerability to gain elevated access to sensitive resources without any user interaction. ",
+          "shortDescription": "Adobe Commerce and Magento contains an incorrect authorization vulnerability that could allow an attacker to leverage this vulnerability to gain elevated access to sensitive resources without any user interaction.",
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
           "dueDate": "2026-09-27",
           "knownRansomwareCampaignUse": "Unknown",
@@ -1348,7 +1348,7 @@
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
           "dueDate": "2026-09-23",
           "knownRansomwareCampaignUse": "Unknown",
-          "notes": "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-87491 ",
+          "notes": "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0808145027.html ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-87491",
           "cwes": [
             "CWE-787"
           ],
@@ -1510,7 +1510,7 @@
           "product": "Artifactory",
           "vulnerabilityName": "JFrog Artifactory Improper Authentication Vulnerability",
           "dateAdded": "2026-09-02",
-          "shortDescription": "JFrog Artifactory contains an improper authentication vulnerability that under default configuration can allow an unauthenticated attacker with network access to obtain administrative privileges. ",
+          "shortDescription": "JFrog Artifactory contains an improper authentication vulnerability that under default configuration can allow an unauthenticated attacker with network access to obtain administrative privileges.",
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
           "dueDate": "2026-09-05",
           "knownRansomwareCampaignUse": "Unknown",
@@ -1623,7 +1623,7 @@
           "product": "Kernel",
           "vulnerabilityName": "Linux Kernel Unspecified Vulnerability",
           "dateAdded": "2026-08-27",
-          "shortDescription": "Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to Suse, Red Hat, and other products using Linux. ",
+          "shortDescription": "Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to Suse, Red Hat, and other products using Linux.",
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
           "dueDate": "2026-08-30",
           "knownRansomwareCampaignUse": "Unknown",
@@ -1669,7 +1669,7 @@
           "product": "Libuser",
           "vulnerabilityName": "Red Hat Libuser Race Condition Vulnerability",
           "dateAdded": "2026-08-26",
-          "shortDescription": "Red Hat libuser contains a race condition vulnerability that allows authenticated local users to corrupt the /etc/passwd file to cause a denial of service or privilege escalation. ",
+          "shortDescription": "Red Hat libuser contains a race condition vulnerability that allows authenticated local users to corrupt the /etc/passwd file to cause a denial of service or privilege escalation.",
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
           "dueDate": "2026-09-09",
           "knownRansomwareCampaignUse": "Unknown",
@@ -1713,7 +1713,7 @@
           "product": "NetScaler ADC and NetScaler Gateway",
           "vulnerabilityName": "Citrix NetScaler ADC and NetScaler Gateway Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
           "dateAdded": "2026-08-26",
-          "shortDescription": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability which could lead to denial of service. ",
+          "shortDescription": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability which could lead to denial of service.",
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
           "dueDate": "2026-08-29",
           "knownRansomwareCampaignUse": "Unknown",
@@ -1917,7 +1917,7 @@
         {
           "cveID": "CVE-2026-20349",
           "vendorProject": "Cisco",
-          "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) ",
+          "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD)",
           "vulnerabilityName": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability",
           "dateAdded": "2026-08-11",
           "shortDescription": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) contain a heap inspection vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
@@ -1933,7 +1933,7 @@
         {
           "cveID": "CVE-2026-68820",
           "vendorProject": "Microsoft",
-          "product": "Windows Ancillary Function Driver for WinSock ",
+          "product": "Windows Ancillary Function Driver for WinSock",
           "vulnerabilityName": "Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability",
           "dateAdded": "2026-08-11",
           "shortDescription": "Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally.",
@@ -2126,7 +2126,7 @@
           "cveID": "CVE-2026-50522",
           "vendorProject": "Microsoft",
           "product": "SharePoint",
-          "vulnerabilityName": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ",
+          "vulnerabilityName": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
           "dateAdded": "2026-07-22",
           "shortDescription": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network.",
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
@@ -2176,11 +2176,11 @@
           "product": "Langflow",
           "vulnerabilityName": "Langflow Inclusion of Functionality from Untrusted Control Sphere Vulnerability",
           "dateAdded": "2026-07-21",
-          "shortDescription": "Langflow contains an inclusion of functionality from untrusted control sphere vulnerability that allows remote attackers to execute arbitrary code on affected installations. ",
+          "shortDescription": "Langflow contains an inclusion of functionality from untrusted control sphere vulnerability that allows remote attackers to execute arbitrary code on affected installations.",
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
           "dueDate": "2026-07-24",
           "knownRansomwareCampaignUse": "Unknown",
-          "notes": "https://github.com/langflow-ai/langflow/releases/tag/v1.9.0 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-0770 ",
+          "notes": "https://github.com/langflow-ai/langflow/releases/tag/v1.9.0 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-0770",
           "cwes": [
             "CWE-829"
           ],
@@ -2274,7 +2274,7 @@
           "product": "KNX Protocol Connection Authorization Option 1",
           "vulnerabilityName": "KNX Association KNX Protocol Connection Authorization Option 1 Overly Restrictive Account Lockout Mechanism Vulnerability",
           "dateAdded": "2026-07-15",
-          "shortDescription": "KNX Association KNX Protocol Connection Authorization Option 1 contains an overly restrictive account lockout mechanism vulnerability that could allow an attacker to purge all devices without additional security options enabled and set a BCU key to lock the device. ",
+          "shortDescription": "KNX Association KNX Protocol Connection Authorization Option 1 contains an overly restrictive account lockout mechanism vulnerability that could allow an attacker to purge all devices without additional security options enabled and set a BCU key to lock the device.",
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
           "dueDate": "2026-07-29",
           "knownRansomwareCampaignUse": "Unknown",
@@ -2288,7 +2288,7 @@
           "cveID": "CVE-2026-56155",
           "vendorProject": "Microsoft",
           "product": "Active Directory Federation Services",
-          "vulnerabilityName": "Microsoft Active Directory Federation Services Insufficient Granularity of Access Control Vulnerability ",
+          "vulnerabilityName": "Microsoft Active Directory Federation Services Insufficient Granularity of Access Control Vulnerability",
           "dateAdded": "2026-07-14",
           "shortDescription": "Microsoft Active Directory Federation Services contains an insufficient granularity of access control vulnerability that allows an authorized attacker to elevate privileges locally.",
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
@@ -2609,10 +2609,10 @@
         {
           "cveID": "CVE-2026-48907",
           "vendorProject": "Widget Factory",
-          "product": "Joomla Content Editor ",
+          "product": "Joomla Content Editor",
           "vulnerabilityName": "Widget Factory Joomla Content Editor Improper Access Control Vulnerability",
           "dateAdded": "2026-06-16",
-          "shortDescription": "Widget Factory Joomla Content Editor contains an improper access control vulnerability which could allow for upload and execution of PHP code via the creation of new editor profiles for unauthenticated users. ",
+          "shortDescription": "Widget Factory Joomla Content Editor contains an improper access control vulnerability which could allow for upload and execution of PHP code via the creation of new editor profiles for unauthenticated users.",
           "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
           "dueDate": "2026-06-19",
           "knownRansomwareCampaignUse": "Unknown",
@@ -2657,7 +2657,7 @@
         {
           "cveID": "CVE-2026-35273",
           "vendorProject": "Oracle",
-          "product": " PeopleSoft Enterprise PeopleTools",
+          "product": "PeopleSoft Enterprise PeopleTools",
           "vulnerabilityName": "Oracle PeopleSoft Enterprise PeopleTools Missing Authentication for Critical Function Vulnerability",
           "dateAdded": "2026-06-12",
           "shortDescription": "Oracle PeopleSoft Enterprise PeopleTools contains a missing authentication for critical function vulnerability which could allow an unauthenticated attacker to obtain takeover of PeopleSoft Enterprise PeopleTools.",
@@ -3670,7 +3670,7 @@
           "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2026-04-15",
           "knownRansomwareCampaignUse": "Unknown",
-          "notes": "This vulnerability affects an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_31.html ; https://nvd.nist.gov/vuln/detail/CVE-2026-5281 ",
+          "notes": "This vulnerability affects an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_31.html ; https://nvd.nist.gov/vuln/detail/CVE-2026-5281",
           "cwes": [
             "CWE-416"
           ],
@@ -3969,7 +3969,7 @@
         {
           "cveID": "CVE-2026-1603",
           "vendorProject": "Ivanti",
-          "product": " Endpoint Manager (EPM)",
+          "product": "Endpoint Manager (EPM)",
           "vulnerabilityName": "Ivanti Endpoint Manager (EPM) Authentication Bypass Vulnerability",
           "dateAdded": "2026-03-09",
           "shortDescription": "Ivanti Endpoint Manager (EPM) contains an authentication bypass using an alternate path or channel vulnerability that could allow a remote unauthenticated attacker to leak specific stored credential data.",
@@ -4084,7 +4084,7 @@
           "product": "Multiple Chipsets",
           "vulnerabilityName": "Qualcomm Multiple Chipsets Memory Corruption Vulnerability",
           "dateAdded": "2026-03-03",
-          "shortDescription": "Multiple Qualcomm chipsets contain a memory corruption vulnerability while using alignments for memory allocation. ",
+          "shortDescription": "Multiple Qualcomm chipsets contain a memory corruption vulnerability while using alignments for memory allocation.",
           "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2026-03-24",
           "knownRansomwareCampaignUse": "Unknown",
@@ -4243,7 +4243,7 @@
           "cveID": "CVE-2008-0015",
           "vendorProject": "Microsoft",
           "product": "Windows",
-          "vulnerabilityName": " Microsoft Windows Video ActiveX Control Remote Code Execution Vulnerability",
+          "vulnerabilityName": "Microsoft Windows Video ActiveX Control Remote Code Execution Vulnerability",
           "dateAdded": "2026-02-17",
           "shortDescription": "Microsoft Windows Video ActiveX Control contains a remote code execution vulnerability. An attacker could exploit the vulnerability by constructing a specially crafted Web page. When a user views the Web page, the vulnerability could allow remote code execution. An attacker who successfully exploited this vulnerability could gain the same user rights as the logged-on user.",
           "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
@@ -4387,11 +4387,11 @@
           "product": "Windows",
           "vulnerabilityName": "Microsoft Windows Shell Protection Mechanism Failure Vulnerability",
           "dateAdded": "2026-02-10",
-          "shortDescription": "Microsoft Windows Shell contains a protection mechanism failure vulnerability that could allow an unauthorized attacker to bypass a security feature over a network. ",
+          "shortDescription": "Microsoft Windows Shell contains a protection mechanism failure vulnerability that could allow an unauthorized attacker to bypass a security feature over a network.",
           "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2026-03-03",
           "knownRansomwareCampaignUse": "Unknown",
-          "notes": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21510 ; https://nvd.nist.gov/vuln/detail/CVE-2026-21510 ",
+          "notes": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21510 ; https://nvd.nist.gov/vuln/detail/CVE-2026-21510",
           "cwes": [
             "CWE-693"
           ],
@@ -4467,7 +4467,7 @@
           "product": "SmarterMail",
           "vulnerabilityName": "SmarterTools SmarterMail Missing Authentication for Critical Function Vulnerability",
           "dateAdded": "2026-02-05",
-          "shortDescription": "SmarterTools SmarterMail contains a missing authentication for critical function vulnerability in the ConnectToHub API method. This could allow the attacker to point the SmarterMail instance to a malicious HTTP server which serves the malicious OS command and could lead to command execution. ",
+          "shortDescription": "SmarterTools SmarterMail contains a missing authentication for critical function vulnerability in the ConnectToHub API method. This could allow the attacker to point the SmarterMail instance to a malicious HTTP server which serves the malicious OS command and could lead to command execution.",
           "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2026-02-26",
           "knownRansomwareCampaignUse": "Known",
@@ -4483,7 +4483,7 @@
           "product": "Community and Enterprise Editions",
           "vulnerabilityName": "GitLab Community and Enterprise Editions Server-Side Request Forgery (SSRF) Vulnerability",
           "dateAdded": "2026-02-03",
-          "shortDescription": "GitLab Community and Enterprise Editions contain a server-side request forgery vulnerability which could allow unauthorized external users to perform Server Side Requests via the CI Lint API. ",
+          "shortDescription": "GitLab Community and Enterprise Editions contain a server-side request forgery vulnerability which could allow unauthorized external users to perform Server Side Requests via the CI Lint API.",
           "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2026-02-24",
           "knownRansomwareCampaignUse": "Unknown",
@@ -4496,10 +4496,10 @@
         {
           "cveID": "CVE-2025-64328",
           "vendorProject": "Sangoma",
-          "product": "FreePBX ",
+          "product": "FreePBX",
           "vulnerabilityName": "Sangoma FreePBX OS Command Injection Vulnerability",
           "dateAdded": "2026-02-03",
-          "shortDescription": "Sangoma FreePBX Endpoint Manager contains an OS command injection vulnerability that could allow for a post-authentication command injection by an authenticated known user via the testconnection -> check_ssh_connect() function. An attacker can leverage this vulnerability to potentially obtain remote access to the system as an asterisk user. ",
+          "shortDescription": "Sangoma FreePBX Endpoint Manager contains an OS command injection vulnerability that could allow for a post-authentication command injection by an authenticated known user via the testconnection -> check_ssh_connect() function. An attacker can leverage this vulnerability to potentially obtain remote access to the system as an asterisk user.",
           "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2026-02-24",
           "knownRansomwareCampaignUse": "Unknown",
@@ -4513,7 +4513,7 @@
           "cveID": "CVE-2019-19006",
           "vendorProject": "Sangoma",
           "product": "FreePBX",
-          "vulnerabilityName": " Sangoma FreePBX Improper Authentication Vulnerability",
+          "vulnerabilityName": "Sangoma FreePBX Improper Authentication Vulnerability",
           "dateAdded": "2026-02-03",
           "shortDescription": "Sangoma FreePBX contains an improper authentication vulnerability that potentially allows unauthorized users to bypass password authentication and access services provided by the FreePBX admin.",
           "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
@@ -4672,7 +4672,7 @@
         {
           "cveID": "CVE-2025-68645",
           "vendorProject": "Synacor",
-          "product": " Zimbra Collaboration Suite (ZCS)",
+          "product": "Zimbra Collaboration Suite (ZCS)",
           "vulnerabilityName": "Synacor Zimbra Collaboration Suite (ZCS) PHP Remote File Inclusion Vulnerability",
           "dateAdded": "2026-01-22",
           "shortDescription": "Synacor Zimbra Collaboration Suite (ZCS) contains a PHP remote file inclusion vulnerability that could allow for remote attackers to craft requests to the /h/rest endpoint to influence internal request dispatching, allowing inclusion of arbitrary files from the WebRoot directory.",
@@ -5710,7 +5710,7 @@
           "vulnerabilityName": "GNU Bash OS Command Injection Vulnerability",
           "dateAdded": "2025-10-02",
           "shortDescription": "GNU Bash contains an OS command injection vulnerability which allows remote attackers to execute arbitrary commands via a crafted environment.",
-          "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. ",
+          "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2025-10-23",
           "knownRansomwareCampaignUse": "Unknown",
           "notes": "This vulnerability could affect an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: http://ftp.gnu.org/gnu/bash/bash-4.3-patches/bash43-027 ; https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/23467 ; https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140926-bash ; https://www.ibm.com/support/pages/security-bulletin-update-vulnerabilities-bash-affect-aix-toolbox-linux-applications-cve-2014-6271-cve-2014-6277-cve-2014-6278-cve-2014-7169-cve-2014-7186-and-cve-2014-7187 ; https://nvd.nist.gov/vuln/detail/CVE-2014-6278",
@@ -5963,7 +5963,7 @@
           "product": "Multiple Products",
           "vulnerabilityName": "Sitecore Multiple Products Deserialization of Untrusted Data Vulnerability",
           "dateAdded": "2025-09-04",
-          "shortDescription": "Sitecore Experience Manager (XM), Experience Platform (XP), Experience Commerce (XC), and Managed Cloud contain a deserialization of untrusted data vulnerability involving the use of default machine keys. This flaw allows attackers to exploit exposed ASP.NET machine keys to achieve remote code execution. ",
+          "shortDescription": "Sitecore Experience Manager (XM), Experience Platform (XP), Experience Commerce (XC), and Managed Cloud contain a deserialization of untrusted data vulnerability involving the use of default machine keys. This flaw allows attackers to exploit exposed ASP.NET machine keys to achieve remote code execution.",
           "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2025-09-25",
           "knownRansomwareCampaignUse": "Unknown",
@@ -6277,7 +6277,7 @@
           "product": "NG/MF",
           "vulnerabilityName": "PaperCut NG/MF Cross-Site Request Forgery (CSRF) Vulnerability",
           "dateAdded": "2025-07-28",
-          "shortDescription": "PaperCut NG/MF contains a cross-site request forgery (CSRF) vulnerability, which, under specific conditions, could potentially enable an attacker to alter security settings or execute arbitrary code. ",
+          "shortDescription": "PaperCut NG/MF contains a cross-site request forgery (CSRF) vulnerability, which, under specific conditions, could potentially enable an attacker to alter security settings or execute arbitrary code.",
           "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2025-08-18",
           "knownRansomwareCampaignUse": "Unknown",
@@ -6371,13 +6371,13 @@
           "cveID": "CVE-2025-54309",
           "vendorProject": "CrushFTP",
           "product": "CrushFTP",
-          "vulnerabilityName": " CrushFTP Unprotected Alternate Channel Vulnerability",
+          "vulnerabilityName": "CrushFTP Unprotected Alternate Channel Vulnerability",
           "dateAdded": "2025-07-22",
           "shortDescription": "CrushFTP contains an unprotected alternate channel vulnerability. When the DMZ proxy feature is not used, mishandles AS2 validation and consequently allows remote attackers to obtain admin access via HTTPS.",
           "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2025-08-12",
           "knownRansomwareCampaignUse": "Unknown",
-          "notes": "https://www.crushftp.com/crush11wiki/Wiki.jsp?page=CompromiseJuly2025 ; https://nvd.nist.gov/vuln/detail/CVE-2025-54309 ",
+          "notes": "https://www.crushftp.com/crush11wiki/Wiki.jsp?page=CompromiseJuly2025 ; https://nvd.nist.gov/vuln/detail/CVE-2025-54309",
           "cwes": [
             "CWE-420"
           ],
@@ -6615,7 +6615,7 @@
           "product": "FortiOS",
           "vulnerabilityName": "Fortinet FortiOS Use of Hard-Coded Credentials Vulnerability",
           "dateAdded": "2025-06-25",
-          "shortDescription": "Fortinet FortiOS contains a use of hard-coded credentials vulnerability that could allow an attacker to cipher sensitive data in FortiOS configuration backup file via knowledge of the hard-coded key. ",
+          "shortDescription": "Fortinet FortiOS contains a use of hard-coded credentials vulnerability that could allow an attacker to cipher sensitive data in FortiOS configuration backup file via knowledge of the hard-coded key.",
           "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2025-07-16",
           "knownRansomwareCampaignUse": "Known",
@@ -6629,7 +6629,7 @@
           "cveID": "CVE-2024-0769",
           "vendorProject": "D-Link",
           "product": "DIR-859 Router",
-          "vulnerabilityName": " D-Link DIR-859 Router Path Traversal Vulnerability",
+          "vulnerabilityName": "D-Link DIR-859 Router Path Traversal Vulnerability",
           "dateAdded": "2025-06-25",
           "shortDescription": "D-Link DIR-859 routers contain a path traversal vulnerability in the file /hedwig.cgi of the component HTTP POST Request Handler. Manipulation of the argument service with the input ../../../../htdocs/webinc/getcfg/DHCPS6.BRIDGE-1.xml allows for the leakage of session data potentially enabling privilege escalation and unauthorized control of the device. This vulnerability affects legacy D-Link products. All associated hardware revisions have reached their end-of-life (EOL) or end-of-service (EOS) life cycle and should be retired and replaced per vendor instructions.",
           "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
@@ -6707,7 +6707,7 @@
           "cveID": "CVE-2025-33053",
           "vendorProject": "Microsoft",
           "product": "Windows",
-          "vulnerabilityName": " Microsoft Windows External Control of File Name or Path Vulnerability",
+          "vulnerabilityName": "Microsoft Windows External Control of File Name or Path Vulnerability",
           "dateAdded": "2025-06-10",
           "shortDescription": "Microsoft Windows contains an external control of file name or path vulnerability that could allow an attacker to execute code from a remote WebDAV location specified by the WorkingDirectory attribute of Internet Shortcut files.",
           "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
@@ -7354,7 +7354,7 @@
           "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2025-05-19",
           "knownRansomwareCampaignUse": "Unknown",
-          "notes": "https://documentation.commvault.com/securityadvisories/CV_2025_03_1.html;   https://www.commvault.com/blogs/notice-security-advisory-update;   https://nvd.nist.gov/vuln/detail/CVE-2025-3928      ",
+          "notes": "https://documentation.commvault.com/securityadvisories/CV_2025_03_1.html;   https://www.commvault.com/blogs/notice-security-advisory-update;   https://nvd.nist.gov/vuln/detail/CVE-2025-3928",
           "cwes": [],
           "source": "CISA-KEV"
         },
@@ -7488,7 +7488,7 @@
           "product": "CrushFTP",
           "vulnerabilityName": "CrushFTP Authentication Bypass Vulnerability",
           "dateAdded": "2025-04-07",
-          "shortDescription": "CrushFTP contains an authentication bypass vulnerability in the HTTP authorization header that allows a remote unauthenticated attacker to authenticate to any known or guessable user account (e.g., crushadmin), potentially leading to a full compromise. ",
+          "shortDescription": "CrushFTP contains an authentication bypass vulnerability in the HTTP authorization header that allows a remote unauthenticated attacker to authenticate to any known or guessable user account (e.g., crushadmin), potentially leading to a full compromise.",
           "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2025-04-28",
           "knownRansomwareCampaignUse": "Known",
@@ -7504,7 +7504,7 @@
           "product": "Connect Secure, Policy Secure, and ZTA Gateways",
           "vulnerabilityName": "Ivanti Connect Secure, Policy Secure, and ZTA Gateways Stack-Based Buffer Overflow Vulnerability",
           "dateAdded": "2025-04-04",
-          "shortDescription": "Ivanti Connect Secure, Policy Secure, and ZTA Gateways contains a stack-based buffer overflow vulnerability that allows a remote unauthenticated attacker to achieve remote code execution. ",
+          "shortDescription": "Ivanti Connect Secure, Policy Secure, and ZTA Gateways contains a stack-based buffer overflow vulnerability that allows a remote unauthenticated attacker to achieve remote code execution.",
           "requiredAction": "Apply mitigations as set forth in the CISA instructions linked below.",
           "dueDate": "2025-04-11",
           "knownRansomwareCampaignUse": "Known",
@@ -7679,7 +7679,7 @@
           "product": "FortiOS and FortiProxy",
           "vulnerabilityName": "Fortinet FortiOS and FortiProxy Authentication Bypass Vulnerability",
           "dateAdded": "2025-03-18",
-          "shortDescription": " Fortinet FortiOS and FortiProxy contain an authentication bypass vulnerability that allows a remote attacker to gain super-admin privileges via crafted CSF proxy requests.",
+          "shortDescription": "Fortinet FortiOS and FortiProxy contain an authentication bypass vulnerability that allows a remote attacker to gain super-admin privileges via crafted CSF proxy requests.",
           "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2025-04-08",
           "knownRansomwareCampaignUse": "Known",
@@ -7886,7 +7886,7 @@
           "cveID": "CVE-2025-25181",
           "vendorProject": "Advantive",
           "product": "VeraCore",
-          "vulnerabilityName": " Advantive VeraCore SQL Injection Vulnerability",
+          "vulnerabilityName": "Advantive VeraCore SQL Injection Vulnerability",
           "dateAdded": "2025-03-10",
           "shortDescription": "Advantive VeraCore contains a SQL injection vulnerability in timeoutWarning.asp that allows a remote attacker to execute arbitrary SQL commands via the PmSess1 parameter.",
           "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
@@ -8688,7 +8688,7 @@
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2025-01-28",
           "knownRansomwareCampaignUse": "Known",
-          "notes": "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-misa-2024-0029 ; https://nvd.nist.gov/vuln/detail/CVE-2024-41713 ",
+          "notes": "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-misa-2024-0029 ; https://nvd.nist.gov/vuln/detail/CVE-2024-41713",
           "cwes": [
             "CWE-22"
           ],
@@ -8714,7 +8714,7 @@
           "cveID": "CVE-2021-44207",
           "vendorProject": "Acclaim Systems",
           "product": "USAHERDS",
-          "vulnerabilityName": "Acclaim Systems USAHERDS Use of Hard-Coded Credentials Vulnerability ",
+          "vulnerabilityName": "Acclaim Systems USAHERDS Use of Hard-Coded Credentials Vulnerability",
           "dateAdded": "2024-12-23",
           "shortDescription": "Acclaim Systems USAHERDS contains a hard-coded credentials vulnerability that could allow an attacker to achieve remote code execution on the system that runs the application. The MachineKey must be obtained via a separate vulnerability or other channel.",
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable. Please contact the product developer for support and vulnerability mitigation.",
@@ -8729,10 +8729,10 @@
         {
           "cveID": "CVE-2024-12356",
           "vendorProject": "BeyondTrust",
-          "product": "Privileged Remote Access (PRA) and Remote Support (RS) ",
-          "vulnerabilityName": "BeyondTrust Privileged Remote Access (PRA) and Remote Support (RS) Command Injection Vulnerability ",
+          "product": "Privileged Remote Access (PRA) and Remote Support (RS)",
+          "vulnerabilityName": "BeyondTrust Privileged Remote Access (PRA) and Remote Support (RS) Command Injection Vulnerability",
           "dateAdded": "2024-12-19",
-          "shortDescription": "BeyondTrust Privileged Remote Access (PRA) and Remote Support (RS) contain a command injection vulnerability, which can allow an unauthenticated attacker to inject commands that are run as a site user. ",
+          "shortDescription": "BeyondTrust Privileged Remote Access (PRA) and Remote Support (RS) contain a command injection vulnerability, which can allow an unauthenticated attacker to inject commands that are run as a site user.",
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2024-12-27",
           "knownRansomwareCampaignUse": "Unknown",
@@ -8746,7 +8746,7 @@
           "cveID": "CVE-2021-40407",
           "vendorProject": "Reolink",
           "product": "RLC-410W IP Camera",
-          "vulnerabilityName": "Reolink RLC-410W IP Camera OS Command Injection Vulnerability ",
+          "vulnerabilityName": "Reolink RLC-410W IP Camera OS Command Injection Vulnerability",
           "dateAdded": "2024-12-18",
           "shortDescription": "Reolink RLC-410W IP cameras contain an authenticated OS command injection vulnerability in the device network settings functionality.",
           "requiredAction": "The impacted product could be end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue product utilization if a current mitigation is unavailable.",
@@ -8778,9 +8778,9 @@
           "cveID": "CVE-2022-23227",
           "vendorProject": "NUUO",
           "product": "NVRmini2 Devices",
-          "vulnerabilityName": "NUUO NVRmini2 Devices Missing Authentication Vulnerability ",
+          "vulnerabilityName": "NUUO NVRmini2 Devices Missing Authentication Vulnerability",
           "dateAdded": "2024-12-18",
-          "shortDescription": "NUUO NVRmini2 devices contain a missing authentication vulnerability that allows an unauthenticated attacker to upload an encrypted TAR archive, which can be abused to add arbitrary users. ",
+          "shortDescription": "NUUO NVRmini2 devices contain a missing authentication vulnerability that allows an unauthenticated attacker to upload an encrypted TAR archive, which can be abused to add arbitrary users.",
           "requiredAction": "The impacted product is end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue utilization of the product.",
           "dueDate": "2025-01-08",
           "knownRansomwareCampaignUse": "Unknown",
@@ -8794,7 +8794,7 @@
           "cveID": "CVE-2018-14933",
           "vendorProject": "NUUO",
           "product": "NVRmini Devices",
-          "vulnerabilityName": "NUUO NVRmini Devices OS Command Injection Vulnerability ",
+          "vulnerabilityName": "NUUO NVRmini Devices OS Command Injection Vulnerability",
           "dateAdded": "2024-12-18",
           "shortDescription": "NUUO NVRmini devices contain an OS command injection vulnerability. This vulnerability allows remote command execution via shell metacharacters in the uploaddir parameter for a writeuploaddir command.",
           "requiredAction": "The impacted product is end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue utilization of the product.",
@@ -8826,7 +8826,7 @@
           "cveID": "CVE-2024-35250",
           "vendorProject": "Microsoft",
           "product": "Windows",
-          "vulnerabilityName": "Microsoft Windows Kernel-Mode Driver Untrusted Pointer Dereference Vulnerability ",
+          "vulnerabilityName": "Microsoft Windows Kernel-Mode Driver Untrusted Pointer Dereference Vulnerability",
           "dateAdded": "2024-12-16",
           "shortDescription": "Microsoft Windows Kernel-Mode Driver contains an untrusted pointer dereference vulnerability that allows a local attacker to escalate privileges.",
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
@@ -9289,7 +9289,7 @@
           "product": "PT30X-SDI/NDI Cameras",
           "vulnerabilityName": "PTZOptics PT30X-SDI/NDI Cameras OS Command Injection Vulnerability",
           "dateAdded": "2024-11-04",
-          "shortDescription": "PTZOptics PT30X-SDI/NDI cameras contain an OS command injection vulnerability that allows a remote, authenticated attacker to escalate privileges to root via a crafted payload with the ntp_addr parameter of the /cgi-bin/param.cgi CGI script. ",
+          "shortDescription": "PTZOptics PT30X-SDI/NDI cameras contain an OS command injection vulnerability that allows a remote, authenticated attacker to escalate privileges to root via a crafted payload with the ntp_addr parameter of the /cgi-bin/param.cgi CGI script.",
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2024-11-25",
           "knownRansomwareCampaignUse": "Unknown",
@@ -9428,10 +9428,10 @@
         {
           "cveID": "CVE-2024-30088",
           "vendorProject": "Microsoft",
-          "product": "Windows ",
+          "product": "Windows",
           "vulnerabilityName": "Microsoft Windows Kernel TOCTOU Race Condition Vulnerability",
           "dateAdded": "2024-10-15",
-          "shortDescription": "Microsoft Windows Kernel contains a time-of-check to time-of-use (TOCTOU) race condition vulnerability that could allow for privilege escalation. ",
+          "shortDescription": "Microsoft Windows Kernel contains a time-of-check to time-of-use (TOCTOU) race condition vulnerability that could allow for privilege escalation.",
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2024-11-05",
           "knownRansomwareCampaignUse": "Known",
@@ -9524,10 +9524,10 @@
         {
           "cveID": "CVE-2024-43047",
           "vendorProject": "Qualcomm",
-          "product": "Multiple Chipsets ",
+          "product": "Multiple Chipsets",
           "vulnerabilityName": "Qualcomm Multiple Chipsets Use-After-Free Vulnerability",
           "dateAdded": "2024-10-08",
-          "shortDescription": "Multiple Qualcomm chipsets contain a use-after-free vulnerability due to memory corruption in DSP Services while maintaining memory maps of HLOS memory. ",
+          "shortDescription": "Multiple Qualcomm chipsets contain a use-after-free vulnerability due to memory corruption in DSP Services while maintaining memory maps of HLOS memory.",
           "requiredAction": "Apply remediations or mitigations per vendor instructions or discontinue use of the product if remediation or mitigations are unavailable.",
           "dueDate": "2024-10-29",
           "knownRansomwareCampaignUse": "Unknown",
@@ -9559,7 +9559,7 @@
           "product": "Endpoint Manager (EPM)",
           "vulnerabilityName": "Ivanti Endpoint Manager (EPM) SQL Injection Vulnerability",
           "dateAdded": "2024-10-02",
-          "shortDescription": "Ivanti Endpoint Manager (EPM) contains a SQL injection vulnerability in Core server that allows an unauthenticated attacker within the same network to execute arbitrary code. ",
+          "shortDescription": "Ivanti Endpoint Manager (EPM) contains a SQL injection vulnerability in Core server that allows an unauthenticated attacker within the same network to execute arbitrary code.",
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2024-10-23",
           "knownRansomwareCampaignUse": "Unknown",
@@ -9748,7 +9748,7 @@
           "product": "Flash Player",
           "vulnerabilityName": "Adobe Flash Player Incorrect Default Permissions Vulnerability",
           "dateAdded": "2024-09-17",
-          "shortDescription": "Adobe Flash Player contains an incorrect default permissions vulnerability in the Firefox sandbox that allows a remote attacker to execute arbitrary code via crafted SWF content. ",
+          "shortDescription": "Adobe Flash Player contains an incorrect default permissions vulnerability in the Firefox sandbox that allows a remote attacker to execute arbitrary code via crafted SWF content.",
           "requiredAction": "The impacted product is end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue utilization of the product.",
           "dueDate": "2024-10-08",
           "knownRansomwareCampaignUse": "Unknown",
@@ -9890,9 +9890,9 @@
           "cveID": "CVE-2017-1000253",
           "vendorProject": "Linux",
           "product": "Kernel",
-          "vulnerabilityName": "Linux Kernel PIE Stack Buffer Corruption Vulnerability ",
+          "vulnerabilityName": "Linux Kernel PIE Stack Buffer Corruption Vulnerability",
           "dateAdded": "2024-09-09",
-          "shortDescription": "Linux kernel contains a position-independent executable (PIE) stack buffer corruption vulnerability in load_elf_ binary() that allows a local attacker to escalate privileges. ",
+          "shortDescription": "Linux kernel contains a position-independent executable (PIE) stack buffer corruption vulnerability in load_elf_ binary() that allows a local attacker to escalate privileges.",
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2024-09-30",
           "knownRansomwareCampaignUse": "Known",
@@ -9938,7 +9938,7 @@
           "cveID": "CVE-2021-20124",
           "vendorProject": "DrayTek",
           "product": "VigorConnect",
-          "vulnerabilityName": "Draytek VigorConnect Path Traversal Vulnerability ",
+          "vulnerabilityName": "Draytek VigorConnect Path Traversal Vulnerability",
           "dateAdded": "2024-09-03",
           "shortDescription": "Draytek VigorConnect contains a path traversal vulnerability in the file download functionality of the WebServlet endpoint. An unauthenticated attacker could leverage this vulnerability to download arbitrary files from the underlying operating system with root privileges.",
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
@@ -9954,9 +9954,9 @@
           "cveID": "CVE-2021-20123",
           "vendorProject": "DrayTek",
           "product": "VigorConnect",
-          "vulnerabilityName": "Draytek VigorConnect Path Traversal Vulnerability ",
+          "vulnerabilityName": "Draytek VigorConnect Path Traversal Vulnerability",
           "dateAdded": "2024-09-03",
-          "shortDescription": "Draytek VigorConnect contains a path traversal vulnerability in the DownloadFileServlet endpoint. An unauthenticated attacker could leverage this vulnerability to download arbitrary files from the underlying operating system with root privileges. ",
+          "shortDescription": "Draytek VigorConnect contains a path traversal vulnerability in the DownloadFileServlet endpoint. An unauthenticated attacker could leverage this vulnerability to download arbitrary files from the underlying operating system with root privileges.",
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2024-09-24",
           "knownRansomwareCampaignUse": "Unknown",
@@ -10208,7 +10208,7 @@
           "cveID": "CVE-2024-38189",
           "vendorProject": "Microsoft",
           "product": "Project",
-          "vulnerabilityName": "Microsoft Project Remote Code Execution Vulnerability ",
+          "vulnerabilityName": "Microsoft Project Remote Code Execution Vulnerability",
           "dateAdded": "2024-08-13",
           "shortDescription": "Microsoft Project contains an unspecified vulnerability that allows for remote code execution via a malicious file.",
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
@@ -10322,7 +10322,7 @@
           "product": "Utah, Vancouver, and Washington DC Now Platform",
           "vulnerabilityName": "ServiceNow Improper Input Validation Vulnerability",
           "dateAdded": "2024-07-29",
-          "shortDescription": "ServiceNow Utah, Vancouver, and Washington DC Now Platform releases contain a jelly template injection vulnerability in UI macros. An unauthenticated user could exploit this vulnerability to execute code remotely. ",
+          "shortDescription": "ServiceNow Utah, Vancouver, and Washington DC Now Platform releases contain a jelly template injection vulnerability in UI macros. An unauthenticated user could exploit this vulnerability to execute code remotely.",
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2024-08-19",
           "knownRansomwareCampaignUse": "Unknown",
@@ -10368,7 +10368,7 @@
           "cveID": "CVE-2022-22948",
           "vendorProject": "VMware",
           "product": "vCenter Server",
-          "vulnerabilityName": "VMware vCenter Server Incorrect Default File Permissions Vulnerability ",
+          "vulnerabilityName": "VMware vCenter Server Incorrect Default File Permissions Vulnerability",
           "dateAdded": "2024-07-17",
           "shortDescription": "VMware vCenter Server contains an incorrect default file permissions vulnerability that allows a remote, privileged attacker to gain access to sensitive information.",
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
@@ -10384,7 +10384,7 @@
           "cveID": "CVE-2024-28995",
           "vendorProject": "SolarWinds",
           "product": "Serv-U",
-          "vulnerabilityName": "SolarWinds Serv-U Path Traversal Vulnerability ",
+          "vulnerabilityName": "SolarWinds Serv-U Path Traversal Vulnerability",
           "dateAdded": "2024-07-17",
           "shortDescription": "SolarWinds Serv-U contains a path traversal vulnerability that allows an attacker access to read sensitive files on the host machine.",
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
@@ -10447,7 +10447,7 @@
         {
           "cveID": "CVE-2024-38080",
           "vendorProject": "Microsoft",
-          "product": "Windows ",
+          "product": "Windows",
           "vulnerabilityName": "Microsoft Windows Hyper-V Privilege Escalation Vulnerability",
           "dateAdded": "2024-07-09",
           "shortDescription": "Microsoft Windows Hyper-V contains a privilege escalation vulnerability that allows a local attacker with user permissions to gain SYSTEM privileges.",
@@ -10514,7 +10514,7 @@
           "product": "Kernel",
           "vulnerabilityName": "Linux Kernel Use-After-Free Vulnerability",
           "dateAdded": "2024-06-26",
-          "shortDescription": "Linux Kernel contains a use-after-free vulnerability in the nft_object, allowing local attackers to escalate privileges. ",
+          "shortDescription": "Linux Kernel contains a use-after-free vulnerability in the nft_object, allowing local attackers to escalate privileges.",
           "requiredAction": "Apply updates per vendor instructions or discontinue use of the product if updates are unavailable.",
           "dueDate": "2024-07-17",
           "knownRansomwareCampaignUse": "Unknown",
@@ -10671,7 +10671,7 @@
         {
           "cveID": "CVE-2024-4978",
           "vendorProject": "Justice AV Solutions",
-          "product": "Viewer ",
+          "product": "Viewer",
           "vulnerabilityName": "Justice AV Solutions (JAVS) Viewer Installer Embedded Malicious Code Vulnerability",
           "dateAdded": "2024-05-29",
           "shortDescription": "Justice AV Solutions (JAVS) Viewer installer contains a malicious version of ffmpeg.exe, named fffmpeg.exe (SHA256: 421a4ad2615941b177b6ec4ab5e239c14e62af2ab07c6df1741e2a62223223c4). When run, this creates a backdoor connection to a malicious C2 server.",
@@ -10754,7 +10754,7 @@
           "product": "Chromium V8",
           "vulnerabilityName": "Google Chromium V8 Out-of-Bounds Memory Write Vulnerability",
           "dateAdded": "2024-05-16",
-          "shortDescription": "Google Chromium V8 Engine contains an unspecified out-of-bounds memory write vulnerability via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera. ",
+          "shortDescription": "Google Chromium V8 Engine contains an unspecified out-of-bounds memory write vulnerability via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2024-06-06",
           "knownRansomwareCampaignUse": "Unknown",
@@ -10770,7 +10770,7 @@
           "product": "DIR-605 Router",
           "vulnerabilityName": "D-Link DIR-605 Router Information Disclosure Vulnerability",
           "dateAdded": "2024-05-16",
-          "shortDescription": "D-Link DIR-605 routers contain an information disclosure vulnerability that allows attackers to obtain a username and password by forging a post request to the /getcfg.php page. ",
+          "shortDescription": "D-Link DIR-605 routers contain an information disclosure vulnerability that allows attackers to obtain a username and password by forging a post request to the /getcfg.php page.",
           "requiredAction": "This vulnerability affects legacy D-Link products. All associated hardware revisions have reached their end-of-life (EOL) or end-of-service (EOS) life cycle and should be retired and replaced per vendor instructions.",
           "dueDate": "2024-06-06",
           "knownRansomwareCampaignUse": "Unknown",
@@ -10816,7 +10816,7 @@
           "cveID": "CVE-2024-30051",
           "vendorProject": "Microsoft",
           "product": "DWM Core Library",
-          "vulnerabilityName": " Microsoft DWM Core Library Privilege Escalation Vulnerability",
+          "vulnerabilityName": "Microsoft DWM Core Library Privilege Escalation Vulnerability",
           "dateAdded": "2024-05-14",
           "shortDescription": "Microsoft DWM Core Library contains a privilege escalation vulnerability that allows an attacker to gain SYSTEM privileges.",
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
@@ -10928,10 +10928,10 @@
           "cveID": "CVE-2022-38028",
           "vendorProject": "Microsoft",
           "product": "Windows",
-          "vulnerabilityName": "Microsoft Windows Print Spooler Privilege Escalation Vulnerability ",
+          "vulnerabilityName": "Microsoft Windows Print Spooler Privilege Escalation Vulnerability",
           "dateAdded": "2024-04-23",
           "shortDescription": "Microsoft Windows Print Spooler service contains a privilege escalation vulnerability. An attacker may modify a JavaScript constraints file and execute it with SYSTEM-level permissions.",
-          "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.  ",
+          "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2024-05-14",
           "knownRansomwareCampaignUse": "Unknown",
           "notes": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-38028;  https://nvd.nist.gov/vuln/detail/CVE-2022-38028",
@@ -11055,7 +11055,7 @@
           "cveID": "CVE-2021-44529",
           "vendorProject": "Ivanti",
           "product": "Endpoint Manager Cloud Service Appliance (EPM CSA)",
-          "vulnerabilityName": "Ivanti Endpoint Manager Cloud Service Appliance (EPM CSA) Code Injection Vulnerability ",
+          "vulnerabilityName": "Ivanti Endpoint Manager Cloud Service Appliance (EPM CSA) Code Injection Vulnerability",
           "dateAdded": "2024-03-25",
           "shortDescription": "Ivanti Endpoint Manager Cloud Service Appliance (EPM CSA) contains a code injection vulnerability that allows an unauthenticated user to execute malicious code with limited permissions (nobody).",
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
@@ -11135,7 +11135,7 @@
           "cveID": "CVE-2023-21237",
           "vendorProject": "Android",
           "product": "Pixel",
-          "vulnerabilityName": "Android Pixel Information Disclosure Vulnerability ",
+          "vulnerabilityName": "Android Pixel Information Disclosure Vulnerability",
           "dateAdded": "2024-03-05",
           "shortDescription": "Android Pixel contains a vulnerability in the Framework component, where the UI may be misleading or insufficient, providing a means to hide a foreground service notification. This could enable a local attacker to disclose sensitive information.",
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
@@ -11873,7 +11873,7 @@
           "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
           "dueDate": "2023-12-12",
           "knownRansomwareCampaignUse": "Unknown",
-          "notes": "This vulnerability affects a common open-source component, third-party library, or a protocol used by different products. Please check with specific vendors for information on patching status. For more information, please see: https://sourceware.org/git/?p=glibc.git;a=commitdiff;h=1056e5b4c3f2d90ed2b4a55f96add28da2f4c8fa, https://access.redhat.com/security/cve/cve-2023-4911, https://www.debian.org/security/2023/dsa-5514 ; https://nvd.nist.gov/vuln/detail/CVE-2023-4911  ",
+          "notes": "This vulnerability affects a common open-source component, third-party library, or a protocol used by different products. Please check with specific vendors for information on patching status. For more information, please see: https://sourceware.org/git/?p=glibc.git;a=commitdiff;h=1056e5b4c3f2d90ed2b4a55f96add28da2f4c8fa, https://access.redhat.com/security/cve/cve-2023-4911, https://www.debian.org/security/2023/dsa-5514 ; https://nvd.nist.gov/vuln/detail/CVE-2023-4911",
           "cwes": [
             "CWE-122"
           ],
@@ -25255,7 +25255,7 @@
           "product": "Chrome",
           "vulnerabilityName": "Google Chrome Use-After-Free Vulnerability",
           "dateAdded": "2021-11-03",
-          "shortDescription": "Google Chrome contains a use-after-free vulnerability that allows a remote attacker, who has compromised the renderer process, to potentially perform a sandbox escape via a crafted HTML page.  ",
+          "shortDescription": "Google Chrome contains a use-after-free vulnerability that allows a remote attacker, who has compromised the renderer process, to potentially perform a sandbox escape via a crafted HTML page.",
           "requiredAction": "Apply updates per vendor instructions.",
           "dueDate": "2022-05-03",
           "knownRansomwareCampaignUse": "Unknown",
@@ -34684,6 +34684,15 @@
         "source": "GoogleNews"
       },
       {
+        "title": "White House task force says companies deserve liability relief for AI-fueled cyberattacks",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeV9JbFpvNHlvWjJORm54aVlWbVM1Y2dnTmtSY1NNRlB1RXlLNmhVZWJUbWw1YW9WNnhFaUlqQ250Q1NiOHZKZDBabE5VNVRPM0ZORm9Xa1F6ZkRId2FqXzBlM2RYRUc3UVR5ZmsyVlA3TVJfU3pOay1oZ19mUHJSRDA0Rld6RjJtWkowaUtpcnhrZlJYMHY2RWI5OFpHdw?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261113T211118Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMDBfekFQb0pMZmFRY2kzUmVmUEZFUldTQjNsSjBlMkF4Rl9TalJIaG9BOXB6NXIzd01hSFBNbndHbGxRY29hamppTUt3UEh4X1I0RUc0MUt2bThNeTlMVGxXRWk1TXdRQi1yVXJWNThQNTdodkRWaURhOTc5eTdrWWdMb2w?oc=5",
         "domain": "thehackernews",
@@ -34693,12 +34702,21 @@
         "source": "GoogleNews"
       },
       {
-        "title": "France blames Iran for ‘unprecedented’ supermarket fridge cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbmxvM05WaDBidTRvTF96WG1rVnJPVEM0NjJuZllvUVBSRzJ1R3JkWjZGN0xaMC1nLTl2aTFvbllsVjBhTks5VzJINFVlS0UwTVV1cjUycVJqbmFWRm9qN2lhT0doQTBaeTFsbXRhNjEtSkJZdTJ2SE13dkdNcHFvQ3RpY0swVzFJMy1RUw?oc=5",
-        "domain": "cnn",
+        "title": "The Next Cyberattack May Target Your HVAC, Elevators, or Worse. These 3 Steps Close the Gap",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPOXk5LTNjdGZPem54TlZBU3A0ZlBzQUtaeDVtckZMa1prMjQwSlhNSy02REU0aWNQOUVRUW5IcGFlZGdnXzQwUlJMYkJ2V1plVFJXM0N2cnlMakhSWi11MlpqNDlwRXZ6cGJOVFZBaTJIYjNYMTF6clFnVmF2Q08wdENVM0xqZUpNNjlYYnhKQVVROXg0ZFp0MDNHY2hLaUZNZENCOVJuRFFELVYxWUdHcWZsWGV5eVRPRGpkbENZREtXZEtIT1BjOWtB?oc=5",
+        "domain": "inc.com",
         "language": "",
         "tone": 0,
-        "seendate": "20261109T162204Z",
+        "seendate": "20261113T215902Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Cybercrime group claims it stole social security numbers during ongoing Vanderbilt breach, report says. Here’s what we know",
+        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNOTNqdE9FcnlPYkNXeDBNOW1YbFJRZmJfeHYzWXZDcTI5a3pfN2wzY19sZklXdkNCZUMteU9IZ1RBU2QyTFV6R3BSVEgwLXNGbXpVMjZFUm4wdDFzOEFvamNvdlBJWlRkclU5bGJycjJRTElJNzFyZUdGT3JYWVZHcFN6QnROcENHemtoa0hpVW1aYWdEU204eVh2VS1teWhZN3V6bW41b1F1N2toUm0tN3o3eHdLaElMd0RFY0ZDZFBILV9TVTM4UGxaLVNLSFhhMXRjRnJpaHN1cXN6UlFJVzk4SmY0LU9i?oc=5",
+        "domain": "wsmv",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261109T173700Z",
         "source": "GoogleNews"
       },
       {
@@ -34711,12 +34729,21 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Trump picks Palantir cybersecurity executive to lead CISA",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUG5NQ2Q5VE04NG94STJLRjk5a3dabzZxb2xUOUx5LVNSSzNYT3pNaElzTlZCSTJ1RnNIQjVUczNCMVFPRWRLbGpNaXRrWG82ejQ2V0FXb3hSMldFUkZEMnYta2lsblRKYnVOYUNSS3pQQ05iYWNkZVVhVTV6VEVpME95N2hwbWwzaFpRYXhRM2phd0hf?oc=5",
-        "domain": "cybersecuritydive",
+        "title": "FAA ground stop sparks cyberattack questions. Here’s what officials are saying",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZVA3S1RzQnl3QjRCaW1MMlJ4ejh0bEY2ZjdjVTZYS244OFdSNUN5UmdFQ2hVUFFSU2Z5Q2ZSVUpPbDVISUdGekJ3d0FQUXR4QzI4a2RsVHdVVzR5TWxjODNRY1ctdnRWZWt2VHVYSG1WR1QtX09mSFA5VGpwN1BxbE1sVFJkblhJYWtTQzBpbWhaN3czWDZsUjlUNGhhaUpZSGRvWEZlcEdFdXVBXzZPUVZGYnlNaTh6MksxRNIB0AFBVV95cUxPTTdBbDFCOXFrNm9nbXFBR3loZzN5M2ZNVUY2b2ZjaUdFWlBuWVdnLTNKVmk0SkNKWWFFMXFxVTB5aHIyYXhGNnJyS0t2OHZWM1VvZC1VLVExOTN5Y2xyTldGcHFDLTlPQjFrV3pBUHlwWVlfVWZ4WHhOdjV3RkFHNmY2d050RzVpR0Z6TUZEbHlTSExrWTNtdzFsNVBvWDV0ZjBJekpBencwaWRzd256eDhVa0RyclRjejJMZTUyQUZDcjR0WmZOeko3cHVBZTlz?oc=5",
+        "domain": "cleveland.com",
         "language": "",
         "tone": 0,
-        "seendate": "20261110T193956Z",
+        "seendate": "20261113T220700Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "France blames Iran for ‘unprecedented’ supermarket fridge cyberattack",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbmxvM05WaDBidTRvTF96WG1rVnJPVEM0NjJuZllvUVBSRzJ1R3JkWjZGN0xaMC1nLTl2aTFvbllsVjBhTks5VzJINFVlS0UwTVV1cjUycVJqbmFWRm9qN2lhT0doQTBaeTFsbXRhNjEtSkJZdTJ2SE13dkdNcHFvQ3RpY0swVzFJMy1RUw?oc=5",
+        "domain": "cnn",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261109T162204Z",
         "source": "GoogleNews"
       },
       {
@@ -34738,6 +34765,33 @@
         "source": "GoogleNews"
       },
       {
+        "title": "FAA Grounds Thousands of Flights Across the Country, ‘No Indication’ of Cyberattack",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNmlYemRiUGw4b2ZiUF80eXZ2SWlpSXd3Ql9Ic0E1QnhYNjFhQk04eUs2dTJzR1ZFNnMtSzhHbzMwT1NoZTM5cUxjMmNwSEpBNW5veVRES3Q3X2huVW90TWdGUlNYNFhhYkgyQk1yWkMzempKd1ppd1BnZ2o2aF9BR2QxU2JlTG9VVXNiVlRodmdPS09Bc3ZGVWR5emo5N1Q0aUVRcnY4V1g0S2VSMDYwbXpXb1M?oc=5",
+        "domain": "indepthnh.org",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261114T014905Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "FedRAMP pushes new cyber vulnerability rules to keep pace with AI",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOajBKaEZ1SXltYXc2M2lWbjYyTDdxNWhHZFowZWRzZ2szYVhFc05IaEcwWHNHRGdzT215NHVYYVZaNVA2cXI0T0ZnVlY2OFhSTGdpQzkxSzhWMm9fSDVfMGVvaWNqM19uY1VGa2UtWFB0M2tlXzktOUp1d1FhS09jaUdNcVpTc1dGZ05XREtsMFBKMWVtLS1xZ1hHZjR0RWVhVDlkWmc0VVdTSTIyYnNrRjh2eXpSS0RlZTh3?oc=5",
+        "domain": "federalnewsnetwork",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261113T232358Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "DHS says nationwide ground stop was not a cyberattack: 'We are built to handle crisis like this'",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdzB0Y0pHdF9oUnR5WkFBM0MxZ3NjX0htZUt4LU5waE1RRXRhYlFxTHBpQmFGclQ1WFo2VGpuaVExeEdBU05FNktrWnY5VnhuZTZHM3A0bGxObnFGaDZIQXBGUkRwLXNoank1aWdoMGN5QkRaSktVaFpuNExYS3RNOUFIQW83VGtjWk1PWlUxZ01xeTVVM292OFBuWnE4TUFFUnliTHB2VEYxUHlNVXdqd2FBSmxYUXZpd0Rlb3hB?oc=5",
+        "domain": "nbcnews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261114T024613Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Cyberattack on Fireworks AI allowed hackers to access Notion customers’ chat transcripts",
         "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSWV6UEFjd0d6TU5mRldraGdUUnV5aXpIeGZ3NTVuZGg3VFlTcXpwakJOS3FOdHctT1NweXNjeVJVbHBBXy1mWjhVOWk3bWt1SWdhTXExMTNZa1pzbGVQVzRTNzRURExQWHVMbURfSFJWVF9HbG5DQ2dNRUdiMjBqaDdxdkJBWFo3Ukt1MFYxTGhZc0hKbFUwODQwaUVPaDU1UnhkM3pJVnpBaWQ1cUNjZzNJVmZMT2ZxSHVOSEFDSQ?oc=5",
         "domain": "techcrunch",
@@ -34747,39 +34801,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Cyberattack that forced Seminole County court records shutdown linked to Russian hackers",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPU3JrRHFJWWpkblZmUFdRaFN3aFFZbF9BOHJzaW1OQWlGc0t6WEUwb0otZjNwbnd4eUU5bS1QZFlOMEtnaDRhMmwtUU02cWtBei1ZS2xZdEN4ZGM4SzZsS3lNTW9zVlhOemowY2pfZG4zUlRyaVlCenlVdXJCenA0U2tPN2V0azJwQXdfd2otU0ZCWTNETnJzTXBvWVFldWt4VVVMNGpTZ2tZXzE0Yk56VVVVWXFMcjU1XzN4RG1YY0NzQWpRQnlVbA?oc=5",
-        "domain": "wkmg",
+        "title": "Top Cybersecurity Stocks to Watch, According to Mizuho",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWDNzUjdOcTRDNXJXODdISl9SNUtNbG1Rem9HblQ1YVAwQlJyX2JZQm5CYUVMa3JoZ25tYlYwN3BET0NuQlFySUFhcjUzdlFkYjVEYzFrd3NDZ3FNMFhEZ0dZRUNBT1V3UDRuNGJkTFRTZUZ3M0RJYkVLNmw2TjFfdVk1ODR6QUg3c2p0TGxRNHZYV1BiSHVGeEVLYzJkZERGcUJYNjVpWko?oc=5",
+        "domain": "yahoofinance",
         "language": "",
         "tone": 0,
-        "seendate": "20261112T220008Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Updated Climate Vulnerability Map Links Data to Action",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWHlzV0dSQkZ5SVROVEJCT096TXNIVGxVV3NwNEhXLWdRR29EMjlWNGRVZ29XaWFuaXNJQ3R2Q3hCLVphOGpxTzZ5SEFDYTdaQ2xmUGl2ZHM1LU1USnYxVE1XWFRiRmR3cmhEY0tmUWJTaG5mQkZzaGFZNGFPb1psS2JlZkhEUGtLOWdtbFpiSFR0Zw?oc=5",
-        "domain": "thecityofasheville.gov",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261112T205634Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Expedia Confirms Cyberattack Through Third-Party Vendor",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNDFDeDhzZnZEWUpQLVBKek1YR3BIa0M1YTIyYmR3RlFCYl9BZTJWenFOMEdkSVFNbHMwOU5UNDhvcVFVQkRTMXp1X3NvMjc0VGpmbjdTS1pWUGpzbkxlSUxNMzlJRC0wQTVaandRY3RobWpkcnptMlNxekMwM1lJN29YS2RKOVNhVkpmLTBB?oc=5",
-        "domain": "skift",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261113T015347Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "SBA cybersecurity, manufacturing web portal bills pass the House",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBVcF9wd3htNWt0UlQ5SWlqMDk5OU1kWHJkckZUNGhjM05XdzV6QWpjQWFRN1BaMGxiaUhhdUhQc0c2ZTVickx5V0d1a2tzTXozdDVtN2dHWjNZMDJoYW12MVQ1SmRweGxaMlFDY2JEaXpGaTJPTFFv?oc=5",
-        "domain": "fedscoop",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261112T203036Z",
+        "seendate": "20261112T172925Z",
         "source": "GoogleNews"
       },
       {
@@ -34801,147 +34828,21 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Cyberattack that forced Seminole County court records shutdown linked to Russian hackers",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPU3JrRHFJWWpkblZmUFdRaFN3aFFZbF9BOHJzaW1OQWlGc0t6WEUwb0otZjNwbnd4eUU5bS1QZFlOMEtnaDRhMmwtUU02cWtBei1ZS2xZdEN4ZGM4SzZsS3lNTW9zVlhOemowY2pfZG4zUlRyaVlCenlVdXJCenA0U2tPN2V0azJwQXdfd2otU0ZCWTNETnJzTXBvWVFldWt4VVVMNGpTZ2tZXzE0Yk56VVVVWXFMcjU1XzN4RG1YY0NzQWpRQnlVbA?oc=5",
+        "domain": "wkmg",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261112T220008Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass",
         "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQWlhBMUJWV296U2hXTHMwRVJ0eFNkSWE5YnY4ZW1UcXlweERaMUdSQ2hPdVhvbDVfR25yMlRqWTlmRE1zTkxpRHc3V2hvSC14U05PQUIzMzdnV1pNY0VUNlpSTWVEM2F2NTNBbFdXU0ZJclVYTXhoRkxPajRHbjNkWVIyQQ?oc=5",
         "domain": "thehackernews",
         "language": "",
         "tone": 0,
         "seendate": "20261112T153800Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZHo5bkVvczFxZllyTFNpUzFoanplR0xJdUxDcy1xMjFYTkZLZTI3NzZGTlJGWk5XMDJMaWhLX0kxa2RvX2pPcUktMmFpZUNXVUF1cllVT2tXc1Yxem9uOWIycmJDUEFWRVJXQjlEN3VNNE5qZ0hnTjJDbnRHamJUNlhR?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261112T082000Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQNlZ5NGpNTUR1WTAwTjBITzhrMFBmMHRBSTJjQnBYRjNrbEFNOEVKdE5GaU1rUTlSRmRpaG9aTFNsQWZjb09MWWhMcEI1eHoxRVNreFY3NFliaTBVV2tTQ3RpY2lSWnhMWjFneXNiQnN5ZkZmZFdJOFY4ck96R25tZg?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261112T051200Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Our New Cybersecurity Reality: If It’s ‘Smart,’ It’s Hackable",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNd3hOMlpEb2R1MnU2TEI2c3JoN1hRZ3drUUZwSEZmRWlHdjVyU2Q4OVRFZ25FanRFWXRWTHdQd1pFRjRxNzVpZzAwQ0R2NW1WLXBLdWNfa05Kd3JVeWxTMVN2aE13dDl3NnlkNUpPQkhnS3pjMVlkdFBOZjZNaWdsVktBRFVCNnRGVzR5ZFVyRmI4Y25fV3o0?oc=5",
-        "domain": "wsj",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261113T165500Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Cybersecurity expert breaks down Microsoft 'health check' failure and cyberattack fears",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9valRTTHZ5RFBaYUt3RFVzUDlWN0hJMnJ5Ukw4d2NJOFhrZWtYUlpaU0JHTk9XZ0FteW1rU1lJV0xJZVYzR0tjRXJtVnpjSzNVX0FUMXAzUWVPbUE?oc=5",
-        "domain": "foxbusiness",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261113T053931Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85NUswNElUcjRodEQ5VFloeHhBSXJSVVNzMnRONXcwQkRDNklZWC1tZFJwM3VabjVPSS1sazBlbzF0UXE3QlJpdzFvZ1RHVTRORVVoSXlrZ0l2VWs0Vi1Xb3Z2YVljaElfMzVGZWZfcWxtend4dXN3YXRSU3JjYVk?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261112T175000Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Romania says it stopped Russian cyberattack targeting government emails",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1BYXI3ekJGX016dDhDYjlzclROdko4NElBNl83V3ZNYUk1SHAxYmJnZU5QNklHMnVvRk00clIwbWxxX20tZC1rUDI2X0VPYm9pOVFObEY5VzZxcGJDbTNiTjB3UWZtNHRl?oc=5",
-        "domain": "therecordfromrecordedfuturenews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261112T134026Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Council Approves Bond Refunding to Lower Debt; Allocates $4 Million for Cybersecurity Upgrades",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8zeFJ5U19PdUFydVVjb1RWWlNWVk1ULXNSeHdSZ3VNSFV0NDRBaV9OaFZkcnFqOWxyNVBodVRNeUs5UnF2RmlJeHh3c1YtOVpHQ0ppbnJ1RlBrVHd3b1lGQ3poQmYzX0VOWlZ2YWh3QUpLUV80SERz?oc=5",
-        "domain": "httpsnewbritainprogressive.com",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261112T225658Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "First Class-Action Lawsuit filed against Vanderbilt University following massive campus cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPTm1IZmlyajZ3eE1yU0ZNRzRtYzRUX0RqbUtVOVI1V0lFUHhkc2s4akY1SmFKN2dtR2YzX2FrZTRaSXJnZVBaSEpCY0M5R0hnWkgwR0ZvTzVRYlpOUUpoWW5FQ2FOUkNwRGZQeC10bEMzRkJHdC1yZ19FZXlNbDEwdzFCLTFFTTVPZlZLREpUUG1aOVUyTTBzWG42NzA1WDJIMXREUC1rM1ljQWxiTFN6cmRNZUZBUnFlUDQ0VmZZQ2VDMGV5eXU5RzRrdDNGdw?oc=5",
-        "domain": "newschannel5nashville",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261112T121303Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWWdvRm5zTlIwUnRsVDBpdGRRVm1MQmt3aVpNWkZ0bHYyaDJwWFFad2pjNUpGRDBscUthVGRTeG5rbGVUSjRWRWVLRHlTVGg0dDhBNElCR05abU9yN1JUMjNzNU1fdjN1czdqV216Mzc5VDAybUJnanNtNU90Y1B3eW5iTkxEXzRPV3ZwbWdVbXByeDVYUVhROV9zdFY2cnR1WmY3TFJsUzIwMjhiMlF3NQ?oc=5",
-        "domain": "darkreading",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261110T080000Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Apify Confirms Customer Data Accessed in Cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYTRTVElpeElMQmc2OUJMbnRfRTg5T0FlMW1jU1VVZVd4MHlSQTFsYnZQZDdOajd2N3JrVjV3X1V5OE93ZzFuS3puLXZ5ZGQ1Qi1QX0RPWFlBelBJQk00QlRxWERNNVRJNVF0TkdxQmZtSUlOQVo0YS05RDFzeFYwOXNNSGlKaEc4LWc?oc=5",
-        "domain": "securityweek",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261113T124101Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Who Runs the Ransomware Group Qilin?",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4xWGtiSm1lTklJMXNFdXl1ZGFnQjZfdTNPZ2FvU2M0NGprNkdtc01udmhlUDctTThCUkt2QkRCdjF1cWlBTWRXZDRlM0dDb3RqRndOZ21PQzRnblN2eEFqU1h1WHBiVllTVmtRampMNHJzMXdFbC15YnJISW8?oc=5",
-        "domain": "krebsonsecurity",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261111T185734Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Opinion | The internet won’t necessarily go dark. It could simply stop working.",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTDRWeDgySlpmMWUxZXYyR09XUEhOb0EwTnVVUVpoWnEyNDdYd1BBekZVUXk0R2x0VW5kTEgtMnkzUzV5WGtBcWFmWDZZTzhFS2xmYzNrVkIyWVg1UGZWeWFJeTNMalF2RVFZR2VyN1FLb2kwMFJzMFZ2OFU4TXBCT2hNYm9IZ29SRDRSbHRzTHh6WGxiUHVfOUdwSGx4Mm5SRlRDNGRBUmJWUQ?oc=5",
-        "domain": "thewashingtonpost",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261112T190000Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9LTl82QjJkZnZDeERZMlpYQS1WN3BXQVFLNXR5UTdEa3Q2XzBJYmlOTnBkRXFJZHBvbWZ2eDNyY2V3LXNXc3FLb09ndFZCMHNwZFZkOUQySktLZE5xOWNwcDJURzhfTWVPdDRJMVJuOG5NVVN2QjdYcWJR?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261112T162700Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxORUxPcjFneE1rQV90Z0VldDk2THgzaUtEQ1o5NTdfMW90UHc4ME5SNk1QYTNfZWsxSXFmdHlDME9URGd6TVdMT2diRFFXSmtjWlFuaUxkMzVpaHh0OG9BR0VMVHVCYzNFaE9hV0Q1a1k5cWZRR2pzc09lYTNMZzBwRmRqcnVxR2taX29EZ0VvVUtEc0ZMenVkZjlzVUI2SVgxc2YwQTVQelNmb3pyQTVVVzV3bEJrd3pteFE?oc=5",
-        "domain": "bleepingcomputer",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261111T162418Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Critical Red Hat Quay Vulnerability Could Expose Private Container Images",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWU92N2czVUVkY21DMzZpR0V6T0ZWNGh0MDA2WUFaUG44M2kwTXdQeEJnSTl4bHhsMWRNVFVMUVczWUtBeXJYanlfcjBNR3Q1RS1rekpxTnRuVFFmTE8taHBkeXJsVmxQMS14YmhwOEVZWnh3SkJYWmp5LVQ2dXh5NzFpNkc5VXV5UlVoUVlrRVZpbkZQV19kWHBuTG5vV19VNktsdTRB?oc=5",
-        "domain": "securityweek",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261112T092321Z",
         "source": "GoogleNews"
       },
       {
@@ -34954,12 +34855,156 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Opinion | The internet won’t necessarily go dark. It could simply stop working.",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTDRWeDgySlpmMWUxZXYyR09XUEhOb0EwTnVVUVpoWnEyNDdYd1BBekZVUXk0R2x0VW5kTEgtMnkzUzV5WGtBcWFmWDZZTzhFS2xmYzNrVkIyWVg1UGZWeWFJeTNMalF2RVFZR2VyN1FLb2kwMFJzMFZ2OFU4TXBCT2hNYm9IZ29SRDRSbHRzTHh6WGxiUHVfOUdwSGx4Mm5SRlRDNGRBUmJWUQ?oc=5",
+        "domain": "thewashingtonpost",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261112T190000Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQNlZ5NGpNTUR1WTAwTjBITzhrMFBmMHRBSTJjQnBYRjNrbEFNOEVKdE5GaU1rUTlSRmRpaG9aTFNsQWZjb09MWWhMcEI1eHoxRVNreFY3NFliaTBVV2tTQ3RpY2lSWnhMWjFneXNiQnN5ZkZmZFdJOFY4ck96R25tZg?oc=5",
+        "domain": "thehackernews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261112T051200Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Expedia Confirms Cyberattack Through Third-Party Vendor",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNDFDeDhzZnZEWUpQLVBKek1YR3BIa0M1YTIyYmR3RlFCYl9BZTJWenFOMEdkSVFNbHMwOU5UNDhvcVFVQkRTMXp1X3NvMjc0VGpmbjdTS1pWUGpzbkxlSUxNMzlJRC0wQTVaandRY3RobWpkcnptMlNxekMwM1lJN29YS2RKOVNhVkpmLTBB?oc=5",
+        "domain": "skift",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261113T015347Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Cybersecurity expert breaks down Microsoft 'health check' failure and cyberattack fears",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9valRTTHZ5RFBaYUt3RFVzUDlWN0hJMnJ5Ukw4d2NJOFhrZWtYUlpaU0JHTk9XZ0FteW1rU1lJV0xJZVYzR0tjRXJtVnpjSzNVX0FUMXAzUWVPbUE?oc=5",
+        "domain": "foxbusiness",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261113T192028Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Windows 0-day dropped by disgruntled researcher hands hackers System rights",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWThhYnJ1NmFYeS0tQnZOLVdSeGtIcUlDUzN1VkhhX0pnMUVraUVJVWl3b2NTUGxKeWZXUm50Snktb3EwZ2tOaE1NVElLSjRzbkZHQ0l0UkMzRlJMNmRKVkRJYVN0MjBXT2ZUU0xFeG8zVmctNTBRNGZBMC00QmlBU3hJLTFKQjJ1YldReWt2VFdCM2tXWnZtSWdldk1JMlh6Q190WmNBM2d0Zk1YZ0JMemxQMTQ4N3Bx?oc=5",
+        "domain": "arstechnica",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261113T162632Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Was Microsoft hacked? Company says cyberattack not suspected",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQY2FVdmpJSXFDRWZjMHBhWUlmZTZraWEzMF9QcXVSTWUyVUEtWFlvMFlURVhPODdvSnF2VkRYdGJMczhXYll3eHNuSFlYRVpoMzFOTlZ3LTJpYXRQX25WOXd0RWRtUlRLWjMzYnFnbERLakozVFEwMWY5SklEZzN4ZUdWZTY5TUxlYXgwdWxXVUxyMGh2ZjFVRVh5T25fbERPU1dDckplZ28wRldKa3BncmdZaXRsUQ?oc=5",
+        "domain": "usatoday",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261113T182400Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85NUswNElUcjRodEQ5VFloeHhBSXJSVVNzMnRONXcwQkRDNklZWC1tZFJwM3VabjVPSS1sazBlbzF0UXE3QlJpdzFvZ1RHVTRORVVoSXlrZ0l2VWs0Vi1Xb3Z2YVljaElfMzVGZWZfcWxtend4dXN3YXRSU3JjYVk?oc=5",
+        "domain": "thehackernews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261112T175000Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "When Cybersecurity Decisions Become Physical Safety Decisions",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVXVveUY0RndrMERMSzNmeWFXUmllWEtxWGlueVQtOEVxbFo5M09OMV92QXYtQjkzeUJ0VFZCNUh3cG5abUF2dnh0dm1qWHpLYXBOd2k4dnRkXzZ0c3JvcEVZSkVHQkVMa3p0U1RMMFJhS3BLMzNnRjdvMGtSd0xBUEZmWUJXYm1ma3FVb1I4Zm5ZYVQ4WnR3?oc=5",
+        "domain": "communicationsoftheacm",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261113T194825Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Our New Cybersecurity Reality: If It’s ‘Smart,’ It’s Hackable",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNd3hOMlpEb2R1MnU2TEI2c3JoN1hRZ3drUUZwSEZmRWlHdjVyU2Q4OVRFZ25FanRFWXRWTHdQd1pFRjRxNzVpZzAwQ0R2NW1WLXBLdWNfa05Kd3JVeWxTMVN2aE13dDl3NnlkNUpPQkhnS3pjMVlkdFBOZjZNaWdsVktBRFVCNnRGVzR5ZFVyRmI4Y25fV3o0?oc=5",
+        "domain": "wsj",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261113T165639Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "North Carolina Chatbot Offers Cybersecurity Help to Businesses",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTk05MlpMdW5ZQThiUjg5aHZrT2d2dHR2V2FRZzkyazJ1N1h5YW5lTk1BTEdjTXl0bGFRM0t0endwdjlIeGVkaU1INnBNNF8tQXlWZkFNaTB3M0lXMUFZVHFYMDZIT0s3Q3VMRGp1TlZmQ3FoeWtoSGRjaEIwZEZJUnFhdmlWV3djbjlXOGx6ejQ2YVlxS1YwZ3QyYw?oc=5",
+        "domain": "govtech",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261113T173440Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "From Scientific Workflows to Cybersecurity: USC ISI Researchers Showcase Innovations at SC26",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPc0tsOVEwM2U4YU1CYzRWZEoyMEo4N2xHcHJwX1d2UUZ6OFppWktUQVhkMmd6WXIxNVZWaFlmRlFNZzNzeTFpUFVVZzNOZzBwSU5MUERSZDVqYXdjRDMwV0NrTkFDWG55VHdxVThkNWk4SEdsMGgxTThnbEc2SUpvOWg1WGZaS0hySXBpcHdQM095dG00dmtHUUNEOGkyS2NKZ2prMFVPTUxUQ1NXRGgzdzBTU1VPTjVieHU4RDZyYk9tNGdjWGpJaXk3cmFwR2xl?oc=5",
+        "domain": "uscviterbischoolofengineering",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261113T214357Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Romania says it stopped Russian cyberattack targeting government emails",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1BYXI3ekJGX016dDhDYjlzclROdko4NElBNl83V3ZNYUk1SHAxYmJnZU5QNklHMnVvRk00clIwbWxxX20tZC1rUDI2X0VPYm9pOVFObEY5VzZxcGJDbTNiTjB3UWZtNHRl?oc=5",
+        "domain": "therecordfromrecordedfuturenews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261112T134026Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWWdvRm5zTlIwUnRsVDBpdGRRVm1MQmt3aVpNWkZ0bHYyaDJwWFFad2pjNUpGRDBscUthVGRTeG5rbGVUSjRWRWVLRHlTVGg0dDhBNElCR05abU9yN1JUMjNzNU1fdjN1czdqV216Mzc5VDAybUJnanNtNU90Y1B3eW5iTkxEXzRPV3ZwbWdVbXByeDVYUVhROV9zdFY2cnR1WmY3TFJsUzIwMjhiMlF3NQ?oc=5",
+        "domain": "darkreading",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261110T080000Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Ransomware attack on Belarusian cloud firm disrupts businesses for days",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWUdEWS1FSTBNMnRWdFRWVWtNa3Fsc3U1N3JaZldSUXVfeW84Q1VBdkZITTJuT2N6dXlJa2YxMUxlMEROR2luTF8yWml2T3htZFJBVHhDbXBXbTladDVMalROTnYzbTVKSWZDR1dHTmFBaTZQcldQdFA1OXFlVFdHbXFB?oc=5",
         "domain": "therecordfromrecordedfuturenews",
         "language": "",
         "tone": 0,
         "seendate": "20261113T144026Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Who Runs the Ransomware Group Qilin?",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4xWGtiSm1lTklJMXNFdXl1ZGFnQjZfdTNPZ2FvU2M0NGprNkdtc01udmhlUDctTThCUkt2QkRCdjF1cWlBTWRXZDRlM0dDb3RqRndOZ21PQzRnblN2eEFqU1h1WHBiVllTVmtRampMNHJzMXdFbC15YnJISW8?oc=5",
+        "domain": "krebsonsecurity",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261112T092806Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Dark Web Marketplaces Scaling Ransomware Operations",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUXhRTXNvV1lJNGFYbGxSZXdhY1duRV8tWWxObjJvTXc0OEhMRmJ4YXVyOXVGQm96SHhvOFA2VWNmRUdpVVV1MHNxdWJ0RDhiRVh5aGRndDYxUWtxTlY4Unc4ZmJ1UDBnQ1FZWTFmRjJJeWU0d1BnOGZnRnEzZWpPdk9UdU5nbjBEOHRmMUw0UWNVOWZJVXRtY1g5LTd2WG8?oc=5",
+        "domain": "mexicobusinessnews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261113T222052Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Cybersecurity expert explains issues behind Microsoft outage",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaV9MY1lSbEJZOUZtUlJzZUxIeE9LeHhNSktobkxHbjNyelprNTdnRW1vdnkzUjVXUThVdng1eF9qa2dPXzROZWc4RmVNRUc2SkV6a2k5Q3I2Sm5IVFZlZ2ZYaFRBWHpVckhzQ1FHbUc5V3B5XzZPcnlMOHNHNU5OR0t6QUUxQmQ5Ykl6OUtHSGpJVS1lM2RKTndwZWtXOW16bl9OYVUydWMxZVc0eW5ESjhkRQ?oc=5",
+        "domain": "wcvb",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261113T171200Z",
         "source": "GoogleNews"
       },
       {
@@ -34972,6 +35017,33 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxORUxPcjFneE1rQV90Z0VldDk2THgzaUtEQ1o5NTdfMW90UHc4ME5SNk1QYTNfZWsxSXFmdHlDME9URGd6TVdMT2diRFFXSmtjWlFuaUxkMzVpaHh0OG9BR0VMVHVCYzNFaE9hV0Q1a1k5cWZRR2pzc09lYTNMZzBwRmRqcnVxR2taX29EZ0VvVUtEc0ZMenVkZjlzVUI2SVgxc2YwQTVQelNmb3pyQTVVVzV3bEJrd3pteFE?oc=5",
+        "domain": "bleepingcomputer",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261111T162418Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "OT cybersecurity: Managing geopolitical risk",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNd1B0M09DdXpIWG02V3NBaFE4UDY5bWNWb0FnV2sxd0Iwd0h1cWJaeGR4NHZQX1otMGoySXF2b0tGczZXalhYZkdSWkt1MXpuWTM5bEppbmUtQUk5dnFhQ1ZULUlTclN4QVJsWEpwUnRXbmxaTndtT2Jac28wbGg3MnR0QXd0VEh2QkdMV0pjQzdFSmdYMExvWUpySzZURkJsV0dKQXhFNEh2UFNpOW9UdFAxb0tYWUNKVksyYVZBcGcwQQ?oc=5",
+        "domain": "pwc",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261113T232713Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "AI penetration testing cannot replace independent cybersecurity assurance",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOU0RLRjNPbFRYc0dYWVNmTTVsOFVDYzRZMG5EYnVROUFzUXVFeG5ObEdOc25JVzVvZURLRzREdmFNcVBhSHF1YjI2XzZhSHBNWWFIWDkzQ0FPOXc0SUVsMDliOFB2TldjcDgyaS1ZMDVfQlJqSjJTaURsMXlEc0dEdHlrQjV0WmdPTXk4eTNzR1JqOGF5dDlwY0RHdjNFT180Vl83WHU4WkhscF9GZVZpSUpCaHBGMENYbEsySWRkU1dPdw?oc=5",
+        "domain": "federalnewsnetwork",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261113T223958Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Microsoft 365 Outage Disrupts Outlook, Exchange Online and Teams",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxONUpZX08wc0l2M09xZjJIMEp0MkJHbTBsSFB0bkE5Y2hudy1LV3BQX3BhZ0o3Mk5pWVFYYkVUN181N2tiR18yTUJDRDNSSjljaDY1Vm1xWFFZT19VbWxvMGd2TU9kNElLdWNTcEFuN2VfQnRYLXU2ck9vNGJCbC1mOGh4eVNfbURkQUxlVG5tc2dVYmF3a3YxWA?oc=5",
         "domain": "securityweek",
@@ -34981,30 +35053,39 @@
         "source": "GoogleNews"
       },
       {
-        "title": "United Airlines blocks AI agents from booking flights, citing cybersecurity risks",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbHJBWXhNR29UYzZjcTVBaS1YT1dYRnd3clBFN3hObnZ2MElMMDlvZEh1czA2RkU5YXJMN3gwbF9GUzNOdk5Dcy1oSTNzd09NbG9ObGZTbHQwWng5UmRkWUptSlRLbWxVUWdUeGZWLXhza1ZzS3RuZ0RYN1Zkd2d0VkZsLUFYdFJRcXZBV1BwamtQZlFucE5MSS1qb3NRUkdkZnFTb19ZUDkyaThJc1Jxd0p5MExodw?oc=5",
-        "domain": "techcrunch",
+        "title": "U.S. ground stop: Homeland Security says cyberattack cannot be ruled out",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPOWt3bHliTzdtcTRob3lEb2xHUmRrWnFkOHE1RGo1blNqOFZsdHo1Zmh5Y2xjaHo4RllmZ2JZRnQ0eVpkOThzNzVpUzYxeTRxdURoU3pORTZTLTJsckk2b1NNZGROMzBVMllDaDBNV2lJNmg5anhnZWNBVjVPSUVacXFwQkdTV21CTlB2d1ZVZnBXeFBrZTVQdXNMYVktNGFKUmNnUzB4aEhMRjJWbTMyRkZYVktzLU5tMzdxbHJNaERGNHU1ZEtRR0k2dnpzWTc1?oc=5",
+        "domain": "tickernews",
         "language": "",
         "tone": 0,
-        "seendate": "20261112T171758Z",
+        "seendate": "20261113T221416Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Microsoft outage raises concerns over US cybersecurity",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQV0k5eGM5U1dWNjhVTlJYVllhb283V2JiQURGSncwVTB0WkUzRUpmZ1BDUjdWaERxbzBFay1xRVZZa3A3Q01hSnIzQjRkVUZwWVNwUmQxRlJ3SDk0ckQ2MVhJa3BySzNXUXBLSG0zdXIxaWtRYXlnZDRpRmtETFRydnRwTXdjWlNpTGcxcTM0d0bSAZYBQVVfeXFMTTdiRVNad3ZHRnRpMVNnQ3RBN0ROM25zN2ZZWVcyLThlelY2SlJZdGRZMVF1X0d6cWpGcFhlTC13WkpfakZZR2FBM3Fxa3lnaVJKM3FVWWtzT2pQUzNzQU5vV2E4a25YV0E3Mjc2SEFkSjl6ZV8tU2hmb25DR3ZoLXVpZTVrdU1XLXp0emYtX1FNU3ZHdHhn?oc=5",
-        "domain": "newsnation",
+        "title": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9LTl82QjJkZnZDeERZMlpYQS1WN3BXQVFLNXR5UTdEa3Q2XzBJYmlOTnBkRXFJZHBvbWZ2eDNyY2V3LXNXc3FLb09ndFZCMHNwZFZkOUQySktLZE5xOWNwcDJURzhfTWVPdDRJMVJuOG5NVVN2QjdYcWJR?oc=5",
+        "domain": "thehackernews",
         "language": "",
         "tone": 0,
-        "seendate": "20261113T130231Z",
+        "seendate": "20261112T162700Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Wisconsin retiree still waiting for $60K months after TruStage cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxObHR4UGFST0tLYVE3Qko5YlFXdG5QMFNjNTNPY2dQZXcyY2lCNk9MaVloNUlfUjMzYlhKWktTOHZzZFQ5UEpUejRid1UwQ2twNEpjNFk1REw1WXNyZDU1dW5IQjFZUWo0QWJLTFdOTHhJVVNhRHBoeDJPSldfTW56aFUwa1d1NUNwdnhTMUsxSGp5M0tZamtTNVVZdUZUZUN6VnlMbWg5TWNNWmxQNWFlZkd2NXpGWktvUll2SGNIYk1oXzh6YXI0ZEY1OU9QNk9CSzZHUGY3TThDMmMtYUhoUHQtdVFvbm5Oay12eQ?oc=5",
-        "domain": "channel3000",
+        "title": "Officials see no sign so far that a cyberattack caused Friday's FAA nationwide ground stop",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNTR4T3FEbXIyTVJvQVRDT1lSQVg0ckJnR3VMR3AzdFVBRWJVXzZQOE4xWmx5WkRMZlZlcU9jNVFKX05OYTRZVmwyN0t0aHBhczg3TkVVNHJtMzlNYm9RZWdKNHViN2JFUl96dXE5UkJndGZsRXZ4U2VuSjFTRUtqMUdYRWl4cXIzNzVKVzdtZ0xCREREQVhuVkdQU3BQTGFIZk1CdXZRUlJuRTlZNzAteWF3dUVzRzF4?oc=5",
+        "domain": "nacionale",
         "language": "",
         "tone": 0,
-        "seendate": "20261113T030000Z",
+        "seendate": "20261113T222926Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "DOJ: Gootloader used in at least 44 ransomware attacks costing $29 million since 2018",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5rcUVLYm1nVkhQYkIyOEN5ZXBfYnBsa2FZUDd3UjFaQXoxV2VWOENycE81VnVla0RfenBJdTl5eG92N0Z3R3ZOQUpmT0VGOUF2QmlIbl9rMVUtLWFiaTIxS2tKWjNMM2FY?oc=5",
+        "domain": "therecordfromrecordedfuturenews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261113T161509Z",
         "source": "GoogleNews"
       },
       {
@@ -35014,87 +35095,6 @@
         "language": "",
         "tone": 0,
         "seendate": "20261113T171440Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Microsoft just patched a serious Outlook flaw. Time to update!",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNb1pmT000TzVBRVQxQVVWRXhSRjEtdUV5VDQ3MElOZGJ0cFppc1VsdnRRcVJ1YXJBMnl2VUZTVk8xUnVMUE9vbUZONG0wNy0zRDF3NjFYZlU2WXpkWmdwckloRUw2amt5S1B4cnZIR052NWpnb09ud0FsTkhRV2tJX3RucktOOUJ1c294SlRpYldpeG5kTjl6Y2dGVEVYWHhOdFJFb0U4TExCSzR2eU9oOF9ZREJxSml6UHQxT3ZR?oc=5",
-        "domain": "pcworld",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261112T161806Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5wY25ETkp0RWNhWVQzZ0xZcXR0RUdSd09HNW52U2JHTmlmTENZcmh0MEdaV0U1RDI4YUk1YTFka196Y3F1NTl5V0NzUFM5NTJjckE1MkpldjEtdjZGRUphbWpDQ1VNVW40azljbTNpWGdpR3hZYUZtMUkzaGdjZw?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261113T080500Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "AI Set to Revolutionize Ransomware Following “Stagnant” Few Years",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9vdFgzTkxxZjlabHJISTM3OTY4emwwMGZfY2V0czhkNGxJM3hheVYyMEhfZGIyVlNkZzA4SGFkMlZBcGtwa3BxRlRxSkZhTkdDT3lZUzh0QjVYX1pvWjExXy10ZlN4MlJZUzlWRUd3eU05R1htNmFhb0Z4NA?oc=5",
-        "domain": "infosecuritymagazine",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261113T091500Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "DOJ: Gootloader used in at least 44 ransomware attacks costing $29 million since 2018",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5rcUVLYm1nVkhQYkIyOEN5ZXBfYnBsa2FZUDd3UjFaQXoxV2VWOENycE81VnVla0RfenBJdTl5eG92N0Z3R3ZOQUpmT0VGOUF2QmlIbl9rMVUtLWFiaTIxS2tKWjNMM2FY?oc=5",
-        "domain": "therecordfromrecordedfuturenews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261113T161041Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "OpenAI’s Daybreak brings AI agents to security testing and vulnerability fixes",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbWxESklzMUdSWThlNHJVS2ViM2M3b2R2RjduTXFXN05OaXhzRzRZTFJ0UzFycWV0UnBST1dFbllRWk5GNTJQSnhXd3hMQV9pN1M4RkFuRU11dU5nb1ZqeG1qSnNsWFp4bWJRZDliaUIxQlU2RTVsX0dCdmpZYVBzZl9DN2JGclVqcVRQY1FHcmktRHdBd2JaNWR6c2U0TjY5RkZXbXlKY2h0SVk5MTRnZ3lUNHdES2VZ?oc=5",
-        "domain": "helpnetsecurity",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261113T093107Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "North Carolina Chatbot Offers Cybersecurity Help to Businesses",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTk05MlpMdW5ZQThiUjg5aHZrT2d2dHR2V2FRZzkyazJ1N1h5YW5lTk1BTEdjTXl0bGFRM0t0endwdjlIeGVkaU1INnBNNF8tQXlWZkFNaTB3M0lXMUFZVHFYMDZIT0s3Q3VMRGp1TlZmQ3FoeWtoSGRjaEIwZEZJUnFhdmlWV3djbjlXOGx6ejQ2YVlxS1YwZ3QyYw?oc=5",
-        "domain": "govtech",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261113T173423Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "AI Defense, CISO Strain, Shadow AI: The Week in Cybersecurity",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQb3NGdlFycjFidThtOVBralJOclVTbzFwTVM0QmMtQnJ6Y0p6Q1hIbTBQX0tlV0tvSEswUFB4Z2xhdWxSeWRDMGNVSHYwdzdBU1A3bnphdU1mQm13aXNaeUJ1aW4zOWJsR2NwYm9Ucldhak9UNE9hQkRqelJNNXo5clJrZk9wblhjZkNOQ0Ezbm40dTZpdmFjWVZGR1QzNVU?oc=5",
-        "domain": "mexicobusinessnews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261112T222744Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "State Auditor set to require new cybersecurity measures for local governments as NM gets hit by cyberattacks",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOLVhsMUNRdjNTWFZZZEQ1ZTF2ZXpkeWFNc0h2MGMxM3hWZ3V0YkRiY3d2ZTZwcWJ0aEJpaXVra3pSWmRLUzFKRVpyNUhUZ25JUTB6MDNRWVFhZkhGOEc2c2M5Z1I5MFY3a2RLSllSSDRBcERDOHE5MVJaMm8xZlJLRktZLXN1VXZCT0hwTkVkcXVFV2N0dnZLWVNPTTdiWDRMNm9RMUFmUmYtUElWT3YwdEFxVE51OVV6djhiV1UtX2Rpd1pRa1R1MGpQd2pQX1M4b3JsUzdrMA?oc=5",
-        "domain": "kob4",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261111T175817Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Top Cybersecurity Stocks to Watch, According to Mizuho",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWDNzUjdOcTRDNXJXODdISl9SNUtNbG1Rem9HblQ1YVAwQlJyX2JZQm5CYUVMa3JoZ25tYlYwN3BET0NuQlFySUFhcjUzdlFkYjVEYzFrd3NDZ3FNMFhEZ0dZRUNBT1V3UDRuNGJkTFRTZUZ3M0RJYkVLNmw2TjFfdVk1ODR6QUg3c2p0TGxRNHZYV1BiSHVGeEVLYzJkZERGcUJYNjVpWko?oc=5",
-        "domain": "yahoofinance",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261112T172925Z",
         "source": "GoogleNews"
       }
     ]
@@ -35138,6 +35138,15 @@
       "source": "GoogleNews"
     },
     {
+      "title": "White House task force says companies deserve liability relief for AI-fueled cyberattacks",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeV9JbFpvNHlvWjJORm54aVlWbVM1Y2dnTmtSY1NNRlB1RXlLNmhVZWJUbWw1YW9WNnhFaUlqQ250Q1NiOHZKZDBabE5VNVRPM0ZORm9Xa1F6ZkRId2FqXzBlM2RYRUc3UVR5ZmsyVlA3TVJfU3pOay1oZ19mUHJSRDA0Rld6RjJtWkowaUtpcnhrZlJYMHY2RWI5OFpHdw?oc=5",
+      "domain": "cybersecuritydive",
+      "language": "",
+      "tone": 0,
+      "seendate": "20261113T211118Z",
+      "source": "GoogleNews"
+    },
+    {
       "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMDBfekFQb0pMZmFRY2kzUmVmUEZFUldTQjNsSjBlMkF4Rl9TalJIaG9BOXB6NXIzd01hSFBNbndHbGxRY29hamppTUt3UEh4X1I0RUc0MUt2bThNeTlMVGxXRWk1TXdRQi1yVXJWNThQNTdodkRWaURhOTc5eTdrWWdMb2w?oc=5",
       "domain": "thehackernews",
@@ -35147,12 +35156,21 @@
       "source": "GoogleNews"
     },
     {
-      "title": "France blames Iran for ‘unprecedented’ supermarket fridge cyberattack",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbmxvM05WaDBidTRvTF96WG1rVnJPVEM0NjJuZllvUVBSRzJ1R3JkWjZGN0xaMC1nLTl2aTFvbllsVjBhTks5VzJINFVlS0UwTVV1cjUycVJqbmFWRm9qN2lhT0doQTBaeTFsbXRhNjEtSkJZdTJ2SE13dkdNcHFvQ3RpY0swVzFJMy1RUw?oc=5",
-      "domain": "cnn",
+      "title": "The Next Cyberattack May Target Your HVAC, Elevators, or Worse. These 3 Steps Close the Gap",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPOXk5LTNjdGZPem54TlZBU3A0ZlBzQUtaeDVtckZMa1prMjQwSlhNSy02REU0aWNQOUVRUW5IcGFlZGdnXzQwUlJMYkJ2V1plVFJXM0N2cnlMakhSWi11MlpqNDlwRXZ6cGJOVFZBaTJIYjNYMTF6clFnVmF2Q08wdENVM0xqZUpNNjlYYnhKQVVROXg0ZFp0MDNHY2hLaUZNZENCOVJuRFFELVYxWUdHcWZsWGV5eVRPRGpkbENZREtXZEtIT1BjOWtB?oc=5",
+      "domain": "inc.com",
       "language": "",
       "tone": 0,
-      "seendate": "20261109T162204Z",
+      "seendate": "20261113T215902Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "Cybercrime group claims it stole social security numbers during ongoing Vanderbilt breach, report says. Here’s what we know",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNOTNqdE9FcnlPYkNXeDBNOW1YbFJRZmJfeHYzWXZDcTI5a3pfN2wzY19sZklXdkNCZUMteU9IZ1RBU2QyTFV6R3BSVEgwLXNGbXpVMjZFUm4wdDFzOEFvamNvdlBJWlRkclU5bGJycjJRTElJNzFyZUdGT3JYWVZHcFN6QnROcENHemtoa0hpVW1aYWdEU204eVh2VS1teWhZN3V6bW41b1F1N2toUm0tN3o3eHdLaElMd0RFY0ZDZFBILV9TVTM4UGxaLVNLSFhhMXRjRnJpaHN1cXN6UlFJVzk4SmY0LU9i?oc=5",
+      "domain": "wsmv",
+      "language": "",
+      "tone": 0,
+      "seendate": "20261109T173700Z",
       "source": "GoogleNews"
     },
     {
@@ -35165,12 +35183,21 @@
       "source": "GoogleNews"
     },
     {
-      "title": "Trump picks Palantir cybersecurity executive to lead CISA",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUG5NQ2Q5VE04NG94STJLRjk5a3dabzZxb2xUOUx5LVNSSzNYT3pNaElzTlZCSTJ1RnNIQjVUczNCMVFPRWRLbGpNaXRrWG82ejQ2V0FXb3hSMldFUkZEMnYta2lsblRKYnVOYUNSS3pQQ05iYWNkZVVhVTV6VEVpME95N2hwbWwzaFpRYXhRM2phd0hf?oc=5",
-      "domain": "cybersecuritydive",
+      "title": "FAA ground stop sparks cyberattack questions. Here’s what officials are saying",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZVA3S1RzQnl3QjRCaW1MMlJ4ejh0bEY2ZjdjVTZYS244OFdSNUN5UmdFQ2hVUFFSU2Z5Q2ZSVUpPbDVISUdGekJ3d0FQUXR4QzI4a2RsVHdVVzR5TWxjODNRY1ctdnRWZWt2VHVYSG1WR1QtX09mSFA5VGpwN1BxbE1sVFJkblhJYWtTQzBpbWhaN3czWDZsUjlUNGhhaUpZSGRvWEZlcEdFdXVBXzZPUVZGYnlNaTh6MksxRNIB0AFBVV95cUxPTTdBbDFCOXFrNm9nbXFBR3loZzN5M2ZNVUY2b2ZjaUdFWlBuWVdnLTNKVmk0SkNKWWFFMXFxVTB5aHIyYXhGNnJyS0t2OHZWM1VvZC1VLVExOTN5Y2xyTldGcHFDLTlPQjFrV3pBUHlwWVlfVWZ4WHhOdjV3RkFHNmY2d050RzVpR0Z6TUZEbHlTSExrWTNtdzFsNVBvWDV0ZjBJekpBencwaWRzd256eDhVa0RyclRjejJMZTUyQUZDcjR0WmZOeko3cHVBZTlz?oc=5",
+      "domain": "cleveland.com",
       "language": "",
       "tone": 0,
-      "seendate": "20261110T193956Z",
+      "seendate": "20261113T220700Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "France blames Iran for ‘unprecedented’ supermarket fridge cyberattack",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbmxvM05WaDBidTRvTF96WG1rVnJPVEM0NjJuZllvUVBSRzJ1R3JkWjZGN0xaMC1nLTl2aTFvbllsVjBhTks5VzJINFVlS0UwTVV1cjUycVJqbmFWRm9qN2lhT0doQTBaeTFsbXRhNjEtSkJZdTJ2SE13dkdNcHFvQ3RpY0swVzFJMy1RUw?oc=5",
+      "domain": "cnn",
+      "language": "",
+      "tone": 0,
+      "seendate": "20261109T162204Z",
       "source": "GoogleNews"
     },
     {
@@ -35192,55 +35219,28 @@
       "source": "GoogleNews"
     },
     {
-      "title": "Cyberattack on Fireworks AI allowed hackers to access Notion customers’ chat transcripts",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSWV6UEFjd0d6TU5mRldraGdUUnV5aXpIeGZ3NTVuZGg3VFlTcXpwakJOS3FOdHctT1NweXNjeVJVbHBBXy1mWjhVOWk3bWt1SWdhTXExMTNZa1pzbGVQVzRTNzRURExQWHVMbURfSFJWVF9HbG5DQ2dNRUdiMjBqaDdxdkJBWFo3Ukt1MFYxTGhZc0hKbFUwODQwaUVPaDU1UnhkM3pJVnpBaWQ1cUNjZzNJVmZMT2ZxSHVOSEFDSQ?oc=5",
-      "domain": "techcrunch",
+      "title": "FAA Grounds Thousands of Flights Across the Country, ‘No Indication’ of Cyberattack",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNmlYemRiUGw4b2ZiUF80eXZ2SWlpSXd3Ql9Ic0E1QnhYNjFhQk04eUs2dTJzR1ZFNnMtSzhHbzMwT1NoZTM5cUxjMmNwSEpBNW5veVRES3Q3X2huVW90TWdGUlNYNFhhYkgyQk1yWkMzempKd1ppd1BnZ2o2aF9BR2QxU2JlTG9VVXNiVlRodmdPS09Bc3ZGVWR5emo5N1Q0aUVRcnY4V1g0S2VSMDYwbXpXb1M?oc=5",
+      "domain": "indepthnh.org",
       "language": "",
       "tone": 0,
-      "seendate": "20261112T150228Z",
+      "seendate": "20261114T014905Z",
       "source": "GoogleNews"
     },
     {
-      "title": "Cyberattack that forced Seminole County court records shutdown linked to Russian hackers",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPU3JrRHFJWWpkblZmUFdRaFN3aFFZbF9BOHJzaW1OQWlGc0t6WEUwb0otZjNwbnd4eUU5bS1QZFlOMEtnaDRhMmwtUU02cWtBei1ZS2xZdEN4ZGM4SzZsS3lNTW9zVlhOemowY2pfZG4zUlRyaVlCenlVdXJCenA0U2tPN2V0azJwQXdfd2otU0ZCWTNETnJzTXBvWVFldWt4VVVMNGpTZ2tZXzE0Yk56VVVVWXFMcjU1XzN4RG1YY0NzQWpRQnlVbA?oc=5",
-      "domain": "wkmg",
+      "title": "FedRAMP pushes new cyber vulnerability rules to keep pace with AI",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOajBKaEZ1SXltYXc2M2lWbjYyTDdxNWhHZFowZWRzZ2szYVhFc05IaEcwWHNHRGdzT215NHVYYVZaNVA2cXI0T0ZnVlY2OFhSTGdpQzkxSzhWMm9fSDVfMGVvaWNqM19uY1VGa2UtWFB0M2tlXzktOUp1d1FhS09jaUdNcVpTc1dGZ05XREtsMFBKMWVtLS1xZ1hHZjR0RWVhVDlkWmc0VVdTSTIyYnNrRjh2eXpSS0RlZTh3?oc=5",
+      "domain": "federalnewsnetwork",
       "language": "",
       "tone": 0,
-      "seendate": "20261112T220008Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Updated Climate Vulnerability Map Links Data to Action",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWHlzV0dSQkZ5SVROVEJCT096TXNIVGxVV3NwNEhXLWdRR29EMjlWNGRVZ29XaWFuaXNJQ3R2Q3hCLVphOGpxTzZ5SEFDYTdaQ2xmUGl2ZHM1LU1USnYxVE1XWFRiRmR3cmhEY0tmUWJTaG5mQkZzaGFZNGFPb1psS2JlZkhEUGtLOWdtbFpiSFR0Zw?oc=5",
-      "domain": "thecityofasheville.gov",
-      "language": "",
-      "tone": 0,
-      "seendate": "20261112T205634Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Expedia Confirms Cyberattack Through Third-Party Vendor",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNDFDeDhzZnZEWUpQLVBKek1YR3BIa0M1YTIyYmR3RlFCYl9BZTJWenFOMEdkSVFNbHMwOU5UNDhvcVFVQkRTMXp1X3NvMjc0VGpmbjdTS1pWUGpzbkxlSUxNMzlJRC0wQTVaandRY3RobWpkcnptMlNxekMwM1lJN29YS2RKOVNhVkpmLTBB?oc=5",
-      "domain": "skift",
-      "language": "",
-      "tone": 0,
-      "seendate": "20261113T015347Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "SBA cybersecurity, manufacturing web portal bills pass the House",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBVcF9wd3htNWt0UlQ5SWlqMDk5OU1kWHJkckZUNGhjM05XdzV6QWpjQWFRN1BaMGxiaUhhdUhQc0c2ZTVickx5V0d1a2tzTXozdDVtN2dHWjNZMDJoYW12MVQ1SmRweGxaMlFDY2JEaXpGaTJPTFFv?oc=5",
-      "domain": "fedscoop",
-      "language": "",
-      "tone": 0,
-      "seendate": "20261112T203036Z",
+      "seendate": "20261113T232358Z",
       "source": "GoogleNews"
     }
   ],
   "timeseries": [],
   "llm_summary": "",
   "early_warning": {
-    "issued_at": "2026-11-13T20:05:30.959590+00:00",
+    "issued_at": "2026-11-14T07:05:16.635920+00:00",
     "horizon": "next 30 days",
     "classification": "global-exploitation-pressure-not-organisation-breach-probability",
     "score": 58.2,
@@ -35252,7 +35252,7 @@
         "id": "kev_addition_pressure",
         "label": "CISA exploited-vulnerability burst",
         "available": true,
-        "score": 72.5,
+        "score": 70.5,
         "catalog_count": 1781,
         "recent_7d_count": 12,
         "prior_7d_count": 3,
@@ -35260,9 +35260,9 @@
         "baseline_weekly_median": 6.5,
         "anomaly_z": 1.48,
         "ransomware_known_7d": 0,
-        "due_within_7d": 4,
+        "due_within_7d": 2,
         "catalog_version": "2026.11.13",
-        "released_at": "2026-11-13T17:49:24.9532Z",
+        "released_at": "2026-11-13T20:24:18.3008Z",
         "evidence": [
           {
             "cveID": "CVE-2026-114713",
@@ -35592,11 +35592,11 @@
         "id": "exploit_narrative_pressure",
         "label": "Cross-source exploit precursor language",
         "available": true,
-        "score": 62.0,
+        "score": 65.0,
         "events_considered": 50,
-        "matched_event_count": 12,
-        "matched_share": 0.24,
-        "independent_sources": 34,
+        "matched_event_count": 13,
+        "matched_share": 0.26,
+        "independent_sources": 38,
         "unique_cves": 3,
         "cross_source_baskets": 2,
         "baskets": [
@@ -35612,7 +35612,7 @@
           },
           {
             "id": "perimeter_access",
-            "independent_sources": 2,
+            "independent_sources": 3,
             "cross_source_confirmed": true
           },
           {
@@ -35679,6 +35679,19 @@
             "cves": []
           },
           {
+            "title": "Windows 0-day dropped by disgruntled researcher hands hackers System rights",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWThhYnJ1NmFYeS0tQnZOLVdSeGtIcUlDUzN1VkhhX0pnMUVraUVJVWl3b2NTUGxKeWZXUm50Snktb3EwZ2tOaE1NVElLSjRzbkZHQ0l0UkMzRlJMNmRKVkRJYVN0MjBXT2ZUU0xFeG8zVmctNTBRNGZBMC00QmlBU3hJLTFKQjJ1YldReWt2VFdCM2tXWnZtSWdldk1JMlh6Q190WmNBM2d0Zk1YZ0JMemxQMTQ4N3Bx?oc=5",
+            "source": "arstechnica",
+            "observed_at": "20261113T162632Z",
+            "baskets": [
+              "perimeter_access"
+            ],
+            "terms": [
+              "0-day"
+            ],
+            "cves": []
+          },
+          {
             "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
             "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85NUswNElUcjRodEQ5VFloeHhBSXJSVVNzMnRONXcwQkRDNklZWC1tZFJwM3VabjVPSS1sazBlbzF0UXE3QlJpdzFvZ1RHVTRORVVoSXlrZ0l2VWs0Vi1Xb3Z2YVljaElfMzVGZWZfcWxtend4dXN3YXRSU3JjYVk?oc=5",
             "source": "thehackernews",
@@ -35692,36 +35705,36 @@
             "cves": []
           },
           {
-            "title": "Who Runs the Ransomware Group Qilin?",
-            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4xWGtiSm1lTklJMXNFdXl1ZGFnQjZfdTNPZ2FvU2M0NGprNkdtc01udmhlUDctTThCUkt2QkRCdjF1cWlBTWRXZDRlM0dDb3RqRndOZ21PQzRnblN2eEFqU1h1WHBiVllTVmtRampMNHJzMXdFbC15YnJISW8?oc=5",
-            "source": "krebsonsecurity",
-            "observed_at": "20261111T185734Z",
-            "baskets": [
-              "campaign_shift"
-            ],
-            "terms": [
-              "ransomware"
-            ],
-            "cves": []
-          },
-          {
-            "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
-            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxORUxPcjFneE1rQV90Z0VldDk2THgzaUtEQ1o5NTdfMW90UHc4ME5SNk1QYTNfZWsxSXFmdHlDME9URGd6TVdMT2diRFFXSmtjWlFuaUxkMzVpaHh0OG9BR0VMVHVCYzNFaE9hV0Q1a1k5cWZRR2pzc09lYTNMZzBwRmRqcnVxR2taX29EZ0VvVUtEc0ZMenVkZjlzVUI2SVgxc2YwQTVQelNmb3pyQTVVVzV3bEJrd3pteFE?oc=5",
-            "source": "bleepingcomputer",
-            "observed_at": "20261111T162418Z",
-            "baskets": [
-              "campaign_shift"
-            ],
-            "terms": [
-              "ransomware"
-            ],
-            "cves": []
-          },
-          {
             "title": "Ransomware attack on Belarusian cloud firm disrupts businesses for days",
             "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWUdEWS1FSTBNMnRWdFRWVWtNa3Fsc3U1N3JaZldSUXVfeW84Q1VBdkZITTJuT2N6dXlJa2YxMUxlMEROR2luTF8yWml2T3htZFJBVHhDbXBXbTladDVMalROTnYzbTVKSWZDR1dHTmFBaTZQcldQdFA1OXFlVFdHbXFB?oc=5",
             "source": "therecordfromrecordedfuturenews",
             "observed_at": "20261113T144026Z",
+            "baskets": [
+              "campaign_shift"
+            ],
+            "terms": [
+              "ransomware"
+            ],
+            "cves": []
+          },
+          {
+            "title": "Who Runs the Ransomware Group Qilin?",
+            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4xWGtiSm1lTklJMXNFdXl1ZGFnQjZfdTNPZ2FvU2M0NGprNkdtc01udmhlUDctTThCUkt2QkRCdjF1cWlBTWRXZDRlM0dDb3RqRndOZ21PQzRnblN2eEFqU1h1WHBiVllTVmtRampMNHJzMXdFbC15YnJISW8?oc=5",
+            "source": "krebsonsecurity",
+            "observed_at": "20261112T092806Z",
+            "baskets": [
+              "campaign_shift"
+            ],
+            "terms": [
+              "ransomware"
+            ],
+            "cves": []
+          },
+          {
+            "title": "Dark Web Marketplaces Scaling Ransomware Operations",
+            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUXhRTXNvV1lJNGFYbGxSZXdhY1duRV8tWWxObjJvTXc0OEhMRmJ4YXVyOXVGQm96SHhvOFA2VWNmRUdpVVV1MHNxdWJ0RDhiRVh5aGRndDYxUWtxTlY4Unc4ZmJ1UDBnQ1FZWTFmRjJJeWU0d1BnOGZnRnEzZWpPdk9UdU5nbjBEOHRmMUw0UWNVOWZJVXRtY1g5LTd2WG8?oc=5",
+            "source": "mexicobusinessnews",
+            "observed_at": "20261113T222052Z",
             "baskets": [
               "campaign_shift"
             ],
@@ -35744,23 +35757,10 @@
             "cves": []
           },
           {
-            "title": "Vanderbilt University Recovering From Ransomware Attack",
-            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZzFCSFAzaENQTy1Hcms2UkNfQm9TWEYteF93cnJPZ3NaZ0hqQWRkbkJKYWtLSXg4NXBjSDAzbkdLZWVIVFB2N3JRM3F1VGpGUTEteEpXU0k3ZkpVY3JiN25sb2pXbVdaSGM4S1BwN0t5MTlhZFh4OUJaTTN5bFFBcU5KZkpjOEpsT3ZrTHEyYzk1SnZVamU3VjFNanBJalZU?oc=5",
-            "source": "govtech",
-            "observed_at": "20261113T171440Z",
-            "baskets": [
-              "campaign_shift"
-            ],
-            "terms": [
-              "ransomware"
-            ],
-            "cves": []
-          },
-          {
-            "title": "AI Set to Revolutionize Ransomware Following “Stagnant” Few Years",
-            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9vdFgzTkxxZjlabHJISTM3OTY4emwwMGZfY2V0czhkNGxJM3hheVYyMEhfZGIyVlNkZzA4SGFkMlZBcGtwa3BxRlRxSkZhTkdDT3lZUzh0QjVYX1pvWjExXy10ZlN4MlJZUzlWRUd3eU05R1htNmFhb0Z4NA?oc=5",
-            "source": "infosecuritymagazine",
-            "observed_at": "20261113T091500Z",
+            "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
+            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxORUxPcjFneE1rQV90Z0VldDk2THgzaUtEQ1o5NTdfMW90UHc4ME5SNk1QYTNfZWsxSXFmdHlDME9URGd6TVdMT2diRFFXSmtjWlFuaUxkMzVpaHh0OG9BR0VMVHVCYzNFaE9hV0Q1a1k5cWZRR2pzc09lYTNMZzBwRmRqcnVxR2taX29EZ0VvVUtEc0ZMenVkZjlzVUI2SVgxc2YwQTVQelNmb3pyQTVVVzV3bEJrd3pteFE?oc=5",
+            "source": "bleepingcomputer",
+            "observed_at": "20261111T162418Z",
             "baskets": [
               "campaign_shift"
             ],
@@ -35773,7 +35773,7 @@
             "title": "DOJ: Gootloader used in at least 44 ransomware attacks costing $29 million since 2018",
             "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5rcUVLYm1nVkhQYkIyOEN5ZXBfYnBsa2FZUDd3UjFaQXoxV2VWOENycE81VnVla0RfenBJdTl5eG92N0Z3R3ZOQUpmT0VGOUF2QmlIbl9rMVUtLWFiaTIxS2tKWjNMM2FY?oc=5",
             "source": "therecordfromrecordedfuturenews",
-            "observed_at": "20261113T161041Z",
+            "observed_at": "20261113T161509Z",
             "baskets": [
               "campaign_shift"
             ],
@@ -35797,29 +35797,19 @@
       {
         "id": "kev_addition_pressure",
         "title": "CISA exploited-vulnerability burst",
-        "score": 72.5,
+        "score": 70.5,
         "level": "ELEVATED",
         "why": "CISA additions are elevated against the previous 26 weekly windows."
       },
       {
         "id": "exploit_narrative_pressure",
         "title": "Cross-source exploit precursor language",
-        "score": 62.0,
+        "score": 65.0,
         "level": "ELEVATED",
         "why": "Weaponization or exploitation language is confirmed across distinct named sources."
       }
     ],
     "history": [
-      {
-        "timestamp": "2026-09-18T21:18:27.857073+00:00",
-        "score": 48.3,
-        "level": "WATCH",
-        "components": {
-          "kev_addition_pressure": 58.8,
-          "epss_frontier_momentum": 25.0,
-          "exploit_narrative_pressure": 44.0
-        }
-      },
       {
         "timestamp": "2026-09-19T05:11:35.767360+00:00",
         "score": 48.3,
@@ -37609,6 +37599,16 @@
           "epss_frontier_momentum": 25.0,
           "exploit_narrative_pressure": 62.0
         }
+      },
+      {
+        "timestamp": "2026-11-14T07:05:16.635920+00:00",
+        "score": 58.2,
+        "level": "ELEVATED",
+        "components": {
+          "kev_addition_pressure": 70.5,
+          "epss_frontier_momentum": 25.0,
+          "exploit_narrative_pressure": 65.0
+        }
       }
     ],
     "data_health": {
@@ -37616,7 +37616,7 @@
       "epss_frontier_count": 40,
       "epss_timeseries_count": 40,
       "news_events_considered": 50,
-      "independent_news_sources": 34,
+      "independent_news_sources": 38,
       "available_components": 3,
       "retained_components": []
     },
