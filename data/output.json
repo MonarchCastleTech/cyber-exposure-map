@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "cyber-exposure-map",
-    "generated": "2026-11-24T10:28:24.026064+00:00",
+    "generated": "2026-11-24T22:47:53.347898+00:00",
     "mode": "live",
     "sources": [
       "cisa_catalog",
@@ -19,7 +19,7 @@
     },
     {
       "label": "News Domains",
-      "value": "29",
+      "value": "31",
       "delta": "deduplicated"
     },
     {
@@ -35,9 +35,57 @@
   ],
   "live_data": {
     "cisa_catalog": {
-      "catalog_version": "2026.11.23",
-      "date_released": "2026-11-23T19:43:55.7979Z",
+      "catalog_version": "2026.11.24",
+      "date_released": "2026-11-24T17:47:46.199Z",
       "vulnerabilities": [
+        {
+          "cveID": "CVE-2026-132224",
+          "vendorProject": "Optimizely",
+          "product": "Web Experimentation",
+          "vulnerabilityName": "Optimizely Web Experimentation External Control of Critical State Data Vulnerability",
+          "dateAdded": "2026-11-24",
+          "shortDescription": "Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modify Project JavaScript. Successful exploitation can result in attacker-controlled JavaScript being distributed through Optimizely-hosted assets and executed in browsers visiting affected customer websites.",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-11-27",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "https://pages.optimizely.com/rs/947-RKE-048/images/Security%20Incident%20Report%20-%20Optimizely%20Web%20Experimentation%20-%20Nov%2017%202026.pdf ; https://status.optimizely.com/incidents/ftw0fh9wx43z ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-132224",
+          "cwes": [
+            "CWE-642"
+          ],
+          "source": "CISA-KEV"
+        },
+        {
+          "cveID": "CVE-2026-131914",
+          "vendorProject": "Idunno",
+          "product": "AntiCsrf",
+          "vulnerabilityName": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
+          "dateAdded": "2026-11-24",
+          "shortDescription": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-11-27",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "This vulnerability could affect an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://github.com/mandiant/Vulnerability-Disclosures/blob/master/2026/MNDT-2026-0048.md ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
+          "cwes": [
+            "CWE-502"
+          ],
+          "source": "CISA-KEV"
+        },
+        {
+          "cveID": "CVE-2026-132165",
+          "vendorProject": "Drupal",
+          "product": "Core",
+          "vulnerabilityName": "Drupal Core Remote Code Execution Vulnerability",
+          "dateAdded": "2026-11-24",
+          "shortDescription": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site.",
+          "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+          "dueDate": "2026-11-27",
+          "knownRansomwareCampaignUse": "Unknown",
+          "notes": "https://www.drupal.org/sa-core-2026-017 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-132165",
+          "cwes": [
+            "CWE-636"
+          ],
+          "source": "CISA-KEV"
+        },
         {
           "cveID": "CVE-2026-133968",
           "vendorProject": "Project MONAI",
@@ -28499,14 +28547,19 @@
     },
     "epss_frontier": {
       "threshold": 0.1,
-      "total_above_threshold": 17581,
+      "total_above_threshold": 17783,
       "rows": [
         {
           "cve": "CVE-2021-45105",
           "epss": "0.999990000",
           "percentile": "0.999910000",
-          "date": "2026-11-23",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99999000",
+              "percentile": "0.99991000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99999000",
               "percentile": "0.99991000",
@@ -28651,11 +28704,6 @@
               "epss": "0.99999000",
               "percentile": "0.99991000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99999000",
-              "percentile": "0.99991000",
-              "date": "2026-10-24"
             }
           ]
         },
@@ -28663,8 +28711,13 @@
           "cve": "CVE-2014-3566",
           "epss": "0.999990000",
           "percentile": "1.000000000",
-          "date": "2026-11-23",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99999000",
+              "percentile": "1.00000000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99999000",
               "percentile": "1.00000000",
@@ -28809,20 +28862,20 @@
               "epss": "0.99999000",
               "percentile": "1.00000000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99999000",
-              "percentile": "0.99999000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2023-50387",
           "epss": "0.999900000",
-          "percentile": "0.999850000",
-          "date": "2026-11-23",
+          "percentile": "0.999840000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99990000",
+              "percentile": "0.99985000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99990000",
               "percentile": "0.99985000",
@@ -28967,20 +29020,20 @@
               "epss": "0.99990000",
               "percentile": "0.99985000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99990000",
-              "percentile": "0.99985000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2012-1459",
           "epss": "0.999800000",
-          "percentile": "0.999810000",
-          "date": "2026-11-23",
+          "percentile": "0.999790000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99980000",
+              "percentile": "0.99981000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99980000",
               "percentile": "0.99981000",
@@ -29125,20 +29178,20 @@
               "epss": "0.99814000",
               "percentile": "0.99959000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99814000",
-              "percentile": "0.99959000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2012-1443",
           "epss": "0.999800000",
-          "percentile": "0.999810000",
-          "date": "2026-11-23",
+          "percentile": "0.999800000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99980000",
+              "percentile": "0.99981000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99980000",
               "percentile": "0.99981000",
@@ -29283,20 +29336,20 @@
               "epss": "0.99636000",
               "percentile": "0.99949000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99636000",
-              "percentile": "0.99950000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2014-3704",
           "epss": "0.999740000",
-          "percentile": "0.999790000",
-          "date": "2026-11-23",
+          "percentile": "0.999770000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99974000",
+              "percentile": "0.99979000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99974000",
               "percentile": "0.99979000",
@@ -29441,20 +29494,20 @@
               "epss": "0.99974000",
               "percentile": "0.99978000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99974000",
-              "percentile": "0.99979000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2015-7297",
           "epss": "0.999670000",
-          "percentile": "0.999770000",
-          "date": "2026-11-23",
+          "percentile": "0.999760000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99967000",
+              "percentile": "0.99977000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99967000",
               "percentile": "0.99977000",
@@ -29599,20 +29652,20 @@
               "epss": "0.99967000",
               "percentile": "0.99977000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99967000",
-              "percentile": "0.99977000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2014-0195",
           "epss": "0.999640000",
-          "percentile": "0.999760000",
-          "date": "2026-11-23",
+          "percentile": "0.999750000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99964000",
+              "percentile": "0.99976000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99964000",
               "percentile": "0.99976000",
@@ -29757,20 +29810,20 @@
               "epss": "0.99977000",
               "percentile": "0.99980000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99977000",
-              "percentile": "0.99980000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2022-42889",
           "epss": "0.999310000",
-          "percentile": "0.999700000",
-          "date": "2026-11-23",
+          "percentile": "0.999690000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99931000",
+              "percentile": "0.99970000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99931000",
               "percentile": "0.99970000",
@@ -29915,20 +29968,20 @@
               "epss": "0.99931000",
               "percentile": "0.99970000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99931000",
-              "percentile": "0.99971000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2019-0232",
           "epss": "0.999230000",
-          "percentile": "0.999690000",
-          "date": "2026-11-23",
+          "percentile": "0.999680000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99923000",
+              "percentile": "0.99969000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99923000",
               "percentile": "0.99969000",
@@ -30073,11 +30126,164 @@
               "epss": "0.99923000",
               "percentile": "0.99969000",
               "date": "2026-10-25"
+            }
+          ]
+        },
+        {
+          "cve": "CVE-2017-9100",
+          "epss": "0.999080000",
+          "percentile": "0.999660000",
+          "date": "2026-11-24",
+          "time_series": [
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99727000",
+              "date": "2026-11-23"
             },
             {
-              "epss": "0.99923000",
-              "percentile": "0.99969000",
-              "date": "2026-10-24"
+              "epss": "0.85453000",
+              "percentile": "0.99727000",
+              "date": "2026-11-22"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99727000",
+              "date": "2026-11-21"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99727000",
+              "date": "2026-11-20"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99726000",
+              "date": "2026-11-19"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99726000",
+              "date": "2026-11-18"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99726000",
+              "date": "2026-11-17"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99726000",
+              "date": "2026-11-16"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99727000",
+              "date": "2026-11-15"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99726000",
+              "date": "2026-11-14"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99726000",
+              "date": "2026-11-13"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99725000",
+              "date": "2026-11-12"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99725000",
+              "date": "2026-11-11"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99723000",
+              "date": "2026-11-10"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99724000",
+              "date": "2026-11-09"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99724000",
+              "date": "2026-11-08"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99723000",
+              "date": "2026-11-07"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99723000",
+              "date": "2026-11-06"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99723000",
+              "date": "2026-11-05"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99723000",
+              "date": "2026-11-04"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99722000",
+              "date": "2026-11-03"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99721000",
+              "date": "2026-11-02"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99721000",
+              "date": "2026-11-01"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99721000",
+              "date": "2026-10-31"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99721000",
+              "date": "2026-10-30"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99721000",
+              "date": "2026-10-29"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99720000",
+              "date": "2026-10-28"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99720000",
+              "date": "2026-10-27"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99719000",
+              "date": "2026-10-26"
+            },
+            {
+              "epss": "0.85453000",
+              "percentile": "0.99719000",
+              "date": "2026-10-25"
             }
           ]
         },
@@ -30085,8 +30291,13 @@
           "cve": "CVE-2012-1456",
           "epss": "0.999080000",
           "percentile": "0.999670000",
-          "date": "2026-11-23",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99908000",
+              "percentile": "0.99967000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99908000",
               "percentile": "0.99967000",
@@ -30231,23 +30442,23 @@
               "epss": "0.99934000",
               "percentile": "0.99971000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99934000",
-              "percentile": "0.99972000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2025-53771",
           "epss": "0.998900000",
-          "percentile": "0.999650000",
-          "date": "2026-11-23",
+          "percentile": "0.999640000",
+          "date": "2026-11-24",
           "time_series": [
             {
               "epss": "0.998900000",
               "percentile": "0.999650000",
+              "date": "2026-11-23"
+            },
+            {
+              "epss": "0.99890000",
+              "percentile": "0.99965000",
               "date": "2026-11-22"
             },
             {
@@ -30389,20 +30600,20 @@
               "epss": "0.99890000",
               "percentile": "0.99965000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99890000",
-              "percentile": "0.99965000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2024-29826",
           "epss": "0.998770000",
-          "percentile": "0.999650000",
-          "date": "2026-11-23",
+          "percentile": "0.999640000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99877000",
+              "percentile": "0.99965000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99877000",
               "percentile": "0.99965000",
@@ -30547,20 +30758,20 @@
               "epss": "0.99877000",
               "percentile": "0.99964000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99877000",
-              "percentile": "0.99965000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2024-29825",
           "epss": "0.998770000",
-          "percentile": "0.999650000",
-          "date": "2026-11-23",
+          "percentile": "0.999640000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99877000",
+              "percentile": "0.99965000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99877000",
               "percentile": "0.99965000",
@@ -30705,20 +30916,20 @@
               "epss": "0.99877000",
               "percentile": "0.99964000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99877000",
-              "percentile": "0.99965000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2024-29823",
           "epss": "0.998600000",
-          "percentile": "0.999620000",
-          "date": "2026-11-23",
+          "percentile": "0.999610000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99860000",
+              "percentile": "0.99962000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99860000",
               "percentile": "0.99962000",
@@ -30863,20 +31074,20 @@
               "epss": "0.99860000",
               "percentile": "0.99962000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99860000",
-              "percentile": "0.99962000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2015-4000",
           "epss": "0.998600000",
-          "percentile": "0.999620000",
-          "date": "2026-11-23",
+          "percentile": "0.999610000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99860000",
+              "percentile": "0.99962000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99860000",
               "percentile": "0.99962000",
@@ -31021,20 +31232,20 @@
               "epss": "0.99860000",
               "percentile": "0.99962000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99860000",
-              "percentile": "0.99962000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2020-13379",
           "epss": "0.998560000",
-          "percentile": "0.999620000",
-          "date": "2026-11-23",
+          "percentile": "0.999610000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99856000",
+              "percentile": "0.99962000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99856000",
               "percentile": "0.99962000",
@@ -31179,20 +31390,20 @@
               "epss": "0.99856000",
               "percentile": "0.99961000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99856000",
-              "percentile": "0.99962000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2017-12635",
           "epss": "0.998380000",
-          "percentile": "0.999610000",
-          "date": "2026-11-23",
+          "percentile": "0.999600000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99838000",
+              "percentile": "0.99961000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99838000",
               "percentile": "0.99961000",
@@ -31337,20 +31548,20 @@
               "epss": "0.99838000",
               "percentile": "0.99961000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99838000",
-              "percentile": "0.99961000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2017-8917",
           "epss": "0.998260000",
-          "percentile": "0.999600000",
-          "date": "2026-11-23",
+          "percentile": "0.999590000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99826000",
+              "percentile": "0.99960000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99826000",
               "percentile": "0.99960000",
@@ -31495,11 +31706,6 @@
               "epss": "0.99826000",
               "percentile": "0.99960000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99826000",
-              "percentile": "0.99960000",
-              "date": "2026-10-24"
             }
           ]
         },
@@ -31507,8 +31713,13 @@
           "cve": "CVE-2012-1457",
           "epss": "0.998080000",
           "percentile": "0.999580000",
-          "date": "2026-11-23",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99808000",
+              "percentile": "0.99958000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99808000",
               "percentile": "0.99958000",
@@ -31653,20 +31864,20 @@
               "epss": "0.98331000",
               "percentile": "0.99917000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.98331000",
-              "percentile": "0.99918000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2022-39952",
           "epss": "0.998000000",
-          "percentile": "0.999580000",
-          "date": "2026-11-23",
+          "percentile": "0.999570000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99800000",
+              "percentile": "0.99958000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99800000",
               "percentile": "0.99958000",
@@ -31811,20 +32022,20 @@
               "epss": "0.99794000",
               "percentile": "0.99957000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99794000",
-              "percentile": "0.99957000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2008-2938",
           "epss": "0.997080000",
-          "percentile": "0.999520000",
-          "date": "2026-11-23",
+          "percentile": "0.999510000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99708000",
+              "percentile": "0.99952000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99708000",
               "percentile": "0.99952000",
@@ -31969,20 +32180,20 @@
               "epss": "0.99708000",
               "percentile": "0.99951000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99708000",
-              "percentile": "0.99952000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2020-10220",
           "epss": "0.996970000",
-          "percentile": "0.999510000",
-          "date": "2026-11-23",
+          "percentile": "0.999500000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99697000",
+              "percentile": "0.99951000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99697000",
               "percentile": "0.99951000",
@@ -32127,20 +32338,178 @@
               "epss": "0.99697000",
               "percentile": "0.99951000",
               "date": "2026-10-25"
+            }
+          ]
+        },
+        {
+          "cve": "CVE-2016-2183",
+          "epss": "0.996960000",
+          "percentile": "0.999500000",
+          "date": "2026-11-24",
+          "time_series": [
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99859000",
+              "date": "2026-11-23"
             },
             {
-              "epss": "0.99697000",
-              "percentile": "0.99952000",
-              "date": "2026-10-24"
+              "epss": "0.94697000",
+              "percentile": "0.99859000",
+              "date": "2026-11-22"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99860000",
+              "date": "2026-11-21"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99860000",
+              "date": "2026-11-20"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99859000",
+              "date": "2026-11-19"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99859000",
+              "date": "2026-11-18"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99859000",
+              "date": "2026-11-17"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99859000",
+              "date": "2026-11-16"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99859000",
+              "date": "2026-11-15"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99859000",
+              "date": "2026-11-14"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99859000",
+              "date": "2026-11-13"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99859000",
+              "date": "2026-11-12"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99858000",
+              "date": "2026-11-11"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99858000",
+              "date": "2026-11-10"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99858000",
+              "date": "2026-11-09"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99858000",
+              "date": "2026-11-08"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99858000",
+              "date": "2026-11-07"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99858000",
+              "date": "2026-11-06"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99857000",
+              "date": "2026-11-05"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99857000",
+              "date": "2026-11-04"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99858000",
+              "date": "2026-11-03"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99857000",
+              "date": "2026-11-02"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99857000",
+              "date": "2026-11-01"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99857000",
+              "date": "2026-10-31"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99857000",
+              "date": "2026-10-30"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99857000",
+              "date": "2026-10-29"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99857000",
+              "date": "2026-10-28"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99857000",
+              "date": "2026-10-27"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99856000",
+              "date": "2026-10-26"
+            },
+            {
+              "epss": "0.94697000",
+              "percentile": "0.99856000",
+              "date": "2026-10-25"
             }
           ]
         },
         {
           "cve": "CVE-2020-14181",
           "epss": "0.996860000",
-          "percentile": "0.999510000",
-          "date": "2026-11-23",
+          "percentile": "0.999500000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99686000",
+              "percentile": "0.99951000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99686000",
               "percentile": "0.99951000",
@@ -32285,20 +32654,20 @@
               "epss": "0.99603000",
               "percentile": "0.99947000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99603000",
-              "percentile": "0.99948000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2023-27372",
           "epss": "0.996820000",
-          "percentile": "0.999510000",
-          "date": "2026-11-23",
+          "percentile": "0.999500000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99682000",
+              "percentile": "0.99951000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99682000",
               "percentile": "0.99951000",
@@ -32443,20 +32812,20 @@
               "epss": "0.99682000",
               "percentile": "0.99950000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99682000",
-              "percentile": "0.99951000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2016-8869",
           "epss": "0.996470000",
-          "percentile": "0.999500000",
-          "date": "2026-11-23",
+          "percentile": "0.999490000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99647000",
+              "percentile": "0.99950000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99647000",
               "percentile": "0.99950000",
@@ -32601,20 +32970,20 @@
               "epss": "0.97252000",
               "percentile": "0.99895000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.97252000",
-              "percentile": "0.99898000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2022-37061",
           "epss": "0.996270000",
-          "percentile": "0.999490000",
-          "date": "2026-11-23",
+          "percentile": "0.999480000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99627000",
+              "percentile": "0.99949000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99627000",
               "percentile": "0.99949000",
@@ -32759,20 +33128,20 @@
               "epss": "0.99607000",
               "percentile": "0.99947000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99607000",
-              "percentile": "0.99949000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2012-1446",
           "epss": "0.996190000",
-          "percentile": "0.999480000",
-          "date": "2026-11-23",
+          "percentile": "0.999470000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99619000",
+              "percentile": "0.99948000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99619000",
               "percentile": "0.99948000",
@@ -32917,20 +33286,20 @@
               "epss": "0.99723000",
               "percentile": "0.99952000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99723000",
-              "percentile": "0.99953000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2020-16040",
           "epss": "0.995950000",
-          "percentile": "0.999480000",
-          "date": "2026-11-23",
+          "percentile": "0.999470000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99595000",
+              "percentile": "0.99948000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99595000",
               "percentile": "0.99948000",
@@ -33075,20 +33444,178 @@
               "epss": "0.99595000",
               "percentile": "0.99947000",
               "date": "2026-10-25"
+            }
+          ]
+        },
+        {
+          "cve": "CVE-2023-38646",
+          "epss": "0.995580000",
+          "percentile": "0.999460000",
+          "date": "2026-11-24",
+          "time_series": [
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99944000",
+              "date": "2026-11-23"
             },
             {
-              "epss": "0.99595000",
-              "percentile": "0.99948000",
-              "date": "2026-10-24"
+              "epss": "0.99478000",
+              "percentile": "0.99944000",
+              "date": "2026-11-22"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99944000",
+              "date": "2026-11-21"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99944000",
+              "date": "2026-11-20"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99944000",
+              "date": "2026-11-19"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-11-18"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-11-17"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-11-16"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-11-15"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-11-14"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-11-13"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-11-12"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-11-11"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-11-10"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-11-09"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-11-08"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-11-07"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-11-06"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-11-05"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-11-04"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99944000",
+              "date": "2026-11-03"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99944000",
+              "date": "2026-11-02"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99944000",
+              "date": "2026-11-01"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99944000",
+              "date": "2026-10-31"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-10-30"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-10-29"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-10-28"
+            },
+            {
+              "epss": "0.99478000",
+              "percentile": "0.99943000",
+              "date": "2026-10-27"
+            },
+            {
+              "epss": "0.99579000",
+              "percentile": "0.99946000",
+              "date": "2026-10-26"
+            },
+            {
+              "epss": "0.99579000",
+              "percentile": "0.99946000",
+              "date": "2026-10-25"
             }
           ]
         },
         {
           "cve": "CVE-2012-1431",
           "epss": "0.995420000",
-          "percentile": "0.999470000",
-          "date": "2026-11-23",
+          "percentile": "0.999450000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99542000",
+              "percentile": "0.99947000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99542000",
               "percentile": "0.99947000",
@@ -33233,20 +33760,20 @@
               "epss": "0.95998000",
               "percentile": "0.99875000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.95998000",
-              "percentile": "0.99878000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2012-1430",
           "epss": "0.995420000",
-          "percentile": "0.999470000",
-          "date": "2026-11-23",
+          "percentile": "0.999450000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99542000",
+              "percentile": "0.99947000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99542000",
               "percentile": "0.99947000",
@@ -33391,20 +33918,20 @@
               "epss": "0.95998000",
               "percentile": "0.99875000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.95998000",
-              "percentile": "0.99878000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2024-6387",
           "epss": "0.995060000",
-          "percentile": "0.999460000",
-          "date": "2026-11-23",
+          "percentile": "0.999440000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99506000",
+              "percentile": "0.99946000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99506000",
               "percentile": "0.99946000",
@@ -33549,20 +34076,20 @@
               "epss": "0.99506000",
               "percentile": "0.99945000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99506000",
-              "percentile": "0.99946000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2022-1471",
           "epss": "0.995010000",
-          "percentile": "0.999460000",
-          "date": "2026-11-23",
+          "percentile": "0.999440000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99501000",
+              "percentile": "0.99946000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99501000",
               "percentile": "0.99946000",
@@ -33707,20 +34234,20 @@
               "epss": "0.99501000",
               "percentile": "0.99945000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99569000",
-              "percentile": "0.99947000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2017-1000028",
           "epss": "0.994790000",
-          "percentile": "0.999440000",
-          "date": "2026-11-23",
+          "percentile": "0.999430000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99479000",
+              "percentile": "0.99944000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99479000",
               "percentile": "0.99944000",
@@ -33865,178 +34392,20 @@
               "epss": "0.99479000",
               "percentile": "0.99943000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99479000",
-              "percentile": "0.99945000",
-              "date": "2026-10-24"
-            }
-          ]
-        },
-        {
-          "cve": "CVE-2023-38646",
-          "epss": "0.994780000",
-          "percentile": "0.999440000",
-          "date": "2026-11-23",
-          "time_series": [
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99944000",
-              "date": "2026-11-22"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99944000",
-              "date": "2026-11-21"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99944000",
-              "date": "2026-11-20"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99944000",
-              "date": "2026-11-19"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-11-18"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-11-17"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-11-16"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-11-15"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-11-14"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-11-13"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-11-12"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-11-11"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-11-10"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-11-09"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-11-08"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-11-07"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-11-06"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-11-05"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-11-04"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99944000",
-              "date": "2026-11-03"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99944000",
-              "date": "2026-11-02"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99944000",
-              "date": "2026-11-01"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99944000",
-              "date": "2026-10-31"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-10-30"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-10-29"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-10-28"
-            },
-            {
-              "epss": "0.99478000",
-              "percentile": "0.99943000",
-              "date": "2026-10-27"
-            },
-            {
-              "epss": "0.99579000",
-              "percentile": "0.99946000",
-              "date": "2026-10-26"
-            },
-            {
-              "epss": "0.99579000",
-              "percentile": "0.99946000",
-              "date": "2026-10-25"
-            },
-            {
-              "epss": "0.98677000",
-              "percentile": "0.99925000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2023-37679",
           "epss": "0.994340000",
-          "percentile": "0.999430000",
-          "date": "2026-11-23",
+          "percentile": "0.999420000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99434000",
+              "percentile": "0.99943000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99434000",
               "percentile": "0.99943000",
@@ -34181,20 +34550,20 @@
               "epss": "0.99434000",
               "percentile": "0.99942000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99434000",
-              "percentile": "0.99944000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2023-32560",
           "epss": "0.994010000",
-          "percentile": "0.999420000",
-          "date": "2026-11-23",
+          "percentile": "0.999410000",
+          "date": "2026-11-24",
           "time_series": [
+            {
+              "epss": "0.99401000",
+              "percentile": "0.99942000",
+              "date": "2026-11-23"
+            },
             {
               "epss": "0.99401000",
               "percentile": "0.99942000",
@@ -34339,485 +34708,164 @@
               "epss": "0.99401000",
               "percentile": "0.99941000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99401000",
-              "percentile": "0.99942000",
-              "date": "2026-10-24"
             }
           ]
         },
         {
           "cve": "CVE-2025-1974",
           "epss": "0.994000000",
-          "percentile": "0.999420000",
-          "date": "2026-11-23",
-          "time_series": [
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99942000",
-              "date": "2026-11-22"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99942000",
-              "date": "2026-11-21"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99942000",
-              "date": "2026-11-20"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-11-19"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-11-18"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-11-17"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-11-16"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-11-15"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-11-14"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-11-13"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-11-12"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-11-11"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-11-10"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-11-09"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-11-08"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-11-07"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99940000",
-              "date": "2026-11-06"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99940000",
-              "date": "2026-11-05"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99940000",
-              "date": "2026-11-04"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-11-03"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-11-02"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-11-01"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-10-31"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-10-30"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-10-29"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99941000",
-              "date": "2026-10-28"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99940000",
-              "date": "2026-10-27"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99940000",
-              "date": "2026-10-26"
-            },
-            {
-              "epss": "0.99400000",
-              "percentile": "0.99940000",
-              "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99384000",
-              "percentile": "0.99941000",
-              "date": "2026-10-24"
-            }
-          ]
-        },
-        {
-          "cve": "CVE-2014-0094",
-          "epss": "0.993880000",
           "percentile": "0.999410000",
-          "date": "2026-11-23",
+          "date": "2026-11-24",
           "time_series": [
             {
-              "epss": "0.99388000",
-              "percentile": "0.99941000",
+              "epss": "0.99400000",
+              "percentile": "0.99942000",
+              "date": "2026-11-23"
+            },
+            {
+              "epss": "0.99400000",
+              "percentile": "0.99942000",
               "date": "2026-11-22"
             },
             {
-              "epss": "0.99388000",
-              "percentile": "0.99941000",
+              "epss": "0.99400000",
+              "percentile": "0.99942000",
               "date": "2026-11-21"
             },
             {
-              "epss": "0.99388000",
-              "percentile": "0.99941000",
+              "epss": "0.99400000",
+              "percentile": "0.99942000",
               "date": "2026-11-20"
             },
             {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-11-19"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-11-18"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-11-17"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-11-16"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-11-15"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-11-14"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-11-13"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-11-12"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-11-11"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-11-10"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-11-09"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-11-08"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-11-07"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99939000",
-              "date": "2026-11-06"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99939000",
-              "date": "2026-11-05"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99939000",
-              "date": "2026-11-04"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-11-03"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-11-02"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-11-01"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-10-31"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-10-30"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-10-29"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99940000",
-              "date": "2026-10-28"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99939000",
-              "date": "2026-10-27"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99939000",
-              "date": "2026-10-26"
-            },
-            {
-              "epss": "0.99388000",
-              "percentile": "0.99939000",
-              "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99388000",
+              "epss": "0.99400000",
               "percentile": "0.99941000",
-              "date": "2026-10-24"
-            }
-          ]
-        },
-        {
-          "cve": "CVE-2020-36289",
-          "epss": "0.993620000",
-          "percentile": "0.999400000",
-          "date": "2026-11-23",
-          "time_series": [
-            {
-              "epss": "0.99362000",
-              "percentile": "0.99940000",
-              "date": "2026-11-22"
-            },
-            {
-              "epss": "0.99362000",
-              "percentile": "0.99940000",
-              "date": "2026-11-21"
-            },
-            {
-              "epss": "0.99362000",
-              "percentile": "0.99940000",
-              "date": "2026-11-20"
-            },
-            {
-              "epss": "0.99362000",
-              "percentile": "0.99940000",
               "date": "2026-11-19"
             },
             {
-              "epss": "0.99362000",
-              "percentile": "0.99940000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-11-18"
             },
             {
-              "epss": "0.99362000",
-              "percentile": "0.99939000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-11-17"
             },
             {
-              "epss": "0.99362000",
-              "percentile": "0.99940000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-11-16"
             },
             {
-              "epss": "0.99362000",
-              "percentile": "0.99940000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-11-15"
             },
             {
-              "epss": "0.99362000",
-              "percentile": "0.99939000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-11-14"
             },
             {
-              "epss": "0.99362000",
-              "percentile": "0.99939000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-11-13"
             },
             {
-              "epss": "0.99362000",
-              "percentile": "0.99939000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-11-12"
             },
             {
-              "epss": "0.99362000",
-              "percentile": "0.99939000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-11-11"
             },
             {
-              "epss": "0.99362000",
-              "percentile": "0.99939000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-11-10"
             },
             {
-              "epss": "0.99362000",
-              "percentile": "0.99939000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-11-09"
             },
             {
-              "epss": "0.99362000",
-              "percentile": "0.99939000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-11-08"
             },
             {
-              "epss": "0.99362000",
-              "percentile": "0.99939000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-11-07"
             },
             {
-              "epss": "0.99362000",
-              "percentile": "0.99939000",
+              "epss": "0.99400000",
+              "percentile": "0.99940000",
               "date": "2026-11-06"
             },
             {
-              "epss": "0.99362000",
-              "percentile": "0.99939000",
+              "epss": "0.99400000",
+              "percentile": "0.99940000",
               "date": "2026-11-05"
             },
             {
-              "epss": "0.99362000",
-              "percentile": "0.99939000",
+              "epss": "0.99400000",
+              "percentile": "0.99940000",
               "date": "2026-11-04"
             },
             {
-              "epss": "0.99209000",
-              "percentile": "0.99935000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-11-03"
             },
             {
-              "epss": "0.99209000",
-              "percentile": "0.99935000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-11-02"
             },
             {
-              "epss": "0.99209000",
-              "percentile": "0.99935000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-11-01"
             },
             {
-              "epss": "0.99209000",
-              "percentile": "0.99935000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-10-31"
             },
             {
-              "epss": "0.99209000",
-              "percentile": "0.99934000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-10-30"
             },
             {
-              "epss": "0.99209000",
-              "percentile": "0.99934000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-10-29"
             },
             {
-              "epss": "0.99209000",
-              "percentile": "0.99934000",
+              "epss": "0.99400000",
+              "percentile": "0.99941000",
               "date": "2026-10-28"
             },
             {
-              "epss": "0.99209000",
-              "percentile": "0.99934000",
+              "epss": "0.99400000",
+              "percentile": "0.99940000",
               "date": "2026-10-27"
             },
             {
-              "epss": "0.99209000",
-              "percentile": "0.99934000",
+              "epss": "0.99400000",
+              "percentile": "0.99940000",
               "date": "2026-10-26"
             },
             {
-              "epss": "0.99209000",
-              "percentile": "0.99934000",
+              "epss": "0.99400000",
+              "percentile": "0.99940000",
               "date": "2026-10-25"
-            },
-            {
-              "epss": "0.99209000",
-              "percentile": "0.99936000",
-              "date": "2026-10-24"
             }
           ]
         }
@@ -34835,12 +34883,21 @@
         "source": "GoogleNews"
       },
       {
-        "title": "CVE-2026-114938 OpenJDK RCE (Java4Shell): Everything You Need to Know",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1xQjh3VUkzU1loWTdzYk9sUVRZODRfeVc2Z0E1TjlOV3FGdDh2VTdneGVhUnhRQ0o1bkJreGM5dUlXeGNsN1VKSXZwcmhnTWJxSkdNb3lhamtJaVRzMjZBWW0wRG5XVDRvYkt5SzljZw?oc=5",
-        "domain": "wiz.io",
+        "title": "AI and Cybersecurity: Technologies Can Magnify Cyberattacks and Enhance Cyber Defense",
+        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ZWjRDRkJzZmd3VThDRXpPRWkxR3l0WTZ0RURzamRlY0dPaGxBTzJTT3JsS25sVzhyVzhSaVRCQUljQmVoUEJ6NENKY2ZKeWRiWW9kVw?oc=5",
+        "domain": "u.s.governmentaccountabilityoffice.gov",
         "language": "",
         "tone": 0,
-        "seendate": "20261117T222957Z",
+        "seendate": "20261120T132325Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "JPMorgan, Visa, Mastercard say third-party vendors targeted in cyberattack",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQV1VHOTlUSTlCVmhEY0dIdi11T2tlc2xPMG16MHhDWkl0SnlBVFl0cHNiZlVPaEtNRERzYXJGa28yUG9DSVZobFBicGFwcXBUWG1icU1RSzYtRUpNV3V4YU1uNkVkNGtQN0tJOVpTMExic1VCMWIxMzhUZm5ISjN4eWJoRFBmSzhZM0x0YlJIRjBJYWJsNlF5WUMxN3NsUE9pWndFLVhTcG1saUE?oc=5",
+        "domain": "reuters",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261120T121112Z",
         "source": "GoogleNews"
       },
       {
@@ -34862,24 +34919,6 @@
         "source": "GoogleNews"
       },
       {
-        "title": "How to Tell If It’s a Cyberattack or Just an Outage",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUVRiZUNSNVJhVVpYYTRHdGktNWY2UWc3eV81emd3bGw5eEhNVmZ2cTdoTnlzN2oxeWZyLTIzVmZSMS1JeGRSNXZhcThfdEFOc3psQUVhelRWdWtUT2pzZ0IzTXBWRUgwaHpBQWtPZkhlU05HVmYxZEhPUGRxVFpNY1o1RUUxUQ?oc=5",
-        "domain": "wired",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261117T194057Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "JPMorgan, Visa, Mastercard say third-party vendors targeted in cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQV1VHOTlUSTlCVmhEY0dIdi11T2tlc2xPMG16MHhDWkl0SnlBVFl0cHNiZlVPaEtNRERzYXJGa28yUG9DSVZobFBicGFwcXBUWG1icU1RSzYtRUpNV3V4YU1uNkVkNGtQN0tJOVpTMExic1VCMWIxMzhUZm5ISjN4eWJoRFBmSzhZM0x0YlJIRjBJYWJsNlF5WUMxN3NsUE9pWndFLVhTcG1saUE?oc=5",
-        "domain": "reuters",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261120T121112Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "Java4Shell (CVE-2026-114938): Risks and Mitigations",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUHlZbWgybmpuVmNhbkE1bENkdkZuR2tCVjdyc1RnZGZtT3hzUWtlbVE0T1hOWW9IMFBSRlMzdldQcUNrQ1RlclN5SEFlTGhudC1NeWZ4VW1MS1FwYmpSazFKdXJjVlB1eHVjQ19pNWFNc0JMRjI0TmdDN051SDhQR3lqSnN5S3UwSENScEc2cnF4dlJLR2RUQzBjbmZBTmc?oc=5",
         "domain": "paloaltonetworks",
@@ -34889,12 +34928,21 @@
         "source": "GoogleNews"
       },
       {
-        "title": "USDA grapples with security breach as IT staff take multiple systems offline",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRDM0dWVjdGdINzgxX3ZkZE93YnFDZjhQM28yVnQ2TVcwSENyZU0yT1JTb1dWV0VUSWlrZ2oyc3czdmFLRTVfYnJkSF9jWjVQeVlqVmJ5dnpYTk9YdFNPaklYUUtMTXpKZUpfaVZlT3ZiOE1ERzgwUjBWNUZweTBoYnFMVVBWamdBVUNPS2ZwWlc3S1pqMDhmTTVSeW5Db1RUOGdydURoSlZqemtSVUZYbklWRUVTdThCWllTNXVZNA?oc=5",
-        "domain": "nextgovfcw",
+        "title": "phpAfterShell and Critical PHP RCE Vulnerabilities: Everything You Need To Know",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVnNlRlhFUlJ6VmcweG5MWkpTZ2I1aGY3S0pQeEhNZ2xlNXJNVVlNeUdSUVRPUi0xa2FGUW90d3E5ODhYZlgzQWZIWGxpRV9hOVExcG1zOVZpeDhRWkFYNGtObnA4X2s3Z19XTFFRSVlIeElsSTZCdUdKVjR2b09xNTVSN2J5WVJQbVlNTjBRVQ?oc=5",
+        "domain": "wiz.io",
         "language": "",
         "tone": 0,
-        "seendate": "20261119T214200Z",
+        "seendate": "20261119T214623Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Critical remote code execution flaws found in Nginx web server",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRXNRdHBucTNJVDZpeEZHclVKTFdSclY2UVQ0RHhJYzNBVkhZLUloWFgzbFVzeTVDUnh0NkNRVldLYnVKTGh1cFBfbzBXbU5QMGItM0d1LVdWRks2SWwxQkZoYjhGQ19SOTJZSTFHaUxaeVRKZkE4Y1JZQWlBRksyWnZHOW1QRVJoc1F5c21NYlViVW1vMlNGcHptdFdYSVpva0E?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261119T165803Z",
         "source": "GoogleNews"
       },
       {
@@ -34907,21 +34955,30 @@
         "source": "GoogleNews"
       },
       {
-        "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQb2oyeXRPU2JHWlhldk1wMEppd0k4bUliNFFvTkVFZ3RmS2pQbXQzRXpBQ1pGRXN4UFJ4UnVaYm1FVmQ2OGZpUXlCVS1Ba0daQ01xQ2dRWVM5azhCcXdUZFIybmJnT2s4UnRFbmhabTRkOFdXc21YUVNZTHNlQ2ZBS0xSVQ?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261119T080000Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "CVE-2026-123890: Critical Authentication Bypass in VMware vCenter",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNYjJzamVtRDNKMml4WjR0VDFfZDVPV1hLYlFCNnl4MEQtcjhzRGpILWpEV3hvM3VDT00zcDBOVGRTRDV6YWQtVDBERVBUdThnQ3RFcW9RQ0pLZ1FqdTk0YnNBQzVmaWVfOFZoZzM3Y2RZUERQR1l3UDQyb09pQW5VTWwwSXZidjNBai0ySFZPcWlNZGdHT3NVRlhwaFpYUl95?oc=5",
         "domain": "rapid7",
         "language": "",
         "tone": 0,
         "seendate": "20261119T211059Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Java4Shell vulnerability (CVE-2026-114938) assessment",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMXQxeXZpZXkxWWxyNXlQUzBqOHBxaFBCLXB0V01faTRyMEJlX3JQTzNVUkpnOUsxb0tLdi1QUjRuZWhOX053NTFFYWJpczFZSEJUUlI3b2Fld0dEY3Z4WFVQYjlrX3JkSzVLR2Mwd2pTcDNBMFVqa2lCQnhyRWlIRnh5Z2RjclZIeldJ?oc=5",
+        "domain": "databricks",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261119T180843Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQb2oyeXRPU2JHWlhldk1wMEppd0k4bUliNFFvTkVFZ3RmS2pQbXQzRXpBQ1pGRXN4UFJ4UnVaYm1FVmQ2OGZpUXlCVS1Ba0daQ01xQ2dRWVM5azhCcXdUZFIybmJnT2s4UnRFbmhabTRkOFdXc21YUVNZTHNlQ2ZBS0xSVQ?oc=5",
+        "domain": "thehackernews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261119T080000Z",
         "source": "GoogleNews"
       },
       {
@@ -34943,21 +35000,21 @@
         "source": "GoogleNews"
       },
       {
-        "title": "JPMorgan, Visa, and Mastercard disclose cyberattack on third-party vendors",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNS2R0aHc1VDVIQ3QxYjZFTmdYTktsYjBPdUFfUlY4UVZPekNOSTVwS1JWR1hoVkVlTXFIdFNwakdEMHlXWlpWNWhMdWlZNHZjSTczR2hFUm02M3BBOG1sRzhDVlE1cTlPa1ppNWRack1rMTNfelJpWlJleENsVGhwYlFwdWZUaGd2TjQ1OG9rMzh2TzlEVE1mZmhyQVI2RTFkN25BVnFLNjRlUHBma29Gc05WVHBrTjVhaGNlQzlSaXlDZm9sOGhNZw?oc=5",
-        "domain": "yahoofinance",
+        "title": "How to Find, Mitigate, and Patch the Critical Java4Shell Flaw (CVE-2026-114938) Now",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOcWJtZnlLOVpILWNKalhlRWFFdWYzbUtucWZ4REQ2RDFTR0RnUlIyQ0N4RDBCbExRRXQwQ1R5azFXUmxjQ1ZWYk5Wcl9qS2h6ZHptdzZ5UHB5UlZoaG1WZVctSHg2M0M4elVpV1JPLWhCWERuVVVCc0R3eHNsLXZPN292U3VhQVh1X19SQnFrSldDRGlhZkpmX0NsSlFrUlVDbFNDLXlPaVktSF9LWG1KY2Y5eTFYMHV0el9HTWJvck53Q0dwT1pjWXFiMHMzR3lBcml1Uk1OemZmbnVPdm9F?oc=5",
+        "domain": "qualys",
         "language": "",
         "tone": 0,
-        "seendate": "20261119T190314Z",
+        "seendate": "20261118T075423Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Unauthenticated Remote Code Execution in NGINX: CVE-2026-123633 and CVE-2026-123007",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1BQjYySjNZRkM1ZWR3ZDZFb0NKQW9XOWlpWWdCNTNpbklBWFRZUVIybnBkYjlMYWNWNVk5SlNJUldzeVctWEJ3T0xpeXhqLU9CU0Jka3M3NGdNZkJneUkzUW5xZ1dfdw?oc=5",
-        "domain": "wiz.io",
+        "title": "US CIA, ODNI suffer cybersecurity breach of some unclassified information, NYT reports",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMEY3TVFidy1CMzFaVE9HN09yYWVNX25JZ0hKNkhmVmJYMFhNdDQyd2k5TzFHWkhhUjFrbzBiSkIxWkZZREdEZ2Z2b2QwVFhDVEtEYzNuc19LWGd4SkdaMjRuZFVWVjJjMXR0MGwyNWRvOFZCVjdPYUVCaUJzbEpkVmtNWjJQalR2UlVfVVdEUElpZTR1Z0FnVW51alF3SkppOXdWNThkUU84bEgxalNDeTRkaVR5QQ?oc=5",
+        "domain": "reuters",
         "language": "",
         "tone": 0,
-        "seendate": "20261117T203500Z",
+        "seendate": "20261124T202710Z",
         "source": "GoogleNews"
       },
       {
@@ -34970,30 +35027,21 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Major Java vulnerability could help hackers compromise many popular applications",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOTHEtZ3VtOUl1NV9GZ2x3Slo2LWxUeTkwM3F1aXF1VXFBUVBRV19OVWpuUmJtSzJlamt3UHdIdFZpUk9GcUN5a0h0dWJsVXFPeHc2NzBLVTdGLVdfYzdPR0Z3NjE4T1Vmb1BCelpsbVFyOTE1Mzg5T0VZaW01WnZRSHJhalJsVzF1UzY5NkhGVQ?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261118T160038Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "EU Commission confirms it was targeted in cyberattack through use of AI tools",
         "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNQ2FuVDFlVnk2V2ZQX1cwZDZTVVgtNGcyVkRjdWVPa0dWMnFUVWkxVjU0MmJCZEhqZTNURWtRUlpWTFpHYTJDUS1TckpwbDFOYWl3WjR5Z0hyR0xMRVNQbXNZOWw1dHUtWDMwUl9VTVJRSUVfOWh6cjd1eVBpY3hySU9zbnlvZ2V1UFpBSlFraWZIMTAxTGtXQnVYaGhNLWRkRVhmaE96UQ?oc=5",
         "domain": "reuters",
         "language": "",
         "tone": 0,
         "seendate": "20261119T181043Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "CVE-2026-123007: Critical NGINX HTTP/2 Integer Underflow Leads to RCE (FIXED)",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZ1ExVnFZd1l3VC1tdWRkdU14akJxdmtINGJvWTk5UmpVem9RYkRwN1VTTUJuYllDTFNIdUcwYkIzRnhnOVFlV3pUQWR4ajJZa1VGMWFmWHF4bk1fakVwTkRLZzZxbHczaXh1ZkhUa2NlTEo0ZWFJVFJxZHV4amtwVmtmT0g1dEllbnRuc3lXU3hpX2ZEemRDcmVUTjQyN1hnV2h1U0I5dVQ5eXRIdTN3bA?oc=5",
-        "domain": "rapid7",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261118T140023Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "phpAfterShell and Critical PHP RCE Vulnerabilities: Everything You Need To Know",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVnNlRlhFUlJ6VmcweG5MWkpTZ2I1aGY3S0pQeEhNZ2xlNXJNVVlNeUdSUVRPUi0xa2FGUW90d3E5ODhYZlgzQWZIWGxpRV9hOVExcG1zOVZpeDhRWkFYNGtObnA4X2s3Z19XTFFRSVlIeElsSTZCdUdKVjR2b09xNTVSN2J5WVJQbVlNTjBRVQ?oc=5",
-        "domain": "wiz.io",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261119T214623Z",
         "source": "GoogleNews"
       },
       {
@@ -35006,12 +35054,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Java4Shell vulnerability (CVE-2026-114938) assessment",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMXQxeXZpZXkxWWxyNXlQUzBqOHBxaFBCLXB0V01faTRyMEJlX3JQTzNVUkpnOUsxb0tLdi1QUjRuZWhOX053NTFFYWJpczFZSEJUUlI3b2Fld0dEY3Z4WFVQYjlrX3JkSzVLR2Mwd2pTcDNBMFVqa2lCQnhyRWlIRnh5Z2RjclZIeldJ?oc=5",
-        "domain": "databricks",
+        "title": "Norway's Equinor detects ongoing cyberattack, oil and gas output unaffected",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNbjhGTnNBTjRRNVlLVTFYb2NsSnB6bDJmbUIwbWY2UTh5YUpDNC1UQXpvLWJacEh2THJTOUlnM2NkMHF0QUJramtnRkpadURDR0FieUJvOWU4bFdka2RKdVE0b3dCMGVHTWpCYzV4SHBZNDZkU3gwOGwwRThtMnNRQ0NtZG5OdUNzRXdnNU1TY0E5Z3FHQV9PeVJmZm40RmpmclE?oc=5",
+        "domain": "reuters",
         "language": "",
         "tone": 0,
-        "seendate": "20261119T180843Z",
+        "seendate": "20261117T232117Z",
         "source": "GoogleNews"
       },
       {
@@ -35024,30 +35072,39 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Major Java vulnerability could help hackers compromise many popular applications",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOTHEtZ3VtOUl1NV9GZ2x3Slo2LWxUeTkwM3F1aXF1VXFBUVBRV19OVWpuUmJtSzJlamt3UHdIdFZpUk9GcUN5a0h0dWJsVXFPeHc2NzBLVTdGLVdfYzdPR0Z3NjE4T1Vmb1BCelpsbVFyOTE1Mzg5T0VZaW01WnZRSHJhalJsVzF1UzY5NkhGVQ?oc=5",
-        "domain": "cybersecuritydive",
+        "title": "CVE-2026-123007: Critical NGINX HTTP/2 Integer Underflow Leads to RCE (FIXED)",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZ1ExVnFZd1l3VC1tdWRkdU14akJxdmtINGJvWTk5UmpVem9RYkRwN1VTTUJuYllDTFNIdUcwYkIzRnhnOVFlV3pUQWR4ajJZa1VGMWFmWHF4bk1fakVwTkRLZzZxbHczaXh1ZkhUa2NlTEo0ZWFJVFJxZHV4amtwVmtmT0g1dEllbnRuc3lXU3hpX2ZEemRDcmVUTjQyN1hnV2h1U0I5dVQ5eXRIdTN3bA?oc=5",
+        "domain": "rapid7",
         "language": "",
         "tone": 0,
-        "seendate": "20261118T160038Z",
+        "seendate": "20261118T140023Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Norway's Equinor detects ongoing cyberattack, oil and gas output unaffected",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNbjhGTnNBTjRRNVlLVTFYb2NsSnB6bDJmbUIwbWY2UTh5YUpDNC1UQXpvLWJacEh2THJTOUlnM2NkMHF0QUJramtnRkpadURDR0FieUJvOWU4bFdka2RKdVE0b3dCMGVHTWpCYzV4SHBZNDZkU3gwOGwwRThtMnNRQ0NtZG5OdUNzRXdnNU1TY0E5Z3FHQV9PeVJmZm40RmpmclE?oc=5",
-        "domain": "reuters",
+        "title": "JPMorgan, Visa, and Mastercard disclose cyberattack on third-party vendors",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNS2R0aHc1VDVIQ3QxYjZFTmdYTktsYjBPdUFfUlY4UVZPekNOSTVwS1JWR1hoVkVlTXFIdFNwakdEMHlXWlpWNWhMdWlZNHZjSTczR2hFUm02M3BBOG1sRzhDVlE1cTlPa1ppNWRack1rMTNfelJpWlJleENsVGhwYlFwdWZUaGd2TjQ1OG9rMzh2TzlEVE1mZmhyQVI2RTFkN25BVnFLNjRlUHBma29Gc05WVHBrTjVhaGNlQzlSaXlDZm9sOGhNZw?oc=5",
+        "domain": "yahoofinance",
         "language": "",
         "tone": 0,
-        "seendate": "20261117T232117Z",
+        "seendate": "20261119T190314Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Critical remote code execution flaws found in Nginx web server",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRXNRdHBucTNJVDZpeEZHclVKTFdSclY2UVQ0RHhJYzNBVkhZLUloWFgzbFVzeTVDUnh0NkNRVldLYnVKTGh1cFBfbzBXbU5QMGItM0d1LVdWRks2SWwxQkZoYjhGQ19SOTJZSTFHaUxaeVRKZkE4Y1JZQWlBRksyWnZHOW1QRVJoc1F5c21NYlViVW1vMlNGcHptdFdYSVpva0E?oc=5",
-        "domain": "cybersecuritydive",
+        "title": "Did Banks Get Hacked? Visa, Mastercard, Chase Confirm Vendor Cyberattack",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWmtiRW9MYzFST09HZVM5UTFLd1hZN1Y3Wkx1UndGRzhmRW55dWRQZFktSXRiX2tkU190WTVLWVVLZ1NuSE1GWUR6bkt5WnFldDBDMFItQU1FQ1BJR0pqSWc2M0sxWFFEMjRIdGlkU2hJdG9YSzdyRkVSYU02Z2J4ME9UNl9MU2dPSzZiOWgtTExfbGM2Tm1ZU2NzZ3VBdDlQSnl5OTROd1ZnbGxvOUlOaQ?oc=5",
+        "domain": "forbes",
         "language": "",
         "tone": 0,
-        "seendate": "20261119T165803Z",
+        "seendate": "20261120T150200Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "U.S. Spy Agencies Suffer Breach of Some Unclassified Information",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNQ0ZENzdyVk5TQkMwN05tS3VmQXVZOUo1c2g5LTRQenB1RzB1RFo4OTdTdDA3XzRPZEFpLS1PRUZRQWw1NXhmZlZZNWU2NkdJQWFEUlhOZkppQW9YRHFVUzNOVFBkNnlZdmpkVDNwTFRadG5Cd1I3RmR3VXNTYnZ6Yi15VEszSUxKVnZrenExMm1HekZf?oc=5",
+        "domain": "thenewyorktimes",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261124T193016Z",
         "source": "GoogleNews"
       },
       {
@@ -35060,21 +35117,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Cyberattack hits 178 organizations: Credit cards, crypto, other data at risk",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZEk0NFhMYXFvSVRIemVuWTRsbURQMk82bWc3WW1aZGZVTVgzSk9QTFpCU1o3bkdRbFZjRkFSZXg5dk1QcUE0S2xnWDF2RWNtd3NsbEUtSVM0MXJCb3JTWGdtU3JOSWFxQmYtT0lTUnEwbE9Jd0dYUS1rcHp3cjJLcnp0LS1KMFdXN2p2NHh4ei0tS25BMXJQTGxoQnhZRV9KTVhVX2JROVBJanJPTDZTV05wV284SmZTSHZJ?oc=5",
-        "domain": "syracuse.com",
+        "title": "Ruby2Shell: Ruby Memory Corruption Flaws Expose Applications to Remote Code Execution, But is it an Actual Risk?",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNSEsydEJLSTc2bnBRdldyYm5YTE9uOFl6UzVtY0NuMXl0eG9xZmdSNkJqbzFwNEplbEFSQmFfV3VOVDgwa3ZnTVNidEJGV280ek1TUmZybU1yWmo1TUxCbWZDVmxOSlV6alFxOXY0R2o4LVA2YnZXZkNxYkRIbmQwQzMycllkWGw5NXlOMUtuQ2lIY1Q5NVhKMGJXRG1uZ2JYbjRkSTJ0ZllpQWRxZ21Gd1pLTmZRUmJSUWdqX2lMZ3MyS0JXbFJaZ2dhcFpkWVpNSk9ha1hR?oc=5",
+        "domain": "oxsecurity",
         "language": "",
         "tone": 0,
-        "seendate": "20261117T215100Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "How to Find, Mitigate, and Patch the Critical Java4Shell Flaw (CVE-2026-114938) Now",
-        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOcWJtZnlLOVpILWNKalhlRWFFdWYzbUtucWZ4REQ2RDFTR0RnUlIyQ0N4RDBCbExRRXQwQ1R5azFXUmxjQ1ZWYk5Wcl9qS2h6ZHptdzZ5UHB5UlZoaG1WZVctSHg2M0M4elVpV1JPLWhCWERuVVVCc0R3eHNsLXZPN292U3VhQVh1X19SQnFrSldDRGlhZkpmX0NsSlFrUlVDbFNDLXlPaVktSF9LWG1KY2Y5eTFYMHV0el9HTWJvck53Q0dwT1pjWXFiMHMzR3lBcml1Uk1OemZmbnVPdm9F?oc=5",
-        "domain": "qualys",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261118T075423Z",
+        "seendate": "20261119T141246Z",
         "source": "GoogleNews"
       },
       {
@@ -35084,15 +35132,6 @@
         "language": "",
         "tone": 0,
         "seendate": "20261120T205000Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "CVE-2026-114938: Reported Critical Pre-authentication Remote Code Execution in Java 17",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUjdhelluN2N6QUlPZ2ZXYWhIczhHZ2tPMFZ6Y2c3eW82bDctZTZGQnl5X0xJZkxlSWRxcXRoYWVuMXJiZGdDT0w1Wk4wemJMYlF4N3E2cnJQejNNbWtqQW9FVTNfTUhBZ2laZ2ZYZUs4clpRMmNTTGtuNlp5SFM2QXVYYnpjSzIwOGp2MmFMWUlSYVRyQkR6VkhyMXdvRkgwZ0dfdk1TQjJDQ2RsOW9MdnpLWjhIUUJwZ1NpUg?oc=5",
-        "domain": "rapid7",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261117T183341Z",
         "source": "GoogleNews"
       },
       {
@@ -35114,12 +35153,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Ruby2Shell: Ruby Memory Corruption Flaws Expose Applications to Remote Code Execution, But is it an Actual Risk?",
-        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNSEsydEJLSTc2bnBRdldyYm5YTE9uOFl6UzVtY0NuMXl0eG9xZmdSNkJqbzFwNEplbEFSQmFfV3VOVDgwa3ZnTVNidEJGV280ek1TUmZybU1yWmo1TUxCbWZDVmxOSlV6alFxOXY0R2o4LVA2YnZXZkNxYkRIbmQwQzMycllkWGw5NXlOMUtuQ2lIY1Q5NVhKMGJXRG1uZ2JYbjRkSTJ0ZllpQWRxZ21Gd1pLTmZRUmJSUWdqX2lMZ3MyS0JXbFJaZ2dhcFpkWVpNSk9ha1hR?oc=5",
-        "domain": "oxsecurity",
+        "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYzVfYTJEcDA4Y3dpa2tiOWlUbm82ZDFLa2Z6VmlrVk45MUdINDdjdHJyUXYwb2tMRzVEdHVRanVDODNvbEhCNjJvYVhodHVNbHQtYURfV2NiSTNGcnJwX01yUGJEYWpyTW85NngxV091RnJJTzVXRFQxbkxvdGd3eC14MA?oc=5",
+        "domain": "thehackernews",
         "language": "",
         "tone": 0,
-        "seendate": "20261119T141246Z",
+        "seendate": "20261118T042948Z",
         "source": "GoogleNews"
       },
       {
@@ -35132,33 +35171,6 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Defending Against Java4Shell: Vulnerability in OpenJDK Enables RCE on AVX-512 CPUs",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdzVXdWxsOTFyODVlNldVbEp0OHVQWmx0STVFUEViMUhRUnJyY1N4NGlyTlpzSDdVeHpNQW5GUVJ0VzM0Z0R4djNwRDd4RTNfREdSenc1ZUFQTV9ISF9XU1VDUUFxc205LWl0elUyYXc2YXZZSzktT0NoV0F2ZElzUkJMVTItTHFOOGE3Qk9ENVRBLXdnYW9Rclh2ZUdjQQ?oc=5",
-        "domain": "sentinelone",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261117T223045Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYzVfYTJEcDA4Y3dpa2tiOWlUbm82ZDFLa2Z6VmlrVk45MUdINDdjdHJyUXYwb2tMRzVEdHVRanVDODNvbEhCNjJvYVhodHVNbHQtYURfV2NiSTNGcnJwX01yUGJEYWpyTW85NngxV091RnJJTzVXRFQxbkxvdGd3eC14MA?oc=5",
-        "domain": "thehackernews",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261118T042948Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Did Banks Get Hacked? Visa, Mastercard, Chase Confirm Vendor Cyberattack",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWmtiRW9MYzFST09HZVM5UTFLd1hZN1Y3Wkx1UndGRzhmRW55dWRQZFktSXRiX2tkU190WTVLWVVLZ1NuSE1GWUR6bkt5WnFldDBDMFItQU1FQ1BJR0pqSWc2M0sxWFFEMjRIdGlkU2hJdG9YSzdyRkVSYU02Z2J4ME9UNl9MU2dPSzZiOWgtTExfbGM2Tm1ZU2NzZ3VBdDlQSnl5OTROd1ZnbGxvOUlOaQ?oc=5",
-        "domain": "forbes",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261120T150200Z",
-        "source": "GoogleNews"
-      },
-      {
         "title": "“World’s Best AI Hacker” Just Uncovered A Massive Web Vulnerability",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOREFJdW1pRTFpZXc1ODlMVWVpRzB1bFVNQ0l6ZGFteVJlelJyMWZSSWVhZ2RYTEhyM1Z3NkdNOG1oZTlYS0FfMmVpR2d5aDQ5dDZnNnFDZEx3VU50UkxLWnF4cnlral9Qc3VubFRvdk1fTVdsRWlmdWVLOGdaZnFZX3p1MjREajJNYmtyYnQ5a3hHZ0k?oc=5",
         "domain": "forbes",
@@ -35168,12 +35180,12 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Energy giant Equinor investigates cyberattack impacting IT systems",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPYVlLNGp5Rk5xalV5ZUhRLVl6RGxENHBQcFlYM3g0YXMxT0ttV2g3N1F1YV9jbHJYZy15d0dYaDAzcnM4cTJkV0xlZnNueWo2V2wxczVBQTBvcThNSHV4c2o0X3F2X1A2eHFqeFN1RHBZeEtUMzZaV3lrZVpZcHJSTUdwTEhJSHg5R0ttRjJVQQ?oc=5",
-        "domain": "cybersecuritydive",
+        "title": "Cyberattack attempt at Algonquin, Illinois Dam raises concerns about infrastructure security",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWWJmYVZhTmFDSVNaNE5halhMVVZiRHlEbUM5cm1KVGkxd1Q0OGRJcG5kNk02b2Z4UEJFb1NwajBYUEhBeGhmMnJNeDlNUE1nV3JBR2M3V0haUUZEX3duUmEyQWE5TFJZSlZCdEFnNzBEMXB6OUV6d1J0bHJGQU9kdEcyY0J1aDFZaTltVUNTc1lpejZXejZfal95ZEk0dENzcHJWMktEWXZxeVdQcGVJc0FNdlBfYnprdVhWV2xB0gHDAUFVX3lxTE9CYmxJOFVIcWlocHhCR3FCUEFiR1B2YVZEUllxRFZzVFo4ckFOWmVhWWZMZy1SZEZFbUdxN0JZQ0FTU2p5UDk0WTl6Z2dXVXoyTVJHY1h5MFBNWGwwVng5NExPSFBzeDhQcFFFU291bnVOOXpUWXptdzBzQmR3OGFCQVBweHlmZFUtZy12czhWZ3YwQm9PM1otVXlwU0tST0ZaY0JvWjNwNGVYLVpSczREVGY3M1ZJWGE3dURoSExBQ0o5RQ?oc=5",
+        "domain": "abc7chicago",
         "language": "",
         "tone": 0,
-        "seendate": "20261118T163808Z",
+        "seendate": "20261124T004255Z",
         "source": "GoogleNews"
       },
       {
@@ -35186,57 +35198,21 @@
         "source": "GoogleNews"
       },
       {
+        "title": "Energy giant Equinor investigates cyberattack impacting IT systems",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPYVlLNGp5Rk5xalV5ZUhRLVl6RGxENHBQcFlYM3g0YXMxT0ttV2g3N1F1YV9jbHJYZy15d0dYaDAzcnM4cTJkV0xlZnNueWo2V2wxczVBQTBvcThNSHV4c2o0X3F2X1A2eHFqeFN1RHBZeEtUMzZaV3lrZVpZcHJSTUdwTEhJSHg5R0ttRjJVQQ?oc=5",
+        "domain": "cybersecuritydive",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261118T163808Z",
+        "source": "GoogleNews"
+      },
+      {
         "title": "Is the U.S. Facing a Coordinated Cyberattack?",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBzV2xFcHY5bk9RS1hsTUNvemdHeVBFNGpIWWpsSVBGYUdVclg4WDZ2ZDE2eVNEZDZLaEx5d2E5UFVIZ3p6Q25SWXVWRl9jUWl5VlZxel8zVF9mTGRocWhvaWFiOF9LQUVxTC1tN01ZVjI?oc=5",
         "domain": "thedispatch",
         "language": "",
         "tone": 0,
         "seendate": "20261120T060447Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Is there a cyberattack today? What 178, Optimizely mean",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObDFicS1NNC1Pb29OR2VWemxVbWlzR00ySlhmejExY2wwbFNFQ0ZCQlduOGcyVS1RYWt1VlJHajlOYWdJcGZVeXp2YWk0RV9EZ0ZFWGk2cFBoM0NSZmhlaEdNWnR6czY4ZVhvUUZ4b05FU1JHNzh1QUFoQktfU2UzSTdfRkFlQXdyVTl6UDYzYzBnM1JydGJEUVZGdjFkWXdfYi14S25yVWVaT2Rmb0lvWWtxTm8yQQ?oc=5",
-        "domain": "bergenrecord",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261117T150700Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Microsoft unveils AI models for coding, cybersecurity as it takes on Anthropic, OpenAI",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQ05INXRWaGd0ZFhsSkZWMjBZeFNJYU1JOEhkRG9PT1V5SUl6YTNNMzFWblJXZVdjVHJzZW5raFlUbzlHMTNHemFUVWZab28xS0M3RzkyN2c2Ukl6VUR4SUF6RFRpVjRieGRFUWJGZUNsMzkyR1B0bnlxSFFQMHpFT2JCQ09KM0FMcUZWXzlZaEVmanRiMmtuOGxGQnNKbDZkM0hJVGpwNURRN0daX29GX2tHZ0pIU3NrRk5JbVVpZ1d1WGN0cHc?oc=5",
-        "domain": "reuters",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261117T181854Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "NGINX2Root: Five nginx Flaws, Led by CVE-2026-123007. How to Find, Mitigate, and Patch Now",
-        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNSVE5c0hlck4xVmNZWTdZREZ2WjNuNUtLbWZvTUxCQU5ZaVo4czJPdThqX2xRcEFfdVpqdHVRNWxoYktka2ExY2tTaGFCeWp5aVlzZVQyb3JWeWcxdnpEd3NIYjhNVFpudVlTTEpSTzZSRDF2dGY4c0Q0VmVydm5IbEZXU0k4UWdTYlc0ajh4UUwxQk9QX2wwaXZxVXFVc05iV3FFY2JmTzRuUXF1NEVHa1oxdy1XQy1WVEdYbEtpS2kwUjZUOGxKaXE4OXFaNmpLZDVRM0t4SXc2N3Z5Vk9IUjhCRHI?oc=5",
-        "domain": "qualys",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261119T185018Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Java4Shell Vulnerability Puts Enterprise Applications at Risk of Takeover",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYWlJY3pIYnZXUUxPNW9PYXdoZkFJaVQ5eXJOMFBNM3hqcXN2Ty1wbzR4SjV3endBNEZBQTNQWExvbWNzYVVwbWRvWHRJdG9OT1BpdDNpd3NJdGZPSlNzUXRDSFlmN0Jjd1NDY0VYMHlENDVXYXBEaVVycDE3bThxYUdjR1AtanZOU3ZPZDIyc1pnS056YXRxMVlXTGpXWFZ1clBFV2hCZFFPM1g2?oc=5",
-        "domain": "securityweek",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261118T074334Z",
-        "source": "GoogleNews"
-      },
-      {
-        "title": "Nvidia Responds to Gentlemen Ransomware Claim",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxON25URzBFckkzQ0I0cDBIR3VzdS1sZTVzcHFxdTc1WVRWci1XSDZET1o0eUZWZ2VlbzE3OGR2NGM3QkFpdEFBc1BWR1RKVEZhTy1LdFZHamdaaXRHRnVFbF8yZFgxQnFORWpXNWIxNGpZTTZIaHlaUzlJcXRXQ1FTZQ?oc=5",
-        "domain": "securityweek",
-        "language": "",
-        "tone": 0,
-        "seendate": "20261119T141732Z",
         "source": "GoogleNews"
       },
       {
@@ -35249,30 +35225,102 @@
         "source": "GoogleNews"
       },
       {
-        "title": "Java4Shell (CVE-2026-114938): Pre-Auth Heap Overflow in OpenJDK",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNN21yTGhnejdpR0ljcjkyREY3UHRJMGxyQk9jSUx1dkpXVjBBeTB6RHhrampEOVp0QV9uU1h3ZjBFU3hGUmlhbmNrZEp1dW04OEdCVFd4cVIwNEN3RE1kRkJVQUxtTEtteURCSjY5VGR3NnJoTjN5Tnc1eXZTX1lOMl9PU2VIWEZHQUVJY0Qza3VQRHNQOGJYcVNzUm5WVFQ5SU9Z?oc=5",
-        "domain": "endorlabs",
+        "title": "NGINX2Root: Five nginx Flaws, Led by CVE-2026-123007. How to Find, Mitigate, and Patch Now",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNSVE5c0hlck4xVmNZWTdZREZ2WjNuNUtLbWZvTUxCQU5ZaVo4czJPdThqX2xRcEFfdVpqdHVRNWxoYktka2ExY2tTaGFCeWp5aVlzZVQyb3JWeWcxdnpEd3NIYjhNVFpudVlTTEpSTzZSRDF2dGY4c0Q0VmVydm5IbEZXU0k4UWdTYlc0ajh4UUwxQk9QX2wwaXZxVXFVc05iV3FFY2JmTzRuUXF1NEVHa1oxdy1XQy1WVEdYbEtpS2kwUjZUOGxKaXE4OXFaNmpLZDVRM0t4SXc2N3Z5Vk9IUjhCRHI?oc=5",
+        "domain": "qualys",
         "language": "",
         "tone": 0,
-        "seendate": "20261117T203948Z",
+        "seendate": "20261119T185018Z",
         "source": "GoogleNews"
       },
       {
-        "title": "Cybersecurity experts share why people should have a 'digital disaster plan'",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNRFhLS3J0MjMyYkxaTnVMTThNaDliY3VxQ0xGRXFFZWF2T2I0N2JqcUNNWURhUlJET1pnNWlCME13ZkE3cFB1akNwOGh3TE43cjN5dFo4TUdGM2pyNW92MF84MUoxbUdOcXYtYktXZXZzbzF6NHFuNmZRV3VqNE1xUTFVRmFMYnFYUWRSX2RmSzVzQ2h5NlliQW1QbzZhZzUxLS15cmJaTdIBrAFBVV95cUxQWXM3bTNrR0ZFMW9TOEJnT3JWb2FMQWUzYkl0ZU91ZVBIamE4WXVZcFhtNGZmamdMbjh0TnRhMWlmUFQwbkgyZ2poN3N4dVNoN3BocHpmUGhrRkdlLVJJeHdBRDZyYm4ySDgzRzQ2UEdoM1V3NjlEdEhCUWwwd3N4VEpBWmJEUG5hMTBjTE1DZkZTVTZjS1pUYlE3dDNwVnVHNjRwSC1RMFJLbFBJ?oc=5",
-        "domain": "abcnews-breakingnewslatestnewsandvideos",
+        "title": "Google says the first autonomous AI cyberattack has happened. Expect a lot more like it.",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQWGxDWWVnZnFZdVIwa0hpYi1hTVNsVEo1eGtmS3cyVVVOanA3N0RvU1ZGcjR1YkxOOE5fdVNjMWhCNWIwSVJEYUk2MUxjTkd3bWdUMjFlT2htZlZwSEhNcFFDblZ0RTZPb1N3NDU4NzRPR2t5U1FUcVVteHBMMDFOZlQ2VGhMTXdnd1E?oc=5",
+        "domain": "mashable",
         "language": "",
         "tone": 0,
-        "seendate": "20261118T144858Z",
+        "seendate": "20261124T190858Z",
         "source": "GoogleNews"
       },
       {
-        "title": "A.I. Helps Find Major Security Bug in Java, a Software Platform Vital to the Internet",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB4YlhWNC1xblo0NzdIaWExSVNOSEl6MkpHMjF3ZDV3OENZUnNzVnEwUTR5U29FWUZiLVRnckE1UTV6c0tURDJSWTlIaXc3N19tcUVILUVlZ2NOaU16ZE5aQkE4SlF6eTFERlJEUVh2WW03WnFZbmNhYlhjNHg?oc=5",
-        "domain": "thenewyorktimes",
+        "title": "Java4Shell Vulnerability Puts Enterprise Applications at Risk of Takeover",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYWlJY3pIYnZXUUxPNW9PYXdoZkFJaVQ5eXJOMFBNM3hqcXN2Ty1wbzR4SjV3endBNEZBQTNQWExvbWNzYVVwbWRvWHRJdG9OT1BpdDNpd3NJdGZPSlNzUXRDSFlmN0Jjd1NDY0VYMHlENDVXYXBEaVVycDE3bThxYUdjR1AtanZOU3ZPZDIyc1pnS056YXRxMVlXTGpXWFZ1clBFV2hCZFFPM1g2?oc=5",
+        "domain": "securityweek",
         "language": "",
         "tone": 0,
-        "seendate": "20261117T210554Z",
+        "seendate": "20261118T074334Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Proof-of-concept exploit code available for Ghostscript ‘Upload2Shell’ vulnerability (CVE-2026-125396)",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPZVg4djQ0UDFuNlhoLVh1R2pUckl5RU1oRnlKZFNkbnNWQ09qQXRSSTRxZXVLUmk0MHpkVzhYelY3aEp2TUZBVHkzT0lqcVNOcTE1NjlBYjNtSDc5TXpfVFN1NGZ2bExxNHFmVTVCZm9hTzBHVkU5TXQwQ2ZiRHdIOW5SbU1rMWNEUXlnMUtSbDhuOTg?oc=5",
+        "domain": "sophos",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261123T200701Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Nvidia Responds to Gentlemen Ransomware Claim",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxON25URzBFckkzQ0I0cDBIR3VzdS1sZTVzcHFxdTc1WVRWci1XSDZET1o0eUZWZ2VlbzE3OGR2NGM3QkFpdEFBc1BWR1RKVEZhTy1LdFZHamdaaXRHRnVFbF8yZFgxQnFORWpXNWIxNGpZTTZIaHlaUzlJcXRXQ1FTZQ?oc=5",
+        "domain": "securityweek",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261119T141732Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "First Flights, Then Banks: Is the U.S. Under a Coordinated Cyberattack?",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNUWJieGNoakpmeUVqbkNoRUdWeHRTR0xOY3paQ0hEVE1JcmNXcjgtY0I5bHZCbWtQOGkyRjNLU08xbXlrYVVKTDJIXzBFS2RpMmVnYVV5VU1KbGp5dGtyT0tLQUhnS0w5VzVMWlJfeEw5QTJlbFh6OVBzSUxnRU5qV1o0NzRSTDRJUG9Sc0xsOGNSUjQ1YnE0V1hweGRVbHJxdmZYUUZROUdvRU5CSEJ6UWVldlowcnFrSk9WamNXVlZISHVfMU02T1Jrck5mTXRoNnVsMXlVTQ?oc=5",
+        "domain": "u.s.newsworldreport",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261118T210303Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "'Java4Shell' vulnerability (CVE-2026-114938) could allow remote code execution",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTmV1bmkwTE1HVklxNm1LcG1LX3E4RnMzWlplbXFENUJ0WEpmaFpSQ1pzQ1Brd0pDYjY0RDJJNzU2OVFlN3dpNU9ja0ltTkc0RzJuNUw5eU5Gcjg5SlFDc01wLVY4d1NodUpQaURUeDF1czR1elVMV1hiSjBnSjNsb2ZuMk0?oc=5",
+        "domain": "sophos",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261118T003217Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Federal cybersecurity gaps leave US food supply vulnerable to ransomware and operational disruptions, GAO warns",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNUlBlVFktS3ZuQmp3dEFCRy1POVp4RVYzTGhOUzJFZVpVQWp5MHhFSFVmUUFGQU1VQXVpQkZfWXVlNjNzZV9JQk5RTVZ1azJwbVZjMnlEenYxUWtBbG9UTWIwOWk1b3o4azF1VVZhamhEckF3aWt1cEZGbkJTRl9QbTBqa3N1c2tfa0JMTW9QSUJkNExVbTVRQjR4NVpnR2lqUTgzLUFpM0Z4LWc0OUtBOVhkRnd4ZS13a0x1ZjBuRl8wUXRnQ3RZdDFNYlF0Sm1SN01QWU9KczhKaG9FZlBZ?oc=5",
+        "domain": "industrialcyber",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261120T115004Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Mounting tech disruptions raise concerns about U.S. cybersecurity",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUTZZdUtvMXVjMTZmSUNoV19XalAxQnpJRFRIWjluUFdjZHRSUUFkZXpaOS1nWkJRN1hmNXc4U1BVbURGSXRaZFoyUHFqZnlqWWc4YjJEN2NqY3lxOXFJaElFOGVQdEdwREJJY2JTOWNFbl8yQ3pZTEl2ZGx3eEhldjExMVdNN19mZ1RxdHU1YXNsZEtCTHNOWDF6MWZSRnM?oc=5",
+        "domain": "pbs",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261120T234536Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Suspected cyberattack targets city of El Cajon",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOa2tGSlo5OTZYa3JBcllSYjZ5NjV0U1k5UzZqaXZKU0VNVFNJbXM4M1NXaFlnWldLOWZFNUVNbHFCWGhnUzRxNUMyMjVDT1hDOWJOVy1JYS04N005aTZDSmtlSXhHcDYtQnp4d1NMWk9iUDFIaW9STXotcThTMzdpQmFDMHJHVXc2dkJSZGxMald4bWZhY3fSAZ4BQVVfeXFMUFNUeFRlQmd4NnEzQ2RIUTg1d2I1TlBfV1lPcFRFMGtDXzFKdk5jMkkxTjRCbmM5d2FXazQ4bmhFeExtLTFvUjBJVzE2ME5xTHk3S2F2OWY1dGFod0I1ZGNNWkRsdHV4dHNqR1ZOTjJsODNwazFpZjJ2R3c1bjRrbHd4Tm5TTERDSkU2Y05rVkVmQU1vSUNhTlg3WE43NEE?oc=5",
+        "domain": "nbc7sandiego",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261124T002603Z",
+        "source": "GoogleNews"
+      },
+      {
+        "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNEJINlR2OS1hMzdJTXpraUU0Q2MtWGhIQm10RVFucERQWDFMX2VnUWNWVzRpY3NtdWN5NDhvVFZRMDREanpyX1ZGS1hsTFVLS0pIOTV6YlVKaFBUS3BUM1lnY200MVVUZUF6bGlZeVdwbXBndWhINUZIVDNfV3pvS1lTZw?oc=5",
+        "domain": "thehackernews",
+        "language": "",
+        "tone": 0,
+        "seendate": "20261120T122000Z",
         "source": "GoogleNews"
       }
     ]
@@ -35289,12 +35337,21 @@
       "source": "GoogleNews"
     },
     {
-      "title": "CVE-2026-114938 OpenJDK RCE (Java4Shell): Everything You Need to Know",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1xQjh3VUkzU1loWTdzYk9sUVRZODRfeVc2Z0E1TjlOV3FGdDh2VTdneGVhUnhRQ0o1bkJreGM5dUlXeGNsN1VKSXZwcmhnTWJxSkdNb3lhamtJaVRzMjZBWW0wRG5XVDRvYkt5SzljZw?oc=5",
-      "domain": "wiz.io",
+      "title": "AI and Cybersecurity: Technologies Can Magnify Cyberattacks and Enhance Cyber Defense",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ZWjRDRkJzZmd3VThDRXpPRWkxR3l0WTZ0RURzamRlY0dPaGxBTzJTT3JsS25sVzhyVzhSaVRCQUljQmVoUEJ6NENKY2ZKeWRiWW9kVw?oc=5",
+      "domain": "u.s.governmentaccountabilityoffice.gov",
       "language": "",
       "tone": 0,
-      "seendate": "20261117T222957Z",
+      "seendate": "20261120T132325Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "JPMorgan, Visa, Mastercard say third-party vendors targeted in cyberattack",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQV1VHOTlUSTlCVmhEY0dIdi11T2tlc2xPMG16MHhDWkl0SnlBVFl0cHNiZlVPaEtNRERzYXJGa28yUG9DSVZobFBicGFwcXBUWG1icU1RSzYtRUpNV3V4YU1uNkVkNGtQN0tJOVpTMExic1VCMWIxMzhUZm5ISjN4eWJoRFBmSzhZM0x0YlJIRjBJYWJsNlF5WUMxN3NsUE9pWndFLVhTcG1saUE?oc=5",
+      "domain": "reuters",
+      "language": "",
+      "tone": 0,
+      "seendate": "20261120T121112Z",
       "source": "GoogleNews"
     },
     {
@@ -35316,24 +35373,6 @@
       "source": "GoogleNews"
     },
     {
-      "title": "How to Tell If It’s a Cyberattack or Just an Outage",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUVRiZUNSNVJhVVpYYTRHdGktNWY2UWc3eV81emd3bGw5eEhNVmZ2cTdoTnlzN2oxeWZyLTIzVmZSMS1JeGRSNXZhcThfdEFOc3psQUVhelRWdWtUT2pzZ0IzTXBWRUgwaHpBQWtPZkhlU05HVmYxZEhPUGRxVFpNY1o1RUUxUQ?oc=5",
-      "domain": "wired",
-      "language": "",
-      "tone": 0,
-      "seendate": "20261117T194057Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "JPMorgan, Visa, Mastercard say third-party vendors targeted in cyberattack",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQV1VHOTlUSTlCVmhEY0dIdi11T2tlc2xPMG16MHhDWkl0SnlBVFl0cHNiZlVPaEtNRERzYXJGa28yUG9DSVZobFBicGFwcXBUWG1icU1RSzYtRUpNV3V4YU1uNkVkNGtQN0tJOVpTMExic1VCMWIxMzhUZm5ISjN4eWJoRFBmSzhZM0x0YlJIRjBJYWJsNlF5WUMxN3NsUE9pWndFLVhTcG1saUE?oc=5",
-      "domain": "reuters",
-      "language": "",
-      "tone": 0,
-      "seendate": "20261120T121112Z",
-      "source": "GoogleNews"
-    },
-    {
       "title": "Java4Shell (CVE-2026-114938): Risks and Mitigations",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUHlZbWgybmpuVmNhbkE1bENkdkZuR2tCVjdyc1RnZGZtT3hzUWtlbVE0T1hOWW9IMFBSRlMzdldQcUNrQ1RlclN5SEFlTGhudC1NeWZ4VW1MS1FwYmpSazFKdXJjVlB1eHVjQ19pNWFNc0JMRjI0TmdDN051SDhQR3lqSnN5S3UwSENScEc2cnF4dlJLR2RUQzBjbmZBTmc?oc=5",
       "domain": "paloaltonetworks",
@@ -35343,12 +35382,21 @@
       "source": "GoogleNews"
     },
     {
-      "title": "USDA grapples with security breach as IT staff take multiple systems offline",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRDM0dWVjdGdINzgxX3ZkZE93YnFDZjhQM28yVnQ2TVcwSENyZU0yT1JTb1dWV0VUSWlrZ2oyc3czdmFLRTVfYnJkSF9jWjVQeVlqVmJ5dnpYTk9YdFNPaklYUUtMTXpKZUpfaVZlT3ZiOE1ERzgwUjBWNUZweTBoYnFMVVBWamdBVUNPS2ZwWlc3S1pqMDhmTTVSeW5Db1RUOGdydURoSlZqemtSVUZYbklWRUVTdThCWllTNXVZNA?oc=5",
-      "domain": "nextgovfcw",
+      "title": "phpAfterShell and Critical PHP RCE Vulnerabilities: Everything You Need To Know",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVnNlRlhFUlJ6VmcweG5MWkpTZ2I1aGY3S0pQeEhNZ2xlNXJNVVlNeUdSUVRPUi0xa2FGUW90d3E5ODhYZlgzQWZIWGxpRV9hOVExcG1zOVZpeDhRWkFYNGtObnA4X2s3Z19XTFFRSVlIeElsSTZCdUdKVjR2b09xNTVSN2J5WVJQbVlNTjBRVQ?oc=5",
+      "domain": "wiz.io",
       "language": "",
       "tone": 0,
-      "seendate": "20261119T214200Z",
+      "seendate": "20261119T214623Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "Critical remote code execution flaws found in Nginx web server",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRXNRdHBucTNJVDZpeEZHclVKTFdSclY2UVQ0RHhJYzNBVkhZLUloWFgzbFVzeTVDUnh0NkNRVldLYnVKTGh1cFBfbzBXbU5QMGItM0d1LVdWRks2SWwxQkZoYjhGQ19SOTJZSTFHaUxaeVRKZkE4Y1JZQWlBRksyWnZHOW1QRVJoc1F5c21NYlViVW1vMlNGcHptdFdYSVpva0E?oc=5",
+      "domain": "cybersecuritydive",
+      "language": "",
+      "tone": 0,
+      "seendate": "20261119T165803Z",
       "source": "GoogleNews"
     },
     {
@@ -35361,21 +35409,30 @@
       "source": "GoogleNews"
     },
     {
-      "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQb2oyeXRPU2JHWlhldk1wMEppd0k4bUliNFFvTkVFZ3RmS2pQbXQzRXpBQ1pGRXN4UFJ4UnVaYm1FVmQ2OGZpUXlCVS1Ba0daQ01xQ2dRWVM5azhCcXdUZFIybmJnT2s4UnRFbmhabTRkOFdXc21YUVNZTHNlQ2ZBS0xSVQ?oc=5",
-      "domain": "thehackernews",
-      "language": "",
-      "tone": 0,
-      "seendate": "20261119T080000Z",
-      "source": "GoogleNews"
-    },
-    {
       "title": "CVE-2026-123890: Critical Authentication Bypass in VMware vCenter",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNYjJzamVtRDNKMml4WjR0VDFfZDVPV1hLYlFCNnl4MEQtcjhzRGpILWpEV3hvM3VDT00zcDBOVGRTRDV6YWQtVDBERVBUdThnQ3RFcW9RQ0pLZ1FqdTk0YnNBQzVmaWVfOFZoZzM3Y2RZUERQR1l3UDQyb09pQW5VTWwwSXZidjNBai0ySFZPcWlNZGdHT3NVRlhwaFpYUl95?oc=5",
       "domain": "rapid7",
       "language": "",
       "tone": 0,
       "seendate": "20261119T211059Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "Java4Shell vulnerability (CVE-2026-114938) assessment",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMXQxeXZpZXkxWWxyNXlQUzBqOHBxaFBCLXB0V01faTRyMEJlX3JQTzNVUkpnOUsxb0tLdi1QUjRuZWhOX053NTFFYWJpczFZSEJUUlI3b2Fld0dEY3Z4WFVQYjlrX3JkSzVLR2Mwd2pTcDNBMFVqa2lCQnhyRWlIRnh5Z2RjclZIeldJ?oc=5",
+      "domain": "databricks",
+      "language": "",
+      "tone": 0,
+      "seendate": "20261119T180843Z",
+      "source": "GoogleNews"
+    },
+    {
+      "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQb2oyeXRPU2JHWlhldk1wMEppd0k4bUliNFFvTkVFZ3RmS2pQbXQzRXpBQ1pGRXN4UFJ4UnVaYm1FVmQ2OGZpUXlCVS1Ba0daQ01xQ2dRWVM5azhCcXdUZFIybmJnT2s4UnRFbmhabTRkOFdXc21YUVNZTHNlQ2ZBS0xSVQ?oc=5",
+      "domain": "thehackernews",
+      "language": "",
+      "tone": 0,
+      "seendate": "20261119T080000Z",
       "source": "GoogleNews"
     },
     {
@@ -35397,31 +35454,22 @@
       "source": "GoogleNews"
     },
     {
-      "title": "JPMorgan, Visa, and Mastercard disclose cyberattack on third-party vendors",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNS2R0aHc1VDVIQ3QxYjZFTmdYTktsYjBPdUFfUlY4UVZPekNOSTVwS1JWR1hoVkVlTXFIdFNwakdEMHlXWlpWNWhMdWlZNHZjSTczR2hFUm02M3BBOG1sRzhDVlE1cTlPa1ppNWRack1rMTNfelJpWlJleENsVGhwYlFwdWZUaGd2TjQ1OG9rMzh2TzlEVE1mZmhyQVI2RTFkN25BVnFLNjRlUHBma29Gc05WVHBrTjVhaGNlQzlSaXlDZm9sOGhNZw?oc=5",
-      "domain": "yahoofinance",
+      "title": "How to Find, Mitigate, and Patch the Critical Java4Shell Flaw (CVE-2026-114938) Now",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOcWJtZnlLOVpILWNKalhlRWFFdWYzbUtucWZ4REQ2RDFTR0RnUlIyQ0N4RDBCbExRRXQwQ1R5azFXUmxjQ1ZWYk5Wcl9qS2h6ZHptdzZ5UHB5UlZoaG1WZVctSHg2M0M4elVpV1JPLWhCWERuVVVCc0R3eHNsLXZPN292U3VhQVh1X19SQnFrSldDRGlhZkpmX0NsSlFrUlVDbFNDLXlPaVktSF9LWG1KY2Y5eTFYMHV0el9HTWJvck53Q0dwT1pjWXFiMHMzR3lBcml1Uk1OemZmbnVPdm9F?oc=5",
+      "domain": "qualys",
       "language": "",
       "tone": 0,
-      "seendate": "20261119T190314Z",
-      "source": "GoogleNews"
-    },
-    {
-      "title": "Unauthenticated Remote Code Execution in NGINX: CVE-2026-123633 and CVE-2026-123007",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1BQjYySjNZRkM1ZWR3ZDZFb0NKQW9XOWlpWWdCNTNpbklBWFRZUVIybnBkYjlMYWNWNVk5SlNJUldzeVctWEJ3T0xpeXhqLU9CU0Jka3M3NGdNZkJneUkzUW5xZ1dfdw?oc=5",
-      "domain": "wiz.io",
-      "language": "",
-      "tone": 0,
-      "seendate": "20261117T203500Z",
+      "seendate": "20261118T075423Z",
       "source": "GoogleNews"
     }
   ],
   "timeseries": [],
   "llm_summary": "",
   "early_warning": {
-    "issued_at": "2026-11-24T10:28:24.026134+00:00",
+    "issued_at": "2026-11-24T22:47:53.347967+00:00",
     "horizon": "next 30 days",
     "classification": "global-exploitation-pressure-not-organisation-breach-probability",
-    "score": 56.2,
+    "score": 70.8,
     "level": "ELEVATED",
     "confidence": "HIGH",
     "confidence_score": 100.0,
@@ -35430,18 +35478,66 @@
         "id": "kev_addition_pressure",
         "label": "CISA exploited-vulnerability burst",
         "available": true,
-        "score": 68.6,
-        "catalog_count": 1792,
-        "recent_7d_count": 10,
+        "score": 84.3,
+        "catalog_count": 1795,
+        "recent_7d_count": 13,
         "prior_7d_count": 3,
         "baseline_weeks": 26,
         "baseline_weekly_median": 7.0,
-        "anomaly_z": 1.01,
+        "anomaly_z": 2.02,
         "ransomware_known_7d": 1,
-        "due_within_7d": 2,
-        "catalog_version": "2026.11.23",
-        "released_at": "2026-11-23T19:43:55.7979Z",
+        "due_within_7d": 5,
+        "catalog_version": "2026.11.24",
+        "released_at": "2026-11-24T17:47:46.199Z",
         "evidence": [
+          {
+            "cveID": "CVE-2026-132224",
+            "vendorProject": "Optimizely",
+            "product": "Web Experimentation",
+            "vulnerabilityName": "Optimizely Web Experimentation External Control of Critical State Data Vulnerability",
+            "dateAdded": "2026-11-24",
+            "shortDescription": "Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modify Project JavaScript. Successful exploitation can result in attacker-controlled JavaScript being distributed through Optimizely-hosted assets and executed in browsers visiting affected customer websites.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-11-27",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "https://pages.optimizely.com/rs/947-RKE-048/images/Security%20Incident%20Report%20-%20Optimizely%20Web%20Experimentation%20-%20Nov%2017%202026.pdf ; https://status.optimizely.com/incidents/ftw0fh9wx43z ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-132224",
+            "cwes": [
+              "CWE-642"
+            ],
+            "source": "CISA-KEV"
+          },
+          {
+            "cveID": "CVE-2026-131914",
+            "vendorProject": "Idunno",
+            "product": "AntiCsrf",
+            "vulnerabilityName": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
+            "dateAdded": "2026-11-24",
+            "shortDescription": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-11-27",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "This vulnerability could affect an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://github.com/mandiant/Vulnerability-Disclosures/blob/master/2026/MNDT-2026-0048.md ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
+            "cwes": [
+              "CWE-502"
+            ],
+            "source": "CISA-KEV"
+          },
+          {
+            "cveID": "CVE-2026-132165",
+            "vendorProject": "Drupal",
+            "product": "Core",
+            "vulnerabilityName": "Drupal Core Remote Code Execution Vulnerability",
+            "dateAdded": "2026-11-24",
+            "shortDescription": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-11-27",
+            "knownRansomwareCampaignUse": "Unknown",
+            "notes": "https://www.drupal.org/sa-core-2026-017 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-132165",
+            "cwes": [
+              "CWE-636"
+            ],
+            "source": "CISA-KEV"
+          },
           {
             "cveID": "CVE-2026-133968",
             "vendorProject": "Project MONAI",
@@ -35586,22 +35682,6 @@
               "CWE-94"
             ],
             "source": "CISA-KEV"
-          },
-          {
-            "cveID": "CVE-2026-90436",
-            "vendorProject": "Apache",
-            "product": "Axis",
-            "vulnerabilityName": "Apache Axis Unsafe Reflection Vulnerability",
-            "dateAdded": "2026-11-18",
-            "shortDescription": "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a crafted SOAP fault message that causes Axis to load and instantiate an attacker-specified class when a suitable class is available on the application classpath. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-            "dueDate": "2026-11-21",
-            "knownRansomwareCampaignUse": "Unknown",
-            "notes": "This vulnerability could affect an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: ; https://lists.apache.org/thread/8slf0j9gz35z56t0glt5h0ncwlbn4bdz ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-90436",
-            "cwes": [
-              "CWE-470"
-            ],
-            "source": "CISA-KEV"
           }
         ],
         "retained": false
@@ -35610,22 +35690,49 @@
         "id": "epss_frontier_momentum",
         "label": "EPSS pre-KEV exploitation frontier",
         "available": true,
-        "score": 25.0,
+        "score": 47.4,
         "frontier_count": 40,
-        "global_above_threshold": 17581,
+        "global_above_threshold": 17783,
         "threshold": 0.1,
-        "accelerated_7d_count": 0,
-        "maximum_7d_delta": 6e-05,
+        "accelerated_7d_count": 1,
+        "maximum_7d_delta": 0.14455,
         "mean_top10_probability": 0.99971,
         "timeseries_available": 40,
         "evidence": [
           {
+            "cve": "CVE-2017-9100",
+            "epss": 0.99908,
+            "percentile": 0.99966,
+            "delta_7d": 0.14455,
+            "relative_delta_7d": 0.169,
+            "date": "2026-11-24",
+            "url": "https://api.first.org/data/v1/epss?cve=CVE-2017-9100"
+          },
+          {
+            "cve": "CVE-2016-2183",
+            "epss": 0.99696,
+            "percentile": 0.9995,
+            "delta_7d": 0.04999,
+            "relative_delta_7d": 0.053,
+            "date": "2026-11-24",
+            "url": "https://api.first.org/data/v1/epss?cve=CVE-2016-2183"
+          },
+          {
+            "cve": "CVE-2023-38646",
+            "epss": 0.99558,
+            "percentile": 0.99946,
+            "delta_7d": 0.0008,
+            "relative_delta_7d": 0.001,
+            "date": "2026-11-24",
+            "url": "https://api.first.org/data/v1/epss?cve=CVE-2023-38646"
+          },
+          {
             "cve": "CVE-2022-39952",
             "epss": 0.998,
-            "percentile": 0.99958,
+            "percentile": 0.99957,
             "delta_7d": 6e-05,
             "relative_delta_7d": 0.0,
-            "date": "2026-11-23",
+            "date": "2026-11-24",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2022-39952"
           },
           {
@@ -35634,7 +35741,7 @@
             "percentile": 0.99991,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-11-23",
+            "date": "2026-11-24",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2021-45105"
           },
           {
@@ -35643,89 +35750,62 @@
             "percentile": 1.0,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-11-23",
+            "date": "2026-11-24",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2014-3566"
           },
           {
             "cve": "CVE-2023-50387",
             "epss": 0.9999,
-            "percentile": 0.99985,
+            "percentile": 0.99984,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-11-23",
+            "date": "2026-11-24",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2023-50387"
           },
           {
             "cve": "CVE-2012-1459",
             "epss": 0.9998,
-            "percentile": 0.99981,
+            "percentile": 0.99979,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-11-23",
+            "date": "2026-11-24",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2012-1459"
           },
           {
             "cve": "CVE-2012-1443",
             "epss": 0.9998,
-            "percentile": 0.99981,
+            "percentile": 0.9998,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-11-23",
+            "date": "2026-11-24",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2012-1443"
           },
           {
             "cve": "CVE-2014-3704",
             "epss": 0.99974,
-            "percentile": 0.99979,
+            "percentile": 0.99977,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-11-23",
+            "date": "2026-11-24",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2014-3704"
           },
           {
             "cve": "CVE-2015-7297",
             "epss": 0.99967,
-            "percentile": 0.99977,
+            "percentile": 0.99976,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-11-23",
+            "date": "2026-11-24",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2015-7297"
           },
           {
             "cve": "CVE-2014-0195",
             "epss": 0.99964,
-            "percentile": 0.99976,
+            "percentile": 0.99975,
             "delta_7d": 0.0,
             "relative_delta_7d": 0.0,
-            "date": "2026-11-23",
+            "date": "2026-11-24",
             "url": "https://api.first.org/data/v1/epss?cve=CVE-2014-0195"
-          },
-          {
-            "cve": "CVE-2022-42889",
-            "epss": 0.99931,
-            "percentile": 0.9997,
-            "delta_7d": 0.0,
-            "relative_delta_7d": 0.0,
-            "date": "2026-11-23",
-            "url": "https://api.first.org/data/v1/epss?cve=CVE-2022-42889"
-          },
-          {
-            "cve": "CVE-2019-0232",
-            "epss": 0.99923,
-            "percentile": 0.99969,
-            "delta_7d": 0.0,
-            "relative_delta_7d": 0.0,
-            "date": "2026-11-23",
-            "url": "https://api.first.org/data/v1/epss?cve=CVE-2019-0232"
-          },
-          {
-            "cve": "CVE-2012-1456",
-            "epss": 0.99908,
-            "percentile": 0.99967,
-            "delta_7d": 0.0,
-            "relative_delta_7d": 0.0,
-            "date": "2026-11-23",
-            "url": "https://api.first.org/data/v1/epss?cve=CVE-2012-1456"
           }
         ],
         "retained": false
@@ -35734,17 +35814,17 @@
         "id": "exploit_narrative_pressure",
         "label": "Cross-source exploit precursor language",
         "available": true,
-        "score": 60.0,
+        "score": 62.0,
         "events_considered": 50,
         "matched_event_count": 10,
         "matched_share": 0.2,
-        "independent_sources": 29,
-        "unique_cves": 5,
+        "independent_sources": 31,
+        "unique_cves": 6,
         "cross_source_baskets": 2,
         "baskets": [
           {
             "id": "weaponization",
-            "independent_sources": 0,
+            "independent_sources": 1,
             "cross_source_confirmed": false
           },
           {
@@ -35754,26 +35834,26 @@
           },
           {
             "id": "perimeter_access",
-            "independent_sources": 7,
+            "independent_sources": 6,
             "cross_source_confirmed": true
           },
           {
             "id": "campaign_shift",
-            "independent_sources": 2,
+            "independent_sources": 3,
             "cross_source_confirmed": true
           }
         ],
         "evidence": [
           {
-            "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
-            "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQb2oyeXRPU2JHWlhldk1wMEppd0k4bUliNFFvTkVFZ3RmS2pQbXQzRXpBQ1pGRXN4UFJ4UnVaYm1FVmQ2OGZpUXlCVS1Ba0daQ01xQ2dRWVM5azhCcXdUZFIybmJnT2s4UnRFbmhabTRkOFdXc21YUVNZTHNlQ2ZBS0xSVQ?oc=5",
-            "source": "thehackernews",
-            "observed_at": "20261119T080000Z",
+            "title": "Critical remote code execution flaws found in Nginx web server",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRXNRdHBucTNJVDZpeEZHclVKTFdSclY2UVQ0RHhJYzNBVkhZLUloWFgzbFVzeTVDUnh0NkNRVldLYnVKTGh1cFBfbzBXbU5QMGItM0d1LVdWRks2SWwxQkZoYjhGQ19SOTJZSTFHaUxaeVRKZkE4Y1JZQWlBRksyWnZHOW1QRVJoc1F5c21NYlViVW1vMlNGcHptdFdYSVpva0E?oc=5",
+            "source": "cybersecuritydive",
+            "observed_at": "20261119T165803Z",
             "baskets": [
-              "campaign_shift"
+              "perimeter_access"
             ],
             "terms": [
-              "ransomware"
+              "remote code execution"
             ],
             "cves": []
           },
@@ -35793,49 +35873,17 @@
             ]
           },
           {
-            "title": "Unauthenticated Remote Code Execution in NGINX: CVE-2026-123633 and CVE-2026-123007",
-            "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1BQjYySjNZRkM1ZWR3ZDZFb0NKQW9XOWlpWWdCNTNpbklBWFRZUVIybnBkYjlMYWNWNVk5SlNJUldzeVctWEJ3T0xpeXhqLU9CU0Jka3M3NGdNZkJneUkzUW5xZ1dfdw?oc=5",
-            "source": "wiz.io",
-            "observed_at": "20261117T203500Z",
+            "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+            "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQb2oyeXRPU2JHWlhldk1wMEppd0k4bUliNFFvTkVFZ3RmS2pQbXQzRXpBQ1pGRXN4UFJ4UnVaYm1FVmQ2OGZpUXlCVS1Ba0daQ01xQ2dRWVM5azhCcXdUZFIybmJnT2s4UnRFbmhabTRkOFdXc21YUVNZTHNlQ2ZBS0xSVQ?oc=5",
+            "source": "thehackernews",
+            "observed_at": "20261119T080000Z",
             "baskets": [
-              "perimeter_access"
+              "campaign_shift"
             ],
             "terms": [
-              "remote code execution"
-            ],
-            "cves": [
-              "CVE-2026-123007",
-              "CVE-2026-123633"
-            ]
-          },
-          {
-            "title": "Critical remote code execution flaws found in Nginx web server",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRXNRdHBucTNJVDZpeEZHclVKTFdSclY2UVQ0RHhJYzNBVkhZLUloWFgzbFVzeTVDUnh0NkNRVldLYnVKTGh1cFBfbzBXbU5QMGItM0d1LVdWRks2SWwxQkZoYjhGQ19SOTJZSTFHaUxaeVRKZkE4Y1JZQWlBRksyWnZHOW1QRVJoc1F5c21NYlViVW1vMlNGcHptdFdYSVpva0E?oc=5",
-            "source": "cybersecuritydive",
-            "observed_at": "20261119T165803Z",
-            "baskets": [
-              "perimeter_access"
-            ],
-            "terms": [
-              "remote code execution"
+              "ransomware"
             ],
             "cves": []
-          },
-          {
-            "title": "CVE-2026-114938: Reported Critical Pre-authentication Remote Code Execution in Java 17",
-            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUjdhelluN2N6QUlPZ2ZXYWhIczhHZ2tPMFZ6Y2c3eW82bDctZTZGQnl5X0xJZkxlSWRxcXRoYWVuMXJiZGdDT0w1Wk4wemJMYlF4N3E2cnJQejNNbWtqQW9FVTNfTUhBZ2laZ2ZYZUs4clpRMmNTTGtuNlp5SFM2QXVYYnpjSzIwOGp2MmFMWUlSYVRyQkR6VkhyMXdvRkgwZ0dfdk1TQjJDQ2RsOW9MdnpLWjhIUUJwZ1NpUg?oc=5",
-            "source": "rapid7",
-            "observed_at": "20261117T183341Z",
-            "baskets": [
-              "perimeter_access"
-            ],
-            "terms": [
-              "pre-auth",
-              "remote code execution"
-            ],
-            "cves": [
-              "CVE-2026-114938"
-            ]
           },
           {
             "title": "Ruby2Shell: Ruby Memory Corruption Flaws Expose Applications to Remote Code Execution, But is it an Actual Risk?",
@@ -35866,19 +35914,6 @@
             ]
           },
           {
-            "title": "Nvidia Responds to Gentlemen Ransomware Claim",
-            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxON25URzBFckkzQ0I0cDBIR3VzdS1sZTVzcHFxdTc1WVRWci1XSDZET1o0eUZWZ2VlbzE3OGR2NGM3QkFpdEFBc1BWR1RKVEZhTy1LdFZHamdaaXRHRnVFbF8yZFgxQnFORWpXNWIxNGpZTTZIaHlaUzlJcXRXQ1FTZQ?oc=5",
-            "source": "securityweek",
-            "observed_at": "20261119T141732Z",
-            "baskets": [
-              "campaign_shift"
-            ],
-            "terms": [
-              "ransomware"
-            ],
-            "cves": []
-          },
-          {
             "title": "VMware vCenter zero-day exploited for months before patch (CVE-2026-123890)",
             "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNME1FQXZQTWFzLU1oWGpIWWxqT2RTTnFTbTVHM2pIbElWOVo3MnQ1aUZCQW8zUGk4cWw1U1ZlNEVpRk1yTlFOWjZiTGtWSF9ybjMxN3NuemQwT0pwYU1yLXFUWXp0STEwUVRuaEpLWE5iSmtzRkQ5dTVyUjhYZjZJR3J1bk9FeUNyeUF6UGdhMGdHeUFWdDJrMg?oc=5",
             "source": "helpnetsecurity",
@@ -35894,19 +35929,61 @@
             ]
           },
           {
-            "title": "Java4Shell (CVE-2026-114938): Pre-Auth Heap Overflow in OpenJDK",
-            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNN21yTGhnejdpR0ljcjkyREY3UHRJMGxyQk9jSUx1dkpXVjBBeTB6RHhrampEOVp0QV9uU1h3ZjBFU3hGUmlhbmNrZEp1dW04OEdCVFd4cVIwNEN3RE1kRkJVQUxtTEtteURCSjY5VGR3NnJoTjN5Tnc1eXZTX1lOMl9PU2VIWEZHQUVJY0Qza3VQRHNQOGJYcVNzUm5WVFQ5SU9Z?oc=5",
-            "source": "endorlabs",
-            "observed_at": "20261117T203948Z",
+            "title": "Proof-of-concept exploit code available for Ghostscript ‘Upload2Shell’ vulnerability (CVE-2026-125396)",
+            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPZVg4djQ0UDFuNlhoLVh1R2pUckl5RU1oRnlKZFNkbnNWQ09qQXRSSTRxZXVLUmk0MHpkVzhYelY3aEp2TUZBVHkzT0lqcVNOcTE1NjlBYjNtSDc5TXpfVFN1NGZ2bExxNHFmVTVCZm9hTzBHVkU5TXQwQ2ZiRHdIOW5SbU1rMWNEUXlnMUtSbDhuOTg?oc=5",
+            "source": "sophos",
+            "observed_at": "20261123T200701Z",
+            "baskets": [
+              "weaponization"
+            ],
+            "terms": [
+              "exploit code",
+              "proof-of-concept"
+            ],
+            "cves": [
+              "CVE-2026-125396"
+            ]
+          },
+          {
+            "title": "Nvidia Responds to Gentlemen Ransomware Claim",
+            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxON25URzBFckkzQ0I0cDBIR3VzdS1sZTVzcHFxdTc1WVRWci1XSDZET1o0eUZWZ2VlbzE3OGR2NGM3QkFpdEFBc1BWR1RKVEZhTy1LdFZHamdaaXRHRnVFbF8yZFgxQnFORWpXNWIxNGpZTTZIaHlaUzlJcXRXQ1FTZQ?oc=5",
+            "source": "securityweek",
+            "observed_at": "20261119T141732Z",
+            "baskets": [
+              "campaign_shift"
+            ],
+            "terms": [
+              "ransomware"
+            ],
+            "cves": []
+          },
+          {
+            "title": "'Java4Shell' vulnerability (CVE-2026-114938) could allow remote code execution",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTmV1bmkwTE1HVklxNm1LcG1LX3E4RnMzWlplbXFENUJ0WEpmaFpSQ1pzQ1Brd0pDYjY0RDJJNzU2OVFlN3dpNU9ja0ltTkc0RzJuNUw5eU5Gcjg5SlFDc01wLVY4d1NodUpQaURUeDF1czR1elVMV1hiSjBnSjNsb2ZuMk0?oc=5",
+            "source": "sophos",
+            "observed_at": "20261118T003217Z",
             "baskets": [
               "perimeter_access"
             ],
             "terms": [
-              "pre-auth"
+              "remote code execution"
             ],
             "cves": [
               "CVE-2026-114938"
             ]
+          },
+          {
+            "title": "Federal cybersecurity gaps leave US food supply vulnerable to ransomware and operational disruptions, GAO warns",
+            "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNUlBlVFktS3ZuQmp3dEFCRy1POVp4RVYzTGhOUzJFZVpVQWp5MHhFSFVmUUFGQU1VQXVpQkZfWXVlNjNzZV9JQk5RTVZ1azJwbVZjMnlEenYxUWtBbG9UTWIwOWk1b3o4azF1VVZhamhEckF3aWt1cEZGbkJTRl9QbTBqa3N1c2tfa0JMTW9QSUJkNExVbTVRQjR4NVpnR2lqUTgzLUFpM0Z4LWc0OUtBOVhkRnd4ZS13a0x1ZjBuRl8wUXRnQ3RZdDFNYlF0Sm1SN01QWU9KczhKaG9FZlBZ?oc=5",
+            "source": "industrialcyber",
+            "observed_at": "20261120T115004Z",
+            "baskets": [
+              "campaign_shift"
+            ],
+            "terms": [
+              "ransomware"
+            ],
+            "cves": []
           }
         ]
       }
@@ -35915,6 +35992,7 @@
       "active": true,
       "elevated_components": [
         "kev_addition_pressure",
+        "epss_frontier_momentum",
         "exploit_narrative_pressure"
       ],
       "score_bonus": 5.0
@@ -35923,29 +36001,26 @@
       {
         "id": "kev_addition_pressure",
         "title": "CISA exploited-vulnerability burst",
-        "score": 68.6,
-        "level": "ELEVATED",
+        "score": 84.3,
+        "level": "SEVERE",
         "why": "CISA additions are elevated against the previous 26 weekly windows."
       },
       {
         "id": "exploit_narrative_pressure",
         "title": "Cross-source exploit precursor language",
-        "score": 60.0,
+        "score": 62.0,
         "level": "ELEVATED",
         "why": "Weaponization or exploitation language is confirmed across distinct named sources."
+      },
+      {
+        "id": "epss_frontier_momentum",
+        "title": "EPSS pre-KEV exploitation frontier",
+        "score": 47.4,
+        "level": "WATCH",
+        "why": "High-EPSS vulnerabilities outside KEV are accelerating over seven days."
       }
     ],
     "history": [
-      {
-        "timestamp": "2026-09-24T17:36:10.589277+00:00",
-        "score": 55.2,
-        "level": "ELEVATED",
-        "components": {
-          "kev_addition_pressure": 63.4,
-          "epss_frontier_momentum": 25.3,
-          "exploit_narrative_pressure": 64.0
-        }
-      },
       {
         "timestamp": "2026-09-24T21:52:37.016516+00:00",
         "score": 58.7,
@@ -37735,14 +37810,24 @@
           "epss_frontier_momentum": 25.0,
           "exploit_narrative_pressure": 60.0
         }
+      },
+      {
+        "timestamp": "2026-11-24T22:47:53.347967+00:00",
+        "score": 70.8,
+        "level": "ELEVATED",
+        "components": {
+          "kev_addition_pressure": 84.3,
+          "epss_frontier_momentum": 47.4,
+          "exploit_narrative_pressure": 62.0
+        }
       }
     ],
     "data_health": {
-      "cisa_catalog_count": 1792,
+      "cisa_catalog_count": 1795,
       "epss_frontier_count": 40,
       "epss_timeseries_count": 40,
       "news_events_considered": 50,
-      "independent_news_sources": 29,
+      "independent_news_sources": 31,
       "available_components": 3,
       "retained_components": []
     },
